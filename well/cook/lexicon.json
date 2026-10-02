@@ -1,0 +1,202 @@
+{
+ "v": 1,
+ "note": "The practice lexicon for The Well's learning track. Word, and a one-line meaning in the house voice. Grow it as we teach new terms.",
+ "words": [
+  {
+   "word": "AGENT",
+   "meaning": "An AI that takes steps on your behalf"
+  },
+  {
+   "word": "TOKEN",
+   "meaning": "The small piece of text an AI reads and writes"
+  },
+  {
+   "word": "MODEL",
+   "meaning": "The trained engine underneath the chat window"
+  },
+  {
+   "word": "TRUST",
+   "meaning": "Built from a record you can read"
+  },
+  {
+   "word": "HUMAN",
+   "meaning": "The one who stays in the loop and makes the call"
+  },
+  {
+   "word": "CLOSE",
+   "meaning": "The end-of-day note: what changed, what is open"
+  },
+  {
+   "word": "LEDGER",
+   "meaning": "One line per action, stamped with the time"
+  },
+  {
+   "word": "WAKE",
+   "meaning": "The start of a session, when an AI reads its notes"
+  },
+  {
+   "word": "LOOP",
+   "meaning": "Human in the ___"
+  },
+  {
+   "word": "LINES",
+   "meaning": "What an AI may do, and what it never does"
+  },
+  {
+   "word": "TABLE",
+   "meaning": "Where the team sees the same work"
+  },
+  {
+   "word": "LISTEN",
+   "meaning": "Step one of the method"
+  },
+  {
+   "word": "MAP",
+   "meaning": "Step two: draw what you heard"
+  },
+  {
+   "word": "BUILD",
+   "meaning": "Step three"
+  },
+  {
+   "word": "TEACH",
+   "meaning": "Step five: until your team can run it"
+  },
+  {
+   "word": "RULES",
+   "meaning": "House ___: what an AI reads before it starts"
+  },
+  {
+   "word": "DRAFT",
+   "meaning": "What an AI makes and a person sends"
+  },
+  {
+   "word": "PROMPT",
+   "meaning": "What you ask"
+  },
+  {
+   "word": "CONTEXT",
+   "meaning": "What the AI knows about the task at hand"
+  },
+  {
+   "word": "MEMORY",
+   "meaning": "What an AI keeps between sessions, if you give it a place"
+  },
+  {
+   "word": "LIMIT",
+   "meaning": "Context ___: how much an AI can hold at once"
+  },
+  {
+   "word": "ALIGN",
+   "meaning": "Point the AI and the team the same way"
+  },
+  {
+   "word": "DATA",
+   "meaning": "The record an AI learns from"
+  },
+  {
+   "word": "SEND",
+   "meaning": "A person presses it"
+  },
+  {
+   "word": "PAUSE",
+   "meaning": "Wait a beat before you send"
+  },
+  {
+   "word": "CHECK",
+   "meaning": "Verify before you trust"
+  },
+  {
+   "word": "SOURCE",
+   "meaning": "Where a fact came from"
+  },
+  {
+   "word": "RECIPE",
+   "meaning": "A working system you can share"
+  },
+  {
+   "word": "RHYTHM",
+   "meaning": "A cadence that runs whether or not anyone watches"
+  },
+  {
+   "word": "CHARTER",
+   "meaning": "One page an AI reads every time"
+  },
+  {
+   "word": "PRIVACY",
+   "meaning": "What a local model protects"
+  },
+  {
+   "word": "ROUTINE",
+   "meaning": "A scheduled job that keeps time"
+  },
+  {
+   "word": "CHAT",
+   "meaning": "The text box, for now"
+  },
+  {
+   "word": "VOICE",
+   "meaning": "Many AIs now listen when you speak"
+  },
+  {
+   "word": "SKILL",
+   "meaning": "A packaged way of doing a task"
+  },
+  {
+   "word": "TOOLS",
+   "meaning": "Search, calendar, email: an agent's kit"
+  },
+  {
+   "word": "STEPS",
+   "meaning": "An agent works in small ___"
+  },
+  {
+   "word": "REVIEW",
+   "meaning": "The human gate"
+  },
+  {
+   "word": "SAFETY",
+   "meaning": "The work of keeping AI from harm"
+  },
+  {
+   "word": "ENERGY",
+   "meaning": "Every answer draws it"
+  },
+  {
+   "word": "WATER",
+   "meaning": "Data centers drink it to stay cool"
+  },
+  {
+   "word": "EARTH",
+   "meaning": "Where the machines actually live"
+  },
+  {
+   "word": "FORM",
+   "meaning": "What practice does over time"
+  },
+  {
+   "word": "HABIT",
+   "meaning": "A small practice kept daily"
+  },
+  {
+   "word": "CRAFT",
+   "meaning": "Skill made with care"
+  },
+  {
+   "word": "FOCUS",
+   "meaning": "What a good prompt gives the work"
+  },
+  {
+   "word": "NOTES",
+   "meaning": "What an AI writes so tomorrow starts warm"
+  },
+  {
+   "word": "ERROR",
+   "meaning": "Name it plainly, then fix it at the source"
+  },
+  {
+   "word": "RESET",
+   "meaning": "Start fresh with a short summary"
+  }
+ ]
+}

@@ -115,3 +115,8 @@ Recommendation: one shared engine file, with two thin pages on top of it.
 3. Build `/well/morning-edition/` on the shared engine with its fallback bank.
 4. Build `well/cook/` (lexicon, fill list, templates, `build.py`) and cook the first two puzzles by hand on Monday, checking every crossing.
 5. Only then wire the 5:30 AM cron.
+
+## Status after the first build (10/2/26, b3)
+- **Built:** the shared engine (`well/assets/crossword.js|css`); any-size grids with today's JSON and the bank as fallback; The Morning Edition page with a 3-grid evergreen bank; `cook/build.py` with `cook/lexicon.json` (49 practice words) and `cook/fill.txt` (8.1k common words: the top 20k English words, filtered against the system dictionary, 3-letter words hand-cleaned).
+- **What the builder can and can't do:** it fills a clean 7×7 in 1 to 10 seconds and verifies every crossing. Forcing one particular word into the grid often has no solution with a common-word list, so theme words are a strong preference, not a requirement. Mise picks the teaching word from the strongest word that lands. When a word truly must be in the grid, hand-make that one. More templates and a bigger curated list will raise the hit rate; add templates with `template_ok()`.
+- **Monday:** the learning track is cooked (`daily-line/puzzles/2026-10-05.json`, MISTAKE). The news step is in `cook/NEWS-STEP.md`.
