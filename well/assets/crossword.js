@@ -47,6 +47,17 @@
   function isoDay(d) { return d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2) }
 
   function mount(cfg) {
+  // Dustin 10/2: the dark squares take a brand colour, a different one each day
+  try {
+    var sd = cfg.startDate || [2026, 9, 2];
+    var d0 = new Date(sd[0], sd[1], sd[2]); var t = new Date(); var d1 = new Date(t.getFullYear(), t.getMonth(), t.getDate());
+    var dayIdx = Math.max(0, Math.round((d1 - d0) / 86400000));
+    var pal = ['#623E2A', '#3E6A9E', '#B4862E', '#D9B25A'];
+    var col = pal[dayIdx % pal.length];
+    var host = (cfg.root && cfg.root.style) ? cfg.root : document.documentElement;
+    host.style.setProperty('--grid-dark', col); host.style.setProperty('--accent', col);
+  } catch (e) {}
+
     var bank = cfg.bank || [], prefix = cfg.storagePrefix, start = cfg.startDate || [2026, 9, 2];
     var errs = [];
     bank.forEach(function (p, i) { var b = check(p); if (b.length) errs.push("Puzzle " + (i + 1) + ": " + b.join("; ")) });
