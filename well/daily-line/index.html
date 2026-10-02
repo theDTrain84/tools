@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../assets/crossword.css">
 <style>
 :root{--paper:#F3EFE7;--paper2:#E9E3D7;--rule:#CFC6B8;--ink:#2C211A;--ink2:#4A3A2F;--ink3:#7A6A5D;--ink4:#A69686;--walnut:#623E2A;--ochre:#B4862E;--gold:#D9B25A;--sky:#3E6A9E;--dusk:#1B1916;--cell:56px;--mono:"IBM Plex Mono",ui-monospace,monospace}
 *{box-sizing:border-box}
@@ -21,59 +22,6 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--sky);outline-offset
 h1{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:clamp(38px,9vw,56px);line-height:1.02;letter-spacing:-.012em;margin:0 0 12px}
 .lede{color:var(--ink2);font-size:20px;margin:0 0 14px;max-width:36ch;text-wrap:pretty}
 .date{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3);margin:0 0 26px}
-.board{display:flex;flex-direction:column;align-items:center}
-.bar{width:calc(var(--cell)*5 + 6px);display:flex;justify-content:space-between;align-items:center;margin:0 0 10px;font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3)}
-.timer{color:var(--ink2);font-variant-numeric:tabular-nums}
-.grid{display:grid;grid-template-columns:repeat(5,var(--cell));grid-auto-rows:var(--cell);gap:1px;background:var(--rule);border:1px solid var(--rule);padding:0;opacity:0;animation:up .4s ease-out forwards}
-@keyframes up{to{opacity:1}}
-.cell{position:relative;appearance:none;border:0;margin:0;padding:0;background:#FBF9F4;color:var(--ink);font-family:var(--mono);font-weight:500;font-size:26px;line-height:1;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;border-radius:0;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
-.cell.blk{background:var(--dusk);cursor:default}
-.cell.word{background:var(--paper2)}
-.cell.sel{background:var(--paper2);box-shadow:inset 0 0 0 2px var(--walnut)}
-.cell:focus-visible{outline:2px solid var(--sky);outline-offset:-4px;z-index:1}
-.cell .n{position:absolute;top:3px;left:4px;font-size:9.5px;font-weight:400;color:var(--ink3);letter-spacing:0}
-.cell .l{display:inline-block}
-.cell .l.set{animation:settle .12s ease-out}
-@keyframes settle{from{transform:scale(1.08)}to{transform:scale(1)}}
-.cell.ok .l{color:var(--walnut)}
-.cell.bad .l{color:var(--ochre);text-decoration:line-through;text-decoration-thickness:1.5px;text-decoration-color:var(--ink3)}
-.cell.rev .l{color:var(--walnut);font-style:italic}
-.clue-now{width:100%;max-width:420px;margin:16px 0 0;min-height:58px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:10px 2px;display:flex;gap:12px;align-items:baseline}
-.clue-now .tag{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--walnut);white-space:nowrap}
-.clue-now .tx{font-size:18px;color:var(--ink);line-height:1.35}
-.tools{display:flex;gap:8px;margin:14px 0 0;flex-wrap:wrap;justify-content:center}
-.q{appearance:none;background:transparent;border:1px solid var(--rule);border-radius:999px;padding:8px 14px;font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink2);cursor:pointer}
-.q:hover{border-color:var(--ink3);color:var(--ink)}
-.q[disabled]{opacity:.5;cursor:default}
-.kb{display:none;width:100%;max-width:420px;margin:14px 0 0;user-select:none;-webkit-user-select:none}
-.touch .kb{display:block}
-.kr{display:flex;gap:4px;justify-content:center;margin:0 0 6px}
-.key{appearance:none;flex:1 1 0;max-width:40px;height:46px;padding:0;background:#FBF9F4;border:1px solid var(--rule);border-radius:6px;font-family:var(--mono);font-size:15px;font-weight:500;color:var(--ink);cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
-.key:active{background:var(--paper2)}
-.key.bk{flex:1.6 1 0;max-width:64px;font-size:17px}
-.status{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--ink2);min-height:20px;margin:10px 0 0;text-align:center}
-.clues{display:grid;grid-template-columns:1fr;gap:26px;margin:36px 0 0}
-@media(min-width:620px){.clues{grid-template-columns:1fr 1fr}:root{--cell:64px}.cell{font-size:30px}}
-.clues h2{font-family:var(--mono);font-weight:500;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--walnut);margin:0 0 8px;padding:0 0 8px;border-bottom:1px solid var(--rule)}
-.clues ol{list-style:none;margin:0;padding:0}
-.cl{appearance:none;display:flex;gap:12px;width:100%;text-align:left;background:transparent;border:0;border-radius:6px;padding:7px 8px;margin:0 0 2px;font-family:Newsreader,Georgia,serif;font-size:17px;line-height:1.35;color:var(--ink2);cursor:pointer}
-.cl b{font-family:var(--mono);font-weight:500;font-size:12px;color:var(--ink3);min-width:16px;padding-top:3px}
-.cl:hover{color:var(--ink)}
-.cl.on{background:var(--paper2);color:var(--ink)}
-.cl.fill{color:var(--ink3)}
-.done{display:none;margin:36px 0 0;background:var(--dusk);color:var(--paper);border-radius:14px;padding:26px 22px 24px}
-.done.show{display:block}
-.done .k{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin:0 0 10px}
-.done h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:30px;line-height:1.1;margin:0 0 12px}
-.done p{font-size:18.5px;color:var(--paper);margin:0 0 18px;max-width:52ch}
-.done .stats{display:flex;flex-wrap:wrap;gap:8px 22px;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink4);margin:0 0 18px}
-.done .stats span b{color:var(--paper);font-weight:500}
-.done .q{color:var(--paper);border-color:#4A3A2F}
-.done .q:hover{border-color:var(--gold)}
-.done .copied{font-family:var(--mono);font-size:12px;color:var(--gold);margin-left:10px}
-.how{margin:40px 0 0;font-size:16px;color:var(--ink3);max-width:56ch}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-@media (prefers-reduced-motion:reduce){.grid{animation:none;opacity:1}.cell .l.set{animation:none}}
 </style>
 </head>
 <body class="has-shell">
@@ -107,6 +55,7 @@ h1{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:clamp(38px,9vw,5
   <p class="k" id="doneK">Solved</p>
   <h2 id="doneH"></h2>
   <p id="doneP"></p>
+  <div id="srcs"></div>
   <div class="stats" id="stats"></div>
   <button class="q" id="share" type="button">Copy result</button><span class="copied" id="copied"></span>
 </section>
@@ -114,10 +63,10 @@ h1{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:clamp(38px,9vw,5
 <p class="how">Tap a square, or click it, and type. Tap again to turn between across and down. Arrows move, Tab or Enter jumps to the next clue. A new grid arrives each morning, and your progress stays in this browser only.</p>
 </div>
 <footer class="site-foot"><div class="in"><span>DNSC · Dustin Nimmo Strategic Consulting</span><span class="nav"><a href="https://www.dustinnimmo.com">Home</a><a href="https://www.dustinnimmo.com/#three-ways">How we work</a><a href="https://tools.dustinnimmo.com/">Teaching &amp; tools</a><a href="https://tools.dustinnimmo.com/well/">The Well</a><a href="https://www.dustinnimmo.com/#contact">Contact</a></span><span class="credit">Free to use. Made by DNSC.</span></div></footer>
+<script src="../assets/crossword.js"></script>
 <script>
-(function(){
-"use strict";
-/* Bank of hand-made 5x5 grids. '#' is a black square. a = across answers in reading order, d = down answers in reading order. */
+/* Bank of hand-made 5x5 grids. '#' is a black square. a = across answers in reading order, d = down answers in reading order.
+   A cooked puzzle for today (puzzles/YYYY-MM-DD.json) takes priority when it exists; see ../COOK.md. */
 var BANK=[
 {g:["##MAP","#SAGE","TOKEN","AMEN#","REST#"],
  a:[["MAP","Step two of Listen, ___, Build: draw what you heard"],["SAGE","Wise elder, or a kitchen herb"],["TOKEN","The small piece of text an AI reads and writes, often part of a word"],["AMEN","So be it"],["REST","What a builder needs at the end of a long day"]],
@@ -176,244 +125,8 @@ var BANK=[
  d:[["ROW","Line of seats"],["TIRE","Grow weary"],["LUNAR","Of the moon"],["ANGLE","Point of view"],["YES","Word that starts the work"]],
  w:"RINGS",n:"We draw our work as three rings. The inner ring is what we believe, the middle is what we practice each day, and the outer is what we make together. Change that lasts moves from the inside out."}
 ];
-
-/* ---------- self-test: derive every entry from the grid and assert it matches the answer list ---------- */
-function slotsOf(g){
-  var A=[],D=[],r,c,s;
-  for(r=0;r<5;r++){c=0;while(c<5){if(g[r][c]==="#"){c++;continue}s=c;while(c<5&&g[r][c]!=="#")c++;if(c-s>1){var cs=[];for(var x=s;x<c;x++)cs.push([r,x]);A.push(cs)}}}
-  for(c=0;c<5;c++){r=0;while(r<5){if(g[r][c]==="#"){r++;continue}s=r;while(r<5&&g[r][c]!=="#")r++;if(r-s>1){var ds=[];for(var y=s;y<r;y++)ds.push([y,c]);D.push(ds)}}}
-  return {A:A,D:D};
-}
-function selfTest(){
-  var pass=0,errs=[];
-  BANK.forEach(function(p,i){
-    var bad=[],g=p.g,blk=0,seen={};
-    if(g.length!==5)bad.push("rows");
-    g.forEach(function(row){if(row.length!==5)bad.push("cols");for(var k=0;k<5;k++)if(row[k]==="#")blk++});
-    if(blk<2||blk>5)bad.push("black count "+blk);
-    var S=slotsOf(g);
-    [["A",S.A,p.a],["D",S.D,p.d]].forEach(function(t){
-      if(t[1].length!==t[2].length)bad.push(t[0]+" count");
-      t[1].forEach(function(cells,j){
-        var w=cells.map(function(rc){return g[rc[0]][rc[1]]}).join("");
-        if(w.length<3)bad.push(t[0]+j+" short");
-        if(!t[2][j]||t[2][j][0]!==w)bad.push(t[0]+j+" "+w+" vs "+(t[2][j]&&t[2][j][0]));
-        if(seen[w])bad.push("dup "+w);seen[w]=1;
-        if(!t[2][j]||!t[2][j][1])bad.push("no clue "+w);
-      });
-    });
-    /* every white square must sit in an across or down entry, and checked both ways where crossings exist */
-    for(var rr=0;rr<5;rr++)for(var cc=0;cc<5;cc++){if(g[rr][cc]==="#")continue;var inA=S.A.some(function(s){return s.some(function(x){return x[0]===rr&&x[1]===cc})}),inD=S.D.some(function(s){return s.some(function(x){return x[0]===rr&&x[1]===cc})});if(!inA&&!inD)bad.push("orphan "+rr+","+cc)}
-    if(!seen[p.w])bad.push("teaching word not in grid");
-    var all=JSON.stringify(p);if(/\u2014|\u2013/.test(all))bad.push("dash");
-    if(bad.length)errs.push("Puzzle "+(i+1)+": "+bad.join("; "));else pass++;
-  });
-  if(errs.length){console.error("[Daily Line] self-test failed",errs)}else{console.info("[Daily Line] self-test: "+pass+"/"+BANK.length+" grids pass, all crossings consistent")}
-  return !errs.length;
-}
-selfTest();
-
-/* ---------- day + storage ---------- */
-var now=new Date();
-var dayIdx=Math.round((Date.UTC(now.getFullYear(),now.getMonth(),now.getDate())-Date.UTC(2026,9,2))/864e5);
-var no=Math.max(1,dayIdx+1);
-var P=BANK[((dayIdx%BANK.length)+BANK.length)%BANK.length];
-var DAYS=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],MON=["January","February","March","April","May","June","July","August","September","October","November","December"];
-document.getElementById("date").textContent=DAYS[now.getDay()]+" · "+MON[now.getMonth()]+" "+now.getDate()+", "+now.getFullYear()+" · No. "+no;
-document.getElementById("pzl").textContent="No. "+no;
-function load(k){try{var v=localStorage.getItem("dnsc-daily-line-"+k);return v?JSON.parse(v):null}catch(e){return null}}
-function save(k,v){try{localStorage.setItem("dnsc-daily-line-"+k,JSON.stringify(v))}catch(e){}}
-
-/* ---------- model ---------- */
-var G=P.g,S=slotsOf(G),cells=[],entries=[],num={},n=1;
-for(var r=0;r<5;r++)for(var c=0;c<5;c++){
-  if(G[r][c]==="#")continue;
-  var sa=(c===0||G[r][c-1]==="#")&&c<4&&G[r][c+1]!=="#",sd=(r===0||G[r-1][c]==="#")&&r<4&&G[r+1][c]!=="#";
-  if(sa||sd)num[r+","+c]=n++;
-}
-S.A.forEach(function(cs,j){entries.push({dir:"A",cells:cs,ans:P.a[j][0],clue:P.a[j][1],n:num[cs[0].join(",")]})});
-S.D.forEach(function(cs,j){entries.push({dir:"D",cells:cs,ans:P.d[j][0],clue:P.d[j][1],n:num[cs[0].join(",")]})});
-entries.sort(function(x,y){return x.dir===y.dir?x.n-y.n:(x.dir==="A"?-1:1)});
-var st=load("state");
-if(!st||st.day!==dayIdx)st={day:dayIdx,f:{},t:0,done:false,help:false,started:false};
-var sel={r:0,c:0,dir:"A"},tStart=0,tick=null;
-
-/* ---------- build DOM ---------- */
-var gridEl=document.getElementById("grid"),btn={};
-for(r=0;r<5;r++)for(c=0;c<5;c++){
-  var b=document.createElement("button");b.type="button";b.className="cell";
-  if(G[r][c]==="#"){b.className+=" blk";b.tabIndex=-1;b.setAttribute("aria-hidden","true");b.disabled=true}
-  else{
-    if(num[r+","+c]){var s=document.createElement("span");s.className="n";s.textContent=num[r+","+c];b.appendChild(s)}
-    var l=document.createElement("span");l.className="l";b.appendChild(l);
-    (function(rr,cc){b.addEventListener("click",function(){
-      if(sel.r===rr&&sel.c===cc)toggleDir();else{sel.r=rr;sel.c=cc;if(!entryAt(rr,cc,sel.dir))toggleDir(true)}
-      paint(true);
-    })})(r,c);
-  }
-  btn[r+","+c]=b;gridEl.appendChild(b);
-}
-function entryAt(r,c,dir){for(var i=0;i<entries.length;i++){var e=entries[i];if(e.dir===dir&&e.cells.some(function(x){return x[0]===r&&x[1]===c}))return e}return null}
-function toggleDir(force){var d=sel.dir==="A"?"D":"A";if(entryAt(sel.r,sel.c,d)||force)sel.dir=d}
-function cur(){return entryAt(sel.r,sel.c,sel.dir)||entryAt(sel.r,sel.c,sel.dir==="A"?"D":"A")}
-
-["across","down"].forEach(function(id){
-  var ol=document.getElementById(id);
-  entries.filter(function(e){return e.dir===(id==="across"?"A":"D")}).forEach(function(e){
-    var li=document.createElement("li"),b=document.createElement("button");b.type="button";b.className="cl";
-    b.innerHTML="<b>"+e.n+"</b><span></span>";b.lastChild.textContent=e.clue;
-    b.setAttribute("aria-label",e.n+" "+(e.dir==="A"?"across":"down")+". "+e.clue+". "+e.ans.length+" letters");
-    b.addEventListener("click",function(){go(e,true)});
-    e.btn=b;li.appendChild(b);ol.appendChild(li);
-  });
-});
-
-/* on-screen keyboard for touch */
-var touch=false;try{touch=window.matchMedia("(pointer: coarse)").matches||("ontouchstart" in window)}catch(e){}
-if(touch)document.body.classList.add("touch");
-var kb=document.getElementById("kb");
-["QWERTYUIOP","ASDFGHJKL","ZXCVBNM<"].forEach(function(row){
-  var d=document.createElement("div");d.className="kr";
-  row.split("").forEach(function(ch){
-    var k=document.createElement("button");k.type="button";k.className="key"+(ch==="<"?" bk":"");
-    k.textContent=ch==="<"?"⌫":ch;k.setAttribute("aria-label",ch==="<"?"Backspace":ch);
-    k.addEventListener("click",function(){if(ch==="<")back();else typeL(ch)});
-    d.appendChild(k);
-  });kb.appendChild(d);
-});
-
-/* ---------- painting ---------- */
-var lastLive="";
-function paint(focus){
-  var e=cur();if(e)sel.dir=e.dir;
-  for(var k in btn){
-    var b=btn[k];if(b.disabled)continue;
-    var rc=k.split(","),ch=st.f[k]||"",lab=b.querySelector(".l");
-    if(lab.textContent!==ch)lab.textContent=ch;
-    b.classList.toggle("sel",+rc[0]===sel.r&&+rc[1]===sel.c);
-    b.classList.toggle("word",!!e&&e.cells.some(function(x){return x[0]==rc[0]&&x[1]==rc[1]}));
-    var m=(st.m||{})[k];b.classList.toggle("ok",m==="ok");b.classList.toggle("bad",m==="bad");b.classList.toggle("rev",m==="rev");
-    b.setAttribute("aria-label","Row "+(+rc[0]+1)+", column "+(+rc[1]+1)+", "+(ch?"letter "+ch:"empty"));
-  }
-  entries.forEach(function(x){
-    x.btn.classList.toggle("on",x===e);
-    x.btn.classList.toggle("fill",x.cells.every(function(rc){return st.f[rc.join(",")]}));
-  });
-  if(e){
-    document.getElementById("nowTag").textContent=e.n+(e.dir==="A"?" Across":" Down");
-    document.getElementById("nowTx").textContent=e.clue;
-    var say=e.n+(e.dir==="A"?" across. ":" down. ")+e.clue+". "+e.ans.length+" letters.";
-    if(say!==lastLive){document.getElementById("live").textContent=say;lastLive=say}
-  }
-  if(focus&&!touch)btn[sel.r+","+sel.c].focus({preventScroll:true});
-  else if(focus&&touch&&document.activeElement&&document.activeElement.classList.contains("cell"))document.activeElement.blur();
-}
-
-/* ---------- moves ---------- */
-function go(e,focus){var first=e.cells.find(function(rc){return !st.f[rc.join(",")]})||e.cells[0];sel={r:first[0],c:first[1],dir:e.dir};paint(focus)}
-function nextClue(step){var e=cur(),i=entries.indexOf(e),L=entries.length;
-  for(var k=1;k<=L;k++){var x=entries[(i+step*k+L*k)%L];if(st.done||x.cells.some(function(rc){return !st.f[rc.join(",")]})){go(x,true);return}}
-  go(entries[(i+step+L)%L],true);
-}
-function move(dr,dc){
-  var d=dr?"D":"A";if(sel.dir!==d&&entryAt(sel.r,sel.c,d)){sel.dir=d;paint(true);return}
-  var r=sel.r,c=sel.c;
-  for(var k=0;k<5;k++){r+=dr;c+=dc;if(r<0||r>4||c<0||c>4)return;if(G[r][c]!=="#"){sel.r=r;sel.c=c;if(!entryAt(r,c,sel.dir))toggleDir(true);paint(true);return}}
-}
-function startClock(){if(st.done||tick)return;st.started=true;tStart=Date.now()-st.t*1000;tick=setInterval(function(){st.t=Math.floor((Date.now()-tStart)/1000);showTime();save("state",st)},500)}
-function stopClock(){if(tick){clearInterval(tick);tick=null}}
-function fmt(s){return Math.floor(s/60)+":"+("0"+(s%60)).slice(-2)}
-function showTime(){document.getElementById("timer").textContent=fmt(st.t)}
-function typeL(ch){
-  if(st.done)return;startClock();
-  var k=sel.r+","+sel.c;if(st.m&&st.m[k]==="rev")return advance();
-  st.f[k]=ch;if(st.m&&st.m[k]&&st.m[k]!=="rev")delete st.m[k];
-  var lab=btn[k].querySelector(".l");lab.classList.remove("set");void lab.offsetWidth;lab.classList.add("set");
-  advance();save("state",st);verify();
-}
-function advance(){
-  var e=cur(),i=e.cells.findIndex(function(rc){return rc[0]===sel.r&&rc[1]===sel.c});
-  for(var k=i+1;k<e.cells.length;k++){if(!st.f[e.cells[k].join(",")]){sel.r=e.cells[k][0];sel.c=e.cells[k][1];return paint(true)}}
-  if(e.cells.every(function(rc){return st.f[rc.join(",")]})){if(i<e.cells.length-1){sel.r=e.cells[i+1][0];sel.c=e.cells[i+1][1];return paint(true)}return nextClue(1)}
-  for(k=0;k<i;k++){if(!st.f[e.cells[k].join(",")]){sel.r=e.cells[k][0];sel.c=e.cells[k][1];return paint(true)}}
-  paint(true);
-}
-function back(){
-  if(st.done)return;var k=sel.r+","+sel.c;
-  if(st.f[k]&&!(st.m&&st.m[k]==="rev")){delete st.f[k];if(st.m)delete st.m[k]}
-  else{var e=cur(),i=e.cells.findIndex(function(rc){return rc[0]===sel.r&&rc[1]===sel.c});if(i>0){sel.r=e.cells[i-1][0];sel.c=e.cells[i-1][1];k=sel.r+","+sel.c;if(!(st.m&&st.m[k]==="rev")){delete st.f[k];if(st.m)delete st.m[k]}}}
-  save("state",st);paint(true);
-}
-function sol(k){var rc=k.split(",");return G[+rc[0]][+rc[1]]}
-function verify(){
-  var keys=Object.keys(btn).filter(function(k){return !btn[k].disabled}),full=keys.every(function(k){return st.f[k]});
-  if(!full){status("");return}
-  if(keys.every(function(k){return st.f[k]===sol(k)}))finish(true);
-  else status("Every square is full. A few need another look; Check will show which.");
-}
-function status(t){document.getElementById("status").textContent=t}
-
-document.getElementById("check").addEventListener("click",function(){
-  if(st.done)return;st.m=st.m||{};var any=false,wrong=0;
-  for(var k in st.f){if(st.m[k]==="rev")continue;any=true;if(st.f[k]===sol(k))st.m[k]="ok";else{st.m[k]="bad";wrong++}}
-  status(!any?"Nothing to check yet.":wrong?wrong+(wrong>1?" squares need":" square needs")+" another look.":"So far, so good.");
-  save("state",st);paint(false);
-});
-document.getElementById("reveal").addEventListener("click",function(){
-  if(st.done)return;var e=cur();if(!e)return;st.m=st.m||{};st.help=true;startClock();
-  e.cells.forEach(function(rc){var k=rc.join(",");if(st.f[k]!==sol(k)){st.f[k]=sol(k);st.m[k]="rev"}});
-  save("state",st);paint(true);verify();
-});
-
-document.addEventListener("keydown",function(ev){
-  if(ev.metaKey||ev.ctrlKey||ev.altKey)return;
-  var t=ev.target,k=ev.key;
-  if(t&&t.closest&&(t.closest(".site-nav")||t.closest(".site-foot")))return;
-  var inGrid=!!(t&&t.classList&&t.classList.contains("cell")),free=inGrid||t===document||t===document.body||t===document.documentElement;
-  if(/^[a-z]$/i.test(k)){ev.preventDefault();typeL(k.toUpperCase())}
-  else if(k==="Backspace"||k==="Delete"){if(free||(t.classList&&t.classList.contains("cl"))){ev.preventDefault();back()}}
-  else if(!free)return;
-  else if(k==="ArrowLeft"){ev.preventDefault();move(0,-1)}
-  else if(k==="ArrowRight"){ev.preventDefault();move(0,1)}
-  else if(k==="ArrowUp"){ev.preventDefault();move(-1,0)}
-  else if(k==="ArrowDown"){ev.preventDefault();move(1,0)}
-  else if((k==="Tab"||k==="Enter")&&inGrid){ev.preventDefault();nextClue(ev.shiftKey?-1:1)}
-  else if(k===" "&&inGrid){ev.preventDefault();toggleDir();paint(true)}
-});
-document.addEventListener("visibilitychange",function(){if(document.hidden)stopClock();else if(st.started&&!st.done)startClock()});
-
-/* ---------- finish ---------- */
-function finish(fresh){
-  stopClock();st.done=true;
-  var stats=load("stats")||{streak:0,last:null,best:null,solved:0};
-  if(fresh&&stats.last!==dayIdx){
-    stats.streak=(stats.last===dayIdx-1)?stats.streak+1:1;stats.last=dayIdx;stats.solved++;
-    if(!st.help&&(stats.best===null||st.t<stats.best))stats.best=st.t;
-    save("stats",stats);
-  }
-  save("state",st);
-  st.m=st.m||{};for(var k in btn){if(!btn[k].disabled&&st.m[k]!=="rev")st.m[k]="ok"}
-  paint(false);
-  kb.style.display="none";document.getElementById("check").disabled=true;document.getElementById("reveal").disabled=true;
-  status("Solved in "+fmt(st.t)+(st.help?", with a little help.":"."));
-  document.getElementById("doneK").textContent="Solved · "+fmt(st.t)+(st.help?" · with help":"");
-  document.getElementById("doneH").textContent="Today's word: "+P.w.charAt(0)+P.w.slice(1).toLowerCase()+".";
-  document.getElementById("doneP").textContent=P.n;
-  document.getElementById("stats").innerHTML="<span>Streak <b>"+stats.streak+"</b></span><span>Best <b>"+(stats.best===null?"--":fmt(stats.best))+"</b></span><span>Solved <b>"+stats.solved+"</b></span>";
-  var d=document.getElementById("done");d.classList.add("show");
-  if(fresh&&d.scrollIntoView)setTimeout(function(){d.scrollIntoView({behavior:"smooth",block:"nearest"})},250);
-}
-document.getElementById("share").addEventListener("click",function(){
-  var txt="The Daily Line No. "+no+" · "+fmt(st.t)+(st.help?" · with help":"")+"\nhttps://tools.dustinnimmo.com/well/daily-line/",ok=document.getElementById("copied");
-  function fallback(){try{var ta=document.createElement("textarea");ta.value=txt;ta.style.position="fixed";ta.style.opacity="0";document.body.appendChild(ta);ta.select();var r=document.execCommand("copy");document.body.removeChild(ta);ok.textContent=r?"Copied.":"Copy did not work here."}catch(e){ok.textContent="Copy did not work here."}}
-  if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(txt).then(function(){ok.textContent="Copied."},fallback);else fallback();
-});
-
-/* ---------- start ---------- */
-showTime();
-go(entries[0],false);
-if(st.done)finish(false);else if(st.started&&st.t>0){/* resume paused; clock restarts on next letter */}
-})();
+Crossword.mount({bank:BANK,storagePrefix:"dnsc-daily-line-",title:"The Daily Line",shareUrl:"https://tools.dustinnimmo.com/well/daily-line/",puzzlePath:null,startDate:[2026,9,2]});
 </script>
+<script src="../../assets/site.js" defer></script>
 </body>
 </html>
