@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The River · The Well · DNSC</title>
+<meta name="description" content="Write what is heavy onto a leaf. The water will carry it. Nothing is stored or sent.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css">
+<style>
+  :root{--paper:#F3EFE7;--paper2:#E9E3D7;--rule:#CFC6B8;--ink:#2C211A;--ink2:#4A3A2F;--ink3:#7A6A5D;--ink4:#A69686;--walnut:#623E2A;--ochre:#B4862E;--gold:#D9B25A;--sky:#3E6A9E;--dusk:#1B1916}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--dusk);color:var(--paper)}
+  body{font-family:Newsreader,Georgia,serif;font-size:18px;line-height:1.5;-webkit-font-smoothing:antialiased}
+  .site-nav{background:rgba(27,25,22,.88);border-bottom-color:#2E2925}
+  .site-nav .brand{color:var(--paper)} .site-nav .links a{color:var(--ink4)} .site-nav .links a:hover,.site-nav .links a[aria-current]{color:var(--paper)}
+  .site-nav .mark:before{border-color:var(--paper)}
+  body .site-nav .cta{background:var(--paper);color:var(--dusk)} body .site-nav .cta:hover{background:var(--gold);color:var(--dusk)}
+  .site-nav,.site-foot,.wrap{position:relative;z-index:1}
+  .wrap{max-width:820px;margin:0 auto;padding:28px 16px 40px}
+  .crumb{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink4);text-decoration:none;letter-spacing:.04em}
+  .crumb:hover{color:var(--paper)}
+  .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin:26px 0 10px}
+  h1{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:clamp(34px,7vw,46px);line-height:1.05;margin:0 0 10px;letter-spacing:-.01em}
+  h1 em{font-style:italic;font-weight:400;color:var(--gold)}
+  .lede{color:#CFC6B8;margin:0 0 24px;max-width:560px}
+  .river{position:relative;height:clamp(240px,42vh,380px);border-radius:16px;overflow:hidden;border:1px solid #2E2925;background:linear-gradient(180deg,#1F2530 0%,#1B2028 55%,#171B21 100%)}
+  .river canvas{position:absolute;inset:0;width:100%;height:100%}
+  .bank{position:absolute;left:0;right:0;height:22px;pointer-events:none}
+  .bank.top{top:0;background:linear-gradient(180deg,rgba(27,25,22,.9),rgba(27,25,22,0))}
+  .bank.bot{bottom:0;background:linear-gradient(0deg,rgba(27,25,22,.9),rgba(27,25,22,0))}
+  .say{display:grid;gap:10px;margin:22px 0 8px}
+  label.l{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink4)}
+  textarea{width:100%;min-height:92px;resize:vertical;background:rgba(243,239,231,.06);border:1px solid #3A342E;border-radius:12px;color:var(--paper);font-family:Newsreader,Georgia,serif;font-size:19px;line-height:1.45;padding:14px 16px}
+  textarea::placeholder{color:#8C7E70;font-style:italic}
+  .row{display:flex;flex-wrap:wrap;align-items:center;gap:14px;justify-content:space-between}
+  .count{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink4)}
+  .btn{font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:.04em;border:0;border-radius:999px;padding:12px 20px;cursor:pointer;background:var(--paper);color:var(--dusk)}
+  .btn:hover{background:var(--gold)}
+  .btn[disabled]{opacity:.45;cursor:default;background:var(--paper)}
+  .btn:focus-visible,textarea:focus-visible,.leave:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
+  .status{min-height:28px;font-family:Fraunces,Georgia,serif;font-style:italic;font-size:20px;color:var(--paper);margin:16px 0 0;transition:opacity .8s}
+  .note{color:var(--ink4);font-size:16px;margin:26px 0 0;border-top:1px solid #2E2925;padding-top:18px}
+  .leave{color:var(--gold);text-decoration:none;font-family:"IBM Plex Mono",monospace;font-size:13px}
+  .site-foot{margin-top:72px}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+</style>
+</head><body class="has-shell">
+<nav class="site-nav"><div class="in"><a class="brand" href="https://www.dustinnimmo.com"><span class="mark"><i></i><i></i><i></i><i></i><i></i></span>DNSC</a><div class="links"><a href="https://www.dustinnimmo.com/#what-i-do">What we do</a><a href="https://www.dustinnimmo.com/#three-ways">How we work</a><a class="keep" href="https://tools.dustinnimmo.com/">Teaching &amp; tools</a></div><a class="cta" href="https://www.dustinnimmo.com/#contact">Start a conversation</a></div></nav>
+<main class="wrap">
+  <a class="crumb" href="../">← The Well</a>
+  <p class="eyebrow">The Well · Letting go</p>
+  <h1>The <em>River</em></h1>
+  <p class="lede">Write what is heavy onto a leaf. The water will carry it.</p>
+
+  <div class="river" id="river"><canvas id="water" aria-hidden="true"></canvas><div class="bank top"></div><div class="bank bot"></div></div>
+
+  <form class="say" id="say" autocomplete="off">
+    <label class="l" for="heavy">What are you carrying?</label>
+    <textarea id="heavy" maxlength="160" placeholder="Something you're carrying right now"></textarea>
+    <div class="row"><span class="count" id="count">Press Enter to let it go</span><button class="btn" id="go" type="submit" disabled>Set it on the water</button></div>
+  </form>
+  <p class="status" id="status" aria-live="polite"></p>
+
+  <p class="note">Nothing you write here is saved or sent. It lives on the leaf until the water takes it, and then it's gone. Stay as long as you like, or <a class="leave" href="../">leave when you're ready →</a></p>
+</main>
+<footer class="site-foot"><div class="in"><span>DNSC · Dustin Nimmo Strategic Consulting</span><span class="nav"><a href="https://www.dustinnimmo.com">Home</a><a href="https://www.dustinnimmo.com/#three-ways">How we work</a><a href="https://tools.dustinnimmo.com/">Teaching &amp; tools</a><a href="https://tools.dustinnimmo.com/well/">The Well</a><a href="https://www.dustinnimmo.com/#contact">Contact</a></span><span class="credit">Free to use. Made by DNSC.</span></div></footer>
+<script>
+(function(){
+  const cv=document.getElementById('water'), ctx=cv.getContext('2d'), box=document.getElementById('river');
+  const ta=document.getElementById('heavy'), go=document.getElementById('go'), form=document.getElementById('say'), status=document.getElementById('status'), count=document.getElementById('count');
+  const reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let W=0,H=0,dpr=Math.min(window.devicePixelRatio||1,2), visible=true, t0=performance.now();
+  function size(){const r=box.getBoundingClientRect();W=r.width;H=r.height;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);}
+  size(); new ResizeObserver(size).observe(box);
+  new IntersectionObserver(e=>{visible=e[0].isIntersecting}).observe(box);
+  const rnd=(i,s)=>{const x=Math.sin(i*12.9898+s*78.233)*43758.5453;return x-Math.floor(x)};
+  // ambient leaves (no words), always drifting
+  const ambient=Array.from({length:5},(_,i)=>({x:rnd(i,1),y:.25+.5*rnd(i,2),s:.5+.4*rnd(i,3),sp:.012+.01*rnd(i,4),p:rnd(i,5)*6}));
+  const leaves=[]; // released leaves: {text,born,dur,y,parts}
+  function leafPath(x,y,s,rot){ctx.save();ctx.translate(x,y);ctx.rotate(rot);ctx.scale(s,s);ctx.beginPath();ctx.moveTo(-46,0);ctx.bezierCurveTo(-24,-26,22,-26,46,0);ctx.bezierCurveTo(22,26,-24,26,-46,0);ctx.closePath();}
+  function drawLeaf(x,y,s,rot,alpha,text,textAlpha){
+    leafPath(x,y,s,rot);
+    const g=ctx.createLinearGradient(-46,0,46,0); g.addColorStop(0,`rgba(180,134,46,${alpha})`); g.addColorStop(1,`rgba(217,178,90,${alpha})`);
+    ctx.fillStyle=g; ctx.shadowColor=`rgba(217,178,90,${alpha*.5})`; ctx.shadowBlur=14*s; ctx.fill(); ctx.shadowBlur=0;
+    ctx.strokeStyle=`rgba(98,62,42,${alpha*.7})`; ctx.lineWidth=1.2; ctx.beginPath(); ctx.moveTo(-40,0); ctx.lineTo(42,0); ctx.stroke();
+    if(text&&textAlpha>0.01){ctx.fillStyle=`rgba(44,33,26,${textAlpha})`;ctx.font='italic 11px Newsreader, Georgia, serif';ctx.textAlign='center';ctx.textBaseline='middle';const t=text.length>34?text.slice(0,32)+'…':text;ctx.fillText(t,0,-7);}
+    ctx.restore();
+  }
+  function water(t){
+    for(let k=0;k<7;k++){ctx.beginPath();for(let x=0;x<=W;x+=10){const y=H*(.12+k*.13)+Math.sin(x*.009+t*(.35+k*.05)+k*1.7)*(5+k)+Math.sin(x*.021-t*.4+k)*3;x?ctx.lineTo(x,y):ctx.moveTo(x,y);}ctx.strokeStyle=`rgba(143,180,224,${.07+.025*(k%3)})`;ctx.lineWidth=1.1;ctx.stroke();}
+    for(let i=0;i<26;i++){const x=((rnd(i,7)*W)+t*(14+rnd(i,8)*20))%(W+20)-10, y=H*(.1+.8*rnd(i,9))+Math.sin(t+i)*2;ctx.fillStyle=`rgba(243,239,231,${.12+.18*Math.abs(Math.sin(t*.8+i))})`;ctx.fillRect(x,y,2,1);}
+  }
+  function frame(now){
+    requestAnimationFrame(frame); if(!visible)return;
+    const t=(now-t0)/1000; ctx.clearRect(0,0,W,H); water(t);
+    ambient.forEach((a,i)=>{const x=((a.x+t*a.sp)%1.15-.07)*W, y=H*a.y+Math.sin(t*.7+a.p)*6; drawLeaf(x,y,a.s*.55,Math.sin(t*.5+a.p)*.4,.28,null,0);});
+    for(let i=leaves.length-1;i>=0;i--){const L=leaves[i];const age=(now-L.born)/1000;const k=age/L.dur;
+      if(reduce){const a=Math.max(0,1-age/4);drawLeaf(W*.5,H*.5,1,0,a,L.text,a);if(age>4){leaves.splice(i,1);done();}continue;}
+      if(k<1){const x=-50+(W+100)*k, y=L.y*H+Math.sin(k*9+L.y*7)*14, rot=Math.sin(age*.6)*.35+k*.6;const textA=Math.max(0,1-k*1.8), leafA=k<.72?1:Math.max(0,1-(k-.72)/.28);drawLeaf(x,y,1.05,rot,leafA,L.text,textA);
+        if(k>.72&&!L.burst){L.burst=true;L.parts=Array.from({length:22},(_,j)=>({x,y,vx:(rnd(j,11)-.3)*40,vy:(rnd(j,12)-.5)*24,life:1}));}
+      }
+      if(L.parts){L.parts.forEach(p=>{p.x+=p.vx/60;p.y+=p.vy/60;p.life-=1/90;if(p.life>0){ctx.fillStyle=`rgba(217,178,90,${p.life*.7})`;ctx.beginPath();ctx.arc(p.x,p.y,1.4,0,7);ctx.fill();}});}
+      if(k>=1.25){L.text=null;leaves.splice(i,1);done();}
+    }
+  }
+  requestAnimationFrame(frame);
+  function done(){ if(!leaves.length){status.textContent='Gone downstream. Stay a while, or leave when you’re ready.';} }
+  function update(){const n=ta.value.trim().length;go.disabled=!n;count.textContent=n?(160-ta.value.length)+' letters left':'Press Enter to let it go';}
+  ta.addEventListener('input',update);
+  ta.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();form.requestSubmit();}});
+  form.addEventListener('submit',e=>{e.preventDefault();const text=ta.value.trim();if(!text)return;
+    leaves.push({text,born:performance.now(),dur:16,y:.35+.3*Math.random()});
+    ta.value='';update();status.textContent='It’s on the water now.';ta.blur();
+  });
+  update();
+})();
+</script>
+</body>
+</html>
