@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Gauges</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* v0.5 · one instrument, dark only. Amber is the single accent; red only marks a redline. */
+:root{color-scheme:dark;
+  --ground:#0a0b0c;--panel:#111315;--panel-2:#16191c;--line:#23272b;--line-2:#31363b;
+  --ink:#f1ead8;--ink-2:#bdb7a7;--muted:#8d8a82;
+  --amber:#f2a93b;--amber-soft:rgba(242,169,59,.14);--red:#e0583f;
+  --bar:#6f747a;
+  --num:"Barlow Semi Condensed","Barlow",system-ui,sans-serif;
+  --body:"Barlow",system-ui,-apple-system,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+*{box-sizing:border-box}
+html{background:var(--ground)}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1100px;margin:0 auto;padding:28px 16px 64px}
+a{color:var(--amber)}
+button{font:inherit}
+code{font-family:var(--mono);font-size:12.5px;background:var(--panel-2);padding:1px 5px;border-radius:3px}
+p{margin:0;max-width:70ch}
+.hidden{display:none}
+
+/* header */
+.top{display:flex;align-items:flex-end;justify-content:space-between;gap:16px 24px;flex-wrap:wrap;margin-bottom:22px}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+h1{font-family:var(--num);font-weight:600;font-size:40px;line-height:1;margin:0;letter-spacing:.01em}
+.who{font-family:var(--mono);font-size:12.5px;color:var(--ink-2);margin-top:8px}
+.src{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-start;align-items:center;width:100%}
+.btn{background:var(--ink);color:var(--ground);border:0;border-radius:6px;padding:9px 14px;font-weight:600;font-size:14px;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line-2)}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible,.seg button:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.note{font-size:13px;color:var(--muted);width:100%}
+@media (max-width:640px){.src{justify-content:flex-start}.note{text-align:left}h1{font-size:34px}}
+
+/* ---------- the cluster ---------- */
+.cluster{position:relative;border-radius:28px;padding:26px 26px 18px;
+  background:radial-gradient(120% 90% at 50% 0%,#191c20 0%,#0d0f11 60%,#08090a 100%);
+  border:1px solid #1d2125;box-shadow:inset 0 1px 0 rgba(255,255,255,.05),inset 0 -30px 60px rgba(0,0,0,.45),0 20px 50px rgba(0,0,0,.45)}
+.dash{display:grid;grid-template-columns:1fr 1.75fr 1fr;grid-template-areas:"energy speedo water" "fuel speedo temp";gap:6px 18px;align-items:center}
+.pod{position:relative;text-align:center}
+.pod svg{display:block;width:100%;height:auto;overflow:visible}
+.pod.speedo{grid-area:speedo;max-width:470px;width:100%;justify-self:center}
+.pod.energy{grid-area:energy}.pod.water{grid-area:water}.pod.fuel{grid-area:fuel}.pod.temp{grid-area:temp}
+.pod .cap{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);margin-top:-2px}
+.pod .cap b{font-weight:500;color:var(--muted)}
+/* the odometer sits on the speedometer face, in the gap under the arc */
+.odo{position:absolute;left:50%;transform:translateX(-50%);bottom:5.5%;display:flex;flex-direction:column;align-items:center;gap:5px}
+.odo-digits{display:flex;gap:2px;padding:3px;background:#050606;border:1px solid #2a2e33;border-radius:4px;box-shadow:inset 0 2px 4px rgba(0,0,0,.8)}
+.wheel{width:.66em;height:1.2em;overflow:hidden;font-family:var(--num);font-weight:600;font-size:clamp(15px,2.4vw,21px);background:linear-gradient(#1b1d20,#26292d 50%,#1b1d20);border-radius:2px;color:var(--ink)}
+.wheel.lead{color:#4d4f52}
+.wheel.sep{width:.3em;background:none;color:#4d4f52;text-align:center}
+.strip{display:flex;flex-direction:column}
+.strip span{height:1.2em;line-height:1.2em;text-align:center}
+.odo-cap{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+/* trip computer strip */
+.trip{display:grid;grid-template-columns:repeat(4,1fr);margin-top:14px;border-top:1px solid var(--line);padding-top:14px}
+.trip>div{padding:0 14px;border-left:1px solid var(--line)}
+.trip>div:first-child{border-left:0;padding-left:4px}
+.trip .k{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.trip .v{font-family:var(--num);font-weight:600;font-size:26px;line-height:1.1;font-variant-numeric:tabular-nums}
+.trip .v small{font-size:14px;color:var(--ink-2);font-weight:500;margin-left:4px}
+.trip .f{font-size:12.5px;color:var(--muted)}
+@media (max-width:760px){
+  .cluster{padding:18px 12px 14px;border-radius:22px}
+  .dash{grid-template-columns:1fr 1fr;grid-template-areas:"speedo speedo" "energy water" "fuel temp";gap:4px 10px}
+  .trip{grid-template-columns:1fr 1fr;row-gap:12px}
+  .trip>div:nth-child(3){border-left:0;padding-left:4px}
+}
+
+/* ---------- sections ---------- */
+.sec{margin-top:44px}
+.sec-h{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:0 0 14px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.sec-h h2{font-family:var(--num);font-weight:600;font-size:22px;margin:0;letter-spacing:.01em}
+.sec-h span{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.grid{display:grid;gap:12px}
+.g2{grid-template-columns:1fr 1fr}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+@media (max-width:900px){.g3,.g4{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.label{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:2px 8px;border:1px solid var(--line-2);color:var(--ink-2);white-space:nowrap}
+.pill.est{border-color:rgba(242,169,59,.55);color:var(--amber)}
+.fine{font-size:13.5px;color:var(--muted)}
+/* readouts: one per gauge, value + plain foot + the math */
+.ro .val{font-family:var(--num);font-weight:600;font-size:34px;line-height:1.05;margin-top:8px;font-variant-numeric:tabular-nums}
+.ro .val small{font-size:16px;font-weight:500;color:var(--ink-2);margin-left:4px}
+.ro .foot{font-size:13px;color:var(--muted);margin-top:4px}
+.math{margin-top:8px;font-size:12.5px;color:var(--muted)}
+.math summary{cursor:pointer;color:var(--ink-2);list-style:none;font-family:var(--mono);font-size:12px}
+.math summary::-webkit-details-marker{display:none}
+.math summary::before{content:'+ ';color:var(--amber)}
+.math[open] summary::before{content:'- '}
+.math div{margin-top:6px;padding:9px 11px;background:var(--panel-2);border-radius:6px;font-family:var(--mono);font-size:11.5px;line-height:1.6;color:var(--ink-2);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.math b{color:var(--ink);font-weight:500}
+
+/* ---------- evident charts ---------- */
+.chart h3{font-family:var(--num);font-weight:600;font-size:21px;line-height:1.2;margin:0;max-width:44ch}
+.chart .sub{font-size:13.5px;color:var(--ink-2);margin-top:4px}
+.chart .plot{margin-top:14px;position:relative}
+.chart .plot svg{display:block;width:100%;overflow:visible}
+.chart .srcl{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:10px}
+.chart-top{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap}
+.seg{display:inline-flex;border:1px solid var(--line-2);border-radius:6px;overflow:hidden;flex-shrink:0}
+.seg button{background:transparent;border:0;color:var(--ink-2);padding:6px 11px;font-size:13px;font-family:var(--mono);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--ground)}
+.hb{display:grid;grid-template-columns:minmax(90px,auto) 1fr;gap:10px 12px;align-items:center;margin-top:14px}
+.hb .n{font-family:var(--mono);font-size:12.5px;color:var(--ink-2);white-space:nowrap}
+.hb .t{position:relative;height:22px;display:flex;align-items:center}
+.hb .t i{display:block;height:100%;background:var(--bar);border-radius:0 3px 3px 0;min-width:2px}
+.hb .t i.on{background:var(--amber)}
+.hb .t span{font-family:var(--mono);font-size:12.5px;color:var(--ink);margin-left:8px;white-space:nowrap}
+.hb .zero{border-left:1px solid var(--line-2)}
+
+/* ---------- lists, recipe, drop ---------- */
+.stat{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px}
+.stat:last-child{border:0}
+.stat b{font-family:var(--num);font-weight:600;font-size:16px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.place{display:grid;grid-template-columns:1fr auto;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
+.place b{font-weight:600}.place span{font-size:13px;color:var(--ink-2)}
+.place .km{font-family:var(--mono);font-size:11.5px;color:var(--muted);white-space:nowrap}
+.water p{font-size:14px;color:var(--ink-2);max-width:none;margin-top:10px}
+.water p b{color:var(--ink);font-weight:600}
+.recipe label{display:grid;grid-template-columns:1fr 112px;gap:12px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px}
+.recipe input{font-family:var(--mono);font-size:13px;padding:6px 8px;border:1px solid var(--line-2);border-radius:5px;background:var(--panel-2);color:var(--ink);width:100%}
+.recipe small{display:block;color:var(--muted);font-size:12.5px;margin-top:2px}
+.sources a{display:block;font-size:13.5px;padding:5px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink-2)}
+.sources a:hover{color:var(--amber)}
+.drop{border:1.5px dashed var(--line-2);border-radius:12px;padding:26px 20px;text-align:center;color:var(--ink-2);font-size:14.5px}
+.drop.on{border-color:var(--amber);background:var(--amber-soft);color:var(--ink)}
+.drop .btns{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+footer{margin-top:48px;padding-top:14px;border-top:1px solid var(--line);font-family:var(--mono);font-size:11.5px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+#tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--ground);font-size:12.5px;padding:7px 10px;border-radius:6px;z-index:10;max-width:260px;line-height:1.4}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <div>
+    <p class="kicker">Power needs gauges · v0.5</p>
+    <h1>AI Gauges</h1>
+    <div class="who" id="whoLbl"></div>
+  </div>
+  <div class="src">
+    <input type="file" id="dir" webkitdirectory multiple class="hidden">
+    <input type="file" id="logf" accept=".jsonl,.ndjson,.json,.txt" multiple class="hidden">
+    <button class="btn" id="pick">Open my Claude Code folder</button>
+    <button class="btn ghost" id="pickLog" title="One JSON line per turn; see USAGE-LOG-FORMAT.md">Open a usage log</button>
+    <button class="btn ghost" id="demo">Load the sample</button>
+    <div class="note" id="note">Pick <code>~/.claude/projects</code>. Files are read in your browser only; nothing leaves this page.</div>
+  </div>
+</header>
+
+<section class="cluster" aria-label="Instrument cluster">
+  <div class="dash">
+    <div class="pod energy"><div id="gEnergy"></div><div class="cap">Energy today</div></div>
+    <div class="pod speedo"><div id="gSpeed"></div>
+      <div class="odo"><div class="odo-digits" id="odoDigits" role="img"></div><div class="odo-cap" id="odoCap">output tokens</div></div>
+    </div>
+    <div class="pod water"><div id="gWater"></div><div class="cap">Water today</div></div>
+    <div class="pod fuel"><div id="gFuel"></div><div class="cap">Cache hit share</div></div>
+    <div class="pod temp"><div id="gTemp"></div><div class="cap">Carbon today</div></div>
+  </div>
+  <div class="trip" id="trip"></div>
+</section>
+
+<section class="sec">
+  <div class="sec-h"><h2>Reading the gauges</h2><span>every estimate shows its formula and inputs</span></div>
+  <div class="grid g4" id="readouts"></div>
+</section>
+
+<section class="sec">
+  <div class="sec-h"><h2>Today and this month</h2><span id="monthLbl"></span></div>
+  <div class="grid g2">
+    <div class="card chart" id="chHour">
+      <div class="chart-top"><div><h3 id="hourT"></h3><p class="sub" id="hourS"></p></div>
+        <div class="seg" role="group" aria-label="Unit" id="unitSeg"><button aria-pressed="true" data-u="tok">tokens</button><button aria-pressed="false" data-u="wh">Wh</button><button aria-pressed="false" data-u="usd">API $</button></div></div>
+      <div class="plot" id="hourPlot"></div><p class="srcl" id="hourSrc"></p>
+    </div>
+    <div class="card chart" id="chDay">
+      <h3 id="dayT"></h3><p class="sub" id="dayS"></p>
+      <div class="plot" id="dayPlot"></div><p class="srcl">Source: Claude Code session logs (~/.claude/projects), read in this browser</p>
+    </div>
+    <div class="card chart">
+      <h3 id="mixT"></h3><p class="sub" id="mixS"></p>
+      <div class="hb" id="mixPlot"></div><p class="srcl">Source: Claude Code session logs, the model field on each message</p>
+    </div>
+    <div class="card chart">
+      <h3 id="cloudT"></h3><p class="sub">Estimated energy today, Wh, cloud tokens vs this Mac</p>
+      <div class="hb" id="cloudPlot"></div>
+      <p class="fine" style="margin-top:14px">Every token Claude Code counts is cloud compute: the model runs in a data center, your Mac only sends and receives text. The API carries an <code>inference_geo</code> field for where it ran; in these logs it reads "not_available," so the places below are the public record, not a measurement.</p>
+      <p class="srcl">Estimate: token counts from the logs × the recipe card · local from the recipe card</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-h"><h2>The month's draw</h2><span>estimates · edit the recipe card below</span></div>
+  <div class="grid g4" id="monthRo"></div>
+</section>
+
+<section class="sec">
+  <div class="sec-h"><h2>What this water means</h2><span>the record</span></div>
+  <div class="card water" id="waterNote">
+  <p><b>Which water.</b> Two different waters are on the meter. The first is used at the data center to cool the racks; the second is used at the power plant to make the electricity. The power plant share is usually the bigger one, and it is the one most public per-query numbers leave out.</p>
+  <p><b>Consumed, not withdrawn.</b> The meter counts water that evaporates and does not return to the basin. Cooling towers consume 50 to 80% of what they withdraw; once-through cooling returns almost all of it, warmer; closed-loop chip cooling consumes close to none but shifts load to electricity. Withdrawal figures would be larger, and most of that water goes back.</p>
+  <p><b>What the companies publish.</b> Google: a median Gemini text prompt uses 0.26 mL of water at the data center, about five drops, power plant water excluded. Microsoft: fleet cooling intensity 0.27 liters per kWh in 2025, and it reports replenishing more water than it withdraws. Sam Altman: about one fifteenth of a teaspoon per ChatGPT query; his later "38,000 queries per almond" line was fact-checked as overstated. Anthropic has published no water figure, so this page estimates from the others.</p>
+  <p><b>Where it happens matters.</b> A liter evaporated in a water-stressed basin competes with farms and taps; the same liter in a wet region often does not. Roughly two in five US data centers sit in high water-stress areas. The places on this page are on the public record; the API does not say where a given request ran.</p>
+  <p><b>How to read your number.</b> A single message is a few drops. A month of heavy work is a few showers. Both are true, and the gauge shows both so neither side gets to win the argument by picking a unit.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-h"><h2>Where the heat comes from</h2><span>the supply chain behind the gauges</span></div>
+  <div class="grid g2">
+    <section class="card" id="places"></section>
+    <section class="card" id="localCard"></section>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-h"><h2>The recipe card</h2><span>every estimate on this page comes from these numbers</span></div>
+  <div class="grid g2">
+    <section class="card recipe" id="recipe"></section>
+    <section class="card sources" id="sources"></section>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-h"><h2>Bring your own kitchen</h2><span>share this page with anyone</span></div>
+  <div class="drop" id="drop">Drag your <code>~/.claude/projects</code> folder here, or a usage log in the <a href="https://github.com/hellogumbo" title="USAGE-LOG-FORMAT.md, one JSON line per turn">open per-turn format</a> (any agent, any vendor, local models too). Everything is read in your browser and drawn here. Nothing is uploaded.
+    <div class="btns"><button class="btn" id="pick2">Open my Claude Code folder</button><button class="btn ghost" id="pickLog2">Open a usage log</button></div>
+  </div>
+</section>
+<footer><span>Gumbo · Mise · v0.5 · measured means read from your logs; estimates carry a band and a source</span><span id="genLbl"></span></footer>
+</div>
+<div id="tip" hidden></div>
+<script>
+const SAMPLE = {"generated":"2026-09-16T08:19:26.249382-04:00","records":12762,"today":"2026-09-16","days":{"2026-08-24":{"msgs":276,"input":552,"output":221256,"cache_read":66556180,"cache_write":2188693,"thinking":103271,"sessions":2,"first":"07:53","last":"19:30"},"2026-08-25":{"msgs":381,"input":762,"output":645157,"cache_read":166741025,"cache_write":5072369,"thinking":257856,"sessions":2,"first":"06:50","last":"23:30"},"2026-08-26":{"msgs":292,"input":577,"output":289158,"cache_read":80137250,"cache_write":5890603,"thinking":121151,"sessions":3,"first":"06:49","last":"18:18"},"2026-08-27":{"msgs":267,"input":532,"output":196444,"cache_read":115890682,"cache_write":4341270,"thinking":80303,"sessions":2,"first":"06:49","last":"23:04"},"2026-08-28":{"msgs":207,"input":414,"output":291017,"cache_read":142859522,"cache_write":6680857,"thinking":96696,"sessions":3,"first":"08:08","last":"17:47"},"2026-08-29":{"msgs":423,"input":842,"output":401734,"cache_read":208281362,"cache_write":5880922,"thinking":174214,"sessions":2,"first":"06:49","last":"23:59"},"2026-08-30":{"msgs":240,"input":480,"output":147084,"cache_read":107507166,"cache_write":4221474,"thinking":77727,"sessions":2,"first":"00:02","last":"15:52"},"2026-08-31":{"msgs":423,"input":846,"output":602308,"cache_read":171261311,"cache_write":9678475,"thinking":257246,"sessions":3,"first":"06:49","last":"23:23"},"2026-09-10":{"msgs":1182,"input":28116,"output":2126506,"cache_read":493882465,"cache_write":22277612,"thinking":718985,"sessions":7,"first":"07:05","last":"22:29"},"2026-09-11":{"msgs":1271,"input":17666,"output":2239864,"cache_read":625935663,"cache_write":19117263,"thinking":1031337,"sessions":3,"first":"08:09","last":"22:48"},"2026-09-12":{"msgs":155,"input":916,"output":267967,"cache_read":114681994,"cache_write":9327547,"thinking":147047,"sessions":2,"first":"09:01","last":"21:48"},"2026-09-13":{"msgs":302,"input":1504,"output":403388,"cache_read":102270890,"cache_write":17429679,"thinking":151934,"sessions":2,"first":"10:00","last":"23:34"},"2026-09-14":{"msgs":1016,"input":12044,"output":2316337,"cache_read":592436188,"cache_write":19559708,"thinking":953622,"sessions":3,"first":"08:10","last":"21:11"},"2026-09-15":{"msgs":1098,"input":20744,"output":1486439,"cache_read":544809689,"cache_write":21182114,"thinking":519376,"sessions":5,"first":"08:09","last":"23:07"},"2026-08-17":{"msgs":354,"input":660,"output":427214,"cache_read":171051443,"cache_write":12301955,"thinking":194416,"sessions":3,"first":"06:49","last":"23:39"},"2026-08-18":{"msgs":291,"input":544,"output":458916,"cache_read":102533439,"cache_write":4641456,"thinking":146537,"sessions":2,"first":"06:49","last":"19:51"},"2026-08-19":{"msgs":301,"input":600,"output":334770,"cache_read":86640227,"cache_write":8272938,"thinking":192883,"sessions":3,"first":"06:49","last":"20:35"},"2026-09-09":{"msgs":396,"input":10795,"output":549060,"cache_read":158712411,"cache_write":13871266,"thinking":160486,"sessions":2,"first":"08:09","last":"22:59"},"2026-08-20":{"msgs":111,"input":222,"output":101891,"cache_read":14943862,"cache_write":884716,"thinking":53160,"sessions":2,"first":"06:49","last":"18:43"},"2026-08-21":{"msgs":565,"input":1128,"output":649927,"cache_read":358116781,"cache_write":3838397,"thinking":303671,"sessions":2,"first":"07:04","last":"19:05"},"2026-08-22":{"msgs":248,"input":496,"output":153555,"cache_read":73293076,"cache_write":5416068,"thinking":69326,"sessions":2,"first":"06:49","last":"20:54"},"2026-08-23":{"msgs":35,"input":70,"output":21890,"cache_read":8269918,"cache_write":702958,"thinking":9139,"sessions":1,"first":"12:46","last":"12:54"},"2026-09-02":{"msgs":457,"input":32389,"output":748652,"cache_read":94714241,"cache_write":6871233,"thinking":228753,"sessions":5,"first":"06:49","last":"22:34"},"2026-09-01":{"msgs":878,"input":99982,"output":2025132,"cache_read":455072841,"cache_write":14587531,"thinking":474292,"sessions":4,"first":"06:49","last":"23:25"},"2026-09-05":{"msgs":205,"input":76355,"output":264837,"cache_read":53927138,"cache_write":3822628,"thinking":82948,"sessions":2,"first":"09:21","last":"14:23"},"2026-09-07":{"msgs":35,"input":1020,"output":27017,"cache_read":6756311,"cache_write":4303122,"thinking":9006,"sessions":1,"first":"08:07","last":"21:51"},"2026-09-08":{"msgs":199,"input":13214,"output":287506,"cache_read":90683520,"cache_write":5509969,"thinking":76082,"sessions":1,"first":"08:12","last":"17:44"},"2026-09-03":{"msgs":344,"input":688,"output":442382,"cache_read":145401684,"cache_write":8900348,"thinking":220030,"sessions":2,"first":"06:49","last":"23:49"},"2026-09-04":{"msgs":735,"input":1470,"output":628933,"cache_read":359937099,"cache_write":4877792,"thinking":304908,"sessions":2,"first":"00:09","last":"17:44"},"2026-09-16":{"msgs":73,"input":1764,"output":72013,"cache_read":29549750,"cache_write":3129216,"thinking":21918,"sessions":2,"first":"06:49","last":"08:19"},"2026-08-16":{"msgs":2,"input":4,"output":194,"cache_read":61258,"cache_write":77974,"thinking":130,"sessions":1,"first":"09:24","last":"09:24"}},"hours_today":{"7":{"msgs":33,"input":826,"output":48712,"cache_read":24956805,"cache_write":2965985,"thinking":17338},"8":{"msgs":37,"input":932,"output":22468,"cache_read":4424168,"cache_write":66364,"thinking":4580},"6":{"msgs":3,"input":6,"output":833,"cache_read":168777,"cache_write":96867,"thinking":0}},"models":{"claude-fable-5":{"input":8857,"output":5094827,"cache_read":2022400406,"cache_write":79552508},"<synthetic>":{"input":0,"output":0,"cache_read":0,"cache_write":0},"claude-opus-4-8":{"input":3844,"output":3660254,"cache_read":987206358,"cache_write":34938580},"claude-fable-5-1":{"input":311889,"output":8751752,"cache_read":2170715547,"cache_write":122548589},"claude-sonnet-5":{"input":2342,"output":1157338,"cache_read":535202603,"cache_write":15051038},"claude-opus-5":{"input":464,"output":164377,"cache_read":27391472,"cache_write":2767438}},"today_models":{"claude-fable-5-1":{"input":1758,"output":71180,"cache_read":29380973,"cache_write":3032349},"claude-opus-5":{"input":6,"output":833,"cache_read":168777,"cache_write":96867}},"models_output":{"claude-fable-5":5094827,"<synthetic>":0,"claude-opus-4-8":3660254,"claude-fable-5-1":8751752,"claude-sonnet-5":1157338,"claude-opus-5":164377},"projects_output":{"~-Claude-mise":18664171,"~-Claude-Gumbo":164377}};
+/* ---------- the recipe card: every estimate on this page comes from these numbers ---------- */
+const RECIPE = {
+  whOut:   {v:0.001,   l:'Wh per output token, cloud', s:'band 0.1 to 2 mWh. Epoch AI 2025, Couch 2026. Anthropic publishes no figure'},
+  whIn:    {v:0.0002,  l:'Wh per fresh input token, cloud', s:'prefill runs about a fifth of decode'},
+  whCacheW:{v:0.00025, l:'Wh per cache-write token', s:'1.25x input, mirrors pricing'},
+  whCache: {v:0.00004, l:'Wh per cache-read token', s:'a tenth of input, and a ceiling: a hit skips prefill'},
+  waterOn: {v:1.0,     l:'mL water consumed per Wh, cooling at the data center', s:'evaporated in cooling towers, gone from the basin. Fleet figures: Microsoft 0.27 (2025), Google 1.09 (2024), industry about 1.8. Closed-loop chip cooling is near 0'},
+  waterOff:{v:3.1,     l:'mL water consumed per Wh, at the power plant', s:'evaporated making the electricity; US grid low end, range about 2.2 to 7.6 by fuel mix. Usually the bigger share'},
+  gCO2:    {v:0.373,   l:'g CO2e per Wh, US grid', s:'EPA eGRID. Ohio and Indiana grid: 0.416'},
+  localW:  {v:45,      l:'W this Mac draws running a local model', s:'M4 Max 30 to 50 W measured; a mini peaks near 65'},
+  localMin:{v:0,       l:'minutes of local model use today', s:'not logged yet on this Mac; type it'},
+};
+const PRICES = { /* USD per million tokens, Anthropic list; cache write priced at the 1-hour rate (2x input) because Claude Code sessions use the 1-hour cache; cache read = 10% of input, 2.5% on Fable */
+  'claude-fable-5-1':{i:10,o:50,cw:20,cr:0.25}, 'claude-fable-5':{i:10,o:50,cw:20,cr:0.25},
+  'claude-opus-5':{i:5,o:25,cw:10,cr:0.5}, 'claude-opus-4-8':{i:5,o:25,cw:10,cr:0.5},
+  'claude-sonnet-5':{i:2,o:10,cw:4,cr:0.2}, 'claude-haiku-4-5':{i:1,o:5,cw:2,cr:0.1} };
+const PLACES = [
+  {n:'Project Rainier · New Carlisle, Indiana', d:'about 500,000 AWS Trainium2 chips live since Oct 2025, inference by day and training by night; 2.25 GW planned at full build', km:330},
+  {n:'Rainier sites · Pennsylvania and Mississippi', d:'the rest of the roughly one-gigawatt cluster; towns not public', km:null},
+  {n:'AWS us-east-2 · Columbus, Ohio', d:'1.5 GW of data-center load in central Ohio by July 2025; no Anthropic site named here', km:170},
+  {n:'AWS us-east-1 · Northern Virginia', d:'the default API region', km:650},
+  {n:'Google Cloud TPUs', d:'up to a gigawatt in 2026, 3.5 GW from 2027, "mostly in the US"; sites not public', km:null},
+  {n:'Microsoft Azure', d:'up to a gigawatt of Nvidia Grace Blackwell and Vera Rubin; regions not public', km:null},
+  {n:'Fluidstack · Texas and New York', d:'Anthropic\'s own sites, gigawatts, coming online through 2026', km:null},
+  {n:'SpaceX Colossus 1 · Memphis', d:'300 MW and 220,000 GPUs serving Claude Pro and Max', km:700},
+];
+const SOURCES = [
+  ['Google, "Measuring the environmental impact of AI inference," Aug 2025','https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference'],
+  ['Epoch AI, "How much energy does ChatGPT use?" Feb 2025','https://epoch.ai/gradient-updates/how-much-energy-does-chatgpt-use'],
+  ['Jegham et al., "How Hungry is AI?" May 2025','https://arxiv.org/abs/2505.09598'],
+  ['Couch, "Electricity use of AI coding agents," Jan 2026','https://simonpcouch.com/blog/2026-01-20-cc-impact/'],
+  ['EPA eGRID emission factors','https://www.epa.gov/egrid/summary-data'],
+  ['LBNL, US Data Center Energy Usage Report, Dec 2024','https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report_1.pdf'],
+  ['Semafor on Project Rainier, Oct 2025','https://www.semafor.com/article/10/29/2025/aws-massive-multi-state-ai-data-center-is-powering-anthropics-claude'],
+  ['Anthropic pricing, checked Sep 15 2026','https://platform.claude.com/docs/en/about-claude/pricing'],
+  ['Microsoft, "Inside Microsoft\'s two-decade push to cut water intensity," Jun 2026 (fleet WUE 0.27 L/kWh)','https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/'],
+  ['EESI, "Data Centers and Water Consumption" (industry WUE about 1.8 L/kWh)','https://www.eesi.org/articles/view/data-centers-and-water-consumption'],
+  ['USGS, thermoelectric power water use','https://www.usgs.gov/mission-areas/water-resources/science/thermoelectric-power-water-use'],
+  ['Sam Altman, "The Gentle Singularity," 2025 (per-query water claim)','https://blog.samaltman.com/the-gentle-singularity'],
+  ['Poynter fact-check of the almond comparison, Sep 2026','https://www.poynter.org/fact-checking/2026/sam-altman-chatgpt-water-use-almonds/'],
+  ['Ceres, "Drained by Data," 2024 (data centers in water-stressed areas)','https://www.ceres.org/resources/reports/drained-by-data-the-cumulative-impact-of-data-centers-on-regional-water-stress'],
+  ['Mistral AI lifecycle study via DeepLearning.AI, 2025 (about 45 mL per 400-token prompt, lifecycle)','https://www.deeplearning.ai/the-batch/french-ai-startup-discloses-full-lifecycle-consumption-and-emissions-for-mistral-large-2'],
+  ['llama.cpp Apple Silicon benchmarks','https://github.com/ggml-org/llama.cpp/discussions/4167'],
+];
+const HOME = 'Cincinnati';
+/* ---------- helpers ---------- */
+const $=s=>document.querySelector(s);
+const fmt=n=>n>=1e9?(n/1e9).toFixed(2)+'B':n>=1e6?(n/1e6).toFixed(2)+'M':n>=1e3?(n/1e3).toFixed(1)+'K':String(Math.round(n));
+const fmt1=(n,d=1)=>Number(n).toLocaleString(undefined,{maximumFractionDigits:d});
+const auto=(n)=>n>=100?fmt1(n,0):n>=10?fmt1(n,1):fmt1(n,2);
+const scaled=(v,small,big)=>v>=1000?{v:v/1000,u:big}:{v,u:small};
+const EMPTY={msgs:0,input:0,output:0,cache_read:0,cache_write:0,thinking:0};
+function energyWh(c){return (c.output||0)*RECIPE.whOut.v + (c.input||0)*RECIPE.whIn.v + (c.cache_write||0)*RECIPE.whCacheW.v + (c.cache_read||0)*RECIPE.whCache.v}
+function costParts(models){const r={input:0,output:0,cache_write:0,cache_read:0};for(const [m,c] of Object.entries(models||{})){const p=PRICES[m];if(!p)continue;r.input+=(c.input||0)*p.i/1e6;r.output+=(c.output||0)*p.o/1e6;r.cache_write+=(c.cache_write||0)*p.cw/1e6;r.cache_read+=(c.cache_read||0)*p.cr/1e6}return r}
+function costUSD(models){let t=0;for(const [m,c] of Object.entries(models||{})){const p=PRICES[m];if(!p)continue;t+=((c.input||0)*p.i+(c.output||0)*p.o+(c.cache_write||0)*p.cw+(c.cache_read||0)*p.cr)/1e6}return t}
+/* blended price per token kind from a model mix, so hours (which carry no model) can be priced */
+function blended(models){const k={i:['input','i'],o:['output','o'],cw:['cache_write','cw'],cr:['cache_read','cr']};const r={};for(const [key,[f,pk]] of Object.entries(k)){let tok=0,usd=0;for(const [m,c] of Object.entries(models||{})){const p=PRICES[m];if(!p)continue;tok+=c[f]||0;usd+=(c[f]||0)*p[pk]/1e6}r[key]=tok?usd/tok:0}return r}
+function costOf(c,b){return (c.input||0)*b.i+(c.output||0)*b.o+(c.cache_write||0)*b.cw+(c.cache_read||0)*b.cr}
+function sum(days,keys){const t={};for(const k of keys)t[k]=0;for(const d of Object.values(days))for(const k of keys)t[k]+=d[k]||0;return t}
+/* tooltip */
+const tip=$('#tip');
+function showTip(e,html){tip.innerHTML=html;tip.hidden=false;moveTip(e)}
+function moveTip(e){const w=tip.offsetWidth,h=tip.offsetHeight;let x=e.clientX+12,y=e.clientY-h-10;if(x+w>innerWidth-8)x=e.clientX-w-12;if(y<8)y=e.clientY+14;tip.style.left=x+'px';tip.style.top=y+'px'}
+function hideTip(){tip.hidden=true}
+function hover(el,html){el.addEventListener('mouseenter',e=>showTip(e,html));el.addEventListener('mousemove',moveTip);el.addEventListener('mouseleave',hideTip)}
+/* the energy formula, spelled out with the inputs it used, and which term dominates */
+function energyMath(c){
+  const t=[['output',c.output||0,RECIPE.whOut.v],['fresh input',c.input||0,RECIPE.whIn.v],['cache writes',c.cache_write||0,RECIPE.whCacheW.v],['cache reads',c.cache_read||0,RECIPE.whCache.v]];
+  const tot=t.reduce((a,[,n,w])=>a+n*w,0)||1; const big=t.reduce((a,b)=>b[1]*b[2]>a[1]*a[2]?b:a);
+  return t.map(([k,n,w])=>`${fmt(n)} ${k} × ${(w*1000).toLocaleString(undefined,{maximumFractionDigits:3})} mWh = ${auto(n*w)} Wh`).join('<br>')+`<br><b>= ${auto(tot)} Wh</b> · ${Math.round(100*big[1]*big[2]/tot)}% of it is the ${big[0]} term, the least certain assumption on the recipe card`;
+}
+function costMath(models){
+  const rows=[];for(const [m,c] of Object.entries(models||{})){const p=PRICES[m];if(!p)continue;rows.push(`${m.replace('claude-','')}: ${fmt(c.input||0)} in × $${p.i} + ${fmt(c.output||0)} out × $${p.o} + ${fmt(c.cache_write||0)} cache write × $${p.cw} + ${fmt(c.cache_read||0)} cache read × $${p.cr}, per million = $${auto(((c.input||0)*p.i+(c.output||0)*p.o+(c.cache_write||0)*p.cw+(c.cache_read||0)*p.cr)/1e6)}`)}
+  return rows.join('<br>')+`<br><b>= $${auto(costUSD(models))}</b> · list prices, checked against Anthropic's table Sep 15 2026`;
+}
+/* ---------- parsing Claude Code logs in the browser ---------- */
+async function parseFiles(files){
+  const days={},hours={},models={},today_models={},projects={},sessions={},fl={};
+  const now=new Date(); const since=new Date(now.getTime()-31*864e5); const today=dkey(now);
+  let n=0;
+  const bump=(o,k,u)=>{const c=o[k]||(o[k]={input:0,output:0,cache_read:0,cache_write:0});c.input+=u.i;c.output+=u.o;c.cache_read+=u.cr;c.cache_write+=u.cw;};
+  for(const f of files){ if(!f.name.endsWith('.jsonl')) continue;
+    const proj=(f.webkitRelativePath||f.name).split('/').slice(-2,-1)[0]||'?'; const sid=f.name.slice(0,8);
+    const text=await f.text();
+    for(const line of text.split('\n')){ if(!line.includes('"usage"')) continue; let d; try{d=JSON.parse(line)}catch{continue}
+      const ts=d.timestamp; if(!ts) continue; const t=new Date(ts); if(isNaN(t)||t<since) continue;
+      const m=d.message||{}, u=m.usage; if(!u) continue; n++;
+      const k=dkey(t); const c=days[k]||(days[k]={...EMPTY});
+      const inp=u.input_tokens||0,out=u.output_tokens||0,cr=u.cache_read_input_tokens||0,cw=u.cache_creation_input_tokens||0,th=(u.output_tokens_details||{}).thinking_tokens||0;
+      c.msgs++;c.input+=inp;c.output+=out;c.cache_read+=cr;c.cache_write+=cw;c.thinking+=th;
+      const mk=m.model||'?'; bump(models,mk,{i:inp,o:out,cr,cw}); projects[proj]=(projects[proj]||0)+out;
+      (sessions[k]||(sessions[k]=new Set())).add(sid); const f2=fl[k]||(fl[k]=[t,t]); if(t<f2[0])f2[0]=t; if(t>f2[1])f2[1]=t;
+      if(k===today){const h=hours[t.getHours()]||(hours[t.getHours()]={...EMPTY});h.msgs++;h.input+=inp;h.output+=out;h.cache_read+=cr;h.cache_write+=cw;h.thinking+=th;bump(today_models,mk,{i:inp,o:out,cr,cw});}
+    }}
+  for(const k in days){days[k].sessions=sessions[k].size;days[k].first=hm(fl[k][0]);days[k].last=hm(fl[k][1]);}
+  const models_output={};for(const [k,v] of Object.entries(models))models_output[k]=v.output;
+  return {generated:now.toISOString(),records:n,today,days,hours_today:hours,models,today_models,models_output,projects_output:projects};
+}
+/* ---------- the open per-turn usage log (USAGE-LOG-FORMAT.md): one JSON object per line ---------- */
+function foldTurn(acc,t,rec){
+  const {days,hours,models,today_models,projects,sessions,fl,today}=acc;
+  const k=dkey(t); const c=days[k]||(days[k]={...EMPTY});
+  const inp=rec.input_tokens|0,out=rec.output_tokens|0,cr=rec.cache_read|0,cw=rec.cache_write|0,th=rec.thinking|0;
+  c.msgs++;c.input+=inp;c.output+=out;c.cache_read+=cr;c.cache_write+=cw;c.thinking+=th;
+  const mk=rec.model||'unknown'; const bump=(o)=>{const m=o[mk]||(o[mk]={input:0,output:0,cache_read:0,cache_write:0});m.input+=inp;m.output+=out;m.cache_read+=cr;m.cache_write+=cw};
+  bump(models); const pj=rec.project||rec.agent||'?'; projects[pj]=(projects[pj]||0)+out;
+  (sessions[k]||(sessions[k]=new Set())).add(rec.session||rec.agent||'?'); const f2=fl[k]||(fl[k]=[t,t]); if(t<f2[0])f2[0]=t; if(t>f2[1])f2[1]=t;
+  if(k===today){const h=hours[t.getHours()]||(hours[t.getHours()]={...EMPTY});h.msgs++;h.input+=inp;h.output+=out;h.cache_read+=cr;h.cache_write+=cw;h.thinking+=th;bump(today_models);}
+  acc.n++; if(rec.estimated) acc.estimated++; if(rec.local) acc.local++;
+}
+function finishAcc(acc){
+  const {days,sessions,fl}=acc; for(const k in days){days[k].sessions=sessions[k].size;days[k].first=hm(fl[k][0]);days[k].last=hm(fl[k][1]);}
+  const models_output={};for(const [k,v] of Object.entries(acc.models))models_output[k]=v.output;
+  return {generated:acc.now.toISOString(),records:acc.n,today:acc.today,days,hours_today:acc.hours,models:acc.models,today_models:acc.today_models,models_output,projects_output:acc.projects,estimated:acc.estimated,local:acc.local,agents:[...acc.agents]};
+}
+function newAcc(){const now=new Date();return {days:{},hours:{},models:{},today_models:{},projects:{},sessions:{},fl:{},today:dkey(now),now,since:new Date(now.getTime()-31*864e5),n:0,estimated:0,local:0,agents:new Set()}}
+async function parseUsageLog(files){
+  const acc=newAcc();
+  for(const f of files){ const text=await f.text();
+    for(const line of text.split('\n')){ if(!line.trim()) continue; let r; try{r=JSON.parse(line)}catch{continue}
+      if(!r.ts||r.output_tokens==null) continue; const t=new Date(r.ts); if(isNaN(t)||t<acc.since) continue;
+      if(r.agent) acc.agents.add(r.agent); foldTurn(acc,t,r); }}
+  return finishAcc(acc);
+}
+/* sniff: a usage-log line has ts + output_tokens; a Claude Code line has "usage" inside "message" */
+async function looksLikeUsageLog(f){const head=(await f.slice(0,4000).text()).split('\n').find(l=>l.trim())||'';try{const r=JSON.parse(head);return !!(r.ts&&r.output_tokens!=null)}catch{return false}}
+const dkey=t=>`${t.getFullYear()}-${String(t.getMonth()+1).padStart(2,'0')}-${String(t.getDate()).padStart(2,'0')}`;
+const hm=t=>`${String(t.getHours()).padStart(2,'0')}:${String(t.getMinutes()).padStart(2,'0')}`;
+function bestDayModels(data,day){ /* no per-day model split in the logs; scale today's mix to the busiest day's tokens */
+  const src=data.today_models||data.models; const t=data.days[data.today]||EMPTY, b=data.days[day]||EMPTY; const out={};
+  const r=(k)=>t[k]?b[k]/t[k]:0;
+  for(const [m,c] of Object.entries(src||{}))out[m]={input:c.input*r('input'),output:c.output*r('output'),cache_read:c.cache_read*r('cache_read'),cache_write:c.cache_write*r('cache_write')};
+  return out;
+}
+/* ================= v0.5 instrument cluster ================= */
+const REDUCED=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const DEG=Math.PI/180;
+const P=(cx,cy,r,a)=>[cx+r*Math.sin(a*DEG),cy-r*Math.cos(a*DEG)];
+const f1=n=>n.toFixed(1);
+function arcPath(cx,cy,r,a0,a1){const [x0,y0]=P(cx,cy,r,a0),[x1,y1]=P(cx,cy,r,a1);return `M ${f1(x0)} ${f1(y0)} A ${r} ${r} 0 ${(a1-a0)>180?1:0} 1 ${f1(x1)} ${f1(y1)}`}
+/* a clean scale: steps of 1, 2, 2.5 or 5 times a power of ten, so numerals read like a real dial */
+function niceScale(v,target){v=Math.max(v,1e-9);const raw=v/target,p=Math.pow(10,Math.floor(Math.log10(raw)));const step=[1,2,2.5,5,10].find(k=>k*p>=raw-1e-12)*p;const n=Math.max(1,Math.ceil(v/step-1e-9));return {max:n*step,step,n}}
+const tickFmt=n=>n>=10000?+(n/1000).toFixed(1)+'K':String(+n.toFixed(2));
+const clamp01=x=>Math.max(0,Math.min(1,isFinite(x)?x:0));
+/* needles: each one remembers its angle and eases to the new one. No overshoot, no spin. */
+const ANG={},RAF={},SNAP={};
+function swing(id,cx,cy,from,to){
+  const set=a=>{const g=document.getElementById(id);if(g)g.setAttribute('transform',`rotate(${a.toFixed(2)} ${cx} ${cy})`);ANG[id]=a};
+  cancelAnimationFrame(RAF[id]);
+  const a0=ANG[id]??from; set(a0);
+  if(REDUCED||Math.abs(to-a0)<0.05){set(to);return}
+  const dur=900+600*Math.min(1,Math.abs(to-a0)/240), t0=performance.now();
+  const step=now=>{const t=Math.min(1,(now-t0)/dur),e=1-Math.pow(1-t,3);set(a0+(to-a0)*e);if(t<1)RAF[id]=requestAnimationFrame(step)};
+  RAF[id]=requestAnimationFrame(step);
+  /* backstop: if frames are throttled (background tab, headless capture), land on the value anyway */
+  clearTimeout(SNAP[id]); SNAP[id]=setTimeout(()=>{if(ANG[id]!==to){cancelAnimationFrame(RAF[id]);set(to)}},dur+150);
+}
+const DEFS=`<defs>
+  <radialGradient id="face" cx="50%" cy="42%" r="62%"><stop offset="0" stop-color="#1c1f23"/><stop offset=".7" stop-color="#101214"/><stop offset="1" stop-color="#08090a"/></radialGradient>
+  <linearGradient id="bezel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a4f55"/><stop offset=".5" stop-color="#1b1e21"/><stop offset="1" stop-color="#2e3236"/></linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".09"/><stop offset=".55" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <linearGradient id="ndl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd38a"/><stop offset="1" stop-color="#e8952a"/></linearGradient>
+  <radialGradient id="hub" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#4b5056"/><stop offset="1" stop-color="#15171a"/></radialGradient>
+</defs>`;
+/* a round dial, 240 degrees from -120 to +120, gap at the bottom. Used for the speedometer and the two side dials. */
+function roundDial({id,size,value,max,step,minor=4,red=null,readout,unit,label}){
+  const S=size, c=S/2, R=S*0.47, rT=S*0.40, rN=S*(S>300?.29:.31), a0=-120, sw=240;
+  const n=Math.round(max/step), ang=v=>a0+sw*clamp01(v/max);
+  let ticks='',nums='';
+  for(let i=0;i<=n*minor;i++){
+    const v=i*step/minor, a=ang(v), major=i%minor===0, hot=red!=null&&v>=red-1e-9;
+    const [x1,y1]=P(c,c,rT,a),[x2,y2]=P(c,c,rT-(major?S*.055:S*.028),a);
+    ticks+=`<line x1="${f1(x1)}" y1="${f1(y1)}" x2="${f1(x2)}" y2="${f1(y2)}" stroke="${hot?'var(--red)':major?'#e9e1cc':'#77756e'}" stroke-width="${major?S*.0085:S*.0045}" stroke-linecap="round"/>`;
+    if(major){const [tx,ty]=P(c,c,rN,a);nums+=`<text x="${f1(tx)}" y="${f1(ty)}" dy=".35em" text-anchor="middle" font-family="Barlow Semi Condensed" font-weight="600" font-size="${S*(S>300?.052:.08)}" fill="${hot?'var(--red)':'#e9e1cc'}">${tickFmt(v)}</text>`}
+  }
+  const redArc=red!=null&&red<max?`<path d="${arcPath(c,c,rT+S*.012,ang(red),a0+sw)}" fill="none" stroke="var(--red)" stroke-width="${S*.018}" opacity=".9"/>`:'';
+  const L=R*0.82, tail=R*0.16, w=S*.012;
+  const needle=`<g id="${id}"><path d="M ${c-w} ${c+tail} L ${c-w*.35} ${c-L} L ${c+w*.35} ${c-L} L ${c+w} ${c+tail} Z" fill="url(#ndl)" filter="drop-shadow(0 0 ${S*.01}px rgba(242,169,59,.55))"/></g>`;
+  return `<svg viewBox="0 0 ${S} ${S}" role="img" aria-label="${label}">${DEFS}
+    <circle cx="${c}" cy="${c}" r="${R+S*.025}" fill="url(#bezel)"/>
+    <circle cx="${c}" cy="${c}" r="${R+S*.008}" fill="url(#face)"/>
+    <path d="${arcPath(c,c,rT+S*.012,a0,a0+sw)}" fill="none" stroke="#2a2d31" stroke-width="${S*.018}"/>
+    ${redArc}${ticks}${nums}
+    ${readout?`<text x="${c}" y="${c+S*(S>300?.215:.24)}" text-anchor="middle" font-family="Barlow Semi Condensed" font-weight="600" font-size="${S*(S>300?.1:.13)}" fill="var(--ink)">${readout}</text>
+    <text x="${c}" y="${c+S*(S>300?.27:.335)}" text-anchor="middle" font-family="IBM Plex Mono" font-size="${S*(S>300?.03:.065)}" letter-spacing=".08em" fill="#a39e90">${unit}</text>`:''}
+    ${needle}
+    <circle cx="${c}" cy="${c}" r="${S*.045}" fill="url(#hub)" stroke="#000" stroke-width="1"/>
+    <circle cx="${c}" cy="${c}" r="${S*.012}" fill="#e8952a"/>
+    <ellipse cx="${c}" cy="${c-R*.42}" rx="${R*.86}" ry="${R*.55}" fill="url(#glass)" pointer-events="none"/>
+  </svg>`;
+}
+/* a short arc gauge, fuel or temperature style: pivot low, 120-degree sweep, letters at the ends */
+function arcGauge({id,frac,lo,hi,redLo,redHi,readout,label,mark}){
+  const W=200,H=150,cx=100,cy=104,r=78,a0=-60,a1=60, ang=f=>a0+(a1-a0)*clamp01(f);
+  let ticks='';
+  for(let i=0;i<=8;i++){const f=i/8,a=ang(f),major=i%2===0;const [x1,y1]=P(cx,cy,r,a),[x2,y2]=P(cx,cy,r-(major?13:7),a);
+    const hot=(redLo&&f<=0.125)||(redHi&&f>=0.875);
+    ticks+=`<line x1="${f1(x1)}" y1="${f1(y1)}" x2="${f1(x2)}" y2="${f1(y2)}" stroke="${hot?'var(--red)':major?'#e9e1cc':'#77756e'}" stroke-width="${major?2.4:1.4}" stroke-linecap="round"/>`}
+  const band=redLo?arcPath(cx,cy,r+5,a0,ang(.125)):arcPath(cx,cy,r+5,ang(.875),a1);
+  const [lx,ly]=P(cx,cy,r+18,a0),[hx,hy]=P(cx,cy,r+18,a1),[mx,my]=P(cx,cy,r-26,0);
+  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${label}">${DEFS}
+    <path d="${arcPath(cx,cy,r+5,a0,a1)}" fill="none" stroke="#2a2d31" stroke-width="3.5"/>
+    <path d="${band}" fill="none" stroke="var(--red)" stroke-width="3.5"/>
+    ${ticks}
+    <text x="${f1(lx)}" y="${f1(ly)}" dy=".35em" text-anchor="middle" font-family="Barlow Semi Condensed" font-weight="600" font-size="17" fill="#e9e1cc">${lo}</text>
+    <text x="${f1(hx)}" y="${f1(hy)}" dy=".35em" text-anchor="middle" font-family="Barlow Semi Condensed" font-weight="600" font-size="17" fill="#e9e1cc">${hi}</text>
+    <g id="${id}"><path d="M ${cx-3.2} ${cy+8} L ${cx-1} ${cy-r+6} L ${cx+1} ${cy-r+6} L ${cx+3.2} ${cy+8} Z" fill="url(#ndl)" filter="drop-shadow(0 0 2px rgba(242,169,59,.5))"/></g>
+    <circle cx="${cx}" cy="${cy}" r="8" fill="url(#hub)" stroke="#000"/>
+    <text x="${cx}" y="${cy+36}" text-anchor="middle" font-family="Barlow Semi Condensed" font-weight="600" font-size="26" fill="var(--ink)">${readout}</text>
+  </svg>`;
+}
+/* odometer: real rolling wheels, leading zeros dimmed */
+function odometer(n){
+  const box=$('#odoDigits'); const s=String(Math.max(0,Math.round(n))); const L=Math.max(9,s.length); const p=s.padStart(L,'0'); const firstSig=L-s.length;
+  if(box.dataset.len!=String(L)){box.dataset.len=L;box.innerHTML=[...p].map(()=>`<span class="wheel"><span class="strip">${'0123456789'.split('').map(d=>`<span>${d}</span>`).join('')}</span></span>`).join('');void box.offsetHeight;}
+  const wheels=[...box.children]; wheels.forEach((w,i)=>w.classList.toggle('lead',i<firstSig&&s!=='0'||(s==='0'&&i<L-1)));
+  /* roll every wheel from where it sits to its digit; JS-driven with a timed backstop so it always lands */
+  const from=wheels.map(w=>+(w.dataset.pos||0)), to=[...p].map(Number);
+  const put=(i,v)=>{wheels[i].dataset.pos=v;wheels[i].firstChild.style.transform=`translateY(${(-v*10).toFixed(3)}%)`};
+  cancelAnimationFrame(RAF.odo); clearTimeout(SNAP.odo);
+  if(REDUCED){to.forEach((v,i)=>put(i,v));return}
+  const dur=1400,t0=performance.now();
+  const step=now=>{const t=Math.min(1,(now-t0)/dur),e=1-Math.pow(1-t,3);to.forEach((v,i)=>put(i,from[i]+(v-from[i])*e));if(t<1)RAF.odo=requestAnimationFrame(step)};
+  RAF.odo=requestAnimationFrame(step); SNAP.odo=setTimeout(()=>{cancelAnimationFrame(RAF.odo);to.forEach((v,i)=>put(i,v))},dur+150);
+  box.setAttribute('aria-label',`${Math.round(n).toLocaleString()} output tokens`);
+}
+/* ---------- evident charts, drawn at the container's real width so text stays 12 px ---------- */
+function vbars(el,{bars,label,tipf,sparse}){
+  const W=Math.max(260,el.clientWidth), H=W<480?190:210, mt=24, mb=24, ml=2, mr=2;
+  const n=bars.length, max=Math.max(...bars.map(b=>b.v),1e-12), bw=(W-ml-mr)/n, g=Math.max(1,Math.min(4,bw*.22));
+  const y=v=>mt+(H-mt-mb)*(1-v/max);
+  let rects='',labels='',xl='';
+  const placed=[]; const fits=(x,w)=>!placed.some(([a,b])=>x<b+6&&x+w>a-6);
+  const order=bars.map((b,i)=>[b,i]).filter(([b])=>b.v>0).sort((A,B)=>(B[0].accent-A[0].accent)||((B[0].must?1:0)-(A[0].must?1:0))||(B[0].v-A[0].v));
+  bars.forEach((b,i)=>{const x=ml+i*bw+g/2, w=bw-g, top=y(b.v);
+    rects+=`<rect data-i="${i}" x="${f1(x)}" y="${f1(b.v>0?Math.min(top,H-mb-2):H-mb)}" width="${f1(w)}" height="${f1(b.v>0?Math.max(2,H-mb-top):0)}" rx="${Math.min(2,w/4)}" fill="${b.accent?'var(--amber)':'var(--bar)'}"/>`;
+    rects+=`<rect data-i="${i}" x="${f1(ml+i*bw)}" y="${mt}" width="${f1(bw)}" height="${H-mt-mb}" fill="transparent"/>`;
+    if(b.x){xl+=`<text x="${f1(x+w/2)}" y="${H-6}" text-anchor="middle" font-family="IBM Plex Mono" font-size="11.5" fill="#8d8a82">${b.x}</text>`}
+  });
+  for(const [b,i] of order){const t=label(b.v), tw=t.length*7.3+2, cxm=ml+i*bw+bw/2, x=Math.max(0,Math.min(W-tw,cxm-tw/2));
+    if(sparse&&!b.accent&&!b.must)continue; if(!fits(x,tw)&&!b.accent)continue; placed.push([x,x+tw]);
+    labels+=`<text x="${f1(x+tw/2)}" y="${f1(Math.min(y(b.v),H-mb-2)-6)}" text-anchor="middle" font-family="IBM Plex Mono" font-size="12" fill="${b.accent?'var(--amber)':'#cfc8b6'}">${t}</text>`}
+  el.innerHTML=`<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">${rects}<line x1="0" x2="${W}" y1="${H-mb}" y2="${H-mb}" stroke="#4a4f55" stroke-width="1"/>${labels}${xl}</svg>`;
+  el.querySelectorAll('rect[data-i]').forEach(r=>{const b=bars[+r.dataset.i];hover(r,tipf(b))});
+}
+function hbars(el,rows){ /* rows: {n, v, t (label text), on} ; one common scale from zero */
+  const max=Math.max(...rows.map(r=>r.v),1e-12);
+  el.innerHTML=rows.map(r=>`<span class="n">${r.n}</span><div class="t zero"><i class="${r.on?'on':''}" style="width:${r.v>0?Math.max(.4,72*r.v/max):0}%"></i><span>${r.t}</span></div>`).join('');
+}
+/* ---------- readout card ---------- */
+function ro({label,value,unit,foot,math,est}){
+  return `<div class="card ro"><div class="row"><span class="label">${label}</span><span class="pill ${est?'est':''}">${est?'estimate':'measured'}</span></div>
+  <div class="val">${value}<small>${unit}</small></div><div class="foot">${foot}</div>${math?`<details class="math"><summary>show the math</summary><div>${math}</div></details>`:''}</div>`;
+}
+const hourLbl=h=>`${h%12||12}${h<12?' AM':' PM'}`;
+const dayLbl=k=>new Date(k+'T12:00').toLocaleDateString(undefined,{month:'short',day:'numeric'});
+function median(a){const s=[...a].sort((x,y)=>x-y);const m=s.length>>1;return s.length?(s.length%2?s[m]:(s[m-1]+s[m])/2):0}
+
+/* ---------- render ---------- */
+let DATA=null, CUR_WHO='', UNIT='tok';
+function render(data,who){
+  DATA=data; CUR_WHO=who; const days=data.days; const keys=Object.keys(days).sort(); const today=data.today; const td=days[today]||{...EMPTY,sessions:0,first:'',last:''};
+  const gen=new Date(data.generated); const isSample=(data===SAMPLE);
+  $('#whoLbl').textContent=(who?`${who} · `:'')+'logs through '+gen.toLocaleString(undefined,{weekday:'long',month:'long',day:'numeric',hour:'numeric',minute:'2-digit'})+(isSample?' · a sample, not you':'');
+  $('#genLbl').textContent=(isSample?'sample read ':'your logs read ')+gen.toLocaleString();
+  const hrs=data.hours_today||{}; const hk=Object.keys(hrs).map(Number).sort((a,b)=>a-b); const lastH=hk.length?hrs[hk[hk.length-1]]:null;
+  const cur=lastH?lastH.output/60:0; const avg=hk.length?hk.reduce((a,h)=>a+hrs[h].output,0)/(hk.length*60):0;
+  const peakH=hk.length?hk.reduce((a,h)=>hrs[h].output>hrs[a].output?h:a,hk[0]):null; const peak=peakH!=null?hrs[peakH].output/60:0;
+  const busiest=keys.length?keys.reduce((a,k)=>days[k].output>days[a].output?k:a,keys[0]):today; const bWh=energyWh(days[busiest]||td);
+  const eT=energyWh(td)+RECIPE.localW.v*RECIPE.localMin.v/60; const tCost=costUSD(data.today_models);
+  const wPer=RECIPE.waterOn.v+RECIPE.waterOff.v, wm=eT*wPer, gC=eT*RECIPE.gCO2.v;
+  const mt=sum(days,['msgs','input','output','cache_read','cache_write','thinking']);
+
+  /* speedometer: burn rate, scale from today's busiest hour, red band above it */
+  const sp=niceScale(Math.max(peak*1.12,50),6);
+  $('#gSpeed').innerHTML=roundDial({id:'nSpeed',size:400,value:cur,max:sp.max,step:sp.step,minor:5,red:peak>0?Math.min(peak,sp.max):null,readout:fmt1(cur,0),unit:'OUTPUT TOK / MIN',label:`Burn rate ${fmt1(cur,0)} output tokens per minute`});
+  swing('nSpeed',200,200,-120,-120+240*clamp01(cur/sp.max));
+  /* energy dial: Wh or kWh, full scale near the busiest day */
+  const eU=Math.max(eT,bWh)>=1000?{d:1000,u:'kWh'}:{d:1,u:'Wh'};
+  const es=niceScale(Math.max(bWh,eT,1)*1.05/eU.d,4);
+  $('#gEnergy').innerHTML=roundDial({id:'nEnergy',size:200,value:eT/eU.d,max:es.max,step:es.step,minor:4,readout:auto(eT/eU.d),unit:eU.u,label:`Energy today ${auto(eT/eU.d)} ${eU.u}, estimate`});
+  swing('nEnergy',100,100,-120,-120+240*clamp01(eT/eU.d/es.max));
+  /* water dial: liters */
+  const ws=niceScale(Math.max(bWh,eT,1)*1.05*wPer/1000,4);
+  $('#gWater').innerHTML=roundDial({id:'nWater',size:200,value:wm/1000,max:ws.max,step:ws.step,minor:4,readout:auto(wm/1000),unit:'L',label:`Water today ${auto(wm/1000)} liters, estimate`});
+  swing('nWater',100,100,-120,-120+240*clamp01(wm/1000/ws.max));
+  /* fuel: cache hit share of input-side tokens */
+  const inSide=(td.cache_read||0)+(td.cache_write||0)+(td.input||0); const hit=inSide?td.cache_read/inSide:0;
+  $('#gFuel').innerHTML=arcGauge({id:'nFuel',frac:hit,lo:'E',hi:'F',redLo:true,readout:inSide?Math.round(hit*100)+'%':'--',label:`Cache hit share ${Math.round(hit*100)} percent`,mark:'CACHE'});
+  swing('nFuel',100,104,-60,-60+120*clamp01(hit));
+  /* temperature: carbon today against the busiest day */
+  const cMax=Math.max(bWh*RECIPE.gCO2.v,gC,1e-9); const cU=Math.max(gC,cMax)>=1000?{d:1000,u:'kg'}:{d:1,u:'g'};
+  $('#gTemp').innerHTML=arcGauge({id:'nTemp',frac:gC/cMax,lo:'C',hi:'H',redHi:true,readout:auto(gC/cU.d)+' '+cU.u,label:`Carbon today ${auto(gC/cU.d)} ${cU.u} CO2e, estimate`,mark:'CO2e'});
+  swing('nTemp',100,104,-60,-60+120*clamp01(gC/cMax));
+  /* odometer */
+  odometer(mt.output); $('#odoCap').textContent=keys.length?`output tokens since ${dayLbl(keys[0])}`:'output tokens';
+  /* trip computer */
+  const hoursOn=d=>d&&d.first?((parseInt(d.last)*60+parseInt(d.last.slice(3)))-(parseInt(d.first)*60+parseInt(d.first.slice(3))))/60:0;
+  $('#trip').innerHTML=[
+    ['Written today',fmt(td.output),'tokens',`${fmt(td.thinking)} of it thinking`],
+    ['Messages',fmt1(td.msgs,0),'',`${td.sessions||0} session${td.sessions==1?'':'s'} on the stove`],
+    ['Hours at the stove',auto(hoursOn(td)),'h',td.first?`${td.first} to ${td.last}`:'no messages yet'],
+    ['Context re-read',fmt(td.msgs?td.cache_read/td.msgs:0),'per msg',`${fmt(td.cache_read)} cache reads today`]
+  ].map(([k,v,u,f])=>`<div><div class="k">${k}</div><div class="v">${v}<small>${u}</small></div><div class="f">${f}</div></div>`).join('');
+
+  /* readouts with the math */
+  const wo=eT*RECIPE.waterOn.v, wp=eT*RECIPE.waterOff.v; const bt=costParts(data.today_models);
+  $('#readouts').innerHTML=
+    ro({label:'Burn rate',value:fmt1(cur,0),unit:'tok/min',foot:lastH?`${hourLbl(hk[hk.length-1])} hour · today's average ${fmt1(avg,0)} tok/min over ${hk.length} active hour${hk.length==1?'':'s'}`:'no activity yet today',
+      math:lastH?`${fmt(lastH.output)} output tokens in the ${hourLbl(hk[hk.length-1])} hour ÷ 60 min<br><b>= ${fmt1(cur,0)} tok/min</b><br>full scale ${tickFmt(sp.max)}; the red band starts at today's busiest hour, ${hourLbl(peakH)}, ${fmt1(peak,0)} tok/min`:''})+
+    ro({label:'Energy today',value:auto(eT/eU.d),unit:eU.u,est:true,foot:`about ${auto(eT/11)} h of an 11 W bulb · full scale near the busiest day, ${dayLbl(busiest)}`,
+      math:energyMath(td)+(RECIPE.localMin.v?`<br>+ local: ${RECIPE.localW.v} W × ${RECIPE.localMin.v} min = ${auto(RECIPE.localW.v*RECIPE.localMin.v/60)} Wh`:'')})+
+    ro({label:'Water today',value:auto(wm/1000),unit:'L',est:true,foot:`${auto(wo)} mL at the data center · ${auto(wp)} mL at the power plant · about ${auto(td.msgs?wm/td.msgs:0)} mL per message`,
+      math:`${auto(eT)} Wh × ${RECIPE.waterOn.v} mL on-site + ${auto(eT)} Wh × ${RECIPE.waterOff.v} mL at the plant<br><b>= ${auto(wm)} mL consumed</b> (evaporated, not returned). Withdrawn is higher and mostly goes back warmer. Rides entirely on the energy estimate`})+
+    ro({label:'Cache hit share',value:inSide?Math.round(hit*100):'--',unit:'%',foot:`F means nearly every input token came from cache; E means every turn sent fresh context`,
+      math:inSide?`${fmt(td.cache_read)} cache reads ÷ (${fmt(td.cache_read)} cache reads + ${fmt(td.cache_write)} cache writes + ${fmt(td.input)} fresh input)<br><b>= ${(hit*100).toFixed(1)}%</b> of today's input side`:''})+
+    ro({label:'Carbon today',value:auto(gC/cU.d),unit:cU.u+' CO2e',est:true,foot:`US grid average · Ohio runs about 12% dirtier · H is the busiest day this month`,
+      math:`${auto(eT)} Wh × ${RECIPE.gCO2.v} g CO2e per Wh<br><b>= ${auto(gC)} g</b> · carbon rides entirely on the energy estimate`})+
+    ro({label:'Odometer',value:fmt(mt.output),unit:'output tokens',foot:`${fmt(mt.msgs)} messages · ${fmt(mt.output/(keys.length||1))} a day on active days`,
+      math:keys.length?`sum of output tokens over ${keys.length} days with activity, ${keys[0]} to ${keys[keys.length-1]}<br><b>= ${mt.output.toLocaleString()}</b> · the same window re-read ${fmt(mt.cache_read)} cache tokens`:''})+
+    ro({label:'API equivalent today',value:'$'+auto(tCost),unit:'not billed',est:true,foot:`what metered API billing would charge; a flat plan pays none of it · ${Math.round(100*bt.cache_write/(tCost||1))}% cache writes, ${Math.round(100*bt.cache_read/(tCost||1))}% cache reads, ${Math.round(100*bt.output/(tCost||1))}% output`,
+      math:costMath(data.today_models)})+
+    `<div class="card ro"><div class="row"><span class="label">How to read it</span></div><p class="fine" style="margin-top:8px">Measured gauges read straight from your logs. Estimates run your token counts through the recipe card below, and every one shows its formula. Full scale on energy, water, and carbon is your busiest day this month.</p></div>`;
+
+  /* charts */
+  $('#monthLbl').textContent=keys.length?`${keys[0]} to ${keys[keys.length-1]} · ${keys.length} days with activity`:'';
+  drawHours();
+  drawDays();
+  const mm=Object.entries(data.models_output||{}).filter(([k,v])=>v>0).sort((a,b)=>b[1]-a[1]); const mTot=mm.reduce((a,[,v])=>a+v,0)||1;
+  if(mm.length){$('#mixT').textContent=`${mm[0][0].replace('claude-','')} wrote ${Math.round(100*mm[0][1]/mTot)}% of the output in these logs`;
+    $('#mixS').textContent=`Output tokens by model, ${keys.length?dayLbl(keys[0])+' to '+dayLbl(keys[keys.length-1]):'all days'}`;
+    hbars($('#mixPlot'),mm.map(([k,v],i)=>({n:k.replace('claude-',''),v,t:`${fmt(v)} · ${Math.round(100*v/mTot)}%`,on:i===0})));}
+  else{$('#mixT').textContent='No model data yet';$('#mixS').textContent='';$('#mixPlot').innerHTML=''}
+  const localWh=RECIPE.localW.v*RECIPE.localMin.v/60, cloudWh=energyWh(td), tot=localWh+cloudWh;
+  $('#cloudT').textContent=!tot?'No compute logged yet today':localWh?`Cloud ran ${Math.round(100*cloudWh/tot)}% of today's estimated compute energy`:'Every logged token today ran in the cloud';
+  hbars($('#cloudPlot'),[{n:'cloud',v:cloudWh,t:`${auto(cloudWh)} Wh`,on:true},{n:'local, this Mac',v:localWh,t:localWh?`${auto(localWh)} Wh`:'0 Wh · not logged yet',on:false}]);
+
+  /* the month's draw */
+  const mWh=keys.reduce((a,k)=>a+energyWh(days[k]),0); const wOn=mWh*RECIPE.waterOn.v/1000, wOff=mWh*RECIPE.waterOff.v/1000; const mCost=costUSD(data.models);
+  $('#monthRo').innerHTML=
+    ro({label:'Energy',value:auto(mWh/1000),unit:'kWh',est:true,foot:`a US home runs about 29 kWh a day`,math:energyMath(mt)})+
+    ro({label:'Water',value:auto(wOn+wOff),unit:'L',est:true,foot:`${auto(wOn)} L at the data center · ${auto(wOff)} L at the power plant · about ${auto((wOn+wOff)/65)} eight-minute showers`,math:`${auto(mWh/1000)} kWh × ${RECIPE.waterOn.v} L per kWh on-site + ${auto(mWh/1000)} kWh × ${RECIPE.waterOff.v} L per kWh at the plant<br><b>= ${auto(wOn+wOff)} L</b>`})+
+    ro({label:'Carbon',value:auto(mWh*RECIPE.gCO2.v/1000),unit:'kg CO2e',est:true,foot:`about ${auto(mWh*RECIPE.gCO2.v/1000/0.4)} km in an average gas car`,math:`${auto(mWh/1000)} kWh × ${RECIPE.gCO2.v} kg CO2e per kWh<br><b>= ${auto(mWh*RECIPE.gCO2.v/1000)} kg</b> · 0.4 kg per km is the EPA average passenger car`})+
+    ro({label:'API equivalent',value:'$'+auto(mCost),unit:'not billed',est:true,foot:`what the same tokens would cost metered · today $${auto(tCost)} · a flat plan pays none of it`,math:costMath(data.models)});
+
+  /* local + places */
+  $('#localCard').innerHTML=`<div class="row"><span class="label">Local burners on this Mac</span><span class="pill">not measured yet</span></div><div class="stat" style="margin-top:6px"><span>Ollama · llama3.2 (2 GB)</span><b>installed</b></div><div class="stat"><span>Kokoro voice + whisper (Mise voice pane)</span><b>local</b></div><div class="stat"><span>Apple Intelligence, on-device</span><b>local</b></div><p class="fine" style="margin-top:12px">None of these write token logs the way Claude Code does, so local is a hand-entered field in the recipe card until v0.3 reads Ollama's API. For scale: a 7B model on an M4 Max lands near 0.3 mWh per token and a 70B near 1.2 mWh, the same order as a frontier cloud token, with no cooling water and no data-center overhead, for a much smaller model.</p>
+  <div class="stat" style="margin-top:14px"><span class="label">The scale behind it</span><span class="pill">public record</span></div><div class="stat"><span>US data centers, share of all electricity, 2023</span><b>4.4%</b></div><div class="stat"><span>Projected for 2028 (LBNL)</span><b>6.7% to 12%</b></div><div class="stat"><span>Central Ohio data-center load, July 2025 (AEP)</span><b>1.5 GW</b></div><div class="stat"><span>Trenton, Ohio votes Nov 3 on banning data centers over</span><b>25 MW</b></div>`;
+  $('#places').innerHTML=`<div class="row"><span class="label">Where Claude's compute is on the public record</span></div>`+PLACES.map(p=>`<div class="place"><div><b>${p.n}</b><br><span>${p.d}</span></div><div class="km">${p.km?'~'+fmt1(p.km,0)+' km from '+HOME:'location not public'}</div></div>`).join('')+`<p class="fine" style="margin-top:12px">Anthropic has published no energy, water, or emissions figure for Claude. The API's <code>inference_geo</code> field answers only "us" or "global," never a site. So every estimate on this page is built from other labs' measurements, and every place above is from press releases and filings, never from a request.</p>`;
+  renderRecipe();
+}
+function drawHours(){
+  if(!DATA)return; const hrs=DATA.hours_today||{}; const b=blended(DATA.today_models||DATA.models);
+  const val=h=>UNIT==='tok'?(h.output||0):UNIT==='wh'?energyWh(h):costOf(h,b);
+  const hk=Object.keys(hrs).map(Number); const vals=Array.from({length:24},(_,h)=>val(hrs[h]||EMPTY)); const tot=vals.reduce((a,v)=>a+v,0);
+  const peakH=vals.indexOf(Math.max(...vals)); const dLbl=DATA.today?new Date(DATA.today+'T12:00').toLocaleDateString(undefined,{weekday:'long',month:'short',day:'numeric'}):'';
+  if(!hk.length||!tot){$('#hourT').textContent='No activity yet today';$('#hourS').textContent=dLbl;}
+  else if(UNIT==='tok'){$('#hourT').textContent=`${hourLbl(peakH)} was today's busiest hour: ${fmt(vals[peakH])} output tokens, ${Math.round(100*vals[peakH]/tot)}% of the day`;$('#hourS').textContent=`Output tokens per hour, ${dLbl}`}
+  else if(UNIT==='wh'){$('#hourT').textContent=`${hourLbl(peakH)} drew the most energy today: about ${auto(vals[peakH])} Wh`;$('#hourS').textContent=`Estimated Wh per hour from the recipe card, all four token kinds, ${dLbl}`}
+  else{$('#hourT').textContent=`${hourLbl(peakH)} would have cost the most metered: $${auto(vals[peakH])}, not billed`;$('#hourS').textContent=`API equivalent per hour at list price, today's model mix, ${dLbl}. Not billed`}
+  $('#hourSrc').textContent=UNIT==='tok'?'Source: Claude Code session logs (~/.claude/projects), read in this browser':UNIT==='wh'?'Estimate: token counts from the logs × the recipe card':'Estimate: token counts × Anthropic list prices, checked Sep 15 2026 · not billed';
+  const lab=v=>UNIT==='tok'?fmt(v):UNIT==='wh'?auto(v):'$'+auto(v);
+  vbars($('#hourPlot'),{bars:vals.map((v,h)=>({v,accent:tot>0&&h===peakH,x:h%6===0?hourLbl(h).replace(' ','').toLowerCase():'',h})),label:lab,
+    tipf:bb=>{const c=hrs[bb.h]||EMPTY;return `<b>${hourLbl(bb.h)}</b><br>${c.msgs} messages · ${fmt(c.output)} output<br>${fmt(c.cache_read)} cache reads · ${fmt(c.input+c.cache_write)} fresh + writes<br>${auto(energyWh(c))} Wh est. · $${auto(costOf(c,b))} API equivalent, not billed`}});
+}
+function drawDays(){
+  if(!DATA)return; const days=DATA.days; const keys=Object.keys(days).sort(); if(!keys.length){$('#dayT').textContent='No days logged yet';$('#dayPlot').innerHTML='';return}
+  const busiest=keys.reduce((a,k)=>days[k].output>days[a].output?k:a,keys[0]); const med=median(keys.map(k=>days[k].output));
+  $('#dayT').textContent=`${dayLbl(busiest)} was the busiest day: ${fmt(days[busiest].output)} output tokens, ${(days[busiest].output/(med||1)).toFixed(1)}x the median day`;
+  $('#dayS').textContent=`Output tokens per day with activity, ${dayLbl(keys[0])} to ${dayLbl(keys[keys.length-1])}${keys[keys.length-1]===DATA.today?'. The last bar is today, still running':''}`;
+  const every=Math.ceil(keys.length/5); const top=new Set(keys.slice().sort((a,b)=>days[b].output-days[a].output).slice(0,4));
+  vbars($('#dayPlot'),{bars:keys.map((k,i)=>({v:days[k].output,accent:k===busiest,must:top.has(k),x:(i%every===0)?dayLbl(k):'',k})),label:v=>fmt(v),sparse:true,
+    tipf:bb=>{const c=days[bb.k];return `<b>${new Date(bb.k+'T12:00').toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric'})}</b><br>${fmt(c.output)} output · ${fmt(c.msgs)} msgs · ${c.sessions} session${c.sessions==1?'':'s'}<br>${fmt(c.cache_read)} cache reads · ${auto(energyWh(c))} Wh est.`}});
+}
+function renderRecipe(){
+  const r=$('#recipe'); if(r.dataset.built){return}
+  r.dataset.built=1;
+  r.innerHTML=`<div class="row"><span class="label">Assumptions</span><span class="pill est">edit me</span></div><p class="fine" style="margin:8px 0 4px">Every estimate on this page comes from these numbers. Measured figures never change when you edit them.</p>`+Object.entries(RECIPE).map(([k,o])=>`<label><span>${o.l}<small>${o.s}</small></span><input type="number" step="any" id="r-${k}" data-k="${k}" value="${o.v}"></label>`).join('');
+  r.querySelectorAll('input').forEach(i=>i.addEventListener('input',e=>{RECIPE[e.target.dataset.k].v=parseFloat(e.target.value)||0; if(DATA) render(DATA,CUR_WHO);}));
+  $('#sources').innerHTML=`<div class="row"><span class="label">Sources</span></div><div style="margin-top:8px">`+SOURCES.map(([t,u])=>`<a href="${u}">${t}</a>`).join('')+`</div>`;
+}
+$('#unitSeg').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;UNIT=b.dataset.u;$('#unitSeg').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));drawHours();});
+let rT=0; addEventListener('resize',()=>{clearTimeout(rT);rT=setTimeout(()=>{drawHours();drawDays()},120)});
+const SAMPLE_NOTE='Sample: real Claude Code logs from Mise’s Mac (Dustin’s AI partner at Gumbo), precomputed there. Nothing on this page is yours until you open your own folder.';
+$('#demo').addEventListener('click',()=>{render(SAMPLE,"Sample kitchen");$('#note').textContent=SAMPLE_NOTE;});
+$('#pick').addEventListener('click',()=>$('#dir').click());
+$('#pickLog').addEventListener('click',()=>$('#logf').click());
+$('#pick2').addEventListener('click',()=>$('#dir').click());
+$('#pickLog2').addEventListener('click',()=>$('#logf').click());
+
+$('#logf').addEventListener('change',async e=>{const files=[...e.target.files]; $('#note').textContent=`Reading ${files.length} usage log file${files.length==1?'':'s'} in your browser…`; const d=await parseUsageLog(files); render(d,'Your kitchen'); $('#note').textContent=`${fmt(d.records)} turns from ${d.agents.length?d.agents.join(', '):'your log'}${d.estimated?` · ${fmt(d.estimated)} with estimated counts`:''}${d.local?` · ${fmt(d.local)} local`:''}. Nothing left this page.`;});
+$('#dir').addEventListener('change',async e=>{const files=[...e.target.files]; $('#note').textContent=`Reading ${files.filter(f=>f.name.endsWith('.jsonl')).length} log files in your browser…`; const d=await parseFiles(files); render(d,'Your kitchen'); $('#note').textContent=`${d.records.toLocaleString()} messages read locally. Nothing was uploaded.`;});
+const drop=$('#drop'); ['dragenter','dragover'].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.add('on')})); ['dragleave','drop'].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.remove('on')}));
+drop.addEventListener('drop',async e=>{const items=[...e.dataTransfer.items]; const files=[]; async function walk(entry,path){ if(entry.isFile){await new Promise(res=>entry.file(f=>{Object.defineProperty(f,'webkitRelativePath',{value:path+'/'+f.name});files.push(f);res();}))} else if(entry.isDirectory){const rd=entry.createReader(); let batch; do{batch=await new Promise(res=>rd.readEntries(res)); for(const en of batch) await walk(en,path+'/'+entry.name);}while(batch.length);} }
+  for(const it of items){const en=it.webkitGetAsEntry&&it.webkitGetAsEntry(); if(en) await walk(en,'');} $('#note').textContent=`Reading ${files.length} files…`; const logs=[];for(const f of files){if(/\.(jsonl|ndjson)$/.test(f.name)&&await looksLikeUsageLog(f))logs.push(f)} const d=logs.length?await parseUsageLog(logs):await parseFiles(files); render(d,'Your kitchen'); $('#note').textContent=`${d.records.toLocaleString()} messages read locally. Nothing was uploaded.`;});
+render(SAMPLE,"Sample kitchen"); $('#note').textContent=SAMPLE_NOTE;
+</script>
+</body>
+</html>
