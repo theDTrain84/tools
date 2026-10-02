@@ -160,6 +160,15 @@ kbd{font-family:var(--mono);font-size:11.5px;border:1px solid var(--line-2);bord
 .drop .btns{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px}
 footer{margin-top:48px;padding-top:14px;border-top:1px solid var(--line);font-family:var(--mono);font-size:11.5px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 #tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--ground);font-size:12.5px;padding:7px 10px;border-radius:6px;z-index:10;max-width:260px;line-height:1.4}
+
+.lede{font-family:Newsreader,Georgia,serif;font-size:17px;line-height:1.45;max-width:62ch;margin:10px 0 0;opacity:.85}
+.own{margin:30px 0 8px;border:1px solid rgba(127,127,127,.3);border-radius:12px;padding:0 18px}
+.own>summary{cursor:pointer;list-style:none;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13px;letter-spacing:.06em;padding:16px 0;display:flex;gap:14px;align-items:baseline;flex-wrap:wrap}
+.own>summary::-webkit-details-marker{display:none}
+.own>summary::before{content:"+";display:inline-block;width:18px;font-weight:700}
+.own[open]>summary::before{content:"−"}
+.own>summary span{opacity:.6;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase}
+.own .src{margin:0 0 18px}
 </style>
 </head>
 <body>
@@ -170,7 +179,33 @@ footer{margin-top:48px;padding-top:14px;border-top:1px solid var(--line);font-fa
     <p class="kicker">Power needs gauges · v0.6</p>
     <h1>AI Gauges</h1>
     <div class="who" id="whoLbl"></div>
+    <p class="lede">Your own AI use, read like a car's dashboard: energy, output speed, water, cache, carbon. You are looking at a sample day until you bring your own.</p>
   </div>
+</header>
+
+
+
+<section class="cluster" aria-label="Instrument cluster">
+  <div class="dash">
+    <div class="pod energy" style="--fam:var(--energy)"><div id="gEnergy"></div><div class="cap">Energy today</div></div>
+    <div class="pod speedo"><div id="gSpeed"></div>
+      <div class="odo"><div class="odo-digits" id="odoDigits" role="img"></div><div class="odo-cap" id="odoCap">output tokens</div></div>
+    </div>
+    <div class="pod water" style="--fam:var(--water)"><div id="gWater"></div><div class="cap">Water today</div></div>
+    <div class="pod fuel" style="--fam:var(--cache)"><div id="gFuel"></div><div class="cap" id="capFuel">Cache hit share</div></div>
+    <div class="pod temp" style="--fam:var(--carbon)"><div id="gTemp"></div><div class="cap">Carbon today</div></div>
+  </div>
+  <div class="trip" id="trip"></div>
+  <div class="clnote" id="clNote" hidden></div>
+</section>
+
+<section class="sec">
+  <div class="sec-h"><h2>Reading the gauges</h2><span>every estimate shows its formula and inputs</span></div>
+  <div class="grid g4" id="readouts"></div>
+</section>
+
+<details class="own" id="own">
+  <summary>See it with your own numbers <span>three ways in · nothing leaves this browser</span></summary>
   <div class="src">
     <input type="file" id="dir" webkitdirectory multiple class="hidden">
     <input type="file" id="logf" accept=".json,.jsonl,.ndjson,.txt,.zip" multiple class="hidden">
@@ -179,8 +214,6 @@ footer{margin-top:48px;padding-top:14px;border-top:1px solid var(--line);font-fa
     <button class="btn ghost" id="demo">Load the sample</button>
     <div class="note" id="note">Files are read in your browser only; nothing leaves this page.</div>
   </div>
-</header>
-
 <section class="load" id="load" aria-labelledby="loadH">
   <div class="sec-h"><h2 id="loadH">Load your own</h2><span>three ways in · pick the one you use · nothing leaves this browser</span></div>
   <div class="grid g3">
@@ -218,25 +251,7 @@ footer{margin-top:48px;padding-top:14px;border-top:1px solid var(--line);font-fa
   </div>
   <div class="drop" id="drop">Drop a <code>projects</code> folder or a <code>conversations.json</code> here, or anywhere on the page. Another agent or a local model can write a usage log instead: one JSON line per turn with <code>ts</code> and <code>output_tokens</code> (the USAGE-LOG-FORMAT.md spec). Open it with <b>Open a file</b>.</div>
 </section>
-
-<section class="cluster" aria-label="Instrument cluster">
-  <div class="dash">
-    <div class="pod energy" style="--fam:var(--energy)"><div id="gEnergy"></div><div class="cap">Energy today</div></div>
-    <div class="pod speedo"><div id="gSpeed"></div>
-      <div class="odo"><div class="odo-digits" id="odoDigits" role="img"></div><div class="odo-cap" id="odoCap">output tokens</div></div>
-    </div>
-    <div class="pod water" style="--fam:var(--water)"><div id="gWater"></div><div class="cap">Water today</div></div>
-    <div class="pod fuel" style="--fam:var(--cache)"><div id="gFuel"></div><div class="cap" id="capFuel">Cache hit share</div></div>
-    <div class="pod temp" style="--fam:var(--carbon)"><div id="gTemp"></div><div class="cap">Carbon today</div></div>
-  </div>
-  <div class="trip" id="trip"></div>
-  <div class="clnote" id="clNote" hidden></div>
-</section>
-
-<section class="sec">
-  <div class="sec-h"><h2>Reading the gauges</h2><span>every estimate shows its formula and inputs</span></div>
-  <div class="grid g4" id="readouts"></div>
-</section>
+</details>
 
 <section class="sec">
   <div class="sec-h"><h2>Today and this month</h2><span id="monthLbl"></span></div>
