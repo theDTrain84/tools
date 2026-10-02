@@ -53,11 +53,10 @@ h1 em{font-style:italic;color:var(--gold)}
 .shelf .wrap{position:relative;z-index:1}
 .allwell{font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--walnut);text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:4px;white-space:nowrap}
 .allwell:hover{border-color:var(--walnut)}
-/* carousels: swipe sideways through cards, native scroll-snap */
-.rail{position:relative;margin-inline:calc(50% - 50vw);--gut:16px}
-.track{list-style:none;margin:0;padding:6px var(--gut) 20px;display:flex;gap:16px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-padding-inline:var(--gut);scrollbar-width:none;-webkit-overflow-scrolling:touch}
-.track::-webkit-scrollbar{display:none}
-.track>li{flex:0 0 calc(100vw - 2*var(--gut) - 22px);max-width:420px;scroll-snap-align:start;display:flex}
+.life{padding:72px 0 0}
+/* card grids: three up on desktop, stacked on phones */
+.cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;gap:16px}
+.cards>li{display:flex}
 .card{display:flex;flex-direction:column;width:100%;text-decoration:none;color:var(--ink);background:var(--paper);border:1px solid var(--rule);border-radius:18px;overflow:hidden;transition:transform .45s var(--ease),box-shadow .45s var(--ease)}
 .card:hover{transform:translateY(-3px);box-shadow:0 22px 44px -26px rgba(44,33,26,.5)}
 .card.dusk{background:var(--dusk);border-color:#2E2925;color:var(--paper)}
@@ -79,14 +78,6 @@ h1 em{font-style:italic;color:var(--gold)}
 .dusk .ctxt p{color:var(--ink4)}.dusk .ctxt .k{color:var(--gold)}
 .ctxt .go{margin-top:auto;padding-top:8px}
 .dusk .go{color:var(--gold)}
-.rail-ctl{display:flex;align-items:center;gap:14px;padding:0 var(--gut)}
-.rail-ctl[hidden]{display:none}
-.rbtn{display:none;width:40px;height:40px;border-radius:50%;border:1px solid var(--rule);background:transparent;color:var(--walnut);font:15px var(--mono);cursor:pointer;transition:background .25s,opacity .25s}
-.rbtn:hover:not(:disabled){background:var(--paper)}
-.rbtn:disabled{opacity:.35;cursor:default}
-.dots{display:flex;gap:7px;align-items:center}
-.dots i{width:6px;height:6px;border-radius:3px;background:var(--rule);transition:width .3s var(--ease),background .3s}
-.dots i.on{width:18px;background:var(--walnut)}
 
 /* image tiles: a real preview on top, softening into a dusk panel that carries the words */
 .tiles{display:grid;grid-template-columns:1fr;gap:16px}
@@ -115,11 +106,7 @@ h1 em{font-style:italic;color:var(--gold)}
   .hero .in{padding:140px 20px 64px}.wrap{padding:0 20px}
   .shelf{padding:72px 0 80px}
   .tiles{grid-template-columns:repeat(3,1fr);gap:22px}
-  .rail{--gut:max(20px,calc((100vw - 1120px)/2 + 20px))}
-  .track{gap:20px}
-  .track>li{flex-basis:330px}
-  .rbtn{display:inline-grid;place-items:center}
-  .rail-ctl .dots{margin:0 4px}
+  .cards{grid-template-columns:repeat(3,1fr);gap:22px}
   .shot.wide{grid-column:1/-1;flex-direction:row-reverse;min-height:380px}
   .shot.wide .pic{flex:0 0 64%;aspect-ratio:auto}
   .shot.wide .pic:after{background:linear-gradient(90deg,var(--dusk) 0%,rgba(27,25,22,.5) 14%,rgba(27,25,22,0) 34%)}
@@ -127,7 +114,7 @@ h1 em{font-style:italic;color:var(--gold)}
   .shot.wide h3{font-size:36px}
   .shot.wide p{font-size:18px}
 }
-@media (prefers-reduced-motion:reduce){.hero img{animation:none;transform:none}.shot img,.card,.go i,.dots i{transition:none}.track{scroll-behavior:auto}}
+@media (prefers-reduced-motion:reduce){.hero img{animation:none;transform:none}.shot img,.card,.go i{transition:none}}
 </style>
 </head>
 <body class="has-shell">
@@ -151,27 +138,31 @@ h1 em{font-style:italic;color:var(--gold)}
 <a class="allwell" href="well/">All of today's →</a>
 </div>
 </div>
-<div class="rail" data-rail>
-<ul class="track" aria-label="Every day: the daily games and quiet rooms">
+<div class="wrap">
+<ul class="cards" aria-label="Every day: the daily games">
 <li><a class="card" href="well/daily-line/"><div class="cpic"><div class="phone"><img src="assets/previews/crossword-2x.jpg" srcset="assets/previews/crossword-2x.jpg 780w, assets/previews/crossword.jpg 1170w" sizes="170px" width="780" height="1387" alt="The Daily Line on a phone: a five by five crossword with today's first clue" loading="lazy" decoding="async"></div></div><div class="ctxt"><p class="k">Learning AI</p><h3>The Daily Line</h3><p>The vocabulary of working with AI, one small grid a day.</p><span class="go">Open <i>→</i></span></div></a></li>
 <li><a class="card sky" href="well/morning-edition/"><div class="cpic"><div class="phone"><img src="assets/previews/morning-2x.jpg" srcset="assets/previews/morning-2x.jpg 780w, assets/previews/morning.jpg 1170w" sizes="170px" width="780" height="1387" alt="The Morning Edition on a phone: a seven by seven crossword made from yesterday's AI news" loading="lazy" decoding="async"></div></div><div class="ctxt"><p class="k">AI in the news</p><h3>The Morning Edition</h3><p>What happened in AI yesterday, as a crossword.</p><span class="go">Open <i>→</i></span></div></a></li>
 <li><a class="card" href="well/one-word/"><div class="cpic"><div class="phone"><img src="assets/previews/oneword-2x.jpg" srcset="assets/previews/oneword-2x.jpg 780w, assets/previews/oneword.jpg 1170w" sizes="170px" width="780" height="1387" alt="One Word on a phone: two guesses with letters coloured walnut and gold" loading="lazy" decoding="async"></div></div><div class="ctxt"><p class="k">A word a day</p><h3>One Word</h3><p>One word about working with AI. Find it and it teaches you something.</p><span class="go">Open <i>→</i></span></div></a></li>
+</ul>
+</div>
+</section>
+
+<section class="life" aria-labelledby="life-h">
+<div class="wrap">
+<div class="head"><div><p class="k">Quiet · Free · No account</p><h2 id="life-h">Tools for life</h2><p>Rooms to hold the day, and the moon over your weeks.</p></div></div>
+<ul class="cards" aria-label="Tools for life">
 <li><a class="card dusk" href="well/walk-in/"><div class="cpic"><div class="phone"><img src="assets/previews/walkin-2x.jpg" srcset="assets/previews/walkin-2x.jpg 780w, assets/previews/walkin.jpg 1170w" sizes="170px" width="780" height="1387" alt="The Walk-in on a phone: a breathing ring at dusk with three names seated on it" loading="lazy" decoding="async"></div></div><div class="ctxt"><p class="k on-dark">A quiet room</p><h3>The Walk-in</h3><p>Name the people in your day. Each takes a seat on the ring.</p><span class="go">Open <i>→</i></span></div></a></li>
 <li><a class="card dusk" href="well/river/"><div class="cpic"><div class="phone"><img src="assets/previews/river-2x.jpg" srcset="assets/previews/river-2x.jpg 780w, assets/previews/river.jpg 1170w" sizes="170px" width="780" height="1387" alt="The River on a phone: a leaf carrying a line of words down dark water" loading="lazy" decoding="async"></div></div><div class="ctxt"><p class="k on-dark">Letting go</p><h3>The River</h3><p>Write what is heavy onto a leaf. The water carries it.</p><span class="go">Open <i>→</i></span></div></a></li>
 <li><a class="card dusk" href="well/lunar/"><div class="cpic land"><img src="assets/previews/lunar-1x.jpg" srcset="assets/previews/lunar-1x.jpg 800w, assets/previews/lunar.jpg 1600w" sizes="(max-width:759px) 92vw, 340px" width="800" height="500" alt="Lunar Life: tonight's waning gibbous moon, the facts of the cycle, and tradition chips" loading="lazy" decoding="async"></div><div class="ctxt"><p class="k on-dark">The moon</p><h3>Lunar Life</h3><p>The moon over your own weeks, and the traditions that keep its time.</p><span class="go">Open <i>→</i></span></div></a></li>
 </ul>
-<div class="rail-ctl"><button class="rbtn prev" type="button" aria-label="Previous card">←</button><span class="dots" aria-hidden="true"></span><button class="rbtn next" type="button" aria-label="Next card">→</button></div>
 </div>
 </section>
 
 <main class="wrap">
 <section class="group" aria-labelledby="civic-h">
 <div class="head"><div><p class="k">Civic</p><h2 id="civic-h">Know what the decisions cost.</h2><p>Plain answers from public records, so neighbors can talk about the same numbers.</p></div></div>
-<div class="rail" data-rail>
-<ul class="track" aria-label="Civic tools">
-<li><a class="card dusk" href="follow-the-money/"><div class="cpic land"><img src="assets/previews/ftm.jpg" width="1200" height="800" alt="Follow the Money: the Issue 2 calculator showing what the bond would cost a $350,000 home" loading="lazy" decoding="async"></div><div class="ctxt"><p class="k on-dark">Civic · Lakota schools, Ohio · Issue 2</p><h3>Follow the Money</h3><p>A local school bond on the November ballot, and what it would cost your home: the facts from the public record, every number sourced, built because the official way to find out is confusing and government technology needs some love.</p><span class="go">Open <i>→</i></span></div></a></li>
-</ul>
-<div class="rail-ctl"><button class="rbtn prev" type="button" aria-label="Previous card">←</button><span class="dots" aria-hidden="true"></span><button class="rbtn next" type="button" aria-label="Next card">→</button></div>
+<div class="tiles">
+<a class="shot wide" href="follow-the-money/"><div class="pic"><img src="assets/previews/ftm.jpg" width="1200" height="800" alt="Follow the Money: the Issue 2 calculator showing what the bond would cost a $350,000 home" loading="lazy"></div><div class="txt"><p class="k on-dark">Civic · Lakota schools, Ohio · Issue 2</p><h3>Follow the Money</h3><p>A local school bond on the November ballot, and what it would cost your home: the facts from the public record, every number sourced, built because the official way to find out is confusing and government technology needs some love.</p><span class="go">Open <i>→</i></span></div></a>
 </div>
 </section>
 
@@ -218,25 +209,6 @@ h1 em{font-style:italic;color:var(--gold)}
   document.addEventListener('visibilitychange',function(){if(document.hidden){cancelAnimationFrame(raf);raf=0;}else start();});
   if(mq.addEventListener)mq.addEventListener('change',start);
   size();start();
-})();
-</script>
-<script>
-(function(){
-  // carousels: buttons move one card, dots follow the scroll, no autoplay
-  var smooth=matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth';
-  [].forEach.call(document.querySelectorAll('[data-rail]'),function(r){
-    var t=r.querySelector('.track'),items=[].slice.call(t.children),ctl=r.querySelector('.rail-ctl'),dots=r.querySelector('.dots'),pv=r.querySelector('.prev'),nx=r.querySelector('.next'),raf=0;
-    items.forEach(function(){dots.appendChild(document.createElement('i'))});
-    function step(){return items.length>1?items[1].offsetLeft-items[0].offsetLeft:t.clientWidth}
-    function upd(){var over=t.scrollWidth>t.clientWidth+2;ctl.hidden=!over;if(!over)return;
-      var end=t.scrollLeft+t.clientWidth>=t.scrollWidth-4,i=end?items.length-1:Math.max(0,Math.min(items.length-1,Math.round(t.scrollLeft/step())));
-      [].forEach.call(dots.children,function(d,k){d.className=k===i?'on':''});
-      pv.disabled=t.scrollLeft<4;nx.disabled=end;}
-    pv.addEventListener('click',function(){t.scrollBy({left:-step(),behavior:smooth})});
-    nx.addEventListener('click',function(){t.scrollBy({left:step(),behavior:smooth})});
-    t.addEventListener('scroll',function(){cancelAnimationFrame(raf);raf=requestAnimationFrame(upd)},{passive:true});
-    addEventListener('resize',upd);upd();
-  });
 })();
 </script>
 <script src="assets/site.js" defer></script>
