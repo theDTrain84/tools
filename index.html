@@ -4,77 +4,187 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Free tools · Dustin Nimmo</title>
-<meta name="description" content="Free tools for the community from Dustin Nimmo: civic tools built from the public record, and recipes for working with the AI you already have.">
+<meta name="description" content="Free tools for the community from Dustin Nimmo: daily crosswords and a quiet room in the Well, civic tools built from the public record, and recipes for working with the AI you already have.">
 <link rel="icon" href="https://framerusercontent.com/images/Zzrw2Ac0JKIAchf6nu5ApLHKFcg.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 <style>
-:root{--paper:#F3EFE7;--paper2:#E9E3D6;--rule:#D8D0C2;--ink:#1B1917;--ink3:#6B645B;--walnut:#5A3A2A;--gold:#B98A2E}
+:root{--paper:#F3EFE7;--paper2:#E9E3D7;--rule:#CFC6B8;--ink:#2C211A;--ink2:#4A3A2F;--ink3:#7A6A5D;--ink4:#A69686;--walnut:#623E2A;--ochre:#B4862E;--gold:#D9B25A;--sky:#3E6A9E;--dusk:#1B1916;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;--serif:Newsreader,Georgia,serif;--display:Fraunces,Georgia,serif;--ease:cubic-bezier(.2,.7,.2,1)}
 *{box-sizing:border-box}html{background:var(--paper)}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:Newsreader,Georgia,serif;font-size:20px;line-height:1.5;-webkit-font-smoothing:antialiased}
-.hero{position:relative;min-height:62vh;display:flex;align-items:flex-end;color:#F3EFE7;overflow:hidden}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:35% 50%}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(27,25,22,.15) 0%,rgba(27,25,22,.78) 100%)}
-.hero .in{position:relative;z-index:1;max-width:1120px;width:100%;margin:0 auto;padding:120px 20px 56px}
-.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#D9B25A;display:flex;align-items:center;gap:12px}
-.eyebrow:before{content:"";width:28px;height:1px;background:currentColor}
-h1{font-family:Fraunces,serif;font-weight:400;font-size:clamp(42px,7vw,76px);line-height:1.02;letter-spacing:-.02em;margin:18px 0 18px;max-width:14ch}
-h1 em{font-style:italic}
-.hero p{max-width:44ch;font-size:clamp(19px,2vw,22px);color:#E9E3D6;margin:0}
-.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-.group{margin-top:80px}
-.group h2{font-family:Fraunces,serif;font-weight:400;font-size:clamp(28px,3.4vw,38px);margin:14px 0 8px}
-.group .sub{color:var(--ink3);margin:0 0 28px;max-width:56ch}
-.eyebrow.dark{color:var(--gold)}
-.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
-.tile{display:flex;flex-direction:column;text-decoration:none;color:var(--ink);background:var(--paper2);border:1px solid var(--rule);border-radius:12px;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}
-.tile:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(44,33,26,.12)}
-.tile img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
-.tile .body{padding:22px 24px 24px;display:flex;flex-direction:column;gap:8px;flex:1}
-.tile .tag{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
-.tile .t{font-family:Fraunces,serif;font-weight:600;font-size:26px;line-height:1.15;margin:0}
-.tile .d{color:var(--ink3);margin:0;font-size:18px}
-.tile .go{margin-top:auto;padding-top:10px;font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--walnut)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:19px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--sky);outline-offset:3px;border-radius:6px}
+#motes{position:fixed;inset:0;z-index:5;pointer-events:none}
+.site-nav{z-index:20}
+
+/* labels */
+.k{font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;margin:0;display:flex;align-items:center;gap:10px;color:var(--walnut)}
+.k:before{content:"";width:22px;height:1px;background:currentColor;opacity:.7}
+.k.on-dark{color:var(--gold)}
+.go{font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--walnut);display:inline-flex;gap:8px;align-items:center}
+.go i{font-style:normal;transition:transform .35s var(--ease)}
+a:hover .go i{transform:translateX(4px)}
+
+/* hero */
+.hero{position:relative;min-height:min(72vh,640px);display:flex;align-items:flex-end;color:var(--paper);overflow:hidden;background:var(--dusk)}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:35% 50%;transform:scale(1.04);animation:drift 24s ease-out both}
+@keyframes drift{to{transform:scale(1)}}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(27,25,22,.1) 0%,rgba(27,25,22,.25) 40%,rgba(27,25,22,.82) 100%)}
+.hero .in{position:relative;z-index:1;max-width:1120px;width:100%;margin:0 auto;padding:120px 16px 48px}
+.hero .k{color:var(--gold)}
+h1{font-family:var(--display);font-weight:500;font-size:clamp(44px,8.4vw,80px);line-height:1;letter-spacing:-.02em;margin:16px 0 18px;max-width:16ch}
+h1 em{font-style:italic;color:var(--gold)}
+.hero p{max-width:40ch;font-size:clamp(18px,2vw,21px);color:var(--paper2);margin:0}
+
+/* sections */
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+.head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 32px;margin:0 0 26px}
+.head h2{font-family:var(--display);font-weight:500;font-size:clamp(30px,4.4vw,44px);line-height:1.06;letter-spacing:-.015em;margin:12px 0 10px}
+.head h2 em{font-style:italic;color:var(--walnut)}
+.head p{color:var(--ink2);margin:0;max-width:54ch}
+.group{margin-top:84px}
+
+/* the Well shelf */
+.shelf{position:relative;background:var(--paper2);border-bottom:1px solid var(--rule);overflow:hidden;padding:52px 0 60px}
+.shelf .orbit{position:absolute;right:-180px;top:-140px;width:620px;height:620px;opacity:.55;pointer-events:none}
+.shelf .wrap{position:relative;z-index:1}
+.allwell{font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--walnut);text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:4px;white-space:nowrap}
+.allwell:hover{border-color:var(--walnut)}
+.duo{display:grid;grid-template-columns:1fr;gap:16px}
+.ph-tile{display:grid;grid-template-columns:42% 1fr;gap:18px;align-items:center;text-decoration:none;color:var(--ink);background:var(--paper);border:1px solid var(--rule);border-radius:18px;padding:16px;transition:transform .45s var(--ease),box-shadow .45s var(--ease)}
+.ph-tile:hover{transform:translateY(-3px);box-shadow:0 22px 44px -26px rgba(44,33,26,.45)}
+.ph-tile.dusk{background:var(--dusk);border-color:#2E2925;color:var(--paper)}
+.phone{position:relative;aspect-ratio:9/16;border-radius:24px;padding:6px;background:var(--paper);border:1px solid var(--rule);box-shadow:0 18px 36px -18px rgba(44,33,26,.5)}
+.phone:before{content:"";position:absolute;top:11px;left:50%;width:22%;height:4px;margin-left:-11%;border-radius:4px;background:var(--rule);z-index:1;opacity:.8}
+.dusk .phone{border-color:#3A342E;background:#E9E3D7;box-shadow:0 18px 40px -16px rgba(0,0,0,.7)}
+.phone img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:18px}
+.ph-txt{display:flex;flex-direction:column;gap:9px;min-width:0}
+.ph-txt h3{font-family:var(--display);font-weight:600;font-size:clamp(23px,2.6vw,30px);line-height:1.08;margin:2px 0 0;letter-spacing:-.01em}
+.ph-txt p{margin:0;color:var(--ink2);font-size:17px;line-height:1.45}
+.dusk .ph-txt p{color:var(--ink4)}
+.dusk .go{color:var(--gold)}
+.ph-txt .go{margin-top:8px}
+.note{display:flex;gap:10px;align-items:baseline;margin:6px 0 0;font-size:15.5px;color:var(--ink3)}
+.note i{flex:none;width:7px;height:7px;border-radius:50%;background:var(--sky);transform:translateY(-1px)}
+
+/* image tiles: a real preview on top, softening into a dusk panel that carries the words */
+.tiles{display:grid;grid-template-columns:1fr;gap:16px}
+.shot{position:relative;display:flex;flex-direction:column;border-radius:16px;overflow:hidden;text-decoration:none;color:var(--paper);background:var(--dusk);isolation:isolate;border:1px solid #2E2925;transition:transform .45s var(--ease),box-shadow .45s var(--ease)}
+.shot:hover{transform:translateY(-3px);box-shadow:0 22px 44px -24px rgba(44,33,26,.55)}
+.shot .pic{position:relative;aspect-ratio:3/2;overflow:hidden}
+.shot img{width:100%;height:100%;object-fit:cover;object-position:50% 0;transition:transform .9s var(--ease)}
+.shot:hover img{transform:scale(1.03)}
+.shot .pic:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(27,25,22,0) 38%,rgba(27,25,22,.72) 76%,var(--dusk) 97%)}
+.shot .txt{position:relative;margin-top:-14px;padding:0 20px 20px;display:flex;flex-direction:column;gap:6px;flex:1}
+.shot h3{font-family:var(--display);font-weight:600;font-size:26px;line-height:1.1;margin:2px 0 0;color:var(--paper)}
+.shot p{margin:0;color:var(--ink4);font-size:16.5px;line-height:1.4}
+.shot .go{color:var(--gold);margin-top:auto;padding-top:10px}
+.ph-tile .k:before,.shot .k:before{display:none}
+
 .ask{margin-top:88px;border-top:1px solid var(--rule);padding-top:40px;display:flex;flex-wrap:wrap;gap:18px 40px;align-items:center;justify-content:space-between}
-.ask p{margin:0;font-family:Fraunces,serif;font-size:clamp(22px,2.6vw,28px);max-width:30ch}
-.ask a{font-family:"IBM Plex Mono",monospace;font-size:13px;background:var(--walnut);color:var(--paper);text-decoration:none;padding:13px 20px;border-radius:999px}
+.ask p{margin:0;font-family:var(--display);font-weight:500;font-size:clamp(23px,2.8vw,30px);line-height:1.2;max-width:28ch}
+.ask a{font-family:var(--mono);font-size:13px;background:var(--walnut);color:var(--paper);text-decoration:none;padding:13px 20px;border-radius:999px;transition:background .3s}
+.ask a:hover{background:var(--ink)}
+
+@media (min-width:760px){
+  .hero .in{padding:140px 20px 64px}.wrap{padding:0 20px}
+  .shelf{padding:72px 0 80px}
+  .duo{grid-template-columns:1.35fr 1fr;gap:22px}
+  .ph-tile{padding:24px;gap:28px;border-radius:22px}
+  .duo .ph-tile:first-child{grid-template-columns:46% 1fr}
+  .phone{border-radius:30px;padding:8px}.phone img{border-radius:23px}
+  .tiles{grid-template-columns:repeat(3,1fr);gap:22px}
+  .shot.wide{grid-column:1/-1;flex-direction:row-reverse;min-height:380px}
+  .shot.wide .pic{flex:0 0 64%;aspect-ratio:auto}
+  .shot.wide .pic:after{background:linear-gradient(90deg,var(--dusk) 0%,rgba(27,25,22,.5) 14%,rgba(27,25,22,0) 34%)}
+  .shot.wide .txt{margin:0;padding:36px 8px 32px 36px;justify-content:flex-end}
+  .shot.wide h3{font-size:36px}
+  .shot.wide p{font-size:18px}
+}
+@media (max-width:759px){.ph-tile{grid-template-columns:40% 1fr}}
+@media (prefers-reduced-motion:reduce){.hero img{animation:none;transform:none}.shot img,.ph-tile,.go i{transition:none}}
 </style>
 </head>
 <body class="has-shell">
+<canvas id="motes" aria-hidden="true"></canvas>
 <nav class="site-nav"><div class="in"><a class="brand" href="https://www.dustinnimmo.com"><span class="mark"><i></i><i></i><i></i><i></i><i></i></span>DNSC</a><div class="links"><a href="https://www.dustinnimmo.com/#what-i-do">What we do</a><a href="https://www.dustinnimmo.com/#three-ways">How we work</a><a class="keep" href="https://tools.dustinnimmo.com/" aria-current="page">Teaching &amp; tools</a></div><a class="cta" href="https://www.dustinnimmo.com/#contact">Start a conversation</a></div></nav>
 <header class="hero">
 <img src="assets/flag-sunrise-full.jpg" alt="An American flag at sunrise on a porch in Ohio, photographed by Dustin Nimmo">
 <div class="in">
-<div class="eyebrow">Free tools</div>
+<p class="k">Free tools</p>
 <h1>Made for the community, <em>given away.</em></h1>
 <p>Tools built in the open: some from the public record, some for working with the AI you already have. Use them, share them, and tell us what to build next.</p>
 </div>
 </header>
+
+<section class="shelf" aria-labelledby="well-h">
+<svg class="orbit" viewBox="0 0 256 256" aria-hidden="true"><circle cx="128" cy="128" r="110" fill="none" stroke="#CFC6B8" stroke-width="1.2"/><circle cx="128" cy="128" r="78" fill="none" stroke="#CFC6B8" stroke-width=".8" stroke-dasharray="1 5"/><circle cx="128" cy="18" r="5" fill="#3E6A9E" opacity=".55"/><circle cx="233" cy="94" r="5" fill="#B4862E" opacity=".6"/><circle cx="193" cy="217" r="5" fill="#623E2A" opacity=".45"/><circle cx="63" cy="217" r="5" fill="#A69686" opacity=".6"/><circle cx="23" cy="94" r="5" fill="#D9B25A" opacity=".7"/></svg>
+<div class="wrap">
+<div class="head">
+<div><p class="k">Daily · Free · No account</p><h2 id="well-h">The Well · <em>small things, every day</em></h2>
+<p>Two daily crosswords: Learning AI, out every morning, and AI in the News, starting Monday. Five minutes, then back to your day.</p></div>
+<a class="allwell" href="well/">Step into the Well →</a>
+</div>
+<div class="duo">
+<a class="ph-tile" href="well/daily-line/">
+<div class="phone"><img src="assets/previews/crossword.jpg" width="900" height="1600" alt="The Daily Line crossword on a phone: a five by five grid with today's first clue"></div>
+<div class="ph-txt"><p class="k">Learning AI</p><h3>The Daily Line</h3><p>The vocabulary of working with AI, one small grid a day, with clues that teach.</p><p class="note"><i></i>AI in the News joins it Monday, October 5.</p><span class="go">Play today's <i>→</i></span></div>
+</a>
+<a class="ph-tile dusk" href="well/walk-in/">
+<div class="phone"><img src="assets/previews/walkin.jpg" width="900" height="1600" alt="The Walk-in on a phone: a breathing ring at dusk with three names seated on it" loading="lazy"></div>
+<div class="ph-txt"><p class="k on-dark">A quiet room</p><h3>The Walk-in</h3><p>Name the people in your day. Each takes a seat on the ring. Breathe, leave one line.</p><span class="go">Step in <i>→</i></span></div>
+</a>
+</div>
+</div>
+</section>
+
 <main class="wrap">
-<section class="group">
-<div class="eyebrow dark">Civic</div>
-<h2>Know what the decisions cost.</h2>
-<p class="sub">Plain answers from public records, so neighbors can talk about the same numbers.</p>
+<section class="group" aria-labelledby="civic-h">
+<div class="head"><div><p class="k">Civic</p><h2 id="civic-h">Know what the decisions cost.</h2><p>Plain answers from public records, so neighbors can talk about the same numbers.</p></div></div>
 <div class="tiles">
-<a class="tile" href="follow-the-money/"><img src="assets/flag-pole.jpg" style="object-position:50% 18%" alt="An American flag on a pole against the sky" loading="lazy"><div class="body"><span class="tag">Lakota schools · Issue 2</span><p class="t">Follow the Money</p><p class="d">What the bond issue would cost your home, from the public record.</p><span class="go">Open the tool →</span></div></a>
+<a class="shot wide" href="follow-the-money/"><div class="pic"><img src="assets/previews/ftm.jpg" width="1200" height="800" alt="Follow the Money: the Issue 2 calculator showing what the bond would cost a $350,000 home" loading="lazy"></div><div class="txt"><p class="k on-dark">Lakota · Issue 2</p><h3>Follow the Money</h3><p>What the bond issue would cost your home, from the public record.</p><span class="go">Open <i>→</i></span></div></a>
 </div>
 </section>
-<section class="group">
-<div class="eyebrow dark">Working with AI</div>
-<h2>Use what you already have, on purpose.</h2>
-<p class="sub">The same practices we teach, free to take home.</p>
+
+<section class="group" aria-labelledby="ai-h">
+<div class="head"><div><p class="k">Working with AI</p><h2 id="ai-h">Use what you already have, on purpose.</h2><p>The same practices we teach, free to take home.</p></div></div>
 <div class="tiles">
-<a class="tile" href="recipes/"><img src="assets/heart-leaf.jpg" alt="A leaf with a heart cut out of it" loading="lazy"><div class="body"><span class="tag">Recipes</span><p class="t">The Recipe Book</p><p class="d">Working systems for the AI you already have: what it does, the rules it keeps, the prompt and the rhythm.</p><span class="go">Open the book →</span></div></a>
-<a class="tile" href="ai-gauges/"><img src="assets/sky-rays.jpg" alt="Light breaking through clouds" loading="lazy"><div class="body"><span class="tag">Dashboard</span><p class="t">AI Gauges</p><p class="d">See your own AI use: tokens, energy, water and carbon, from your own exports.</p><span class="go">Open the gauges →</span></div></a>
-<a class="tile" href="well/"><img src="assets/lone-tree.jpg" alt="A lone tree in an open field" loading="lazy"><div class="body"><span class="tag">Daily games · A quiet room</span><p class="t">The Well</p><p class="d">Small word games that teach the vocabulary of working with AI, and a quiet room for the people in your day. Paper, free, no streaks.</p><span class="go">Step in →</span></div></a>
+<a class="shot" href="recipes/"><div class="pic"><img src="assets/previews/recipes.jpg" width="1200" height="800" alt="The Recipe Book: the recipes we cook with, starting with the morning inbox" loading="lazy"></div><div class="txt"><p class="k on-dark">Recipes</p><h3>The Recipe Book</h3><p>Working systems for the AI you already have.</p><span class="go">Open <i>→</i></span></div></a>
+<a class="shot" href="ai-gauges/"><div class="pic"><img src="assets/previews/gauges.jpg" width="1200" height="800" alt="AI Gauges: a dashboard of dials for energy, output tokens, water, cache and carbon" loading="lazy"></div><div class="txt"><p class="k on-dark">Dashboard</p><h3>AI Gauges</h3><p>Your own AI use: tokens, energy, water and carbon.</p><span class="go">Open <i>→</i></span></div></a>
+<a class="shot" href="well/"><div class="pic"><img src="assets/previews/well.jpg" width="1200" height="800" alt="The Well: small things, every day, with today's crosswords" loading="lazy"></div><div class="txt"><p class="k on-dark">Daily games</p><h3>The Well</h3><p>Word games and quiet rooms. Paper, free, no streaks.</p><span class="go">Open <i>→</i></span></div></a>
 </div>
 </section>
+
 <section class="ask">
 <p>Want help putting these to work with your people?</p>
 <a href="https://www.dustinnimmo.com/#contact">Start a conversation</a>
 </section>
 </main>
 <footer class="site-foot"><div class="in"><span>DNSC · Dustin Nimmo Strategic Consulting</span><span class="nav"><a href="https://www.dustinnimmo.com">Home</a><a href="https://www.dustinnimmo.com/#three-ways">How we work</a><a href="https://tools.dustinnimmo.com/">Teaching &amp; tools</a><a href="https://tools.dustinnimmo.com/recipes/">The Recipe Book</a><a href="https://www.dustinnimmo.com/teaching">Teaching</a><a href="https://www.dustinnimmo.com/#contact">Contact</a></span><span class="credit">Free to use. All photography by Dustin Nimmo, from his own work.</span></div></footer>
+<script>
+(function(){
+  // a few motes of gold, sky and ochre drifting up through the page
+  var cv=document.getElementById('motes'); if(!cv||!cv.getContext) return;
+  var cx=cv.getContext('2d'), mq=matchMedia('(prefers-reduced-motion: reduce)'), W,H,dpr,motes=[],raf=0;
+  var COLS=['217,178,90','62,106,158','180,134,46'];
+  function size(){dpr=Math.min(devicePixelRatio||1,2);W=cv.width=innerWidth*dpr;H=cv.height=innerHeight*dpr;cv.style.width=innerWidth+'px';cv.style.height=innerHeight+'px';
+    var n=Math.max(18,Math.min(44,Math.round(innerWidth/30)));
+    motes=Array.from({length:n},function(){return{x:Math.random()*W,y:Math.random()*H,r:(Math.random()*.5+.5)*dpr,v:(Math.random()*.12+.04)*dpr,w:Math.random()*6.28,c:COLS[Math.floor(Math.random()*3)],o:Math.random()*.3+.18}});}
+  function draw(t){cx.clearRect(0,0,W,H);var still=mq.matches;
+    for(var i=0;i<motes.length;i++){var m=motes[i];
+      if(!still){m.y-=m.v;m.x+=Math.sin(t/3600+m.w)*.16*dpr;if(m.y<-6){m.y=H+6;m.x=Math.random()*W;}}
+      cx.beginPath();cx.arc(m.x,m.y,m.r,0,6.283);cx.fillStyle='rgba('+m.c+','+(m.o*(still?.8:.6+.4*Math.sin(t/2400+m.w)))+')';cx.fill();}
+    raf=still?0:requestAnimationFrame(draw);}
+  function start(){if(!raf)raf=requestAnimationFrame(draw);}
+  addEventListener('resize',function(){size();if(mq.matches)draw(0);});
+  document.addEventListener('visibilitychange',function(){if(document.hidden){cancelAnimationFrame(raf);raf=0;}else start();});
+  if(mq.addEventListener)mq.addEventListener('change',start);
+  size();start();
+})();
+</script>
+<script src="assets/site.js" defer></script>
 </body>
 </html>

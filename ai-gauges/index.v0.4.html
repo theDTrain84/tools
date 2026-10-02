@@ -563,3 +563,4 @@ drop.addEventListener('drop',async e=>{const items=[...e.dataTransfer.items]; co
   for(const it of items){const en=it.webkitGetAsEntry&&it.webkitGetAsEntry(); if(en) await walk(en,'');} $('#note').textContent=`Reading ${files.length} files…`; const logs=[];for(const f of files){if(/\.(jsonl|ndjson)$/.test(f.name)&&await looksLikeUsageLog(f))logs.push(f)} const d=logs.length?await parseUsageLog(logs):await parseFiles(files); render(d,'Your kitchen'); $('#note').textContent=`${d.records.toLocaleString()} messages read locally. Nothing was uploaded.`;});
 render(SAMPLE,"Sample kitchen"); $('#note').textContent=SAMPLE_NOTE;
 </script>
+<script src="../assets/site.js" defer></script>

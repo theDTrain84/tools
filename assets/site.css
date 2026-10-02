@@ -19,3 +19,20 @@
 
 body.has-shell{min-height:100vh;display:flex;flex-direction:column}body.has-shell>.site-foot{margin-top:auto}body.has-shell>.wrap,body.has-shell>main{width:100%}
 body.has-shell>.wrap,body.has-shell>main{padding-bottom:96px}
+
+/* Continuity with dustinnimmo.com: soft fade in on load, fade out on leave (assets/site.js), view transitions where supported */
+:root{--dn-shell:1}
+@view-transition{navigation:auto}
+::view-transition-old(root){animation:dn-vt-out .22s ease-in both}
+::view-transition-new(root){animation:dn-vt-in .42s ease-out both}
+@keyframes dn-vt-out{to{opacity:0}}
+@keyframes dn-vt-in{from{opacity:0}}
+body{animation:dn-in .42s ease-out backwards}
+body.is-ready{opacity:1}
+@keyframes dn-in{from{opacity:0}}
+body.is-leaving{opacity:0;transition:opacity .22s ease-in}
+@media (prefers-reduced-motion:reduce){
+  @view-transition{navigation:none}
+  body{animation:none}
+  body.is-leaving{opacity:1;transition:none}
+}
