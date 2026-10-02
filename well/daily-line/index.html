@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Daily Line · DNSC</title>
+<meta name="description" content="A daily five by five crossword that teaches the vocabulary of working with AI. One a day, free, made by DNSC.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css">
+<style>
+:root{--paper:#F3EFE7;--paper2:#E9E3D7;--rule:#CFC6B8;--ink:#2C211A;--ink2:#4A3A2F;--ink3:#7A6A5D;--ink4:#A69686;--walnut:#623E2A;--ochre:#B4862E;--gold:#D9B25A;--sky:#3E6A9E;--dusk:#1B1916;--cell:56px;--mono:"IBM Plex Mono",ui-monospace,monospace}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink)}
+body{font-family:Newsreader,Georgia,serif;font-size:18px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:720px;margin:0 auto;padding:28px 16px 40px}
+.crumb{font-family:var(--mono);font-size:12.5px;color:var(--ink3);text-decoration:none;letter-spacing:.04em}
+.crumb:hover{color:var(--ink)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--walnut);margin:26px 0 10px}
+h1{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:clamp(38px,9vw,56px);line-height:1.02;letter-spacing:-.012em;margin:0 0 12px}
+.lede{color:var(--ink2);font-size:20px;margin:0 0 14px;max-width:36ch;text-wrap:pretty}
+.date{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3);margin:0 0 26px}
+.board{display:flex;flex-direction:column;align-items:center}
+.bar{width:calc(var(--cell)*5 + 6px);display:flex;justify-content:space-between;align-items:center;margin:0 0 10px;font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3)}
+.timer{color:var(--ink2);font-variant-numeric:tabular-nums}
+.grid{display:grid;grid-template-columns:repeat(5,var(--cell));grid-auto-rows:var(--cell);gap:1px;background:var(--rule);border:1px solid var(--rule);padding:0;opacity:0;animation:up .4s ease-out forwards}
+@keyframes up{to{opacity:1}}
+.cell{position:relative;appearance:none;border:0;margin:0;padding:0;background:#FBF9F4;color:var(--ink);font-family:var(--mono);font-weight:500;font-size:26px;line-height:1;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;border-radius:0;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.cell.blk{background:var(--dusk);cursor:default}
+.cell.word{background:var(--paper2)}
+.cell.sel{background:var(--paper2);box-shadow:inset 0 0 0 2px var(--walnut)}
+.cell:focus-visible{outline:2px solid var(--sky);outline-offset:-4px;z-index:1}
+.cell .n{position:absolute;top:3px;left:4px;font-size:9.5px;font-weight:400;color:var(--ink3);letter-spacing:0}
+.cell .l{display:inline-block}
+.cell .l.set{animation:settle .12s ease-out}
+@keyframes settle{from{transform:scale(1.08)}to{transform:scale(1)}}
+.cell.ok .l{color:var(--walnut)}
+.cell.bad .l{color:var(--ochre);text-decoration:line-through;text-decoration-thickness:1.5px;text-decoration-color:var(--ink3)}
+.cell.rev .l{color:var(--walnut);font-style:italic}
+.clue-now{width:100%;max-width:420px;margin:16px 0 0;min-height:58px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:10px 2px;display:flex;gap:12px;align-items:baseline}
+.clue-now .tag{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--walnut);white-space:nowrap}
+.clue-now .tx{font-size:18px;color:var(--ink);line-height:1.35}
+.tools{display:flex;gap:8px;margin:14px 0 0;flex-wrap:wrap;justify-content:center}
+.q{appearance:none;background:transparent;border:1px solid var(--rule);border-radius:999px;padding:8px 14px;font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink2);cursor:pointer}
+.q:hover{border-color:var(--ink3);color:var(--ink)}
+.q[disabled]{opacity:.5;cursor:default}
+.kb{display:none;width:100%;max-width:420px;margin:14px 0 0;user-select:none;-webkit-user-select:none}
+.touch .kb{display:block}
+.kr{display:flex;gap:4px;justify-content:center;margin:0 0 6px}
+.key{appearance:none;flex:1 1 0;max-width:40px;height:46px;padding:0;background:#FBF9F4;border:1px solid var(--rule);border-radius:6px;font-family:var(--mono);font-size:15px;font-weight:500;color:var(--ink);cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.key:active{background:var(--paper2)}
+.key.bk{flex:1.6 1 0;max-width:64px;font-size:17px}
+.status{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--ink2);min-height:20px;margin:10px 0 0;text-align:center}
+.clues{display:grid;grid-template-columns:1fr;gap:26px;margin:36px 0 0}
+@media(min-width:620px){.clues{grid-template-columns:1fr 1fr}:root{--cell:64px}.cell{font-size:30px}}
+.clues h2{font-family:var(--mono);font-weight:500;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--walnut);margin:0 0 8px;padding:0 0 8px;border-bottom:1px solid var(--rule)}
+.clues ol{list-style:none;margin:0;padding:0}
+.cl{appearance:none;display:flex;gap:12px;width:100%;text-align:left;background:transparent;border:0;border-radius:6px;padding:7px 8px;margin:0 0 2px;font-family:Newsreader,Georgia,serif;font-size:17px;line-height:1.35;color:var(--ink2);cursor:pointer}
+.cl b{font-family:var(--mono);font-weight:500;font-size:12px;color:var(--ink3);min-width:16px;padding-top:3px}
+.cl:hover{color:var(--ink)}
+.cl.on{background:var(--paper2);color:var(--ink)}
+.cl.fill{color:var(--ink3)}
+.done{display:none;margin:36px 0 0;background:var(--dusk);color:var(--paper);border-radius:14px;padding:26px 22px 24px}
+.done.show{display:block}
+.done .k{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin:0 0 10px}
+.done h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:30px;line-height:1.1;margin:0 0 12px}
+.done p{font-size:18.5px;color:var(--paper);margin:0 0 18px;max-width:52ch}
+.done .stats{display:flex;flex-wrap:wrap;gap:8px 22px;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink4);margin:0 0 18px}
+.done .stats span b{color:var(--paper);font-weight:500}
+.done .q{color:var(--paper);border-color:#4A3A2F}
+.done .q:hover{border-color:var(--gold)}
+.done .copied{font-family:var(--mono);font-size:12px;color:var(--gold);margin-left:10px}
+.how{margin:40px 0 0;font-size:16px;color:var(--ink3);max-width:56ch}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (prefers-reduced-motion:reduce){.grid{animation:none;opacity:1}.cell .l.set{animation:none}}
+</style>
+</head>
+<body class="has-shell">
+<nav class="site-nav"><div class="in"><a class="brand" href="https://www.dustinnimmo.com"><span class="mark"><i></i><i></i><i></i><i></i><i></i></span>DNSC</a><div class="links"><a href="https://www.dustinnimmo.com/#what-i-do">What we do</a><a href="https://www.dustinnimmo.com/#three-ways">How we work</a><a class="keep" href="https://tools.dustinnimmo.com/">Teaching &amp; tools</a></div><a class="cta" href="https://www.dustinnimmo.com/#contact">Start a conversation</a></div></nav>
+<div class="wrap">
+<a class="crumb" href="../">← The Well</a>
+<p class="eyebrow">The Well · Daily</p>
+<h1>The Daily Line.</h1>
+<p class="lede">Five across, five down. New things require new vocabulary; this is a small way to learn it.</p>
+<p class="date" id="date"></p>
+
+<div class="board">
+  <div class="bar"><span id="pzl">Puzzle</span><span class="timer" id="timer" aria-label="Time">0:00</span></div>
+  <div class="grid" id="grid" role="group" aria-label="Crossword grid, five by five"></div>
+  <div class="clue-now" id="now"><span class="tag" id="nowTag"></span><span class="tx" id="nowTx"></span></div>
+  <div class="kb" id="kb" aria-label="On-screen keyboard"></div>
+  <div class="tools">
+    <button class="q" id="check" type="button">Check</button>
+    <button class="q" id="reveal" type="button">Reveal word</button>
+  </div>
+  <p class="status" id="status" role="status"></p>
+</div>
+<div class="sr" aria-live="polite" id="live"></div>
+
+<div class="clues">
+  <section><h2>Across</h2><ol id="across"></ol></section>
+  <section><h2>Down</h2><ol id="down"></ol></section>
+</div>
+
+<section class="done" id="done" aria-live="polite">
+  <p class="k" id="doneK">Solved</p>
+  <h2 id="doneH"></h2>
+  <p id="doneP"></p>
+  <div class="stats" id="stats"></div>
+  <button class="q" id="share" type="button">Copy result</button><span class="copied" id="copied"></span>
+</section>
+
+<p class="how">Tap a square, or click it, and type. Tap again to turn between across and down. Arrows move, Tab or Enter jumps to the next clue. A new grid arrives each morning, and your progress stays in this browser only.</p>
+</div>
+<footer class="site-foot"><div class="in"><span>DNSC · Dustin Nimmo Strategic Consulting</span><span class="nav"><a href="https://www.dustinnimmo.com">Home</a><a href="https://www.dustinnimmo.com/#three-ways">How we work</a><a href="https://tools.dustinnimmo.com/">Teaching &amp; tools</a><a href="https://tools.dustinnimmo.com/well/">The Well</a><a href="https://www.dustinnimmo.com/#contact">Contact</a></span><span class="credit">Free to use. Made by DNSC.</span></div></footer>
+<script>
+(function(){
+"use strict";
+/* Bank of hand-made 5x5 grids. '#' is a black square. a = across answers in reading order, d = down answers in reading order. */
+var BANK=[
+{g:["##MAP","#SAGE","TOKEN","AMEN#","REST#"],
+ a:[["MAP","Step two of Listen, ___, Build: draw what you heard"],["SAGE","Wise elder, or a kitchen herb"],["TOKEN","The small piece of text an AI reads and writes, often part of a word"],["AMEN","So be it"],["REST","What a builder needs at the end of a long day"]],
+ d:[["TAR","Sticky road surface"],["SOME","A few"],["MAKES","Builds by hand"],["AGENT","An AI that takes steps on your behalf"],["PEN","Tool for a first draft on paper"]],
+ w:"TOKEN",n:"A token is the small piece an AI actually reads, often part of a word. Every prompt and every answer is counted in tokens, and that count is what the work costs in money, energy and water. Shorter, clearer asks cost less and usually land better."},
+{g:["##CRY","#CLUE","TOOLS","WISE#","ONES#"],
+ a:[["CRY","Shout, or weep"],["CLUE","What you are reading right now"],["TOOLS","Search, calendar, email: an agent's kit"],["WISE","Full of good judgment"],["ONES","Single dollar bills"]],
+ d:[["TWO","A pair"],["COIN","Make up a new word, as new work often requires"],["CLOSE","The end-of-day note an AI writes about what changed and what is open"],["RULES","Written guardrails an AI reads before it starts: house ___"],["YES","A human's go-ahead"]],
+ w:"CLOSE",n:"A close is the short note at the end of a working session: what got done, what is still open, and who owns it. An AI forgets between sessions unless someone writes it down, so the close is how tomorrow starts warm."},
+{g:["##TAG","#PACE","ALBUM","SALT#","KNEE#"],
+ a:[["TAG","Label on a file or a photo"],["PACE","Speed of the work, set on purpose"],["ALBUM","A collection of songs or photos"],["SALT","Light, ___, love, fire: four words for good work"],["KNEE","Joint you bend to kneel"]],
+ d:[["ASK","A clear ___ does more than a long prompt"],["PLAN","Agree on this before an agent starts building"],["TABLE","Where the team gathers to see the same work, people and AI together"],["ACUTE","Sharp, as an angle or a need"],["GEM","Something small and precious"]],
+ w:"TABLE",n:"We use the table as our picture of multiplayer AI: everyone sees the same work, and a person keeps a seat at the head. When AI helps one person in private, the team loses its shared record. Bring the work back to the table."},
+{g:["YES##","EATS#","TROOP","#TRIO","#HELP"],
+ a:[["YES","Word of agreement"],["EATS","Has a meal"],["TROOP","Band of scouts"],["TRIO","Group of three"],["HELP","What a good assistant offers first"]],
+ d:[["YET","So far, still"],["EARTH","Our planet, whose power and water run every data center"],["STORE","Save for later, as a memory file does"],["SOIL","Ground where roots take hold"],["POP","Small sudden burst"]],
+ w:"EARTH",n:"Every AI answer runs on a real machine in a real building, drawing power and cooling water from the earth. One question costs very little. Billions a day add up, so we count our use and pick the smallest model that does the job well."},
+{g:["ACTS#","DARK#","DREAM","#DATA","#STEP"],
+ a:[["ACTS","Takes action"],["DARK","Without light"],["DREAM","A hope for what could be"],["DATA","Facts and figures an AI learns from"],["STEP","One small move in a longer plan"]],
+ d:[["ADD","Put in more"],["CARDS","Recipe ___: short how-tos you can share"],["TREAT","Something sweet, or how you handle a person"],["SKATE","Glide on ice"],["MAP","A drawing of the ground before you build"]],
+ w:"DATA",n:"Data is the record an AI learns from and the context you hand it. If the data is thin, stale or one-sided, the answer will be too, however confident it sounds. A good habit: ask where the facts came from."},
+{g:["#PALM","#AREA","HUMAN","USED#","BED##"],
+ a:[["PALM","Inner side of the hand"],["AREA","Region or zone"],["HUMAN","The one who stays in the loop and makes the call"],["USED","Put to work"],["BED","Where rest happens"]],
+ d:[["HUB","Center of a wheel, or of a team"],["PAUSE","Wait a beat before you send what an AI wrote"],["ARMED","Equipped and ready"],["LEAD","Go first and show the way"],["MAN","Staff, as a front desk"]],
+ w:"HUMAN",n:"Human in the loop means a person reviews and decides before anything important goes out. The AI drafts, sorts and suggests. The human holds the judgment, the relationships and the responsibility."},
+{g:["FAT##","EDIT#","WATER","#PLEA","#TENT"],
+ a:[["FAT","Thick and plump"],["EDIT","Change a draft; most AI writing needs one"],["WATER","Data centers drink it to stay cool"],["PLEA","Earnest request"],["TENT","Camping shelter"]],
+ d:[["FEW","A small number"],["ADAPT","Change to fit new conditions"],["TITLE","Name at the top of a page"],["TEEN","Thirteen through nineteen"],["RAT","Rodent in a maze"]],
+ w:"WATER",n:"Large data centers use water to keep their machines cool, and some sit in places already short on it. Your share for one question is small, about a sip. We track it anyway, because what we measure, we can choose to spend well."},
+{g:["ARMS#","ROOT#","COVER","#FIRE","#SEND"],
+ a:[["ARMS","Limbs for a hug"],["ROOT","Put down a ___: get grounded before the work"],["COVER","Front of a book"],["FIRE","Light, salt, love, ___: the energy for the work"],["SEND","Final button, and a person presses it"]],
+ d:[["ARC","Shape of a good story"],["ROOFS","Tops of houses"],["MOVIE","Film"],["STERN","Strict, or the back of a boat"],["RED","Color of a stop light"]],
+ w:"SEND",n:"In our practice an AI may draft, and a person presses send. Anything that speaks for you, an email, a post, a reply, passes your eyes first. That one rule keeps trust whole while the work speeds up."},
+{g:["SEAT#","PALE#","ATLAS","#SOCK","##WHY"],
+ a:[["SEAT","Place at the table"],["PALE","Light in color"],["ATLAS","Book of maps"],["SOCK","Foot warmer"],["WHY","The question a good teacher welcomes"]],
+ d:[["SPA","Place to unwind"],["EATS","Has dinner"],["ALLOW","Give an agent permission to"],["TEACH","Last step of Listen, Map, Build, Trust, ___"],["SKY","Blue overhead"]],
+ w:"TEACH",n:"Teach is the last step of our method: Listen, Map, Build, Trust, Teach. The work is finished when your team can run it without us. A tool your people can explain and change belongs to them."},
+{g:["#SNAP","#WAKE","LIMIT","OPEN#","WED##"],
+ a:[["SNAP","Quick photo"],["WAKE","Start of a session, when an AI reads its notes"],["LIMIT","Context ___: how much an AI can hold at once"],["OPEN","Unlocked"],["WED","Midweek day, for short"]],
+ d:[["LOW","Quiet and soft"],["SWIPE","Phone gesture"],["NAMED","Called"],["AKIN","Similar"],["PET","Dog or cat at home"]],
+ w:"LIMIT",n:"Every AI has a context limit, the amount of text it can hold in mind at once. Past that edge, older details fall away. Long sessions drift, so we start fresh and carry over a short summary."},
+{g:["##BUT","#PURE","ALIGN","TALE#","ENDS#"],
+ a:[["BUT","However"],["PURE","Clean and unmixed"],["ALIGN","Point the AI and the team the same way"],["TALE","Story"],["ENDS","Finishes"]],
+ d:[["ATE","Had lunch"],["PLAN","Write this first, then build"],["BUILD","Third step: Listen, Map, ___"],["URGES","Strong wants"],["TEN","Count of fingers"]],
+ w:"ALIGN",n:"Alignment is the work of making an AI do what people actually intend. On a team it starts small: agree on the goal, the rules and who decides, then write it down where the AI can read it."},
+{g:["ARMS#","LOOP#","LOVED","#TEAR","##SKY"],
+ a:[["ARMS","Limbs"],["LOOP","Human in the ___"],["LOVED","Held dear"],["TEAR","Rip"],["SKY","Where the light comes from"]],
+ d:[["ALL","Everyone"],["ROOT","Source, or what grounds you"],["MOVES","Steps in a game"],["SPEAK","Talk; many AIs now listen when you ___"],["DRY","Without water"]],
+ w:"LOOP",n:"A loop is a repeating cycle: ask, answer, check, adjust. Human in the loop means a person stands inside that cycle with the power to stop it. Small loops, checked often, carry work further than one big leap."},
+{g:["#OBEY","#LOVE","LINES","OVEN#","TEST#"],
+ a:[["OBEY","Follow, as clear rules"],["LOVE","Light, salt, ___, fire"],["LINES","Draw clear ___: what an AI may do, and what it never does"],["OVEN","Box for baking bread"],["TEST","Try it before you trust it"]],
+ d:[["LOT","A great deal"],["OLIVE","Branch offered in peace"],["BONES","Skeleton parts"],["EVENT","Something that happens"],["YES","Answer that lets the work go ahead"]],
+ w:"LINES",n:"Lines are the boundaries you set ahead of time: what an agent may do alone, what needs a check, and what it never does. Clear lines make it safe to hand off more."},
+{g:["##LAY","#TUNE","RINGS","ORAL#","WERE#"],
+ a:[["LAY","Set down gently"],["TUNE","Adjust for a better fit, as a model"],["RINGS","Three ___: what we believe, what we practice, what we make"],["ORAL","Spoken aloud"],["WERE","Used to be, for many"]],
+ d:[["ROW","Line of seats"],["TIRE","Grow weary"],["LUNAR","Of the moon"],["ANGLE","Point of view"],["YES","Word that starts the work"]],
+ w:"RINGS",n:"We draw our work as three rings. The inner ring is what we believe, the middle is what we practice each day, and the outer is what we make together. Change that lasts moves from the inside out."}
+];
+
+/* ---------- self-test: derive every entry from the grid and assert it matches the answer list ---------- */
+function slotsOf(g){
+  var A=[],D=[],r,c,s;
+  for(r=0;r<5;r++){c=0;while(c<5){if(g[r][c]==="#"){c++;continue}s=c;while(c<5&&g[r][c]!=="#")c++;if(c-s>1){var cs=[];for(var x=s;x<c;x++)cs.push([r,x]);A.push(cs)}}}
+  for(c=0;c<5;c++){r=0;while(r<5){if(g[r][c]==="#"){r++;continue}s=r;while(r<5&&g[r][c]!=="#")r++;if(r-s>1){var ds=[];for(var y=s;y<r;y++)ds.push([y,c]);D.push(ds)}}}
+  return {A:A,D:D};
+}
+function selfTest(){
+  var pass=0,errs=[];
+  BANK.forEach(function(p,i){
+    var bad=[],g=p.g,blk=0,seen={};
+    if(g.length!==5)bad.push("rows");
+    g.forEach(function(row){if(row.length!==5)bad.push("cols");for(var k=0;k<5;k++)if(row[k]==="#")blk++});
+    if(blk<2||blk>5)bad.push("black count "+blk);
+    var S=slotsOf(g);
+    [["A",S.A,p.a],["D",S.D,p.d]].forEach(function(t){
+      if(t[1].length!==t[2].length)bad.push(t[0]+" count");
+      t[1].forEach(function(cells,j){
+        var w=cells.map(function(rc){return g[rc[0]][rc[1]]}).join("");
+        if(w.length<3)bad.push(t[0]+j+" short");
+        if(!t[2][j]||t[2][j][0]!==w)bad.push(t[0]+j+" "+w+" vs "+(t[2][j]&&t[2][j][0]));
+        if(seen[w])bad.push("dup "+w);seen[w]=1;
+        if(!t[2][j]||!t[2][j][1])bad.push("no clue "+w);
+      });
+    });
+    /* every white square must sit in an across or down entry, and checked both ways where crossings exist */
+    for(var rr=0;rr<5;rr++)for(var cc=0;cc<5;cc++){if(g[rr][cc]==="#")continue;var inA=S.A.some(function(s){return s.some(function(x){return x[0]===rr&&x[1]===cc})}),inD=S.D.some(function(s){return s.some(function(x){return x[0]===rr&&x[1]===cc})});if(!inA&&!inD)bad.push("orphan "+rr+","+cc)}
+    if(!seen[p.w])bad.push("teaching word not in grid");
+    var all=JSON.stringify(p);if(/\u2014|\u2013/.test(all))bad.push("dash");
+    if(bad.length)errs.push("Puzzle "+(i+1)+": "+bad.join("; "));else pass++;
+  });
+  if(errs.length){console.error("[Daily Line] self-test failed",errs)}else{console.info("[Daily Line] self-test: "+pass+"/"+BANK.length+" grids pass, all crossings consistent")}
+  return !errs.length;
+}
+selfTest();
+
+/* ---------- day + storage ---------- */
+var now=new Date();
+var dayIdx=Math.round((Date.UTC(now.getFullYear(),now.getMonth(),now.getDate())-Date.UTC(2026,9,2))/864e5);
+var no=Math.max(1,dayIdx+1);
+var P=BANK[((dayIdx%BANK.length)+BANK.length)%BANK.length];
+var DAYS=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],MON=["January","February","March","April","May","June","July","August","September","October","November","December"];
+document.getElementById("date").textContent=DAYS[now.getDay()]+" · "+MON[now.getMonth()]+" "+now.getDate()+", "+now.getFullYear()+" · No. "+no;
+document.getElementById("pzl").textContent="No. "+no;
+function load(k){try{var v=localStorage.getItem("dnsc-daily-line-"+k);return v?JSON.parse(v):null}catch(e){return null}}
+function save(k,v){try{localStorage.setItem("dnsc-daily-line-"+k,JSON.stringify(v))}catch(e){}}
+
+/* ---------- model ---------- */
+var G=P.g,S=slotsOf(G),cells=[],entries=[],num={},n=1;
+for(var r=0;r<5;r++)for(var c=0;c<5;c++){
+  if(G[r][c]==="#")continue;
+  var sa=(c===0||G[r][c-1]==="#")&&c<4&&G[r][c+1]!=="#",sd=(r===0||G[r-1][c]==="#")&&r<4&&G[r+1][c]!=="#";
+  if(sa||sd)num[r+","+c]=n++;
+}
+S.A.forEach(function(cs,j){entries.push({dir:"A",cells:cs,ans:P.a[j][0],clue:P.a[j][1],n:num[cs[0].join(",")]})});
+S.D.forEach(function(cs,j){entries.push({dir:"D",cells:cs,ans:P.d[j][0],clue:P.d[j][1],n:num[cs[0].join(",")]})});
+entries.sort(function(x,y){return x.dir===y.dir?x.n-y.n:(x.dir==="A"?-1:1)});
+var st=load("state");
+if(!st||st.day!==dayIdx)st={day:dayIdx,f:{},t:0,done:false,help:false,started:false};
+var sel={r:0,c:0,dir:"A"},tStart=0,tick=null;
+
+/* ---------- build DOM ---------- */
+var gridEl=document.getElementById("grid"),btn={};
+for(r=0;r<5;r++)for(c=0;c<5;c++){
+  var b=document.createElement("button");b.type="button";b.className="cell";
+  if(G[r][c]==="#"){b.className+=" blk";b.tabIndex=-1;b.setAttribute("aria-hidden","true");b.disabled=true}
+  else{
+    if(num[r+","+c]){var s=document.createElement("span");s.className="n";s.textContent=num[r+","+c];b.appendChild(s)}
+    var l=document.createElement("span");l.className="l";b.appendChild(l);
+    (function(rr,cc){b.addEventListener("click",function(){
+      if(sel.r===rr&&sel.c===cc)toggleDir();else{sel.r=rr;sel.c=cc;if(!entryAt(rr,cc,sel.dir))toggleDir(true)}
+      paint(true);
+    })})(r,c);
+  }
+  btn[r+","+c]=b;gridEl.appendChild(b);
+}
+function entryAt(r,c,dir){for(var i=0;i<entries.length;i++){var e=entries[i];if(e.dir===dir&&e.cells.some(function(x){return x[0]===r&&x[1]===c}))return e}return null}
+function toggleDir(force){var d=sel.dir==="A"?"D":"A";if(entryAt(sel.r,sel.c,d)||force)sel.dir=d}
+function cur(){return entryAt(sel.r,sel.c,sel.dir)||entryAt(sel.r,sel.c,sel.dir==="A"?"D":"A")}
+
+["across","down"].forEach(function(id){
+  var ol=document.getElementById(id);
+  entries.filter(function(e){return e.dir===(id==="across"?"A":"D")}).forEach(function(e){
+    var li=document.createElement("li"),b=document.createElement("button");b.type="button";b.className="cl";
+    b.innerHTML="<b>"+e.n+"</b><span></span>";b.lastChild.textContent=e.clue;
+    b.setAttribute("aria-label",e.n+" "+(e.dir==="A"?"across":"down")+". "+e.clue+". "+e.ans.length+" letters");
+    b.addEventListener("click",function(){go(e,true)});
+    e.btn=b;li.appendChild(b);ol.appendChild(li);
+  });
+});
+
+/* on-screen keyboard for touch */
+var touch=false;try{touch=window.matchMedia("(pointer: coarse)").matches||("ontouchstart" in window)}catch(e){}
+if(touch)document.body.classList.add("touch");
+var kb=document.getElementById("kb");
+["QWERTYUIOP","ASDFGHJKL","ZXCVBNM<"].forEach(function(row){
+  var d=document.createElement("div");d.className="kr";
+  row.split("").forEach(function(ch){
+    var k=document.createElement("button");k.type="button";k.className="key"+(ch==="<"?" bk":"");
+    k.textContent=ch==="<"?"⌫":ch;k.setAttribute("aria-label",ch==="<"?"Backspace":ch);
+    k.addEventListener("click",function(){if(ch==="<")back();else typeL(ch)});
+    d.appendChild(k);
+  });kb.appendChild(d);
+});
+
+/* ---------- painting ---------- */
+var lastLive="";
+function paint(focus){
+  var e=cur();if(e)sel.dir=e.dir;
+  for(var k in btn){
+    var b=btn[k];if(b.disabled)continue;
+    var rc=k.split(","),ch=st.f[k]||"",lab=b.querySelector(".l");
+    if(lab.textContent!==ch)lab.textContent=ch;
+    b.classList.toggle("sel",+rc[0]===sel.r&&+rc[1]===sel.c);
+    b.classList.toggle("word",!!e&&e.cells.some(function(x){return x[0]==rc[0]&&x[1]==rc[1]}));
+    var m=(st.m||{})[k];b.classList.toggle("ok",m==="ok");b.classList.toggle("bad",m==="bad");b.classList.toggle("rev",m==="rev");
+    b.setAttribute("aria-label","Row "+(+rc[0]+1)+", column "+(+rc[1]+1)+", "+(ch?"letter "+ch:"empty"));
+  }
+  entries.forEach(function(x){
+    x.btn.classList.toggle("on",x===e);
+    x.btn.classList.toggle("fill",x.cells.every(function(rc){return st.f[rc.join(",")]}));
+  });
+  if(e){
+    document.getElementById("nowTag").textContent=e.n+(e.dir==="A"?" Across":" Down");
+    document.getElementById("nowTx").textContent=e.clue;
+    var say=e.n+(e.dir==="A"?" across. ":" down. ")+e.clue+". "+e.ans.length+" letters.";
+    if(say!==lastLive){document.getElementById("live").textContent=say;lastLive=say}
+  }
+  if(focus&&!touch)btn[sel.r+","+sel.c].focus({preventScroll:true});
+  else if(focus&&touch&&document.activeElement&&document.activeElement.classList.contains("cell"))document.activeElement.blur();
+}
+
+/* ---------- moves ---------- */
+function go(e,focus){var first=e.cells.find(function(rc){return !st.f[rc.join(",")]})||e.cells[0];sel={r:first[0],c:first[1],dir:e.dir};paint(focus)}
+function nextClue(step){var e=cur(),i=entries.indexOf(e),L=entries.length;
+  for(var k=1;k<=L;k++){var x=entries[(i+step*k+L*k)%L];if(st.done||x.cells.some(function(rc){return !st.f[rc.join(",")]})){go(x,true);return}}
+  go(entries[(i+step+L)%L],true);
+}
+function move(dr,dc){
+  var d=dr?"D":"A";if(sel.dir!==d&&entryAt(sel.r,sel.c,d)){sel.dir=d;paint(true);return}
+  var r=sel.r,c=sel.c;
+  for(var k=0;k<5;k++){r+=dr;c+=dc;if(r<0||r>4||c<0||c>4)return;if(G[r][c]!=="#"){sel.r=r;sel.c=c;if(!entryAt(r,c,sel.dir))toggleDir(true);paint(true);return}}
+}
+function startClock(){if(st.done||tick)return;st.started=true;tStart=Date.now()-st.t*1000;tick=setInterval(function(){st.t=Math.floor((Date.now()-tStart)/1000);showTime();save("state",st)},500)}
+function stopClock(){if(tick){clearInterval(tick);tick=null}}
+function fmt(s){return Math.floor(s/60)+":"+("0"+(s%60)).slice(-2)}
+function showTime(){document.getElementById("timer").textContent=fmt(st.t)}
+function typeL(ch){
+  if(st.done)return;startClock();
+  var k=sel.r+","+sel.c;if(st.m&&st.m[k]==="rev")return advance();
+  st.f[k]=ch;if(st.m&&st.m[k]&&st.m[k]!=="rev")delete st.m[k];
+  var lab=btn[k].querySelector(".l");lab.classList.remove("set");void lab.offsetWidth;lab.classList.add("set");
+  advance();save("state",st);verify();
+}
+function advance(){
+  var e=cur(),i=e.cells.findIndex(function(rc){return rc[0]===sel.r&&rc[1]===sel.c});
+  for(var k=i+1;k<e.cells.length;k++){if(!st.f[e.cells[k].join(",")]){sel.r=e.cells[k][0];sel.c=e.cells[k][1];return paint(true)}}
+  if(e.cells.every(function(rc){return st.f[rc.join(",")]})){if(i<e.cells.length-1){sel.r=e.cells[i+1][0];sel.c=e.cells[i+1][1];return paint(true)}return nextClue(1)}
+  for(k=0;k<i;k++){if(!st.f[e.cells[k].join(",")]){sel.r=e.cells[k][0];sel.c=e.cells[k][1];return paint(true)}}
+  paint(true);
+}
+function back(){
+  if(st.done)return;var k=sel.r+","+sel.c;
+  if(st.f[k]&&!(st.m&&st.m[k]==="rev")){delete st.f[k];if(st.m)delete st.m[k]}
+  else{var e=cur(),i=e.cells.findIndex(function(rc){return rc[0]===sel.r&&rc[1]===sel.c});if(i>0){sel.r=e.cells[i-1][0];sel.c=e.cells[i-1][1];k=sel.r+","+sel.c;if(!(st.m&&st.m[k]==="rev")){delete st.f[k];if(st.m)delete st.m[k]}}}
+  save("state",st);paint(true);
+}
+function sol(k){var rc=k.split(",");return G[+rc[0]][+rc[1]]}
+function verify(){
+  var keys=Object.keys(btn).filter(function(k){return !btn[k].disabled}),full=keys.every(function(k){return st.f[k]});
+  if(!full){status("");return}
+  if(keys.every(function(k){return st.f[k]===sol(k)}))finish(true);
+  else status("Every square is full. A few need another look; Check will show which.");
+}
+function status(t){document.getElementById("status").textContent=t}
+
+document.getElementById("check").addEventListener("click",function(){
+  if(st.done)return;st.m=st.m||{};var any=false,wrong=0;
+  for(var k in st.f){if(st.m[k]==="rev")continue;any=true;if(st.f[k]===sol(k))st.m[k]="ok";else{st.m[k]="bad";wrong++}}
+  status(!any?"Nothing to check yet.":wrong?wrong+(wrong>1?" squares need":" square needs")+" another look.":"So far, so good.");
+  save("state",st);paint(false);
+});
+document.getElementById("reveal").addEventListener("click",function(){
+  if(st.done)return;var e=cur();if(!e)return;st.m=st.m||{};st.help=true;startClock();
+  e.cells.forEach(function(rc){var k=rc.join(",");if(st.f[k]!==sol(k)){st.f[k]=sol(k);st.m[k]="rev"}});
+  save("state",st);paint(true);verify();
+});
+
+document.addEventListener("keydown",function(ev){
+  if(ev.metaKey||ev.ctrlKey||ev.altKey)return;
+  var t=ev.target,k=ev.key;
+  if(t&&t.closest&&(t.closest(".site-nav")||t.closest(".site-foot")))return;
+  var inGrid=!!(t&&t.classList&&t.classList.contains("cell")),free=inGrid||t===document||t===document.body||t===document.documentElement;
+  if(/^[a-z]$/i.test(k)){ev.preventDefault();typeL(k.toUpperCase())}
+  else if(k==="Backspace"||k==="Delete"){if(free||(t.classList&&t.classList.contains("cl"))){ev.preventDefault();back()}}
+  else if(!free)return;
+  else if(k==="ArrowLeft"){ev.preventDefault();move(0,-1)}
+  else if(k==="ArrowRight"){ev.preventDefault();move(0,1)}
+  else if(k==="ArrowUp"){ev.preventDefault();move(-1,0)}
+  else if(k==="ArrowDown"){ev.preventDefault();move(1,0)}
+  else if((k==="Tab"||k==="Enter")&&inGrid){ev.preventDefault();nextClue(ev.shiftKey?-1:1)}
+  else if(k===" "&&inGrid){ev.preventDefault();toggleDir();paint(true)}
+});
+document.addEventListener("visibilitychange",function(){if(document.hidden)stopClock();else if(st.started&&!st.done)startClock()});
+
+/* ---------- finish ---------- */
+function finish(fresh){
+  stopClock();st.done=true;
+  var stats=load("stats")||{streak:0,last:null,best:null,solved:0};
+  if(fresh&&stats.last!==dayIdx){
+    stats.streak=(stats.last===dayIdx-1)?stats.streak+1:1;stats.last=dayIdx;stats.solved++;
+    if(!st.help&&(stats.best===null||st.t<stats.best))stats.best=st.t;
+    save("stats",stats);
+  }
+  save("state",st);
+  st.m=st.m||{};for(var k in btn){if(!btn[k].disabled&&st.m[k]!=="rev")st.m[k]="ok"}
+  paint(false);
+  kb.style.display="none";document.getElementById("check").disabled=true;document.getElementById("reveal").disabled=true;
+  status("Solved in "+fmt(st.t)+(st.help?", with a little help.":"."));
+  document.getElementById("doneK").textContent="Solved · "+fmt(st.t)+(st.help?" · with help":"");
+  document.getElementById("doneH").textContent="Today's word: "+P.w.charAt(0)+P.w.slice(1).toLowerCase()+".";
+  document.getElementById("doneP").textContent=P.n;
+  document.getElementById("stats").innerHTML="<span>Streak <b>"+stats.streak+"</b></span><span>Best <b>"+(stats.best===null?"--":fmt(stats.best))+"</b></span><span>Solved <b>"+stats.solved+"</b></span>";
+  var d=document.getElementById("done");d.classList.add("show");
+  if(fresh&&d.scrollIntoView)setTimeout(function(){d.scrollIntoView({behavior:"smooth",block:"nearest"})},250);
+}
+document.getElementById("share").addEventListener("click",function(){
+  var txt="The Daily Line No. "+no+" · "+fmt(st.t)+(st.help?" · with help":"")+"\nhttps://tools.dustinnimmo.com/well/daily-line/",ok=document.getElementById("copied");
+  function fallback(){try{var ta=document.createElement("textarea");ta.value=txt;ta.style.position="fixed";ta.style.opacity="0";document.body.appendChild(ta);ta.select();var r=document.execCommand("copy");document.body.removeChild(ta);ok.textContent=r?"Copied.":"Copy did not work here."}catch(e){ok.textContent="Copy did not work here."}}
+  if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(txt).then(function(){ok.textContent="Copied."},fallback);else fallback();
+});
+
+/* ---------- start ---------- */
+showTime();
+go(entries[0],false);
+if(st.done)finish(false);else if(st.started&&st.t>0){/* resume paused; clock restarts on next letter */}
+})();
+</script>
+</body>
+</html>

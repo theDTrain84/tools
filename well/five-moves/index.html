@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Five Moves · The Well · DNSC</title>
+<meta name="description" content="A daily sorting game. Twenty cards, five moves of working with AI: Listen, Map, Build, Trust, Teach.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../../assets/site.css">
+<style>
+:root{
+  --paper:#F3EFE7;--paper2:#E9E3D7;--rule:#CFC6B8;
+  --ink:#2C211A;--ink2:#4A3A2F;--ink3:#7A6A5D;--ink4:#A69686;
+  --walnut:#623E2A;--ochre:#B4862E;--gold:#D9B25A;--sky:#3E6A9E;--dusk:#1B1916;
+  --display:"Fraunces",Georgia,serif;
+  --body:"Newsreader",Georgia,serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.5;overflow-x:hidden}
+.wrap{max-width:720px;margin:0 auto;padding:28px 16px 0}
+.crumb{display:inline-block;font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink2);text-decoration:none;padding:6px 0}
+.crumb:hover{color:var(--walnut)}
+.eyebrow,.dateline,.lbl{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3);margin:0}
+.eyebrow{margin-top:28px;color:var(--walnut)}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(34px,8.4vw,54px);line-height:1.05;letter-spacing:-.01em;margin:10px 0 14px;color:var(--ink)}
+.lede{font-size:19px;color:var(--ink2);margin:0 0 14px;max-width:36em}
+.dateline{padding-bottom:22px;border-bottom:1px solid var(--rule);margin-bottom:22px}
+:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
+button{font:inherit;color:inherit;-webkit-tap-highlight-color:transparent}
+
+#solved{display:flex;flex-direction:column;gap:8px}
+#solved:not(:empty){margin-bottom:8px}
+.band{border-radius:10px;padding:14px 16px 15px;background:var(--bg);color:var(--fg);text-align:center}
+.band h2{font-family:var(--display);font-weight:600;font-size:22px;line-height:1.15;margin:0}
+.band .line{font-size:16px;margin:2px 0 6px;font-style:italic}
+.band .cards{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;margin:0;line-height:1.6}
+.band .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;margin:0 0 4px}
+.band.in{animation:rise 320ms ease-out both}
+@keyframes rise{from{transform:translateY(var(--dy,24px));opacity:0}to{transform:none;opacity:1}}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.card{min-height:72px;padding:10px 10px;border-radius:10px;border:1.5px solid var(--rule);background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.2;text-align:center;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background-color .12s,border-color .12s;touch-action:manipulation}
+.card:hover{border-color:var(--ink4)}
+.card[aria-pressed="true"]{background:var(--paper2);border-color:var(--walnut)}
+.card:disabled{cursor:default}
+.card.shake{animation:shake 180ms linear}
+@keyframes shake{25%{transform:translateX(-2px)}75%{transform:translateX(2px)}}
+.card.out{opacity:0;transform:translateY(-10px);transition:opacity .16s,transform .16s}
+
+.status{min-height:26px;margin:14px 0 4px;text-align:center;font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink2)}
+.mist{display:flex;align-items:center;justify-content:center;gap:12px;margin:2px 0 16px}
+.dots{display:flex;gap:7px}
+.dots i{width:11px;height:11px;border-radius:50%;background:var(--ink4);display:block;transition:background-color .2s}
+.dots i.used{background:var(--walnut)}
+.controls{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.btn{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;padding:12px 18px;min-height:44px;border-radius:999px;border:1.5px solid var(--ink2);background:transparent;color:var(--ink);cursor:pointer}
+.btn:hover{background:var(--paper2)}
+.btn.primary{background:var(--walnut);border-color:var(--walnut);color:var(--paper)}
+.btn.primary:hover{background:var(--ink2);border-color:var(--ink2)}
+.btn:disabled{opacity:.45;cursor:default;background:transparent;color:var(--ink)}
+.btn.primary:disabled{background:var(--walnut);color:var(--paper)}
+
+.finish{margin-top:28px;padding:24px 20px;border:1px solid var(--rule);border-radius:12px;background:var(--paper2)}
+.finish h2{font-family:var(--display);font-weight:600;font-size:28px;line-height:1.1;margin:6px 0 16px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 18px;padding:14px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.stats div{text-align:center}
+.stats b{display:block;font-family:var(--display);font-weight:600;font-size:26px;color:var(--ink)}
+.note{margin:0 0 18px;color:var(--ink2)}
+.note strong{color:var(--walnut);font-weight:500}
+.share{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.finish .lbl{color:var(--ink2)}
+#fin-h:focus{outline:none}
+.share code{font-family:var(--mono);font-size:12px;color:var(--ink2)}
+.how{margin-top:34px;color:var(--ink2);font-size:16px}
+.how p{margin:6px 0 0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (max-width:420px){.card{font-size:16px;min-height:68px}.btn{padding:12px 14px}}
+@media (prefers-reduced-motion:reduce){.band.in,.card.shake{animation:none}.card.out{transition:none}}
+</style>
+</head>
+<body class="has-shell">
+<nav class="site-nav"><div class="in"><a class="brand" href="https://www.dustinnimmo.com"><span class="mark"><i></i><i></i><i></i><i></i><i></i></span>DNSC</a><div class="links"><a href="https://www.dustinnimmo.com/#what-i-do">What we do</a><a href="https://www.dustinnimmo.com/#three-ways">How we work</a><a class="keep" href="https://tools.dustinnimmo.com/">Teaching &amp; tools</a></div><a class="cta" href="https://www.dustinnimmo.com/#contact">Start a conversation</a></div></nav>
+<div class="wrap">
+  <a class="crumb" href="../">← The Well</a>
+  <p class="eyebrow">The Well · Daily</p>
+  <h1>Five moves, all at once.</h1>
+  <p class="lede">Twenty cards, five moves. Sort each card to the move it belongs to: Listen, Map, Build, Trust, Teach. Four in a row and the move opens.</p>
+  <p class="dateline" id="dateline"></p>
+
+  <section aria-label="Puzzle">
+    <div id="solved"></div>
+    <div class="grid" id="grid" role="group" aria-label="Cards. Choose four that share a move."></div>
+    <p class="status" id="status" aria-hidden="true"></p>
+    <div class="mist"><span class="lbl">Mistakes</span><span class="dots" id="dots" role="img" aria-label="4 mistakes left"><i></i><i></i><i></i><i></i></span></div>
+    <div class="controls" id="controls">
+      <button class="btn" id="shuffle" type="button">Shuffle</button>
+      <button class="btn" id="deselect" type="button" disabled>Deselect</button>
+      <button class="btn primary" id="submit" type="button" disabled>Submit</button>
+    </div>
+  </section>
+
+  <section class="finish" id="finish" hidden aria-labelledby="fin-h">
+    <p class="lbl" id="fin-k">Today's pass</p>
+    <h2 id="fin-h" tabindex="-1"></h2>
+    <div class="stats">
+      <div><b id="s-time">0:00</b><span class="lbl">Time</span></div>
+      <div><b id="s-miss">0</b><span class="lbl">Mistakes</span></div>
+      <div><b id="s-streak">1</b><span class="lbl">Streak</span></div>
+    </div>
+    <p class="note" id="note"></p>
+    <div class="share">
+      <button class="btn primary" id="copy" type="button">Copy result</button>
+      <code id="share-text"></code>
+    </div>
+  </section>
+
+  <div class="how">
+    <p class="lbl">How it works</p>
+    <p>Pick four cards that belong to the same move and press Submit. Three right shows a hint. You have four mistakes to spend. A new set arrives each day.</p>
+  </div>
+  <div class="sr" aria-live="polite" id="live"></div>
+</div>
+<footer class="site-foot"><div class="in"><span>DNSC · Dustin Nimmo Strategic Consulting</span><span class="nav"><a href="https://www.dustinnimmo.com">Home</a><a href="https://www.dustinnimmo.com/#three-ways">How we work</a><a href="https://tools.dustinnimmo.com/">Teaching &amp; tools</a><a href="https://tools.dustinnimmo.com/well/">The Well</a><a href="https://www.dustinnimmo.com/#contact">Contact</a></span><span class="credit">Free to use. Made by DNSC.</span></div></footer>
+<script>
+(function(){
+"use strict";
+var MOVES=[
+ {k:"Listen",bg:"var(--sky)",fg:"var(--paper)",line:"Your people first, then your systems.",
+  note:"We start with people because the real process lives in their habits long before it lives in any system. What they say in the hallway and what they skip in the meeting show us where AI will help and where it would only add noise."},
+ {k:"Map",bg:"var(--ochre)",fg:"var(--ink)",line:"The jobs, role by role. What AI is better at.",
+  note:"We map role by role because every job is a bundle of tasks, and only some of them are better done by AI. Once we can see where the hours go, the first build usually picks itself."},
+ {k:"Build",bg:"var(--walnut)",fg:"var(--paper)",line:"Skills and systems your team can govern.",
+  note:"We build skills and systems a team can read, run, and change on its own. Each one has a human gate, a place where a person looks before anything leaves the building."},
+ {k:"Trust",bg:"var(--ink3)",fg:"var(--paper)",line:"Compliant, consistent, cost-aware.",
+  note:"Trust comes from three plain habits: stay compliant, stay consistent, and know what every run costs. When the record is easy to read, a team can say yes to AI with open eyes."},
+ {k:"Teach",bg:"var(--gold)",fg:"var(--ink)",line:"Side by side, in your real work.",
+  note:"We teach side by side, inside the work people already do, because a new habit sticks when it meets a real Tuesday. The say-back closes the loop: when you can explain it to a peer, it belongs to you."}
+];
+/* Each set: [Listen],[Map],[Build],[Trust],[Teach], four cards each */
+var BANK=[
+ [["the first interview","what people actually do","the sticky notes","the silence in the room"],["role by role","the jobs to be done","where the hours go","what AI is better at"],["a skill your team owns","the morning inbox","a draft that arrives","the human gate"],["compliant","the cost of every run","consistent every time","a ledger you can read"],["side by side","in your real work","new vocabulary","the say-back"]],
+ [["ask before you fix","the hallway version","who they call first","the workaround"],["the handoffs","tasks by role","the repeat work","what stays human"],["a weekly report","the template","a first draft","the approval step"],["who can see it","a cost cap","same answer twice","the audit trail"],["practice on Monday","a shared glossary","show your work","learn by doing"]],
+ [["people first","the open question","what frustrates them","a day shadowing"],["the org chart","the time sink","the bottleneck","judgment calls"],["the intake form","a governed workflow","a reusable prompt","the review queue"],["data stays private","a monthly budget","no surprises","the rulebook"],["pair with a peer","real examples","the office hour","teach it back"]],
+ [["the listening tour","the honest answer","the unspoken rule","field notes"],["the task inventory","hours by role","the swim lanes","where AI fits"],["the meeting notes","a team-owned agent","the follow-up email","a sign-off point"],["privacy by default","the token bill","the same format","an open log"],["the first week","a worked example","the shared language","coaching in place"]],
+ [["their words first","the long pause","the side comment","what they skip"],["the job map","who does what","the slow parts","what to automate"],["the drafting desk","the evening summary","a system you govern","the checkpoint"],["within policy","cost per task","reliable output","the receipt"],["alongside the team","on live work","a phrase that sticks","the walk-through"]],
+ [["curiosity first","the story behind it","the real process","a quiet listen"],["role cards","the busywork","the decision points","AI's strengths"],["the briefing packet","a playbook skill","the drafted reply","a person approves"],["the compliance check","spend you can see","steady results","version history"],["hands on keyboard","your own files","a common vocabulary","the recap"]],
+ [["the kitchen table talk","what they love","the pain point","ask twice"],["one role at once","the weekly hours","the repeat tasks","machine strengths"],["the daily digest","a tool they control","the first pass","the final say"],["rules followed","the running cost","predictable","records you can check"],["the coaching session","at their desk","the new words","say it back"]],
+ [["listen for energy","the unasked question","the frustration","people before tools"],["work by role","the hidden hours","what drains time","the right tasks"],["the morning brief","team-owned skills","a ready draft","the gatekeeper"],["safe with data","know the cost","the same quality","a readable record"],["next to you","the real project","terms we share","a teach-back"]],
+ [["the first coffee","how it really works","what they whisper","the room's mood"],["the role map","high-volume tasks","where effort leaks","AI's better jobs"],["the inbox triage","a governed skill","the proposal draft","a human check"],["meets the standard","the cost meter","same every run","the open book"],["shoulder to shoulder","inside the workflow","the glossary","a demo they lead"]],
+ [["before the tools","the regulars' habits","the unwritten steps","listening sessions"],["each role's week","the repetitive core","the time audit","AI-ready tasks"],["the drafted agenda","a skill library","the weekly rollup","the approval gate"],["policy-safe","cost-aware","consistent tone","the change log"],["work alongside","their own cases","words that travel","the show-and-tell"]]
+];
+
+/* ---------- day + seed ---------- */
+var now=new Date();
+var dayIdx=Math.max(0,Math.round((Date.UTC(now.getFullYear(),now.getMonth(),now.getDate())-Date.UTC(2026,9,2))/864e5));
+var no=dayIdx+1;
+function rng(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+var rand=rng(dayIdx*2654435761+917);
+function shuffle(arr,r){for(var i=arr.length-1;i>0;i--){var j=Math.floor((r||Math.random)()*(i+1));var t=arr[i];arr[i]=arr[j];arr[j]=t;}return arr;}
+
+var set=BANK[dayIdx%BANK.length];
+var cards=[];
+set.forEach(function(g,m){g.forEach(function(t){cards.push({t:t,m:m});});});
+shuffle(cards,rand);
+
+/* ---------- storage ---------- */
+var KEY="dnsc-five-moves";
+function load(){try{return JSON.parse(localStorage.getItem(KEY))||{};}catch(e){return{};}}
+function save(o){try{localStorage.setItem(KEY,JSON.stringify(o));}catch(e){}}
+var store=load();
+
+/* ---------- state ---------- */
+var solvedByPlayer=[],sel=[],solved=[],guesses=[],mistakes=0,over=false,t0=null,elapsed=0,found=0;
+var $=function(id){return document.getElementById(id);};
+var grid=$("grid"),solvedEl=$("solved"),live=$("live"),status=$("status");
+
+var opts={weekday:"long",month:"long",day:"numeric",year:"numeric"};
+$("dateline").textContent=now.toLocaleDateString("en-US",opts)+" · No. "+no;
+
+function say(msg,visible){live.textContent="";setTimeout(function(){live.textContent=msg;},30);status.textContent=visible?msg:"";}
+
+function render(){
+  grid.innerHTML="";
+  cards.forEach(function(c,i){
+    if(solved.indexOf(c.m)>-1)return;
+    var b=document.createElement("button");
+    b.type="button";b.className="card";b.textContent=c.t;b.dataset.i=i;
+    b.setAttribute("aria-pressed",sel.indexOf(i)>-1?"true":"false");
+    if(over)b.disabled=true;
+    b.addEventListener("click",function(){toggle(i,b);});
+    grid.appendChild(b);
+  });
+  syncControls();
+}
+function syncControls(){
+  $("submit").disabled=over||sel.length!==4;
+  $("deselect").disabled=over||sel.length===0;
+  $("shuffle").disabled=over;
+  var d=$("dots").children;
+  for(var i=0;i<4;i++)d[i].className=i<mistakes?"used":"";
+  $("dots").setAttribute("aria-label",Math.max(0,4-mistakes)+" mistakes left");
+}
+function toggle(i,b){
+  if(over)return;
+  if(t0===null)t0=Date.now();
+  var k=sel.indexOf(i);
+  if(k>-1)sel.splice(k,1);
+  else{if(sel.length>=4){say("Four chosen. Submit or deselect one.",true);return;}sel.push(i);}
+  b.setAttribute("aria-pressed",k>-1?"false":"true");
+  status.textContent="";
+  syncControls();
+}
+
+function band(m,opt){
+  var M=MOVES[m],d=document.createElement("div");
+  d.className="band";d.style.setProperty("--bg",M.bg);d.style.setProperty("--fg",M.fg);
+  d.setAttribute("role","group");d.setAttribute("aria-label",M.k+" move");
+  d.innerHTML=(opt&&opt.revealed?'<p class="tag">Revealed</p>':'')+"<h2>"+M.k+'</h2><p class="line">'+M.line+'</p><p class="cards">'+set[m].join(" · ")+"</p>";
+  if(opt&&opt.dy!==undefined){d.style.setProperty("--dy",opt.dy+"px");d.classList.add("in");}
+  solvedEl.appendChild(d);
+  return d;
+}
+function solve(m,revealed){
+  var els=[].slice.call(grid.querySelectorAll(".card")).filter(function(b){return cards[+b.dataset.i].m===m;});
+  var top=els.length?els.reduce(function(s,b){return s+b.getBoundingClientRect().top;},0)/els.length:0;
+  var before=solvedEl.getBoundingClientRect().bottom;
+  els.forEach(function(b){b.classList.add("out");});
+  solved.push(m);
+  sel=[];
+  setTimeout(function(){
+    var dy=Math.max(16,Math.min(220,top-before));
+    band(m,{dy:dy,revealed:revealed});
+    render();
+  },150);
+}
+
+function submit(){
+  if(sel.length!==4||over)return;
+  var key=sel.map(function(i){return cards[i].t;}).sort().join("|");
+  if(guesses.indexOf(key)>-1){say("Already tried those four.",true);return;}
+  guesses.push(key);
+  var counts=[0,0,0,0,0];
+  sel.forEach(function(i){counts[cards[i].m]++;});
+  var best=Math.max.apply(null,counts),m=counts.indexOf(best);
+  if(best===4){
+    found++;solvedByPlayer.push(m);
+    say(MOVES[m].k+". "+MOVES[m].line,false);
+    solve(m,false);
+    if(solved.length+1===5){
+      var last=[0,1,2,3,4].filter(function(x){return solved.indexOf(x)<0;})[0];
+      found++;over=true;
+      setTimeout(function(){render();},160);
+      setTimeout(function(){solve(last,false);setTimeout(function(){finish(true);},420);},560);
+    }
+  }else{
+    mistakes++;
+    [].forEach.call(grid.querySelectorAll('.card[aria-pressed="true"]'),function(b){b.classList.remove("shake");void b.offsetWidth;b.classList.add("shake");});
+    if(mistakes>4){lose();return;}
+    say(best===3?"One away.":(mistakes===4?"Those four split across moves. Last chance.":"Those four split across moves. "+(4-mistakes)+" mistakes left."),true);
+    syncControls();
+  }
+}
+function lose(){
+  over=true;sel=[];syncControls();
+  say("Out of mistakes. Here are the five moves.",true);
+  var rest=[0,1,2,3,4].filter(function(x){return solved.indexOf(x)<0;});
+  rest.forEach(function(m,k){setTimeout(function(){solve(m,true);},500+k*420);});
+  setTimeout(function(){finish(false);},500+rest.length*420+300);
+}
+function fmt(s){return Math.floor(s/60)+":"+("0"+(s%60)).slice(-2);}
+function finish(won,saved){
+  over=true;syncControls();
+  [].forEach.call(grid.querySelectorAll(".card"),function(b){b.disabled=true;});
+  if(!saved){
+    elapsed=t0?Math.round((Date.now()-t0)/1000):0;
+    var st=store.streak||0;
+    if(won)st=(store.lastWin===dayIdx-1)?st+1:(store.lastWin===dayIdx?st:1);
+    else st=0;
+    store.streak=st;if(won)store.lastWin=dayIdx;
+    store.days=store.days||{};store.days[dayIdx]={won:won,found:found,mistakes:mistakes,time:elapsed};
+    save(store);
+  }
+  var noteM=won?solved[solved.length-1]:([0,1,2,3,4].filter(function(x){return solvedByPlayer.indexOf(x)<0;})[0]);
+  if(noteM===undefined)noteM=dayIdx%5;
+  $("fin-h").textContent=won?"All five moves, found.":"The five moves, laid out.";
+  $("s-time").textContent=fmt(elapsed);
+  $("s-miss").textContent=mistakes;
+  $("s-streak").textContent=store.streak||0;
+  $("note").innerHTML="<strong>"+MOVES[noteM].k+".</strong> "+MOVES[noteM].note;
+  var txt="Five Moves No. "+no+" · "+found+" move"+(found===1?"":"s")+" found, "+mistakes+" mistake"+(mistakes===1?"":"s");
+  $("share-text").textContent=txt;
+  $("copy").onclick=function(){copy(txt+"\nhttps://tools.dustinnimmo.com/well/five-moves/");};
+  $("finish").hidden=false;
+  $("controls").hidden=true;
+  if(!saved)setTimeout(function(){$("fin-h").focus({preventScroll:false});},60);
+}
+function copy(t){
+  function ok(){$("copy").textContent="Copied";say("Result copied.",false);setTimeout(function(){$("copy").textContent="Copy result";},1800);}
+  function fallback(){var a=document.createElement("textarea");a.value=t;a.setAttribute("readonly","");a.style.position="fixed";a.style.opacity="0";document.body.appendChild(a);a.select();try{document.execCommand("copy");ok();}catch(e){say("Copy failed. Select the text to copy it.",true);}document.body.removeChild(a);}
+  if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(ok,fallback);}else fallback();
+}
+
+$("submit").addEventListener("click",submit);
+$("deselect").addEventListener("click",function(){sel=[];render();say("Cleared.",false);});
+$("shuffle").addEventListener("click",function(){
+  var map=sel.map(function(i){return cards[i];});
+  shuffle(cards);
+  sel=map.map(function(c){return cards.indexOf(c);});
+  render();say("Shuffled.",false);
+});
+
+/* ---------- restore a finished day ---------- */
+var done=store.days&&store.days[dayIdx];
+if(done){
+  found=done.found;mistakes=done.mistakes;elapsed=done.time;over=true;
+  for(var m=0;m<5;m++){solved.push(m);band(m);}
+  solvedByPlayer=done.won?[0,1,2,3,4]:[];
+  render();finish(done.won,true);
+}else render();
+})();
+</script>
+</body>
+</html>

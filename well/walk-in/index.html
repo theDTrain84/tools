@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Walk-in · The Well · DNSC</title>
+<meta name="description" content="A quiet room to hold the people from your day. Name them, breathe with the ring, leave one line. Nothing leaves your device.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css">
+<style>
+  :root{--paper:#F3EFE7;--paper2:#E9E3D7;--rule:#CFC6B8;--ink:#2C211A;--ink2:#4A3A2F;--ink3:#7A6A5D;--ink4:#A69686;--walnut:#623E2A;--ochre:#B4862E;--gold:#D9B25A;--sky:#3E6A9E;--dusk:#1B1916;
+    --el:#D9B25A; --el2:#B4862E;}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--dusk);color:var(--paper)}
+  body{font-family:Newsreader,Georgia,serif;font-size:18px;line-height:1.5;-webkit-font-smoothing:antialiased}
+  .site-nav{background:rgba(27,25,22,.88);border-bottom-color:#2E2925}
+  .site-nav .brand{color:var(--paper)} .site-nav .links a{color:var(--ink4)} .site-nav .links a:hover,.site-nav .links a[aria-current]{color:var(--paper)}
+  .site-nav .mark:before{border-color:var(--paper)}
+  body .site-nav .cta{background:var(--paper);color:var(--dusk)} body .site-nav .cta:hover{background:var(--gold);color:var(--dusk)}
+  .wrap{position:relative;max-width:720px;margin:0 auto;padding:28px 16px 40px}
+  .crumb{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink4);text-decoration:none;letter-spacing:.04em}
+  .crumb:hover{color:var(--paper)}
+  .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin:26px 0 10px}
+  h1{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:clamp(34px,7vw,46px);line-height:1.05;margin:0 0 10px;letter-spacing:-.01em}
+  h1 em{font-style:italic;font-weight:400;color:var(--gold)}
+  .lede{color:var(--ink4);margin:0 0 22px;max-width:560px}
+  /* element field */
+  #field{position:fixed;inset:0;z-index:0;pointer-events:none}
+  .site-nav,.site-foot,.wrap{position:relative;z-index:1}
+  /* element picker */
+  .els{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}
+  .el{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink4);background:transparent;border:1px solid #3A342E;border-radius:999px;padding:8px 13px;cursor:pointer}
+  .el[aria-pressed="true"]{color:var(--dusk);background:var(--el);border-color:var(--el)}
+  .el:focus-visible,.btn:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
+  /* the ring */
+  .room{display:grid;grid-template-columns:1fr;gap:26px;align-items:start}
+  @media(min-width:720px){.room{grid-template-columns:300px 1fr;gap:40px}}
+  .ringwrap{position:relative;width:280px;height:280px;margin:0 auto}
+  .ring{position:absolute;inset:0}
+  .ring .orbit{fill:none;stroke:var(--paper);stroke-opacity:.9;stroke-width:3}
+  .ring .breath{fill:none;stroke:var(--el);stroke-width:1.2;stroke-opacity:.55;transform-origin:50% 50%;animation:breathe 10s ease-in-out infinite}
+  @keyframes breathe{0%,100%{transform:scale(.72);opacity:.35}50%{transform:scale(1.04);opacity:.9}}
+  @media (prefers-reduced-motion: reduce){.ring .breath{animation:none;opacity:.6}}
+  .ring .seat{transition:transform .5s cubic-bezier(.2,.7,.2,1),opacity .5s}
+  .cue{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;font-family:Fraunces,Georgia,serif;font-style:italic;font-size:20px;color:var(--paper);pointer-events:none;padding:0 70px;line-height:1.25}
+  .cue small{display:block;font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.2em;color:var(--ink4);margin-top:8px;white-space:nowrap}
+  /* names */
+  .side h2{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:22px;margin:0 0 6px}
+  .side p{margin:0 0 12px;color:var(--ink4);font-size:16px}
+  .row{display:flex;gap:8px}
+  input[type=text],textarea{width:100%;font:inherit;font-size:17px;color:var(--paper);background:#24201C;border:1px solid #3A342E;border-radius:8px;padding:11px 13px}
+  input::placeholder,textarea::placeholder{color:#9A9086}
+  .btn{font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.08em;color:var(--dusk);background:var(--paper);border:0;border-radius:999px;padding:11px 16px;cursor:pointer;white-space:nowrap}
+  .btn.quiet{background:transparent;color:var(--ink4);border:1px solid #3A342E}
+  .btn.quiet:hover{color:var(--paper)}
+  .seats{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+  .seats li{display:inline-flex;align-items:center;gap:8px;font-family:Fraunces,Georgia,serif;font-size:17px;background:#24201C;border:1px solid #3A342E;border-radius:999px;padding:6px 12px 6px 10px}
+  .seats i{width:9px;height:9px;border-radius:50%;background:var(--el)}
+  .seats button{all:unset;cursor:pointer;color:var(--ink4);font-family:"IBM Plex Mono",monospace;font-size:12px;padding:0 2px}
+  .seats button:hover{color:var(--paper);background:#2E2925;border-radius:4px}
+  .line{margin-top:28px}
+  .line label{display:block;font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink4);margin-bottom:8px}
+  textarea{min-height:88px;resize:vertical}
+  .close{margin-top:16px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .note{font-size:14px;color:var(--ink4);margin-top:18px}
+  .done{display:none;margin-top:26px;padding:18px 20px;border:1px solid #3A342E;border-radius:12px;background:rgba(36,32,28,.7)}
+  .done.show{display:block}
+  .done p{margin:0 0 8px}
+  .done .big{font-family:Fraunces,Georgia,serif;font-size:22px;font-style:italic}
+  .site-foot{margin-top:72px}
+</style>
+</head>
+<body class="has-shell">
+<canvas id="field" aria-hidden="true"></canvas>
+<nav class="site-nav"><div class="in"><a class="brand" href="https://www.dustinnimmo.com"><span class="mark"><i></i><i></i><i></i><i></i><i></i></span>DNSC</a><div class="links"><a href="https://www.dustinnimmo.com/#what-i-do">What we do</a><a href="https://www.dustinnimmo.com/#three-ways">How we work</a><a class="keep" href="https://tools.dustinnimmo.com/">Teaching &amp; tools</a></div><a class="cta" href="https://www.dustinnimmo.com/#contact">Start a conversation</a></div></nav>
+
+<div class="wrap">
+  <a class="crumb" href="../">← The Well</a>
+  <p class="eyebrow">The Well · A quiet room</p>
+  <h1>The Walk-in. <em>Hold the people from your day.</em></h1>
+  <p class="lede">Name them, one at a time. Each one takes a seat on the ring. Breathe with it for a minute. Leave one line. No streaks, no metrics, nothing sent anywhere. When you're done, leave.</p>
+
+  <div class="els" role="group" aria-label="Pick an element for the room">
+    <button class="el" data-el="light" aria-pressed="true">Light</button>
+    <button class="el" data-el="salt" aria-pressed="false">Salt</button>
+    <button class="el" data-el="love" aria-pressed="false">Love</button>
+    <button class="el" data-el="fire" aria-pressed="false">Fire</button>
+    <button class="el" data-el="water" aria-pressed="false">Water</button>
+    <button class="el" data-el="earth" aria-pressed="false">Earth</button>
+  </div>
+
+  <div class="room">
+    <div>
+      <div class="ringwrap">
+        <svg class="ring" viewBox="0 0 280 280" aria-label="The ring. One seat per person you name.">
+          <circle class="breath" cx="140" cy="140" r="128"/>
+          <circle class="orbit" cx="140" cy="140" r="104"/>
+          <g id="seats"></g>
+        </svg>
+        <div class="cue" aria-live="polite"><span id="cue">Breathe in.<small>FOUR · HOLD · SIX</small></span></div>
+      </div>
+    </div>
+    <div class="side">
+      <h2>Who was at the table today?</h2>
+      <p>The person from the hard meeting. The one who helped. The one you forgot to thank.</p>
+      <form id="addForm" class="row" autocomplete="off">
+        <input type="text" id="name" placeholder="A first name is enough" aria-label="Name" maxlength="40">
+        <button class="btn" type="submit">Seat them</button>
+      </form>
+      <ul class="seats" id="list" aria-live="polite" aria-label="People seated on the ring"></ul>
+
+      <div class="line">
+        <label for="one">One line, for all of them</label>
+        <textarea id="one" placeholder="What you hope for them. What you noticed. What you are carrying for them."></textarea>
+      </div>
+      <div class="close">
+        <button class="btn" id="closeBtn" type="button">Close the room</button>
+        <button class="btn quiet" id="clearBtn" type="button">Clear</button>
+        <span class="note" id="count"></span>
+      </div>
+      <div class="done" id="done" role="status">
+        <p class="big" id="doneLine"></p>
+        <p id="doneNames"></p>
+        <p class="note">Kept only in this browser. Come back tomorrow; the ring will be empty again.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-foot"><div class="in"><span>DNSC · Dustin Nimmo Strategic Consulting</span><span class="nav"><a href="https://www.dustinnimmo.com">Home</a><a href="https://www.dustinnimmo.com/#three-ways">How we work</a><a href="https://tools.dustinnimmo.com/">Teaching &amp; tools</a><a href="https://tools.dustinnimmo.com/well/">The Well</a><a href="https://www.dustinnimmo.com/#contact">Contact</a></span><span class="credit">Free to use. Made by DNSC.</span></div></footer>
+
+<script>
+(function(){
+  const ELS = {
+    light:{a:'#D9B25A',b:'#F3EFE7',motes:'#F3EFE7',drift:-0.25,size:1.6,count:70},
+    salt: {a:'#F3EFE7',b:'#A69686',motes:'#F3EFE7',drift:0.18,size:1.3,count:110},
+    love: {a:'#4C7BB8',b:'#3E6A9E',motes:'#7FA3D8',drift:-0.12,size:2.0,count:50},
+    fire: {a:'#B4862E',b:'#D9B25A',motes:'#E8A54A',drift:-0.45,size:1.8,count:80},
+    water:{a:'#3E6A9E',b:'#7A6A5D',motes:'#8FB3DA',drift:0.3,size:1.4,count:90},
+    earth:{a:'#623E2A',b:'#7A6A5D',motes:'#A69686',drift:0.08,size:2.2,count:45}
+  };
+  const SEATS = ['#D9B25A','#3E6A9E','#B4862E','#F3EFE7','#A69686','#E8A54A','#7FA3D8'];
+  let el = 'light', people = [];
+  try { const s = JSON.parse(localStorage.getItem('walkin') || 'null'); if (s && s.day === today()) { people = s.people || []; el = s.el || el; } } catch(e){}
+  function today(){ const d = new Date(); return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate(); }
+  function save(){ try { localStorage.setItem('walkin', JSON.stringify({day:today(), people, el})); } catch(e){} }
+
+  // element field (reduced motion: static)
+  const cv = document.getElementById('field'), cx = cv.getContext('2d');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let motes = [], W=0, H=0;
+  function size(){ W = cv.width = innerWidth * devicePixelRatio; H = cv.height = innerHeight * devicePixelRatio; cv.style.width = innerWidth+'px'; cv.style.height = innerHeight+'px'; seed(); }
+  function seed(){ const E = ELS[el]; motes = Array.from({length:E.count}, () => ({x:Math.random()*W, y:Math.random()*H, r:(Math.random()*E.size+0.6)*devicePixelRatio, v:(Math.random()*0.5+0.3)*E.drift*devicePixelRatio, w:Math.random()*Math.PI*2, o:Math.random()*0.5+0.25})); }
+  function draw(t){
+    const E = ELS[el];
+    cx.clearRect(0,0,W,H);
+    const g = cx.createRadialGradient(W*0.5, H*0.35, 0, W*0.5, H*0.35, Math.max(W,H)*0.7);
+    g.addColorStop(0, hex(E.a, 0.10)); g.addColorStop(1, 'rgba(27,25,22,0)');
+    cx.fillStyle = g; cx.fillRect(0,0,W,H);
+    for (const m of motes){
+      if (!reduce){ m.y += m.v; m.x += Math.sin(t/2600 + m.w) * 0.25 * devicePixelRatio; if (m.y < -10) m.y = H+10; if (m.y > H+10) m.y = -10; }
+      cx.beginPath(); cx.arc(m.x, m.y, m.r, 0, Math.PI*2); cx.fillStyle = hex(E.motes, m.o * (0.6 + 0.4*Math.sin(t/1800 + m.w))); cx.fill();
+    }
+    if (!reduce) requestAnimationFrame(draw);
+  }
+  function hex(h, a){ const n = parseInt(h.slice(1),16); return `rgba(${n>>16},${(n>>8)&255},${n&255},${a})`; }
+  addEventListener('resize', size); size(); requestAnimationFrame(draw);
+
+  // element buttons
+  document.querySelectorAll('.el').forEach(b => b.addEventListener('click', () => {
+    el = b.dataset.el; document.querySelectorAll('.el').forEach(x => x.setAttribute('aria-pressed', x===b)); applyEl(); seed(); save();
+  }));
+  function applyEl(){ const E = ELS[el]; document.documentElement.style.setProperty('--el', E.a); document.documentElement.style.setProperty('--el2', E.b); document.querySelectorAll('.el').forEach(x => x.setAttribute('aria-pressed', x.dataset.el===el)); }
+
+  // seats on the ring
+  const seats = document.getElementById('seats'), list = document.getElementById('list'), count = document.getElementById('count');
+  function render(){
+    seats.innerHTML = ''; list.innerHTML = '';
+    const n = people.length;
+    people.forEach((p, i) => {
+      const a = -Math.PI/2 + (i / Math.max(n,1)) * Math.PI*2;
+      const x = 140 + 104*Math.cos(a), y = 140 + 104*Math.sin(a);
+      const c = document.createElementNS('http://www.w3.org/2000/svg','circle');
+      c.setAttribute('cx', x); c.setAttribute('cy', y); c.setAttribute('r', 9); c.setAttribute('fill', SEATS[i % SEATS.length]); c.setAttribute('class','seat');
+      const t = document.createElementNS('http://www.w3.org/2000/svg','title'); t.textContent = p; c.appendChild(t);
+      seats.appendChild(c);
+      const li = document.createElement('li'); li.innerHTML = `<i style="background:${SEATS[i % SEATS.length]}"></i><span></span><button type="button" aria-label="Remove ${p}">×</button>`;
+      li.querySelector('span').textContent = p; li.querySelector('button').addEventListener('click', () => { people.splice(i,1); save(); render(); });
+      list.appendChild(li);
+    });
+    count.textContent = n ? (n === 1 ? 'One seat taken.' : n + ' seats taken.') : '';
+  }
+  document.getElementById('addForm').addEventListener('submit', e => {
+    e.preventDefault(); const inp = document.getElementById('name'); const v = inp.value.trim(); if (!v) return;
+    people.push(v); inp.value = ''; save(); render();
+  });
+  document.getElementById('clearBtn').addEventListener('click', () => { people = []; document.getElementById('one').value=''; document.getElementById('done').classList.remove('show'); save(); render(); });
+  document.getElementById('closeBtn').addEventListener('click', () => {
+    const line = document.getElementById('one').value.trim();
+    const d = document.getElementById('done');
+    document.getElementById('doneLine').textContent = line ? '“' + line + '”' : 'Held, without words.';
+    document.getElementById('doneNames').textContent = people.length ? 'For ' + people.join(', ') + '.' : 'For whoever comes to mind.';
+    d.classList.add('show'); d.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block:'nearest'});
+  });
+
+  // breath cue: 4 in, 2 hold, 6 out, in step with the ring (10s cycle)
+  const cue = document.getElementById('cue');
+  const steps = [['Breathe in.', 4000], ['Hold.', 2000], ['Breathe out.', 4000]];
+  let si = 0;
+  function tick(){ cue.innerHTML = steps[si][0] + '<small>FOUR · HOLD · SIX</small>'; setTimeout(() => { si = (si+1) % steps.length; tick(); }, steps[si][1]); }
+  if (!reduce) tick(); else cue.innerHTML = 'Breathe.<small>FOUR · HOLD · SIX</small>';
+
+  applyEl(); render();
+})();
+</script>
+</body>
+</html>
