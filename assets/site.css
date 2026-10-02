@@ -36,3 +36,5 @@ body.is-leaving{opacity:0;transition:opacity .22s ease-in}
   body{animation:none}
   body.is-leaving{opacity:1;transition:none}
 }
+
+.site-nav .links a.keep{white-space:nowrap}
