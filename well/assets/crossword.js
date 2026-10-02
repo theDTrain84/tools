@@ -75,7 +75,7 @@
     var prefix = cfg.storagePrefix, G = P.g, N = G.length, S = slotsOf(G), entries = [], num = {}, n = 1;
     var no = Math.max(1, dayIdx + 1);
     var $ = function (id) { return document.getElementById(id) };
-    $("date").textContent = (cfg.dateLine ? cfg.dateLine(now) : DAYS[now.getDay()] + " · " + MON[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear()) + " · No. " + no;
+    $("date").textContent = (cfg.dateLine ? cfg.dateLine(now, from) : DAYS[now.getDay()] + " · " + MON[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear()) + " · No. " + no;
     $("pzl").textContent = "No. " + no;
     function load(k) { try { var v = localStorage.getItem(prefix + k); return v ? JSON.parse(v) : null } catch (e) { return null } }
     function save(k, v) { try { localStorage.setItem(prefix + k, JSON.stringify(v)) } catch (e) { } }

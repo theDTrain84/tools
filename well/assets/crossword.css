@@ -59,4 +59,4 @@
 .done .src li{margin:0 0 6px;color:#CFC6B8}
 .done .src a{color:var(--gold)}
 .done .srck{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink4);margin:0 0 8px}
-.cl .s{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--accent,var(--walnut));margin-left:6px;white-space:nowrap}
+.clues li .s{display:inline-block;margin:0 0 6px 36px;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent,var(--walnut));text-decoration:none}.clues li .s:hover{text-decoration:underline}
