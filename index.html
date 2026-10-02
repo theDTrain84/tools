@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tools · Dustin Nimmo</title>
+<meta name="description" content="Tools Dustin Nimmo builds and gives away: civic data you can check yourself, and helpful tools for working with AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F3EFE7;--paper2:#E9E3D6;--rule:#D8D0C2;--ink:#1B1917;--ink3:#6B645B;--walnut:#5A3A2A;--gold:#B98A2E;--sky:#4C7BB8}
+*{box-sizing:border-box}html{background:var(--paper)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Newsreader,Georgia,serif;font-size:19px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--rule)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:Fraunces,serif;font-weight:600;font-size:20px;letter-spacing:.01em}
+.mark{width:28px;height:28px;position:relative}.mark i{position:absolute;width:6px;height:6px;border-radius:50%}
+.mark i:nth-child(1){background:var(--sky);left:11px;top:0}.mark i:nth-child(2){background:var(--gold);right:0;top:9px}.mark i:nth-child(3){background:var(--walnut);right:3px;bottom:0}.mark i:nth-child(4){background:#A89F93;left:3px;bottom:0}.mark i:nth-child(5){background:var(--gold);left:0;top:9px}
+.mark:before{content:"";position:absolute;inset:3px;border:1px solid var(--rule);border-radius:50%}
+.navlinks{display:flex;gap:22px;font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:.04em}
+.navlinks a{text-decoration:none;color:var(--ink3)}.navlinks a:hover{color:var(--ink)}
+.hero{padding:88px 0 40px}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+h1{font-family:Fraunces,serif;font-weight:400;font-size:clamp(40px,6.2vw,68px);line-height:1.02;letter-spacing:-.015em;margin:14px 0 18px}
+.lede{font-size:clamp(20px,2.3vw,24px);color:var(--ink3);max-width:640px;margin:0}
+section{padding:40px 0 56px;border-top:1px solid var(--rule)}
+h2{font-family:Fraunces,serif;font-weight:400;font-size:clamp(28px,3.6vw,38px);line-height:1.1;margin:10px 0 8px}
+.sub{color:var(--ink3);margin:0 0 28px;max-width:640px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.card{display:block;text-decoration:none;background:var(--paper2);border:1px solid var(--rule);border-radius:10px;padding:26px 26px 22px;transition:transform .25s ease,box-shadow .25s ease,background .25s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(27,25,23,.08);background:#F6F2EA}
+.card .k{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)}
+.card h3{font-family:Fraunces,serif;font-weight:600;font-size:24px;line-height:1.15;margin:10px 0 10px}
+.card p{margin:0 0 16px;color:var(--ink3);font-size:17px}
+.card .go{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--walnut)}
+.card.soon{opacity:.72}.card.soon .go{color:var(--ink3)}
+.note{font-size:16px;color:var(--ink3);max-width:700px;border-left:2px solid var(--gold);padding-left:14px;margin:30px 0 0}
+footer{border-top:1px solid var(--rule);padding:30px 0 50px;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink3);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{text-decoration:none;color:var(--ink3)}
+@media (max-width:600px){.navlinks{display:none}.hero{padding:56px 0 28px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="https://dustinnimmo.com"><span class="mark"><i></i><i></i><i></i><i></i><i></i></span>DNSC</a>
+<nav class="navlinks"><a href="#civic">Civic</a><a href="#ai">Working with AI</a><a href="https://dustinnimmo.com">dustinnimmo.com</a></nav>
+</div></header>
+
+<main class="wrap">
+<div class="hero">
+<div class="eyebrow">Tools · built here, given away</div>
+<h1>Public numbers you can check yourself. Tools that make AI easier to work with.</h1>
+<p class="lede">Everything on this page is free, runs in your browser, keeps nothing about you, and shows its sources and its math. Use it, share it, tell me where it is wrong.</p>
+</div>
+
+<section id="civic">
+<div class="eyebrow">Civic</div>
+<h2>Follow the money</h2>
+<p class="sub">Local public finance, from the public record, with the assumptions on the page. Start with your own house.</p>
+<div class="cards">
+<a class="card" href="/follow-the-money/">
+<div class="k">Butler County, Ohio · Lakota Local Schools</div>
+<h3>Follow the Money: The Lakota Bond Issue</h3>
+<p>What Issue 2 would cost your home, year by year, if it passes or fails. Enter your appraised value, flip the switches, read the sources.</p>
+<div class="go">Open the tool →</div>
+</a>
+<div class="card soon">
+<div class="k">Coming</div>
+<h3>More of the county, one levy at a time</h3>
+<p>The same method applied to the rest of the ballot: who pays, what it funds, when it starts and ends.</p>
+<div class="go">In the works</div>
+</div>
+</div>
+<p class="note">I also work on a county campaign. These pages take no side on any ballot issue. If a number is wrong, write me and I will fix it and say so.</p>
+</section>
+
+<section id="ai">
+<div class="eyebrow">Working with AI</div>
+<h2>Helpful tools to work with AI</h2>
+<p class="sub">Instruments for people who use these systems every day and want to see what they are actually doing.</p>
+<div class="cards">
+<a class="card" href="/ai-gauges/">
+<div class="k">Instrument panel · runs on your own files</div>
+<h3>AI Gauges</h3>
+<p>Your AI use as a dashboard: tokens by hour and day, cloud vs local, energy, water and carbon, every estimate with its math shown. Point it at your own logs; nothing is uploaded.</p>
+<div class="go">Open the gauges →</div>
+</a>
+<div class="card soon">
+<div class="k">Coming</div>
+<h3>Teaching tools from the workshops</h3>
+<p>The worksheets and small apps from the rooms: draw the lines, sort the tools, decide how the team works together.</p>
+<div class="go">In the works</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="wrap"><span>© 2026 DNSC · Dustin Nimmo Strategic Consulting</span><span><a href="https://dustinnimmo.com">dustinnimmo.com</a> · <a href="mailto:dustin.nimmo@gmail.com">dustin.nimmo@gmail.com</a></span></footer>
+</body>
+</html>

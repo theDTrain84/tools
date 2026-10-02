@@ -1,0 +1,565 @@
+<title>AI Gauges</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Serif+4:wght@400;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* dark-first instrument panel. bare :root is the dark cluster; light is the explicit swap. */
+:root{color-scheme:dark;
+  --page:#0f1113;--surface:#171a1d;--raised:#1e2226;--hair:#2a2e32;--hair-2:#343940;
+  --ink:#f2f1ec;--ink-2:#aeb1ab;--muted:#737872;
+  --amber:#e09a2f;--amber-pair:#c4822a;--amber-track:#3a2c14;--amber-wash:rgba(224,154,47,.12);
+  --teal:#3d96c9;--teal-track:#15303f;
+  --bar:#cfd2cc;--bar-dim:#4a4f55;
+  --good:#0ca30c;--warn:#fab219;
+  --num:"Barlow Semi Condensed","Barlow",system-ui,sans-serif;--body:"Barlow",system-ui,-apple-system,sans-serif}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){color-scheme:light;
+  --page:#f3f3f0;--surface:#ffffff;--raised:#f7f7f4;--hair:#e3e4e0;--hair-2:#d3d5d0;
+  --ink:#14171a;--ink-2:#565b60;--muted:#858a8f;
+  --amber:#c47d12;--amber-pair:#b8720a;--amber-track:#f3e4cc;--amber-wash:rgba(184,114,10,.12);
+  --teal:#1f6fa8;--teal-track:#d6e6f2;--bar:#3a3f44;--bar-dim:#c9ccc7}}
+:root[data-theme="light"]{color-scheme:light;
+  --page:#f3f3f0;--surface:#ffffff;--raised:#f7f7f4;--hair:#e3e4e0;--hair-2:#d3d5d0;
+  --ink:#14171a;--ink-2:#565b60;--muted:#858a8f;
+  --amber:#c47d12;--amber-pair:#b8720a;--amber-track:#f3e4cc;--amber-wash:rgba(184,114,10,.12);
+  --teal:#1f6fa8;--teal-track:#d6e6f2;--bar:#3a3f44;--bar-dim:#c9ccc7}
+/* ---------- skins: same data, same layout, different instrument ---------- */
+/* Analog · warm. Cream dial face, walnut ink, brass needle, slate second series. Committed light look: it holds on either host ground. */
+:root[data-skin="analog"]{color-scheme:light;
+  --page:#e9dfc9;--surface:#f7f1e4;--raised:#efe6d3;--hair:#d8cbb0;--hair-2:#c2b08e;
+  --ink:#2b211a;--ink-2:#5c4b3b;--muted:#8a7660;
+  --amber:#a8742a;--amber-pair:#8e5f1f;--amber-track:#e3d3b3;--amber-wash:rgba(168,116,42,.14);
+  --teal:#2e6da4;--teal-track:#cfdbe6;
+  --bar:#4a3b2e;--bar-dim:#c9b995;
+  --num:"Fraunces","Source Serif 4",Georgia,serif;--body:"Source Serif 4",Georgia,"Times New Roman",serif}
+:root[data-skin="analog"] .card{border-radius:14px;box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 1px 2px rgba(43,33,26,.08)}
+:root[data-skin="analog"] .big,:root[data-skin="analog"] .mid,:root[data-skin="analog"] h1{font-weight:500;letter-spacing:0}
+:root[data-skin="analog"] .big{font-size:60px}
+:root[data-skin="analog"] .segs{height:18px;align-items:flex-end}
+:root[data-skin="analog"] .segs i{flex:0 0 2px;height:10px;border-radius:1px;margin-right:auto}
+:root[data-skin="analog"] .segs i:nth-child(4n+1){height:18px}
+:root[data-skin="analog"] .segs i.on{box-shadow:0 0 0 1px var(--amber)}
+:root[data-skin="analog"] .bars i{border-radius:2px 2px 0 0}
+:root[data-skin="analog"] .ring svg circle:first-child{stroke-dasharray:2 4.53;stroke-width:16}
+:root[data-skin="analog"] .btn{border-radius:999px}
+:root[data-skin="analog"] .seg,:root[data-skin="analog"] .pill{border-radius:999px}
+:root[data-skin="analog"] .label,:root[data-skin="analog"] h2,:root[data-skin="analog"] .kicker{letter-spacing:.16em}
+/* Digital · quiet. Black glass, hairline rules, mono numerals, one cool series and one warm. Committed dark look. */
+:root[data-skin="digital"]{color-scheme:dark;
+  --page:#000;--surface:#0a0a0a;--raised:#111;--hair:#1c1c1c;--hair-2:#2a2a2a;
+  --ink:#e8e8e8;--ink-2:#9a9a9a;--muted:#616161;
+  --amber:#3a9ccf;--amber-pair:#2f86b3;--amber-track:#0e2a3a;--amber-wash:rgba(58,156,207,.10);
+  --teal:#c07f2a;--teal-track:#3a2610;
+  --bar:#bdbdbd;--bar-dim:#2e2e2e;
+  --num:"IBM Plex Mono",ui-monospace,Menlo,monospace;--body:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+:root[data-skin="digital"] .card,:root[data-skin="digital"] .btn,:root[data-skin="digital"] .seg,:root[data-skin="digital"] .pill,:root[data-skin="digital"] .explain,:root[data-skin="digital"] .drop,:root[data-skin="digital"] .math div,:root[data-skin="digital"] .recipe input{border-radius:0}
+:root[data-skin="digital"] .big{font-weight:500;letter-spacing:-.04em;font-size:58px}
+:root[data-skin="digital"] .mid{font-weight:500;letter-spacing:-.03em}
+:root[data-skin="digital"] .segs{height:6px;gap:2px}
+:root[data-skin="digital"] .segs i{border-radius:0}
+:root[data-skin="digital"] .bars i{border-radius:0;max-width:18px}
+:root[data-skin="digital"] .ring svg circle{stroke-width:6}
+:root[data-skin="digital"] .spark path[fill]{fill:transparent}
+:root[data-skin="digital"] .label,:root[data-skin="digital"] .kicker,:root[data-skin="digital"] h2{letter-spacing:.2em;font-size:11px}
+:root[data-skin="digital"] body,:root[data-skin="digital"]{font-size:13px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font-family:var(--body);font-size:14px;line-height:1.45;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1140px;margin:0 auto;padding-block:22px 56px;padding-inline:20px}
+a{color:var(--teal)}
+button{font:inherit}
+/* header */
+.top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:16px;border-bottom:1px solid var(--hair);margin-bottom:18px}
+.kicker{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 2px}
+h1{font-family:var(--num);font-weight:600;font-size:28px;letter-spacing:.01em;line-height:1;margin:0}
+.who{font-size:13px;color:var(--ink-2);margin-top:6px}
+.src{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.btn{background:var(--ink);color:var(--page);border:0;border-radius:6px;padding:8px 13px;font-weight:600;font-size:13px;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--hair-2)}
+.btn:focus-visible,.seg button:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.note{font-size:12px;color:var(--muted);width:100%;text-align:right}
+h2{font-family:var(--num);font-weight:600;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);margin:28px 0 10px;display:flex;align-items:baseline;gap:10px}
+h2 small{font-family:var(--body);font-weight:400;font-size:12px;letter-spacing:0;text-transform:none;color:var(--muted)}
+/* cards */
+.card{background:var(--surface);border:1px solid var(--hair);border-radius:10px;padding:16px 18px}
+.grid{display:grid;gap:12px}
+.g2{grid-template-columns:1fr 1fr}.g4{grid-template-columns:repeat(4,1fr)}
+@media (max-width:860px){.g4{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.g2,.g4{grid-template-columns:1fr}.note{text-align:left}.src{justify-content:flex-start}}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.label{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.pill{display:inline-block;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:3px 8px;border:1px solid var(--hair-2);color:var(--ink-2);white-space:nowrap}
+.pill.est{border-color:var(--amber);color:var(--amber)}
+.pill.meas{border-color:var(--hair-2);color:var(--ink-2)}
+.fine{font-size:12px;color:var(--muted);margin:0}
+p{margin:0;max-width:72ch}
+/* numbers */
+.big{font-family:var(--num);font-weight:600;font-size:56px;line-height:.95;letter-spacing:-.01em}
+.big small{font-size:22px;font-weight:500;color:var(--ink-2);margin-left:4px;letter-spacing:0}
+.mid{font-family:var(--num);font-weight:600;font-size:34px;line-height:1;letter-spacing:-.01em}
+.mid small{font-size:15px;font-weight:500;color:var(--ink-2);margin-left:3px}
+.unit{font-size:12px;color:var(--muted);margin-top:6px}
+/* hero */
+.hero-nums{display:grid;grid-template-columns:1fr auto 1fr;gap:22px;align-items:center;margin:14px 0 6px}
+.vr{width:1px;height:64px;background:var(--hair-2)}
+@media (max-width:560px){.hero-nums{grid-template-columns:1fr;gap:12px}.vr{width:100%;height:1px}.big{font-size:44px}}
+.trace{width:100%;height:auto;display:block;margin-top:10px}
+.axis{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-top:4px;font-variant-numeric:tabular-nums}
+.explain{background:var(--raised);border-radius:8px;padding:12px 14px;margin-top:14px}
+.explain b{display:block;font-weight:600;margin-bottom:3px}
+/* tiles */
+.tile{display:grid;grid-template-rows:auto auto 1fr;gap:4px;min-height:132px}
+.tile .spark{width:100%;height:36px;display:block;align-self:end;margin-top:6px}
+.tile .foot{font-size:11.5px;color:var(--muted)}
+/* meters */
+.meters{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.meter{padding:6px 16px 6px 0;border-right:1px solid var(--hair);margin-right:16px}
+.meter:last-child{border:0;margin:0;padding-right:0}
+@media (max-width:860px){.meters{grid-template-columns:1fr 1fr}.meter:nth-child(2){border-right:0;margin-right:0}.meter{padding-block:10px}}
+@media (max-width:560px){.meters{grid-template-columns:1fr}.meter{border-right:0;margin-right:0;border-bottom:1px solid var(--hair)}.meter:last-child{border:0}}
+.segs{display:flex;gap:3px;height:14px;margin:10px 0 6px}
+.segs i{flex:1;border-radius:2px;background:var(--amber-track)}
+.segs i.on{background:var(--amber)}
+/* dial: a real instrument-cluster gauge, 240deg sweep, gap at the bottom */
+.dial{position:relative;height:112px;margin:8px 0 2px}
+.dial svg{width:100%;height:100%;display:block}
+.dial-read{position:absolute;left:0;right:0;bottom:6px;text-align:center;line-height:1;pointer-events:none}
+.dial-read .mid{font-size:26px}
+.dial-read .du{display:block;font-size:10.5px;color:var(--muted);margin-top:3px;text-transform:uppercase;letter-spacing:.08em}
+:root[data-skin="analog"] .dial-read .mid{font-weight:500}
+:root[data-skin="digital"] .dial-read .mid{font-weight:500;letter-spacing:-.02em}
+.segs.teal i{background:var(--teal-track)}.segs.teal i.on{background:var(--teal)}
+.meter .foot{font-size:11.5px;color:var(--muted)}
+.math{margin-top:6px;font-size:11.5px;color:var(--muted)}
+.math summary{cursor:pointer;color:var(--ink-2);list-style:none}
+.math summary::before{content:'+ ';color:var(--amber)}
+.math[open] summary::before{content:'− '}
+.math div{margin-top:4px;padding:8px 10px;background:var(--raised);border-radius:6px;font-variant-numeric:tabular-nums;line-height:1.5;color:var(--ink-2)}
+/* bars */
+.seg{display:inline-flex;border:1px solid var(--hair-2);border-radius:6px;overflow:hidden}
+.seg button{background:transparent;border:0;color:var(--ink-2);padding:5px 10px;font-size:12px;font-weight:500;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--page)}
+.bars{display:flex;align-items:flex-end;gap:2px;height:130px;margin-top:26px;position:relative;border-bottom:1px solid var(--hair-2)}
+.bars div{flex:1;display:flex;align-items:flex-end;height:100%;min-width:0;cursor:default}
+.bars i{display:block;width:100%;max-width:24px;margin:0 auto;border-radius:4px 4px 0 0;background:var(--amber);min-height:0}
+.bars i.dim{background:var(--bar-dim)}
+.bars div:hover i{filter:brightness(1.15)}
+.ylab{position:absolute;right:0;top:-18px;font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
+/* ring */
+.ringwrap{display:grid;grid-template-columns:150px 1fr;gap:18px;align-items:center}
+@media (max-width:560px){.ringwrap{grid-template-columns:1fr;justify-items:center}}
+.ring{width:150px;height:150px;position:relative}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring .c{position:absolute;inset:0;display:grid;place-content:center;text-align:center}
+.hbars{display:grid;gap:9px;width:100%}
+.hbar{display:grid;grid-template-columns:1fr auto;gap:8px;font-size:12.5px;align-items:center}
+.hbar .t{height:6px;border-radius:3px;background:var(--hair);grid-column:1/-1;overflow:hidden}
+.hbar .t i{display:block;height:100%;background:var(--bar);border-radius:3px}
+.hbar b{font-family:var(--num);font-weight:600;font-size:14px;font-variant-numeric:tabular-nums}
+.hbar .n{color:var(--ink-2)}
+/* lists */
+.stat{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--hair);font-size:13px}
+.stat:last-child{border:0}.stat b{font-family:var(--num);font-weight:600;font-size:15px;font-variant-numeric:tabular-nums}
+.split{height:16px;border-radius:4px;overflow:hidden;display:flex;gap:2px;background:var(--hair);margin:10px 0 8px}
+.split i{display:block;height:100%}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--ink-2)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.place{display:grid;grid-template-columns:1fr auto;gap:8px;padding:9px 0;border-bottom:1px solid var(--hair)}
+.place:last-child{border:0}.place b{font-weight:600}.place span{font-size:12.5px;color:var(--ink-2)}
+.place .km{font-size:12px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.recipe label{display:grid;grid-template-columns:1fr 104px;gap:10px;align-items:center;padding:6px 0;border-bottom:1px solid var(--hair);font-size:13px}
+.recipe label:last-of-type{border:0}
+.recipe input{font:inherit;font-size:13px;padding:5px 7px;border:1px solid var(--hair-2);border-radius:4px;background:var(--raised);color:var(--ink);width:100%;font-variant-numeric:tabular-nums}
+.recipe input:focus-visible{outline:2px solid var(--amber);outline-offset:1px}
+.recipe small{display:block;color:var(--muted);font-size:11.5px}
+.drop{border:1.5px dashed var(--hair-2);border-radius:8px;padding:16px;text-align:center;color:var(--ink-2);font-size:13px}
+.drop.on{border-color:var(--amber);background:var(--amber-wash);color:var(--ink)}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;background:var(--raised);padding:1px 5px;border-radius:3px}
+footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--hair);font-size:12px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.hidden{display:none}
+#tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--page);font-size:12px;padding:6px 9px;border-radius:6px;z-index:10;max-width:240px;line-height:1.35;font-variant-numeric:tabular-nums}
+#tip b{font-weight:600}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<div class="wrap">
+<header class="top">
+  <div>
+    <p class="kicker">Gumbo · Mise en place · power needs gauges</p>
+    <h1>AI Gauges</h1>
+    <div class="who" id="whoLbl"></div>
+  </div>
+  <div class="src">
+    <input type="file" id="dir" webkitdirectory multiple class="hidden">
+    <input type="file" id="logf" accept=".jsonl,.ndjson,.json,.txt" multiple class="hidden">
+    <button class="btn" id="pick">Open my Claude Code folder</button>
+    <button class="btn ghost" id="pickLog" title="One JSON line per turn; see USAGE-LOG-FORMAT.md">Open a usage log</button>
+    <button class="btn ghost" id="demo">Load the sample</button>
+    <div class="seg" role="group" aria-label="Skin" id="skinSeg" title="Same data, different instrument"><button data-skin="" aria-pressed="true">Instrument</button><button data-skin="analog" aria-pressed="false">Analog</button><button data-skin="digital" aria-pressed="false">Digital</button></div>
+    <div class="note" id="note">Pick <code>~/.claude/projects</code>. Files are read in your browser only; nothing leaves this page.</div>
+  </div>
+</header>
+
+<section class="card" id="hero">
+  <div class="row"><span class="label">Burn rate</span><span class="pill meas">measured</span></div>
+  <div class="hero-nums">
+    <div><div class="big" id="hCur">0<small>tok/min</small></div><div class="unit" id="hCurU">current hour</div></div>
+    <div class="vr"></div>
+    <div><div class="big" id="hAvg">0<small>tok/min</small></div><div class="unit" id="hAvgU">today's average, active hours</div></div>
+  </div>
+  <svg class="trace" id="trace" viewBox="0 0 800 120" role="img" aria-label="Output tokens per hour today"></svg>
+  <div class="axis" id="traceAxis"></div>
+  <div class="explain"><b>What is burn rate?</b><span class="fine" id="explainTxt">Output tokens the model wrote per minute. Cache reads, the context re-read on every turn, are counted separately below because they cost a fraction in money and, by most estimates, in energy.</span></div>
+</section>
+
+<div class="grid g4" style="margin-top:12px" id="tiles"></div>
+
+<section class="card" style="margin-top:12px">
+  <div class="row"><span class="label">Today's draw</span><span class="pill est">estimate · edit the recipe card below</span></div>
+  <div class="meters" id="metersToday"></div>
+</section>
+
+<section class="card" style="margin-top:12px">
+  <div class="row"><span class="label">By the hour</span><div class="seg" role="group" aria-label="Unit" id="unitSeg"><button id="u-tok" aria-pressed="true" data-u="tok">tokens</button><button id="u-wh" aria-pressed="false" data-u="wh">Wh</button><button id="u-usd" aria-pressed="false" data-u="usd">$</button></div></div>
+  <div class="bars" id="hourBars"><span class="ylab" id="hourMax"></span></div>
+  <div class="axis"><span>12a</span><span>6a</span><span>12p</span><span>6p</span><span>11p</span></div>
+  <p class="fine" style="margin-top:8px" id="hourNote"></p>
+</section>
+
+<h2>This month <small id="monthLbl"></small></h2>
+<div class="grid g2">
+  <section class="card">
+    <div class="row"><span class="label">Odometer</span><span class="pill meas">measured</span></div>
+    <div class="mid" id="odo" style="margin-top:10px"></div><div class="unit" id="odoU"></div>
+    <div class="bars" id="dayBars"><span class="ylab" id="dayMax"></span></div>
+    <div class="axis" id="dayAxis"></div>
+  </section>
+  <section class="card">
+    <div class="row"><span class="label">Pantry</span><span class="pill meas">measured</span></div>
+    <div class="ringwrap" style="margin-top:10px">
+      <div class="ring" id="ring"></div>
+      <div class="hbars" id="modelBars"></div>
+    </div>
+    <p class="fine" style="margin-top:12px" id="pantryNote"></p>
+  </section>
+</div>
+<section class="card" style="margin-top:12px">
+  <div class="row"><span class="label">The month's draw</span><span class="pill est">estimate</span></div>
+  <div class="meters" id="metersMonth"></div>
+</section>
+
+<section class="card" style="margin-top:12px" id="waterNote">
+  <div class="row"><span class="label">What this water means</span><span class="pill meas">the record</span></div>
+  <p class="fine" style="margin-top:10px;max-width:none"><b>Which water.</b> Two different waters are on the meter. The first is used at the data center to cool the racks; the second is used at the power plant to make the electricity. The power plant share is usually the bigger one, and it is the one most public per-query numbers leave out.</p>
+  <p class="fine" style="max-width:none"><b>Consumed, not withdrawn.</b> The meter counts water that evaporates and does not return to the basin. Cooling towers consume 50 to 80% of what they withdraw; once-through cooling returns almost all of it, warmer; closed-loop chip cooling consumes close to none but shifts load to electricity. Withdrawal figures would be larger, and most of that water goes back.</p>
+  <p class="fine" style="max-width:none"><b>What the companies publish.</b> Google: a median Gemini text prompt uses 0.26 mL of water at the data center, about five drops, power plant water excluded. Microsoft: fleet cooling intensity 0.27 liters per kWh in 2025, and it reports replenishing more water than it withdraws. Sam Altman: about one fifteenth of a teaspoon per ChatGPT query; his later "38,000 queries per almond" line was fact-checked as overstated. Anthropic has published no water figure, so this page estimates from the others.</p>
+  <p class="fine" style="max-width:none"><b>Where it happens matters.</b> A liter evaporated in a water-stressed basin competes with farms and taps; the same liter in a wet region often does not. Roughly two in five US data centers sit in high water-stress areas. The places on this page are on the public record; the API does not say where a given request ran.</p>
+  <p class="fine" style="max-width:none"><b>How to read your number.</b> A single message is a few drops. A month of heavy work is a few showers. Both are true, and the gauge shows both so neither side gets to win the argument by picking a unit.</p>
+</section>
+<h2>Cloud burners, local burners <small>where the compute runs</small></h2>
+<div class="grid g2">
+  <section class="card" id="splitCard"></section>
+  <section class="card" id="localCard"></section>
+</div>
+
+<h2>Where the heat comes from <small>the supply chain behind the gauges</small></h2>
+<div class="grid g2">
+  <section class="card" id="places"></section>
+  <section class="card recipe" id="recipe"></section>
+</div>
+
+<h2>Bring your own kitchen <small>share this page with anyone</small></h2>
+<section class="card">
+  <div class="drop" id="drop">Drag your <code>~/.claude/projects</code> folder here, or a usage log in the <a href="https://github.com/hellogumbo" title="USAGE-LOG-FORMAT.md, one JSON line per turn">open per-turn format</a> (any agent, any vendor, local models too), or use the buttons up top. Everything is read in your browser and drawn here. Nothing is uploaded.</div>
+</section>
+<footer><span>Gumbo · Mise · v0.6 · measured means read from your logs; estimates carry a band and a source</span><span id="genLbl"></span></footer>
+</div>
+<div id="tip" hidden></div>
+<script>
+const SAMPLE = {"generated":"2026-09-16T08:19:26.249382-04:00","records":12762,"today":"2026-09-16","days":{"2026-08-24":{"msgs":276,"input":552,"output":221256,"cache_read":66556180,"cache_write":2188693,"thinking":103271,"sessions":2,"first":"07:53","last":"19:30"},"2026-08-25":{"msgs":381,"input":762,"output":645157,"cache_read":166741025,"cache_write":5072369,"thinking":257856,"sessions":2,"first":"06:50","last":"23:30"},"2026-08-26":{"msgs":292,"input":577,"output":289158,"cache_read":80137250,"cache_write":5890603,"thinking":121151,"sessions":3,"first":"06:49","last":"18:18"},"2026-08-27":{"msgs":267,"input":532,"output":196444,"cache_read":115890682,"cache_write":4341270,"thinking":80303,"sessions":2,"first":"06:49","last":"23:04"},"2026-08-28":{"msgs":207,"input":414,"output":291017,"cache_read":142859522,"cache_write":6680857,"thinking":96696,"sessions":3,"first":"08:08","last":"17:47"},"2026-08-29":{"msgs":423,"input":842,"output":401734,"cache_read":208281362,"cache_write":5880922,"thinking":174214,"sessions":2,"first":"06:49","last":"23:59"},"2026-08-30":{"msgs":240,"input":480,"output":147084,"cache_read":107507166,"cache_write":4221474,"thinking":77727,"sessions":2,"first":"00:02","last":"15:52"},"2026-08-31":{"msgs":423,"input":846,"output":602308,"cache_read":171261311,"cache_write":9678475,"thinking":257246,"sessions":3,"first":"06:49","last":"23:23"},"2026-09-10":{"msgs":1182,"input":28116,"output":2126506,"cache_read":493882465,"cache_write":22277612,"thinking":718985,"sessions":7,"first":"07:05","last":"22:29"},"2026-09-11":{"msgs":1271,"input":17666,"output":2239864,"cache_read":625935663,"cache_write":19117263,"thinking":1031337,"sessions":3,"first":"08:09","last":"22:48"},"2026-09-12":{"msgs":155,"input":916,"output":267967,"cache_read":114681994,"cache_write":9327547,"thinking":147047,"sessions":2,"first":"09:01","last":"21:48"},"2026-09-13":{"msgs":302,"input":1504,"output":403388,"cache_read":102270890,"cache_write":17429679,"thinking":151934,"sessions":2,"first":"10:00","last":"23:34"},"2026-09-14":{"msgs":1016,"input":12044,"output":2316337,"cache_read":592436188,"cache_write":19559708,"thinking":953622,"sessions":3,"first":"08:10","last":"21:11"},"2026-09-15":{"msgs":1098,"input":20744,"output":1486439,"cache_read":544809689,"cache_write":21182114,"thinking":519376,"sessions":5,"first":"08:09","last":"23:07"},"2026-08-17":{"msgs":354,"input":660,"output":427214,"cache_read":171051443,"cache_write":12301955,"thinking":194416,"sessions":3,"first":"06:49","last":"23:39"},"2026-08-18":{"msgs":291,"input":544,"output":458916,"cache_read":102533439,"cache_write":4641456,"thinking":146537,"sessions":2,"first":"06:49","last":"19:51"},"2026-08-19":{"msgs":301,"input":600,"output":334770,"cache_read":86640227,"cache_write":8272938,"thinking":192883,"sessions":3,"first":"06:49","last":"20:35"},"2026-09-09":{"msgs":396,"input":10795,"output":549060,"cache_read":158712411,"cache_write":13871266,"thinking":160486,"sessions":2,"first":"08:09","last":"22:59"},"2026-08-20":{"msgs":111,"input":222,"output":101891,"cache_read":14943862,"cache_write":884716,"thinking":53160,"sessions":2,"first":"06:49","last":"18:43"},"2026-08-21":{"msgs":565,"input":1128,"output":649927,"cache_read":358116781,"cache_write":3838397,"thinking":303671,"sessions":2,"first":"07:04","last":"19:05"},"2026-08-22":{"msgs":248,"input":496,"output":153555,"cache_read":73293076,"cache_write":5416068,"thinking":69326,"sessions":2,"first":"06:49","last":"20:54"},"2026-08-23":{"msgs":35,"input":70,"output":21890,"cache_read":8269918,"cache_write":702958,"thinking":9139,"sessions":1,"first":"12:46","last":"12:54"},"2026-09-02":{"msgs":457,"input":32389,"output":748652,"cache_read":94714241,"cache_write":6871233,"thinking":228753,"sessions":5,"first":"06:49","last":"22:34"},"2026-09-01":{"msgs":878,"input":99982,"output":2025132,"cache_read":455072841,"cache_write":14587531,"thinking":474292,"sessions":4,"first":"06:49","last":"23:25"},"2026-09-05":{"msgs":205,"input":76355,"output":264837,"cache_read":53927138,"cache_write":3822628,"thinking":82948,"sessions":2,"first":"09:21","last":"14:23"},"2026-09-07":{"msgs":35,"input":1020,"output":27017,"cache_read":6756311,"cache_write":4303122,"thinking":9006,"sessions":1,"first":"08:07","last":"21:51"},"2026-09-08":{"msgs":199,"input":13214,"output":287506,"cache_read":90683520,"cache_write":5509969,"thinking":76082,"sessions":1,"first":"08:12","last":"17:44"},"2026-09-03":{"msgs":344,"input":688,"output":442382,"cache_read":145401684,"cache_write":8900348,"thinking":220030,"sessions":2,"first":"06:49","last":"23:49"},"2026-09-04":{"msgs":735,"input":1470,"output":628933,"cache_read":359937099,"cache_write":4877792,"thinking":304908,"sessions":2,"first":"00:09","last":"17:44"},"2026-09-16":{"msgs":73,"input":1764,"output":72013,"cache_read":29549750,"cache_write":3129216,"thinking":21918,"sessions":2,"first":"06:49","last":"08:19"},"2026-08-16":{"msgs":2,"input":4,"output":194,"cache_read":61258,"cache_write":77974,"thinking":130,"sessions":1,"first":"09:24","last":"09:24"}},"hours_today":{"7":{"msgs":33,"input":826,"output":48712,"cache_read":24956805,"cache_write":2965985,"thinking":17338},"8":{"msgs":37,"input":932,"output":22468,"cache_read":4424168,"cache_write":66364,"thinking":4580},"6":{"msgs":3,"input":6,"output":833,"cache_read":168777,"cache_write":96867,"thinking":0}},"models":{"claude-fable-5":{"input":8857,"output":5094827,"cache_read":2022400406,"cache_write":79552508},"<synthetic>":{"input":0,"output":0,"cache_read":0,"cache_write":0},"claude-opus-4-8":{"input":3844,"output":3660254,"cache_read":987206358,"cache_write":34938580},"claude-fable-5-1":{"input":311889,"output":8751752,"cache_read":2170715547,"cache_write":122548589},"claude-sonnet-5":{"input":2342,"output":1157338,"cache_read":535202603,"cache_write":15051038},"claude-opus-5":{"input":464,"output":164377,"cache_read":27391472,"cache_write":2767438}},"today_models":{"claude-fable-5-1":{"input":1758,"output":71180,"cache_read":29380973,"cache_write":3032349},"claude-opus-5":{"input":6,"output":833,"cache_read":168777,"cache_write":96867}},"models_output":{"claude-fable-5":5094827,"<synthetic>":0,"claude-opus-4-8":3660254,"claude-fable-5-1":8751752,"claude-sonnet-5":1157338,"claude-opus-5":164377},"projects_output":{"~-Claude-mise":18664171,"~-Claude-Gumbo":164377}};
+/* ---------- the recipe card: every estimate on this page comes from these numbers ---------- */
+const RECIPE = {
+  whOut:   {v:0.001,   l:'Wh per output token, cloud', s:'band 0.1 to 2 mWh. Epoch AI 2025, Couch 2026. Anthropic publishes no figure'},
+  whIn:    {v:0.0002,  l:'Wh per fresh input token, cloud', s:'prefill runs about a fifth of decode'},
+  whCacheW:{v:0.00025, l:'Wh per cache-write token', s:'1.25x input, mirrors pricing'},
+  whCache: {v:0.00004, l:'Wh per cache-read token', s:'a tenth of input, and a ceiling: a hit skips prefill'},
+  waterOn: {v:1.0,     l:'mL water consumed per Wh, cooling at the data center', s:'evaporated in cooling towers, gone from the basin. Fleet figures: Microsoft 0.27 (2025), Google 1.09 (2024), industry about 1.8. Closed-loop chip cooling is near 0'},
+  waterOff:{v:3.1,     l:'mL water consumed per Wh, at the power plant', s:'evaporated making the electricity; US grid low end, range about 2.2 to 7.6 by fuel mix. Usually the bigger share'},
+  gCO2:    {v:0.373,   l:'g CO2e per Wh, US grid', s:'EPA eGRID. Ohio and Indiana grid: 0.416'},
+  localW:  {v:45,      l:'W this Mac draws running a local model', s:'M4 Max 30 to 50 W measured; a mini peaks near 65'},
+  localMin:{v:0,       l:'minutes of local model use today', s:'not logged yet on this Mac; type it'},
+};
+const PRICES = { /* USD per million tokens, Anthropic list; cache write priced at the 1-hour rate (2x input) because Claude Code sessions use the 1-hour cache; cache read = 10% of input, 2.5% on Fable */
+  'claude-fable-5-1':{i:10,o:50,cw:20,cr:0.25}, 'claude-fable-5':{i:10,o:50,cw:20,cr:0.25},
+  'claude-opus-5':{i:5,o:25,cw:10,cr:0.5}, 'claude-opus-4-8':{i:5,o:25,cw:10,cr:0.5},
+  'claude-sonnet-5':{i:2,o:10,cw:4,cr:0.2}, 'claude-haiku-4-5':{i:1,o:5,cw:2,cr:0.1} };
+const PLACES = [
+  {n:'Project Rainier · New Carlisle, Indiana', d:'about 500,000 AWS Trainium2 chips live since Oct 2025, inference by day and training by night; 2.25 GW planned at full build', km:330},
+  {n:'Rainier sites · Pennsylvania and Mississippi', d:'the rest of the roughly one-gigawatt cluster; towns not public', km:null},
+  {n:'AWS us-east-2 · Columbus, Ohio', d:'1.5 GW of data-center load in central Ohio by July 2025; no Anthropic site named here', km:170},
+  {n:'AWS us-east-1 · Northern Virginia', d:'the default API region', km:650},
+  {n:'Google Cloud TPUs', d:'up to a gigawatt in 2026, 3.5 GW from 2027, "mostly in the US"; sites not public', km:null},
+  {n:'Microsoft Azure', d:'up to a gigawatt of Nvidia Grace Blackwell and Vera Rubin; regions not public', km:null},
+  {n:'Fluidstack · Texas and New York', d:'Anthropic\'s own sites, gigawatts, coming online through 2026', km:null},
+  {n:'SpaceX Colossus 1 · Memphis', d:'300 MW and 220,000 GPUs serving Claude Pro and Max', km:700},
+];
+const SOURCES = [
+  ['Google, "Measuring the environmental impact of AI inference," Aug 2025','https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference'],
+  ['Epoch AI, "How much energy does ChatGPT use?" Feb 2025','https://epoch.ai/gradient-updates/how-much-energy-does-chatgpt-use'],
+  ['Jegham et al., "How Hungry is AI?" May 2025','https://arxiv.org/abs/2505.09598'],
+  ['Couch, "Electricity use of AI coding agents," Jan 2026','https://simonpcouch.com/blog/2026-01-20-cc-impact/'],
+  ['EPA eGRID emission factors','https://www.epa.gov/egrid/summary-data'],
+  ['LBNL, US Data Center Energy Usage Report, Dec 2024','https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report_1.pdf'],
+  ['Semafor on Project Rainier, Oct 2025','https://www.semafor.com/article/10/29/2025/aws-massive-multi-state-ai-data-center-is-powering-anthropics-claude'],
+  ['Anthropic pricing, checked Sep 15 2026','https://platform.claude.com/docs/en/about-claude/pricing'],
+  ['Microsoft, "Inside Microsoft\'s two-decade push to cut water intensity," Jun 2026 (fleet WUE 0.27 L/kWh)','https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/'],
+  ['EESI, "Data Centers and Water Consumption" (industry WUE about 1.8 L/kWh)','https://www.eesi.org/articles/view/data-centers-and-water-consumption'],
+  ['USGS, thermoelectric power water use','https://www.usgs.gov/mission-areas/water-resources/science/thermoelectric-power-water-use'],
+  ['Sam Altman, "The Gentle Singularity," 2025 (per-query water claim)','https://blog.samaltman.com/the-gentle-singularity'],
+  ['Poynter fact-check of the almond comparison, Sep 2026','https://www.poynter.org/fact-checking/2026/sam-altman-chatgpt-water-use-almonds/'],
+  ['Ceres, "Drained by Data," 2024 (data centers in water-stressed areas)','https://www.ceres.org/resources/reports/drained-by-data-the-cumulative-impact-of-data-centers-on-regional-water-stress'],
+  ['Mistral AI lifecycle study via DeepLearning.AI, 2025 (about 45 mL per 400-token prompt, lifecycle)','https://www.deeplearning.ai/the-batch/french-ai-startup-discloses-full-lifecycle-consumption-and-emissions-for-mistral-large-2'],
+  ['llama.cpp Apple Silicon benchmarks','https://github.com/ggml-org/llama.cpp/discussions/4167'],
+];
+const HOME = 'Cincinnati';
+/* ---------- helpers ---------- */
+const $=s=>document.querySelector(s);
+const fmt=n=>n>=1e9?(n/1e9).toFixed(2)+'B':n>=1e6?(n/1e6).toFixed(2)+'M':n>=1e3?(n/1e3).toFixed(1)+'K':String(Math.round(n));
+const fmt1=(n,d=1)=>Number(n).toLocaleString(undefined,{maximumFractionDigits:d});
+const auto=(n)=>n>=100?fmt1(n,0):n>=10?fmt1(n,1):fmt1(n,2);
+const scaled=(v,small,big)=>v>=1000?{v:v/1000,u:big}:{v,u:small};
+const EMPTY={msgs:0,input:0,output:0,cache_read:0,cache_write:0,thinking:0};
+function energyWh(c){return (c.output||0)*RECIPE.whOut.v + (c.input||0)*RECIPE.whIn.v + (c.cache_write||0)*RECIPE.whCacheW.v + (c.cache_read||0)*RECIPE.whCache.v}
+function costParts(models){const r={input:0,output:0,cache_write:0,cache_read:0};for(const [m,c] of Object.entries(models||{})){const p=PRICES[m];if(!p)continue;r.input+=(c.input||0)*p.i/1e6;r.output+=(c.output||0)*p.o/1e6;r.cache_write+=(c.cache_write||0)*p.cw/1e6;r.cache_read+=(c.cache_read||0)*p.cr/1e6}return r}
+function costUSD(models){let t=0;for(const [m,c] of Object.entries(models||{})){const p=PRICES[m];if(!p)continue;t+=((c.input||0)*p.i+(c.output||0)*p.o+(c.cache_write||0)*p.cw+(c.cache_read||0)*p.cr)/1e6}return t}
+/* blended price per token kind from a model mix, so hours (which carry no model) can be priced */
+function blended(models){const k={i:['input','i'],o:['output','o'],cw:['cache_write','cw'],cr:['cache_read','cr']};const r={};for(const [key,[f,pk]] of Object.entries(k)){let tok=0,usd=0;for(const [m,c] of Object.entries(models||{})){const p=PRICES[m];if(!p)continue;tok+=c[f]||0;usd+=(c[f]||0)*p[pk]/1e6}r[key]=tok?usd/tok:0}return r}
+function costOf(c,b){return (c.input||0)*b.i+(c.output||0)*b.o+(c.cache_write||0)*b.cw+(c.cache_read||0)*b.cr}
+function sum(days,keys){const t={};for(const k of keys)t[k]=0;for(const d of Object.values(days))for(const k of keys)t[k]+=d[k]||0;return t}
+/* tooltip */
+const tip=$('#tip');
+function showTip(e,html){tip.innerHTML=html;tip.hidden=false;moveTip(e)}
+function moveTip(e){const w=tip.offsetWidth,h=tip.offsetHeight;let x=e.clientX+12,y=e.clientY-h-10;if(x+w>innerWidth-8)x=e.clientX-w-12;if(y<8)y=e.clientY+14;tip.style.left=x+'px';tip.style.top=y+'px'}
+function hideTip(){tip.hidden=true}
+function hover(el,html){el.addEventListener('mouseenter',e=>showTip(e,html));el.addEventListener('mousemove',moveTip);el.addEventListener('mouseleave',hideTip)}
+/* ---------- drawing ---------- */
+function segMeter({label,value,unit,max,foot,estimated=true,tone='',math=''}){
+  const n=24,frac=Math.max(0,Math.min(1,max?value/max:0)),on=Math.round(frac*n);
+  return `<div class="meter"><div class="label">${label}</div><div class="mid" style="margin-top:8px">${value>=1000?fmt(value):auto(value)}<small>${unit}</small></div><div class="segs ${tone}" role="img" aria-label="${label} ${auto(value)} ${unit}, ${Math.round(frac*100)}% of scale">${Array.from({length:n},(_,i)=>`<i class="${i<on?'on':''}"></i>`).join('')}</div><div class="foot">${foot||''}</div>${math?`<details class="math"><summary>show the math</summary><div>${math}</div></details>`:''}</div>`;
+}
+/* a real instrument gauge: 240deg sweep (start -120deg from top, clockwise), gap at the bottom,
+   ticks, a filled arc to the value, a needle. Same data as segMeter, drawn like a speedometer. */
+function dial({label,value,unit,max,foot,tone='',math=''}){
+  const frac=Math.max(0,Math.min(1,max?value/max:0));
+  const cx=100,cy=98,r=74,start=-120,sweep=240,sweepRad=sweep*Math.PI/180;
+  const pt=(rad,ang)=>{const a=ang*Math.PI/180;return [cx+rad*Math.sin(a),cy-rad*Math.cos(a)]};
+  const [sx,sy]=pt(r,start),[ex,ey]=pt(r,start+sweep);
+  const track=`M ${sx.toFixed(1)} ${sy.toFixed(1)} A ${r} ${r} 0 1 1 ${ex.toFixed(1)} ${ey.toFixed(1)}`;
+  const arcLen=r*sweepRad, filled=arcLen*frac;
+  const needleAng=start+sweep*frac;
+  const [nx1,ny1]=pt(r*0.22,needleAng),[nx2,ny2]=pt(r*0.9,needleAng);
+  const ticks=Array.from({length:9},(_,i)=>{const a=start+sweep*i/8,major=i%2===0;const [x1,y1]=pt(r+4,a),[x2,y2]=pt(r+(major?13:9),a);return `<line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" stroke="var(--hair-2)" stroke-width="${major?2:1.2}"/>`}).join('');
+  return `<div class="meter"><div class="label">${label}</div>
+    <div class="dial" role="img" aria-label="${label} ${auto(value)} ${unit}, ${Math.round(frac*100)}% of scale">
+      <svg viewBox="0 0 200 130">
+        ${ticks}
+        <path d="${track}" fill="none" stroke="var(--amber-track)" stroke-width="9" stroke-linecap="round"/>
+        <path d="${track}" fill="none" stroke="var(--amber)" stroke-width="9" stroke-linecap="round" stroke-dasharray="${filled.toFixed(1)} 999"/>
+        <line x1="${nx1.toFixed(1)}" y1="${ny1.toFixed(1)}" x2="${nx2.toFixed(1)}" y2="${ny2.toFixed(1)}" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="${cx}" cy="${cy}" r="5.5" fill="var(--ink)"/>
+      </svg>
+      <div class="dial-read"><span class="mid">${value>=1000?fmt(value):auto(value)}</span><span class="du">${unit}</span></div>
+    </div>
+    <div class="foot">${foot||''}</div>${math?`<details class="math"><summary>show the math</summary><div>${math}</div></details>`:''}</div>`;
+}
+/* the energy formula, spelled out with the inputs it used, and which term dominates */
+function energyMath(c){
+  const t=[['output',c.output||0,RECIPE.whOut.v],['fresh input',c.input||0,RECIPE.whIn.v],['cache writes',c.cache_write||0,RECIPE.whCacheW.v],['cache reads',c.cache_read||0,RECIPE.whCache.v]];
+  const tot=t.reduce((a,[,n,w])=>a+n*w,0)||1; const big=t.reduce((a,b)=>b[1]*b[2]>a[1]*a[2]?b:a);
+  return t.map(([k,n,w])=>`${fmt(n)} ${k} × ${(w*1000).toLocaleString(undefined,{maximumFractionDigits:3})} mWh = ${auto(n*w)} Wh`).join('<br>')+`<br><b>= ${auto(tot)} Wh</b> · ${Math.round(100*big[1]*big[2]/tot)}% of it is the ${big[0]} term, the least certain assumption on the recipe card`;
+}
+function costMath(models){
+  const rows=[];for(const [m,c] of Object.entries(models||{})){const p=PRICES[m];if(!p)continue;rows.push(`${m.replace('claude-','')}: ${fmt(c.input||0)} in × $${p.i} + ${fmt(c.output||0)} out × $${p.o} + ${fmt(c.cache_write||0)} cache write × $${p.cw} + ${fmt(c.cache_read||0)} cache read × $${p.cr}, per million = $${auto(((c.input||0)*p.i+(c.output||0)*p.o+(c.cache_write||0)*p.cw+(c.cache_read||0)*p.cr)/1e6)}`)}
+  return rows.join('<br>')+`<br><b>= $${auto(costUSD(models))}</b> · list prices, checked against Anthropic's table Sep 15 2026`;
+}
+function sparkline(vals,w=200,h=36){
+  if(!vals.length) return '';
+  const max=Math.max(1,...vals),pad=3,step=vals.length>1?(w-pad*2)/(vals.length-1):0;
+  const pts=vals.map((v,i)=>[pad+i*step,h-pad-(h-pad*2)*v/max]);
+  const d=pts.map((p,i)=>(i?'L':'M')+p[0].toFixed(1)+' '+p[1].toFixed(1)).join(' ');
+  const last=pts[pts.length-1];
+  return `<svg class="spark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" aria-hidden="true"><path d="${d} L ${last[0].toFixed(1)} ${h} L ${pad} ${h} Z" fill="var(--amber-wash)"/><path d="${d}" fill="none" stroke="var(--bar-dim)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="${last[0].toFixed(1)}" cy="${last[1].toFixed(1)}" r="4" fill="var(--amber)" stroke="var(--surface)" stroke-width="2"/></svg>`;
+}
+function tile({label,value,unit,foot,spark}){
+  return `<div class="card tile"><div class="row"><span class="label">${label}</span></div><div><span class="mid">${value}</span><span class="unit" style="display:inline;margin-left:6px">${unit||''}</span></div><div class="foot">${foot||''}</div>${spark||''}</div>`;
+}
+function ring(pct,label,sub){
+  const r=62,c=2*Math.PI*r,on=c*Math.max(0,Math.min(1,pct/100));
+  return `<svg viewBox="0 0 150 150" role="img" aria-label="${label} ${Math.round(pct)}%"><circle cx="75" cy="75" r="${r}" fill="none" stroke="var(--amber-track)" stroke-width="14"/><circle cx="75" cy="75" r="${r}" fill="none" stroke="var(--amber)" stroke-width="14" stroke-linecap="round" stroke-dasharray="${on.toFixed(1)} ${(c-on).toFixed(1)}"/></svg><div class="c"><div class="mid">${Math.round(pct)}<small>%</small></div><div class="unit" style="margin-top:2px">${label}</div></div>`;
+}
+function trace(hrs){
+  const svg=$('#trace'); const W=800,H=120,padL=6,padR=10,padT=12,padB=18;
+  const keys=Object.keys(hrs).map(Number).sort((a,b)=>a-b);
+  if(!keys.length){svg.innerHTML=`<text x="${W/2}" y="${H/2}" text-anchor="middle" fill="var(--muted)" font-size="13">No activity yet today</text>`;$('#traceAxis').innerHTML='';return}
+  const h0=keys[0],h1=Math.max(keys[keys.length-1],h0+1);
+  const vals=[];for(let h=h0;h<=h1;h++)vals.push((hrs[h]||EMPTY).output/60);
+  const max=Math.max(1,...vals);
+  const x=i=>padL+(W-padL-padR)*i/(vals.length-1), y=v=>padT+(H-padT-padB)*(1-v/max);
+  const d=vals.map((v,i)=>(i?'L':'M')+x(i).toFixed(1)+' '+y(v).toFixed(1)).join(' ');
+  const yMax=y(max),yZero=y(0);
+  svg.innerHTML=`<line x1="${padL}" x2="${W-padR}" y1="${yMax}" y2="${yMax}" stroke="var(--hair)" stroke-width="1"/><line x1="${padL}" x2="${W-padR}" y1="${yZero}" y2="${yZero}" stroke="var(--hair-2)" stroke-width="1"/>
+    <text x="${W-padR}" y="${yMax-3}" text-anchor="end" fill="var(--muted)" font-size="11">${fmt(max)} / min</text>
+    <path d="${d} L ${x(vals.length-1).toFixed(1)} ${yZero} L ${x(0)} ${yZero} Z" fill="var(--amber-wash)"/>
+    <path d="${d}" fill="none" stroke="var(--amber)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="${x(vals.length-1).toFixed(1)}" cy="${y(vals[vals.length-1]).toFixed(1)}" r="5" fill="var(--amber)" stroke="var(--surface)" stroke-width="2"/>`;
+  const lab=h=>`${h%12||12}${h<12?'a':'p'}`;
+  const mid=Math.round((h0+h1)/2);
+  $('#traceAxis').innerHTML=`<span>${lab(h0)}</span>${h1-h0>1?`<span>${lab(mid)}</span>`:''}<span>${lab(h1)}</span>`;
+}
+/* ---------- parsing Claude Code logs in the browser ---------- */
+async function parseFiles(files){
+  const days={},hours={},models={},today_models={},projects={},sessions={},fl={};
+  const now=new Date(); const since=new Date(now.getTime()-31*864e5); const today=dkey(now);
+  let n=0;
+  const bump=(o,k,u)=>{const c=o[k]||(o[k]={input:0,output:0,cache_read:0,cache_write:0});c.input+=u.i;c.output+=u.o;c.cache_read+=u.cr;c.cache_write+=u.cw;};
+  for(const f of files){ if(!f.name.endsWith('.jsonl')) continue;
+    const proj=(f.webkitRelativePath||f.name).split('/').slice(-2,-1)[0]||'?'; const sid=f.name.slice(0,8);
+    const text=await f.text();
+    for(const line of text.split('\n')){ if(!line.includes('"usage"')) continue; let d; try{d=JSON.parse(line)}catch{continue}
+      const ts=d.timestamp; if(!ts) continue; const t=new Date(ts); if(isNaN(t)||t<since) continue;
+      const m=d.message||{}, u=m.usage; if(!u) continue; n++;
+      const k=dkey(t); const c=days[k]||(days[k]={...EMPTY});
+      const inp=u.input_tokens||0,out=u.output_tokens||0,cr=u.cache_read_input_tokens||0,cw=u.cache_creation_input_tokens||0,th=(u.output_tokens_details||{}).thinking_tokens||0;
+      c.msgs++;c.input+=inp;c.output+=out;c.cache_read+=cr;c.cache_write+=cw;c.thinking+=th;
+      const mk=m.model||'?'; bump(models,mk,{i:inp,o:out,cr,cw}); projects[proj]=(projects[proj]||0)+out;
+      (sessions[k]||(sessions[k]=new Set())).add(sid); const f2=fl[k]||(fl[k]=[t,t]); if(t<f2[0])f2[0]=t; if(t>f2[1])f2[1]=t;
+      if(k===today){const h=hours[t.getHours()]||(hours[t.getHours()]={...EMPTY});h.msgs++;h.input+=inp;h.output+=out;h.cache_read+=cr;h.cache_write+=cw;h.thinking+=th;bump(today_models,mk,{i:inp,o:out,cr,cw});}
+    }}
+  for(const k in days){days[k].sessions=sessions[k].size;days[k].first=hm(fl[k][0]);days[k].last=hm(fl[k][1]);}
+  const models_output={};for(const [k,v] of Object.entries(models))models_output[k]=v.output;
+  return {generated:now.toISOString(),records:n,today,days,hours_today:hours,models,today_models,models_output,projects_output:projects};
+}
+/* ---------- the open per-turn usage log (USAGE-LOG-FORMAT.md): one JSON object per line ---------- */
+function foldTurn(acc,t,rec){
+  const {days,hours,models,today_models,projects,sessions,fl,today}=acc;
+  const k=dkey(t); const c=days[k]||(days[k]={...EMPTY});
+  const inp=rec.input_tokens|0,out=rec.output_tokens|0,cr=rec.cache_read|0,cw=rec.cache_write|0,th=rec.thinking|0;
+  c.msgs++;c.input+=inp;c.output+=out;c.cache_read+=cr;c.cache_write+=cw;c.thinking+=th;
+  const mk=rec.model||'unknown'; const bump=(o)=>{const m=o[mk]||(o[mk]={input:0,output:0,cache_read:0,cache_write:0});m.input+=inp;m.output+=out;m.cache_read+=cr;m.cache_write+=cw};
+  bump(models); const pj=rec.project||rec.agent||'?'; projects[pj]=(projects[pj]||0)+out;
+  (sessions[k]||(sessions[k]=new Set())).add(rec.session||rec.agent||'?'); const f2=fl[k]||(fl[k]=[t,t]); if(t<f2[0])f2[0]=t; if(t>f2[1])f2[1]=t;
+  if(k===today){const h=hours[t.getHours()]||(hours[t.getHours()]={...EMPTY});h.msgs++;h.input+=inp;h.output+=out;h.cache_read+=cr;h.cache_write+=cw;h.thinking+=th;bump(today_models);}
+  acc.n++; if(rec.estimated) acc.estimated++; if(rec.local) acc.local++;
+}
+function finishAcc(acc){
+  const {days,sessions,fl}=acc; for(const k in days){days[k].sessions=sessions[k].size;days[k].first=hm(fl[k][0]);days[k].last=hm(fl[k][1]);}
+  const models_output={};for(const [k,v] of Object.entries(acc.models))models_output[k]=v.output;
+  return {generated:acc.now.toISOString(),records:acc.n,today:acc.today,days,hours_today:acc.hours,models:acc.models,today_models:acc.today_models,models_output,projects_output:acc.projects,estimated:acc.estimated,local:acc.local,agents:[...acc.agents]};
+}
+function newAcc(){const now=new Date();return {days:{},hours:{},models:{},today_models:{},projects:{},sessions:{},fl:{},today:dkey(now),now,since:new Date(now.getTime()-31*864e5),n:0,estimated:0,local:0,agents:new Set()}}
+async function parseUsageLog(files){
+  const acc=newAcc();
+  for(const f of files){ const text=await f.text();
+    for(const line of text.split('\n')){ if(!line.trim()) continue; let r; try{r=JSON.parse(line)}catch{continue}
+      if(!r.ts||r.output_tokens==null) continue; const t=new Date(r.ts); if(isNaN(t)||t<acc.since) continue;
+      if(r.agent) acc.agents.add(r.agent); foldTurn(acc,t,r); }}
+  return finishAcc(acc);
+}
+/* sniff: a usage-log line has ts + output_tokens; a Claude Code line has "usage" inside "message" */
+async function looksLikeUsageLog(f){const head=(await f.slice(0,4000).text()).split('\n').find(l=>l.trim())||'';try{const r=JSON.parse(head);return !!(r.ts&&r.output_tokens!=null)}catch{return false}}
+const dkey=t=>`${t.getFullYear()}-${String(t.getMonth()+1).padStart(2,'0')}-${String(t.getDate()).padStart(2,'0')}`;
+const hm=t=>`${String(t.getHours()).padStart(2,'0')}:${String(t.getMinutes()).padStart(2,'0')}`;
+/* ---------- render ---------- */
+let DATA=null, CUR_WHO='', UNIT='tok';
+function render(data,who){
+  DATA=data; CUR_WHO=who; const days=data.days; const keys=Object.keys(days).sort(); const today=data.today; const td=days[today]||{...EMPTY,sessions:0,first:'',last:''};
+  const gen=new Date(data.generated); const isSample=(data===SAMPLE);
+  $('#whoLbl').textContent=(who?`${who} · `:'')+'logs through '+gen.toLocaleString(undefined,{weekday:'long',month:'long',day:'numeric',hour:'numeric',minute:'2-digit'})+(isSample?' · a sample, not you':'');
+  $('#genLbl').textContent=(isSample?'sample read ':'your logs read ')+gen.toLocaleString();
+  const bToday=blended(data.today_models||data.models), bMonth=blended(data.models);
+  /* hero: burn rate */
+  const hrs=data.hours_today||{}; const hk=Object.keys(hrs).map(Number).sort((a,b)=>a-b); const lastH=hk.length?hrs[hk[hk.length-1]]:null;
+  const cur=lastH?lastH.output/60:0; const avg=hk.length?hk.reduce((a,h)=>a+hrs[h].output,0)/(hk.length*60):0;
+  $('#hCur').innerHTML=`${fmt1(cur,0)}<small>tok/min</small>`; $('#hCurU').textContent=lastH?`current hour, ${hk[hk.length-1]}:00 · ${fmt(lastH.output)} written`:'no activity yet today';
+  $('#hAvg').innerHTML=`${fmt1(avg,0)}<small>tok/min</small>`; $('#hAvgU').textContent=`today's average over ${hk.length} active hour${hk.length==1?'':'s'}`;
+  trace(hrs);
+  /* tiles with 14-day sparklines */
+  const last14=keys.slice(-14);
+  const hoursOn=d=>d&&d.first?((parseInt(d.last)*60+parseInt(d.last.slice(3)))-(parseInt(d.first)*60+parseInt(d.first.slice(3))))/60:0;
+  $('#tiles').innerHTML=
+    tile({label:'Written today',value:fmt(td.output),unit:'output tokens',foot:`${fmt(td.thinking)} of it thinking · ${Math.round(100*td.thinking/(td.output||1))}%`,spark:sparkline(last14.map(k=>days[k].output))})+
+    tile({label:'Messages',value:fmt1(td.msgs,0),unit:'today',foot:`${td.sessions} session${td.sessions==1?'':'s'} on the stove`,spark:sparkline(last14.map(k=>days[k].msgs))})+
+    tile({label:'Hours at the stove',value:auto(hoursOn(td)),unit:'h',foot:td.first?`${td.first} to ${td.last}`:'no messages yet',spark:sparkline(last14.map(k=>hoursOn(days[k])))})+
+    tile({label:'Context re-read',value:fmt(td.msgs?td.cache_read/td.msgs:0),unit:'tokens per message',foot:`${fmt(td.cache_read)} cache reads today`,spark:sparkline(last14.map(k=>days[k].msgs?days[k].cache_read/days[k].msgs:0))});
+  /* today's draw: meters scaled to the busiest day this month */
+  const busiest=keys.reduce((a,k)=>days[k].output>days[a].output?k:a,keys[0]); const bWh=energyWh(days[busiest]||td);
+  const eT=energyWh(td)+RECIPE.localW.v*RECIPE.localMin.v/60; const tCost=costUSD(data.today_models);
+  $('#metersToday').innerHTML=
+    (()=>{const e=scaled(eT,'Wh','kWh');return dial({label:'Energy',value:e.v,unit:e.u,max:Math.max(50,bWh*1.1)/(e.u==='kWh'?1000:1),foot:`about ${auto(eT/11)} h of an 11 W bulb · scale: busiest day this month`,math:energyMath(td)+(RECIPE.localMin.v?`<br>+ local: ${RECIPE.localW.v} W × ${RECIPE.localMin.v} min = ${auto(RECIPE.localW.v*RECIPE.localMin.v/60)} Wh`:'')})})()+
+    (()=>{const wm=eT*(RECIPE.waterOn.v+RECIPE.waterOff.v), w=scaled(wm,'mL','L'), wo=scaled(eT*RECIPE.waterOn.v,'mL','L'), wp=scaled(eT*RECIPE.waterOff.v,'mL','L');return dial({label:'Water',value:w.v,unit:w.u,max:Math.max(200,bWh*1.1*(RECIPE.waterOn.v+RECIPE.waterOff.v))/(w.u==='L'?1000:1),foot:`${auto(wo.v)} ${wo.u} at the data center · ${auto(wp.v)} ${wp.u} at the power plant · about ${auto(td.msgs?wm/td.msgs:0)} mL per message`,math:`${auto(eT)} Wh × ${RECIPE.waterOn.v} mL on-site + ${auto(eT)} Wh × ${RECIPE.waterOff.v} mL at the plant<br><b>= ${auto(wm)} mL consumed</b> (evaporated, not returned). Withdrawn is higher and mostly goes back warmer. Rides entirely on the energy estimate`})})()+
+    (()=>{const c=scaled(eT*RECIPE.gCO2.v,'g CO2e','kg CO2e');return dial({label:'Carbon',value:c.v,unit:c.u,max:Math.max(20,bWh*1.1*RECIPE.gCO2.v)/(c.u.startsWith('kg')?1000:1),foot:`US grid average · Ohio runs about 12% dirtier`,math:`${auto(eT)} Wh × ${RECIPE.gCO2.v} g CO2e per Wh<br><b>= ${auto(eT*RECIPE.gCO2.v)} g</b> · carbon rides entirely on the energy estimate`})})()+
+    (()=>{const bt=costParts(data.today_models);return dial({label:'API equivalent',value:tCost,unit:'USD, not billed',max:Math.max(20,costUSD(bestDayModels(data,busiest))*1.1),foot:`what metered API billing would charge; a flat plan pays none of it · ${Math.round(100*bt.cache_write/(tCost||1))}% cache writes, ${Math.round(100*bt.cache_read/(tCost||1))}% cache reads, ${Math.round(100*bt.output/(tCost||1))}% output`,math:costMath(data.today_models)})})();
+  /* hour bars */
+  drawHours(hrs,bToday);
+  /* month */
+  const mt=sum(days,['msgs','input','output','cache_read','cache_write','thinking']); const mWh=keys.reduce((a,k)=>a+energyWh(days[k]),0);
+  $('#monthLbl').textContent=`${keys[0]} to ${keys[keys.length-1]} · ${keys.length} days with activity`;
+  $('#odo').innerHTML=`${fmt(mt.output)}<small>output tokens</small>`; $('#odoU').textContent=`${fmt(mt.msgs)} messages · ${fmt(mt.output/keys.length)} a day on active days`;
+  const maxDayOut=Math.max(1,...keys.map(k=>days[k].output));
+  const db=$('#dayBars'); db.innerHTML=`<span class="ylab">${fmt(maxDayOut)}</span>`;
+  for(const k of keys){const c=days[k]; const d=document.createElement('div'); d.innerHTML=`<i style="height:${Math.max(2,Math.round(100*c.output/maxDayOut))}%"${k===today?'':' class="dim"'}></i>`;
+    hover(d,`<b>${new Date(k+'T12:00').toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric'})}</b><br>${fmt(c.output)} output · ${fmt(c.msgs)} msgs · ${c.sessions} session${c.sessions==1?'':'s'}<br>${fmt(c.cache_read)} cache reads · ${auto(energyWh(c))} Wh est.`); db.appendChild(d);}
+  $('#dayAxis').innerHTML=`<span>${keys[0].slice(5)}</span><span>${keys[Math.floor(keys.length/2)].slice(5)}</span><span>${keys[keys.length-1].slice(5)}</span>`;
+  /* pantry ring + model bars */
+  const pct=100*mt.cache_read/(mt.cache_read+mt.cache_write+mt.input+mt.output||1);
+  $('#ring').innerHTML=ring(pct,'from cache');
+  const mm=Object.entries(data.models_output||{}).filter(([k,v])=>v>0).sort((a,b)=>b[1]-a[1]); const mmax=mm.length?mm[0][1]:1;
+  $('#modelBars').innerHTML=`<div class="label" style="margin-bottom:2px">Output by model</div>`+mm.map(([k,v])=>`<div class="hbar"><span class="n">${k.replace('claude-','')}</span><b>${fmt(v)}</b><div class="t"><i style="width:${100*v/mmax}%"></i></div></div>`).join('');
+  $('#pantryNote').textContent=`${fmt(mt.cache_read)} tokens served from cache this month against ${fmt(mt.output)} written. The model re-reads about ${fmt(mt.cache_read/(mt.msgs||1))} tokens of context per message.`;
+  /* month meters */
+  const wOn=mWh*RECIPE.waterOn.v/1000, wOff=mWh*RECIPE.waterOff.v/1000; const mCost=costUSD(data.models);
+  $('#metersMonth').innerHTML=
+    dial({label:'Energy',value:mWh/1000,unit:'kWh',max:Math.max(1,mWh/1000*1.25),foot:`a US home runs about 29 kWh a day · scale: 125% of you`,math:energyMath(mt)})+
+    dial({label:'Water',value:wOn+wOff,unit:'L',max:Math.max(2,(wOn+wOff)*1.25),foot:`${auto(wOn)} L at the data center · ${auto(wOff)} L at the power plant · about ${auto((wOn+wOff)/65)} eight-minute showers`,math:`${auto(mWh/1000)} kWh × ${RECIPE.waterOn.v} L per kWh on-site + ${auto(mWh/1000)} kWh × ${RECIPE.waterOff.v} L per kWh at the plant<br><b>= ${auto(wOn+wOff)} L</b>`})+
+    dial({label:'Carbon',value:mWh*RECIPE.gCO2.v/1000,unit:'kg CO2e',max:Math.max(1,mWh*RECIPE.gCO2.v/1000*1.25),foot:`about ${auto(mWh*RECIPE.gCO2.v/1000/0.4)} km in an average gas car`,math:`${auto(mWh/1000)} kWh × ${RECIPE.gCO2.v} kg CO2e per kWh<br><b>= ${auto(mWh*RECIPE.gCO2.v/1000)} kg</b> · 0.4 kg per km is the EPA average passenger car`})+
+    dial({label:'API equivalent',value:mCost,unit:'USD, not billed',max:Math.max(50,mCost*1.25),foot:`what the same tokens would cost metered · today ${auto(tCost)} · a flat plan pays none of it`,math:costMath(data.models)});
+  /* split */
+  const localWh=RECIPE.localW.v*RECIPE.localMin.v/60; const cloudWh=energyWh(td); const tot=localWh+cloudWh||1;
+  $('#splitCard').innerHTML=`<div class="row"><span class="label">Today's energy, cloud vs local</span><span class="pill est">estimate</span></div><div class="split"><i style="width:${100*cloudWh/tot}%;background:var(--amber-pair)"></i><i style="width:${100*localWh/tot}%;background:var(--teal)"></i></div><div class="legend"><span><i style="background:var(--amber-pair)"></i>cloud · ${auto(cloudWh)} Wh · every Claude token in these logs</span><span><i style="background:var(--teal)"></i>local · ${auto(localWh)} Wh · this Mac</span></div><p class="fine" style="margin-top:10px">Every token Claude Code counts is cloud compute: the model runs in a data center, your Mac only sends and receives text. The API carries an <code>inference_geo</code> field for where it ran; in these logs it reads "not_available," so the places below are the public record, not a measurement.</p>`;
+  $('#localCard').innerHTML=`<div class="row"><span class="label">Local burners on this Mac</span><span class="pill">not measured yet</span></div><div class="stat" style="margin-top:6px"><span>Ollama · llama3.2 (2 GB)</span><b>installed</b></div><div class="stat"><span>Kokoro voice + whisper (Mise voice pane)</span><b>local</b></div><div class="stat"><span>Apple Intelligence, on-device</span><b>local</b></div><p class="fine" style="margin-top:10px">None of these write token logs the way Claude Code does, so local is a hand-entered field in the recipe card until v0.3 reads Ollama's API. For scale: a 7B model on an M4 Max lands near 0.3 mWh per token and a 70B near 1.2 mWh, the same order as a frontier cloud token, with no cooling water and no data-center overhead, for a much smaller model.</p>`;
+  /* places */
+  $('#places').innerHTML=`<div class="row"><span class="label">Where Claude's compute is on the public record</span><span class="pill">public record</span></div>`+PLACES.map(p=>`<div class="place"><div><b>${p.n}</b><br><span>${p.d}</span></div><div class="km">${p.km?'~'+fmt1(p.km,0)+' km from '+HOME:'location not public'}</div></div>`).join('')+`<p class="fine" style="margin-top:10px">Anthropic has published no energy, water, or emissions figure for Claude. The API's <code>inference_geo</code> field answers only "us" or "global," never a site. So every estimate on this page is built from other labs' measurements, and every place above is from press releases and filings, never from a request.</p><div class="stat" style="margin-top:8px"><span class="label">The scale behind it</span><span class="pill meas">measured</span></div><div class="stat"><span>US data centers, share of all electricity, 2023</span><b>4.4%</b></div><div class="stat"><span>Projected for 2028 (LBNL)</span><b>6.7% to 12%</b></div><div class="stat"><span>Central Ohio data-center load, July 2025 (AEP)</span><b>1.5 GW</b></div><div class="stat"><span>Trenton, Ohio votes Nov 3 on banning data centers over</span><b>25 MW</b></div>`;
+  renderRecipe();
+}
+function bestDayModels(data,day){ /* no per-day model split in the logs; scale today's mix to the busiest day's tokens */
+  const src=data.today_models||data.models; const t=data.days[data.today]||EMPTY, b=data.days[day]||EMPTY; const out={};
+  const r=(k)=>t[k]?b[k]/t[k]:0;
+  for(const [m,c] of Object.entries(src||{}))out[m]={input:c.input*r('input'),output:c.output*r('output'),cache_read:c.cache_read*r('cache_read'),cache_write:c.cache_write*r('cache_write')};
+  return out;
+}
+function drawHours(hrs,b){
+  const val=h=>UNIT==='tok'?(h.output||0):UNIT==='wh'?energyWh(h):costOf(h,b);
+  const unitLbl=UNIT==='tok'?'output tokens':UNIT==='wh'?'Wh':'USD';
+  const hb=$('#hourBars'); const hmax=Math.max(UNIT==='tok'?1:0.01,...Object.values(hrs).map(val));
+  hb.innerHTML=`<span class="ylab">${UNIT==='tok'?fmt(hmax):(UNIT==='usd'?'$':'')+auto(hmax)+(UNIT==='wh'?' Wh':'')}</span>`;
+  for(let h=0;h<24;h++){const c=hrs[h]||EMPTY; const v=val(c); const d=document.createElement('div');
+    d.innerHTML=`<i style="height:${v?Math.max(2,Math.round(100*v/hmax)):0}%"></i>`;
+    hover(d,`<b>${h%12||12}:00 ${h<12?'am':'pm'}</b><br>${c.msgs} messages · ${fmt(c.output)} output<br>${fmt(c.cache_read)} cache reads · ${fmt(c.input+c.cache_write)} fresh + writes<br>${auto(energyWh(c))} Wh · $${auto(costOf(c,b))} est.`); hb.appendChild(d);}
+  $('#hourNote').textContent=UNIT==='tok'?'Output tokens per hour. Hover a bar for cache reads, energy, and price.':UNIT==='wh'?'Estimated watt-hours per hour from the recipe card, all four token kinds included.':'Estimated dollars per hour at Anthropic list price, using today\'s model mix.';
+}
+function renderRecipe(){
+  const r=$('#recipe'); r.innerHTML=`<div class="row"><span class="label">The recipe card</span><span class="pill est">edit me</span></div><p class="fine" style="margin:8px 0 4px">Every estimate on this page comes from these numbers. Measured figures never change when you edit them.</p>`+Object.entries(RECIPE).map(([k,o])=>`<label><span>${o.l}<small>${o.s}</small></span><input type="number" step="any" id="r-${k}" data-k="${k}" value="${o.v}"></label>`).join('')+`<div class="row" style="margin-top:12px"><span class="label">Sources</span></div>`+SOURCES.map(([t,u])=>`<div class="fine" style="padding:3px 0"><a href="${u}">${t}</a></div>`).join('');
+  r.querySelectorAll('input').forEach(i=>i.addEventListener('input',e=>{RECIPE[e.target.dataset.k].v=parseFloat(e.target.value)||0; if(DATA) render(DATA,CUR_WHO);}));
+}
+$('#unitSeg').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;UNIT=b.dataset.u;$('#unitSeg').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));if(DATA)drawHours(DATA.hours_today||{},blended(DATA.today_models||DATA.models));});
+const SAMPLE_NOTE='Sample: real Claude Code logs from Mise’s Mac (Dustin’s AI partner at Gumbo), precomputed there. Nothing on this page is yours until you open your own folder.';
+$('#demo').addEventListener('click',()=>{render(SAMPLE,"Sample kitchen");$('#note').textContent=SAMPLE_NOTE;});
+$('#pick').addEventListener('click',()=>$('#dir').click());
+$('#pickLog').addEventListener('click',()=>$('#logf').click());
+$('#logf').addEventListener('change',async e=>{const files=[...e.target.files]; $('#note').textContent=`Reading ${files.length} usage log file${files.length==1?'':'s'} in your browser…`; const d=await parseUsageLog(files); render(d,'Your kitchen'); $('#note').textContent=`${fmt(d.records)} turns from ${d.agents.length?d.agents.join(', '):'your log'}${d.estimated?` · ${fmt(d.estimated)} with estimated counts`:''}${d.local?` · ${fmt(d.local)} local`:''}. Nothing left this page.`;});
+/* skins: ?skin=analog|digital wins, then the remembered choice, then the instrument default */
+function setSkin(k,save){k=k||'';if(k)document.documentElement.dataset.skin=k;else delete document.documentElement.dataset.skin;for(const b of document.querySelectorAll('#skinSeg button'))b.setAttribute('aria-pressed',String(b.dataset.skin===k));if(save){try{localStorage.setItem('gauges-skin',k)}catch{}}}
+(()=>{let k='';try{k=new URLSearchParams(location.search).get('skin')||localStorage.getItem('gauges-skin')||''}catch{}if(!['analog','digital'].includes(k))k='';setSkin(k,false)})();
+$('#skinSeg').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;setSkin(b.dataset.skin,true)});
+$('#dir').addEventListener('change',async e=>{const files=[...e.target.files]; $('#note').textContent=`Reading ${files.filter(f=>f.name.endsWith('.jsonl')).length} log files in your browser…`; const d=await parseFiles(files); render(d,'Your kitchen'); $('#note').textContent=`${d.records.toLocaleString()} messages read locally. Nothing was uploaded.`;});
+const drop=$('#drop'); ['dragenter','dragover'].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.add('on')})); ['dragleave','drop'].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.remove('on')}));
+drop.addEventListener('drop',async e=>{const items=[...e.dataTransfer.items]; const files=[]; async function walk(entry,path){ if(entry.isFile){await new Promise(res=>entry.file(f=>{Object.defineProperty(f,'webkitRelativePath',{value:path+'/'+f.name});files.push(f);res();}))} else if(entry.isDirectory){const rd=entry.createReader(); let batch; do{batch=await new Promise(res=>rd.readEntries(res)); for(const en of batch) await walk(en,path+'/'+entry.name);}while(batch.length);} }
+  for(const it of items){const en=it.webkitGetAsEntry&&it.webkitGetAsEntry(); if(en) await walk(en,'');} $('#note').textContent=`Reading ${files.length} files…`; const logs=[];for(const f of files){if(/\.(jsonl|ndjson)$/.test(f.name)&&await looksLikeUsageLog(f))logs.push(f)} const d=logs.length?await parseUsageLog(logs):await parseFiles(files); render(d,'Your kitchen'); $('#note').textContent=`${d.records.toLocaleString()} messages read locally. Nothing was uploaded.`;});
+render(SAMPLE,"Sample kitchen"); $('#note').textContent=SAMPLE_NOTE;
+</script>
