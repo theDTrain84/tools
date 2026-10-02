@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The River · The Well · DNSC</title>
-<meta name="description" content="Write what is heavy onto a leaf. The water will carry it. Nothing is stored or sent.">
+<meta name="description" content="Name what you are carrying, set it on a leaf, and watch the water take it. Nothing is stored or sent.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../assets/site.css">
@@ -24,27 +24,66 @@
   .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin:26px 0 10px}
   h1{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:clamp(34px,7vw,46px);line-height:1.05;margin:0 0 10px;letter-spacing:-.01em}
   h1 em{font-style:italic;font-weight:400;color:var(--gold)}
-  .lede{color:#CFC6B8;margin:0 0 24px;max-width:560px}
-  .river{position:relative;height:clamp(240px,42vh,380px);border-radius:16px;overflow:hidden;border:1px solid #2E2925;background:linear-gradient(180deg,#1F2530 0%,#1B2028 55%,#171B21 100%)}
+  .lede{color:#CFC6B8;margin:0 0 22px;max-width:560px}
+  .wisdom{margin:0 0 16px;max-width:620px}
+  .wisdom blockquote{margin:0;font-family:Fraunces,Georgia,serif;font-style:italic;font-size:19px;line-height:1.4;color:var(--paper2)}
+  .wisdom figcaption{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.04em;color:var(--ink4);margin-top:6px}
+  .river{position:relative;height:clamp(250px,44vh,390px);border-radius:16px;overflow:hidden;border:1px solid #2E2925;background:linear-gradient(180deg,#1F2530 0%,#1B2028 55%,#171B21 100%)}
   .river canvas{position:absolute;inset:0;width:100%;height:100%}
   .bank{position:absolute;left:0;right:0;height:22px;pointer-events:none}
   .bank.top{top:0;background:linear-gradient(180deg,rgba(27,25,22,.9),rgba(27,25,22,0))}
   .bank.bot{bottom:0;background:linear-gradient(0deg,rgba(27,25,22,.9),rgba(27,25,22,0))}
-  .say{display:grid;gap:10px;margin:22px 0 8px}
-  label.l{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink4)}
+  .watchline{position:absolute;left:16px;right:16px;bottom:22px;margin:0;text-align:center;font-family:Fraunces,Georgia,serif;font-style:italic;font-size:clamp(18px,4.4vw,23px);line-height:1.3;color:var(--paper);text-shadow:0 1px 12px rgba(0,0,0,.6);opacity:0;transition:opacity 1.6s ease;pointer-events:none}
+  .watchline.on{opacity:1}
+  .breath{position:absolute;top:14px;right:14px;display:flex;align-items:center;gap:9px;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;color:var(--ink4);opacity:0;transition:opacity 1.2s;pointer-events:none}
+  .breath.on{opacity:1}
+  .breath i{width:14px;height:14px;border-radius:50%;border:1px solid var(--gold);background:rgba(217,178,90,.18);transform:scale(.6)}
+  .breath.on i{animation:breathe 12s linear infinite}
+  @keyframes breathe{0%{transform:scale(.6)}33.3%{transform:scale(1.25)}50%{transform:scale(1.25)}100%{transform:scale(.6)}}
+  .stage{margin:22px 0 0;min-height:150px}
+  .stage:focus{outline:none}
+  .say{display:grid;gap:10px}
+  label.l{font-family:Fraunces,Georgia,serif;font-size:21px;color:var(--paper)}
+  .guide{margin:-4px 0 2px;color:var(--ink4);font-size:16px}
   textarea{width:100%;min-height:92px;resize:vertical;background:rgba(243,239,231,.06);border:1px solid #3A342E;border-radius:12px;color:var(--paper);font-family:Newsreader,Georgia,serif;font-size:19px;line-height:1.45;padding:14px 16px}
-  textarea::placeholder{color:#8C7E70;font-style:italic}
+  textarea::placeholder{color:#9E9082;font-style:italic}
   .row{display:flex;flex-wrap:wrap;align-items:center;gap:14px;justify-content:space-between}
   .count{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink4)}
+  .acts{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
   .btn{font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:.04em;border:0;border-radius:999px;padding:12px 20px;cursor:pointer;background:var(--paper);color:var(--dusk)}
   .btn:hover{background:var(--gold)}
   .btn[disabled]{opacity:.45;cursor:default;background:var(--paper)}
-  .btn:focus-visible,textarea:focus-visible,.leave:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
-  .status{min-height:28px;font-family:Fraunces,Georgia,serif;font-style:italic;font-size:20px;color:var(--paper);margin:16px 0 0;transition:opacity .8s}
-  .note{color:var(--ink4);font-size:16px;margin:26px 0 0;border-top:1px solid #2E2925;padding-top:18px}
+  .btn.quiet{background:transparent;color:var(--paper);border:1px solid #4A423A}
+  .btn.quiet:hover{border-color:var(--gold);color:var(--gold)}
+  .btn.quiet[disabled]{background:transparent}
+  .linkbtn{background:none;border:0;padding:4px 2px;cursor:pointer;font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ink4);text-decoration:underline;text-underline-offset:3px}
+  .linkbtn:hover{color:var(--paper)}
+  .btn:focus-visible,textarea:focus-visible,.leave:focus-visible,.linkbtn:focus-visible,summary:focus-visible,.crumb:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
+  .gone{font-family:Fraunces,Georgia,serif;font-style:italic;font-size:24px;margin:0 0 16px;color:var(--paper)}
+  .gone:focus{outline:none}
+  .quietline{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.06em;color:var(--ink4);margin:0}
+  .close{font-family:Fraunces,Georgia,serif;font-style:italic;font-size:clamp(21px,4.6vw,26px);line-height:1.35;margin:0 0 16px;max-width:560px}
+  .close:focus{outline:none}
   .leave{color:var(--gold);text-decoration:none;font-family:"IBM Plex Mono",monospace;font-size:13px}
+  [hidden]{display:none!important}
+  .fade{animation:fadein .9s ease both}
+  @keyframes fadein{from{opacity:0;transform:translateY(4px)}}
+  .folds{margin:34px 0 0;display:grid;gap:12px}
+  details{border-top:1px solid #2E2925;padding-top:12px}
+  summary{cursor:pointer;list-style:none;font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.05em;color:var(--paper)}
+  summary::-webkit-details-marker{display:none}
+  summary:before{content:"+ ";color:var(--gold)}
+  details[open] summary:before{content:"\2212  "}
+  details p,details li{color:#CFC6B8;font-size:16.5px;max-width:620px}
+  details p{margin:12px 0 0}
+  details ol{margin:12px 0 0;padding-left:22px}
+  details li{margin:4px 0}
+  details b{color:var(--paper);font-weight:500}
+  details .took{color:var(--paper)}
+  .note{color:var(--ink4);font-size:16px;margin:26px 0 0;border-top:1px solid #2E2925;padding-top:18px}
   .site-foot{margin-top:72px}
-  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  @media (prefers-reduced-motion:reduce){.watchline,.breath{transition:opacity .4s}.breath.on i{animation:none;transform:scale(1)}.fade{animation:none}}
 </style>
 </head><body class="has-shell">
 <nav class="site-nav"><div class="in"><a class="brand" href="https://www.dustinnimmo.com"><span class="mark"><i></i><i></i><i></i><i></i><i></i></span>DNSC</a><div class="links"><a href="https://www.dustinnimmo.com/#what-i-do">What we do</a><a href="https://www.dustinnimmo.com/#three-ways">How we work</a><a class="keep" href="https://tools.dustinnimmo.com/">The Well</a></div><a class="cta" href="https://www.dustinnimmo.com/#contact">Start a conversation</a></div></nav>
@@ -52,69 +91,185 @@
   <a class="crumb" href="../">← The Well</a>
   <p class="eyebrow">The Well · Letting go</p>
   <h1>The <em>River</em></h1>
-  <p class="lede">Write what is heavy onto a leaf. The water will carry it.</p>
+  <p class="lede">Name what you are carrying, set it on a leaf, and watch the water take it.</p>
 
-  <div class="river" id="river"><canvas id="water" aria-hidden="true"></canvas><div class="bank top"></div><div class="bank bot"></div></div>
+  <figure class="wisdom" id="wisdom"><blockquote id="wq"></blockquote><figcaption id="ws"></figcaption></figure>
 
-  <form class="say" id="say" autocomplete="off">
-    <label class="l" for="heavy">What are you carrying?</label>
-    <textarea id="heavy" maxlength="160" placeholder="Something you're carrying right now"></textarea>
-    <div class="row"><span class="count" id="count">Press Enter to let it go</span><button class="btn" id="go" type="submit" disabled>Set it on the water</button></div>
-  </form>
-  <p class="status" id="status" aria-live="polite"></p>
+  <div class="river" id="river">
+    <canvas id="water" aria-hidden="true"></canvas><div class="bank top"></div><div class="bank bot"></div>
+    <div class="breath" id="breath" aria-hidden="true"><i></i><span id="breathword">in 4</span></div>
+    <p class="watchline" id="watchline" aria-hidden="true"></p>
+  </div>
 
-  <p class="note">Nothing you write here is saved or sent. It lives on the leaf until the water takes it, and then it's gone. Stay as long as you like, or <a class="leave" href="../">leave when you're ready →</a></p>
+  <div class="stage" id="stage" tabindex="-1">
+    <!-- 1. Name it -->
+    <form class="say" id="say" autocomplete="off">
+      <label class="l" for="heavy">What are you carrying? Name it plainly.</label>
+      <p class="guide" id="heavyguide">Not the story. The thing itself: a worry, a grief, a grudge, a fear.</p>
+      <textarea id="heavy" maxlength="160" aria-describedby="heavyguide" placeholder="Something you're carrying right now"></textarea>
+      <div class="row"><span class="count" id="count">Enter sets it on the water</span><button class="btn" id="go" type="submit" disabled>Set it on the water</button></div>
+    </form>
+
+    <!-- 2. Watch it -->
+    <p class="quietline" id="watching" hidden>Just watch. Breathe in for 4, hold for 2, out for 6.</p>
+
+    <!-- 3. Let it pass -->
+    <div id="pass" hidden>
+      <p class="gone" id="gone" tabindex="-1">Gone downstream.</p>
+      <form class="say" id="say2" autocomplete="off">
+        <label class="l" for="left">What is left, now that it's moving?</label>
+        <textarea id="left" maxlength="160" placeholder="Whatever remains, if anything"></textarea>
+        <div class="row"><span class="count" id="count2">This one is yours to skip</span><span class="acts"><button class="linkbtn" id="skip" type="button">Leave</button><button class="btn quiet" id="go2" type="submit" disabled>Set this on the water too</button></span></div>
+      </form>
+    </div>
+
+    <!-- 4. Return -->
+    <div id="ret" hidden>
+      <p class="close" id="close" tabindex="-1">Only time and practice move things. Come back when you need the water.</p>
+      <a class="leave" href="../">Leave when you're ready →</a>
+    </div>
+  </div>
+  <p class="sr" id="live" aria-live="polite"></p>
+
+  <div class="folds">
+    <details>
+      <summary>The four moves</summary>
+      <ol>
+        <li><b>Name it.</b> Say the thing plainly, in a few words.</li>
+        <li><b>Watch it.</b> Set it outside yourself and let your eyes follow it. You are the river; it is the leaf.</li>
+        <li><b>Let it pass.</b> It dissolves downstream. Notice what is left.</li>
+        <li><b>Return.</b> Come back to the room, and to the water whenever you need it.</li>
+      </ol>
+      <p>One pass takes about a minute. Practiced over time, it loosens the grip.</p>
+    </details>
+    <details>
+      <summary>Where this practice comes from</summary>
+      <p><b>Tashlich.</b> On Rosh Hashanah, Jews walk to living water, a river or the sea, and cast crumbs or empty their pockets as a sign of sins carried away. The practice draws on Micah 7:19, and it has been recorded since at least the 15th century, in the customs of Rabbi Jacob Moelin (the Maharil) of the Rhineland.</p>
+      <p><b>Nagashi-bina and tōrō nagashi.</b> In Japan, paper dolls are set afloat on rivers in early spring to carry misfortune away, a custom rooted in Shinto purification (harae). At the close of Obon, floating lanterns are set on the water to see off the spirits of the dead.</p>
+      <p><b>Leaves on a stream.</b> A cognitive defusion exercise from Acceptance and Commitment Therapy, developed by Steven C. Hayes and colleagues from the 1980s and in print by 1999. You picture a stream, place each thought on a leaf as it comes, and watch it float by without arguing with it.</p>
+      <p><b>Expressive writing.</b> James W. Pennebaker's studies, from 1986 onward, asked people to write plainly about what weighed on them for a few minutes on a few days. Across many studies since, that small practice has shown modest, measurable benefits to health and mood.</p>
+      <p class="took">From each we took one move: name it, set it outside yourself, watch it move, honor it, let it pass, return.</p>
+    </details>
+  </div>
+
+  <p class="note">Nothing you write here is saved or sent. It lives on the leaf until the water takes it, and then it's gone. No history, no count. Stay as long as you like, or <a class="leave" href="../">leave when you're ready →</a></p>
 </main>
 <footer class="site-foot"><div class="in"><span>DNSC · Dustin Nimmo Strategic Consulting</span><span class="nav"><a href="https://www.dustinnimmo.com">Home</a><a href="https://www.dustinnimmo.com/#three-ways">How we work</a><a href="https://tools.dustinnimmo.com/">The Well</a><a href="https://tools.dustinnimmo.com/well/">The Well</a><a href="https://www.dustinnimmo.com/#contact">Contact</a></span><span class="credit">Free to use. Made by DNSC.</span></div></footer>
 <script>
 (function(){
-  const cv=document.getElementById('water'), ctx=cv.getContext('2d'), box=document.getElementById('river');
-  const ta=document.getElementById('heavy'), go=document.getElementById('go'), form=document.getElementById('say'), status=document.getElementById('status'), count=document.getElementById('count');
+  const $=id=>document.getElementById(id);
+  // Wisdom: one line per day, the same for everyone on a given date.
+  const WISDOM=[
+    ['You will cast all our sins into the depths of the sea.','Micah 7:19 · ESV'],
+    ['You cannot step into the same river twice.','after Heraclitus, as quoted by Plato, Cratylus 402a'],
+    ['Time is a sort of river of passing events, and strong is its current.','Marcus Aurelius, Meditations 4.43 · translation varies'],
+    ['All the rivers run into the sea; yet the sea is not full.','Ecclesiastes 1:7 · KJV'],
+    ['There is a river, the streams whereof shall make glad the city of God.','Psalm 46:4 · KJV'],
+    ['The highest good is like water.','Lao Tzu, Tao Te Ching, chapter 8 · translation varies']
+  ];
+  const now0=new Date(), day=Math.floor(Date.UTC(now0.getFullYear(),now0.getMonth(),now0.getDate())/864e5);
+  const w=WISDOM[day%WISDOM.length]; $('wq').textContent='“'+w[0]+'”'; $('ws').textContent=w[1];
+
+  const cv=$('water'), ctx=cv.getContext('2d'), box=$('river');
+  const ta=$('heavy'), go=$('go'), form=$('say'), count=$('count');
+  const ta2=$('left'), go2=$('go2'), form2=$('say2'), count2=$('count2');
+  const stage=$('stage'), watching=$('watching'), pass=$('pass'), ret=$('ret'), live=$('live');
+  const line=$('watchline'), breath=$('breath'), bword=$('breathword');
   const reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let W=0,H=0,dpr=Math.min(window.devicePixelRatio||1,2), visible=true, t0=performance.now();
   function size(){const r=box.getBoundingClientRect();W=r.width;H=r.height;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);}
   size(); new ResizeObserver(size).observe(box);
   new IntersectionObserver(e=>{visible=e[0].isIntersecting}).observe(box);
   const rnd=(i,s)=>{const x=Math.sin(i*12.9898+s*78.233)*43758.5453;return x-Math.floor(x)};
+  const say=msg=>{live.textContent='';setTimeout(()=>{live.textContent=msg},60);};
   // ambient leaves (no words), always drifting
   const ambient=Array.from({length:5},(_,i)=>({x:rnd(i,1),y:.25+.5*rnd(i,2),s:.5+.4*rnd(i,3),sp:.012+.01*rnd(i,4),p:rnd(i,5)*6}));
-  const leaves=[]; // released leaves: {text,born,dur,y,parts}
-  function leafPath(x,y,s,rot){ctx.save();ctx.translate(x,y);ctx.rotate(rot);ctx.scale(s,s);ctx.beginPath();ctx.moveTo(-46,0);ctx.bezierCurveTo(-24,-26,22,-26,46,0);ctx.bezierCurveTo(22,26,-24,26,-46,0);ctx.closePath();}
-  function drawLeaf(x,y,s,rot,alpha,text,textAlpha){
+  let leaf=null; // the released leaf: {lines,born,dur,y,script,onDone,parts,shown}
+  function wrap(text){const words=text.split(/\s+/),out=[];let cur='';
+    for(const wd of words){const nx=cur?cur+' '+wd:wd;if(nx.length>18&&cur){out.push(cur);cur=wd;}else cur=nx;}
+    if(cur)out.push(cur);
+    const lines=out.map(l=>l.length>20?l.slice(0,19)+'…':l);
+    if(lines.length>3){lines.length=3;lines[2]=lines[2].replace(/…?$/,'…');}
+    return lines;}
+  function leafPath(x,y,s,rot){ctx.save();ctx.translate(x,y);ctx.rotate(rot);ctx.scale(s,s);ctx.beginPath();ctx.moveTo(-46,0);ctx.bezierCurveTo(-24,-28,22,-28,46,0);ctx.bezierCurveTo(22,28,-24,28,-46,0);ctx.closePath();}
+  function drawLeaf(x,y,s,rot,alpha,lines,textAlpha){
     leafPath(x,y,s,rot);
     const g=ctx.createLinearGradient(-46,0,46,0); g.addColorStop(0,`rgba(180,134,46,${alpha})`); g.addColorStop(1,`rgba(217,178,90,${alpha})`);
     ctx.fillStyle=g; ctx.shadowColor=`rgba(217,178,90,${alpha*.5})`; ctx.shadowBlur=14*s; ctx.fill(); ctx.shadowBlur=0;
-    ctx.strokeStyle=`rgba(98,62,42,${alpha*.7})`; ctx.lineWidth=1.2; ctx.beginPath(); ctx.moveTo(-40,0); ctx.lineTo(42,0); ctx.stroke();
-    if(text&&textAlpha>0.01){ctx.fillStyle=`rgba(44,33,26,${textAlpha})`;ctx.font='italic 11px Newsreader, Georgia, serif';ctx.textAlign='center';ctx.textBaseline='middle';const t=text.length>34?text.slice(0,32)+'…':text;ctx.fillText(t,0,-7);}
+    ctx.strokeStyle=`rgba(98,62,42,${alpha*(lines?.25:.7)})`; ctx.lineWidth=1.2/s; ctx.beginPath(); ctx.moveTo(-40,0); ctx.lineTo(42,0); ctx.stroke();
+    if(lines&&textAlpha>0.01){ctx.fillStyle=`rgba(44,33,26,${textAlpha})`;ctx.font='italic 9.5px Newsreader, Georgia, serif';ctx.textAlign='center';ctx.textBaseline='middle';
+      const lh=10.5, top=-(lines.length-1)*lh/2; lines.forEach((l,i)=>ctx.fillText(l,0,top+i*lh));}
     ctx.restore();
   }
   function water(t){
     for(let k=0;k<7;k++){ctx.beginPath();for(let x=0;x<=W;x+=10){const y=H*(.12+k*.13)+Math.sin(x*.009+t*(.35+k*.05)+k*1.7)*(5+k)+Math.sin(x*.021-t*.4+k)*3;x?ctx.lineTo(x,y):ctx.moveTo(x,y);}ctx.strokeStyle=`rgba(143,180,224,${.07+.025*(k%3)})`;ctx.lineWidth=1.1;ctx.stroke();}
     for(let i=0;i<26;i++){const x=((rnd(i,7)*W)+t*(14+rnd(i,8)*20))%(W+20)-10, y=H*(.1+.8*rnd(i,9))+Math.sin(t+i)*2;ctx.fillStyle=`rgba(243,239,231,${.12+.18*Math.abs(Math.sin(t*.8+i))})`;ctx.fillRect(x,y,2,1);}
   }
+  // The lines that walk beside the leaf. Each holds a slice of the drift, fading in and out.
+  function setLine(L,k){
+    const n=L.script.length; if(!n)return;
+    const idx=Math.min(n-1,Math.floor(k*n)), seg=k*n-idx;
+    if(L.shown!==idx){L.shown=idx;line.classList.remove('on');line.textContent=L.script[idx];say(L.script[idx]);}
+    const on=seg>.06&&seg<.86&&k<1; line.classList.toggle('on',on);
+  }
+  const DISSOLVE=reduce?.7:.86; // fraction of the drift where the leaf begins to dissolve
   function frame(now){
-    requestAnimationFrame(frame); if(!visible)return;
-    const t=(now-t0)/1000; ctx.clearRect(0,0,W,H); water(t);
-    ambient.forEach((a,i)=>{const x=((a.x+t*a.sp)%1.15-.07)*W, y=H*a.y+Math.sin(t*.7+a.p)*6; drawLeaf(x,y,a.s*.55,Math.sin(t*.5+a.p)*.4,.28,null,0);});
-    for(let i=leaves.length-1;i>=0;i--){const L=leaves[i];const age=(now-L.born)/1000;const k=age/L.dur;
-      if(reduce){const a=Math.max(0,1-age/4);drawLeaf(W*.5,H*.5,1,0,a,L.text,a);if(age>4){leaves.splice(i,1);done();}continue;}
-      if(k<1){const x=-50+(W+100)*k, y=L.y*H+Math.sin(k*9+L.y*7)*14, rot=Math.sin(age*.6)*.35+k*.6;const textA=Math.max(0,1-k*1.8), leafA=k<.72?1:Math.max(0,1-(k-.72)/.28);drawLeaf(x,y,1.05,rot,leafA,L.text,textA);
-        if(k>.72&&!L.burst){L.burst=true;L.parts=Array.from({length:22},(_,j)=>({x,y,vx:(rnd(j,11)-.3)*40,vy:(rnd(j,12)-.5)*24,life:1}));}
+    requestAnimationFrame(frame);
+    const t=(now-t0)/1000;
+    if(visible){ctx.clearRect(0,0,W,H); water(t);
+      ambient.forEach((a,i)=>{const x=((a.x+t*a.sp)%1.15-.07)*W, y=H*a.y+Math.sin(t*.7+a.p)*6; drawLeaf(x,y,a.s*.55,Math.sin(t*.5+a.p)*.4,.28,null,0);});}
+    if(!leaf)return;
+    const L=leaf, age=(now-L.born)/1000, k=age/L.dur, sc=W<480?1.45:1.7;
+    setLine(L,Math.min(k,.999));
+    if(visible){
+      if(reduce){const a=k<.15?k/.15:(k<DISSOLVE?1:Math.max(0,1-(k-DISSOLVE)/(1-DISSOLVE)));if(k<1)drawLeaf(W*.5,H*.42,sc,0,a,L.lines,a);}
+      else if(k<1){const p=Math.min(1,k/DISSOLVE)*.92+(k>DISSOLVE?(k-DISSOLVE)*.3:0);
+        const x=-70+(W*.86+70)*p, y=L.y*H+Math.sin(k*7+L.y*7)*12, rot=Math.sin(age*.35)*.1;
+        const leafA=k<DISSOLVE?1:Math.max(0,1-(k-DISSOLVE)/(1-DISSOLVE)), textA=k<DISSOLVE-.04?1:Math.max(0,1-(k-DISSOLVE+.04)/.08);
+        drawLeaf(x,y,sc,rot,leafA,L.lines,textA);
+        if(k>DISSOLVE&&!L.parts){L.parts=Array.from({length:26},(_,j)=>({x,y,vx:(rnd(j,11)-.3)*40,vy:(rnd(j,12)-.5)*24,life:1}));}
       }
-      if(L.parts){L.parts.forEach(p=>{p.x+=p.vx/60;p.y+=p.vy/60;p.life-=1/90;if(p.life>0){ctx.fillStyle=`rgba(217,178,90,${p.life*.7})`;ctx.beginPath();ctx.arc(p.x,p.y,1.4,0,7);ctx.fill();}});}
-      if(k>=1.25){L.text=null;leaves.splice(i,1);done();}
+      if(L.parts){L.parts.forEach(p=>{p.x+=p.vx/60;p.y+=p.vy/60;p.life-=1/120;if(p.life>0){ctx.fillStyle=`rgba(217,178,90,${p.life*.7})`;ctx.beginPath();ctx.arc(p.x,p.y,1.4,0,7);ctx.fill();}});}
     }
+    if(k>=1){L.lines=null;line.classList.remove('on');if(k>=1.06||reduce){leaf=null;L.onDone();}}
   }
   requestAnimationFrame(frame);
-  function done(){ if(!leaves.length){status.textContent='Gone downstream. Stay a while, or leave when you’re ready.';} }
-  function update(){const n=ta.value.trim().length;go.disabled=!n;count.textContent=n?(160-ta.value.length)+' letters left':'Press Enter to let it go';}
+
+  // Breath cue: in 4, hold 2, out 6.
+  let breathTimer=null;
+  function breathOn(on){breath.classList.toggle('on',on);clearInterval(breathTimer);if(!on)return;
+    const st=performance.now();const tick=()=>{const s=((performance.now()-st)/1000)%12;bword.textContent=s<4?'in 4':s<6?'hold 2':'out 6';};tick();breathTimer=setInterval(tick,250);}
+
+  function show(el){[form,watching,pass,ret].forEach(e=>e.hidden=e!==el);el.classList.remove('fade');void el.offsetWidth;el.classList.add('fade');}
+  function release(text,dur,script,onDone){
+    leaf={lines:wrap(text),born:performance.now(),dur,y:.36+.18*Math.random(),script,onDone,shown:-1};
+    show(watching); breathOn(true); stage.focus({preventScroll:true});
+    const r=box.getBoundingClientRect(); if(r.top<0||r.bottom>innerHeight)box.scrollIntoView({behavior:reduce?'auto':'smooth',block:'center'});
+  }
+  function toPass(){breathOn(false);show(pass);form2.hidden=false;say('Gone downstream. What is left, now that it’s moving? You can set this on the water too, or leave.');$('gone').focus({preventScroll:true});}
+  function toReturn(){breathOn(false);show(ret);say('Only time and practice move things. Come back when you need the water.');$('close').focus({preventScroll:true});}
+
+  // 1. Name it
+  function update(){const n=ta.value.trim().length;go.disabled=!n;count.textContent=n?(160-ta.value.length)+' letters left':'Enter sets it on the water';}
   ta.addEventListener('input',update);
   ta.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();form.requestSubmit();}});
-  form.addEventListener('submit',e=>{e.preventDefault();const text=ta.value.trim();if(!text)return;
-    leaves.push({text,born:performance.now(),dur:16,y:.35+.3*Math.random()});
-    ta.value='';update();status.textContent='It’s on the water now.';ta.blur();
+  form.addEventListener('submit',e=>{e.preventDefault();const text=ta.value.trim();if(!text||leaf)return;
+    ta.value='';update();ta.blur();
+    say('It’s on the water now. Just watch.');
+    // 2. Watch it: a slow drift, about fifty seconds (twelve with reduced motion).
+    release(text,reduce?12:50,['It is real. Let it be real.','You are not the leaf. You are the river.','Watch it go. Breathe with it.'],toPass);
   });
-  update();
+  // 3. Let it pass
+  function update2(){const n=ta2.value.trim().length;go2.disabled=!n;count2.textContent=n?(160-ta2.value.length)+' letters left':'This one is yours to skip';}
+  ta2.addEventListener('input',update2);
+  ta2.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();form2.requestSubmit();}});
+  form2.addEventListener('submit',e=>{e.preventDefault();const text=ta2.value.trim();if(!text||leaf)return;
+    ta2.value='';update2();ta2.blur();
+    say('This one is on the water too.');
+    release(text,reduce?8:30,['Watch it go. Breathe with it.'],toReturn);
+  });
+  $('skip').addEventListener('click',()=>{ta2.value='';update2();toReturn();});
+  update();update2();
 })();
 </script>
 <script src="../../assets/site.js" defer></script>
