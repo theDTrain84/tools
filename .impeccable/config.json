@@ -8,6 +8,15 @@
         "value": "fraunces",
         "createdAt": "2026-10-02T21:16:27.983Z",
         "reason": "DNSC brand display face per Dustin's brand book (~/DNSC/brand), pinned across dustinnimmo.com and tools.dustinnimmo.com"
+      },
+      {
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          "well/index.html"
+        ],
+        "createdAt": "2026-10-02T22:03:12.175Z",
+        "reason": "detector resolves the page background for text inside .card.dusk/.card.night (dark cards); real pairs there are 6:1 to 15:1; the one real finding (ink3 on paper2) was fixed to ink2"
       }
     ]
   }

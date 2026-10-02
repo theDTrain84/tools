@@ -4,85 +4,112 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Well · DNSC</title>
-<meta name="description" content="Small daily things for learning to work with AI, and a quiet room for the people in your day. Paper, no streaks, free.">
+<meta name="description" content="Two daily crosswords that teach the vocabulary and the news of AI, a quiet room for the people in your day, and the moon over your own weeks. Paper, free, no account.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 <style>
   :root{--paper:#F3EFE7;--paper2:#E9E3D7;--rule:#CFC6B8;--ink:#2C211A;--ink2:#4A3A2F;--ink3:#7A6A5D;--ink4:#A69686;--walnut:#623E2A;--ochre:#B4862E;--gold:#D9B25A;--sky:#3E6A9E;--dusk:#1B1916}
   *{box-sizing:border-box}
   html,body{margin:0;background:var(--paper);color:var(--ink)}
   body{font-family:Newsreader,Georgia,serif;font-size:18px;line-height:1.5;-webkit-font-smoothing:antialiased}
-  .wrap{max-width:1120px;margin:0 auto;padding:28px 16px 40px}
-  .crumb{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink3);text-decoration:none;letter-spacing:.04em}
+  #motes{position:fixed;inset:0;z-index:0;pointer-events:none}
+  .site-nav,.site-foot,.wrap,.band{position:relative;z-index:1}
+  .band{background:var(--paper2);border-bottom:1px solid var(--rule)}
+  .band .in{max-width:1120px;margin:0 auto;padding:30px 16px 36px}
+  .crumb{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink2);text-decoration:none;letter-spacing:.04em}
   .crumb:hover{color:var(--ink)}
-  .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--walnut);margin:26px 0 10px}
+  .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--walnut);margin:22px 0 10px;display:flex;align-items:center;gap:10px}
+  .eyebrow .ring{width:18px;height:18px}
   h1{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:clamp(38px,8vw,64px);line-height:1.02;margin:0 0 14px;letter-spacing:-.012em;max-width:18ch}
   h1 em{font-style:italic;font-weight:400;color:var(--walnut)}
-  .lede{color:var(--ink2);font-size:21px;max-width:620px;margin:0 0 10px}
-  .law{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);margin:0 0 40px}
+  .lede{color:var(--ink2);font-size:21px;max-width:620px;margin:0 0 12px}
+  .law{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink2);margin:0}
+  .law i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--gold);margin:0 8px 1px 0}
+  .wrap{max-width:1120px;margin:0 auto;padding:36px 16px 40px}
   h2{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:28px;margin:0 0 4px}
   .sub{color:var(--ink3);margin:0 0 18px}
   .grid{display:grid;grid-template-columns:1fr;gap:16px;margin-bottom:44px}
   @media(min-width:720px){.grid{grid-template-columns:1fr 1fr}}
   .card{position:relative;display:block;text-decoration:none;color:inherit;border:1px solid var(--rule);border-radius:14px;padding:26px 26px 22px;background:var(--paper);min-height:200px;transition:transform .25s cubic-bezier(.2,.7,.2,1),box-shadow .25s;overflow:hidden}
-  .card:hover{transform:translateY(-3px);box-shadow:0 14px 30px -18px rgba(44,33,26,.35)}
-  .card:focus-visible{outline:2px solid var(--sky);outline-offset:3px}
-  .card .k{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--walnut);margin:0 0 10px}
+  a.card:hover{transform:translateY(-3px);box-shadow:0 14px 30px -18px rgba(44,33,26,.35)}
+  a.card:focus-visible{outline:2px solid var(--sky);outline-offset:3px}
+  .card .k{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--walnut);margin:0 0 10px;display:flex;align-items:center;gap:8px}
+  .card .k i{width:8px;height:8px;border-radius:50%;display:inline-block}
   .card h3{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:26px;margin:0 0 8px;line-height:1.1}
   .card p{margin:0 0 16px;color:var(--ink2);font-size:17px;max-width:46ch}
   .card .go{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--walnut)}
+  .card.sky{background:linear-gradient(180deg,var(--paper) 0%,#E6E9EF 100%)}
   .card.dusk{background:var(--dusk);color:var(--paper);border-color:#2E2925}
   .card.dusk .k{color:var(--gold)} .card.dusk p{color:#CFC6B8} .card.dusk .go{color:var(--gold)}
-  .card.soon{opacity:.72} .card.soon .go{color:var(--ink3)}
-  .glyph{display:none;position:absolute;right:-18px;bottom:-22px;width:150px;height:150px;opacity:.9;pointer-events:none}
+  .card.night{background:radial-gradient(120% 90% at 80% 20%,#2C3A52 0%,var(--dusk) 60%);color:var(--paper);border-color:#2E2925}
+  .card.night .k{color:var(--gold)} .card.night p{color:#CFC6B8} .card.night .go{color:var(--gold)}
+  .card.soon{cursor:default} .card.soon .go{color:var(--ink3)} .card.night.soon .go,.card.dusk.soon .go{color:var(--ink4)}
+  .glyph{display:none;position:absolute;right:-18px;bottom:-22px;width:150px;height:150px;pointer-events:none}
   @media(min-width:720px){.glyph{display:block}.card{padding-right:150px}.card p{max-width:none}}
-  .glyph.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;width:118px;height:118px;right:22px;bottom:18px;opacity:.55}
-  .glyph.grid5 i{border:1px solid var(--rule);border-radius:3px}
-  .glyph.grid5 i.b{background:var(--ink)}
+  .glyph.grid5{display:none;grid-template-columns:repeat(5,1fr);gap:4px;width:118px;height:118px;right:22px;bottom:18px;opacity:.6}
+  @media(min-width:720px){.glyph.grid5{display:grid}}
+  .glyph.grid5 i{border:1px solid var(--rule);border-radius:3px;background:var(--paper2)}
+  .glyph.grid5 i.b{background:var(--walnut)} .glyph.grid5 i.g{background:var(--gold)} .glyph.grid5 i.s{background:var(--sky)}
   .lineage{border-top:1px solid var(--rule);padding-top:26px;color:var(--ink2);max-width:680px}
   .lineage p{margin:0 0 10px}
 </style>
 </head>
 <body class="has-shell">
+<canvas id="motes" aria-hidden="true"></canvas>
 <nav class="site-nav"><div class="in"><a class="brand" href="https://www.dustinnimmo.com"><span class="mark"><i></i><i></i><i></i><i></i><i></i></span>DNSC</a><div class="links"><a href="https://www.dustinnimmo.com/#what-i-do">What we do</a><a href="https://www.dustinnimmo.com/#three-ways">How we work</a><a class="keep" href="https://tools.dustinnimmo.com/">Teaching &amp; tools</a></div><a class="cta" href="https://www.dustinnimmo.com/#contact">Start a conversation</a></div></nav>
 
-<div class="wrap">
+<div class="band"><div class="in">
   <a class="crumb" href="../">← Teaching &amp; tools</a>
-  <p class="eyebrow">The Well</p>
+  <p class="eyebrow"><svg class="ring" viewBox="0 0 256 256" aria-hidden="true"><circle cx="128" cy="128" r="110" fill="none" stroke="#623E2A" stroke-width="12"/><circle cx="128" cy="18" r="22" fill="#3E6A9E"/><circle cx="233" cy="94" r="22" fill="#B4862E"/><circle cx="193" cy="217" r="22" fill="#623E2A"/><circle cx="63" cy="217" r="22" fill="#7A6A5D"/><circle cx="23" cy="94" r="22" fill="#D9B25A"/></svg>The Well</p>
   <h1>Small things, <em>every day.</em></h1>
-  <p class="lede">Word games that teach the vocabulary of working with AI, and a quiet room for the people in your day. Made in paper, free, no account.</p>
-  <p class="law">No streaks you have to keep · No feeds · Leave when you're done</p>
+  <p class="lede">Two daily crosswords that teach the vocabulary and the news of AI, a quiet room for the people in your day, and the moon over your own weeks. Paper, free, no account.</p>
+  <p class="law"><i></i>No streaks you have to keep · No feeds · Leave when you're done</p>
+</div></div>
 
-  <h2>Today's games</h2>
-  <p class="sub">A new one each morning, cooked by Mise from what is actually happening in AI. Five minutes, then back to your day.</p>
+<div class="wrap">
+  <h2>Today's crosswords</h2>
+  <p class="sub">Cooked each morning by Mise from what actually happened in AI the day before. Five minutes, then back to your day.</p>
   <div class="grid">
     <a class="card" href="daily-line/">
-      <p class="k">Daily · Crossword</p>
+      <p class="k"><i style="background:var(--gold)"></i>Daily · Learning AI</p>
       <h3>The Daily Line</h3>
-      <p>A daily crossword on the vocabulary of working with AI. Small today; it grows from here, and a second one on the week's AI news is coming.</p>
+      <p>The vocabulary of working with AI, one grid a day, with clues that teach. Small today; it grows from here.</p>
       <span class="go">Play today's →</span>
-      <span class="glyph grid5" aria-hidden="true"><i></i><i></i><i></i><i class="b"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="b"></i><i></i><i></i><i></i><i class="b"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="b"></i><i></i><i></i><i></i></span>
+      <span class="glyph grid5" aria-hidden="true"><i></i><i></i><i></i><i class="b"></i><i></i><i></i><i class="g"></i><i></i><i></i><i></i><i class="b"></i><i></i><i class="s"></i><i></i><i class="b"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="b"></i><i></i><i class="g"></i><i></i></span>
     </a>
-    
+    <div class="card sky soon" aria-label="AI in the News crossword, first grid Monday">
+      <p class="k"><i style="background:var(--sky)"></i>Daily · AI in the news</p>
+      <h3>The Morning Edition</h3>
+      <p>What happened in AI yesterday, as a crossword. The gentlest way to keep up. First grid Monday, October 5.</p>
+      <span class="go">Monday</span>
+      <span class="glyph grid5" aria-hidden="true"><i class="s"></i><i></i><i></i><i></i><i class="b"></i><i></i><i></i><i class="g"></i><i></i><i></i><i></i><i class="b"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="s"></i><i></i><i class="b"></i><i></i><i></i><i></i><i class="g"></i></span>
+    </div>
   </div>
 
-  <h2>The quiet room</h2>
+  <h2>The quiet rooms</h2>
   <p class="sub">Below the games, where the day gets held.</p>
   <div class="grid">
     <a class="card dusk" href="walk-in/">
-      <p class="k">A quiet room</p>
+      <p class="k"><i style="background:var(--gold)"></i>A quiet room</p>
       <h3>The Walk-in</h3>
-      <p>Name the people from your day. Each takes a seat on the ring. Breathe with it. Leave one line. Nothing is sent anywhere.</p>
+      <p>Name the people you'll see today. Each takes a seat on the ring. Breathe with it. Leave one line. Nothing is sent anywhere.</p>
       <span class="go">Step in →</span>
       <svg class="glyph" viewBox="0 0 150 150" aria-hidden="true"><circle cx="75" cy="75" r="60" fill="none" stroke="#F3EFE7" stroke-opacity=".8" stroke-width="2.5"/><circle cx="75" cy="75" r="40" fill="none" stroke="#D9B25A" stroke-opacity=".5" stroke-width="1"/><circle cx="75" cy="15" r="6" fill="#D9B25A"/><circle cx="127" cy="45" r="6" fill="#3E6A9E"/><circle cx="118" cy="110" r="6" fill="#B4862E"/><circle cx="32" cy="110" r="6" fill="#F3EFE7"/></svg>
     </a>
-    <a class="card soon" href="#" aria-disabled="true" tabindex="-1">
-      <p class="k">Coming · Letting go</p>
+    <div class="card night soon" aria-label="Lunar Life, coming">
+      <p class="k"><i style="background:var(--sky)"></i>The moon · your weeks</p>
+      <h3>Lunar Life</h3>
+      <p>Bring your own calendar in and see the moon over your actual weeks. Waxing, build. Full, the hard things. Waning, rest. Coming this weekend.</p>
+      <span class="go">Soon</span>
+      <svg class="glyph" viewBox="0 0 150 150" aria-hidden="true"><circle cx="90" cy="60" r="34" fill="#F3EFE7"/><circle cx="104" cy="52" r="34" fill="#1F2A3C"/><circle cx="30" cy="110" r="2" fill="#D9B25A"/><circle cx="60" cy="130" r="1.5" fill="#F3EFE7"/><circle cx="120" cy="120" r="2" fill="#D9B25A"/></svg>
+    </div>
+    <div class="card soon" aria-label="The River, coming">
+      <p class="k"><i style="background:var(--ochre)"></i>Coming · Letting go</p>
       <h3>The River</h3>
       <p>Write what is heavy onto a leaf. The water carries it. Nothing is stored.</p>
       <span class="go">Soon</span>
-    </a>
+    </div>
   </div>
 
   <div class="lineage">
@@ -92,5 +119,22 @@
 </div>
 
 <footer class="site-foot"><div class="in"><span>DNSC · Dustin Nimmo Strategic Consulting</span><span class="nav"><a href="https://www.dustinnimmo.com">Home</a><a href="https://www.dustinnimmo.com/#three-ways">How we work</a><a href="https://tools.dustinnimmo.com/">Teaching &amp; tools</a><a href="https://tools.dustinnimmo.com/well/">The Well</a><a href="https://www.dustinnimmo.com/#contact">Contact</a></span><span class="credit">Free to use. Made by DNSC.</span></div></footer>
+
+<script>
+(function(){
+  // the little things floating around: a few gold and sky motes, slow, paper-light
+  const cv = document.getElementById('motes'); if (!cv) return;
+  const cx = cv.getContext('2d'); const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let W, H, motes = [];
+  const COLS = ['217,178,90', '62,106,158', '180,134,46', '166,150,134'];
+  function size(){ W = cv.width = innerWidth * devicePixelRatio; H = cv.height = innerHeight * devicePixelRatio; cv.style.width = innerWidth + 'px'; cv.style.height = innerHeight + 'px';
+    motes = Array.from({length: Math.round(innerWidth / 28)}, () => ({ x: Math.random()*W, y: Math.random()*H, r: (Math.random()*1.6+0.8)*devicePixelRatio, v: (Math.random()*0.18+0.06)*devicePixelRatio, w: Math.random()*Math.PI*2, c: COLS[Math.floor(Math.random()*COLS.length)], o: Math.random()*0.35+0.15 })); }
+  function draw(t){ cx.clearRect(0,0,W,H);
+    for (const m of motes){ if (!reduce){ m.y -= m.v; m.x += Math.sin(t/3200 + m.w) * 0.2 * devicePixelRatio; if (m.y < -10) { m.y = H + 10; m.x = Math.random()*W; } }
+      cx.beginPath(); cx.arc(m.x, m.y, m.r, 0, Math.PI*2); cx.fillStyle = 'rgba(' + m.c + ',' + (m.o * (0.65 + 0.35*Math.sin(t/2200 + m.w))) + ')'; cx.fill(); }
+    if (!reduce) requestAnimationFrame(draw); }
+  addEventListener('resize', size); size(); requestAnimationFrame(draw);
+})();
+</script>
 </body>
 </html>
