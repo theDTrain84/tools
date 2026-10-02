@@ -136,13 +136,31 @@ details[open]>summary:after{content:"\2212"}
 summary:hover{border-color:var(--ink4)}
 
 /* Traditions */
-.synth{font-family:var(--disp);font-style:italic;font-size:21px;line-height:1.35;margin:22px 0 18px;max-width:58ch}
+.synth{font-family:var(--disp);font-style:italic;font-size:20px;line-height:1.4;margin:22px 0 0;max-width:62ch;color:var(--paper2)}
 .trads{display:grid;gap:12px}
 .trad h3{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-weight:500;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--paper);margin:0 0 2px}
 .trad .when{font-family:var(--mono);font-size:11.5px;color:var(--ink4);margin:0 0 10px}
 .trad dl{margin:0}
 .trad dt{font-family:var(--disp);font-weight:500;font-size:18px;margin:10px 0 2px}
 .trad dd{margin:0;color:var(--ink4);font-size:15.5px}
+.thead{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.thead .eyebrow{margin-bottom:6px}
+.tlede{font-size:clamp(25px,4.6vw,36px);max-width:26ch;margin:0 0 10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
+.chip{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--ink4);background:transparent;border:1px solid var(--line);border-radius:999px;padding:8px 13px;cursor:pointer}
+.chip:hover{border-color:var(--gold);color:var(--paper)}
+.chip[aria-pressed=true]{background:var(--paper);border-color:var(--paper);color:var(--dusk)}
+.chip[aria-pressed=true]:hover{border-color:var(--gold)}
+.chip .dot{box-shadow:0 0 0 1px rgba(27,25,22,.35)}
+.approx{display:inline-block;font-family:var(--mono);font-style:normal;font-weight:400;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink4);border:1px solid var(--line);border-radius:4px;padding:0 4px;margin-left:6px;vertical-align:2px;line-height:1.5}
+.tl{list-style:none;margin:12px 0 0;padding:0}
+.tl li{display:grid;grid-template-columns:64px 1fr;gap:10px;padding:8px 0;border-top:1px solid var(--line);align-items:baseline}
+.tl .td{font-family:var(--mono);font-size:11.5px;color:var(--ink4);letter-spacing:.04em}
+.tl .td.now{color:var(--gold)}
+.tl b{font-family:var(--disp);font-weight:500;font-size:16.5px}
+.tl span span:not(.approx){display:block;color:var(--ink4);font-size:15px}
+.tdots{display:flex;gap:3px;min-height:5px;justify-content:center}
+.tdot{width:5px;height:5px;background:var(--c);transform:rotate(45deg)}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
 @media (min-width:720px){
@@ -159,6 +177,7 @@ summary:hover{border-color:var(--ink4)}
   .day .top{display:flex;justify-content:space-between;align-items:flex-start;width:100%}
   .day .n{font-size:14px}
   .dots{display:none}
+  .tdots{justify-content:flex-start}
   .ev-t{display:block;font-size:12.5px;line-height:1.3;color:var(--paper2);text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-left:2px solid var(--c);padding-left:5px;margin-top:2px}
   .ev-more{font-family:var(--mono);font-size:10.5px;color:var(--ink4);text-align:left}
   .day .lbl{text-align:left}
@@ -194,6 +213,17 @@ summary:hover{border-color:var(--ink4)}
     </div>
     <ul class="cycle" id="cycle" aria-label="The cycle, in three lines"></ul>
     <p class="energy" id="t-energy"></p>
+  </section>
+
+  <section id="traditions" aria-labelledby="h-h">
+    <div class="thead"><p class="eyebrow">Traditions</p><button class="btn quiet" id="trad-hide" type="button" aria-expanded="true" aria-controls="trad-body">Hide</button></div>
+    <h2 id="h-h" class="tlede">Many wisdom and spiritual traditions hold these rhythms sacred and valuable.</h2>
+    <div id="trad-body">
+      <p class="sub">Pick the ones you keep. We mark their days on your month and in the year below.</p>
+      <div class="chips" id="chips" role="group" aria-label="Traditions to show"></div>
+      <div class="trads" id="trads"></div>
+      <p class="synth" id="synth"></p>
+    </div>
   </section>
 
   <section id="calendar" aria-labelledby="c-h">
@@ -256,15 +286,6 @@ summary:hover{border-color:var(--ink4)}
     <details class="more" id="sky-more-wrap"><summary>The rest of the year</summary><ol class="sky" id="sky-more"></ol></details>
   </section>
 
-  <section id="traditions" aria-labelledby="h-h">
-    <p class="eyebrow">Traditions</p>
-    <h2 id="h-h">The same sky, read many ways.</h2>
-    <p class="sub">Astronomy, astrology, the old wheel of the year, and five living faiths, each keeping time with the sun and moon.</p>
-    <details id="trad-wrap"><summary>Show the other calendars</summary>
-      <p class="synth" id="synth"></p>
-      <div class="trads" id="trads"></div>
-    </details>
-  </section>
 </div>
 <footer class="site-foot"><div class="in"><span>DNSC · Dustin Nimmo Strategic Consulting</span><span class="nav"><a href="https://www.dustinnimmo.com">Home</a><a href="https://www.dustinnimmo.com/#three-ways">How we work</a><a href="https://tools.dustinnimmo.com/">Teaching &amp; tools</a><a href="https://tools.dustinnimmo.com/well/">The Well</a><a href="https://www.dustinnimmo.com/#contact">Contact</a></span><span class="credit">Free to use. Made by DNSC.</span></div></footer>
 
@@ -484,30 +505,25 @@ const TYPE = { fullmoon: ["Full moon", "var(--gold)"], meteor: ["Meteors", "var(
 function getFests(y) {
   const e = getEaster(y), ad = n => { const r = new Date(e); r.setDate(r.getDate() + n); return r; };
   const out = [
+    ["Epiphany", "christianity", y + "-01-06", "", "The magi arrive. Christ shown to the nations."],
     ["Ash Wednesday", "christianity", ymd(ad(-46)), "", "The beginning of Lent. Forty days of turning."],
+    ["Palm Sunday", "christianity", ymd(ad(-7)), "", "The entry into Jerusalem. Holy Week begins."],
+    ["Good Friday", "christianity", ymd(ad(-2)), "", "The cross. The church keeps vigil."],
     ["Easter", "christianity", ymd(e), "", "The resurrection. The central feast of the Christian year."],
+    ["Ascension", "christianity", ymd(ad(39)), "", "Forty days after Easter, Christ ascends."],
     ["Pentecost", "christianity", ymd(ad(49)), "", "The Spirit descends. The birthday of the church."],
+    ["All Saints", "christianity", y + "-11-01", "", "Remembering the faithful who came before."],
+    ["Advent begins", "christianity", ymd(new Date(y, 11, 25 - (new Date(y, 11, 25).getDay() || 7) - 21)), "", "Four Sundays of waiting before Christmas."],
     ["Christmas", "christianity", y + "-12-25", "", "The nativity. The divine enters the material world."]
   ];
   if (y === 2026) out.push(
-    ["Ramadan begins", "islam", "2026-02-18", "", "A month of fasting from dawn to dusk. Dates follow the sighting of the crescent."],
     ["Holi", "hinduism", "2026-03-04", "", "The festival of colors. Spring, play, and the triumph of good."],
-    ["Eid al-Fitr", "islam", "2026-03-20", "", "Breaking the fast: communal prayer, charity, celebration."],
-    ["Passover", "judaism", "2026-04-02", "2026-04-09", "Begins at sundown April 1. The Exodus retold at the seder table."],
     ["Vesak", "buddhism", "2026-05-01", "", "The Buddha's birth, awakening and passing. Some communities keep it on the May 31 full moon."],
-    ["Shavuot", "judaism", "2026-05-22", "", "The giving of Torah at Sinai."],
-    ["Eid al-Adha", "islam", "2026-05-27", "", "The festival of sacrifice, at the close of the pilgrimage."],
     ["Asalha Puja", "buddhism", "2026-07-29", "", "The Buddha's first teaching, on the full moon of Asalha."],
-    ["Mawlid", "islam", "2026-08-25", "", "The birthday of the Prophet Muhammad, peace be upon him."],
-    ["Rosh Hashanah", "judaism", "2026-09-12", "", "The Jewish New Year. The shofar calls the soul."],
-    ["Yom Kippur", "judaism", "2026-09-21", "", "The Day of Atonement, the holiest day."],
-    ["Sukkot", "judaism", "2026-09-26", "2026-10-02", "Seven days in the booth: shelter, harvest, joy."],
-    ["Simchat Torah", "judaism", "2026-10-04", "", "The yearly reading of Torah ends and begins again, with dancing."],
-    ["Navaratri", "hinduism", "2026-10-11", "2026-10-19", "Nine nights for the Divine Feminine."],
-    ["Diwali", "hinduism", "2026-11-08", "", "The festival of lights."],
-    ["Hanukkah", "judaism", "2026-12-05", "2026-12-12", "Begins at sundown December 4. Eight nights of rededication."]
+    ["Navaratri", "hinduism", "2026-10-11", "2026-10-19", "Nine nights for the Divine Feminine.", 1],
+    ["Diwali", "hinduism", "2026-11-08", "", "The festival of lights."]
   );
-  return out.map(f => ({ name: f[0], tradition: f[1], date: f[2], endDate: f[3], desc: f[4] }));
+  return out.map(f => ({ name: f[0], tradition: f[1], date: f[2], endDate: f[3], desc: f[4], approx: !!f[5] }));
 }
 function isMercuryRetrograde(d) { const s = ymd(d); return [["2026-02-25", "2026-03-21"], ["2026-06-29", "2026-07-24"], ["2026-10-24", "2026-11-13"]].some(p => s >= p[0] && s <= p[1]); }
 function getZodiac(d) {
@@ -523,30 +539,102 @@ function intlDate(d, cal, opts) { try { return new Intl.DateTimeFormat("en-US-u-
 
 /* Traditions layer: ported getHarmony, every tradition on. */
 function getHarmony(d, lunar, season) {
-  const m = d.getMonth(), mk = ymd(d).slice(0, 7), z = getZodiac(d), items = [];
-  const monthFests = t => getFests(d.getFullYear()).filter(f => f.tradition === t && (f.date.startsWith(mk) || (f.endDate && f.endDate.startsWith(mk)))).map(f => [f.name + " · " + shortDate(parseYMD(f.date)), f.desc]);
-  const sky = ASTRO_2026.filter(e => d.getFullYear() === 2026 && +e[0].slice(5, 7) === m + 1 && !["astrology", "pagan"].includes(e[1])).map(e => [e[2] + " · " + shortDate(parseYMD(e[0])), e[4] || e[3]]);
-  items.push({ key: "astronomy", label: "The sky", c: "var(--sky)", when: "This month overhead", ev: sky.length ? sky : [["A quiet month", "No major events on our list. Look up anyway."]] });
+  const m = d.getMonth(), z = getZodiac(d); let items = [];
+  items.push({ key: "astronomy", label: "The sky", when: "Overhead", ev: [["Tonight", lunar.phaseName + ", " + Math.round(lunar.illumination * 100) + "% lit"]] });
   const ast = [["Sun in " + z.sign + " (" + z.el + ")", z.el + " season: " + ZDESC[z.sign]]];
   if (isMercuryRetrograde(d)) ast.push(["Mercury retrograde", "A season for review. Reconnect, reconsider, and hold new launches. Treat the static as a cue to listen differently."]);
   items.push({ key: "astrology", label: "The stars", c: "var(--gold)", when: "The zodiac", ev: ast });
   const wheel = m <= 1 ? "Midwinter. The world is dormant; honor the dark." : m <= 3 ? "Early spring, stirring beneath the surface. Imbolc to the equinox." : m <= 5 ? "Spring into summer: Beltane fires, fertility, growth." : m <= 7 ? "Midsummer, the peak of light, turning toward harvest." : m <= 9 ? "Harvest season, Lughnasadh to Mabon. Gather what was sown." : m <= 10 ? "Late autumn. Samhain is here and the veil thins." : "The midwinter return: Yule, the longest night, the sun reborn.";
-  const pag = [["Wheel of the year", wheel]].concat(ASTRO_2026.filter(e => d.getFullYear() === 2026 && +e[0].slice(5, 7) === m + 1 && e[1] === "pagan").map(e => [e[2], e[4] || e[3]]));
+  const pag = [["Wheel of the year", wheel]];
   items.push({ key: "pagan", label: "The earth", c: "var(--ochre)", when: "The old wheel", ev: pag });
   const lit = getLitSeason(d);
-  items.push({ key: "christianity", label: "The church", c: "var(--paper)", when: "The liturgical year", ev: [[lit, LIT[lit]]].concat(monthFests("christianity")) });
+  items.push({ key: "christianity", label: "The church", c: "var(--paper)", when: "The liturgical year", ev: [[lit, LIT[lit]]] });
   const hm = intlDate(d, "hebrew", { month: "long" }), hk0 = hm.toLowerCase().replace(/\s+i+$/, "").replace(/[^a-z]/g, ""), hk = HEB_ALIAS[hk0] || hk0;
-  items.push({ key: "judaism", label: "The Hebrew calendar", c: "var(--sky)", when: intlDate(d, "hebrew", { day: "numeric", month: "long", year: "numeric" }), ev: (HEB[hk] ? [[hm, HEB[hk]]] : []).concat(monthFests("judaism")) });
-  items.push({ key: "islam", label: "The Islamic calendar", c: "var(--gold)", when: intlDate(d, "islamic", { day: "numeric", month: "long", year: "numeric" }), ev: [["A lunar calendar", "Twelve months of 29 or 30 days, each beginning with the sighting of the new crescent. Devotion keeps time with the sky."]].concat(monthFests("islam")) });
+  items.push({ key: "judaism", label: "The Hebrew calendar", c: "var(--sky)", when: intlDate(d, "hebrew", { day: "numeric", month: "long", year: "numeric" }), ev: (HEB[hk] ? [[hm, HEB[hk]]] : []) });
+  items.push({ key: "islam", label: "The Islamic calendar", c: "var(--gold)", when: intlDate(d, "islamic", { day: "numeric", month: "long", year: "numeric" }), ev: [["A lunar calendar", "Twelve months of 29 or 30 days, each beginning with the sighting of the new crescent. Devotion keeps time with the sky."]] });
   const upo = ["Full Moon", "New Moon", "First Quarter", "Last Quarter"].includes(lunar.phaseName);
-  items.push({ key: "buddhism", label: "Buddhist uposatha", c: "var(--ochre)", when: "Observance by the moon", ev: [upo ? ["Uposatha day", "In the Theravada tradition the four lunar phases are days of deeper meditation, precept-keeping and gathering."] : ["Between uposatha days", "Practice follows the moon. Between the quarter-phase observances, the practice is steady, continuous attention."]].concat(monthFests("buddhism")) });
+  items.push({ key: "buddhism", label: "Buddhist uposatha", c: "var(--ochre)", when: "Observance by the moon", ev: [upo ? ["Uposatha day", "In the Theravada tradition the four lunar phases are days of deeper meditation, precept-keeping and gathering."] : ["Between uposatha days", "Practice follows the moon. Between the quarter-phase observances, the practice is steady, continuous attention."]] });
   const purnima = lunar.phase > .466 && lunar.phase < .534, ekadashi = Math.abs(lunar.dayInCycle - 10.5) < 1 || Math.abs(lunar.dayInCycle - 25.3) < 1;
-  items.push({ key: "hinduism", label: "The Hindu calendar", c: "var(--sky)", when: "Tithi and festival", ev: [purnima ? ["Purnima, the full moon", "A time for puja, fasting and pilgrimage across Hindu tradition."] : ekadashi ? ["Ekadashi", "The eleventh lunar day of the fortnight, a fast dedicated to Vishnu."] : ["The tithi cycle", "Hindu time moves through 30 tithis, or lunar days, each month, each with its own deity and character. A rhythm far older than any clock."]].concat(monthFests("hinduism")) });
+  items.push({ key: "hinduism", label: "The Hindu calendar", c: "var(--sky)", when: "Tithi and festival", ev: [purnima ? ["Purnima, the full moon", "A time for puja, fasting and pilgrimage across Hindu tradition."] : ekadashi ? ["Ekadashi", "The eleventh lunar day of the fortnight, a fast dedicated to Vishnu."] : ["The tithi cycle", "Hindu time moves through 30 tithis, or lunar days, each month, each with its own deity and character. A rhythm far older than any clock."]] });
   const word = lunar.phase < .25 ? "planting" : lunar.phase < .5 ? "building" : lunar.phase < .75 ? "illuminating and releasing" : "releasing and resting";
   const wheelNames = ["rests in midwinter", "rests in midwinter", "turns through Imbolc tide", "turns at the spring equinox", "turns toward Beltane", "turns through Beltane", "turns through midsummer", "turns through Lughnasadh", "turns at the autumn equinox", "turns toward Samhain", "turns through Samhain", "turns toward Yule"];
-  const synthesis = "Right now the " + season[0] + " holds eight ways of keeping time in a single sky. The moon is " + word + ", and the sun moves through " + z.sign + ". The church is in " + lit + ". The wheel " + wheelNames[m] + ". These are different instruments reading the same sky.";
+  const on = items.filter(it => picks.has(it.key)), nums = ["no", "one", "two", "three", "four", "five", "six", "seven", "eight"];
+  let synthesis = "Right now the " + season[0] + " holds " + nums[on.length] + (on.length === 1 ? " way" : " ways") + " of keeping time in a single sky. The moon is " + word;
+  synthesis += picks.has("astrology") ? ", and the sun moves through " + z.sign + ". " : ". ";
+  if (picks.has("christianity")) synthesis += "The church is in " + lit + ". ";
+  if (picks.has("pagan")) synthesis += "The wheel " + wheelNames[m] + ". ";
+  synthesis += "These are different instruments reading the same sky.";
+  items = on;
   return { items, synthesis };
 }
+
+
+/* ================= Tradition days ================= */
+const TRADS = [["astronomy", "Astronomy", "#3E6A9E"], ["astrology", "Astrology", "#D9B25A"], ["pagan", "Wheel of the Year", "#B4862E"], ["christianity", "Christianity", "#F3EFE7"], ["judaism", "Judaism", "#7E9CC4"], ["islam", "Islam", "#A69686"], ["buddhism", "Buddhism", "#CFC6B8"], ["hinduism", "Hinduism", "#C98A5B"]];
+const TMAP = {}; TRADS.forEach(t => TMAP[t[0]] = { label: t[1], c: t[2] });
+let picks = new Set(TRADS.map(t => t[0]));
+try { const v = JSON.parse(localStorage.getItem("lunarlife.traditions")); if (Array.isArray(v)) picks = new Set(v.filter(k => TMAP[k])); } catch (e) { }
+function savePicks() { try { localStorage.setItem("lunarlife.traditions", JSON.stringify([...picks])); } catch (e) { } }
+const plusDays = (k, n) => { const d = parseYMD(k); d.setDate(d.getDate() + n); return ymd(d); };
+function scanCal(y, cal, opts) {
+  try {
+    const f = new Intl.DateTimeFormat("en-US-u-ca-" + cal, Object.assign({ timeZone: "UTC" }, opts)), out = [];
+    for (let t = Date.UTC(y, 0, 1); t < Date.UTC(y + 1, 0, 1); t += DAY) { const D = new Date(t + DAY / 2), p = {}; f.formatToParts(D).forEach(x => p[x.type] = x.value); out.push([ymd(new Date(D.getUTCFullYear(), D.getUTCMonth(), D.getUTCDate())), p, D]); }
+    return out;
+  } catch (e) { return []; }
+}
+const HEB_FEST = { "Tishri 1": ["Rosh Hashanah", "The Jewish New Year. The shofar calls the soul.", 2], "Tishri 10": ["Yom Kippur", "The Day of Atonement, the holiest day."], "Tishri 15": ["Sukkot", "Seven days in the booth: shelter, harvest, joy.", 7], "Tishri 23": ["Simchat Torah", "The yearly reading of Torah ends and begins again, with dancing."], "Kislev 25": ["Hanukkah", "Eight nights of rededication.", 8], "Shevat 15": ["Tu B'Shvat", "The New Year of Trees. Even in winter the sap rises."], "Adar 14": ["Purim", "Hidden miracles, sacred play, fortunes reversed."], "Adar II 14": ["Purim", "Hidden miracles, sacred play, fortunes reversed."], "Nisan 15": ["Passover", "The Exodus retold at the seder table.", 8], "Sivan 6": ["Shavuot", "The giving of Torah at Sinai.", 2], "Av 9": ["Tisha B'Av", "Mourning for both Temples, and the seed of redemption."] };
+const ISL_FEST = { "1-1": ["Islamic New Year", "The first of Muharram opens the year."], "1-10": ["Ashura", "A day of fasting and remembrance."], "3-12": ["Mawlid", "The birthday of the Prophet Muhammad, peace be upon him."], "9-1": ["Ramadan begins", "A month of fasting from dawn to dusk."], "10-1": ["Eid al-Fitr", "Breaking the fast: communal prayer, charity, celebration."], "12-10": ["Eid al-Adha", "The festival of sacrifice, at the close of the pilgrimage."] };
+const WHEEL = { "03": "Ostara", "06": "Litha", "09": "Mabon", "12": "Yule" };
+const _tf = {};
+function tradFests(y) {
+  if (_tf[y]) return _tf[y];
+  const out = [], add = (k, d, name, desc, o) => out.push(Object.assign({ k, d, end: "", name, desc: desc || "" }, o || {}));
+  getFests(y).forEach(f => add(f.tradition, f.date, f.name, f.desc, { end: f.endDate || "", approx: f.approx }));
+  scanCal(y, "hebrew", { month: "long", day: "numeric" }).forEach(([k, p]) => {
+    const key = p.month + " " + p.day, f = HEB_FEST[key];
+    if (f) add("judaism", k, f[0], f[1] + " Begins at sundown the evening before.", { end: f[2] ? plusDays(k, f[2] - 1) : "" });
+    else if (p.day === "1" && p.month !== "Tishri") add("judaism", k, "Rosh Chodesh " + p.month, "The new month begins with the new moon.", { cy: 1 });
+  });
+  const iname = (() => { try { return new Intl.DateTimeFormat("en-US-u-ca-islamic-umalqura", { month: "long", timeZone: "UTC" }); } catch (e) { return null; } })();
+  scanCal(y, "islamic-umalqura", { month: "numeric", day: "numeric" }).forEach(([k, p, D]) => {
+    const f = ISL_FEST[p.month + "-" + p.day];
+    if (f) add("islam", k, f[0], f[1] + " Local dates follow the sighting of the crescent.", { approx: 1 });
+    else if (p.day === "1" && iname) add("islam", k, iname.format(D) + " begins", "A new month opens with the crescent moon.", { approx: 1, cy: 1 });
+  });
+  if (y === 2026) ASTRO_2026.forEach(e => {
+    add(e[1] === "astrology" ? "astrology" : e[1] === "pagan" ? "pagan" : "astronomy", e[0], e[2], e[3], { teach: e[4], type: e[1] });
+    if (e[1] === "equinox" || e[1] === "solstice") add("pagan", e[0], WHEEL[e[0].slice(5, 7)], "A spoke of the wheel, at the " + e[2] + ".");
+  });
+  [[1, 20, "Aquarius"], [2, 19, "Pisces"], [3, 21, "Aries"], [4, 20, "Taurus"], [5, 21, "Gemini"], [6, 21, "Cancer"], [7, 23, "Leo"], [8, 23, "Virgo"], [9, 23, "Libra"], [10, 23, "Scorpio"], [11, 22, "Sagittarius"], [12, 22, "Capricorn"]]
+    .forEach(z => add("astrology", y + "-" + pad(z[0]) + "-" + pad(z[1]), "Sun enters " + z[2], ZDESC[z[2]].replace(/^./, c => c.toUpperCase()), { approx: 1, cy: 1 }));
+  out.sort((a, b) => a.d < b.d ? -1 : a.d > b.d ? 1 : 0);
+  return (_tf[y] = out);
+}
+/* Moon-kept cycles: uposatha, purnima, amavasya, ekadashi, new and full moons. */
+function cyclesBetween(ms0, ms1) {
+  const out = [], add = (k, d, name, desc, o) => out.push(Object.assign({ k, d: ymd(d), end: "", name, desc, cy: 1 }, o || {}));
+  phaseEventsBetween(ms0 - 12 * DAY, ms1).forEach(ev => {
+    const d = ev.d, inR = d.getTime() >= ms0;
+    if (inR) {
+      add("buddhism", d, "Uposatha", PHASES[ev.q * 2] + " observance day: deeper practice and precept-keeping.");
+      if (ev.q === 2) { add("hinduism", d, "Purnima", "The full moon: puja, fasting, pilgrimage."); add("astronomy", d, "Full moon", "Exactly full at " + fmtTime(d) + "."); }
+      if (ev.q === 0) { add("hinduism", d, "Amavasya", "The new moon, a day for remembering ancestors."); add("astronomy", d, "New moon", "Exactly new at " + fmtTime(d) + ". Dark skies for stars."); }
+    }
+    if (ev.q === 0 || ev.q === 2) { const e = new Date(d.getTime() + 0.35 * SYN * DAY); if (e.getTime() >= ms0 && e.getTime() < ms1) add("hinduism", e, "Ekadashi", "The eleventh lunar day, a fast dedicated to Vishnu.", { approx: 1 }); }
+  });
+  return out;
+}
+/* All picked tradition items overlapping [k0, k1] (date keys). */
+function tradItems(k0, k1, festOnly) {
+  const y0 = +k0.slice(0, 4), y1 = +k1.slice(0, 4); let all = [];
+  for (let y = y0; y <= y1; y++) all = all.concat(tradFests(y));
+  if (!festOnly) all = all.concat(cyclesBetween(parseYMD(k0).getTime() - DAY / 2, parseYMD(k1).getTime() + DAY / 2));
+  const seen = new Set(all.filter(e => e.type === "fullmoon").map(e => e.d));
+  return all.filter(e => picks.has(e.k) && e.d <= k1 && (e.end || e.d) >= k0 && !(festOnly && e.cy) && !(e.cy && e.name === "Full moon" && seen.has(e.d)))
+    .sort((a, b) => a.d < b.d ? -1 : a.d > b.d ? 1 : (a.cy || 0) - (b.cy || 0));
+}
+const approxTag = e => e.approx ? '<span class="approx" title="Approximate date">approx.</span>' : "";
 
 /* ================= Calendar (ICS) ================= */
 const WIN_TZ = { "eastern standard time": "America/New_York", "central standard time": "America/Chicago", "mountain standard time": "America/Denver", "us mountain standard time": "America/Phoenix", "pacific standard time": "America/Los_Angeles", "alaskan standard time": "America/Anchorage", "hawaiian standard time": "Pacific/Honolulu", "gmt standard time": "Europe/London", "w. europe standard time": "Europe/Berlin", "romance standard time": "Europe/Paris", "central europe standard time": "Europe/Budapest", "utc": "UTC", "coordinated universal time": "UTC" };
@@ -825,16 +913,18 @@ if (typeof document !== "undefined") (function () {
   /* Month */
   function renderMonth() {
     const y = view.y, m = view.m, first = new Date(y, m, 1), dim = new Date(y, m + 1, 0).getDate(), todayK = ymd(new Date());
+    const fests = tradItems(ymd(first), ymd(new Date(y, m, dim)), true);
     $("m-title").textContent = first.toLocaleDateString("en-US", { month: "long", year: "numeric" });
     let h = "";
     for (let i = 0; i < first.getDay(); i++) h += '<div class="day blank" aria-hidden="true"></div>';
     for (let d = 1; d <= dim; d++) {
       const date = new Date(y, m, d), k = ymd(date), info = dayInfo(date), evs = index[k] || [], c = FAM_C[info.fam];
+      const tf = fests.filter(e => e.d === k), tdots = tf.slice(0, 4).map(e => `<i class="tdot" style="--c:${TMAP[e.k].c}" title="${esc(e.name)} (${TMAP[e.k].label})"></i>`).join("");
       const lbl = info.ev === 2 ? '<span class="lbl full">FULL</span>' : info.ev === 0 ? '<span class="lbl">NEW</span>' : '<span class="lbl" aria-hidden="true">&nbsp;</span>';
-      const aria = longDate(date) + ", " + info.name.toLowerCase() + ", " + (evs.length ? evs.length + (evs.length === 1 ? " event" : " events") : "no events") + (k === todayK ? ", today" : "");
+      const aria = longDate(date) + ", " + info.name.toLowerCase() + ", " + (evs.length ? evs.length + (evs.length === 1 ? " event" : " events") : "no events") + (tf.length ? ", " + tf.map(e => e.name).join(", ") : "") + (k === todayK ? ", today" : "");
       const dots = evs.slice(0, 3).map(e => `<i class="dot" style="--c:${c}" title="${esc(e.s)} (${FAM_W[info.fam]})"></i>`).join("");
       const titles = evs.slice(0, 2).map(e => `<span class="ev-t" style="--c:${c}" title="${esc(e.s)}">${esc(e.s)}</span>`).join("") + (evs.length > 2 ? `<span class="ev-more">+${evs.length - 2} more</span>` : "");
-      h += `<button type="button" class="day${k === todayK ? " today" : ""}${k === selected ? " sel" : ""}${k < todayK ? " past" : ""}" data-k="${k}" aria-label="${esc(aria)}" aria-pressed="${k === selected}"><span class="top"><span class="n">${d}</span>${tinyMoon(info.l.phase, 18)}</span>${lbl}<span class="dots">${dots}</span>${titles}</button>`;
+      h += `<button type="button" class="day${k === todayK ? " today" : ""}${k === selected ? " sel" : ""}${k < todayK ? " past" : ""}" data-k="${k}" aria-label="${esc(aria)}" aria-pressed="${k === selected}"><span class="top"><span class="n">${d}</span>${tinyMoon(info.l.phase, 18)}</span>${lbl}<span class="dots">${dots}</span><span class="tdots">${tdots}</span>${titles}</button>`;
     }
     const tail = (7 - ((first.getDay() + dim) % 7)) % 7;
     for (let i = 0; i < tail; i++) h += '<div class="day blank" aria-hidden="true"></div>';
@@ -849,8 +939,10 @@ if (typeof document !== "undefined") (function () {
     const sky = date.getFullYear() === 2026 ? ASTRO_2026.filter(e => e[0] === selected) : [];
     const list = evs.length ? '<ul class="evs">' + evs.map(e => `<li><span class="t">${e.a ? "All day" : fmtTime(new Date(e.t))}</span><span class="s">${esc(e.s)}${e.l ? `<span class="l">${esc(e.l)}</span>` : ""}</span></li>`).join("") + "</ul>"
       : `<p class="empty">${events.length ? "Nothing on your calendar this day." : "Bring your calendar in above and your events show up here."}</p>`;
+    const td = tradItems(selected, selected).filter(e => !(e.k === "astronomy" && e.type));
+    const tradL = td.length ? '<ul class="evs" style="margin-top:10px">' + td.map(e => `<li><span class="t">${esc(TMAP[e.k].label)}</span><span class="s">${esc(e.name)}${approxTag(e)}${e.end && e.end !== e.d ? `<span class="l">${shortDate(parseYMD(e.d))} to ${shortDate(parseYMD(e.end))}</span>` : ""}<span class="l">${esc(e.desc)}</span></span></li>`).join("") + "</ul>" : "";
     const skyL = sky.length ? '<ul class="evs" style="margin-top:10px">' + sky.map(e => `<li><span class="t">In the sky</span><span class="s">${esc(e[2])}<span class="l">${esc(e[3])}</span></span></li>`).join("") + "</ul>" : "";
-    box.innerHTML = `<div class="card daypanel" tabindex="-1" id="dp"><div class="dp-head">${moonSVG(night.phase, 72, info.name)}<div><h4>${longDate(date)}</h4><p>${info.name}${info.evAt ? " at " + fmtTime(info.evAt) : ""} · ${Math.round(night.illumination * 100)}% lit that night</p></div></div><p class="dp-energy">${en[0]}. ${en[1]}</p>${list}${skyL}</div>`;
+    box.innerHTML = `<div class="card daypanel" tabindex="-1" id="dp"><div class="dp-head">${moonSVG(night.phase, 72, info.name)}<div><h4>${longDate(date)}</h4><p>${info.name}${info.evAt ? " at " + fmtTime(info.evAt) : ""} · ${Math.round(night.illumination * 100)}% lit that night</p></div></div><p class="dp-energy">${en[0]}. ${en[1]}</p>${list}${skyL}${tradL}</div>`;
   }
   $("grid").addEventListener("click", e => {
     const b = e.target.closest("button.day"); if (!b) return;
@@ -870,21 +962,42 @@ if (typeof document !== "undefined") (function () {
 
   /* Year's sky */
   function renderSky() {
-    const t = ymd(new Date()), soon = ymd(new Date(Date.now() + 14 * DAY));
-    const item = (e, i) => { const d = parseYMD(e[0]), ty = TYPE[e[1]]; return `<li class="${e[0] >= t && e[0] <= soon ? "soon" : ""}"><div class="d">${d.toLocaleDateString("en-US", { month: "short" })}<b>${d.getDate()}</b></div><div><span class="tag"><i class="dot" style="--c:${ty[1]}"></i>${ty[0]}</span><h3>${esc(e[2])}</h3><p>${esc(e[3])}</p>${e[4] ? `<p class="teach">${esc(e[4])}</p>` : ""}</div></li>`; };
-    const up = ASTRO_2026.filter(e => e[0] >= t), past = ASTRO_2026.filter(e => e[0] < t);
-    const head = up.slice(0, 8), rest = up.slice(8).concat(past);
-    $("sky-up").innerHTML = head.length ? head.map(item).join("") : '<li><div></div><p>The 2026 list is complete. A new year of sky arrives soon.</p></li>';
-    $("sky-more").innerHTML = (up.length > 8 ? up.slice(8).map(item).join("") : "") + (past.length ? '<li><div></div><p class="k" style="margin:0">Earlier this year</p></li>' + past.map(item).join("") : "");
-    $("sky-more-wrap").hidden = !rest.length;
+    const t = ymd(new Date()), soon = ymd(new Date(Date.now() + 14 * DAY)), Y = new Date().getFullYear();
+    const all = tradFests(Y).filter(e => (e.k === "astronomy" ? !!e.type : picks.has(e.k)) && !e.cy);
+    const item = e => {
+      const d = parseYMD(e.d), ty = e.k === "astronomy" ? TYPE[e.type] : [TMAP[e.k].label, TMAP[e.k].c];
+      return `<li class="${e.d >= t && e.d <= soon ? "soon" : ""}"><div class="d">${d.toLocaleDateString("en-US", { month: "short" })}<b>${d.getDate()}</b></div><div><span class="tag"><i class="dot" style="--c:${ty[1]}"></i>${esc(ty[0])}</span><h3>${esc(e.name)}${approxTag(e)}</h3><p>${e.end && e.end !== e.d ? "Through " + shortDate(parseYMD(e.end)) + ". " : ""}${esc(e.desc)}</p>${e.teach ? `<p class="teach">${esc(e.teach)}</p>` : ""}</div></li>`;
+    };
+    const up = all.filter(e => (e.end || e.d) >= t), past = all.filter(e => (e.end || e.d) < t);
+    const head = up.slice(0, 10);
+    $("sky-up").innerHTML = head.length ? head.map(item).join("") : '<li><div></div><p>The list for this year is complete. A new year of sky arrives soon.</p></li>';
+    $("sky-more").innerHTML = up.slice(10).map(item).join("") + (past.length ? '<li><div></div><p class="k" style="margin:0">Earlier this year</p></li>' + past.map(item).join("") : "");
+    $("sky-more-wrap").hidden = !(up.length > 10 || past.length);
   }
 
   /* Traditions */
+  let tradState = null;
   function renderTraditions(l, season) {
-    const h = getHarmony(new Date(), l, season);
+    if (l) tradState = { l, season }; ({ l, season } = tradState);
+    $("chips").innerHTML = TRADS.map(t => `<button type="button" class="chip" data-t="${t[0]}" aria-pressed="${picks.has(t[0])}"><i class="dot" style="--c:${t[2]}"></i>${t[1]}</button>`).join("");
+    const now = new Date(), k0 = ymd(now), end = new Date(now.getFullYear(), now.getMonth() + 1, 0), k1 = ymd(new Date(Math.max(end.getTime(), now.getTime() + 21 * DAY)));
+    const h = getHarmony(now, l, season), items = tradItems(k0, k1);
     $("synth").textContent = h.synthesis;
-    $("trads").innerHTML = h.items.map(it => `<article class="card trad"><h3><i class="dot" style="--c:${it.c}"></i>${esc(it.label)}</h3>${it.when ? `<p class="when">${esc(it.when)}</p>` : ""}<dl>${it.ev.map(e => `<dt>${esc(e[0])}</dt><dd>${esc(e[1])}</dd>`).join("")}</dl></article>`).join("");
+    $("trads").innerHTML = h.items.length ? h.items.map(it => {
+      const mine = items.filter(e => e.k === it.key).slice(0, 7);
+      const tl = mine.length ? '<ul class="tl">' + mine.map(e => { const live = e.d <= k0; return `<li><span class="td${live ? " now" : ""}">${live ? (e.d === k0 && !e.end ? "Today" : "Now") : shortDate(parseYMD(e.d))}</span><span><b>${esc(e.name)}</b>${approxTag(e)}<span>${e.end && e.end !== e.d ? "Through " + shortDate(parseYMD(e.end)) + ". " : ""}${esc(e.desc)}</span></span></li>`; }).join("") + "</ul>" : '<p class="when" style="margin-top:12px">Nothing marked in the next few weeks.</p>';
+      return `<article class="card trad"><h3><i class="dot" style="--c:${TMAP[it.key].c}"></i>${esc(TMAP[it.key].label)}</h3>${it.when ? `<p class="when">${esc(it.when)}</p>` : ""}<dl>${it.ev.map(e => `<dt>${esc(e[0])}</dt><dd>${esc(e[1])}</dd>`).join("")}</dl>${tl}</article>`;
+    }).join("") : '<p class="empty">Pick a tradition above to see its days.</p>';
   }
+  $("chips").addEventListener("click", e => {
+    const b = e.target.closest(".chip"); if (!b) return;
+    const k = b.dataset.t; picks.has(k) ? picks.delete(k) : picks.add(k); savePicks();
+    renderTraditions(); renderMonth(); renderSky();
+    const nb = $("chips").querySelector(`[data-t="${k}"]`); if (nb) nb.focus();
+  });
+  const setHidden = hid => { $("trad-body").hidden = hid; $("trad-hide").textContent = hid ? "Show" : "Hide"; $("trad-hide").setAttribute("aria-expanded", String(!hid)); };
+  setHidden(store.get("tradsHidden") === true);
+  $("trad-hide").addEventListener("click", () => { const hid = !$("trad-body").hidden; setHidden(hid); store.set("tradsHidden", hid); });
 
   buildIndex(); syncMeta();
   const t = renderTonight(); renderMonth(); renderSky(); renderTraditions(t.l, t.season);
