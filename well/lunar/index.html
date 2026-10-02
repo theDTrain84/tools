@@ -1,0 +1,954 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lunar Life · DNSC</title>
+<meta name="description" content="The moon over your own weeks. Bring your calendar in and see it on the lunar cycle. It stays in your browser.">
+<meta name="theme-color" content="#1B1916">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css">
+<style>
+:root{--paper:#F3EFE7;--paper2:#E9E3D7;--rule:#CFC6B8;--ink:#2C211A;--ink2:#4A3A2F;--ink3:#7A6A5D;--ink4:#A69686;--walnut:#623E2A;--ochre:#B4862E;--gold:#D9B25A;--sky:#3E6A9E;--dusk:#1B1916;--card:#24201C;--line:#3A342E;--mono:"IBM Plex Mono",ui-monospace,monospace;--disp:Fraunces,Georgia,serif}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--dusk);color:var(--paper)}
+body{font-family:Newsreader,Georgia,serif;font-size:18px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body .site-nav{background:rgba(27,25,22,.88);border-bottom-color:#2E2925}
+body .site-nav .brand{color:var(--paper)}
+body .site-nav .links a{color:var(--ink4)}
+body .site-nav .links a:hover{color:var(--paper)}
+body .site-nav .mark:before{border-color:var(--paper)}
+body .site-nav .cta{background:var(--paper);color:var(--dusk)}
+body .site-nav .cta:hover{background:var(--gold);color:var(--dusk)}
+body .site-foot{background:var(--dusk);border-top:1px solid #2E2925;position:relative;z-index:1}
+#sky{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.wrap{position:relative;z-index:1;max-width:1120px;margin:0 auto;padding:28px 16px 40px}
+a{color:var(--gold)}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible,label:focus-within{outline:2px solid var(--sky);outline-offset:2px}
+.crumb{font-family:var(--mono);font-size:12.5px;color:var(--ink4);text-decoration:none;letter-spacing:.04em}
+.crumb:hover{color:var(--paper)}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin:26px 0 10px}
+h1{font-family:var(--disp);font-weight:500;font-size:clamp(36px,7.4vw,62px);line-height:1.03;margin:0 0 14px;letter-spacing:-.012em;max-width:17ch}
+.lede{color:var(--paper2);font-size:21px;max-width:620px;margin:0}
+section{margin-top:60px}
+h2{font-family:var(--disp);font-weight:500;font-size:clamp(26px,4.4vw,34px);line-height:1.1;margin:0 0 6px}
+.sub{color:var(--ink4);margin:0 0 20px;max-width:62ch}
+.k{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink4)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.btn{font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;border-radius:999px;padding:10px 16px;cursor:pointer;border:1px solid var(--line);background:transparent;color:var(--paper);line-height:1.2}
+.btn:hover{border-color:var(--ink4)}
+.btn.pri{background:var(--gold);border-color:var(--gold);color:var(--dusk)}
+.btn.pri:hover{background:var(--paper);border-color:var(--paper)}
+.btn.quiet{border-color:transparent;color:var(--ink4);padding-left:0;padding-right:0}
+.btn.quiet:hover{color:var(--paper)}
+.btn:disabled{opacity:.5;cursor:default}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+
+/* Tonight */
+.tonight{display:grid;gap:28px;align-items:center}
+.moonbox{display:flex;justify-content:center;position:relative}
+.moonbox svg{max-width:100%;height:auto;overflow:visible}
+.glow{animation:pulse 10s ease-in-out infinite alternate;transform-origin:center}
+@keyframes pulse{from{opacity:.55}to{opacity:1}}
+.phase{font-family:var(--disp);font-weight:500;font-size:clamp(32px,6vw,46px);line-height:1.05;margin:4px 0 6px}
+.season{font-family:var(--disp);font-style:italic;font-size:21px;color:var(--gold);margin:0 0 4px}
+.meaning{color:var(--paper2);margin:0 0 20px;max-width:56ch}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:16px 20px;margin:0 0 14px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.facts div{min-width:0}
+.facts dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink4);margin:0 0 3px}
+.facts dd{margin:0;font-family:var(--disp);font-size:20px;line-height:1.2}
+.facts dd small{display:block;font-family:var(--mono);font-size:11.5px;color:var(--ink4);letter-spacing:.04em;margin-top:2px}
+.loc{font-family:var(--mono);font-size:12px;color:var(--ink4);letter-spacing:.04em}
+.cycle{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:8px}
+.cycle li{display:grid;grid-template-columns:86px 1fr;gap:12px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;border-left:3px solid var(--c);align-items:baseline}
+.cycle li.now{background:#2A2520}
+.cycle b{font-family:var(--mono);font-weight:500;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--paper)}
+.cycle span{font-size:16.5px;color:var(--paper2)}
+.cycle em{font-family:var(--mono);font-style:normal;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-left:6px}
+.energy{margin:14px 0 0;font-family:var(--disp);font-style:italic;font-size:19px;color:var(--paper)}
+
+/* Calendar door */
+.door{display:grid;gap:22px}
+.door h3{font-family:var(--disp);font-weight:500;font-size:21px;margin:6px 0 6px}
+.door p{margin:0 0 12px;color:var(--ink4);font-size:16px}
+.door input[type=url]{width:100%;min-width:0;font-family:var(--mono);font-size:13px;color:var(--paper);background:var(--dusk);border:1px solid var(--line);border-radius:10px;padding:12px;margin:0 0 10px}
+.door input::placeholder{color:var(--ink4)}
+.drop{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:6px;min-height:132px;border:1.5px dashed #4A4239;border-radius:12px;padding:18px;cursor:pointer;color:var(--ink4);font-size:16px;transition:border-color .2s,background .2s}
+.drop.over{border-color:var(--gold);background:#2A2520;color:var(--paper)}
+.drop strong{font-family:var(--disp);font-weight:500;color:var(--paper);font-size:19px}
+.drop input{position:absolute;width:1px;height:1px;opacity:0}
+.status{min-height:1.5em;margin:16px 0 0;font-size:16px;color:var(--paper2)}
+.status.warn{color:var(--gold)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}
+.privacy{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink4);margin:0}
+
+/* Month */
+.mhead{display:flex;align-items:center;gap:8px;margin:0 0 14px}
+.mhead h3{font-family:var(--disp);font-weight:500;font-size:clamp(19px,5vw,24px);white-space:nowrap;margin:0 auto 0 0}
+.nav-b{width:40px;height:40px;padding:0;font-size:18px;display:inline-flex;align-items:center;justify-content:center}
+.wk,.grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}
+.wk{margin-bottom:6px}
+.wk abbr{text-decoration:none;text-align:center;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;color:var(--ink4)}
+.day{position:relative;min-width:0;min-height:76px;display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px 2px 6px;border-radius:10px;border:1.5px solid transparent;background:#201C18;color:var(--paper);font:inherit;cursor:pointer}
+.day:hover{background:#2A2520}
+.day.blank{background:transparent;cursor:default}
+.day.today{border-color:var(--gold)}
+.day.sel{background:#332C25;border-color:var(--ink4)}
+.day.today.sel{border-color:var(--gold)}
+.day .n{font-family:var(--mono);font-size:12px;line-height:1}
+.day.past .n{color:var(--ink4)}
+.day .lbl{font-family:var(--mono);font-size:8.5px;letter-spacing:.12em;line-height:1;color:var(--ink4)}
+.day .lbl.full{color:var(--gold)}
+.dots{display:flex;gap:3px;min-height:6px}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--c)}
+.ev-t{display:none}
+.daypanel{margin-top:14px;animation:fade .35s ease both}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.dp-head{display:flex;gap:16px;align-items:center;margin-bottom:12px}
+.dp-head h4{font-family:var(--disp);font-weight:500;font-size:23px;margin:0;line-height:1.15}
+.dp-head p{margin:2px 0 0;color:var(--ink4);font-size:16px}
+.dp-energy{font-family:var(--disp);font-style:italic;font-size:18px;margin:0 0 14px;color:var(--paper)}
+.evs{list-style:none;margin:0;padding:0}
+.evs li{display:grid;grid-template-columns:88px 1fr;gap:12px;padding:10px 0;border-top:1px solid var(--line);align-items:baseline}
+.evs .t{font-family:var(--mono);font-size:12px;color:var(--ink4);letter-spacing:.03em}
+.evs .s{overflow-wrap:anywhere}
+.evs .l{display:block;color:var(--ink4);font-size:15.5px}
+.empty{color:var(--ink4);font-size:16px;margin:0}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;margin:14px 0 0;font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--ink4);text-transform:uppercase}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+
+/* Year's sky */
+.sky{list-style:none;margin:0;padding:0}
+.sky li{display:grid;grid-template-columns:64px 1fr;gap:14px;padding:16px 0;border-top:1px solid var(--line)}
+.sky .d{font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--ink4);text-transform:uppercase;line-height:1.5}
+.sky .d b{display:block;font-family:var(--disp);font-weight:500;font-size:26px;letter-spacing:0;color:var(--paper);line-height:1}
+.tag{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink4)}
+.sky h3{font-family:var(--disp);font-weight:500;font-size:20px;line-height:1.2;margin:4px 0 4px}
+.sky p{margin:0;color:var(--ink4);font-size:16px}
+.sky p.teach{color:var(--paper2);font-style:italic;margin-top:6px}
+.sky li.soon h3{color:var(--gold)}
+details.more{margin-top:8px}
+summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;color:var(--paper);border:1px solid var(--line);border-radius:999px;padding:10px 16px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";color:var(--gold)}
+details[open]>summary:after{content:"\2212"}
+summary:hover{border-color:var(--ink4)}
+
+/* Traditions */
+.synth{font-family:var(--disp);font-style:italic;font-size:21px;line-height:1.35;margin:22px 0 18px;max-width:58ch}
+.trads{display:grid;gap:12px}
+.trad h3{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-weight:500;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--paper);margin:0 0 2px}
+.trad .when{font-family:var(--mono);font-size:11.5px;color:var(--ink4);margin:0 0 10px}
+.trad dl{margin:0}
+.trad dt{font-family:var(--disp);font-weight:500;font-size:18px;margin:10px 0 2px}
+.trad dd{margin:0;color:var(--ink4);font-size:15.5px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+@media (min-width:720px){
+  .door{grid-template-columns:1fr 1fr;gap:28px}
+  .trads{grid-template-columns:1fr 1fr}
+  .facts{grid-template-columns:repeat(3,1fr)}
+  .day{min-height:96px;padding:8px 4px}
+  .day .n{font-size:13px}
+  .card{padding:26px}
+}
+@media (min-width:880px){
+  .tonight{grid-template-columns:340px 1fr;gap:48px}
+  .day{min-height:112px;align-items:stretch;padding:8px}
+  .day .top{display:flex;justify-content:space-between;align-items:flex-start;width:100%}
+  .day .n{font-size:14px}
+  .dots{display:none}
+  .ev-t{display:block;font-size:12.5px;line-height:1.3;color:var(--paper2);text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-left:2px solid var(--c);padding-left:5px;margin-top:2px}
+  .ev-more{font-family:var(--mono);font-size:10.5px;color:var(--ink4);text-align:left}
+  .day .lbl{text-align:left}
+  .trads{grid-template-columns:repeat(3,1fr)}
+  .sky li{grid-template-columns:90px 1fr}
+}
+@media (max-width:879px){.day .top{display:contents}.ev-more{display:none}}
+@media (prefers-reduced-motion:reduce){.glow,.daypanel{animation:none}}
+</style>
+</head>
+<body class="has-shell">
+<canvas id="sky" aria-hidden="true"></canvas>
+<nav class="site-nav"><div class="in"><a class="brand" href="https://www.dustinnimmo.com"><span class="mark"><i></i><i></i><i></i><i></i><i></i></span>DNSC</a><div class="links"><a href="https://www.dustinnimmo.com/#what-i-do">What we do</a><a href="https://www.dustinnimmo.com/#three-ways">How we work</a><a class="keep" href="https://tools.dustinnimmo.com/">Teaching &amp; tools</a></div><a class="cta" href="https://www.dustinnimmo.com/#contact">Start a conversation</a></div></nav>
+<div class="wrap">
+  <a class="crumb" href="../">← The Well</a>
+  <p class="eyebrow">The Well · Lunar Life</p>
+  <h1>Live by the rhythms you actually care about.</h1>
+  <p class="lede">The moon over your own weeks. Bring your calendar in; it stays in your browser.</p>
+
+  <section id="tonight" aria-labelledby="t-h">
+    <p class="eyebrow">Tonight</p>
+    <h2 id="t-h" class="sr">Tonight's moon</h2>
+    <div class="tonight">
+      <div class="moonbox" id="bigmoon"></div>
+      <div>
+        <p class="k" id="t-date"></p>
+        <p class="phase" id="t-phase"></p>
+        <p class="season" id="t-season"></p>
+        <p class="meaning" id="t-meaning"></p>
+        <dl class="facts" id="t-facts"></dl>
+        <div class="row"><span class="loc" id="t-loc"></span><button class="btn" id="geo" type="button">Use my location</button></div>
+      </div>
+    </div>
+    <ul class="cycle" id="cycle" aria-label="The cycle, in three lines"></ul>
+    <p class="energy" id="t-energy"></p>
+  </section>
+
+  <section id="calendar" aria-labelledby="c-h">
+    <p class="eyebrow">Your calendar</p>
+    <h2 id="c-h">Bring your weeks under the moon.</h2>
+    <p class="sub">Two ways in. We read the calendar right here on this page and keep it on this device.</p>
+    <div class="card">
+      <div class="door">
+        <div>
+          <p class="k">One · A feed link</p>
+          <h3>Paste a calendar feed link</h3>
+          <p>An .ics address. In Google Calendar: Settings → your calendar → Integrate calendar → "Secret address in iCal format".</p>
+          <label class="sr" for="feed">Calendar feed link</label>
+          <input type="url" id="feed" placeholder="https://calendar.google.com/…/basic.ics" autocomplete="off" spellcheck="false">
+          <div class="row"><button class="btn pri" id="bring" type="button">Bring it in</button><button class="btn" id="refresh" type="button" disabled>Refresh</button></div>
+        </div>
+        <div>
+          <p class="k">Two · A file</p>
+          <h3>Drop an .ics file</h3>
+          <p>Download your calendar as .ics from the same settings page, then drop it here.</p>
+          <label class="drop" id="drop" for="file">
+            <strong>Drop the .ics here</strong>
+            <span>or tap to choose a file</span>
+            <input type="file" id="file" accept=".ics,text/calendar">
+          </label>
+        </div>
+      </div>
+      <p class="status" id="status" role="status" aria-live="polite"></p>
+      <div class="meta">
+        <p class="privacy" id="privacy">Nothing leaves this browser.</p>
+        <span class="loc" id="last"></span>
+        <button class="btn quiet" id="forget" type="button" hidden>Forget my calendar</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="month" aria-labelledby="m-h">
+    <p class="eyebrow">The month</p>
+    <h2 id="m-h">Your days, by the light.</h2>
+    <p class="sub">Each day carries its moon. Your events take the color of the phase they land in. Tap a day to open it.</p>
+    <div class="card">
+      <div class="mhead">
+        <h3 id="m-title" aria-live="polite"></h3>
+        <button class="btn" id="m-today" type="button">Today</button>
+        <button class="btn nav-b" id="m-prev" type="button" aria-label="Previous month">‹</button>
+        <button class="btn nav-b" id="m-next" type="button" aria-label="Next month">›</button>
+      </div>
+      <div class="wk" aria-hidden="true"><abbr>S</abbr><abbr>M</abbr><abbr>T</abbr><abbr>W</abbr><abbr>T</abbr><abbr>F</abbr><abbr>S</abbr></div>
+      <div class="grid" id="grid"></div>
+      <div class="legend" aria-hidden="true"><span><i class="dot" style="--c:var(--sky)"></i>Waxing and new</span><span><i class="dot" style="--c:var(--gold)"></i>Full</span><span><i class="dot" style="--c:var(--ochre)"></i>Waning</span></div>
+    </div>
+    <div id="daypanel"></div>
+  </section>
+
+  <section id="year" aria-labelledby="y-h">
+    <p class="eyebrow">The year's sky</p>
+    <h2 id="y-h">What the sky is doing in 2026.</h2>
+    <p class="sub">Full moons, showers, planets, eclipses, and the turning points of the year. Upcoming first.</p>
+    <ol class="sky" id="sky-up"></ol>
+    <details class="more" id="sky-more-wrap"><summary>The rest of the year</summary><ol class="sky" id="sky-more"></ol></details>
+  </section>
+
+  <section id="traditions" aria-labelledby="h-h">
+    <p class="eyebrow">Traditions</p>
+    <h2 id="h-h">The same sky, read many ways.</h2>
+    <p class="sub">Astronomy, astrology, the old wheel of the year, and five living faiths, each keeping time with the sun and moon.</p>
+    <details id="trad-wrap"><summary>Show the other calendars</summary>
+      <p class="synth" id="synth"></p>
+      <div class="trads" id="trads"></div>
+    </details>
+  </section>
+</div>
+<footer class="site-foot"><div class="in"><span>DNSC · Dustin Nimmo Strategic Consulting</span><span class="nav"><a href="https://www.dustinnimmo.com">Home</a><a href="https://www.dustinnimmo.com/#three-ways">How we work</a><a href="https://tools.dustinnimmo.com/">Teaching &amp; tools</a><a href="https://tools.dustinnimmo.com/well/">The Well</a><a href="https://www.dustinnimmo.com/#contact">Contact</a></span><span class="credit">Free to use. Made by DNSC.</span></div></footer>
+
+<script>
+"use strict";
+/* Optional relay for calendar feeds that block browsers (Google does). Set to a URL like
+   "https://relay.example.com/ics" and we fetch RELAY + "?url=" + encodeURIComponent(feed). */
+const RELAY = "";
+
+/* ================= Moon engine ================= */
+const SYN = 29.530588861, RAD = Math.PI / 180, DAY = 864e5;
+const jdOf = ms => ms / DAY + 2440587.5, msOf = jd => (jd - 2440587.5) * DAY;
+
+/* True phase times (Meeus, Astronomical Algorithms ch. 49). q: 0 new, 1 first quarter, 2 full, 3 last quarter. */
+function truePhaseJD(k, q) {
+  k = k + q / 4;
+  const T = k / 1236.85, T2 = T * T, T3 = T2 * T, T4 = T3 * T, s = Math.sin, c = Math.cos;
+  const jde = 2451550.09766 + 29.530588861 * k + 0.00015437 * T2 - 0.00000015 * T3 + 0.00000000073 * T4;
+  const E = 1 - 0.002516 * T - 0.0000074 * T2;
+  const M = (2.5534 + 29.1053567 * k - 0.0000014 * T2 - 0.00000011 * T3) * RAD;
+  const Mp = (201.5643 + 385.81693528 * k + 0.0107582 * T2 + 0.00001238 * T3 - 0.000000058 * T4) * RAD;
+  const F = (160.7108 + 390.67050284 * k - 0.0016118 * T2 - 0.00000227 * T3 + 0.000000011 * T4) * RAD;
+  const O = (124.7746 - 1.56375588 * k + 0.0020672 * T2 + 0.00000215 * T3) * RAD;
+  let x;
+  if (q === 0 || q === 2) {
+    const a = q === 0 ? [-.4072, .17241, .01608, .01039, .00739, -.00514, .00208] : [-.40614, .17302, .01614, .01043, .00734, -.00515, .00209];
+    x = a[0] * s(Mp) + a[1] * E * s(M) + a[2] * s(2 * Mp) + a[3] * s(2 * F) + a[4] * E * s(Mp - M) + a[5] * E * s(Mp + M) + a[6] * E * E * s(2 * M)
+      - .00111 * s(Mp - 2 * F) - .00057 * s(Mp + 2 * F) + .00056 * E * s(2 * Mp + M) - .00042 * s(3 * Mp) + .00042 * E * s(M + 2 * F)
+      + .00038 * E * s(M - 2 * F) - .00024 * E * s(2 * Mp - M) - .00017 * s(O);
+  } else {
+    x = -.62801 * s(Mp) + .17172 * E * s(M) - .01183 * E * s(Mp + M) + .00862 * s(2 * Mp) + .00804 * s(2 * F) + .00454 * E * s(Mp - M)
+      + .00204 * E * E * s(2 * M) - .0018 * s(Mp - 2 * F) - .0007 * s(Mp + 2 * F) - .0004 * s(3 * Mp) - .00034 * E * s(2 * Mp - M)
+      + .00032 * E * s(M + 2 * F) + .00032 * E * s(M - 2 * F) - .00028 * E * E * s(Mp + 2 * M) + .00027 * E * s(2 * Mp + M) - .00017 * s(O);
+    const W = .00306 - .00038 * E * c(M) + .00026 * c(Mp) - .00002 * c(Mp - M) + .00002 * c(Mp + M) + .00002 * c(2 * F);
+    x += q === 1 ? W : -W;
+  }
+  return jde + x - 0.0008; /* TT to UT, near enough */
+}
+const _qcache = new Map();
+function quarters(k) {
+  if (!_qcache.has(k)) _qcache.set(k, [0, 1, 2, 3].map(q => ({ jd: truePhaseJD(k, q), q, p: q / 4 })));
+  return _qcache.get(k);
+}
+function eventsAround(jd) {
+  const k = Math.floor((jd - 2451550.09766) / SYN);
+  return [].concat(quarters(k - 1), quarters(k), quarters(k + 1), quarters(k + 2)).sort((a, b) => a.jd - b.jd);
+}
+const PHASES = ["New Moon", "Waxing Crescent", "First Quarter", "Waxing Gibbous", "Full Moon", "Waning Gibbous", "Last Quarter", "Waning Crescent"];
+function phaseName(p, win) {
+  win = win == null ? 0.034 : win;
+  for (let i = 0; i < 4; i++) { const t = i / 4; if (Math.abs(((p - t + 1.5) % 1) - .5) < win) return PHASES[i * 2]; }
+  return PHASES[Math.floor(p * 4) * 2 + 1];
+}
+function family(p) { return p < 0.034 || p >= 0.966 ? "new" : p < 0.466 ? "waxing" : p < 0.534 ? "full" : "waning"; }
+/* Ported from the prototype's getLunarData, now anchored to true quarter times. */
+function getLunarData(date) {
+  const jd = jdOf(date.getTime()), ev = eventsAround(jd);
+  let i = 0; while (i < ev.length - 2 && ev[i + 1].jd <= jd) i++;
+  const a = ev[i], b = ev[i + 1], frac = Math.min(1, Math.max(0, (jd - a.jd) / (b.jd - a.jd)));
+  const phase = (a.p + 0.25 * frac) % 1;
+  let lastNew = null; for (const e of ev) if (e.q === 0 && e.jd <= jd) lastNew = e;
+  return { phase, dayInCycle: lastNew ? jd - lastNew.jd : phase * SYN, illumination: (1 - Math.cos(phase * 2 * Math.PI)) / 2, phaseName: phaseName(phase), family: family(phase) };
+}
+function nextPhase(date, q) {
+  const jd = jdOf(date.getTime());
+  let k = Math.floor((jd - 2451550.09766) / SYN) - 1;
+  for (let n = 0; n < 6; n++, k++) { const t = truePhaseJD(k, q); if (t > jd) return new Date(msOf(t)); }
+  return null;
+}
+function getNextFullMoon(date) { return nextPhase(date, 2); }
+function phaseEventsBetween(ms0, ms1) {
+  const out = [], j0 = jdOf(ms0), j1 = jdOf(ms1);
+  let k = Math.floor((j0 - 2451550.09766) / SYN) - 1;
+  for (; ; k++) { const qs = quarters(k); if (qs[0].jd > j1) break; qs.forEach(e => { if (e.jd >= j0 && e.jd < j1) out.push({ q: e.q, d: new Date(msOf(e.jd)) }); }); }
+  return out;
+}
+
+/* Moon drawing: ported from MoonSVG / TinyMoon (terminator arcs), recolored paper and gold. */
+function shadowPath(phase, cx, cy, r, eps) {
+  if (phase < eps || phase > 1 - eps) return `M ${cx} ${cy - r} A ${r} ${r} 0 1 1 ${cx} ${cy + r} A ${r} ${r} 0 1 1 ${cx} ${cy - r}`;
+  if (Math.abs(phase - .5) < eps) return "";
+  const c = Math.cos(phase * 2 * Math.PI);
+  if (phase < .5) { const rx = r * c, ax = Math.abs(rx), sw = rx > 0 ? 1 : 0; return `M ${cx} ${cy - r} A ${ax} ${r} 0 0 ${sw} ${cx} ${cy + r} A ${r} ${r} 0 0 1 ${cx} ${cy - r}`; }
+  const rx = -r * c, ax = Math.abs(rx), sw = rx > 0 ? 0 : 1;
+  return `M ${cx} ${cy - r} A ${r} ${r} 0 0 1 ${cx} ${cy + r} A ${ax} ${r} 0 0 ${sw} ${cx} ${cy - r}`;
+}
+let _mid = 0;
+function moonSVG(phase, size, label) {
+  const id = "m" + (++_mid), cx = size / 2, cy = size / 2, r = size * .36, sp = shadowPath(phase, cx, cy, r, .01);
+  const lum = (1 - Math.cos(phase * 2 * Math.PI)) / 2;
+  const cr = [[-.25, -.15, .12], [.3, .25, .08], [-.1, .45, .1], [.15, -.4, .06], [.45, -.1, .07], [-.42, .18, .05]];
+  return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" role="img" aria-label="${label || ""}">
+<defs><radialGradient id="${id}g"><stop offset="35%" stop-color="#D9B25A" stop-opacity="${(.1 + .28 * lum).toFixed(2)}"/><stop offset="100%" stop-color="#D9B25A" stop-opacity="0"/></radialGradient>
+<radialGradient id="${id}s" cx="38%" cy="32%" r="72%"><stop offset="0%" stop-color="#FBF5E4"/><stop offset="55%" stop-color="#EFDDAE"/><stop offset="100%" stop-color="#D9B25A"/></radialGradient></defs>
+<circle class="glow" cx="${cx}" cy="${cy}" r="${r * 1.75}" fill="url(#${id}g)"/>
+<circle cx="${cx}" cy="${cy}" r="${r}" fill="url(#${id}s)"/>
+${cr.map(c => `<circle cx="${cx + r * c[0]}" cy="${cy + r * c[1]}" r="${r * c[2]}" fill="#623E2A" opacity=".13"/>`).join("")}
+${sp ? `<path d="${sp}" fill="#14120F" opacity=".93"/>` : ""}
+<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#F3EFE7" stroke-opacity=".1"/></svg>`;
+}
+function tinyMoon(phase, size) {
+  const cx = size / 2, cy = size / 2, r = size * .4, sp = shadowPath(phase, cx, cy, r, .02), fam = family(phase);
+  return `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}" aria-hidden="true"><circle cx="${cx}" cy="${cy}" r="${r}" fill="${fam === "full" ? "#E8C878" : "#E9E3D7"}"/>${sp ? `<path d="${sp}" fill="#14120F" opacity=".9"/>` : ""}<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#F3EFE7" stroke-opacity=".22" stroke-width=".8"/></svg>`;
+}
+
+/* Sunrise and sunset: the prototype's getSunTimes used latitude only; this is the full sunrise equation with longitude, shown in the browser's time zone. */
+function getSunTimes(date, lat, lon) {
+  const noon = new Date(date.getFullYear(), date.getMonth(), date.getDate(), 12);
+  const n = Math.round(jdOf(noon.getTime()) - 2451545 + lon / 360), Js = n - lon / 360;
+  const M = (357.5291 + 0.98560028 * Js) % 360, Mr = M * RAD;
+  const C = 1.9148 * Math.sin(Mr) + 0.02 * Math.sin(2 * Mr) + 0.0003 * Math.sin(3 * Mr);
+  const L = ((M + C + 180 + 102.9372) % 360) * RAD;
+  const Jt = 2451545 + Js + 0.0053 * Math.sin(Mr) - 0.0069 * Math.sin(2 * L);
+  const dec = Math.asin(Math.sin(L) * Math.sin(23.4397 * RAD)), la = lat * RAD;
+  const cw = (Math.sin(-0.833 * RAD) - Math.sin(la) * Math.sin(dec)) / (Math.cos(la) * Math.cos(dec));
+  if (cw < -1 || cw > 1) return { polar: cw < -1 ? "day" : "night" };
+  const w = Math.acos(cw) / RAD / 360;
+  return { sunrise: new Date(msOf(Jt - w)), sunset: new Date(msOf(Jt + w)), dayLengthHrs: w * 48 };
+}
+
+/* Cycle energy: ported from getCycleEnergy, tightened to one line per phase. */
+const ENERGY = {
+  "New Moon": ["Rest and set intention", "Name what you want to grow before you grow it."],
+  "Waxing Crescent": ["Build momentum", "Take the first steps. Beginning is enough."],
+  "First Quarter": ["Decide and commit", "You know enough now to choose what gets your energy."],
+  "Waxing Gibbous": ["Refine and push", "Go deeper on what you chose. Effort compounds here."],
+  "Full Moon": ["Peak light", "Everything is visible. Have the hard conversation; make the launch."],
+  "Waning Gibbous": ["Share and teach", "Give away what you gathered. Teach what you learned."],
+  "Last Quarter": ["Release and forgive", "Set down what you are carrying that no longer serves."],
+  "Waning Crescent": ["Rest and dream", "Your energy asks for rest. The next cycle forms in the dark."]
+};
+function getCycleEnergy(name) { return ENERGY[name] || ENERGY["New Moon"]; }
+
+/* Moon seasons: ported names and meanings. */
+const MOON_SEASONS = [
+  ["Wolf Moon", "Named for the wolves heard through the coldest nights. Midwinter teaches endurance; the pack draws close when the world contracts."],
+  ["Snow Moon", "The heaviest snows fall now, and the land is composting. What you will understand in spring is being prepared beneath the surface."],
+  ["Worm Moon", "Earthworms rise as the ground thaws. The first stirring after months of stillness; what was underground begins to surface."],
+  ["Pink Moon", "Named for wild phlox, the first pink flowers of spring. The season asks what you are willing to put in the ground."],
+  ["Flower Moon", "Gardens in full bloom. What you nurtured in private arrives in public."],
+  ["Strawberry Moon", "Named for the brief season of wild strawberries. What is sweetest does not last. The light peaks and the inward turn begins."],
+  ["Buck Moon", "New antlers grow, the fastest-growing tissue in the animal kingdom. The growth cost bone and blood. Now it crowns."],
+  ["Sturgeon Moon", "Named for the ancient fish of the Great Lakes. The sturgeon feeds along the bottom and finds its nourishment in the mud."],
+  ["Harvest Moon", "The full moon nearest the equinox rises only minutes later each night, giving farmers extra light. The practical moon, named for showing up on time."],
+  ["Hunter's Moon", "Leaves fall, fields are cleared, and what remains comes into view. What becomes visible when you stop adding new things?"],
+  ["Beaver Moon", "Set the traps before the waters freeze. A moon of preparation: secure what you need before the world closes in."],
+  ["Cold Moon", "More dark makes more moonlight. The Cold Moon rides highest and stays longest. The longest night is the most illuminated night."]
+];
+function moonSeasonFor(date) {
+  const prev = nextPhase(new Date(date.getTime() - 31 * DAY), 2);
+  let p = prev, nx = getNextFullMoon(date);
+  while (p && nx && p.getTime() < date.getTime() - 16 * DAY) p = nextPhase(new Date(p.getTime() + DAY), 2);
+  const near = Math.abs(nx - date) < Math.abs(date - p) ? nx : p;
+  return MOON_SEASONS[near.getMonth()];
+}
+
+/* Liturgical year: ported getEaster / getLitSeason. */
+function getEaster(y) { const a = y % 19, b = Math.floor(y / 100), c = y % 100, d = Math.floor(b / 4), e = b % 4, f = Math.floor((b + 8) / 25), g = Math.floor((b - f + 1) / 3), h = (19 * a + b - d - g + 15) % 30, i = Math.floor(c / 4), k = c % 4, l = (32 + 2 * e + 2 * i - h - k) % 7, m = Math.floor((a + 11 * h + 22 * l) / 451), mo = Math.floor((h + l - 7 * m + 114) / 31), da = ((h + l - 7 * m + 114) % 31) + 1; return new Date(y, mo - 1, da); }
+function getLitSeason(d) {
+  const y = d.getFullYear(), doy = Math.round((new Date(y, d.getMonth(), d.getDate()) - new Date(y, 0, 1)) / DAY), e = getEaster(y), edoy = Math.round((e - new Date(y, 0, 1)) / DAY);
+  const dd = new Date(y, 11, 25).getDay(), adoy = Math.round((new Date(y, 11, 25 - (dd === 0 ? 28 : 21 + dd)) - new Date(y, 0, 1)) / DAY);
+  if (d.getMonth() === 11 && d.getDate() >= 25) return "Christmas";
+  if (doy >= adoy) return "Advent"; if (doy < 6) return "Christmas"; if (doy <= 19) return "Epiphany";
+  if (doy < edoy - 46) return "Ordinary Time"; if (doy < edoy - 7) return "Lent"; if (doy < edoy) return "Holy Week";
+  if (doy < edoy + 1) return "Easter"; if (doy < edoy + 50) return "Easter Season"; return "Ordinary Time";
+}
+
+/* The year's sky, 2026: ported list, rewritten. [date, type, name, what, teaching] */
+const ASTRO_2026 = [
+  ["2026-01-03", "fullmoon", "Wolf Supermoon", "First of three supermoons this year.", "The pack draws close in the deepest cold. Who is yours?"],
+  ["2026-01-03", "meteor", "Quadrantids", "Up to 40 meteors an hour at the peak, Jan 3 to 4, washed out by the bright moon.", "Their parent, 2003 EH1, may be an extinct comet. Even gone, it still sends light."],
+  ["2026-01-10", "planet", "Jupiter at opposition", "Jupiter at its closest and brightest, up all night. Binoculars show the four Galilean moons.", "Jupiter gives off more heat than it receives, warming itself by slowly contracting. Some things make warmth by becoming more themselves."],
+  ["2026-02-01", "fullmoon", "Snow Moon", "The heaviest snows fall now.", "The land is composting. Spring's insight is being prepared in the dark soil of not-yet-knowing."],
+  ["2026-02-01", "pagan", "Imbolc", "Cross-quarter day between the winter solstice and the spring equinox. The first signs of spring.", ""],
+  ["2026-02-25", "astrology", "Mercury retrograde begins", "A season for review: back up, reconnect, reread.", ""],
+  ["2026-03-03", "eclipse", "Total lunar eclipse, Worm Moon", "Totality is best seen from western North America, East Asia and the Pacific. It falls on the Lantern Festival.", "In the old story, a town lit lanterns so the Jade Emperor would think it already burning, and it was spared. Sometimes celebration is the rescue."],
+  ["2026-03-20", "equinox", "March equinox", "Day and night nearly equal. Spring begins in the north.", "For one day the whole planet shares the same measure of light. What would it mean to live that way?"],
+  ["2026-03-21", "astrology", "Mercury retrograde ends", "Communication clears. Move forward.", ""],
+  ["2026-04-02", "fullmoon", "Pink Moon", "Named for wild phlox, the first pink flowers of spring.", "This moon asks what you are willing to put in the ground."],
+  ["2026-04-03", "planet", "Mercury at its best", "Greatest western elongation. Look low in the east before sunrise.", ""],
+  ["2026-04-22", "meteor", "Lyrids", "10 to 15 an hour, with rare surges near 100. Dark skies this year.", "They radiate from near Vega in Lyra, the lyre of Orpheus, whose music moved stones. Fragments of something once whole."],
+  ["2026-05-01", "fullmoon", "Flower Moon, Vesak", "Many communities keep the Buddha's birth, awakening and passing on this full moon.", "Vesak holds birth, awakening and death in a single day. The flower and the compost are one event seen at different moments."],
+  ["2026-05-01", "pagan", "Beltane", "Fire festival of growth, halfway from the spring equinox to the summer solstice.", ""],
+  ["2026-05-06", "meteor", "Eta Aquariids", "Up to 60 an hour in the south, 30 in the north. Debris from Halley's Comet.", "Halley saw that the comet returning every 76 years was one thing. Pattern recognition as an act of faith."],
+  ["2026-05-31", "fullmoon", "Blue Moon", "The second full moon in May.", "A blue moon is surplus time. How will you honor it?"],
+  ["2026-06-21", "solstice", "June solstice", "The longest day of the year. Summer begins in the north.", "At the peak of light, the days begin to shorten. The fullest moment carries its own release."],
+  ["2026-06-29", "fullmoon", "Strawberry Moon", "Named for the brief season of wild strawberries.", "What is sweetest does not last. Savor it."],
+  ["2026-06-29", "astrology", "Mercury retrograde begins", "Review before you launch.", ""],
+  ["2026-07-06", "planet", "Earth at aphelion", "Earth at its farthest from the sun, in the middle of northern summer.", "Seasons come from tilt more than distance. Orientation matters most."],
+  ["2026-07-24", "astrology", "Mercury retrograde ends", "Communication clears again.", ""],
+  ["2026-07-28", "meteor", "Delta Aquariids", "15 to 20 an hour, steady through late July with no sharp peak.", "Some gifts keep showing up without announcing themselves."],
+  ["2026-07-29", "fullmoon", "Buck Moon", "Named for new antlers. Also the Thunder Moon and the Hay Moon.", "Antlers can grow an inch a day. The growth costs bone and blood, and then it crowns."],
+  ["2026-08-01", "pagan", "Lughnasadh", "Cross-quarter day that opens the harvest.", ""],
+  ["2026-08-12", "eclipse", "Total solar eclipse", "Totality crosses Greenland, Iceland and northern Spain.", "For a few minutes the moon steps in front of the sun and the corona appears. It was there all along, hidden by the brightness."],
+  ["2026-08-12", "meteor", "Perseids", "Up to 60 an hour under a new moon. The best shower of the year.", "Debris from Comet Swift-Tuttle, crossing our path every August. We stand in the dark and watch old dust become light."],
+  ["2026-08-15", "planet", "Venus, the evening star", "Greatest eastern elongation. Bright in the west after sunset.", "Venus has phases like the moon. Its full phase happens behind the sun, out of sight. Some fullness can only be inferred."],
+  ["2026-08-28", "fullmoon", "Sturgeon Moon", "Named for the ancient fish of the Great Lakes. A deep partial lunar eclipse this night.", "The sturgeon finds what sustains it along the bottom. What sustains you?"],
+  ["2026-09-23", "equinox", "September equinox", "Day and night nearly equal again. Autumn begins in the north.", "Balance returns for a day. Equilibrium is a passage."],
+  ["2026-09-26", "fullmoon", "Harvest Moon", "The full moon nearest the equinox, rising only minutes later each night.", "The only moon named for its usefulness. It stays longer and gives light when light is needed most."],
+  ["2026-10-04", "planet", "Saturn at opposition", "Saturn at its closest and brightest. The rings show in a small telescope.", "Saturn's rings may be young by the sky's measure. Even the icons of the cosmos arrived at some point."],
+  ["2026-10-07", "meteor", "Draconids", "Radiant near the head of Draco. Watch in the early evening.", "In nearly every culture the dragon guards a treasure or a threshold. What are you guarding?"],
+  ["2026-10-21", "meteor", "Orionids", "Halley's debris again. Fast meteors and bright fireballs.", "They seem to fly from Orion's club. What falls is what was released."],
+  ["2026-10-24", "astrology", "Mercury retrograde begins", "Read the contract three times before signing.", ""],
+  ["2026-10-26", "fullmoon", "Hunter's Moon", "Leaves falling, fields cleared, what remains in view.", "What becomes visible when you stop adding new things?"],
+  ["2026-10-31", "pagan", "Samhain", "The last cross-quarter festival of the year. A night to remember the dead.", "The boundary is thin tonight, and it is intimate. The ones you have lost are close."],
+  ["2026-11-04", "meteor", "Taurid fireballs", "About 5 an hour, known for bright fireballs.", "Two streams, one from an asteroid and one from a comet, meet in the same sky. Collaboration is built into the universe."],
+  ["2026-11-13", "astrology", "Mercury retrograde ends", "Clear to proceed.", ""],
+  ["2026-11-17", "meteor", "Leonids", "Usually 10 to 15 an hour. In 1966, thousands a minute for a few minutes.", "The Leonids storm on a 33-year cycle. The last storm was 2001. Patience is readiness."],
+  ["2026-11-24", "fullmoon", "Beaver Supermoon, Kartik Purnima", "A supermoon on Kartik Purnima, which celebrates Shiva's victory over Tripurasura.", "A moon of preparation, with a light hard to ignore."],
+  ["2026-12-13", "meteor", "Geminids", "Up to 150 an hour, in many colors. The best shower of winter.", "Most showers come from comets. The Geminids come from the asteroid 3200 Phaethon. Even rock, given time, becomes light."],
+  ["2026-12-21", "solstice", "December solstice", "The shortest day. Winter begins in the north.", "The darkest day is the moment the light starts back. That is physics, and it is theology."],
+  ["2026-12-24", "fullmoon", "Cold Supermoon", "Third supermoon of the year. The Cree call it the Frost Exploding Trees Moon.", "The Cold Moon rides highest and stays longest. The longest nights hold the most moonlight."]
+];
+const TYPE = { fullmoon: ["Full moon", "var(--gold)"], meteor: ["Meteors", "var(--paper)"], planet: ["Planet", "var(--sky)"], pagan: ["Wheel of the year", "var(--ochre)"], astrology: ["Astrology", "var(--ink4)"], equinox: ["Equinox", "var(--ochre)"], solstice: ["Solstice", "var(--gold)"], eclipse: ["Eclipse", "var(--sky)"] };
+
+/* Festivals: ported getFests. Easter-based dates compute for any year; the rest are 2026 dates. */
+function getFests(y) {
+  const e = getEaster(y), ad = n => { const r = new Date(e); r.setDate(r.getDate() + n); return r; };
+  const out = [
+    ["Ash Wednesday", "christianity", ymd(ad(-46)), "", "The beginning of Lent. Forty days of turning."],
+    ["Easter", "christianity", ymd(e), "", "The resurrection. The central feast of the Christian year."],
+    ["Pentecost", "christianity", ymd(ad(49)), "", "The Spirit descends. The birthday of the church."],
+    ["Christmas", "christianity", y + "-12-25", "", "The nativity. The divine enters the material world."]
+  ];
+  if (y === 2026) out.push(
+    ["Ramadan begins", "islam", "2026-02-18", "", "A month of fasting from dawn to dusk. Dates follow the sighting of the crescent."],
+    ["Holi", "hinduism", "2026-03-04", "", "The festival of colors. Spring, play, and the triumph of good."],
+    ["Eid al-Fitr", "islam", "2026-03-20", "", "Breaking the fast: communal prayer, charity, celebration."],
+    ["Passover", "judaism", "2026-04-02", "2026-04-09", "Begins at sundown April 1. The Exodus retold at the seder table."],
+    ["Vesak", "buddhism", "2026-05-01", "", "The Buddha's birth, awakening and passing. Some communities keep it on the May 31 full moon."],
+    ["Shavuot", "judaism", "2026-05-22", "", "The giving of Torah at Sinai."],
+    ["Eid al-Adha", "islam", "2026-05-27", "", "The festival of sacrifice, at the close of the pilgrimage."],
+    ["Asalha Puja", "buddhism", "2026-07-29", "", "The Buddha's first teaching, on the full moon of Asalha."],
+    ["Mawlid", "islam", "2026-08-25", "", "The birthday of the Prophet Muhammad, peace be upon him."],
+    ["Rosh Hashanah", "judaism", "2026-09-12", "", "The Jewish New Year. The shofar calls the soul."],
+    ["Yom Kippur", "judaism", "2026-09-21", "", "The Day of Atonement, the holiest day."],
+    ["Sukkot", "judaism", "2026-09-26", "2026-10-02", "Seven days in the booth: shelter, harvest, joy."],
+    ["Simchat Torah", "judaism", "2026-10-04", "", "The yearly reading of Torah ends and begins again, with dancing."],
+    ["Navaratri", "hinduism", "2026-10-11", "2026-10-19", "Nine nights for the Divine Feminine."],
+    ["Diwali", "hinduism", "2026-11-08", "", "The festival of lights."],
+    ["Hanukkah", "judaism", "2026-12-05", "2026-12-12", "Begins at sundown December 4. Eight nights of rededication."]
+  );
+  return out.map(f => ({ name: f[0], tradition: f[1], date: f[2], endDate: f[3], desc: f[4] }));
+}
+function isMercuryRetrograde(d) { const s = ymd(d); return [["2026-02-25", "2026-03-21"], ["2026-06-29", "2026-07-24"], ["2026-10-24", "2026-11-13"]].some(p => s >= p[0] && s <= p[1]); }
+function getZodiac(d) {
+  const m = d.getMonth() + 1, dy = d.getDate(), md = m * 100 + dy;
+  const Z = [[120, "Capricorn", "Earth"], [219, "Aquarius", "Air"], [321, "Pisces", "Water"], [420, "Aries", "Fire"], [521, "Taurus", "Earth"], [621, "Gemini", "Air"], [723, "Cancer", "Water"], [823, "Leo", "Fire"], [923, "Virgo", "Earth"], [1023, "Libra", "Air"], [1122, "Scorpio", "Water"], [1222, "Sagittarius", "Fire"], [1300, "Capricorn", "Earth"]];
+  for (const z of Z) if (md < z[0]) return { sign: z[1], el: z[2] };
+}
+const ZDESC = { Aries: "initiative, courage, the impulse to begin. What are you starting?", Taurus: "stability, the body's wisdom. Slow down. What sustains you?", Gemini: "curiosity, conversation, many perspectives. What are you learning?", Cancer: "home, nurture, the deep roots of care. Where do you belong?", Leo: "expression, generosity, the courage to be seen. What are you making?", Virgo: "discernment, service, the sacred in the everyday. What needs tending?", Libra: "balance, beauty, the ethics of relationship. What needs harmonizing?", Scorpio: "depth and transformation, what must end to begin again. What are you letting go?", Sagittarius: "vision, meaning, the long arc of truth. What are you aiming at?", Capricorn: "structure, discipline, the mountain climb. What are you building?", Aquarius: "shared vision, invention, the future knocking. What are you serving?", Pisces: "dissolving, imagining, the ocean of the unconscious. What is dreaming through you?" };
+const LIT = { Advent: "A season of waiting. The church holds its breath before the incarnation.", Christmas: "The Word becomes flesh. A feast of divine humility.", Epiphany: "Christ shown to the nations. A season of revelation and light.", Lent: "Forty days of turning: fasting, repentance, the long walk to the cross.", "Holy Week": "From the triumphal entry to the cross. The weight of it all.", Easter: "He is risen. Death does not get the last word.", "Easter Season": "Fifty days of resurrection joy, learning to live in a world made new.", "Ordinary Time": "The long green season of growth, where formation happens." };
+const HEB = { nisan: "The month of redemption. Passover moves from slavery to freedom, from narrow places to open land.", iyar: "Counting the Omer: 49 days of refinement between Passover and Shavuot.", sivan: "Torah at Sinai. Revelation, and the covenant renewed.", tamuz: "A month of mourning for the breached walls of Jerusalem. Grief held as sacred practice.", av: "The ninth of Av remembers both Temples. The deepest mourning carries the seed of redemption.", elul: "The month of return before the High Holy Days. The shofar sounds each morning: wake up.", tishri: "The High Holy Days: Rosh Hashanah, Yom Kippur, Sukkot. The most concentrated stretch of the Jewish year.", heshvan: "The month with no holidays. After Tishri, ordinary holiness.", kislev: "Hanukkah: rededication, light in darkness, the miracle of enough.", tevet: "Deep winter and the fast of the Tenth of Tevet. Perseverance in cold seasons.", shevat: "Tu B'Shvat, the New Year of Trees. Even in winter the sap begins to rise.", adar: "Purim: hidden miracles, sacred play, fortunes reversed." };
+const HEB_ALIAS = { tishrei: "tishri", cheshvan: "heshvan", marcheshvan: "heshvan", iyyar: "iyar", tammuz: "tamuz", shvat: "shevat", teves: "tevet" };
+function intlDate(d, cal, opts) { try { return new Intl.DateTimeFormat("en-US-u-ca-" + cal, opts).format(d); } catch (e) { return ""; } }
+
+/* Traditions layer: ported getHarmony, every tradition on. */
+function getHarmony(d, lunar, season) {
+  const m = d.getMonth(), mk = ymd(d).slice(0, 7), z = getZodiac(d), items = [];
+  const monthFests = t => getFests(d.getFullYear()).filter(f => f.tradition === t && (f.date.startsWith(mk) || (f.endDate && f.endDate.startsWith(mk)))).map(f => [f.name + " · " + shortDate(parseYMD(f.date)), f.desc]);
+  const sky = ASTRO_2026.filter(e => d.getFullYear() === 2026 && +e[0].slice(5, 7) === m + 1 && !["astrology", "pagan"].includes(e[1])).map(e => [e[2] + " · " + shortDate(parseYMD(e[0])), e[4] || e[3]]);
+  items.push({ key: "astronomy", label: "The sky", c: "var(--sky)", when: "This month overhead", ev: sky.length ? sky : [["A quiet month", "No major events on our list. Look up anyway."]] });
+  const ast = [["Sun in " + z.sign + " (" + z.el + ")", z.el + " season: " + ZDESC[z.sign]]];
+  if (isMercuryRetrograde(d)) ast.push(["Mercury retrograde", "A season for review. Reconnect, reconsider, and hold new launches. Treat the static as a cue to listen differently."]);
+  items.push({ key: "astrology", label: "The stars", c: "var(--gold)", when: "The zodiac", ev: ast });
+  const wheel = m <= 1 ? "Midwinter. The world is dormant; honor the dark." : m <= 3 ? "Early spring, stirring beneath the surface. Imbolc to the equinox." : m <= 5 ? "Spring into summer: Beltane fires, fertility, growth." : m <= 7 ? "Midsummer, the peak of light, turning toward harvest." : m <= 9 ? "Harvest season, Lughnasadh to Mabon. Gather what was sown." : m <= 10 ? "Late autumn. Samhain is here and the veil thins." : "The midwinter return: Yule, the longest night, the sun reborn.";
+  const pag = [["Wheel of the year", wheel]].concat(ASTRO_2026.filter(e => d.getFullYear() === 2026 && +e[0].slice(5, 7) === m + 1 && e[1] === "pagan").map(e => [e[2], e[4] || e[3]]));
+  items.push({ key: "pagan", label: "The earth", c: "var(--ochre)", when: "The old wheel", ev: pag });
+  const lit = getLitSeason(d);
+  items.push({ key: "christianity", label: "The church", c: "var(--paper)", when: "The liturgical year", ev: [[lit, LIT[lit]]].concat(monthFests("christianity")) });
+  const hm = intlDate(d, "hebrew", { month: "long" }), hk0 = hm.toLowerCase().replace(/\s+i+$/, "").replace(/[^a-z]/g, ""), hk = HEB_ALIAS[hk0] || hk0;
+  items.push({ key: "judaism", label: "The Hebrew calendar", c: "var(--sky)", when: intlDate(d, "hebrew", { day: "numeric", month: "long", year: "numeric" }), ev: (HEB[hk] ? [[hm, HEB[hk]]] : []).concat(monthFests("judaism")) });
+  items.push({ key: "islam", label: "The Islamic calendar", c: "var(--gold)", when: intlDate(d, "islamic", { day: "numeric", month: "long", year: "numeric" }), ev: [["A lunar calendar", "Twelve months of 29 or 30 days, each beginning with the sighting of the new crescent. Devotion keeps time with the sky."]].concat(monthFests("islam")) });
+  const upo = ["Full Moon", "New Moon", "First Quarter", "Last Quarter"].includes(lunar.phaseName);
+  items.push({ key: "buddhism", label: "Buddhist uposatha", c: "var(--ochre)", when: "Observance by the moon", ev: [upo ? ["Uposatha day", "In the Theravada tradition the four lunar phases are days of deeper meditation, precept-keeping and gathering."] : ["Between uposatha days", "Practice follows the moon. Between the quarter-phase observances, the practice is steady, continuous attention."]].concat(monthFests("buddhism")) });
+  const purnima = lunar.phase > .466 && lunar.phase < .534, ekadashi = Math.abs(lunar.dayInCycle - 10.5) < 1 || Math.abs(lunar.dayInCycle - 25.3) < 1;
+  items.push({ key: "hinduism", label: "The Hindu calendar", c: "var(--sky)", when: "Tithi and festival", ev: [purnima ? ["Purnima, the full moon", "A time for puja, fasting and pilgrimage across Hindu tradition."] : ekadashi ? ["Ekadashi", "The eleventh lunar day of the fortnight, a fast dedicated to Vishnu."] : ["The tithi cycle", "Hindu time moves through 30 tithis, or lunar days, each month, each with its own deity and character. A rhythm far older than any clock."]].concat(monthFests("hinduism")) });
+  const word = lunar.phase < .25 ? "planting" : lunar.phase < .5 ? "building" : lunar.phase < .75 ? "illuminating and releasing" : "releasing and resting";
+  const wheelNames = ["rests in midwinter", "rests in midwinter", "turns through Imbolc tide", "turns at the spring equinox", "turns toward Beltane", "turns through Beltane", "turns through midsummer", "turns through Lughnasadh", "turns at the autumn equinox", "turns toward Samhain", "turns through Samhain", "turns toward Yule"];
+  const synthesis = "Right now the " + season[0] + " holds eight ways of keeping time in a single sky. The moon is " + word + ", and the sun moves through " + z.sign + ". The church is in " + lit + ". The wheel " + wheelNames[m] + ". These are different instruments reading the same sky.";
+  return { items, synthesis };
+}
+
+/* ================= Calendar (ICS) ================= */
+const WIN_TZ = { "eastern standard time": "America/New_York", "central standard time": "America/Chicago", "mountain standard time": "America/Denver", "us mountain standard time": "America/Phoenix", "pacific standard time": "America/Los_Angeles", "alaskan standard time": "America/Anchorage", "hawaiian standard time": "Pacific/Honolulu", "gmt standard time": "Europe/London", "w. europe standard time": "Europe/Berlin", "romance standard time": "Europe/Paris", "central europe standard time": "Europe/Budapest", "utc": "UTC", "coordinated universal time": "UTC" };
+const _tzOk = {};
+function normTZ(tz) {
+  if (!tz) return null;
+  tz = tz.replace(/^"|"$/g, "").trim();
+  const cands = [WIN_TZ[tz.toLowerCase()], tz, (tz.match(/([A-Za-z_]+\/[A-Za-z_\-+0-9]+(?:\/[A-Za-z_\-]+)?)$/) || [])[1]];
+  for (const c of cands) {
+    if (!c) continue;
+    if (_tzOk[c] === undefined) { try { new Intl.DateTimeFormat("en-US", { timeZone: c }); _tzOk[c] = true; } catch (e) { _tzOk[c] = false; } }
+    if (_tzOk[c]) return c;
+  }
+  return null;
+}
+const _fmt = {};
+function tzOffset(ms, tz) {
+  const f = _fmt[tz] || (_fmt[tz] = new Intl.DateTimeFormat("en-US", { timeZone: tz, hourCycle: "h23", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", second: "2-digit" }));
+  const p = {}; f.formatToParts(new Date(ms)).forEach(x => p[x.type] = x.value);
+  return Date.UTC(+p.year, +p.month - 1, +p.day, +p.hour % 24, +p.minute, +p.second) - Math.floor(ms / 1000) * 1000;
+}
+function toMs(dt) {
+  if (dt.allDay) return new Date(dt.y, dt.mo - 1, dt.d).getTime();
+  if (dt.z === "Z") return Date.UTC(dt.y, dt.mo - 1, dt.d, dt.h, dt.mi, dt.s);
+  if (dt.z) { const g = Date.UTC(dt.y, dt.mo - 1, dt.d, dt.h, dt.mi, dt.s), o1 = tzOffset(g, dt.z); let t = g - o1; const o2 = tzOffset(t, dt.z); if (o2 !== o1) t = g - o2; return t; }
+  return new Date(dt.y, dt.mo - 1, dt.d, dt.h, dt.mi, dt.s).getTime();
+}
+function parseDT(prop) {
+  if (!prop) return null;
+  const m = /^(\d{4})(\d{2})(\d{2})(?:T(\d{2})(\d{2})(\d{2})?(Z)?)?/.exec(prop.value.trim());
+  if (!m) return null;
+  const allDay = !m[4] || prop.params.VALUE === "DATE";
+  return { y: +m[1], mo: +m[2], d: +m[3], h: +(m[4] || 0), mi: +(m[5] || 0), s: +(m[6] || 0), z: m[7] ? "Z" : normTZ(prop.params.TZID), allDay };
+}
+function addDays(dt, n) { const t = new Date(Date.UTC(dt.y, dt.mo - 1, dt.d + n)); return Object.assign({}, dt, { y: t.getUTCFullYear(), mo: t.getUTCMonth() + 1, d: t.getUTCDate() }); }
+function wday(dt) { return new Date(Date.UTC(dt.y, dt.mo - 1, dt.d)).getUTCDay(); }
+function keyOf(dt, ms) { return dt.allDay ? "D" + dt.y + "-" + dt.mo + "-" + dt.d : "T" + ms; }
+const unesc = s => s.replace(/\\n/gi, " ").replace(/\\([,;\\])/g, "$1").trim();
+function parseLine(l) {
+  let q = false, i = 0;
+  for (; i < l.length; i++) { const c = l[i]; if (c === '"') q = !q; else if (c === ":" && !q) break; }
+  if (i >= l.length) return null;
+  const parts = l.slice(0, i).split(";"), params = {};
+  parts.slice(1).forEach(s => { const e = s.indexOf("="); if (e > 0) params[s.slice(0, e).toUpperCase()] = s.slice(e + 1).replace(/^"|"$/g, ""); });
+  return { name: parts[0].toUpperCase(), params, value: l.slice(i + 1) };
+}
+function parseDuration(v) {
+  const m = /^([+-])?P(?:(\d+)W)?(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?)?$/.exec((v || "").trim());
+  if (!m) return null;
+  return (m[1] === "-" ? -1 : 1) * ((+(m[2] || 0) * 7 + +(m[3] || 0)) * DAY + (+(m[4] || 0) * 3600 + +(m[5] || 0) * 60 + +(m[6] || 0)) * 1000);
+}
+const WD = { SU: 0, MO: 1, TU: 2, WE: 3, TH: 4, FR: 5, SA: 6 };
+function expandRule(start, rule, ws, we, skip) {
+  const r = {}; rule.split(";").forEach(p => { const e = p.indexOf("="); if (e > 0) r[p.slice(0, e).toUpperCase()] = p.slice(e + 1); });
+  const freq = r.FREQ, iv = Math.max(1, +r.INTERVAL || 1), count = r.COUNT ? +r.COUNT : 0;
+  let until = null;
+  if (r.UNTIL) { const u = parseDT({ value: r.UNTIL, params: {} }); if (u) until = u.allDay ? new Date(u.y, u.mo - 1, u.d, 23, 59, 59).getTime() : toMs(u); }
+  const byday = (r.BYDAY || "").split(",").filter(Boolean).map(s => { const m = /^([+-]?\d+)?(SU|MO|TU|WE|TH|FR|SA)$/.exec(s.trim().toUpperCase()); return m ? { n: m[1] ? +m[1] : 0, wd: WD[m[2]] } : null; }).filter(Boolean);
+  const bymd = (r.BYMONTHDAY || "").split(",").filter(Boolean).map(Number);
+  const wkst = WD[(r.WKST || "MO").toUpperCase()] || 1;
+  const startMs = toMs(start), out = [];
+  let produced = 0, guard = 0;
+  /* Jump close to the window when nothing needs counting from the start. */
+  const spanDays = Math.floor((ws - startMs) / DAY) - 2;
+  let p = 0;
+  if (!count && spanDays > 0) {
+    if (freq === "DAILY") p = Math.floor(spanDays / iv);
+    else if (freq === "WEEKLY") p = Math.max(0, Math.floor(spanDays / 7 / iv) - 1);
+    else if (freq === "MONTHLY") p = Math.max(0, Math.floor(spanDays / 31 / iv) - 1);
+    else if (freq === "YEARLY") p = Math.max(0, Math.floor(spanDays / 366 / iv) - 1);
+  }
+  const weekBase = addDays(start, -((wday(start) - wkst + 7) % 7));
+  for (; p < 20000 && guard < 50000; p++) {
+    let cands = [];
+    if (freq === "DAILY") cands = [addDays(start, p * iv)];
+    else if (freq === "WEEKLY") {
+      const base = addDays(weekBase, p * 7 * iv);
+      const days = byday.length ? byday.map(b => b.wd) : [wday(start)];
+      cands = days.map(w => addDays(base, (w - wkst + 7) % 7)).sort((a, b) => toMs(a) - toMs(b));
+    } else if (freq === "MONTHLY") {
+      const mi = start.mo - 1 + p * iv, y = start.y + Math.floor(mi / 12), mo = (mi % 12) + 1, dim = new Date(Date.UTC(y, mo, 0)).getUTCDate();
+      const mk = d => Object.assign({}, start, { y, mo, d });
+      if (byday.length) {
+        byday.forEach(b => {
+          const all = []; for (let d = 1; d <= dim; d++) if (new Date(Date.UTC(y, mo - 1, d)).getUTCDay() === b.wd) all.push(d);
+          if (!b.n) all.forEach(d => cands.push(mk(d))); else { const d = b.n > 0 ? all[b.n - 1] : all[all.length + b.n]; if (d) cands.push(mk(d)); }
+        });
+      } else (bymd.length ? bymd : [start.d]).forEach(md => { const d = md < 0 ? dim + md + 1 : md; if (d >= 1 && d <= dim) cands.push(mk(d)); });
+      cands.sort((a, b) => a.d - b.d);
+    } else if (freq === "YEARLY") {
+      const y = start.y + p * iv; if (!(start.mo === 2 && start.d === 29 && new Date(Date.UTC(y, 1, 29)).getUTCMonth() !== 1)) cands = [Object.assign({}, start, { y })];
+    } else break;
+    let stop = false;
+    for (const c of cands) {
+      guard++;
+      const ms = toMs(c);
+      if (ms < startMs) continue;
+      if ((until != null && ms > until) || (count && produced >= count) || ms > we) { stop = true; break; }
+      produced++;
+      if (!skip.has(keyOf(c, ms))) out.push(ms);
+    }
+    if (stop) break;
+  }
+  return out;
+}
+function parseICS(text, now) {
+  now = now || Date.now();
+  const ws = now - 183 * DAY, we = now + 183 * DAY;
+  const lines = text.replace(/\r\n?/g, "\n").replace(/\n[ \t]/g, "").split("\n");
+  const raw = [], stack = []; let cur = null;
+  for (const l of lines) {
+    if (!l.trim()) continue;
+    const p = parseLine(l); if (!p) continue;
+    if (p.name === "BEGIN") { const v = p.value.trim().toUpperCase(); stack.push(v); if (v === "VEVENT") cur = { props: {}, ex: [] }; continue; }
+    if (p.name === "END") { const v = stack.pop(); if (v === "VEVENT" && cur) { raw.push(cur); cur = null; } continue; }
+    if (cur && stack[stack.length - 1] === "VEVENT") { if (p.name === "EXDATE") cur.ex.push(p); else if (!cur.props[p.name]) cur.props[p.name] = p; }
+  }
+  const overrides = {};
+  raw.forEach(e => { const rid = parseDT(e.props["RECURRENCE-ID"]); if (rid) { const uid = (e.props.UID || {}).value || ""; (overrides[uid] = overrides[uid] || new Set()).add(keyOf(rid, toMs(rid))); } });
+  const out = [];
+  for (const e of raw) {
+    const P = e.props, st = parseDT(P.DTSTART); if (!st) continue;
+    if (P.STATUS && P.STATUS.value.trim().toUpperCase() === "CANCELLED") continue;
+    const s = P.SUMMARY ? unesc(P.SUMMARY.value) : "(No title)", loc = P.LOCATION ? unesc(P.LOCATION.value) : "";
+    const startMs = toMs(st), en = parseDT(P.DTEND);
+    let dur = en ? toMs(en) - startMs : P.DURATION ? parseDuration(P.DURATION.value) : null;
+    if (dur == null || dur < 0) dur = st.allDay ? DAY : 0;
+    const push = ms => { if (ms + dur >= ws && ms <= we) out.push({ t: ms, e: ms + dur, a: st.allDay ? 1 : 0, s, l: loc }); };
+    if (P.RRULE && !P["RECURRENCE-ID"]) {
+      const skip = new Set(overrides[(P.UID || {}).value || ""] || []);
+      e.ex.forEach(x => x.value.split(",").forEach(v => { const d = parseDT({ value: v, params: x.params }); if (d) skip.add(keyOf(d, toMs(d))); }));
+      expandRule(st, P.RRULE.value, ws, we, skip).forEach(push);
+    } else push(startMs);
+  }
+  out.sort((a, b) => a.t - b.t);
+  return out.slice(0, 6000);
+}
+
+/* ================= Helpers ================= */
+const pad = n => String(n).padStart(2, "0");
+function ymd(d) { return d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate()); }
+function parseYMD(s) { const [y, m, d] = s.split("-").map(Number); return new Date(y, m - 1, d, 12); }
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const fmtTime = d => d.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+const shortDate = d => d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+const longDate = d => d.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
+const FAM_C = { new: "var(--sky)", waxing: "var(--sky)", full: "var(--gold)", waning: "var(--ochre)" };
+const FAM_W = { new: "new moon", waxing: "waxing", full: "full moon", waning: "waning" };
+const store = {
+  get(k) { try { const v = localStorage.getItem("lunarlife." + k); return v == null ? null : JSON.parse(v); } catch (e) { return null; } },
+  set(k, v) { try { localStorage.setItem("lunarlife." + k, JSON.stringify(v)); return true; } catch (e) { return false; } },
+  del(k) { try { localStorage.removeItem("lunarlife." + k); } catch (e) { } }
+};
+/* Day info: phase at local noon; principal phase named only on the day it happens. */
+function dayInfo(d) {
+  const noon = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 12), l = getLunarData(noon);
+  const s = new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime(), evs = phaseEventsBetween(s, s + DAY);
+  const ev = evs.length ? evs[0].q : null;
+  let name = ev != null ? PHASES[ev * 2] : phaseName(l.phase, 0);
+  if (ev == null && /New|Full|Quarter/.test(name)) name = PHASES[Math.floor(l.phase * 4) * 2 + 1];
+  const fam = ev === 2 ? "full" : ev === 0 ? "new" : l.family === "full" ? (l.phase < .5 ? "waxing" : "waning") : l.family === "new" ? (l.phase > .5 ? "waning" : "new") : l.family;
+  return { l, ev, evAt: evs.length ? evs[0].d : null, name, fam };
+}
+
+/* ================= App ================= */
+if (typeof document !== "undefined") (function () {
+  const $ = id => document.getElementById(id);
+  const DEFAULT_LOC = { lat: 39.33, lon: -84.4, name: "West Chester, Ohio" };
+  let loc = store.get("loc") || DEFAULT_LOC;
+  let events = store.get("events") || [];
+  let index = {};
+  const now = new Date();
+  let view = { y: now.getFullYear(), m: now.getMonth() }, selected = ymd(now);
+
+  function buildIndex() {
+    index = {};
+    events.forEach(ev => {
+      const s = new Date(ev.t);
+      if (ev.a) { let d = new Date(s.getFullYear(), s.getMonth(), s.getDate()); for (let i = 0; i < 62 && d.getTime() < ev.e; i++) { (index[ymd(d)] = index[ymd(d)] || []).push(ev); d = new Date(d.getFullYear(), d.getMonth(), d.getDate() + 1); } }
+      else (index[ymd(s)] = index[ymd(s)] || []).push(ev);
+    });
+    Object.values(index).forEach(a => a.sort((x, y) => (y.a - x.a) || (x.t - y.t)));
+  }
+
+  /* Tonight */
+  function renderTonight() {
+    const d = new Date(), l = getLunarData(d), season = moonSeasonFor(d), fam = l.family;
+    l.phaseName = dayInfo(d).name; /* same naming as the month grid: principal phases only on their day */
+    $("bigmoon").innerHTML = moonSVG(l.phase, 300, l.phaseName + ", " + Math.round(l.illumination * 100) + " percent lit");
+    $("t-date").textContent = longDate(d);
+    $("t-phase").textContent = l.phaseName;
+    $("t-season").textContent = "The " + season[0];
+    $("t-meaning").textContent = season[1];
+    const nf = getNextFullMoon(d), nn = nextPhase(d, 0), sun = getSunTimes(d, loc.lat, loc.lon);
+    const when = x => x.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
+    const f = [
+      ["Illumination", Math.round(l.illumination * 100) + "%"],
+      ["Cycle", "Day " + (Math.floor(l.dayInCycle) + 1) + "<small>of about 29.5</small>"],
+      ["Next full moon", when(nf) + "<small>" + fmtTime(nf) + "</small>"],
+      ["Next new moon", when(nn) + "<small>" + fmtTime(nn) + "</small>"],
+      ["Sunrise", sun.polar ? "None today" : fmtTime(sun.sunrise)],
+      ["Sunset", sun.polar ? (sun.polar === "day" ? "Midnight sun" : "Polar night") : fmtTime(sun.sunset) + "<small>" + Math.floor(sun.dayLengthHrs) + "h " + Math.round((sun.dayLengthHrs % 1) * 60) + "m of light</small>"]
+    ];
+    $("t-facts").innerHTML = f.map(x => `<div><dt>${x[0]}</dt><dd>${x[1]}</dd></div>`).join("");
+    $("t-loc").textContent = "Sun times for " + loc.name;
+    const rows = [["waxing", "Waxing", "Build. Start, call, commit, refine.", "var(--sky)"], ["full", "Full", "The hard conversations and the launches.", "var(--gold)"], ["waning", "Waning", "Rest and reconsider. Share, release, set down.", "var(--ochre)"]];
+    const nowRow = fam === "new" ? (l.phase > .5 ? "waning" : "waxing") : fam;
+    $("cycle").innerHTML = rows.map(r => `<li class="${r[0] === nowRow ? "now" : ""}" style="--c:${r[3]}"><b>${r[1]}</b><span>${r[2]}${r[0] === nowRow ? '<em>Now</em>' : ""}</span></li>`).join("");
+    const en = getCycleEnergy(l.phaseName);
+    $("t-energy").textContent = en[0] + ". " + en[1];
+    return { l, season };
+  }
+  $("geo").addEventListener("click", () => {
+    const st = $("status");
+    if (!navigator.geolocation) { $("t-loc").textContent = "This browser can't share a location. Sun times for " + loc.name; return; }
+    $("geo").disabled = true; $("geo").textContent = "Finding you…";
+    navigator.geolocation.getCurrentPosition(p => {
+      loc = { lat: +p.coords.latitude.toFixed(3), lon: +p.coords.longitude.toFixed(3), name: "your location (" + p.coords.latitude.toFixed(2) + ", " + p.coords.longitude.toFixed(2) + ")" };
+      store.set("loc", loc); $("geo").textContent = "Update my location"; $("geo").disabled = false; renderTonight();
+    }, () => { $("geo").disabled = false; $("geo").textContent = "Use my location"; $("t-loc").textContent = "We couldn't get a location. Sun times for " + loc.name; }, { timeout: 12000, maximumAge: 6 * 3600e3 });
+  });
+
+  /* Calendar door */
+  const status = (msg, warn) => { const s = $("status"); s.textContent = msg; s.classList.toggle("warn", !!warn); };
+  function syncMeta() {
+    const at = store.get("at"), feed = store.get("feed");
+    $("last").textContent = at && events.length ? "Last brought in: " + new Date(at).toLocaleString([], { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) + " · " + events.length + " events" : "";
+    $("forget").hidden = !(events.length || feed);
+    $("refresh").disabled = !feed;
+    if (feed && !$("feed").value) $("feed").value = feed;
+    $("privacy").textContent = RELAY ? "Your feed link passes through our relay. Your events stay in this browser." : "Nothing leaves this browser.";
+  }
+  function accept(text, source) {
+    if (!/BEGIN:VCALENDAR/i.test(text)) { status("That didn't look like a calendar. We expected an .ics file or feed.", true); return; }
+    let parsed;
+    try { parsed = parseICS(text); } catch (e) { console.error(e); status("We couldn't read that calendar. Try downloading a fresh .ics.", true); return; }
+    events = parsed; buildIndex();
+    const ok = store.set("events", events) & store.set("at", Date.now());
+    status("Brought in " + events.length + " events from " + source + " within six months either side of today." + (ok ? "" : " This browser won't keep them, so they last for this visit."));
+    syncMeta(); renderMonth();
+  }
+  async function bring() {
+    let url = $("feed").value.trim();
+    if (!url) { status("Paste a feed link first.", true); $("feed").focus(); return; }
+    url = url.replace(/^webcal:\/\//i, "https://");
+    if (!/^https?:\/\//i.test(url)) { status("That link should start with https://", true); return; }
+    store.set("feed", url); syncMeta();
+    status("Reading your feed…");
+    try {
+      const res = await fetch(RELAY ? RELAY + "?url=" + encodeURIComponent(url) : url, { cache: "no-store" });
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      accept(await res.text(), "your feed");
+    } catch (e) {
+      status("This feed can't be read straight from the browser. Download the .ics from the same settings page and drop it below, or wait for the relay we're adding.", true);
+    }
+  }
+  $("bring").addEventListener("click", bring);
+  $("refresh").addEventListener("click", bring);
+  $("feed").addEventListener("keydown", e => { if (e.key === "Enter") bring(); });
+  function readFile(f) {
+    if (!f) return;
+    if (!/\.ics$/i.test(f.name) && f.type !== "text/calendar") { status("That file isn't an .ics calendar.", true); return; }
+    status("Reading " + f.name + "…");
+    const r = new FileReader(); r.onload = () => accept(String(r.result), f.name); r.onerror = () => status("We couldn't open that file.", true); r.readAsText(f);
+  }
+  const drop = $("drop");
+  ["dragenter", "dragover"].forEach(t => drop.addEventListener(t, e => { e.preventDefault(); drop.classList.add("over"); }));
+  ["dragleave", "drop"].forEach(t => drop.addEventListener(t, e => { e.preventDefault(); drop.classList.remove("over"); }));
+  drop.addEventListener("drop", e => readFile(e.dataTransfer.files[0]));
+  $("file").addEventListener("change", e => { readFile(e.target.files[0]); e.target.value = ""; });
+  $("forget").addEventListener("click", () => {
+    ["events", "at", "feed"].forEach(store.del); events = []; buildIndex(); $("feed").value = "";
+    status("Forgotten. Your calendar is gone from this browser."); syncMeta(); renderMonth();
+  });
+
+  /* Month */
+  function renderMonth() {
+    const y = view.y, m = view.m, first = new Date(y, m, 1), dim = new Date(y, m + 1, 0).getDate(), todayK = ymd(new Date());
+    $("m-title").textContent = first.toLocaleDateString("en-US", { month: "long", year: "numeric" });
+    let h = "";
+    for (let i = 0; i < first.getDay(); i++) h += '<div class="day blank" aria-hidden="true"></div>';
+    for (let d = 1; d <= dim; d++) {
+      const date = new Date(y, m, d), k = ymd(date), info = dayInfo(date), evs = index[k] || [], c = FAM_C[info.fam];
+      const lbl = info.ev === 2 ? '<span class="lbl full">FULL</span>' : info.ev === 0 ? '<span class="lbl">NEW</span>' : '<span class="lbl" aria-hidden="true">&nbsp;</span>';
+      const aria = longDate(date) + ", " + info.name.toLowerCase() + ", " + (evs.length ? evs.length + (evs.length === 1 ? " event" : " events") : "no events") + (k === todayK ? ", today" : "");
+      const dots = evs.slice(0, 3).map(e => `<i class="dot" style="--c:${c}" title="${esc(e.s)} (${FAM_W[info.fam]})"></i>`).join("");
+      const titles = evs.slice(0, 2).map(e => `<span class="ev-t" style="--c:${c}" title="${esc(e.s)}">${esc(e.s)}</span>`).join("") + (evs.length > 2 ? `<span class="ev-more">+${evs.length - 2} more</span>` : "");
+      h += `<button type="button" class="day${k === todayK ? " today" : ""}${k === selected ? " sel" : ""}${k < todayK ? " past" : ""}" data-k="${k}" aria-label="${esc(aria)}" aria-pressed="${k === selected}"><span class="top"><span class="n">${d}</span>${tinyMoon(info.l.phase, 18)}</span>${lbl}<span class="dots">${dots}</span>${titles}</button>`;
+    }
+    const tail = (7 - ((first.getDay() + dim) % 7)) % 7;
+    for (let i = 0; i < tail; i++) h += '<div class="day blank" aria-hidden="true"></div>';
+    $("grid").innerHTML = h;
+    renderDay();
+  }
+  function renderDay() {
+    const box = $("daypanel");
+    if (!selected || !selected.startsWith(view.y + "-" + pad(view.m + 1))) { box.innerHTML = ""; return; }
+    const date = parseYMD(selected), info = dayInfo(date), evs = index[selected] || [], en = getCycleEnergy(info.name);
+    const night = getLunarData(new Date(date.getFullYear(), date.getMonth(), date.getDate(), 21));
+    const sky = date.getFullYear() === 2026 ? ASTRO_2026.filter(e => e[0] === selected) : [];
+    const list = evs.length ? '<ul class="evs">' + evs.map(e => `<li><span class="t">${e.a ? "All day" : fmtTime(new Date(e.t))}</span><span class="s">${esc(e.s)}${e.l ? `<span class="l">${esc(e.l)}</span>` : ""}</span></li>`).join("") + "</ul>"
+      : `<p class="empty">${events.length ? "Nothing on your calendar this day." : "Bring your calendar in above and your events show up here."}</p>`;
+    const skyL = sky.length ? '<ul class="evs" style="margin-top:10px">' + sky.map(e => `<li><span class="t">In the sky</span><span class="s">${esc(e[2])}<span class="l">${esc(e[3])}</span></span></li>`).join("") + "</ul>" : "";
+    box.innerHTML = `<div class="card daypanel" tabindex="-1" id="dp"><div class="dp-head">${moonSVG(night.phase, 72, info.name)}<div><h4>${longDate(date)}</h4><p>${info.name}${info.evAt ? " at " + fmtTime(info.evAt) : ""} · ${Math.round(night.illumination * 100)}% lit that night</p></div></div><p class="dp-energy">${en[0]}. ${en[1]}</p>${list}${skyL}</div>`;
+  }
+  $("grid").addEventListener("click", e => {
+    const b = e.target.closest("button.day"); if (!b) return;
+    selected = b.dataset.k; renderMonth();
+    const nb = $("grid").querySelector(`[data-k="${selected}"]`); if (nb) nb.focus();
+  });
+  const shift = n => { view.m += n; if (view.m < 0) { view.m = 11; view.y--; } if (view.m > 11) { view.m = 0; view.y++; } renderMonth(); };
+  $("m-prev").addEventListener("click", () => shift(-1));
+  $("m-next").addEventListener("click", () => shift(1));
+  $("m-today").addEventListener("click", () => { const t = new Date(); view = { y: t.getFullYear(), m: t.getMonth() }; selected = ymd(t); renderMonth(); });
+  let sx = null, sy = null;
+  $("grid").addEventListener("touchstart", e => { sx = e.touches[0].clientX; sy = e.touches[0].clientY; }, { passive: true });
+  $("grid").addEventListener("touchend", e => {
+    if (sx == null) return; const dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy; sx = null;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) shift(dx < 0 ? 1 : -1);
+  }, { passive: true });
+
+  /* Year's sky */
+  function renderSky() {
+    const t = ymd(new Date()), soon = ymd(new Date(Date.now() + 14 * DAY));
+    const item = (e, i) => { const d = parseYMD(e[0]), ty = TYPE[e[1]]; return `<li class="${e[0] >= t && e[0] <= soon ? "soon" : ""}"><div class="d">${d.toLocaleDateString("en-US", { month: "short" })}<b>${d.getDate()}</b></div><div><span class="tag"><i class="dot" style="--c:${ty[1]}"></i>${ty[0]}</span><h3>${esc(e[2])}</h3><p>${esc(e[3])}</p>${e[4] ? `<p class="teach">${esc(e[4])}</p>` : ""}</div></li>`; };
+    const up = ASTRO_2026.filter(e => e[0] >= t), past = ASTRO_2026.filter(e => e[0] < t);
+    const head = up.slice(0, 8), rest = up.slice(8).concat(past);
+    $("sky-up").innerHTML = head.length ? head.map(item).join("") : '<li><div></div><p>The 2026 list is complete. A new year of sky arrives soon.</p></li>';
+    $("sky-more").innerHTML = (up.length > 8 ? up.slice(8).map(item).join("") : "") + (past.length ? '<li><div></div><p class="k" style="margin:0">Earlier this year</p></li>' + past.map(item).join("") : "");
+    $("sky-more-wrap").hidden = !rest.length;
+  }
+
+  /* Traditions */
+  function renderTraditions(l, season) {
+    const h = getHarmony(new Date(), l, season);
+    $("synth").textContent = h.synthesis;
+    $("trads").innerHTML = h.items.map(it => `<article class="card trad"><h3><i class="dot" style="--c:${it.c}"></i>${esc(it.label)}</h3>${it.when ? `<p class="when">${esc(it.when)}</p>` : ""}<dl>${it.ev.map(e => `<dt>${esc(e[0])}</dt><dd>${esc(e[1])}</dd>`).join("")}</dl></article>`).join("");
+  }
+
+  buildIndex(); syncMeta();
+  const t = renderTonight(); renderMonth(); renderSky(); renderTraditions(t.l, t.season);
+  if (events.length) status("");
+  /* Roll over at midnight and keep Tonight fresh. */
+  let lastDay = ymd(new Date());
+  setInterval(() => { const k = ymd(new Date()); const r = renderTonight(); if (k !== lastDay) { lastDay = k; renderMonth(); renderSky(); renderTraditions(r.l, r.season); } }, 10 * 60e3);
+
+  /* Star field: a few dozen slow motes in gold and paper over faint fixed stars. */
+  const cv = $("sky"), ctx = cv.getContext && cv.getContext("2d");
+  if (ctx) {
+    const reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let W = 0, H = 0, stars = [], motes = [];
+    const size = () => {
+      const dpr = Math.min(2, window.devicePixelRatio || 1); W = innerWidth; H = innerHeight;
+      cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      stars = Array.from({ length: Math.min(160, Math.round(W * H / 9000)) }, () => ({ x: Math.random() * W, y: Math.random() * H, r: Math.random() * .7 + .3, a: Math.random() * .35 + .1 }));
+      if (!motes.length) motes = Array.from({ length: 40 }, () => ({ x: Math.random() * W, y: Math.random() * H, r: Math.random() + 1, gold: Math.random() < .55, vx: (Math.random() - .5) * .08, vy: -(Math.random() * .06 + .015), ph: Math.random() * 6.28, sp: Math.random() * .0006 + .0002 }));
+    };
+    const draw = ts => {
+      ctx.clearRect(0, 0, W, H);
+      for (const s of stars) { ctx.fillStyle = `rgba(243,239,231,${s.a})`; ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, 6.283); ctx.fill(); }
+      for (const m of motes) {
+        if (!reduce) { m.x += m.vx; m.y += m.vy; if (m.y < -4) { m.y = H + 4; m.x = Math.random() * W; } if (m.x < -4) m.x = W + 4; if (m.x > W + 4) m.x = -4; }
+        const a = .25 + .3 * (0.5 + 0.5 * Math.sin((ts || 0) * m.sp + m.ph));
+        ctx.fillStyle = m.gold ? `rgba(217,178,90,${a})` : `rgba(243,239,231,${a * .8})`;
+        ctx.beginPath(); ctx.arc(m.x, m.y, m.r, 0, 6.283); ctx.fill();
+      }
+      if (!reduce) requestAnimationFrame(draw);
+    };
+    size(); addEventListener("resize", () => { size(); if (reduce) draw(0); });
+    reduce ? draw(0) : requestAnimationFrame(draw);
+  }
+})();
+
+/* ================= Self-test (console only) ================= */
+function selfTest() {
+  try {
+    const base = new Date(); base.setHours(0, 0, 0, 0);
+    const mon = new Date(base); mon.setDate(mon.getDate() - ((mon.getDay() + 6) % 7)); /* this week's Monday */
+    const f = d => d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate());
+    const wed2 = new Date(mon); wed2.setDate(wed2.getDate() + 9);
+    const ics = ["BEGIN:VCALENDAR", "VERSION:2.0",
+      "BEGIN:VEVENT", "UID:a@test", "DTSTART;TZID=America/New_York:" + f(mon) + "T090000", "DTEND;TZID=America/New_York:" + f(mon) + "T093000",
+      "RRULE:FREQ=WEEKLY;BYDAY=MO,WE;COUNT=6", "EXDATE;TZID=America/New_York:" + f(wed2) + "T090000",
+      "SUMMARY:Standup\\, weekly", " folded", "LOCATION:Kitchen table", "BEGIN:VALARM", "TRIGGER:-PT10M", "SUMMARY:alarm", "END:VALARM", "END:VEVENT",
+      "BEGIN:VEVENT", "UID:b@test", "DTSTART;VALUE=DATE:" + f(base), "DTEND;VALUE=DATE:" + f(new Date(base.getTime() + 2 * DAY + 3600e3)), "SUMMARY:Retreat", "END:VEVENT",
+      "END:VCALENDAR"].join("\r\n");
+    const ev = parseICS(ics);
+    const weekly = ev.filter(e => e.s.startsWith("Standup")), allDay = ev.filter(e => e.a);
+    const checks = [
+      ["weekly RRULE expands to 6 minus 1 EXDATE", weekly.length === 5],
+      ["escaped comma and folded line", weekly[0] && weekly[0].s === "Standup, weeklyfolded"],
+      ["VALARM summary ignored", !ev.some(e => e.s === "alarm")],
+      ["weekly lands on Mon and Wed", weekly.every(e => [1, 3].includes(new Date(e.t).getDay()) || new Date(e.t).getTimezoneOffset() !== new Date(mon).getTimezoneOffset())],
+      ["all-day spans two days", allDay.length === 1 && Math.round((allDay[0].e - allDay[0].t) / DAY) === 2],
+      ["location kept", weekly[0] && weekly[0].l === "Kitchen table"]
+    ];
+    const bad = checks.filter(c => !c[1]);
+    console[bad.length ? "warn" : "log"]("[Lunar Life] ICS self-test: " + (checks.length - bad.length) + "/" + checks.length + " passed" + (bad.length ? ". Failed: " + bad.map(c => c[0]).join("; ") : "."));
+    return !bad.length;
+  } catch (e) { console.warn("[Lunar Life] ICS self-test error", e); return false; }
+}
+selfTest();
+</script>
+</body>
+</html>
