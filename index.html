@@ -4,42 +4,76 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Free tools · Dustin Nimmo</title>
-<meta name="description" content="Free tools for the community, by Dustin Nimmo.">
+<meta name="description" content="Free tools for the community from Dustin Nimmo: civic tools built from the public record, and recipes for working with the AI you already have.">
+<link rel="icon" href="https://framerusercontent.com/images/Zzrw2Ac0JKIAchf6nu5ApLHKFcg.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
 <style>
-:root{--paper:#F3EFE7;--rule:#D8D0C2;--ink:#1B1917;--ink3:#6B645B;--walnut:#5A3A2A;--gold:#B98A2E}
+:root{--paper:#F3EFE7;--paper2:#E9E3D6;--rule:#D8D0C2;--ink:#1B1917;--ink3:#6B645B;--walnut:#5A3A2A;--gold:#B98A2E}
 *{box-sizing:border-box}html{background:var(--paper)}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:Newsreader,Georgia,serif;font-size:20px;line-height:1.5;-webkit-font-smoothing:antialiased}
-.wrap{max-width:720px;margin:0 auto;padding:0 20px}
-.band{display:block;width:100%;height:auto;aspect-ratio:21/9;object-fit:cover;object-position:35% 45%;border-radius:10px;margin:36px 0 0}
-header{padding:28px 0 0}
-.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:Fraunces,serif;font-weight:600;font-size:20px}
-.mark{width:28px;height:28px;position:relative}.mark i{position:absolute;width:6px;height:6px;border-radius:50%}
-.mark i:nth-child(1){background:#4C7BB8;left:11px;top:0}.mark i:nth-child(2){background:var(--gold);right:0;top:9px}.mark i:nth-child(3){background:var(--walnut);right:3px;bottom:0}.mark i:nth-child(4){background:#A89F93;left:3px;bottom:0}.mark i:nth-child(5){background:var(--gold);left:0;top:9px}
-.mark:before{content:"";position:absolute;inset:3px;border:1px solid var(--rule);border-radius:50%}
-h1{font-family:Fraunces,serif;font-weight:400;font-size:clamp(38px,7vw,60px);line-height:1.05;letter-spacing:-.015em;margin:40px 0 40px}
-ul{list-style:none;padding:0;margin:0;border-top:1px solid var(--rule)}
-li{border-bottom:1px solid var(--rule)}
-li a{display:block;padding:26px 0;text-decoration:none;color:var(--ink)}
-li a:hover .t{color:var(--walnut)}
-.t{font-family:Fraunces,serif;font-weight:600;font-size:clamp(24px,3.4vw,30px);line-height:1.15;margin:0 0 6px}
-.d{color:var(--ink3);margin:0;font-size:19px}
-footer{margin:72px 0 48px;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink3)}
-footer a{color:var(--ink3);text-decoration:none}
+.hero{position:relative;min-height:62vh;display:flex;align-items:flex-end;color:#F3EFE7;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:35% 50%}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(27,25,22,.15) 0%,rgba(27,25,22,.78) 100%)}
+.hero .in{position:relative;z-index:1;max-width:1120px;width:100%;margin:0 auto;padding:120px 20px 56px}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#D9B25A;display:flex;align-items:center;gap:12px}
+.eyebrow:before{content:"";width:28px;height:1px;background:currentColor}
+h1{font-family:Fraunces,serif;font-weight:400;font-size:clamp(42px,7vw,76px);line-height:1.02;letter-spacing:-.02em;margin:18px 0 18px;max-width:14ch}
+h1 em{font-style:italic}
+.hero p{max-width:44ch;font-size:clamp(19px,2vw,22px);color:#E9E3D6;margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.group{margin-top:80px}
+.group h2{font-family:Fraunces,serif;font-weight:400;font-size:clamp(28px,3.4vw,38px);margin:14px 0 8px}
+.group .sub{color:var(--ink3);margin:0 0 28px;max-width:56ch}
+.eyebrow.dark{color:var(--gold)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+.tile{display:flex;flex-direction:column;text-decoration:none;color:var(--ink);background:var(--paper2);border:1px solid var(--rule);border-radius:12px;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}
+.tile:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(44,33,26,.12)}
+.tile img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
+.tile .body{padding:22px 24px 24px;display:flex;flex-direction:column;gap:8px;flex:1}
+.tile .tag{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.tile .t{font-family:Fraunces,serif;font-weight:600;font-size:26px;line-height:1.15;margin:0}
+.tile .d{color:var(--ink3);margin:0;font-size:18px}
+.tile .go{margin-top:auto;padding-top:10px;font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--walnut)}
+.ask{margin-top:88px;border-top:1px solid var(--rule);padding-top:40px;display:flex;flex-wrap:wrap;gap:18px 40px;align-items:center;justify-content:space-between}
+.ask p{margin:0;font-family:Fraunces,serif;font-size:clamp(22px,2.6vw,28px);max-width:30ch}
+.ask a{font-family:"IBM Plex Mono",monospace;font-size:13px;background:var(--walnut);color:var(--paper);text-decoration:none;padding:13px 20px;border-radius:999px}
 </style>
 </head>
-<body>
-<header class="wrap"><a class="brand" href="https://dustinnimmo.com"><span class="mark"><i></i><i></i><i></i><i></i><i></i></span>DNSC</a></header>
+<body class="has-shell">
+<nav class="site-nav"><div class="in"><a class="brand" href="https://www.dustinnimmo.com"><span class="mark"><i></i><i></i><i></i><i></i><i></i></span>DNSC</a><div class="links"><a href="https://www.dustinnimmo.com/#what-i-do">What we do</a><a href="https://www.dustinnimmo.com/how-we-work">How we work</a><a class="keep" href="https://tools.dustinnimmo.com/" aria-current="page">Tools</a></div><a class="cta" href="https://www.dustinnimmo.com/#contact">Start a conversation</a></div></nav>
+<header class="hero">
+<img src="assets/flag-sunrise-full.jpg" alt="An American flag at sunrise on a porch in Ohio, photographed by Dustin Nimmo">
+<div class="in">
+<div class="eyebrow">Free tools</div>
+<h1>Made for the community, <em>given away.</em></h1>
+<p>Tools built in the open: some from the public record, some for working with the AI you already have. Use them, share them, and tell us what to build next.</p>
+</div>
+</header>
 <main class="wrap">
-<img class="band" src="assets/flag-sunrise.jpg" alt="An American flag at sunrise on a porch in Ohio, photographed by Dustin Nimmo" width="1800" height="771">
-<h1>Free tools for the community.</h1>
-<ul>
-<li><a href="follow-the-money/"><p class="t">Follow the Money: The Lakota Bond Issue</p><p class="d">What Issue 2 would cost your home, from the public record.</p></a></li>
-<li><a href="ai-gauges/"><p class="t">AI Gauges</p><p class="d">A dashboard for your own AI use: tokens, energy, water, carbon.</p></a></li>
-<li><a href="recipes/"><p class="t">Recipe cards</p><p class="d">Working systems for the AI you already have: the prompt, the rules, the rhythm.</p></a></li>
-</ul>
+<section class="group">
+<div class="eyebrow dark">Civic</div>
+<h2>Know what the decisions cost.</h2>
+<p class="sub">Plain answers from public records, so neighbors can talk about the same numbers.</p>
+<div class="tiles">
+<a class="tile" href="follow-the-money/"><img src="assets/flag-pole.jpg" style="object-position:50% 18%" alt="An American flag on a pole against the sky" loading="lazy"><div class="body"><span class="tag">Lakota schools · Issue 2</span><p class="t">Follow the Money</p><p class="d">What the bond issue would cost your home, from the public record.</p><span class="go">Open the tool →</span></div></a>
+</div>
+</section>
+<section class="group">
+<div class="eyebrow dark">Working with AI</div>
+<h2>Use what you already have, on purpose.</h2>
+<p class="sub">The same practices we teach, free to take home.</p>
+<div class="tiles">
+<a class="tile" href="recipes/"><img src="assets/heart-leaf.jpg" alt="A leaf with a heart cut out of it" loading="lazy"><div class="body"><span class="tag">Recipes</span><p class="t">The Recipe Book</p><p class="d">Working systems for the AI you already have: what it does, the rules it keeps, the prompt and the rhythm.</p><span class="go">Open the book →</span></div></a>
+<a class="tile" href="ai-gauges/"><img src="assets/sky-rays.jpg" alt="Light breaking through clouds" loading="lazy"><div class="body"><span class="tag">Dashboard</span><p class="t">AI Gauges</p><p class="d">See your own AI use: tokens, energy, water and carbon, from your own exports.</p><span class="go">Open the gauges →</span></div></a>
+</div>
+</section>
+<section class="ask">
+<p>Want help putting these to work with your people?</p>
+<a href="https://www.dustinnimmo.com/#contact">Start a conversation</a>
+</section>
 </main>
-<footer class="wrap">Dustin Nimmo · <a href="https://dustinnimmo.com">dustinnimmo.com</a></footer>
+<footer class="site-foot"><div class="in"><span>DNSC · Dustin Nimmo Strategic Consulting</span><span class="nav"><a href="https://www.dustinnimmo.com">Home</a><a href="https://www.dustinnimmo.com/how-we-work">How we work</a><a href="https://tools.dustinnimmo.com/">Tools</a><a href="https://tools.dustinnimmo.com/recipes/">The Recipe Book</a><a href="https://www.dustinnimmo.com/#contact">Contact</a></span><span class="credit">Free to use. All photography by Dustin Nimmo, from his own work.</span></div></footer>
 </body>
 </html>

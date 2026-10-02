@@ -4,9 +4,6 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:Newsreader,Ge
 .wrap{max-width:760px;margin:0 auto;padding:0 20px}
 header{padding:28px 0 0;display:flex;justify-content:space-between;align-items:center}
 .brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:Fraunces,serif;font-weight:600;font-size:20px}
-.mark{width:28px;height:28px;position:relative}.mark i{position:absolute;width:6px;height:6px;border-radius:50%}
-.mark i:nth-child(1){background:var(--sky);left:11px;top:0}.mark i:nth-child(2){background:var(--gold);right:0;top:9px}.mark i:nth-child(3){background:var(--walnut);right:3px;bottom:0}.mark i:nth-child(4){background:#A89F93;left:3px;bottom:0}.mark i:nth-child(5){background:var(--gold);left:0;top:9px}
-.mark:before{content:"";position:absolute;inset:3px;border:1px solid var(--rule);border-radius:50%}
 .crumb{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.06em;color:var(--ink3);text-decoration:none}
 .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:72px 0 10px}
 h1{font-family:Fraunces,serif;font-weight:400;font-size:clamp(36px,6vw,54px);line-height:1.05;letter-spacing:-.015em;margin:0 0 16px}

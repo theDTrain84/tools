@@ -1,0 +1,21 @@
+/* Shared shell for tools.dustinnimmo.com: nav + footer that match dustinnimmo.com */
+.site-nav{position:sticky;top:0;z-index:20;background:rgba(243,239,231,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid #D8D0C2}
+.site-nav .in{max-width:1120px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;gap:24px}
+.site-nav .brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:#1B1917;font-family:Fraunces,serif;font-weight:600;font-size:20px;margin-right:auto}
+.site-nav .links{display:flex;gap:22px}
+.site-nav .links a{font-family:"IBM Plex Mono",monospace;font-size:13px;color:#6B645B;text-decoration:none}
+.site-nav .links a:hover,.site-nav .links a[aria-current]{color:#1B1917}
+.site-nav .cta{font-family:"IBM Plex Mono",monospace;font-size:13px;background:#5A3A2A;color:#F3EFE7;text-decoration:none;padding:10px 16px;border-radius:999px;white-space:nowrap}
+.site-nav .cta:hover{background:#1B1917}
+.mark{width:28px;height:28px;position:relative;display:inline-block}.mark i{position:absolute;width:7px;height:7px;border-radius:50%}
+.mark:before{content:"";position:absolute;inset:3px;border:2px solid #5A3A2A;border-radius:50%}
+.mark i:nth-child(1){background:#4C7BB8;left:10.5px;top:0}.mark i:nth-child(2){background:#B98A2E;right:0;top:8px}.mark i:nth-child(3){background:#5A3A2A;right:3px;bottom:1px}.mark i:nth-child(4){background:#A89F93;left:3px;bottom:1px}.mark i:nth-child(5){background:#D9B25A;left:0;top:8px}
+@media (max-width:720px){.site-nav .links a:not(.keep){display:none}.site-nav .in{gap:14px}.site-nav .cta{padding:9px 13px;font-size:12px}}
+.site-foot{background:#1B1916;color:#A69686;margin-top:96px}
+.site-foot .in{max-width:1120px;margin:0 auto;padding:44px 20px 40px;display:flex;flex-wrap:wrap;gap:18px 40px;justify-content:space-between;font-family:"IBM Plex Mono",monospace;font-size:12.5px}
+.site-foot a{color:#E9E3D6;text-decoration:none}.site-foot a:hover{color:#D9B25A}
+.site-foot .nav{display:flex;flex-wrap:wrap;gap:18px}
+.site-foot .credit{flex-basis:100%;color:#7A6A5D}
+
+body.has-shell{min-height:100vh;display:flex;flex-direction:column}body.has-shell>.site-foot{margin-top:auto}body.has-shell>.wrap,body.has-shell>main{width:100%}
+body.has-shell>.wrap,body.has-shell>main{padding-bottom:96px}
