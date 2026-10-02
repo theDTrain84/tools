@@ -1,0 +1,68 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The morning inbox · Recipe card</title><meta name="description" content="A recipe card: AI triages your inbox into three tiers, labels only, drafts the replies that need you, and sends a short digest. You still send every email.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css"></head>
+<body><div class="wrap">
+<header><a class="brand" href="https://dustinnimmo.com"><span class="mark"><i></i><i></i><i></i><i></i><i></i></span>DNSC</a><a class="crumb" href="../">← Recipe cards</a></header>
+<div class="eyebrow">Recipe card · 01</div>
+<h1>The morning inbox.</h1>
+<p class="lede">AI reads the inbox twice a day, sorts every thread into three tiers, labels them, drafts the replies that need you, and sends you a digest you can read in thirty seconds. It never sends, never archives, never deletes. You still send every email.</p>
+
+<blockquote>"It totally worked. It has, like, changed my life. I basically start every day at 6:00 a.m. now. I can stay on top of everything without bothering people."</blockquote>
+<p class="who">A CEO, ten weeks into working this way</p>
+
+<div class="card"><h3>What you need</h3>
+<ul>
+<li>An AI that can read your mail and make drafts. Claude with the Gmail connector works; so does any assistant with mail access and scheduled tasks.</li>
+<li>Three labels in your inbox: <b>Needs reply</b>, <b>Worth a look</b>, <b>Noise</b>.</li>
+<li>Two scheduled runs: 7 AM for overnight, 1 PM for the morning.</li>
+<li>Ten minutes to tell it who matters: your clients, your team, your partners, the deadlines that count.</li>
+</ul></div>
+
+<div class="card"><h3>The rules it keeps</h3>
+<ul>
+<li><b>Label only.</b> Nothing is archived, deleted or marked read by the machine.</li>
+<li><b>Drafts, never sends.</b> A reply draft waits in your drafts folder. You read it, change it, and you press send.</li>
+<li><b>No drafts to strangers.</b> Cold pitches get a line in the digest, never a reply.</li>
+<li><b>Short.</b> The digest fits in thirty seconds. The single most urgent thing comes first.</li>
+</ul></div>
+
+<h2>The prompt</h2>
+<p>Paste this into a scheduled task. Replace the parts in brackets with your own names and needs. Keep the rules.</p>
+<pre id="prompt">You are running [my name]'s twice-daily email triage. I get a flood of email and want only what matters surfaced.
+
+1. Search the inbox for messages received since the last run (the 7 AM run covers overnight; the 1 PM run covers the morning). Skip threads that already carry one of the triage labels unless a new message arrived since it was labeled.
+
+2. Classify every new thread into exactly one tier:
+   - NEEDS REPLY: a real person wrote to me and expects a response or a decision. My clients and partners: [names]. My team: [names or domain]. Warm introductions. Anything time-sensitive with a deadline: payroll, legal, invoices, contracts. Calendar confusion that needs untangling.
+   - WORTH A LOOK: informational but relevant. Meeting notes, financial notices that need awareness but no reply, calendar changes to meetings I organize, the newsletters I actually read: [names]. A cold pitch earns this tier only if it plausibly matches a real need of mine: [my needs]. Give it one line on why it might matter.
+   - NOISE: cold outreach with no fit, promotions, event marketing, automated notifications with no action, calendar accepts and declines.
+
+3. Apply the matching label to each thread. Never archive, delete or mark anything read. Label only.
+
+4. For each NEEDS REPLY thread where a reply from me is clearly expected (at most five per run), read the full thread and create a reply draft in my voice: [three words for your voice, for example warm, direct, short]. Do not draft replies to cold outreach or sales pitches. Never send.
+
+5. End with a digest I can read in under thirty seconds:
+   - NEEDS YOU (n): one line per item: who, what they want, the deadline if any, and "(draft ready)" if you drafted a reply.
+   - WORTH A LOOK (n): one line each.
+   - Noise filed: the count only.
+   Lead with the single most urgent thing if there is one.
+
+If the mail connection fails, stop and say so plainly.</pre>
+<button class="copy" onclick="navigator.clipboard.writeText(document.getElementById('prompt').innerText).then(()=>{this.textContent='Copied'})">Copy the prompt</button>
+
+<div class="rule">The line that makes it work: the machine proposes, you decide. That is true of every recipe here. The person holds the stakes, so the person presses send.</div>
+
+<h2>Variations</h2>
+<ul>
+<li><b>The daily briefing.</b> One morning email that summarizes all activity by project or deal across a team. Same rules, read-only, built for a CEO who wanted to stay on top of everything without bothering people.</li>
+<li><b>Call requests overnight.</b> Draft replies to scheduling requests so they are waiting at 7 AM.</li>
+<li><b>One person at a time.</b> Set it up for the person who gets the most mail first. Adoption lives in the surface a person already inhabits.</li>
+</ul>
+
+<h2>Where it came from</h2>
+<p>Built inside an investment bank over ten weeks, first for the CEO, then for a co-founder, then as a scheduled task the firm runs itself. The quote above is from the room, with the name left out on purpose.</p>
+
+<footer>Dustin Nimmo · <a href="https://dustinnimmo.com">dustinnimmo.com</a> · <a href="../">all recipe cards</a> · free to use and share</footer>
+</div></body></html>
