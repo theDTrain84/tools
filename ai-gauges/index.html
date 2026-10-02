@@ -57,7 +57,7 @@ h1{font-family:var(--num);font-weight:600;font-size:40px;line-height:1;margin:0;
 .wheel{width:.66em;height:1.2em;overflow:hidden;font-family:var(--num);font-weight:600;font-size:clamp(15px,2.4vw,21px);background:linear-gradient(#1b1d20,#26292d 50%,#1b1d20);border-radius:2px;color:var(--ink)}
 .wheel.lead{color:#4d4f52}
 .wheel.sep{width:.3em;background:none;color:#4d4f52;text-align:center}
-.strip{display:flex;flex-direction:column;transition:transform 1.4s cubic-bezier(.22,.9,.24,1)}
+.strip{display:flex;flex-direction:column}
 .strip span{height:1.2em;line-height:1.2em;text-align:center}
 .odo-cap{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
 /* trip computer strip */
@@ -141,7 +141,6 @@ h1{font-family:var(--num);font-weight:600;font-size:40px;line-height:1;margin:0;
 .drop .btns{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px}
 footer{margin-top:48px;padding-top:14px;border-top:1px solid var(--line);font-family:var(--mono);font-size:11.5px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 #tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--ground);font-size:12.5px;padding:7px 10px;border-radius:6px;z-index:10;max-width:260px;line-height:1.4}
-@media (prefers-reduced-motion:reduce){.strip{transition:none}}
 </style>
 </head>
 <body>
@@ -393,7 +392,7 @@ function niceScale(v,target){v=Math.max(v,1e-9);const raw=v/target,p=Math.pow(10
 const tickFmt=n=>n>=10000?+(n/1000).toFixed(1)+'K':String(+n.toFixed(2));
 const clamp01=x=>Math.max(0,Math.min(1,isFinite(x)?x:0));
 /* needles: each one remembers its angle and eases to the new one. No overshoot, no spin. */
-const ANG={},RAF={};
+const ANG={},RAF={},SNAP={};
 function swing(id,cx,cy,from,to){
   const set=a=>{const g=document.getElementById(id);if(g)g.setAttribute('transform',`rotate(${a.toFixed(2)} ${cx} ${cy})`);ANG[id]=a};
   cancelAnimationFrame(RAF[id]);
@@ -402,6 +401,8 @@ function swing(id,cx,cy,from,to){
   const dur=900+600*Math.min(1,Math.abs(to-a0)/240), t0=performance.now();
   const step=now=>{const t=Math.min(1,(now-t0)/dur),e=1-Math.pow(1-t,3);set(a0+(to-a0)*e);if(t<1)RAF[id]=requestAnimationFrame(step)};
   RAF[id]=requestAnimationFrame(step);
+  /* backstop: if frames are throttled (background tab, headless capture), land on the value anyway */
+  clearTimeout(SNAP[id]); SNAP[id]=setTimeout(()=>{if(ANG[id]!==to){cancelAnimationFrame(RAF[id]);set(to)}},dur+150);
 }
 const DEFS=`<defs>
   <radialGradient id="face" cx="50%" cy="42%" r="62%"><stop offset="0" stop-color="#1c1f23"/><stop offset=".7" stop-color="#101214"/><stop offset="1" stop-color="#08090a"/></radialGradient>
@@ -461,7 +462,15 @@ function arcGauge({id,frac,lo,hi,redLo,redHi,readout,label,mark}){
 function odometer(n){
   const box=$('#odoDigits'); const s=String(Math.max(0,Math.round(n))); const L=Math.max(9,s.length); const p=s.padStart(L,'0'); const firstSig=L-s.length;
   if(box.dataset.len!=String(L)){box.dataset.len=L;box.innerHTML=[...p].map(()=>`<span class="wheel"><span class="strip">${'0123456789'.split('').map(d=>`<span>${d}</span>`).join('')}</span></span>`).join('');void box.offsetHeight;}
-  [...box.children].forEach((w,i)=>{w.classList.toggle('lead',i<firstSig&&s!=='0'||(s==='0'&&i<L-1));w.firstChild.style.transform=`translateY(${-(+p[i])*10}%)`});
+  const wheels=[...box.children]; wheels.forEach((w,i)=>w.classList.toggle('lead',i<firstSig&&s!=='0'||(s==='0'&&i<L-1)));
+  /* roll every wheel from where it sits to its digit; JS-driven with a timed backstop so it always lands */
+  const from=wheels.map(w=>+(w.dataset.pos||0)), to=[...p].map(Number);
+  const put=(i,v)=>{wheels[i].dataset.pos=v;wheels[i].firstChild.style.transform=`translateY(${(-v*10).toFixed(3)}%)`};
+  cancelAnimationFrame(RAF.odo); clearTimeout(SNAP.odo);
+  if(REDUCED){to.forEach((v,i)=>put(i,v));return}
+  const dur=1400,t0=performance.now();
+  const step=now=>{const t=Math.min(1,(now-t0)/dur),e=1-Math.pow(1-t,3);to.forEach((v,i)=>put(i,from[i]+(v-from[i])*e));if(t<1)RAF.odo=requestAnimationFrame(step)};
+  RAF.odo=requestAnimationFrame(step); SNAP.odo=setTimeout(()=>{cancelAnimationFrame(RAF.odo);to.forEach((v,i)=>put(i,v))},dur+150);
   box.setAttribute('aria-label',`${Math.round(n).toLocaleString()} output tokens`);
 }
 /* ---------- evident charts, drawn at the container's real width so text stays 12 px ---------- */
