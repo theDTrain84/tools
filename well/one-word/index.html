@@ -60,6 +60,15 @@ h1{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:clamp(38px,9vw,5
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 @media(min-width:620px){.key{height:54px}}
 @media (prefers-reduced-motion:reduce){.rows{animation:none;opacity:1}.t.pop,.t.lift{animation:none}.key{transition:none}}
+
+details.how{margin:40px 0 0;max-width:56ch}
+details.how summary{list-style:none;cursor:pointer;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink3);padding:6px 0;display:inline-block}
+details.how summary::-webkit-details-marker{display:none}
+details.how summary::before{content:"+ ";color:var(--accent,var(--walnut))}
+details.how[open] summary::before{content:"\2212  "}
+details.how summary:hover{color:var(--ink)}
+details.how summary:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
+details.how p{margin:8px 0 0;font-size:16px;color:var(--ink3)}
 </style>
 </head>
 <body class="has-shell">
@@ -69,7 +78,7 @@ h1{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:clamp(38px,9vw,5
 <a class="crumb" href="../">← The Well</a>
 <p class="eyebrow">The Well · Daily</p>
 <h1>One Word</h1>
-<p class="lede">One word a day about working with AI. Six tries. The clue is what it teaches.</p>
+<p class="lede">One word a day about working with AI. When you find it, it teaches you something.</p>
 <p class="date" id="date"></p>
 
 <div class="board">
@@ -87,7 +96,7 @@ h1{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:clamp(38px,9vw,5
   <a href="../">← Back to The Well</a>
 </section>
 
-<p class="how">Type a five letter word and press Enter. <span class="sw" style="background:var(--walnut)"></span>Walnut means the right letter in the right spot, <span class="sw" style="background:var(--gold)"></span>gold means the letter is in the word somewhere else, and <span class="sw" style="background:var(--paper2);box-shadow:inset 0 0 0 1px var(--rule)"></span>paper means it is not in the word. A new word arrives each morning. Your guesses stay in this browser only.</p>
+<details class="how"><summary>How it works</summary><p>Type a five letter word and press Enter. <span class="sw" style="background:var(--walnut)"></span>Walnut means the right letter in the right spot, <span class="sw" style="background:var(--gold)"></span>gold means the letter is in the word somewhere else, and <span class="sw" style="background:var(--paper2);box-shadow:inset 0 0 0 1px var(--rule)"></span>paper means it is not in the word. A new word arrives each morning. Your guesses stay in this browser only.</p></details>
 </div>
 <footer class="site-foot"><div class="in"><span>DNSC · Dustin Nimmo Strategic Consulting</span><span class="nav"><a href="https://www.dustinnimmo.com">Home</a><a href="https://www.dustinnimmo.com/#three-ways">How we work</a><a href="https://tools.dustinnimmo.com/">Teaching &amp; tools</a><a href="https://tools.dustinnimmo.com/well/">The Well</a><a href="https://www.dustinnimmo.com/#contact">Contact</a></span><span class="credit">Free to use. Made by DNSC.</span></div></footer>
 <script>

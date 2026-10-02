@@ -51,7 +51,7 @@
 .done .q{color:var(--paper);border-color:#4A3A2F}
 .done .q:hover{border-color:var(--gold)}
 .done .copied{font-family:var(--mono);font-size:12px;color:var(--gold);margin-left:10px}
-.how{margin:40px 0 0;font-size:16px;color:var(--ink3);max-width:56ch}
+
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 @media (prefers-reduced-motion:reduce){.grid{animation:none;opacity:1}.cell .l.set{animation:none}}
 
@@ -60,3 +60,12 @@
 .done .src a{color:var(--gold)}
 .done .srck{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink4);margin:0 0 8px}
 .clues li .s{display:inline-block;margin:0 0 6px 36px;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent,var(--walnut));text-decoration:none}.clues li .s:hover{text-decoration:underline}
+
+details.how{margin:40px 0 0;max-width:56ch}
+details.how summary{list-style:none;cursor:pointer;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink3);padding:6px 0;display:inline-block}
+details.how summary::-webkit-details-marker{display:none}
+details.how summary::before{content:"+ ";color:var(--accent,var(--walnut))}
+details.how[open] summary::before{content:"\2212  "}
+details.how summary:hover{color:var(--ink)}
+details.how summary:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
+details.how p{margin:8px 0 0;font-size:16px;color:var(--ink3)}
