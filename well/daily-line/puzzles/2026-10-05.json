@@ -1,0 +1,89 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-10-05",
+ "no": 4,
+ "size": 7,
+ "g": [
+  "##MAP##",
+  "#TIGER#",
+  "ARSENAL",
+  "SIT#DIE",
+  "HEADING",
+  "#SKINS#",
+  "##EGG##"
+ ],
+ "a": [
+  [
+   "MAP",
+   "Draw the ground before you build on it"
+  ],
+  [
+   "TIGER",
+   "Big striped cat"
+  ],
+  [
+   "ARSENAL",
+   "A full kit of tools, ready for the job"
+  ],
+  [
+   "SIT",
+   "Take a seat at the table"
+  ],
+  [
+   "DIE",
+   "Cube with pips, rolled in a board game"
+  ],
+  [
+   "HEADING",
+   "Title at the top of a section"
+  ],
+  [
+   "SKINS",
+   "Peels on fruit"
+  ],
+  [
+   "EGG",
+   "Breakfast staple, or a bird's beginning"
+  ]
+ ],
+ "d": [
+  [
+   "ASH",
+   "What's left when the fire is out"
+  ],
+  [
+   "TRIES",
+   "Attempts; an agent may need a few"
+  ],
+  [
+   "MISTAKE",
+   "Name it plainly, fix it at the source, write the rule down"
+  ],
+  [
+   "AGE",
+   "Years lived"
+  ],
+  [
+   "DIG",
+   "Look deeper, as into where a fact came from"
+  ],
+  [
+   "PENDING",
+   "Waiting on a person's yes, like an agent's request"
+  ],
+  [
+   "RAINS",
+   "Pours from the sky"
+  ],
+  [
+   "LEG",
+   "One stage of a long trip"
+  ]
+ ],
+ "w": "MISTAKE",
+ "n": "Every AI makes mistakes, and so does every person who works with one. The practice is to name the mistake plainly, fix it at the source it came from, and write the rule down with its reason, so the next session starts from it. That is how a correction becomes a habit.",
+ "sources": [],
+ "cooked": "2026-10-02T22:45:00Z",
+ "checked": true
+}
