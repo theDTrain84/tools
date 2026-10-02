@@ -242,11 +242,12 @@
 
   function show(el){[form,watching,pass,ret].forEach(e=>e.hidden=e!==el);el.classList.remove('fade');void el.offsetWidth;el.classList.add('fade');}
   function release(text,dur,script,onDone){
+  try { if (window.wellSense) wellSense.play('place'); } catch (e) {}
     leaf={lines:wrap(text),born:performance.now(),dur,y:.36+.18*Math.random(),script,onDone,shown:-1};
     show(watching); breathOn(true); stage.focus({preventScroll:true});
     const r=box.getBoundingClientRect(); if(r.top<0||r.bottom>innerHeight)box.scrollIntoView({behavior:reduce?'auto':'smooth',block:'center'});
   }
-  function toPass(){breathOn(false);show(pass);form2.hidden=false;say('Gone downstream. What is left, now that it’s moving? You can set this on the water too, or leave.');$('gone').focus({preventScroll:true});}
+  function toPass(){try{if(window.wellSense)wellSense.play('hush');}catch(e){}breathOn(false);show(pass);form2.hidden=false;say('Gone downstream. What is left, now that it’s moving? You can set this on the water too, or leave.');$('gone').focus({preventScroll:true});}
   function toReturn(){breathOn(false);show(ret);say('Only time and practice move things. Come back when you need the water.');$('close').focus({preventScroll:true});}
 
   // 1. Name it
@@ -273,5 +274,6 @@
 })();
 </script>
 <script src="../../assets/site.js" defer></script>
+<script src="../../assets/sense.js" defer></script>
 </body>
 </html>

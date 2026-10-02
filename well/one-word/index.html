@@ -264,6 +264,7 @@ function enter(){
   },4*step+(reduce?360:520));
 }
 function finish(fresh,lead){
+  try { if (window.wellSense) wellSense.play('chime'); } catch (e) {}
   done=true;
   var won=st.g[st.g.length-1]===W;
   document.getElementById("doneK").textContent=won?"You found it":"Today's word";
@@ -311,5 +312,6 @@ else if(st.g.length)live("Welcome back. "+st.g.length+(st.g.length===1?" guess":
 })();
 </script>
 <script src="../../assets/site.js" defer></script>
+<script src="../../assets/sense.js" defer></script>
 </body>
 </html>

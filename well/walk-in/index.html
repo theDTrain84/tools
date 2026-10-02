@@ -88,6 +88,7 @@
     <button class="el" data-el="fire" aria-pressed="false">Fire</button>
     <button class="el" data-el="water" aria-pressed="false">Water</button>
     <button class="el" data-el="earth" aria-pressed="false">Earth</button>
+    <button class="el" data-el="wind" aria-pressed="false">Wind</button>
   </div>
 
   <div class="room">
@@ -138,7 +139,8 @@
     love: {a:'#4C7BB8',b:'#3E6A9E',motes:'#7FA3D8',drift:-0.12,size:2.0,count:50},
     fire: {a:'#B4862E',b:'#D9B25A',motes:'#E8A54A',drift:-0.45,size:1.8,count:80},
     water:{a:'#3E6A9E',b:'#7A6A5D',motes:'#8FB3DA',drift:0.3,size:1.4,count:90},
-    earth:{a:'#623E2A',b:'#7A6A5D',motes:'#A69686',drift:0.08,size:2.2,count:45}
+    earth:{a:'#623E2A',b:'#7A6A5D',motes:'#A69686',drift:0.08,size:2.2,count:45},
+    wind: {a:'#CFC6B8',b:'#A69686',motes:'#E9E3D7',drift:-0.9,size:1.1,count:120,lean:1.6}
   };
   const SEATS = ['#D9B25A','#3E6A9E','#B4862E','#F3EFE7','#A69686','#E8A54A','#7FA3D8'];
   let el = 'light', people = [];
@@ -159,7 +161,8 @@
     g.addColorStop(0, hex(E.a, 0.10)); g.addColorStop(1, 'rgba(27,25,22,0)');
     cx.fillStyle = g; cx.fillRect(0,0,W,H);
     for (const m of motes){
-      if (!reduce){ m.y += m.v; m.x += Math.sin(t/2600 + m.w) * 0.25 * devicePixelRatio; if (m.y < -10) m.y = H+10; if (m.y > H+10) m.y = -10; }
+      if (!reduce){ if (E.lean) { m.x += Math.abs(m.v) * E.lean * 2.2; m.y += Math.sin(t/1900 + m.w) * 0.35 * devicePixelRatio; if (m.x > W+20) { m.x = -20; m.y = Math.random()*H; } } else { m.y += m.v; m.x += Math.sin(t/2600 + m.w) * 0.25 * devicePixelRatio; if (m.y < -10) m.y = H+10; if (m.y > H+10) m.y = -10; } }
+      if (E.lean) { cx.beginPath(); cx.moveTo(m.x - 14*devicePixelRatio, m.y); cx.lineTo(m.x, m.y); cx.strokeStyle = hex(E.motes, m.o * 0.7); cx.lineWidth = m.r * 0.9; cx.stroke(); }
       cx.beginPath(); cx.arc(m.x, m.y, m.r, 0, Math.PI*2); cx.fillStyle = hex(E.motes, m.o * (0.6 + 0.4*Math.sin(t/1800 + m.w))); cx.fill();
     }
     if (!reduce) requestAnimationFrame(draw);
@@ -193,7 +196,7 @@
   }
   document.getElementById('addForm').addEventListener('submit', e => {
     e.preventDefault(); const inp = document.getElementById('name'); const v = inp.value.trim(); if (!v) return;
-    people.push(v); inp.value = ''; save(); render();
+    people.push(v); inp.value = ''; save(); render(); try { if (window.wellSense) wellSense.play('place'); } catch (e) {}
   });
   document.getElementById('clearBtn').addEventListener('click', () => { people = []; document.getElementById('one').value=''; document.getElementById('done').classList.remove('show'); save(); render(); });
   document.getElementById('closeBtn').addEventListener('click', () => {
@@ -215,5 +218,6 @@
 })();
 </script>
 <script src="../../assets/site.js" defer></script>
+<script src="../../assets/sense.js" defer></script>
 </body>
 </html>

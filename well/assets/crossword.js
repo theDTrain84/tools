@@ -257,6 +257,7 @@
 
     /* ---------- finish: the word, what it teaches, where it came from. No streaks. ---------- */
     function finish(fresh) {
+  try { if (window.wellSense) wellSense.play('chime'); } catch (e) {}
       stopClock(); st.done = true; save("state", st);
       st.m = st.m || {}; for (var k in btn) { if (!btn[k].disabled && st.m[k] !== "rev") st.m[k] = "ok" }
       paint(false);
