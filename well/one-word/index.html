@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One Word · DNSC</title>
+<meta name="description" content="One five letter word a day about working with AI. Six tries, paper tiles, and a short teaching when you finish. Free, made by DNSC.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/site.css">
+<style>
+:root{--paper:#F3EFE7;--paper2:#E9E3D7;--rule:#CFC6B8;--ink:#2C211A;--ink2:#4A3A2F;--ink3:#7A6A5D;--ink4:#A69686;--walnut:#623E2A;--ochre:#B4862E;--gold:#D9B25A;--sky:#3E6A9E;--dusk:#1B1916;--tile:min(58px,calc((100vw - 64px)/5));--mono:"IBM Plex Mono",ui-monospace,monospace}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink)}
+body{font-family:Newsreader,Georgia,serif;font-size:18px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+#motes{position:fixed;inset:0;z-index:0;pointer-events:none}
+.site-nav,.site-foot,.wrap{position:relative;z-index:1}
+.wrap{max-width:720px;margin:0 auto;padding:28px 16px 40px}
+.crumb{font-family:var(--mono);font-size:12.5px;color:var(--ink3);text-decoration:none;letter-spacing:.04em}
+.crumb:hover{color:var(--ink)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--walnut);margin:26px 0 10px}
+h1{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:clamp(38px,9vw,56px);line-height:1.02;letter-spacing:-.012em;margin:0 0 12px}
+.lede{color:var(--ink2);font-size:20px;margin:0 0 14px;max-width:36ch;text-wrap:pretty}
+.date{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3);margin:0 0 26px}
+.board{display:flex;flex-direction:column;align-items:center}
+.rows{display:grid;grid-template-rows:repeat(6,var(--tile));gap:6px;opacity:0;animation:up .4s ease-out forwards}
+@keyframes up{to{opacity:1}}
+.row{display:grid;grid-template-columns:repeat(5,var(--tile));gap:6px}
+.t{width:var(--tile);height:var(--tile);display:flex;align-items:center;justify-content:center;background:#FBF9F4;border:1px solid var(--rule);border-radius:4px;font-family:var(--mono);font-weight:500;font-size:calc(var(--tile)*.46);line-height:1;color:var(--ink);text-transform:uppercase;user-select:none;-webkit-user-select:none}
+.t.full{border-color:var(--ink3)}
+.t.pop{animation:settle .12s ease-out}
+@keyframes settle{from{transform:scale(1.08)}to{transform:scale(1)}}
+.t.r,.key.r{background:var(--walnut);border-color:var(--walnut);color:var(--paper)}
+.t.e,.key.e{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.t.n,.key.n{background:var(--paper2);border-color:var(--paper2);color:var(--ink3)}
+.t.turn{animation:turn .5s ease-in-out}
+@keyframes turn{0%{transform:rotateX(0)}50%{transform:rotateX(90deg)}100%{transform:rotateX(0)}}
+.t.fade{animation:fade .35s ease-out}
+@keyframes fade{from{opacity:.35}to{opacity:1}}
+.t.lift{animation:lift .6s ease-out}
+@keyframes lift{0%{transform:translateY(0)}40%{transform:translateY(-8px)}100%{transform:translateY(0)}}
+.note{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--ink2);min-height:20px;margin:12px 0 0;text-align:center}
+.kb{width:100%;max-width:440px;margin:10px 0 0;user-select:none;-webkit-user-select:none}
+.kr{display:flex;gap:4px;justify-content:center;margin:0 0 6px}
+.key{appearance:none;flex:1 1 0;min-width:0;max-width:42px;height:50px;padding:0;background:#FBF9F4;border:1px solid var(--rule);border-radius:6px;font-family:var(--mono);font-size:15px;font-weight:500;color:var(--ink);cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;transition:background-color .2s,color .2s}
+.key:active{filter:brightness(.95)}
+.key.wide{flex:1.55 1 0;max-width:66px;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.key.wide.bk{font-size:17px;letter-spacing:0}
+.done{display:none;margin:30px 0 0;background:var(--dusk);color:var(--paper);border-radius:14px;padding:26px 22px 24px}
+.done.show{display:block}
+.done .k{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin:0 0 10px}
+.done h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:34px;line-height:1.1;letter-spacing:.06em;margin:0 0 12px}
+.done p{font-size:18.5px;color:var(--paper);margin:0 0 16px;max-width:52ch}
+.done .soft{color:var(--ink4);font-size:17px}
+.done a{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);text-decoration:none}
+.done a:hover{text-decoration:underline}
+.how{margin:40px 0 0;font-size:16px;color:var(--ink3);max-width:56ch}
+.how .sw{display:inline-block;width:12px;height:12px;border-radius:2px;vertical-align:-1px;margin:0 3px 0 1px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(min-width:620px){.key{height:54px}}
+@media (prefers-reduced-motion:reduce){.rows{animation:none;opacity:1}.t.pop,.t.lift{animation:none}.key{transition:none}}
+</style>
+</head>
+<body class="has-shell">
+<canvas id="motes" aria-hidden="true"></canvas>
+<nav class="site-nav"><div class="in"><a class="brand" href="https://www.dustinnimmo.com"><span class="mark"><i></i><i></i><i></i><i></i><i></i></span>DNSC</a><div class="links"><a href="https://www.dustinnimmo.com/#what-i-do">What we do</a><a href="https://www.dustinnimmo.com/#three-ways">How we work</a><a class="keep" href="https://tools.dustinnimmo.com/">Teaching &amp; tools</a></div><a class="cta" href="https://www.dustinnimmo.com/#contact">Start a conversation</a></div></nav>
+<div class="wrap">
+<a class="crumb" href="../">← The Well</a>
+<p class="eyebrow">The Well · Daily</p>
+<h1>One Word</h1>
+<p class="lede">One word a day about working with AI. Six tries. The clue is what it teaches.</p>
+<p class="date" id="date"></p>
+
+<div class="board">
+  <div class="rows" id="rows" role="group" aria-label="Six rows of five letters"></div>
+  <p class="note" id="note" role="status"></p>
+  <div class="kb" id="kb" role="group" aria-label="On-screen keyboard"></div>
+</div>
+<div class="sr" aria-live="polite" id="live"></div>
+
+<section class="done" id="done" aria-live="polite">
+  <p class="k" id="doneK">Today's word</p>
+  <h2 id="doneH"></h2>
+  <p id="doneP"></p>
+  <p class="soft">Come back tomorrow for the next word.</p>
+  <a href="../">← Back to The Well</a>
+</section>
+
+<p class="how">Type a five letter word and press Enter. <span class="sw" style="background:var(--walnut)"></span>Walnut means the right letter in the right spot, <span class="sw" style="background:var(--gold)"></span>gold means the letter is in the word somewhere else, and <span class="sw" style="background:var(--paper2);box-shadow:inset 0 0 0 1px var(--rule)"></span>paper means it is not in the word. A new word arrives each morning. Your guesses stay in this browser only.</p>
+</div>
+<footer class="site-foot"><div class="in"><span>DNSC · Dustin Nimmo Strategic Consulting</span><span class="nav"><a href="https://www.dustinnimmo.com">Home</a><a href="https://www.dustinnimmo.com/#three-ways">How we work</a><a href="https://tools.dustinnimmo.com/">Teaching &amp; tools</a><a href="https://tools.dustinnimmo.com/well/">The Well</a><a href="https://www.dustinnimmo.com/#contact">Contact</a></span><span class="credit">Free to use. Made by DNSC.</span></div></footer>
+<script>
+(function(){
+"use strict";
+/* The bank. One word a day, picked by day number from October 2, 2026. Each word carries its teaching. */
+var BANK=[
+["AGENT","An agent is an AI that takes steps on your behalf: it searches, drafts, files and reports back. Give it a clear job, a short list of what it may touch, and a person who checks the work."],
+["TOKEN","A token is the small piece of text a model reads and writes, about three quarters of a word. Everything an AI does is counted in them, which is why a long chat costs more than a short one."],
+["TRUST","Trust gets built from a record you can read. Ask your AI to keep a ledger of what it did, then read it."],
+["MODEL","A model is the trained engine underneath the chat window. Models differ in strength and cost, so pick the smallest one that does the job well."],
+["HUMAN","Human in the loop means a person reviews and decides before anything important goes out. The AI drafts and suggests, and the human holds the judgment and the relationships."],
+["DRAFT","Treat everything an AI writes as a first draft. Read it out loud, cut what you would never say, and make it yours before it goes anywhere."],
+["PAUSE","Take a beat before you send what an AI wrote for you. Ten seconds of rereading catches most of what would cost you an apology later."],
+["CHECK","Check the facts an AI gives you, especially names, numbers and dates. Ask where each one came from, then open the source yourself."],
+["VOICE","Your voice is how you sound at your best. Give your AI a few real samples of your writing and its drafts will start to sound closer to you."],
+["FOCUS","An AI does its best work on one clear task at a time. Ask for one thing, finish it, then ask for the next."],
+["RULES","House rules are a short page an AI reads before it starts: what it may do, what needs a check, and what it never does. Write them once and every session begins on the same footing."],
+["NOTES","An AI forgets between sessions unless someone writes things down. Keep a short notes file it reads at the start, and tomorrow begins where today ended."],
+["SHAPE","The shape of a way of working forms the people inside it. Design the order, the handoffs and the checks first, then pick the tools."],
+["BUILD","Build is the third step of our method: Listen, Map, Build, Trust, Teach. We build small, show it early, and let the people who use it change it."],
+["TEACH","Teach is the last step of our method. The work is finished when your team can run it, explain it and change it on their own."],
+["CRAFT","Using AI well is a craft you learn by doing. Practice on small, real tasks every day and the skill grows faster than any course can give it."],
+["SCALE","Before you scale a practice, run it by hand with a few people until it works. Then let the AI carry it further, with the same checks in place."],
+["LEARN","Ask your AI to explain its answer in plain words, then explain it back. You learn the subject, and you learn where the AI is guessing."],
+["GUIDE","A good prompt reads like a guide for a capable new teammate: the goal, the context, the audience and what done looks like. Write it the way you would brief a person."],
+["CLOSE","A close is the short note at the end of a session: what got done, what is open and who owns it. It is how tomorrow starts warm."],
+["TABLE","We picture multiplayer AI as a table where everyone sees the same work. Bring what your AI made back to the team, so the record is shared."],
+["LIMIT","Every AI has a context limit, the amount it can hold in mind at once. Long chats drift, so start fresh and carry over a short summary."],
+["ALIGN","Alignment means the AI does what people actually intend. On a team it starts small: agree on the goal, the rules and who decides, then write it down."],
+["LINES","Lines are the boundaries you set ahead of time. Clear lines about what an agent may do alone make it safe to hand it more."],
+["STEPS","Big asks go better in small steps. Have the AI make a plan first, agree on it together, then work through it one step at a time."],
+["CLEAR","A clear ask gets a clear answer. Say who it is for, what you want back, and how long it should be."],
+["PROOF","Ask for proof with every claim: a link, a quote, a page number. An answer you can trace is an answer you can stand behind."],
+["SHARE","When an AI helps you, share what worked with your team: the prompt, the file, the result. One person's trick becomes everyone's practice."],
+["HABIT","Small daily habits outlast big launches. Use your AI for one real task each morning and the practice takes root on its own."],
+["TOOLS","Tools are what let an agent act: search, a calendar, email, files. Give it only the tools the job needs, and add more as trust grows."],
+["WATER","Large data centers use water to keep their machines cool. Your share for one question is small, and we track it anyway so we can spend it well."],
+["EARTH","Every AI answer runs on a real machine drawing power from the earth. Billions of questions a day add up, so ask with care and use the smallest model that does the job."],
+["TASTE","AI can make a hundred options in a minute. Your taste picks the one worth keeping, so trust it and say why you chose."],
+["SPEAK","Many AIs now listen when you speak. Talking a problem through out loud often gets you a better first draft than typing it."],
+["ERROR","AI makes errors with a confident face. When you find one, say so plainly, ask it to fix the cause, then check again."],
+["RESET","When a chat gets tangled, reset. Open a fresh session, paste a short summary of what matters, and go again."],
+["QUIET","Some of the best work with AI happens after you close it. Leave a little quiet time to think about what it gave you before you act."]
+];
+
+/* self-test at load: every word five uppercase letters, no duplicates, no dashes in copy */
+(function(){
+  var errs=[],seen={};
+  BANK.forEach(function(b,i){
+    if(!/^[A-Z]{5}$/.test(b[0]))errs.push("#"+i+" "+b[0]+" is not five letters");
+    if(seen[b[0]])errs.push("duplicate "+b[0]);seen[b[0]]=1;
+    if(!b[1]||/\u2014|\u2013/.test(b[1]))errs.push("#"+i+" teaching missing or has a dash");
+  });
+  if(errs.length)console.error("[One Word] bank self-test failed",errs);
+  else console.info("[One Word] bank self-test: "+BANK.length+" words, all five letters");
+})();
+
+/* ---------- day + storage ---------- */
+var now=new Date();
+var dayIdx=Math.round((Date.UTC(now.getFullYear(),now.getMonth(),now.getDate())-Date.UTC(2026,9,2))/864e5);
+var no=Math.max(1,dayIdx+1);
+var P=BANK[((dayIdx%BANK.length)+BANK.length)%BANK.length],W=P[0];
+var DAYS=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],MON=["January","February","March","April","May","June","July","August","September","October","November","December"];
+document.getElementById("date").textContent=DAYS[now.getDay()]+" · "+MON[now.getMonth()]+" "+now.getDate()+", "+now.getFullYear()+" · No. "+no;
+var dkey=now.getFullYear()+"-"+("0"+(now.getMonth()+1)).slice(-2)+"-"+("0"+now.getDate()).slice(-2);
+var KEY="dnsc-one-word-"+dkey;
+function load(){try{var v=localStorage.getItem(KEY);return v?JSON.parse(v):null}catch(e){return null}}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}}
+var st=load();
+if(!st||st.w!==W||!Array.isArray(st.g))st={w:W,g:[]};
+st.g=st.g.filter(function(g){return /^[A-Z]{5}$/.test(g)}).slice(0,6);
+var cur="",busy=false,done=false;
+var reduce=false;try{reduce=matchMedia("(prefers-reduced-motion: reduce)").matches}catch(e){}
+
+/* ---------- scoring: r right spot, e elsewhere, n not in the word (handles repeated letters) ---------- */
+function score(g){
+  var res=["n","n","n","n","n"],left={},i;
+  for(i=0;i<5;i++){if(g[i]===W[i])res[i]="r";else left[W[i]]=(left[W[i]]||0)+1}
+  for(i=0;i<5;i++){if(res[i]!=="r"&&left[g[i]]){res[i]="e";left[g[i]]--}}
+  return res;
+}
+var SAY={r:"right spot",e:"elsewhere",n:"not in the word"};
+
+/* ---------- build board ---------- */
+var rowsEl=document.getElementById("rows"),tiles=[];
+for(var r=0;r<6;r++){
+  var row=document.createElement("div");row.className="row";row.setAttribute("aria-label","Row "+(r+1));tiles.push([]);
+  for(var c=0;c<5;c++){var t=document.createElement("div");t.className="t";row.appendChild(t);tiles[r].push(t)}
+  rowsEl.appendChild(row);
+}
+
+/* ---------- on-screen keyboard ---------- */
+var kb=document.getElementById("kb"),keys={};
+["QWERTYUIOP","ASDFGHJKL",">ZXCVBNM<"].forEach(function(line){
+  var d=document.createElement("div");d.className="kr";
+  line.split("").forEach(function(ch){
+    var k=document.createElement("button");k.type="button";k.className="key";
+    if(ch===">"){k.className+=" wide";k.textContent="Enter";k.setAttribute("aria-label","Enter guess")}
+    else if(ch==="<"){k.className+=" wide bk";k.textContent="⌫";k.setAttribute("aria-label","Back")}
+    else{k.textContent=ch;k.setAttribute("aria-label",ch);keys[ch]=k}
+    k.addEventListener("click",function(){if(ch===">")enter();else if(ch==="<")back();else typeL(ch)});
+    d.appendChild(k);
+  });kb.appendChild(d);
+});
+var RANK={n:1,e:2,r:3};
+function paintKeys(){
+  var best={};
+  st.g.forEach(function(g){var s=score(g);for(var i=0;i<5;i++){if(!best[g[i]]||RANK[s[i]]>RANK[best[g[i]]])best[g[i]]=s[i]}});
+  for(var ch in keys){var k=keys[ch],s=best[ch];k.classList.toggle("r",s==="r");k.classList.toggle("e",s==="e");k.classList.toggle("n",s==="n");
+    k.setAttribute("aria-label",ch+(s?", "+SAY[s]:""))}
+}
+
+/* ---------- painting ---------- */
+function setTile(t,ch,s){
+  t.textContent=ch||"";t.classList.toggle("full",!!ch&&!s);
+  t.classList.remove("r","e","n");if(s)t.classList.add(s);
+}
+function paintAll(){
+  for(var r=0;r<6;r++){
+    var g=st.g[r],s=g?score(g):null;
+    for(var c=0;c<5;c++){
+      if(g)setTile(tiles[r][c],g[c],s[c]);
+      else if(r===st.g.length&&!done)setTile(tiles[r][c],cur[c],null);
+      else setTile(tiles[r][c],"",null);
+    }
+  }
+  paintKeys();
+}
+function note(t){document.getElementById("note").textContent=t}
+function live(t){var l=document.getElementById("live");l.textContent="";setTimeout(function(){l.textContent=t},30)}
+function sayRow(g){var s=score(g);return g.split("").map(function(ch,i){return ch+" "+SAY[s[i]]}).join(", ")}
+
+/* ---------- moves ---------- */
+function typeL(ch){
+  if(done||busy||cur.length>=5)return;
+  cur+=ch;note("");
+  var t=tiles[st.g.length][cur.length-1];setTile(t,ch,null);
+  if(!reduce){t.classList.remove("pop");void t.offsetWidth;t.classList.add("pop")}
+}
+function back(){
+  if(done||busy||!cur.length)return;
+  cur=cur.slice(0,-1);setTile(tiles[st.g.length][cur.length],"",null);note("");
+}
+function enter(){
+  if(done||busy)return;
+  if(cur.length<5){note(cur.length?"Five letters, please. "+(5-cur.length)+" more to go.":"Type a five letter word first.");return}
+  var g=cur,r=st.g.length,s=score(g),step=reduce?90:260,half=reduce?0:250;
+  st.g.push(g);cur="";save();busy=true;note("");
+  tiles[r].forEach(function(t,i){
+    setTimeout(function(){
+      t.classList.remove("turn","fade");void t.offsetWidth;t.classList.add(reduce?"fade":"turn");
+      setTimeout(function(){setTile(t,g[i],s[i])},half);
+    },i*step);
+  });
+  setTimeout(function(){
+    busy=false;paintKeys();
+    var won=g===W,lost=!won&&st.g.length>=6;
+    var msg="Row "+(r+1)+": "+sayRow(g)+".";
+    if(won){
+      if(!reduce)tiles[r].forEach(function(t,i){setTimeout(function(){t.classList.remove("turn");void t.offsetWidth;t.classList.add("lift")},i*90)});
+      finish(true,msg);
+    }else if(lost)finish(true,msg);
+    else{live(msg+" "+(6-st.g.length)+(6-st.g.length===1?" try left.":" tries left."))}
+  },4*step+(reduce?360:520));
+}
+function finish(fresh,lead){
+  done=true;
+  var won=st.g[st.g.length-1]===W;
+  document.getElementById("doneK").textContent=won?"You found it":"Today's word";
+  document.getElementById("doneH").textContent=W;
+  document.getElementById("doneP").textContent=P[1];
+  note(won?"Well found.":"Six tries spent. Here is the word.");
+  var d=document.getElementById("done");d.classList.add("show");
+  if(fresh){
+    live((lead?lead+" ":"")+(won?"You found it. ":"The word was ")+W+". "+P[1]+" Come back tomorrow for the next word.");
+    if(d.scrollIntoView)setTimeout(function(){d.scrollIntoView({behavior:reduce?"auto":"smooth",block:"nearest"})},reduce?0:700);
+  }
+}
+
+/* ---------- physical keyboard ---------- */
+document.addEventListener("keydown",function(ev){
+  if(ev.metaKey||ev.ctrlKey||ev.altKey)return;
+  var t=ev.target,k=ev.key;
+  if(t&&t.closest&&t.closest("a,.site-nav,.site-foot"))return;
+  var onKey=!!(t&&t.classList&&t.classList.contains("key"));
+  if(t&&t.tagName==="BUTTON"&&!onKey&&(k==="Enter"||k===" "))return;
+  if(/^[a-z]$/i.test(k)){ev.preventDefault();typeL(k.toUpperCase())}
+  else if(k==="Backspace"||k==="Delete"){ev.preventDefault();back()}
+  else if(k==="Enter"){ev.preventDefault();enter()}
+});
+
+/* ---------- start ---------- */
+paintAll();
+var last=st.g[st.g.length-1];
+if(last===W||st.g.length>=6)finish(false);
+else if(st.g.length)live("Welcome back. "+st.g.length+(st.g.length===1?" guess":" guesses")+" so far. "+st.g.map(function(g,i){return "Row "+(i+1)+": "+sayRow(g)}).join(". ")+".");
+})();
+
+/* the little things floating around: a few gold and sky motes, slow, paper-light */
+(function(){
+  var cv=document.getElementById("motes");if(!cv||!cv.getContext)return;
+  var cx=cv.getContext("2d"),reduce=false;try{reduce=matchMedia("(prefers-reduced-motion: reduce)").matches}catch(e){}
+  var W,H,dpr,motes=[],COLS=["217,178,90","62,106,158","180,134,46","166,150,134"];
+  function size(){dpr=window.devicePixelRatio||1;W=cv.width=innerWidth*dpr;H=cv.height=innerHeight*dpr;cv.style.width=innerWidth+"px";cv.style.height=innerHeight+"px";
+    motes=[];for(var i=0,n=Math.round(innerWidth/28);i<n;i++)motes.push({x:Math.random()*W,y:Math.random()*H,r:(Math.random()*1.6+.8)*dpr,v:(Math.random()*.18+.06)*dpr,w:Math.random()*Math.PI*2,c:COLS[Math.floor(Math.random()*COLS.length)],o:Math.random()*.35+.15})}
+  function draw(t){cx.clearRect(0,0,W,H);
+    for(var i=0;i<motes.length;i++){var m=motes[i];if(!reduce){m.y-=m.v;m.x+=Math.sin(t/3200+m.w)*.2*dpr;if(m.y<-10){m.y=H+10;m.x=Math.random()*W}}
+      cx.beginPath();cx.arc(m.x,m.y,m.r,0,Math.PI*2);cx.fillStyle="rgba("+m.c+","+(m.o*(.65+.35*Math.sin(t/2200+m.w)))+")";cx.fill()}
+    if(!reduce)requestAnimationFrame(draw)}
+  addEventListener("resize",size);size();requestAnimationFrame(draw);
+})();
+</script>
+</body>
+</html>
