@@ -12,12 +12,13 @@
 *{box-sizing:border-box}html{background:var(--paper)}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:Newsreader,Georgia,serif;font-size:20px;line-height:1.5;-webkit-font-smoothing:antialiased}
 .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+.band{display:block;width:100%;aspect-ratio:21/9;object-fit:cover;border-radius:10px;margin:36px 0 0}
 header{padding:28px 0 0}
 .brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:Fraunces,serif;font-weight:600;font-size:20px}
 .mark{width:28px;height:28px;position:relative}.mark i{position:absolute;width:6px;height:6px;border-radius:50%}
 .mark i:nth-child(1){background:#4C7BB8;left:11px;top:0}.mark i:nth-child(2){background:var(--gold);right:0;top:9px}.mark i:nth-child(3){background:var(--walnut);right:3px;bottom:0}.mark i:nth-child(4){background:#A89F93;left:3px;bottom:0}.mark i:nth-child(5){background:var(--gold);left:0;top:9px}
 .mark:before{content:"";position:absolute;inset:3px;border:1px solid var(--rule);border-radius:50%}
-h1{font-family:Fraunces,serif;font-weight:400;font-size:clamp(38px,7vw,60px);line-height:1.05;letter-spacing:-.015em;margin:96px 0 40px}
+h1{font-family:Fraunces,serif;font-weight:400;font-size:clamp(38px,7vw,60px);line-height:1.05;letter-spacing:-.015em;margin:40px 0 40px}
 ul{list-style:none;padding:0;margin:0;border-top:1px solid var(--rule)}
 li{border-bottom:1px solid var(--rule)}
 li a{display:block;padding:26px 0;text-decoration:none;color:var(--ink)}
@@ -31,6 +32,7 @@ footer a{color:var(--ink3);text-decoration:none}
 <body>
 <header class="wrap"><a class="brand" href="https://dustinnimmo.com"><span class="mark"><i></i><i></i><i></i><i></i><i></i></span>DNSC</a></header>
 <main class="wrap">
+<img class="band" src="assets/flag-sunrise.jpg" alt="An American flag at sunrise on a porch in Ohio, photographed by Dustin Nimmo" width="1800" height="771">
 <h1>Free tools for the community.</h1>
 <ul>
 <li><a href="follow-the-money/"><p class="t">Follow the Money: The Lakota Bond Issue</p><p class="d">What Issue 2 would cost your home, from the public record.</p></a></li>
