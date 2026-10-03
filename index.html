@@ -94,6 +94,16 @@ h1 em{font-style:italic;color:var(--gold)}
 .shot .go{color:var(--gold);margin-top:auto;padding-top:10px}
 .shot .k:before{display:none}
 
+
+/* lighter tiles for the daily games and the quiet rooms: the picture, then the words, nothing twice */
+.shot.light{background:#EAE3D5;color:var(--ink);border-color:var(--rule)}
+.shot.light .pic:after{background:linear-gradient(180deg,rgba(234,227,213,0) 42%,rgba(234,227,213,.78) 78%,#EAE3D5 97%)}
+.shot.light h3{color:var(--ink)}.shot.light p{color:var(--ink3)}.shot.light .go{color:var(--walnut)}.shot.light .k{color:var(--walnut)}
+.shot.light.sky{border-top:3px solid var(--sky)}.shot.light.sky .k{color:var(--sky)}
+.shot.night{background:#1E2430;border-color:#2B3240}
+.shot.night .pic:after{background:linear-gradient(180deg,rgba(30,36,48,0) 42%,rgba(30,36,48,.78) 78%,#1E2430 97%)}
+.shot.night p{color:#A9B1BF}.shot.night .k{color:var(--gold)}
+.shot.light .txt,.shot.night .txt{gap:5px}
 .writing .head{margin-bottom:14px}
 .soon{margin:0;font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);display:flex;align-items:center;gap:10px}
 .soon:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--ochre)}
@@ -144,22 +154,22 @@ h1 em{font-style:italic;color:var(--gold)}
 </div>
 </div>
 <div class="wrap">
-<ul class="cards" aria-label="Every day: the daily games">
-<li><a class="card" href="well/daily-line/"><div class="cpic land full"><img src="assets/previews/card-crossword-2x.jpg" srcset="assets/previews/card-crossword.jpg 760w, assets/previews/card-crossword-2x.jpg 1520w" sizes="(max-width:759px) 92vw, 380px" width="1520" height="1200" alt="The Daily Line: a five by five crossword with today's first clue" loading="lazy" decoding="async"></div><div class="ctxt"><p class="k">Learning AI</p><h3>The Daily Line</h3><p>The vocabulary of working with AI, one small grid a day.</p><span class="go">Open <i>→</i></span></div></a></li>
-<li><a class="card sky" href="well/morning-edition/"><div class="cpic land full"><img src="assets/previews/card-morning-2x.jpg" srcset="assets/previews/card-morning.jpg 760w, assets/previews/card-morning-2x.jpg 1520w" sizes="(max-width:759px) 92vw, 380px" width="1520" height="1200" alt="The Morning Edition: a seven by seven crossword made from yesterday's AI news" loading="lazy" decoding="async"></div><div class="ctxt"><p class="k">AI in the news</p><h3>The Morning Edition</h3><p>What happened in AI yesterday, as a crossword.</p><span class="go">Open <i>→</i></span></div></a></li>
-<li><a class="card" href="well/one-word/"><div class="cpic land full"><img src="assets/previews/card-oneword-2x.jpg" srcset="assets/previews/card-oneword.jpg 760w, assets/previews/card-oneword-2x.jpg 1520w" sizes="(max-width:759px) 92vw, 380px" width="1520" height="1200" alt="One Word: two guesses with letters coloured walnut and gold" loading="lazy" decoding="async"></div><div class="ctxt"><p class="k">A word a day</p><h3>One Word</h3><p>One word about working with AI. Find it and it teaches you something.</p><span class="go">Open <i>→</i></span></div></a></li>
-</ul>
+<div class="tiles">
+<a class="shot light" href="well/daily-line/"><div class="pic"><img src="assets/previews/vis-crossword.jpg" width="1200" height="800" alt="Today's Daily Line crossword grid" loading="lazy" decoding="async"></div><div class="txt"><p class="k">Learning AI</p><h3>The Daily Line</h3><p>One small crossword on the words of AI.</p><span class="go">Open <i>→</i></span></div></a>
+<a class="shot light sky" href="well/morning-edition/"><div class="pic"><img src="assets/previews/vis-morning.jpg" width="1200" height="800" alt="The Morning Edition crossword grid" loading="lazy" decoding="async"></div><div class="txt"><p class="k">AI in the news</p><h3>The Morning Edition</h3><p>Yesterday's AI news, as a crossword.</p><span class="go">Open <i>→</i></span></div></a>
+<a class="shot light" href="well/one-word/"><div class="pic"><img src="assets/previews/vis-oneword.jpg" width="1200" height="800" alt="One Word's empty letter grid" loading="lazy" decoding="async"></div><div class="txt"><p class="k">A word a day</p><h3>One Word</h3><p>One word about AI, found in six tries.</p><span class="go">Open <i>→</i></span></div></a>
+</div>
 </div>
 </section>
 
 <section class="life" aria-labelledby="life-h">
 <div class="wrap">
 <div class="head"><div><p class="k">Quiet · Free · No account</p><h2 id="life-h">Tools for life</h2><p>Rooms to hold the day, and the moon over your weeks.</p></div></div>
-<ul class="cards" aria-label="Tools for life">
-<li><a class="card dusk" href="well/walk-in/"><div class="cpic land full"><img src="assets/previews/card-walkin-2x.jpg" srcset="assets/previews/card-walkin.jpg 760w, assets/previews/card-walkin-2x.jpg 1520w" sizes="(max-width:759px) 92vw, 380px" width="1520" height="1200" alt="The Walk-in: a breathing ring at dusk with three names seated on it" loading="lazy" decoding="async"></div><div class="ctxt"><p class="k on-dark">A quiet room</p><h3>The Walk-in</h3><p>Name the people in your day. Each takes a seat on the ring.</p><span class="go">Open <i>→</i></span></div></a></li>
-<li><a class="card dusk" href="well/river/"><div class="cpic land full"><img src="assets/previews/card-river-2x.jpg" srcset="assets/previews/card-river.jpg 760w, assets/previews/card-river-2x.jpg 1520w" sizes="(max-width:759px) 92vw, 380px" width="1520" height="1200" alt="The River: a leaf carrying a line of words down dark water" loading="lazy" decoding="async"></div><div class="ctxt"><p class="k on-dark">Letting go</p><h3>The River</h3><p>Write what is heavy onto a leaf. The water carries it.</p><span class="go">Open <i>→</i></span></div></a></li>
-<li><a class="card dusk" href="well/lunar/"><div class="cpic land"><img src="assets/previews/lunar-1x.jpg" srcset="assets/previews/lunar-1x.jpg 800w, assets/previews/lunar.jpg 1600w" sizes="(max-width:759px) 92vw, 340px" width="800" height="500" alt="Lunar Life: tonight's waning gibbous moon, the facts of the cycle, and tradition chips" loading="lazy" decoding="async"></div><div class="ctxt"><p class="k on-dark">The moon</p><h3>Lunar Life</h3><p>The moon over your own weeks, and the traditions that keep its time.</p><span class="go">Open <i>→</i></span></div></a></li>
-</ul>
+<div class="tiles">
+<a class="shot night" href="well/walk-in/"><div class="pic"><img src="assets/previews/vis-walkin.jpg" width="1200" height="800" alt="The Walk-in's breathing ring: breathe in, four, hold, six" loading="lazy" decoding="async"></div><div class="txt"><p class="k on-dark">A quiet room</p><h3>The Walk-in</h3><p>Hold the people from your day.</p><span class="go">Open <i>→</i></span></div></a>
+<a class="shot night" href="well/river/"><div class="pic"><img src="assets/previews/vis-river.jpg" width="1200" height="800" alt="Leaves floating down dark water" loading="lazy" decoding="async"></div><div class="txt"><p class="k on-dark">Letting go</p><h3>The River</h3><p>Set down what's heavy. Watch it go.</p><span class="go">Open <i>→</i></span></div></a>
+<a class="shot night" href="well/lunar/"><div class="pic"><img src="assets/previews/vis-lunar.jpg" width="1200" height="800" alt="Tonight's waning gibbous moon" loading="lazy" decoding="async"></div><div class="txt"><p class="k on-dark">The moon</p><h3>Lunar Life</h3><p>The moon over your own weeks.</p><span class="go">Open <i>→</i></span></div></a>
+</div>
 </div>
 </section>
 
