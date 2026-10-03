@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<link rel="icon" href="https://framerusercontent.com/images/Zzrw2Ac0JKIAchf6nu5ApLHKFcg.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Five Moves · The Well · DNSC</title>
 <meta name="description" content="A daily sorting game. Twenty cards, five moves of working with AI: Listen, Map, Build, Trust, Teach.">
@@ -66,7 +67,7 @@ button{font:inherit;color:inherit;-webkit-tap-highlight-color:transparent}
 
 .finish{margin-top:28px;padding:24px 20px;border:1px solid var(--rule);border-radius:12px;background:var(--paper2)}
 .finish h2{font-family:var(--display);font-weight:600;font-size:28px;line-height:1.1;margin:6px 0 16px}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 18px;padding:14px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:0 0 18px;padding:14px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
 .stats div{text-align:center}
 .stats b{display:block;font-family:var(--display);font-weight:600;font-size:26px;color:var(--ink)}
 .note{margin:0 0 18px;color:var(--ink2)}
@@ -109,7 +110,6 @@ button{font:inherit;color:inherit;-webkit-tap-highlight-color:transparent}
     <div class="stats">
       <div><b id="s-time">0:00</b><span class="lbl">Time</span></div>
       <div><b id="s-miss">0</b><span class="lbl">Mistakes</span></div>
-      <div><b id="s-streak">1</b><span class="lbl">Streak</span></div>
     </div>
     <p class="note" id="note"></p>
     <div class="share">
@@ -289,7 +289,7 @@ function finish(won,saved){
   $("fin-h").textContent=won?"All five moves, found.":"The five moves, laid out.";
   $("s-time").textContent=fmt(elapsed);
   $("s-miss").textContent=mistakes;
-  $("s-streak").textContent=store.streak||0;
+
   $("note").innerHTML="<strong>"+MOVES[noteM].k+".</strong> "+MOVES[noteM].note;
   var txt="Five Moves No. "+no+" · "+found+" move"+(found===1?"":"s")+" found, "+mistakes+" mistake"+(mistakes===1?"":"s");
   $("share-text").textContent=txt;
@@ -324,5 +324,6 @@ if(done){
 })();
 </script>
 <script src="../../assets/site.js" defer></script>
+<script src="../../assets/sense.js" defer></script>
 </body>
 </html>
