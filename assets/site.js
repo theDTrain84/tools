@@ -1,4 +1,4 @@
-/* tools.dustinnimmo.com: page continuity. Fade in on load, fade out before leaving for
+/* tools.dnsc.ai: page continuity. Fade in on load, fade out before leaving for
    another page here or on dustinnimmo.com. Skips new-tab and modified clicks, hash links
    and downloads, and respects prefers-reduced-motion. */
 (function () {
@@ -23,7 +23,7 @@
     var u; try { u = new URL(a.href, location.href); } catch (_) { return; }
     if (!/^(https?|file):$/.test(u.protocol)) return;
     var here = u.origin === location.origin;
-    if (!here && !/(^|\.)dustinnimmo\.com$/.test(u.hostname)) return;
+    if (!here && !/(^|\.)(dnsc\.ai|dustinnimmo\.com)$/.test(u.hostname)) return;
     if (u.pathname === location.pathname && u.search === location.search && u.hash) return;
     if (reduce && reduce.matches) return;
     if (here && crossDocVT) return; // the browser's view transition carries it

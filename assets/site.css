@@ -1,4 +1,4 @@
-/* Shared shell for tools.dustinnimmo.com: nav + footer that match dustinnimmo.com */
+/* Shared shell for tools.dnsc.ai: nav + footer that match dustinnimmo.com */
 .site-nav{position:sticky;top:0;z-index:20;background:rgba(243,239,231,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid #D8D0C2}
 .site-nav .in{max-width:1120px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;gap:24px}
 .site-nav .brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:#1B1917;font-family:Fraunces,serif;font-weight:600;font-size:20px;margin-right:auto}

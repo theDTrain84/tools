@@ -3,7 +3,7 @@
 *Written by Mise from Dustin's ask (Telegram, 5:11 PM): a game and reflection space in the DNSC style, elevated, paper, the same tones, grown from what we already built. Working name from his own line: "the well is deep."*
 
 ## What it is
-A room under Teaching & tools at tools.dustinnimmo.com/well/. Two kinds of things live there:
+A room under Teaching & tools at tools.dnsc.ai/well/. Two kinds of things live there:
 
 1. **Small daily games that teach the vocabulary of working with AI.** Five minutes, paper, no account. New things require new vocabulary (his line, 9/21); the games are how people learn it without a lecture.
 2. **Quiet rooms for the people in your day.** The descent from Gumbo City, brought up into paper: the rooms with no streaks and no metrics, where you hold people in your thoughts and then leave.

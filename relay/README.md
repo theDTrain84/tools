@@ -1,6 +1,6 @@
 # Lunar Life calendar relay
 
-**What it's for.** Lunar Life shows the moon over your real weeks. To read a calendar, the page needs the calendar's private .ics link, and browsers block a web page from fetching most of those links directly. This tiny relay fetches the link the visitor gives it and hands the calendar straight back. It stores nothing, logs nothing and passes no cookies. It only answers requests coming from tools.dustinnimmo.com, only fetches https links, only returns real calendar files, gives up after 10 seconds, and refuses anything over 2 MB.
+**What it's for.** Lunar Life shows the moon over your real weeks. To read a calendar, the page needs the calendar's private .ics link, and browsers block a web page from fetching most of those links directly. This tiny relay fetches the link the visitor gives it and hands the calendar straight back. It stores nothing, logs nothing and passes no cookies. It only answers requests coming from tools.dnsc.ai, only fetches https links, only returns real calendar files, gives up after 10 seconds, and refuses anything over 2 MB.
 
 **Cost.** Free. Cloudflare's free Workers plan covers 100,000 requests a day.
 

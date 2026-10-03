@@ -1,9 +1,9 @@
-// Lunar Life calendar relay · tools.dustinnimmo.com
+// Lunar Life calendar relay · tools.dnsc.ai
 // Fetches a calendar the visitor chooses (an .ics link) and hands it back to
 // the Lunar Life page, because browsers block reading most calendar feeds
 // directly. It keeps nothing: no logging, no storage, no cookies either way.
 
-const ALLOW_ORIGIN = "https://tools.dustinnimmo.com";
+const ALLOW_ORIGIN = "https://tools.dnsc.ai";
 const MAX_BYTES = 2 * 1024 * 1024; // 2 MB
 const TIMEOUT_MS = 10_000;
 
@@ -43,7 +43,7 @@ export default {
     if (request.method !== "GET") return fail(405, "Only GET.");
 
     const origin = request.headers.get("Origin");
-    if (origin && origin !== ALLOW_ORIGIN) return fail(403, "This relay only serves tools.dustinnimmo.com.");
+    if (origin && origin !== ALLOW_ORIGIN) return fail(403, "This relay only serves tools.dnsc.ai.");
 
     const raw = new URL(request.url).searchParams.get("url");
     if (!raw) return fail(400, "Add ?url= with your calendar's .ics link.");
@@ -67,7 +67,7 @@ export default {
         method: "GET",
         redirect: "follow",
         signal: controller.signal,
-        headers: { "Accept": "text/calendar, text/plain;q=0.5", "User-Agent": "LunarLife-relay (tools.dustinnimmo.com)" },
+        headers: { "Accept": "text/calendar, text/plain;q=0.5", "User-Agent": "LunarLife-relay (tools.dnsc.ai)" },
         // no cookies or credentials are forwarded; the visitor's request headers are not passed along
       });
     } catch (e) {
