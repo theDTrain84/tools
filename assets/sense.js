@@ -4,7 +4,7 @@
   var on = false;
   try { on = localStorage.getItem(KEY) === '1'; } catch (e) {}
   // One small engine: master gain into a gentle compressor, a shared noise buffer, and a shared delay tail for the bell.
-  var ctx = null, out = null, wet = null, noise = null, quietUntil = 0, lastTick = 0;
+  var ctx = null, out = null, wet = null, noise = null, quietUntil = 0, lastTick = 0; // tick stays in the palette; nothing fires it on hover
   function ac() {
     if (!ctx) {
       var A = window.AudioContext || window.webkitAudioContext; if (!A) return null;
@@ -36,9 +36,9 @@
     o.connect(g); g.connect(dest || out); o.start(t); o.stop(t + dur + 0.03);
     return g;
   }
-  function hiss(c, type, freq, q, t, dur, peak, atk) {
+  function hiss(c, type, freq, q, t, dur, peak, atk, to) {
     var s = c.createBufferSource(), f = c.createBiquadFilter(), g = env(c, peak, t, atk, dur);
-    s.buffer = noise; f.type = type; f.frequency.value = freq; f.Q.value = q;
+    s.buffer = noise; f.type = type; f.frequency.setValueAtTime(freq, t); if (to) f.frequency.exponentialRampToValueAtTime(to, t + dur); f.Q.value = q;
     s.connect(f); f.connect(g); g.connect(out);
     s.start(t, Math.random() * 0.4); s.stop(t + dur + 0.03);
   }
@@ -49,11 +49,11 @@
   }
   var sounds = {
     // a soft paper tap: felt and paper, a breath of band-passed noise over a tiny low thump
-    tap: function (c, t) { hiss(c, 'bandpass', 1800, 1.2, t, 0.025, 0.035, 0.002); osc(c, 160, 0, t, 0.04, 0.03, 0.003); },
+    tap: function (c, t) { hiss(c, 'bandpass', 1100, 1, t, 0.018, 0.022, 0.002); osc(c, 120, 0, t, 0.04, 0.02, 0.003); },
     // almost subliminal: the edge of a page passing under a fingertip
     tick: function (c, t) { hiss(c, 'highpass', 4000, 0, t, 0.008, 0.012, 0.001); },
-    // something set down: a warm fifth, slightly detuned
-    place: function (c, t) { osc(c, 392, 0, t, 0.146, 0.026, 0.006, -4); osc(c, 587, 0, t, 0.146, 0.022, 0.006, 5); },
+    // something set down: a card sliding on cloth, no tones, barely there
+    place: function (c, t) { hiss(c, 'lowpass', 900, 0.7, t, 0.16, 0.028, 0.01, 250); },
     // a word lands, a grid finishes: three soft bells and a short tail, a little gift
     chime: function (c, t) { bell(c, 659.25, t); bell(c, 987.77, t + 0.09); bell(c, 1318.51, t + 0.18); },
     // a leaf goes under: the low sine sinks, and a breath of wind goes with it
@@ -71,17 +71,11 @@
   }
   window.wellSense = { play: play, isOn: function () { return on; } };
 
-  // Generic hooks: taps on buttons, links, keys and game cells; a hover tick for pointers that can hover; the pages call wellSense.play('chime'|'place'|'hush') for their own moments.
+  // Generic hooks: taps on buttons, keys, game cells and card links; no sounds on hover; the pages call wellSense.play('chime'|'place'|'hush') for their own moments.
   function mine(el) { return el.closest('.sense, .sense-head'); }
   document.addEventListener('click', function (e) {
-    var el = e.target.closest && e.target.closest('a, button, [role=button], .key, .cell, .tile, .card, .shot');
+    var el = e.target.closest && e.target.closest('button, [role=button], .key, .cell, .tile, a.card, a.shot, a.tile');
     if (el && !mine(el)) play('tap');
-  }, true);
-  var HOVER = 'a, button, [role=button], .card, .shot, .tile, .key';
-  var canHover = false; try { canHover = window.matchMedia('(hover: hover)').matches; } catch (e) {}
-  document.addEventListener('pointerenter', function (e) {
-    if (!on || !canHover || e.pointerType === 'touch') return;
-    var t = e.target; if (t && t.matches && t.matches(HOVER) && !mine(t)) play('tick');
   }, true);
   function typing(t) {
     if (!t || t === document || t === document.body || t === document.documentElement) return !!document.querySelector('.cell, .key');
