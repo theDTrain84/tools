@@ -71,7 +71,6 @@ h1{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:clamp(38px,9vw,5
 .done .soft{color:var(--ink4);font-size:17px}
 .done a{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);text-decoration:none}
 .done a:hover{text-decoration:underline}
-.done .other{margin:0 0 18px}.done .other a{font-size:12.5px}
 .how{margin:40px 0 0;font-size:16px;color:var(--ink3);max-width:56ch}
 .how .sw{display:inline-block;width:12px;height:12px;border-radius:2px;vertical-align:-1px;margin:0 3px 0 1px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
@@ -127,7 +126,6 @@ details.how p{margin:8px 0 0;font-size:16px;color:var(--ink3)}
   <h2 id="doneH"></h2>
   <p id="doneP"></p>
   <p class="soft">Come back tomorrow for the next word.</p>
-  <p class="other" id="other"></p>
   <a href="../">← Back to The Well</a>
 </section>
 
@@ -331,7 +329,6 @@ function finish(fresh,lead){
   note(won?"Well found.":NUMW[TR].replace(/^./,function(c){return c.toUpperCase()})+" tries spent. Here is the word.");
   if(!st.t1){st.t1=Date.now();save()}
   board(won,fresh);
-  document.getElementById("other").innerHTML=ADV?'<a href="../one-word/">Today\'s regular word →</a>':'<a href="../one-word-advanced/">Want a stretch? Today\'s Advanced word →</a>';
   var d=document.getElementById("done");d.classList.add("show");
   if(fresh){
     live((lead?lead+" ":"")+(won?"You found it. ":"The word was ")+W+". "+P[1]+" Come back tomorrow for the next word.");
