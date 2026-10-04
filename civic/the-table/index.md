@@ -10,7 +10,7 @@ From the record, Sept. 29 to Oct. 4
 
 ## They promised to check themselves.
 
-Six companies and the President signed one page over lunch on September 29.
+The President and six AI companies signed a one-page accord on superintelligence over lunch on September 29.
 
 Published October 4, 2026
 

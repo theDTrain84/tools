@@ -10,7 +10,7 @@ From the record · Sept. 30 to Oct. 4
 
 ## Three men in the balcony. One hundred and twenty days.
 
-On September 30 the Secretary of War asked three people to tell the Department what the next war will need. Two of them build it.
+On September 30 the Secretary of War asked Elon Musk, Palmer Luckey and Newt Gingrich to tell the Department what the next war will need, and announced a new command for drones. Two of the three sell to the Department.
 
 Published October 4, 2026
 

@@ -6,8 +6,8 @@ Start at the landing page as text: [The Well](https://tools.dnsc.ai/ai.md). Teac
 
 ## Civic tools
 
-- [The table](https://tools.dnsc.ai/civic/the-table/index.md): Six companies and the President signed one page over lunch on September 29. The room, the page, the faces, and what it binds.
-- [The task force](https://tools.dnsc.ai/civic/task-force/index.md): On September 30 the Secretary of War asked three people to tell the Department what the next war will need. A 120-day study and a new command for drones, from the record.
+- [The table](https://tools.dnsc.ai/civic/the-table/index.md): The President and six AI companies signed a one-page accord on superintelligence over lunch on September 29. The room, the page, the faces, and what it binds.
+- [The task force](https://tools.dnsc.ai/civic/task-force/index.md): On September 30 the Secretary of War asked Elon Musk, Palmer Luckey and Newt Gingrich what the next war will need, and announced a new command for drones. A 120-day study, from the record.
 - [A Holiday for the Holidays · Ohio's Gas Tax Holiday](https://tools.dnsc.ai/gas-tax/index.md): Ohio's 38.5¢ gas tax is off every gallon for 90 days. Set your tank, see what you save, then follow the oil from the pump to the barrel.
 - [Issue 2, in Plain Numbers](https://tools.dnsc.ai/follow-the-money/index.md): What the November school bond means for your tax bill, with every number sourced from the public record.
 - [What's in the jar · Cannabis in Ohio](https://tools.dnsc.ai/cannabis/index.md): How strong today's cannabis is, what Ohio's law allows, where the money goes, and what the research says, in plain numbers with every source linked.
