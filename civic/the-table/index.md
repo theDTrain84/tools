@@ -32,9 +32,7 @@ Outside the West Wing lobby · after lunch · 33 minutes at the microphones
 
 What they said, after
 
-### Nine people took the microphones. One line each.
-
-One quote per person, verbatim, with the minute it was said. [19]
+### Nine people took the microphones. [19]
 
 [Image: The President at the lunch table, mid-sentence, hand raised.]
 
@@ -46,7 +44,7 @@ We're also thinking about forming a committee of sorts where we put maybe 10 peo
 
 **Donald J. Trump** · 2:22
 
-The governance was described in the future tense and does not appear on the page. As of October 4 there is no committee, no calendar and no czar.
+The committee is in the future tense and is not in the accord. As of October 4 there is no committee, no calendar and no czar.
 
 **More from the President**
 
@@ -374,7 +372,7 @@ What they actually signed
 
 [Image: Page one of the accord: the title, the preamble, the four numbered layers, and three closing paragraphs.]
 
-Page two, as the President posted it that evening; page one is folded beneath. Under his signature the title reads "President of the Unites States."Posted by the President on Truth Social, Sept. 29, 2026, 5:24 PM · a government document from the public record [18]
+Page two, as the President posted it that evening. Under his signature the title reads "President of the Unites States."Posted by the President on Truth Social, Sept. 29, 2026, 5:24 PM · a government document from the public record [18]
 
 We believe every company is responsible for developing its own technology safely.
 
@@ -446,7 +444,7 @@ What binds, and what would · Each row says what the instrument reaches that the
 
 **Is the accord being used as an argument against the bills?**
 
-No official has cited it by name as a reason to stop a bill. The posture is stated plainly instead. The Vice President, Sept. 29: "The solution to some of the AI risks is for you guys to take the risk seriously, not to come to the government for a regulatory regime." The Senate Majority Leader said Congress will need to legislate "at some point." The one bill that reached the floor that day was blocked the same afternoon. [4][11] What the table shows: the only instruments that bind the companies at the table today are two state laws.
+No official has cited it by name as a reason to stop a bill. The Vice President, Sept. 29: "The solution to some of the AI risks is for you guys to take the risk seriously, not to come to the government for a regulatory regime." The Senate Majority Leader said Congress will need to legislate "at some point." The one bill that reached the floor that day was blocked the same afternoon. [4][11] What the table shows: the only instruments that bind the companies at the table today are two state laws.
 
 The last question on the accord · 31:23
 
