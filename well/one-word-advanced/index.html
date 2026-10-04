@@ -95,6 +95,7 @@ h1{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:clamp(38px,9vw,5
 .board-list .s{font-family:var(--mono);font-size:12px;color:var(--ink4);min-width:4.5em;text-align:right}
 .board-list .empty{display:block;color:var(--ink3);font-size:16px}.board-list .empty::before{content:none}
 .lb .you{font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;color:var(--ink2);margin:4px 0 8px;padding:9px 12px;border-radius:8px;background:rgba(217,178,90,.18)}.lb .you b{font-family:Fraunces,Georgia,serif;font-size:17px;letter-spacing:0;font-weight:500;color:var(--ink)}
+.lb .anchor{position:relative;top:-90px;display:block}
 .lb .fine{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--ink4);margin:12px 0 0}
 details.how{margin:40px 0 0;max-width:56ch}
 details.how summary{list-style:none;cursor:pointer;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink3);padding:6px 0;display:inline-block}
@@ -131,7 +132,8 @@ details.how p{margin:8px 0 0;font-size:16px;color:var(--ink3)}
   <a href="../">← Back to The Well</a>
 </section>
 
-<section class="lb" id="lb" hidden>
+<section class="lb" id="lb">
+  <span id="board" class="anchor"></span>
   <p class="k">Today's board · <span id="lbEd"></span></p>
   <div class="join" id="join" hidden>
     <p class="jt">Add your score to today's board? It's anonymous: you get a made-up name, and nothing that identifies you is ever shown.</p>

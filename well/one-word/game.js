@@ -187,7 +187,9 @@ document.addEventListener("keydown",function(ev){
 
 /* ---------- start ---------- */
 paintAll();
+document.getElementById("lbEd").textContent=ADV?"Advanced":"Regular";
 if(st.word&&(st.won||st.g.length>=TR))finish(false);
+else loadBoard();
 else if(st.g.length)live("Welcome back. "+st.g.length+(st.g.length===1?" guess":" guesses")+" so far. "+st.g.map(function(g,i){return "Row "+(i+1)+": "+sayRow(g,st.s[i])}).join(". ")+".");
 })();
 
