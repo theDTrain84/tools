@@ -130,14 +130,14 @@
     // Footer line
     var host = document.querySelector('.site-foot .in') || document.body;
     var line = document.createElement('p'); line.className = 'sense';
-    var iosNote = /iPhone|iPad/.test(navigator.userAgent) ? ' (sound here; iPhone keeps its haptics to apps)' : '';
-    line.innerHTML = '<button type="button"></button><span>' + iosNote + '</span>';
+    if (host === document.body) line.className = 'sense solo';
+    line.innerHTML = '<button type="button"></button>';
     var fb = line.querySelector('button'); fb.addEventListener('click', toggle); feet.push(fb);
     host.appendChild(line);
     sync(false);
     var st = document.createElement('style');
     st.textContent =
-      '.sense{flex-basis:100%;margin:6px 0 0;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;letter-spacing:.08em}.sense button{all:unset;cursor:pointer;color:#D9B25A;text-decoration:underline;text-decoration-color:rgba(217,178,90,.5);text-underline-offset:3px}.sense button:focus-visible{outline:2px solid #3E6A9E;outline-offset:3px}.sense span{color:#7A6A5D}' +
+      '.sense.solo{max-width:1100px;margin:28px auto 36px;padding:0 20px;text-align:center}.sense{flex-basis:100%;margin:6px 0 0;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;letter-spacing:.08em}.sense button{all:unset;cursor:pointer;color:#D9B25A;text-decoration:underline;text-decoration-color:rgba(217,178,90,.5);text-underline-offset:3px}.sense button:focus-visible{outline:2px solid #3E6A9E;outline-offset:3px}.sense span{color:#7A6A5D}' +
       '.sense-head{all:unset;box-sizing:border-box;flex:none;width:32px;height:32px;display:inline-flex;align-items:center;justify-content:center;border-radius:50%;cursor:pointer;color:#7A6A5D;margin:0 -10px 0 -8px;transition:color .3s ease,background-color .3s ease;-webkit-tap-highlight-color:transparent}' +
       '.sense-head.on-dark{color:#A69686}.sense-head.in-bar{margin:-6px -6px -6px auto;color:inherit;opacity:.85}' +
       '.sense-head:hover{background:rgba(127,112,96,.12)}.sense-head:focus-visible{outline:2px solid #3E6A9E;outline-offset:1px}' +
