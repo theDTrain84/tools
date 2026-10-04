@@ -1,0 +1,281 @@
+{
+ "v": 1,
+ "track": "weekly",
+ "date": "2026-10-04",
+ "no": 1,
+ "size": 11,
+ "g": [
+  "#GAS##SOCKS",
+  "#AGE##PRONE",
+  "#LEES#ADMIT",
+  "SONNET#EAT#",
+  "ART#NOIR###",
+  "YES#SON#FAN",
+  "###PENS#ACE",
+  "#SIR#SELECT",
+  "AUDIT#TORO#",
+  "DRONE##AIR#",
+  "DELTA##FED#"
+ ],
+ "a": [
+  [
+   "GAS",
+   "What most cars still run on"
+  ],
+  [
+   "SOCKS",
+   "Pair in the drawer, often missing one"
+  ],
+  [
+   "AGE",
+   "How old you are"
+  ],
+  [
+   "PRONE",
+   "Lying face down"
+  ],
+  [
+   "LEES",
+   "Sediment at the bottom of a wine bottle"
+  ],
+  [
+   "ADMIT",
+   "Own up to"
+  ],
+  [
+   "SONNET",
+   "Claude ___ 5.5, the model Anthropic released Sept. 28: about 30 percent faster than the one before it",
+   {
+    "src": "https://www.anthropic.com/claude-sonnet-5-5"
+   }
+  ],
+  [
+   "EAT",
+   "Sit down to dinner"
+  ],
+  [
+   "ART",
+   "What hangs in a museum"
+  ],
+  [
+   "NOIR",
+   "Film ___: shadowy crime movies"
+  ],
+  [
+   "YES",
+   "The answer you were hoping for"
+  ],
+  [
+   "SON",
+   "Boy in the family"
+  ],
+  [
+   "FAN",
+   "Someone in the stands with a painted face"
+  ],
+  [
+   "PENS",
+   "Ballpoints, for example"
+  ],
+  [
+   "ACE",
+   "Card that can count high or low"
+  ],
+  [
+   "SIR",
+   "Polite way to address a man"
+  ],
+  [
+   "SELECT",
+   "A resolution introduced in the Senate on Sept. 29 would create a ___ Committee on Artificial Intelligence",
+   {
+    "src": "https://www.gallego.senate.gov/news/press-releases/gallego-introduces-resolution-to-establish-select-committee-on-ai/"
+   }
+  ],
+  [
+   "AUDIT",
+   "Outside check by an independent firm; the Sept. 29 White House accord asks each signer to arrange one",
+   {
+    "src": "https://nextgov.com/artificial-intelligence/2026/09/white-house-unveils-super-intelligence-executive-order-and-industry-accord/416325"
+   }
+  ],
+  [
+   "TORO",
+   "Bull, in a Spanish ring"
+  ],
+  [
+   "DRONE",
+   "Unmanned aircraft; on Sept. 30 the Department of War announced a four-star command for this and other autonomous systems",
+   {
+    "src": "https://www.war.gov/News/Releases/Release/Article/4615424/secretary-hegseth-announces-six-major-initiatives-at-quantico-speech/"
+   }
+  ],
+  [
+   "AIR",
+   "What we breathe"
+  ],
+  [
+   "DELTA",
+   "Where a river fans out into the sea"
+  ],
+  [
+   "FED",
+   "Gave dinner to"
+  ]
+ ],
+ "d": [
+  [
+   "SAY",
+   "Have your ___: speak up"
+  ],
+  [
+   "ADD",
+   "Put in, as a pinch of salt"
+  ],
+  [
+   "GALORE",
+   "In abundance"
+  ],
+  [
+   "SURE",
+   "Certain"
+  ],
+  [
+   "AGENTS",
+   "A Senate subcommittee hearing on Sept. 30 asked how to secure the homeland against attacks by rogue AI ___",
+   {
+    "src": "https://www.hawley.senate.gov/icymi-hawley-convenes-first-senate-hearing-on-rogue-ai-attacks/"
+   }
+  ],
+  [
+   "IDOL",
+   "Someone you look up to, maybe too much"
+  ],
+  [
+   "SEEN",
+   "Noticed"
+  ],
+  [
+   "PRINT",
+   "Fine ___: the part of a contract worth reading twice"
+  ],
+  [
+   "SENSE",
+   "Common ___"
+  ],
+  [
+   "TEA",
+   "Afternoon cup"
+  ],
+  [
+   "TOONS",
+   "Saturday morning cartoons, for short"
+  ],
+  [
+   "SPA",
+   "Place for a long soak"
+  ],
+  [
+   "INSET",
+   "Small map set inside a bigger one"
+  ],
+  [
+   "ORDER",
+   "Executive ___ 14434, signed Sept. 29, tells federal agencies to write Super Intelligence where they wrote AI",
+   {
+    "src": "https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/"
+   }
+  ],
+  [
+   "LOAF",
+   "Bread from the bakery"
+  ],
+  [
+   "COMA",
+   "State of deep unconsciousness"
+  ],
+  [
+   "FAERIE",
+   "Fairy, in old poetry"
+  ],
+  [
+   "KNIT",
+   "Make a scarf with two needles"
+  ],
+  [
+   "ACCORD",
+   "Six AI companies signed one with the President at the White House on Sept. 29",
+   {
+    "src": "https://nextgov.com/artificial-intelligence/2026/09/white-house-unveils-super-intelligence-executive-order-and-industry-accord/416325"
+   }
+  ],
+  [
+   "SET",
+   "Ready, ___, go"
+  ],
+  [
+   "NET",
+   "What a tennis ball has to clear"
+  ]
+ ],
+ "w": "ACCORD",
+ "n": "An accord is a promise made together. The one signed at the White House on Sept. 29 asks each company to watch its own models and to bring in independent auditors. When you read any agreement like it, look for two things: who checks the work, and what happens if the work isn't done.",
+ "sources": [
+  {
+   "title": "Executive Order 14434: federal agencies say Super Intelligence in place of AI",
+   "url": "https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Six AI companies sign a White House accord on frontier model safety (Nextgov)",
+   "url": "https://nextgov.com/artificial-intelligence/2026/09/white-house-unveils-super-intelligence-executive-order-and-industry-accord/416325",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Anthropic releases Claude Sonnet 5.5",
+   "url": "https://www.anthropic.com/claude-sonnet-5-5",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "A Senate resolution to create a Select Committee on Artificial Intelligence",
+   "url": "https://www.gallego.senate.gov/news/press-releases/gallego-introduces-resolution-to-establish-select-committee-on-ai/",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "The Senate's first hearing on rogue AI agent attacks",
+   "url": "https://www.hawley.senate.gov/icymi-hawley-convenes-first-senate-hearing-on-rogue-ai-attacks/",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "The Department of War announces a command for autonomous warfare and Project Meridian",
+   "url": "https://www.war.gov/News/Releases/Release/Article/4615424/secretary-hegseth-announces-six-major-initiatives-at-quantico-speech/",
+   "date": "2026-09-30"
+  }
+ ],
+ "coming": [
+  {
+   "date": "2026-10-05",
+   "end": "2026-10-06",
+   "text": "MCP Dev Summit in Toronto: two days for developers building on the Model Context Protocol.",
+   "url": "https://events.linuxfoundation.org/mcp-dev-summit-toronto/"
+  },
+  {
+   "date": "2026-10-06",
+   "text": "The Nobel Prize in Physics is announced in Stockholm. Chemistry follows on Wednesday.",
+   "url": "https://www.nobelprize.org/press-release/the-2026-nobel-prize-announcements/"
+  },
+  {
+   "date": "2026-10-07",
+   "end": "2026-10-08",
+   "text": "World Summit AI, the tenth edition, in Amsterdam.",
+   "url": "https://worldsummit.ai/"
+  },
+  {
+   "date": "2026-10-08",
+   "text": "TSMC, the chipmaker, reports its September sales.",
+   "url": "https://investor.tsmc.com/english/financial-calendar"
+  }
+ ],
+ "cooked": "2026-10-04T22:30:00Z",
+ "checked": true
+}

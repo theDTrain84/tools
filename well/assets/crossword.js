@@ -1,5 +1,7 @@
 /* The Well · shared crossword engine (The Daily Line, The Morning Edition).
    Usage: Crossword.mount({ bank, storagePrefix, title, shareUrl, puzzlePath, startDate })
+   Optional (the Sunday Edition): puzzle (an already-loaded puzzle, used before the bank), no (the edition number),
+   keyByPuzzleDate (keep progress per puzzle date, so a weekly grid survives across days), wordLabel, onPlay(P, from).
    A puzzle is { g:[rows], a:[[ANSWER, clue, {src}?]], d:[...], w:WORD, n:"teaching", sources:[{title,url,date}]? }.
    Any square size works; "#" is a black square. The page provides the element ids used below. */
 (function () {
@@ -68,7 +70,11 @@
     var dayIdx = Math.round((Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()) - Date.UTC(start[0], start[1], start[2])) / 864e5);
     var bankPick = bank[((dayIdx % bank.length) + bank.length) % bank.length];
 
-    if (cfg.puzzlePath && window.fetch) {
+    if (cfg.puzzle) {
+      var pb = check(cfg.puzzle);
+      if (pb.length) { console.warn("[" + cfg.title + "] the loaded puzzle failed its check, using the bank", pb); run(bankPick, "bank") }
+      else run(cfg.puzzle, "cooked");
+    } else if (cfg.puzzlePath && window.fetch) {
       fetch(cfg.puzzlePath + iso + ".json", { cache: "no-store" })
         .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status) })
         .then(function (p) {
@@ -84,7 +90,7 @@
 
   function play(cfg, P, from, dayIdx, iso, now) {
     var prefix = cfg.storagePrefix, G = P.g, N = G.length, S = slotsOf(G), entries = [], num = {}, n = 1;
-    var no = Math.max(1, dayIdx + 1);
+    var no = (cfg.no && from === "cooked") ? cfg.no : Math.max(1, dayIdx + 1);
     var $ = function (id) { return document.getElementById(id) };
     $("date").textContent = (cfg.dateLine ? cfg.dateLine(now, from) : DAYS[now.getDay()] + " · " + MON[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear()) + " · No. " + no;
     $("pzl").textContent = "No. " + no;
@@ -100,7 +106,7 @@
     S.A.forEach(function (cs, j) { entries.push({ dir: "A", cells: cs, ans: P.a[j][0], clue: P.a[j][1], src: P.a[j][2] && P.a[j][2].src, n: num[cs[0].join(",")] }) });
     S.D.forEach(function (cs, j) { entries.push({ dir: "D", cells: cs, ans: P.d[j][0], clue: P.d[j][1], src: P.d[j][2] && P.d[j][2].src, n: num[cs[0].join(",")] }) });
     entries.sort(function (x, y) { return x.dir === y.dir ? x.n - y.n : (x.dir === "A" ? -1 : 1) });
-    var key = iso + ":" + G.join("");
+    var key = ((cfg.keyByPuzzleDate && P.date) ? P.date : iso) + ":" + G.join("");
     var st = load("state");
     if (!st || st.key !== key) st = { key: key, f: {}, t: 0, done: false, help: false, started: false };
     var sel = { r: 0, c: 0, dir: "A" }, tStart = 0, tick = null;
@@ -109,6 +115,7 @@
     var board = document.querySelector(".board"), gridEl = $("grid"), btn = {};
     board.style.setProperty("--n", N);
     board.classList.toggle("big", N > 5);
+    board.classList.toggle("huge", N > 9);
     gridEl.setAttribute("aria-label", "Crossword grid, " + N + " by " + N);
     for (r = 0; r < N; r++) for (c = 0; c < N; c++) {
       var b = document.createElement("button"); b.type = "button"; b.className = "cell";
@@ -300,6 +307,7 @@
     showTime();
     go(entries[0], false);
     if (st.done) finish(false);
+    if (cfg.onPlay) try { cfg.onPlay(P, from) } catch (e) { console.warn(e) }
   }
 
   window.Crossword = { mount: mount, check: check, slotsOf: slotsOf };

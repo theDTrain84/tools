@@ -14,6 +14,7 @@ Start at the landing page as text: [The Well](https://tools.dnsc.ai/ai.md). Teac
 
 ## Games and practices
 
+- [The Sunday Edition](https://tools.dnsc.ai/well/sunday-edition/index.md): The week in AI as one big crossword, with what's coming next week. New every Sunday at 6 PM.
 - [One Word Advanced](https://tools.dnsc.ai/well/one-word-advanced/index.md): Seven letters, seven tries. For the word people.
 - [The Daily Line](https://tools.dnsc.ai/well/daily-line/index.md): One small crossword on the words of AI.
 - [The Morning Edition](https://tools.dnsc.ai/well/morning-edition/index.md): Yesterday's AI news, as a crossword.

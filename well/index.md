@@ -42,6 +42,14 @@ Weekdays · about five minutes
 
 Play
 
+#### The Sunday Edition
+
+The week in AI as one big crossword.
+
+Weekly · Sunday 6 PM · 11 × 11
+
+Play
+
 ### Today’s boards
 
 Fewest guesses, then fastest. Fresh every morning.
