@@ -36,7 +36,7 @@ a{color:inherit}
 .site-nav{z-index:20}
 
 /* labels */
-.k{font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;margin:0;display:flex;align-items:center;gap:10px;color:var(--walnut)}
+.k{font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;margin:0;text-wrap:balance;display:flex;align-items:center;gap:10px;color:var(--walnut)}
 .k:before{content:"";width:22px;height:1px;background:currentColor;opacity:.7}
 .k.on-dark{color:var(--gold)}
 .go{font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--walnut);display:inline-flex;gap:8px;align-items:center}
@@ -202,13 +202,30 @@ h1 em{font-style:italic;color:var(--gold)}
   .tiles{grid-template-columns:repeat(3,1fr);gap:22px}
   .cards{grid-template-columns:repeat(3,1fr);gap:22px}
   .shot.wide{grid-column:1/-1;flex-direction:row-reverse;min-height:380px}
-  .shot.wide .pic{flex:0 0 64%;aspect-ratio:auto}
+  .shot.wide .pic{flex:0 0 64%;aspect-ratio:auto}.shot.wide img{object-position:0 0}
   .shot.wide .pic:after{background:linear-gradient(90deg,var(--dusk) 0%,rgba(27,25,22,.5) 14%,rgba(27,25,22,0) 34%)}
   .shot.wide .txt{margin:0;padding:36px 8px 32px 36px;justify-content:flex-end}
   .shot.wide h3{font-size:36px}
   .shot.wide p{font-size:18px}
 }
 @media (prefers-reduced-motion:reduce){.hero img{animation:none;transform:none}.shot img,.card,.go i{transition:none}}
+
+/* the shelf, drawn from pieces.json: a featured stack, quiet filter chips, a Soon tag */
+.featured{padding:56px 0 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:30px 16px 30px}
+.chips button{font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--ink3);background:none;border:1px solid var(--rule);border-radius:999px;padding:8px 14px;min-height:44px;cursor:pointer;transition:color .3s,border-color .3s,background .3s}
+.chips button:hover{color:var(--ink);border-color:var(--ink4)}
+.chips button[aria-pressed="true"]{color:var(--walnut);border-color:var(--walnut);background:var(--paper2)}
+.shot[hidden],section[hidden]{display:none!important}
+.shot.is-soon{cursor:default}
+.shot.is-soon:hover{transform:none;box-shadow:none}
+.shot .soon{margin-top:auto;padding-top:10px;font-size:12px;color:var(--ink3)}
+.shot .orbit-art{width:100%;height:100%;display:block}
+.shot.light.wide .art-pic{background:radial-gradient(ellipse at 50% 40%,#F6F2EA,#EAE3D5 75%)}
+@media (min-width:760px){
+  .chips{padding:34px 20px 34px}
+  .shot.light.wide .pic:after{display:block;background:linear-gradient(90deg,#EAE3D5 0%,rgba(234,227,213,.5) 14%,rgba(234,227,213,0) 34%)}
+}
 
 .hero .where,.where{position:absolute;max-width:none;right:18px;bottom:12px;margin:0;font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(243,239,231,.72);pointer-events:none}
 @media(max-width:720px){.hero .where,.where{right:14px;bottom:10px;font-size:9px}}
@@ -250,16 +267,17 @@ h1 em{font-style:italic;color:var(--gold)}
 <section class="group" aria-labelledby="civic-h">
 <div class="head"><div><p class="k">Civic</p><h2 id="civic-h">Know what the decisions cost.</h2><p>Plain answers from public records, so neighbors can talk about the same numbers.</p></div></div>
 <div class="tiles">
-<a class="shot wide" href="follow-the-money/"><div class="pic"><img src="assets/previews/ftm.jpg?v=2" width="1200" height="800" alt="Issue 2, in Plain Numbers: the Issue 2 calculator showing what the bond means for the tax bill on a $350,000 home" loading="lazy"></div><div class="txt"><p class="k on-dark">Lakota schools · Issue 2</p><h3>Issue 2, in Plain Numbers</h3><p>What the November school bond means for your tax bill, with every number sourced from the public record.</p><span class="go">Open <i>→</i></span></div></a>
+<a class="shot light wide" href="follow-the-money/"><div class="pic"><img src="assets/previews/ftm.jpg?v=2" width="1200" height="800" alt="Issue 2, in Plain Numbers: the Issue 2 calculator showing what the bond means for the tax bill on a $350,000 home" loading="lazy"></div><div class="txt"><p class="k on-dark">Lakota schools · Issue 2</p><h3>Issue 2, in Plain Numbers</h3><p>What the November school bond means for your tax bill, with every number sourced from the public record.</p><span class="go">Open <i>→</i></span></div></a>
+<a class="shot light wide" href="gas-tax/"><div class="pic"><img src="assets/previews/gas-tax.jpg?v=2" width="1200" height="800" alt="A Holiday for the Holidays: a fuel tank slider showing $5.77 saved on a 15-gallon fill-up" loading="lazy"></div><div class="txt"><p class="k on-dark">Ohio · Gas tax holiday</p><h3>A Holiday for the Holidays</h3><p>Ohio's 38.5¢ gas tax is off every gallon for 90 days. Set your tank, see what you save, then follow the oil from the pump to the barrel.</p><span class="go">Open <i>→</i></span></div></a>
 </div>
 </section>
 
 <section class="group" aria-labelledby="ai-h">
 <div class="head"><div><p class="k">Working with AI</p><h2 id="ai-h">Use what you already have, on purpose.</h2><p>The same practices we teach, free to take home.</p></div></div>
 <div class="tiles">
-<a class="shot wide" href="https://dnsc.ai/teaching"><div class="pic"><img src="assets/previews/teaching.jpg" width="1200" height="800" alt="The Teaching page: Declare. Practice. Become. beside a live clock of the day's rhythms" loading="lazy"></div><div class="txt"><p class="k on-dark">Teaching</p><h3>How a person and an AI work together</h3><p>The rhythms, the corrections, and the whole stack behind this practice. Ten minutes, with a live clock.</p><span class="go">Open <i>→</i></span></div></a>
-<a class="shot" href="recipes/"><div class="pic"><img src="assets/previews/recipes.jpg" width="1200" height="800" alt="The Recipe Book: the recipes we cook with, starting with the morning inbox" loading="lazy"></div><div class="txt"><p class="k on-dark">Recipes</p><h3>The Recipe Book</h3><p>Working systems for the AI you already have.</p><span class="go">Open <i>→</i></span></div></a>
-<a class="shot" href="ai-gauges/"><div class="pic"><img src="assets/previews/gauges.jpg" width="1200" height="800" alt="AI Gauges: a dashboard of dials for energy, output tokens, water, cache and carbon" loading="lazy"></div><div class="txt"><p class="k on-dark">Dashboard</p><h3>AI Gauges</h3><p>Your own AI use: tokens, energy, water and carbon.</p><span class="go">Open <i>→</i></span></div></a>
+<a class="shot light wide" href="https://dnsc.ai/teaching"><div class="pic"><img src="assets/previews/teaching.jpg" width="1200" height="800" alt="The Teaching page: Declare. Practice. Become. beside a live clock of the day's rhythms" loading="lazy"></div><div class="txt"><p class="k on-dark">Teaching</p><h3>How a person and an AI work together</h3><p>The rhythms, the corrections, and the whole stack behind this practice. Ten minutes, with a live clock.</p><span class="go">Open <i>→</i></span></div></a>
+<a class="shot light" href="recipes/"><div class="pic"><img src="assets/previews/recipes.jpg" width="1200" height="800" alt="The Recipe Book: the recipes we cook with, starting with the morning inbox" loading="lazy"></div><div class="txt"><p class="k on-dark">Recipes</p><h3>The Recipe Book</h3><p>Working systems for the AI you already have.</p><span class="go">Open <i>→</i></span></div></a>
+<a class="shot light" href="ai-gauges/"><div class="pic"><img src="assets/previews/gauges.jpg" width="1200" height="800" alt="AI Gauges: a dashboard of dials for energy, output tokens, water, cache and carbon" loading="lazy"></div><div class="txt"><p class="k on-dark">Dashboard</p><h3>AI Gauges</h3><p>Your own AI use: tokens, energy, water and carbon.</p><span class="go">Open <i>→</i></span></div></a>
 <a class="shot light" href="well/"><div class="pic art-pic"><svg class="art a-well" viewBox="0 0 300 200" aria-hidden="true"><rect width="300" height="200" fill="#EAE3D5"/><g class="bob" style="--i:0"><rect x="34" y="78" width="44" height="44" rx="3" fill="#FBF8F2" stroke="#CFC6B8"/><rect x="34" y="78" width="15" height="15" fill="#3E6A9E"/><rect x="63" y="107" width="15" height="15" fill="#B4862E"/></g><g class="bob" style="--i:1"><circle cx="122" cy="100" r="22" fill="#E8C878"/><path d="M122 78 a22 22 0 0 1 0 44 a14 22 0 0 0 0 -44" fill="#2E3A4F"/></g><g class="bob" style="--i:2"><path d="M160 104 C 172 88, 198 88, 210 104 C 198 118, 172 118, 160 104Z" fill="#D9B25A"/><path d="M162 104 L208 104" stroke="#B4862E"/></g><g class="bob" style="--i:3"><circle cx="252" cy="100" r="20" fill="none" stroke="#2C211A" stroke-width="2"/><circle cx="252" cy="80" r="4" fill="#4C7BB8"/><circle cx="271" cy="94" r="4" fill="#B98A2E"/><circle cx="264" cy="116" r="4" fill="#A89F93"/><circle cx="240" cy="116" r="4" fill="#5A3A2A"/><circle cx="233" cy="94" r="4" fill="#D9B25A"/></g></svg></div><div class="txt"><p class="k on-dark">Every day</p><h3>Daily games</h3><p>Word games that teach AI, and a few quiet rooms.</p><span class="go">Play <i>→</i></span></div></a>
 </div>
 </section>
@@ -286,7 +304,7 @@ h1 em{font-style:italic;color:var(--gold)}
 <a href="https://dnsc.ai/#contact">Start a conversation</a>
 </section>
 </main>
-<footer class="site-foot"><div class="in"><span>DNSC · Dustin Nimmo Strategic Consulting</span><span class="nav"><a href="https://dnsc.ai">Home</a><a href="https://dnsc.ai/#how-we-work">How we work</a><a href="https://tools.dnsc.ai/">The Well</a><a href="https://tools.dnsc.ai/recipes/">The Recipe Book</a><a href="https://dnsc.ai/teaching">Teaching</a><a href="https://dnsc.ai/#contact">Contact</a></span><span class="credit">Free to use. All photography by Dustin Nimmo, from his own work.</span></div></footer>
+<footer class="site-foot"><div class="in"><span>DNSC · Dustin Nimmo Strategic Consulting</span><span class="nav"><a href="https://dnsc.ai">Home</a><a href="https://dnsc.ai/#how-we-work">How we work</a><a href="https://tools.dnsc.ai/">The Well</a><a href="https://tools.dnsc.ai/recipes/">The Recipe Book</a><a href="https://dnsc.ai/teaching">Teaching</a><a href="https://dnsc.ai/#contact">Contact</a></span><span class="credit">Free to use. All photography by Dustin Nimmo, from his own work.</span><span class="ai-twin">For AIs: <a href="ai.md">this page as text</a> · <a href="/llms.txt">site index</a></span></div></footer>
 <script>
 (function(){
   // a few motes of gold, sky and ochre drifting up through the page
@@ -320,6 +338,97 @@ const calc=document.querySelector('.a-calc');if(!calc)return;const card=calc.clo
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const run=()=>{if(reduce)return;cancelAnimationFrame(raf);const t0=performance.now();const step=now=>{const k=Math.min(1,Math.max(0,(now-t0-1500)/900));nums.forEach(n=>n.textContent='$'+Math.round(+n.dataset.to*(1-Math.pow(1-k,3))));if(k<1)raf=requestAnimationFrame(step)};raf=requestAnimationFrame(step)};
 card.addEventListener('mouseenter',run);card.addEventListener('focus',run);new MutationObserver(()=>{if(card.classList.contains('live'))run()}).observe(card,{attributes:true,attributeFilter:['class']});})();
+</script>
+<script id="shelf">
+/* The shelf: pieces.json orders the sections newest first, adds the featured row and the filter chips.
+   If the manifest does not load, the cards written above stay exactly as they are. */
+(()=>{
+  if(!window.fetch) return;
+  const HEAD={civic:'civic-h',rooms:'life-h',teaching:'ai-h'};
+  const tilesFor=s=>{if(s==='games')return document.querySelector('.shelf .tiles');const h=document.getElementById(HEAD[s]);return h?h.closest('section').querySelector('.tiles'):null;};
+  const CHIPS=[['All',''],['Tools','tool'],['Pieces','piece'],['Games','game'],['Rooms','room'],['Teaching','teaching']];
+  const ORBIT='<svg class="orbit-art" viewBox="0 0 300 200" aria-hidden="true"><circle cx="150" cy="100" r="70" fill="none" stroke="#CFC6B8" stroke-width="1.2"/><circle cx="150" cy="100" r="46" fill="none" stroke="#B4862E" stroke-opacity=".45" stroke-width=".8" stroke-dasharray="1 5"/><circle cx="150" cy="30" r="4.5" fill="#3E6A9E"/><circle cx="216.6" cy="78.4" r="4.5" fill="#B4862E"/><circle cx="191.1" cy="156.6" r="4.5" fill="#623E2A"/><circle cx="108.9" cy="156.6" r="4.5" fill="#A69686"/><circle cx="83.4" cy="78.4" r="4.5" fill="#D9B25A"/></svg>';
+  const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!=null)n.textContent=text;return n;};
+  function build(p,wide){
+    const soon=p.status==='coming';
+    const a=el(soon?'div':'a','shot light'+(wide?' wide':'')+(soon?' is-soon':''));
+    if(!soon)a.href=p.href;
+    const src=p.preview||(soon?'':p.share);
+    const pic=el('div',src?'pic':'pic art-pic');
+    if(src){const img=el('img');img.src=src;img.alt=p.title;img.loading='lazy';img.width=1200;img.height=800;pic.append(img);}
+    else pic.innerHTML=ORBIT;
+    const txt=el('div','txt');
+    txt.append(el('p','k on-dark',p.topic||''),el('h3','',p.title),el('p','',p.line||''));
+    if(soon)txt.append(el('p','soon','Soon'));
+    else{const go=el('span','go','Open ');go.append(el('i','','→'));txt.append(go);}
+    a.append(pic,txt);
+    return a;
+  }
+  function soonify(card){ // a static card whose piece is not ready yet: keep the look, drop the link
+    const d=el('div',card.className+' is-soon');d.innerHTML=card.innerHTML;
+    const go=d.querySelector('.go');if(go)go.replaceWith(el('p','soon','Soon'));
+    return d;
+  }
+  function render(data){
+    const list=(data&&Array.isArray(data.pieces)?data.pieces:[]).filter(p=>p&&p.slug&&p.title&&p.href&&(p.section==='games'||HEAD[p.section]));
+    if(!list.length)return;
+    const order=list.map((p,i)=>[p,i]).sort((x,y)=>(y[0].date||'').localeCompare(x[0].date||'')||x[1]-y[1]).map(x=>x[0]);
+    const statics=new Map();document.querySelectorAll('a.shot[href]').forEach(a=>{const h=a.getAttribute('href');if(!statics.has(h))statics.set(h,a);});
+    // plan every section before touching the page
+    const plan=[];
+    for(const s of ['games','civic','teaching','rooms']){
+      const tiles=tilesFor(s);if(!tiles)continue;
+      const cards=order.filter(p=>p.section===s).map(p=>{
+        let c=statics.get(p.href);
+        if(c){if(p.status==='coming'){const d=soonify(c);c.replaceWith(d);c=d;}}
+        else c=build(p,s==='civic');
+        c.dataset.type=p.type||'';return c;});
+      plan.push([tiles,cards]);
+    }
+    const used=new Set(plan.flatMap(x=>x[1]));
+    for(const [tiles,cards] of plan){
+      const rest=[...tiles.children].filter(c=>!used.has(c));
+      cards.concat(rest).forEach(c=>tiles.appendChild(c));
+    }
+    // the featured stack: two or three large cards under the hero
+    const feat=order.filter(p=>p.featured).slice(0,3);
+    const hero=document.querySelector('header.hero');
+    let fsec=null;
+    if(feat.length&&hero){
+      fsec=el('section','featured');fsec.setAttribute('aria-label','Featured');
+      const w=el('div','wrap');
+      const tiles=el('div','tiles');
+      feat.forEach(p=>{
+        const s=statics.get(p.href);let c;
+        if(s&&p.status!=='coming'){c=s.cloneNode(true);c.classList.remove('wide','live');}
+        else if(s){c=soonify(s);c.classList.remove('wide');}
+        else c=build(p,false);
+        c.dataset.type=p.type||'';tiles.append(c);});
+      w.append(tiles);fsec.append(w);hero.after(fsec);
+    }
+    // touch screens: cards made here come alive in view, like the ones written above
+    if('IntersectionObserver' in window&&matchMedia('(hover:none)').matches){
+      const io=new IntersectionObserver(es=>es.forEach(e=>e.target.classList.toggle('live',e.intersectionRatio>.7)),{threshold:[0,.7,1]});
+      const orig=new Set(statics.values());
+      if(fsec)fsec.querySelectorAll('.shot').forEach(c=>io.observe(c));
+      used.forEach(c=>{if(!orig.has(c))io.observe(c);});
+    }
+    // quiet chips: filter by kind, nothing counted
+    const bar=el('nav','wrap chips');bar.setAttribute('aria-label','Show');
+    const groups=[fsec,...plan.map(x=>x[0].closest('section'))].filter(Boolean);
+    const apply=t=>{
+      bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.t===t)));
+      groups.forEach(g=>{let any=false;g.querySelectorAll('.tiles>.shot').forEach(c=>{const on=!t||c.dataset.type===t;c.hidden=!on;if(on)any=true;});g.hidden=!any;});
+    };
+    CHIPS.forEach(([label,t])=>{const b=el('button','',label);b.type='button';b.dataset.t=t;b.addEventListener('click',()=>apply(t));bar.append(b);});
+    (fsec||hero).after(bar);
+    apply('');
+    // moving cards nudges the phone strips off their first card; set them back to the start
+    const home=()=>document.querySelectorAll('.tiles').forEach(t=>{t.scrollLeft=0;});
+    home();requestAnimationFrame(home);
+  }
+  fetch('pieces.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();}).then(data=>{try{render(data);}catch(e){console.warn('shelf',e);}}).catch(()=>{});
+})();
 </script>
 </body>
 </html>

@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>What's in the jar · Cannabis in Ohio · DNSC</title>
+<!-- share -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DNSC">
+<meta property="og:title" content="What's in the jar · Cannabis in Ohio, from the public record">
+<meta property="og:description" content="How strong today's cannabis is, what Ohio's law allows, where the money goes, and what the research says, in plain numbers with every source linked.">
+<meta property="og:url" content="https://tools.dnsc.ai/cannabis/">
+<meta property="og:image" content="https://tools.dnsc.ai/assets/share/cannabis.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="What's in the jar · Cannabis in Ohio, from the public record">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What's in the jar · Cannabis in Ohio, from the public record">
+<meta name="twitter:description" content="How strong today's cannabis is, what Ohio's law allows, where the money goes, and what the research says, in plain numbers with every source linked.">
+<meta name="twitter:image" content="https://tools.dnsc.ai/assets/share/cannabis.jpg">
+<!-- /share -->
+<meta name="description" content="How strong today's cannabis is, what Ohio's law allows, where the money goes, and what the research says, in plain numbers with every source linked.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,600&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Layout: one story column of chapters, each a serif headline + one picture or chart, details folded below. */
+:root{
+  --paper:#EEF2EE;--sheet:#ffffff;--ink:#1A1F24;--ink-2:#3d454c;--ink-3:#59626a;
+  --green:#2E6B4E;--green-1:#e3ece6;--rule:#B8C2BC;--rule-2:#d7ddd9;--teal:#0F6B6F;--gold:#C9A24A;--gold-d:#7F5A12;
+  --leaf:#4E7A4A;--leaf-1:#dfe9dc;--med:#2F7F6F;--adult:#C9A24A;
+  --face:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;color:var(--ink);font-family:var(--face);font-size:1.1875rem;line-height:1.55;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums lining-nums;background-color:var(--paper)}
+::selection{background:var(--green);color:#fff}
+a{color:var(--green);text-decoration-thickness:1.5px;text-underline-offset:.18em}
+a:hover{text-decoration-thickness:3px}
+:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:20px;padding-block:0 56px}
+.dnsc-back{font-family:var(--mono);font-size:12.5px;letter-spacing:.04em;padding:10px 20px;border-bottom:1px solid rgba(127,127,127,.25);background:rgba(127,127,127,.06)}
+.dnsc-back a{color:inherit;opacity:.8;text-decoration:none}.dnsc-back span{opacity:.35;margin:0 10px}
+.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;padding:22px 0 14px;border-bottom:2px solid var(--ink)}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{width:40px;height:40px;flex:none}
+.brand .nm{font-weight:900;font-size:1.0625rem;letter-spacing:.12em;text-transform:uppercase;line-height:1.3}
+.brand .nm span{display:block;font-weight:500;font-size:.9375rem;letter-spacing:0;text-transform:none;color:var(--ink-2)}
+.ref{font-size:.9375rem;color:var(--ink-2);text-align:right;line-height:1.45}
+.ref span{display:block}
+@media (max-width:700px){.ref{text-align:left}}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:24px;align-items:center;padding:30px 0 6px}
+.kick{font-family:var(--mono);font-size:.8125rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin:0 0 10px}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(3rem,8vw,5.75rem);line-height:.95;letter-spacing:-.02em;margin:0 0 16px}
+.hero h1 i{font-style:italic;color:var(--leaf)}
+.lede{font-size:clamp(1.15rem,2vw,1.375rem);line-height:1.45;color:var(--ink-2);max-width:36ch;margin:0}
+.heroart{width:100%;max-width:340px;justify-self:center;height:auto;overflow:visible}
+@media (max-width:760px){.hero{grid-template-columns:1fr}.heroart{max-width:220px;justify-self:start}}
+
+/* line art */
+.ln{fill:none;stroke:var(--ink);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.lt{fill:none;stroke:var(--ink);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;opacity:.65}
+.draw .ln,.draw .lt{stroke-dasharray:var(--len,900);stroke-dashoffset:var(--len,900);transition:stroke-dashoffset 2s cubic-bezier(.4,0,.2,1)}
+.draw.on .ln,.draw.on .lt{stroke-dashoffset:0}
+.jarfill{transition:y .9s cubic-bezier(.3,1.2,.4,1),height .9s cubic-bezier(.3,1.2,.4,1),fill .4s}
+
+/* chapters */
+.ch{margin:60px 0 18px}
+.ch .k{margin:0 0 6px;font-family:var(--mono);font-size:.8125rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.ch h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.85rem,4.2vw,2.8rem);line-height:1.06;letter-spacing:-.015em;margin:0;max-width:24ch;text-wrap:balance}
+.ch .dek{margin:10px 0 0;font-size:1.125rem;line-height:1.5;color:var(--ink-2);max-width:62ch}
+.strip{background:var(--sheet);border:1px solid var(--ink);box-shadow:0 2px 3px rgba(26,31,36,.12);padding:18px 20px}
+.strip+.strip{margin-top:18px}
+.cap{display:block;font-weight:700;font-size:.9375rem;color:var(--green);margin-bottom:6px}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.chart text{font-family:var(--face);font-variant-numeric:tabular-nums}
+.legend{display:flex;flex-wrap:wrap;gap:4px 18px;font-size:.9375rem;color:var(--ink-2);margin:2px 0 8px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.big3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid var(--rule);margin-top:14px}
+.big3>div{padding:12px 14px 2px 0}
+.big3 b{display:block;font-family:var(--serif);font-weight:700;font-size:clamp(1.6rem,3.4vw,2.2rem);letter-spacing:-.02em;line-height:1.05}
+.big3 span{display:block;color:var(--ink-2);font-size:.9375rem;line-height:1.4;margin-top:4px}
+@media (max-width:700px){.big3{grid-template-columns:1fr}.big3>div{border-bottom:1px solid var(--rule-2);padding:10px 0}}
+
+/* folds */
+details.more{margin-top:14px;border-top:1px solid var(--rule)}
+details.more>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:10px 0;font-weight:700;font-size:1rem;color:var(--ink-2);min-height:44px}
+details.more>summary::-webkit-details-marker{display:none}
+details.more>summary::before{content:"+";display:inline-flex;align-items:center;justify-content:center;flex:none;width:22px;height:22px;border:1.5px solid var(--ink-2);border-radius:50%;font-weight:800;font-size:.875rem;transition:transform .25s}
+details.more[open]>summary::before{transform:rotate(45deg)}
+details.more .in{padding:2px 0 12px;font-size:1rem;line-height:1.55;color:var(--ink-2);max-width:80ch}
+details.more .in p{margin:0 0 8px}
+details.more .in b{color:var(--ink)}
+details.more ul.lk{margin:4px 0 0;padding-left:18px}
+details.more ul.lk li{margin:5px 0}
+
+/* calculator */
+.calc{display:grid;grid-template-columns:minmax(0,200px) minmax(0,1fr);gap:20px;align-items:center}
+.calc .jar{width:100%;max-width:200px;height:auto;overflow:visible}
+.seg{display:inline-flex;flex-wrap:wrap;border:1px solid var(--ink);border-radius:3px;overflow:hidden;margin:0 0 10px}
+.seg button{font:inherit;font-size:.9375rem;font-weight:700;padding:7px 14px;min-height:44px;background:#fff;color:var(--ink);border:0;cursor:pointer}
+.seg button+button{border-left:1px solid var(--ink)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.field{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 12px;align-items:baseline;margin:6px 0}
+.field label{font-weight:700;font-size:.9375rem;color:var(--green)}
+.field output{font-weight:800;font-size:1.25rem}
+.field input{grid-column:1/-1}
+.range{display:block;width:100%;margin:4px 0 2px;-webkit-appearance:none;appearance:none;height:28px;background:transparent;cursor:pointer}
+.range::-webkit-slider-runnable-track{height:4px;background:var(--ink)}
+.range::-moz-range-track{height:4px;background:var(--ink)}
+.range::-webkit-slider-thumb{-webkit-appearance:none;width:26px;height:26px;margin-top:-11px;border-radius:50%;background:#fff;border:4px solid var(--green)}
+.range::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:#fff;border:4px solid var(--green)}
+.res{margin-top:10px;padding-top:10px;border-top:2px solid var(--ink)}
+.res .mg{font-family:var(--serif);font-weight:700;font-size:clamp(2.2rem,5vw,3.2rem);letter-spacing:-.02em;line-height:1}
+.res .mg small{font-family:var(--face);font-size:.35em;font-weight:700;color:var(--ink-2);letter-spacing:0;margin-left:6px}
+.res p{margin:6px 0 0;color:var(--ink-2);font-size:1rem}
+.doses{display:flex;flex-wrap:wrap;gap:3px;margin-top:10px;max-width:520px}
+.doses i{display:block;width:10px;height:10px;border-radius:50%;background:var(--leaf)}
+.doses i.part{background:linear-gradient(90deg,var(--leaf) var(--p),var(--leaf-1) var(--p))}
+.note{font-size:.875rem;color:var(--ink-3);margin-top:8px}
+@media (max-width:700px){.calc{grid-template-columns:1fr}.calc .jar{max-width:140px}}
+
+/* timeline */
+.tline{list-style:none;margin:0;padding:0;position:relative}
+.tline::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:var(--ink)}
+.tline li{position:relative;padding:0 0 18px 36px}
+.tline li::before{content:"";position:absolute;left:3px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--sheet);border:2.5px solid var(--ink)}
+.tline li.key::before{background:var(--leaf);border-color:var(--leaf)}
+.tline .d{font-family:var(--mono);font-size:.8125rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+.tline b{display:block;font-weight:800;font-size:1.0625rem;line-height:1.3}
+.tline span.t{display:block;color:var(--ink-2);font-size:.9375rem;line-height:1.4}
+.law{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:28px;align-items:start}
+.rules{display:grid;gap:10px}
+.rule{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;align-items:baseline;padding:10px 0;border-bottom:1px solid var(--rule-2)}
+.rule .n{font-family:var(--serif);font-weight:700;font-size:1.6rem;letter-spacing:-.01em;min-width:3.6ch}
+.rule span{color:var(--ink-2);font-size:.9375rem;line-height:1.4}
+.rule span b{color:var(--ink)}
+@media (max-width:860px){.law{grid-template-columns:1fr}}
+
+/* money */
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;margin-top:16px}
+.split .bar{display:flex;height:30px;gap:2px;margin:6px 0 6px}
+.split .bar i{display:flex;align-items:center;padding:0 8px;font-style:normal;font-size:.8125rem;font-weight:700;color:#fff;white-space:nowrap;overflow:hidden}
+.split p{margin:0;font-size:.875rem;color:var(--ink-2);line-height:1.4}
+.towns{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-top:8px}
+.town{border:1px solid var(--rule);padding:8px 10px;background:#fff}
+.town b{display:block;font-weight:800}
+.town span{display:block;font-size:.875rem;color:var(--ink-2)}
+.town.no{background:repeating-linear-gradient(135deg,#fff 0 6px,#f1f4f1 6px 7px)}
+@media (max-width:900px){.split{grid-template-columns:1fr}}
+@media (max-width:560px){.split .bar i{font-size:0;padding:0}}
+
+/* research */
+.odds{display:grid;gap:10px;margin-top:6px}
+.or{display:grid;grid-template-columns:minmax(0,15em) minmax(0,1fr) 3.4em;gap:12px;align-items:center}
+.or span{font-size:.9375rem;line-height:1.3}
+.or .tr{height:20px;position:relative;background:linear-gradient(90deg,var(--rule-2) 1px,transparent 1px) 0 0/20% 100%}
+.or .br{position:absolute;left:0;top:2px;bottom:2px;background:var(--ink);border-radius:0 3px 3px 0;transition:width 1.2s cubic-bezier(.3,1,.4,1)}
+.or .br.hi{background:var(--leaf)}
+.or b{text-align:right;font-weight:800}
+.caveat{margin-top:14px;padding:12px 14px;border-left:4px solid var(--gold);background:#faf6ea;font-size:1rem;line-height:1.5}
+.caveat b{font-weight:800}
+@media (max-width:640px){.or{grid-template-columns:minmax(0,1fr) 3.2em}.or .tr{grid-column:1/-1;grid-row:2}}
+
+/* places */
+.places{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.place{border:1px solid var(--ink);background:#fff;padding:14px}
+.place .k2{font-family:var(--mono);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.place b{display:block;font-family:var(--serif);font-weight:700;font-size:1.5rem;letter-spacing:-.01em;line-height:1.1;margin:4px 0}
+.place span{display:block;color:var(--ink-2);font-size:.9375rem;line-height:1.4}
+.verdict{margin-top:16px;font-family:var(--serif);font-weight:600;font-size:clamp(1.3rem,2.6vw,1.75rem);line-height:1.25;max-width:40ch}
+
+footer{margin-top:44px;padding-top:18px;border-top:2px solid var(--ink);max-width:820px}
+footer p{margin:0;font-size:1.0625rem;line-height:1.6;color:var(--ink-2)}
+footer p b{color:var(--ink);font-weight:800}
+footer p.sm{margin-top:8px;font-size:.9375rem;color:var(--ink-3)}
+@media (max-width:560px){body{font-size:1.125rem}.wrap{padding-inline:16px}.strip{padding:14px 14px}.ref span{display:inline}.ref span+span::before{content:" · "}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.draw .ln,.draw .lt{stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+<div class="dnsc-back"><a href="https://tools.dnsc.ai/">&larr; The Well</a><span>&middot;</span><a href="https://dnsc.ai">dnsc.ai</a></div>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9" fill="#0F6B6F"/><path d="M13 14h14v4l2 3v11a2 2 0 0 1-2 2H13a2 2 0 0 1-2-2V21l2-3Z" fill="none" stroke="#F4EFE6" stroke-width="2.2" stroke-linejoin="round"/><path d="M12 11h16" stroke="#F4EFE6" stroke-width="2.4" stroke-linecap="round"/><path d="M20 22c-3 2-3 6 0 8 3-2 3-6 0-8Z" fill="#C9A24A"/></svg>
+      <div class="nm">What's in the jar<span>Cannabis in Ohio, from the public record</span></div>
+    </div>
+    <div class="ref"><span>Ohio law as of Mar 20, 2026</span><span>Sales through Sep 19, 2026</span><span>Research through Aug 2026</span></div>
+  </header>
+
+  <section class="hero" aria-label="What's in the jar">
+    <div>
+      <p class="kick">Ohio · law, money and health</p>
+      <h1>What's in <i>the jar.</i></h1>
+      <p class="lede">How strong today's cannabis is, what Ohio's law allows, where the money goes, and what the research says. Plain numbers, every source a click away.</p>
+    </div>
+    <svg class="heroart draw" viewBox="0 0 240 280" role="img" aria-label="A line drawing of a jar with a leaf inside">
+      <path class="ln" d="M70 40h100v22H70Z"/>
+      <path class="ln" d="M76 62h88l14 22v150a16 16 0 0 1-16 16H78a16 16 0 0 1-16-16V84Z"/>
+      <path class="lt" d="M66 110h108M66 210h108"/>
+      <rect class="jarfill" id="heroFill" x="64" y="250" width="112" height="0" fill="#dfe9dc"/>
+      <path class="ln" d="M120 200V128"/>
+      <path class="ln" d="M120 150c-22-6-34-22-36-40 18 2 32 14 36 34 4-20 18-32 36-34-2 18-14 34-36 40Z"/>
+      <path class="ln" d="M120 176c-14-2-26-10-30-22 14-1 26 6 30 18 4-12 16-19 30-18-4 12-16 20-30 22Z"/>
+      <text x="120" y="270" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="2" fill="#59626a">THC 35% · 70%</text>
+    </svg>
+  </section>
+
+  <!-- 1 -->
+  <div class="ch"><p class="k">1 · Then and now</p><h2>The weed in today's jar is several times stronger than it was in the 1990s.</h2><p class="dek">Seized flower averaged about 4% THC in 1995. Legal flower now averages about 20%, and concentrates often run 50 to 90%.</p></div>
+  <div class="strip chart">
+    <div class="legend"><span><i style="background:#1A1F24"></i>Seized flower (DEA samples)</span><span><i style="background:#7F5A12"></i>Seized hash oil</span><span><i style="background:#4E7A4A"></i>Legal market, Washington</span><span><i style="background:#dfe9dc;border:1px solid #4E7A4A"></i>Typical concentrates</span></div>
+    <svg id="potency" viewBox="0 0 900 380" role="img" aria-label="THC potency from 1995 to 2026 with Ohio's legal caps of 35 percent for flower and 70 percent for extracts"></svg>
+    <div class="big3">
+      <div><b>~4% → ~20%</b><span>Average THC in flower, 1995 seized samples to today's legal stores.</span></div>
+      <div><b>35% cap</b><span>Ohio's limit for flower, for medical and adult use alike.</span></div>
+      <div><b>70% cap</b><span>Ohio's limit for extracts since March 20, 2026, down from Issue 2's 90% floor.</span></div>
+    </div>
+    <details class="more"><summary>Sources for this part</summary><div class="in">
+      <p>The DEA samples are seizures of illegal product, so they understate what legal stores sell. Labels can be off too: in a 2025 Colorado study, only 56.7% of flower products tested within 15% of their labeled THC. No public data on the average THC of products sold in Ohio exists; lab results are reported into the state's tracking system.</p>
+      <ul class="lk">
+        <li>ElSohly et al., <a href="https://pubmed.ncbi.nlm.nih.gov/26903403/" target="_blank" rel="noopener">Biological Psychiatry, 2016</a> (about 4% in 1995 to about 12% in 2014).</li>
+        <li>Chandra et al., <a href="https://pubmed.ncbi.nlm.nih.gov/30671616/" target="_blank" rel="noopener">Eur Arch Psychiatry Clin Neurosci, 2019</a> (8.9% in 2008 to 17.1% in 2017; hash oil 6.7% to 55.7%).</li>
+        <li>ElSohly et al., <a href="https://pubmed.ncbi.nlm.nih.gov/33508497/" target="_blank" rel="noopener">Biol Psychiatry: CNNI, 2021</a> (14.88% in 2018, 13.88% in 2019).</li>
+        <li>Smart, Caulkins, Kilmer et al., <a href="https://pubmed.ncbi.nlm.nih.gov/28556310/" target="_blank" rel="noopener">Addiction, 2017</a> (Washington legal market: flower 20.6%, extracts 68.7%).</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/38043404/" target="_blank" rel="noopener">Int J Drug Policy, 2024</a> (concentrates 50 to 90% THC).</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/40592871/" target="_blank" rel="noopener">Scientific Reports, 2025</a> (Colorado label accuracy).</li>
+        <li>Ohio Revised Code <a href="https://codes.ohio.gov/ohio-revised-code/section-3796.06" target="_blank" rel="noopener">3796.06(E)</a> and the LSC <a href="https://www.legislature.ohio.gov/download?key=27450" target="_blank" rel="noopener">Final Analysis of S.B. 56</a> (35% plant, 70% extract).</li>
+      </ul></div></details>
+  </div>
+
+  <div class="strip">
+    <span class="cap">How much THC is in that?</span>
+    <div class="calc">
+      <svg class="jar" viewBox="0 0 200 240" aria-hidden="true">
+        <path class="ln" d="M58 26h84v18H58Z"/>
+        <path class="ln" d="M64 44h72l12 18v138a14 14 0 0 1-14 14H66a14 14 0 0 1-14-14V62Z"/>
+        <clipPath id="jc"><path d="M64 44h72l12 18v138a14 14 0 0 1-14 14H66a14 14 0 0 1-14-14V62Z"/></clipPath>
+        <rect class="jarfill" id="calcFill" clip-path="url(#jc)" x="50" y="214" width="100" height="0" fill="#4E7A4A" opacity=".85"/>
+        <text id="jarPct" x="100" y="140" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="34" fill="#1A1F24" stroke="#fff" stroke-width="5" paint-order="stroke">20%</text>
+      </svg>
+      <div>
+        <div class="seg" role="group" aria-label="Product"><button type="button" data-p="flower" aria-pressed="true">Flower</button><button type="button" data-p="dab" aria-pressed="false">Dab</button><button type="button" data-p="vape" aria-pressed="false">Vape cartridge</button></div>
+        <div class="field"><label for="pct">THC on the label</label><output id="pctV">20%</output><input class="range" id="pct" type="range" min="1" max="90" step="1" value="20"></div>
+        <p class="note" id="capNote" hidden>Ohio caps extracts at 70% THC. Stronger products exist in other states and in older stock.</p>
+        <div class="field"><label for="amt" id="amtL">Amount</label><output id="amtV">1 gram</output><input class="range" id="amt" type="range" min="0.05" max="3.5" step="0.05" value="1"></div>
+        <div class="res" aria-live="polite">
+          <div class="mg"><span id="mg">200</span><small>mg of THC in it</small></div>
+          <p id="cmp"></p>
+          <div class="doses" id="doses" aria-hidden="true"></div>
+          <p class="note">This counts the THC in the product; how much reaches your body depends on how it's used. Each dot is 10 mg, the most THC Canada allows in a whole package of edibles.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="ch"><p class="k">2 · What the law says</p><h2>Ohio said yes in 2023, then rewrote the rules in 2026.</h2><p class="dek">Voters passed Issue 2 with 57%. The legislature replaced it with Senate Bill 56, which took effect March 20, 2026 and now governs medical and adult use together.</p></div>
+  <div class="strip">
+    <div class="law">
+      <ol class="tline">
+        <li><span class="d">Sep 2016</span><b>Medical marijuana becomes legal</b><span class="t">House Bill 523. The first medical sales come in January 2019.</span></li>
+        <li class="key"><span class="d">Nov 2023</span><b>Issue 2 passes, 57% to 43%</b><span class="t">Adults 21 and over can buy, carry and grow at home.</span></li>
+        <li><span class="d">Aug 2024</span><b>Adult-use sales begin</b><span class="t">At stores licensed for both medical and adult use.</span></li>
+        <li><span class="d">Jun 2025</span><b>The budget redirects the tax money</b><span class="t">House Bill 96 replaces Issue 2's split. More below.</span></li>
+        <li class="key"><span class="d">Mar 2026</span><b>Senate Bill 56 takes effect</b><span class="t">One law for medical and adult use. Extract cap falls to 70%. Intoxicating hemp moves into dispensaries.</span></li>
+        <li><span class="d">Dec 11, 2026</span><b>Federal hemp rule arrives</b><span class="t">A new national definition of hemp, delayed one month by Congress.</span></li>
+      </ol>
+      <div class="rules">
+        <div class="rule"><span class="n">2.5 oz</span><span><b>Possession limit</b> for plant material, plus 15 grams of extract.</span></div>
+        <div class="rule"><span class="n">6 / 12</span><span><b>Home grow:</b> 6 plants per adult, 12 per home. Going over by any number is now a crime.</span></div>
+        <div class="rule"><span class="n">0.4 mg</span><span><b>Hemp limit:</b> more THC than this per container, and it's legally marijuana, sold only in dispensaries.</span></div>
+        <div class="rule"><span class="n">400</span><span><b>Statewide cap</b> on dispensaries, at least a mile apart. 231 operate today.</span></div>
+        <div class="rule"><span class="n">Home</span><span><b>Smoking and vaping</b> are allowed only on private residential or farm property.</span></div>
+      </div>
+    </div>
+    <details class="more"><summary>The details: what changed with Senate Bill 56</summary><div class="in">
+      <p><b>Structure.</b> SB 56 repealed the Issue 2 law (Chapter 3780) and merged both markets into Chapter 3796. Licenses are now dual-use.</p>
+      <p><b>Potency.</b> 35% THC for plant material and 70% for extracts, for medical and adult use. Issue 2 had told regulators to set limits no lower than 35% and 90%. The state may raise the extract limit by rule. A Division of Cannabis Control guidance sheet dated March 2026 still lists 90% for manufactured products, so confirm with the Division before relying on one number.</p>
+      <p><b>Hemp.</b> Since March 20, 2026, hemp means no more than 0.3% total THC, including THCA. A finished product with more than 0.4 mg of THC per container, or with cannabinoids made outside the plant (such as delta-8 converted from CBD), is not hemp. A plan to let bars and stores sell hemp drinks was vetoed. A federal court has blocked parts of the ban for ten plaintiff companies; the appeal is pending.</p>
+      <p><b>Other changes.</b> Marijuana bought out of state is contraband. No new dispensary within a mile of another, or where liquor is sold. Stricter packaging and advertising. A path to expunge past minor possession offenses. Local governments can ban new operators but not home grow, and can't close stores licensed before March 20, 2026.</p>
+      <p><b>Tax.</b> The 10% rate stayed. An earlier version of SB 56 would have raised it to 15%.</p>
+      <ul class="lk">
+        <li>Ohio Legislative Service Commission, <a href="https://www.legislature.ohio.gov/download?key=27450" target="_blank" rel="noopener">Final Analysis of S.B. 56</a> (corrected Apr 2, 2026) and <a href="https://www.legislature.ohio.gov/legislation/136/sb56" target="_blank" rel="noopener">bill status</a>.</li>
+        <li>Ohio Revised Code <a href="https://codes.ohio.gov/ohio-revised-code/section-3796.06" target="_blank" rel="noopener">3796.06</a>, <a href="https://codes.ohio.gov/ohio-revised-code/section-3796.01" target="_blank" rel="noopener">3796.01</a>, <a href="https://codes.ohio.gov/ohio-revised-code/section-3796.40" target="_blank" rel="noopener">3796.40</a>.</li>
+        <li>Division of Cannabis Control, <a href="https://dam.assets.ohio.gov/image/upload/com.ohio.gov/DCC/Total_THC_Content_Guidance.pdf" target="_blank" rel="noopener">Total THC Content Guidance</a> (03/2026).</li>
+        <li>Issue 2 results (57.19% yes): <a href="https://en.wikipedia.org/wiki/2023_Ohio_Issue_2" target="_blank" rel="noopener">Wikipedia, citing the Ohio Secretary of State</a>.</li>
+        <li>Federal hemp: Congressional Research Service, <a href="https://www.everycrsreport.com/files/2025-12-08_LSB11381_8b411fbfb79325154a586ad1fbba21298039afe5.html" target="_blank" rel="noopener">LSB11381</a>; the Dec 11, 2026 delay as reported by <a href="https://www.akerman.com/en/perspectives/congress-approves-one-month-delay-of-federal-hemp-thc-restrictions.html" target="_blank" rel="noopener">Akerman</a>.</li>
+        <li>Hemp litigation: <a href="https://www.kmklaw.com/cannabis-and-craft-beer/ohio-hemp-ban-stalled-federal-court-sides-with-hemp-industry" target="_blank" rel="noopener">KMK Law, Aug 2026</a>.</li>
+      </ul></div></details>
+  </div>
+
+  <!-- 3 -->
+  <div class="ch"><p class="k">3 · Where the money goes</p><h2>By September, adult-use sales had already passed all of 2025.</h2><p class="dek">Ohioans have bought $4.3 billion of legal cannabis since 2019. As adult use grew, the medical program shrank by more than half.</p></div>
+  <div class="strip chart">
+    <div class="legend"><span><i style="background:#C9A24A"></i>Adult use</span><span><i style="background:#2F7F6F"></i>Medical</span><span>2026 runs through Sept 19</span></div>
+    <svg id="sales" viewBox="0 0 900 340" role="img" aria-label="Ohio legal cannabis sales by year, 2019 to 2026, adult use and medical"></svg>
+    <div class="big3">
+      <div><b>$844M</b><span>Adult-use sales in 2026 through Sept 19, versus about $830M in all of 2025.</span></div>
+      <div><b>10% + sales tax</b><span>On adult use. In Butler County the sales tax adds about 6.5%.</span></div>
+      <div><b>−59%</b><span>Active medical patients, from 178,703 in Oct 2023 to 72,943 in Jul 2026.</span></div>
+    </div>
+    <div class="split">
+      <div><span class="cap">The 10% tax, under Issue 2</span><div class="bar"><i style="flex:36;background:#4E7A4A">Equity 36%</i><i style="flex:36;background:#0F6B6F">Host towns 36%</i><i style="flex:25;background:#3d454c">Addiction 25%</i><i style="flex:3;background:#8A949B"></i></div><p>Social equity and jobs 36%, host communities 36%, addiction services 25%, administration 3%.</p></div>
+      <div><span class="cap">Since June 30, 2025</span><div class="bar"><i style="flex:64;background:#1A1F24">State general fund 64%</i><i style="flex:36;background:#0F6B6F">Host towns 36%</i></div><p>The state budget ended the equity and addiction shares. Host money goes to each town with a dispensary, for any lawful purpose.</p></div>
+    </div>
+  </div>
+  <div class="strip">
+    <span class="cap">Butler County</span>
+    <div class="towns">
+      <div class="town"><b>Monroe</b><span>4 dispensaries · about $886,000 in the first host payment</span></div>
+      <div class="town"><b>Seven Mile</b><span>1 dispensary · about $401,000 in the first host payment</span></div>
+      <div class="town"><b>Oxford</b><span>2 dispensaries, the most the city allows</span></div>
+      <div class="town"><b>Fairfield</b><span>1 dispensary, licensed June 2026</span></div>
+      <div class="town"><b>Middletown</b><span>1 or 2 dispensaries</span></div>
+      <div class="town no"><b>Hamilton</b><span>Ban reported lifted July 2026; none licensed yet</span></div>
+      <div class="town no"><b>West Chester Twp</b><span>Moratorium still in place</span></div>
+      <div class="town no"><b>Liberty Twp</b><span>Moratorium still in place</span></div>
+    </div>
+    <details class="more"><summary>Sources and notes for this part</summary><div class="in">
+      <p>Yearly sales are the change in the state's cumulative weekly totals. 2026 runs through the week ending Sept 19. Depending on where the year's weeks are cut, 2025 adult use was $829M or $836M; the chart uses the calendar-week cut for both markets. The state's Oct 2 summary sheet repeats the adult-use figures in its medical and total columns, so this page uses the weekly spreadsheet. Statewide tax collected isn't published in a primary source; 10% of adult-use sales since launch would be roughly $192 million, an estimate, not an official figure. Host payments are from the first distribution on Jan 7, 2026, as reported by the Journal-News. Butler County dispensaries were matched to the state list by address and are approximate. Statewide, an Ohio State law school tracker counts 224 places with moratoriums as of Oct 1, 2026, and says the list may be incomplete.</p>
+      <ul class="lk">
+        <li>Division of Cannabis Control, <a href="https://dam.assets.ohio.gov/raw/upload/com.ohio.gov/DCC/DCC%20Stats/NEW_-_DCC_Historical_Sales_Data.xlsx" target="_blank" rel="noopener">Historical Sales Data</a> (weekly, through Sep 19, 2026) and <a href="https://dam.assets.ohio.gov/image/upload/com.ohio.gov/DCC/DCC%20Stats/DCC_Update_By_The_Numbers.pdf" target="_blank" rel="noopener">Program Update: By the Numbers</a> (Oct 2, 2026; licensees and patients).</li>
+        <li>Ohio Revised Code <a href="https://codes.ohio.gov/ohio-revised-code/section-3796.40" target="_blank" rel="noopener">3796.40</a> (10% tax, 64/36 split); <a href="https://codes.ohio.gov/assets/laws/revised-code/authenticated/37/3780/3780.23/12-7-2023/3780.23-12-7-2023.pdf" target="_blank" rel="noopener">former 3780.23</a> (Issue 2 split); <a href="https://codes.ohio.gov/assets/laws/revised-code/authenticated/37/3780/3780.22/6-30-2025/3780.22-6-30-2025.pdf" target="_blank" rel="noopener">3780.22 as amended by H.B. 96</a>.</li>
+        <li>Journal-News / Dayton Daily News, <a href="https://www.daytondailynews.com/local/area-communities-finally-getting-millions-in-cannabis-tax-revenue/7I4DOBLIRRG2RPFV4I3ITWVQHA/" target="_blank" rel="noopener">first host-community payments</a>, Jan 2026.</li>
+        <li>Division of Cannabis Control, <a href="https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/dispensaries/dispensary-licenses" target="_blank" rel="noopener">dispensary list</a> and <a href="https://com.ohio.gov/divisions-and-programs/cannabis-control/about-dcc/licenses/what-we-do/cannabis-dispensary-map" target="_blank" rel="noopener">map</a>.</li>
+        <li>Ohio State Moritz College of Law, <a href="https://moritzlaw.osu.edu/research/local-moratoriums-ohio-adult-use-marijuana-operators" target="_blank" rel="noopener">Ohio marijuana moratoriums</a>; FOX19, <a href="https://www.fox19.com/2026/07/16/hamilton-city-council-votes-lift-ban-marijuana-dispensaries/" target="_blank" rel="noopener">Hamilton lifts its ban</a>, Jul 16, 2026; <a href="https://www.wcpo.com/news/local-news/butler-county/west-chester/west-chester-twp-extends-moratorium-on-recreational-marijuana-businesses" target="_blank" rel="noopener">West Chester moratorium</a> (WCPO).</li>
+        <li>Sales tax rates: <a href="https://www.salestaxhandbook.com/ohio/rates/butler" target="_blank" rel="noopener">Butler County</a>.</li>
+      </ul></div></details>
+  </div>
+
+  <!-- 4 -->
+  <div class="ch"><p class="k">4 · What the research says</p><h2>The clearest risk is daily use of high-potency cannabis, especially for the young.</h2><p class="dek">The strongest studies find more psychosis among people who use strong cannabis every day. Some of the link also runs the other way, so read these as associations.</p></div>
+  <div class="strip">
+    <span class="cap">Odds of a first psychotic episode, compared with people who never used</span>
+    <div class="odds" id="odds">
+      <div class="or"><span>Never used</span><div class="tr"><div class="br" data-w="1"></div></div><b>1×</b></div>
+      <div class="or"><span>Daily use, any cannabis</span><div class="tr"><div class="br" data-w="3.2"></div></div><b>3.2×</b></div>
+      <div class="or"><span>Daily use, high-potency (THC 10% or more)</span><div class="tr"><div class="br hi" data-w="4.8"></div></div><b>4.8×</b></div>
+    </div>
+    <p class="note">Di Forti et al., Lancet Psychiatry, 2019: 901 first-episode patients and 1,237 controls at 11 sites in Europe and Brazil. Gridlines every 1×.</p>
+    <div class="big3">
+      <div><b>"Substantial"</b><span>The National Academies' word for the evidence linking cannabis and schizophrenia, highest among the most frequent users.</span></div>
+      <div><b>15%</b><span>Share of schizophrenia among Danish men 16 to 49 that could be tied to cannabis use disorder in 2021, if the link is causal.</span></div>
+      <div><b>11×</b><span>Risk of a psychotic disorder for teens who used cannabis in an Ontario study. No significant link for young adults.</span></div>
+    </div>
+    <div class="caveat"><b>The arrow points both ways.</b> A genetic study found only a small causal effect of starting cannabis on schizophrenia, and stronger evidence that people predisposed to schizophrenia are more likely to use cannabis. Most "cases that could be prevented" figures assume the link is causal. People with a family history of psychosis show more sensitivity to cannabis, but no study has measured risk by product strength for them.</div>
+    <details class="more"><summary>More findings: dependence, withdrawal, vomiting, daily use</summary><div class="in">
+      <p><b>Potency and dependence.</b> A review of 20 studies found higher-potency use was linked to more psychosis and more cannabis use disorder; results for depression and anxiety were mixed.</p>
+      <p><b>Tolerance.</b> In a Colorado study, people using concentrates had more than twice the THC in their blood as flower users but no more measured impairment, consistent with tolerance. That is not evidence that concentrates are harmless. Dab users report more tolerance and withdrawal.</p>
+      <p><b>Withdrawal.</b> About 47% of regular or dependent users have cannabis withdrawal, from 17% in general surveys to 87% among inpatients.</p>
+      <p><b>Severe vomiting (cannabis hyperemesis syndrome).</b> U.S. emergency visits coded for it rose sharply after a dedicated diagnosis code began in October 2025; the CDC says better coding may explain part of the jump. In Ontario, visits rose 13-fold from 2014 to 2021.</p>
+      <p><b>Daily use.</b> In 2025, 21.4 million Americans used marijuana on 20 or more days in the past month, more than the 17.2 million who drank that often. In Ohio, 16% of people 12 and older used marijuana in the past month (2023 to 2024), and 28% of those 18 to 25.</p>
+      <ul class="lk">
+        <li>National Academies, <a href="https://www.nationalacademies.org/read/24625/chapter/2" target="_blank" rel="noopener">The Health Effects of Cannabis and Cannabinoids</a>, 2017.</li>
+        <li>Di Forti et al., <a href="https://pubmed.ncbi.nlm.nih.gov/30902669/" target="_blank" rel="noopener">Lancet Psychiatry, 2019</a>.</li>
+        <li>Hjorthøj et al., <a href="https://pubmed.ncbi.nlm.nih.gov/37140715/" target="_blank" rel="noopener">Psychological Medicine, 2023</a>.</li>
+        <li>McDonald et al., <a href="https://pubmed.ncbi.nlm.nih.gov/38775165/" target="_blank" rel="noopener">Psychological Medicine, 2024</a> (Ontario, ages 12 to 24).</li>
+        <li>Gage et al., <a href="https://pubmed.ncbi.nlm.nih.gov/27928975/" target="_blank" rel="noopener">Psychological Medicine, 2017</a> (Mendelian randomization).</li>
+        <li>GROUP Investigators, <a href="https://pubmed.ncbi.nlm.nih.gov/20921112/" target="_blank" rel="noopener">Archives of General Psychiatry, 2011</a> (siblings).</li>
+        <li>Petrilli et al., <a href="https://pubmed.ncbi.nlm.nih.gov/35901795/" target="_blank" rel="noopener">Lancet Psychiatry, 2022</a>; Bidwell et al., <a href="https://pubmed.ncbi.nlm.nih.gov/32520316/" target="_blank" rel="noopener">JAMA Psychiatry, 2020</a>; Loflin &amp; Earleywine, <a href="https://pubmed.ncbi.nlm.nih.gov/24930049/" target="_blank" rel="noopener">Addictive Behaviors, 2014</a>; Bahji et al., <a href="https://pubmed.ncbi.nlm.nih.gov/32271390/" target="_blank" rel="noopener">JAMA Network Open, 2020</a>.</li>
+        <li>CDC, <a href="https://pubmed.ncbi.nlm.nih.gov/42560855/" target="_blank" rel="noopener">MMWR, Aug 2026</a>; Myran et al., <a href="https://pubmed.ncbi.nlm.nih.gov/36112372/" target="_blank" rel="noopener">JAMA Network Open, 2022</a>.</li>
+        <li>SAMHSA, <a href="https://www.samhsa.gov/data/report/2025-nsduh-detailed-tables" target="_blank" rel="noopener">2025 NSDUH detailed tables</a> and <a href="https://www.samhsa.gov/data/sites/default/files/reports/rpt56986/2024-nsduh-sae-state-tabs1/2024-nsduh-sae-state-tabs.htm" target="_blank" rel="noopener">2023–2024 state estimates</a>.</li>
+      </ul></div></details>
+  </div>
+
+  <!-- 5 -->
+  <div class="ch"><p class="k">5 · What other places tried</p><h2>Caps, potency taxes and small edibles. No one has measured the health results yet.</h2><p class="dek">Ohio's caps are higher than Vermont's and Quebec's. Here is what other places did.</p></div>
+  <div class="strip">
+    <div class="places">
+      <div class="place"><span class="k2">Ohio</span><b>35% · 70%</b><span>Flower and extract caps, the same for medical and adult use.</span></div>
+      <div class="place"><span class="k2">Vermont</span><b>30% · 60%</b><span>Flower and solid concentrates. Its own cannabis board called the evidence for the concentrate cap inconclusive.</span></div>
+      <div class="place"><span class="k2">Illinois</span><b>10% → 25%</b><span>A potency-tiered tax: 10% on flower up to 35% THC, 25% above it.</span></div>
+      <div class="place"><span class="k2">Canada</span><b>10 mg</b><span>The most THC allowed in a whole package of edibles. A 2024 review kept it and suggested taxes that rise with THC.</span></div>
+      <div class="place"><span class="k2">Quebec</span><b>30%</b><span>A cap on non-edible products. A 2026 study found less use of strong extracts, and more illegal buying. It can't isolate the cap's effect.</span></div>
+    </div>
+    <p class="verdict">No real-world evaluation of how U.S. potency caps or potency taxes affect health exists yet.</p>
+    <details class="more"><summary>The tradeoff, and sources</summary><div class="in">
+      <p>Caps and steep potency taxes may cut exposure to the strongest legal products, and they may push some buyers to illegal or out-of-state sellers. In a 2026 experiment with 1,525 U.S. buyers, potency-based taxes moved people away from the strongest products but didn't lower total THC use, and up to 89% of that shift could be offset by buying illegally. Massachusetts regulators found the evidence insufficient to recommend a cap in 2021, while noting greater risk for young people using high-THC products. RAND has proposed taxing THC content directly.</p>
+      <ul class="lk">
+        <li>Vermont, <a href="https://legislature.vermont.gov/statutes/section/07/033/00868" target="_blank" rel="noopener">7 V.S.A. § 868</a>; Vermont Cannabis Control Board, <a href="https://ccb.vermont.gov/sites/ccb/files/2022-12/Final%20draft%20-%20VT%20Concentrates%20report%20-1.pdf" target="_blank" rel="noopener">concentrates report</a>, Dec 2022.</li>
+        <li>Illinois Department of Revenue, <a href="https://tax.illinois.gov/research/taxrates/excise" target="_blank" rel="noopener">cannabis excise rates</a>.</li>
+        <li>Health Canada, <a href="https://www.canada.ca/en/health-canada/services/publications/drugs-medication/legislative-review-cannabis-act-final-report-expert-panel.html" target="_blank" rel="noopener">Cannabis Act review, expert panel final report</a>, Mar 2024.</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42032371/" target="_blank" rel="noopener">Canadian Journal of Public Health, 2026</a> (Quebec).</li>
+        <li>He et al., <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13508039/" target="_blank" rel="noopener">Health Economics, 2026</a>.</li>
+        <li>RAND, <a href="https://www.rand.org/pubs/commentary/2016/08/promises-and-pitfalls-of-cannabis-taxes.html" target="_blank" rel="noopener">Promises and Pitfalls of Cannabis Taxes</a>, 2016.</li>
+      </ul></div></details>
+  </div>
+
+  <footer>
+    <p>Built by <b>Dustin Nimmo</b>, founder of <a href="https://dnsc.ai">DNSC</a> in West&nbsp;Chester, Ohio.</p>
+    <p class="sm">Last verified Oct 4, 2026. Medical facts here are summaries of research, not medical advice. If a number here is wrong, say so and it will be fixed and noted.</p>
+    <p class="sm ai-twin">For AIs: <a href="index.md">this page as text</a> · <a href="/llms.txt">site index</a></p>
+  </footer>
+</div>
+<script>
+const $=s=>document.querySelector(s), NS='http://www.w3.org/2000/svg';
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* draw-on line art */
+document.querySelectorAll('.draw').forEach(svg=>{
+  svg.querySelectorAll('.ln,.lt').forEach(p=>{try{p.style.setProperty('--len',Math.ceil(p.getTotalLength()+2))}catch(e){}});
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){svg.classList.add('on');io.disconnect()}}),{threshold:.3});
+  io.observe(svg);
+});
+setTimeout(()=>{const f=$('#heroFill');f.setAttribute('y',170);f.setAttribute('height',80)},reduce?0:900);
+
+/* chart helpers */
+const T=(x,y,s,a)=>`<text x="${x}" y="${y}" ${a||''}>${s}</text>`;
+
+/* 1 · potency over time */
+(function(){
+  const F=$('#potency').getBoundingClientRect().width<520?1.9:1;
+  const W=900,H=F>1?560:380,L=F>1?78:52,R=F>1?190:120,Tp=20,B=F>1?50:34;
+  const X=y=>L+(W-L-R)*(y-1995)/(2026-1995), Y=v=>Tp+(H-Tp-B)*(1-v/100);
+  let g='';
+  for(const v of [0,25,50,75,100]) g+=`<line x1="${L}" x2="${W-R}" y1="${Y(v)}" y2="${Y(v)}" stroke="#d7ddd9"/>`+T(L-8,Y(v)+4,v+'%','text-anchor="end" font-size="${13*F}" fill="#59626a"');
+  for(const y of [1995,2000,2005,2010,2015,2020,2025]) g+=T(X(y),H-10,y,'text-anchor="middle" font-size="${13*F}" fill="#59626a"');
+  g+=`<line x1="${L}" x2="${W-R}" y1="${Y(0)}" y2="${Y(0)}" stroke="#1A1F24"/>`;
+  // concentrate band 50–90, recent legal era
+  g+=`<rect x="${X(2014)}" y="${Y(90)}" width="${X(2026)-X(2014)}" height="${Y(50)-Y(90)}" fill="#dfe9dc" stroke="#4E7A4A" stroke-dasharray="3 3"/>`+T(X(2014)+8,Y(90)+18,'Concentrates, 50–90%','font-size="${13*F}" font-weight="700" fill="#2F5D34"');
+  // caps
+  [[35,'35% cap','flower'],[70,'70% cap','extracts']].forEach(([v,l,w])=>{g+=`<line x1="${L}" x2="${W-R+6}" y1="${Y(v)}" y2="${Y(v)}" stroke="#B23A2E" stroke-width="2" stroke-dasharray="7 5"/>`+T(W-R+10,Y(v)+4,l,'font-size="${13*F}" font-weight="800" fill="#B23A2E"')+T(W-R+10,Y(v)+19,w,'font-size="${12*F}" fill="#B23A2E"');});
+  const fl=[[1995,4],[2008,8.9],[2014,12],[2017,17.1],[2018,14.88],[2019,13.88]];
+  const ho=[[2008,6.7],[2017,55.7]];
+  const pth=a=>a.map((p,i)=>(i?'L':'M')+X(p[0]).toFixed(1)+' '+Y(p[1]).toFixed(1)).join(' ');
+  g+=`<path class="grow" d="${pth(fl)}" fill="none" stroke="#1A1F24" stroke-width="2.5"/>`;
+  g+=`<path class="grow" d="${pth(ho)}" fill="none" stroke="#7F5A12" stroke-width="2.5" stroke-dasharray="2 4"/>`;
+  fl.forEach(p=>g+=`<circle cx="${X(p[0])}" cy="${Y(p[1])}" r="4.5" fill="#1A1F24" stroke="#fff" stroke-width="1.5"><title>Seized flower ${p[0]}: ${p[1]}%</title></circle>`);
+  ho.forEach(p=>g+=`<circle cx="${X(p[0])}" cy="${Y(p[1])}" r="4.5" fill="#7F5A12" stroke="#fff" stroke-width="1.5"><title>Seized hash oil ${p[0]}: ${p[1]}%</title></circle>`);
+  g+=T(X(1995)+8,Y(4)-10,'4%','font-size="${13*F}" font-weight="800"')+T(X(2017),Y(17.1)+22,'17%','font-size="${13*F}" font-weight="800" text-anchor="middle"')+T(X(2017)+8,Y(55.7)-8,'56%','font-size="${13*F}" font-weight="800" fill="#7F5A12"');
+  // legal WA 2014–2016
+  [[20.6,'Legal flower 20.6%'],[68.7,'Legal extracts 68.7%']].forEach(([v,l])=>{g+=`<rect x="${X(2015.5)-6}" y="${Y(v)-6}" width="12" height="12" fill="#4E7A4A" stroke="#fff" stroke-width="1.5" transform="rotate(45 ${X(2015.5)} ${Y(v)})"><title>Washington legal market, 2014–2016: ${l}</title></rect>`;});
+  $('#potency').setAttribute('viewBox',`0 0 ${W} ${H}`);$('#potency').innerHTML=g;
+  if(!reduce){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){$('#potency').querySelectorAll('.grow').forEach(p=>{const L=p.getTotalLength();p.style.strokeDasharray===''&&0;p.animate([{strokeDashoffset:L,strokeDasharray:L+' '+L},{strokeDashoffset:0,strokeDasharray:L+' '+L}],{duration:1600,easing:'ease-out'})});io.disconnect()}}),{threshold:.4});io.observe($('#potency'))}
+})();
+
+/* calculator */
+(function(){
+  const P={flower:{pct:20,amt:1,min:.1,max:3.5,step:.1,max_pct:35,label:'Amount',unit:'gram'},
+           dab:{pct:70,amt:.1,min:.05,max:.5,step:.05,max_pct:90,label:'One dab',unit:'gram'},
+           vape:{pct:70,amt:1,min:.5,max:2,step:.5,max_pct:90,label:'Cartridge size',unit:'gram'}};
+  let cur='flower';
+  const pct=$('#pct'),amt=$('#amt');
+  function set(p){cur=p;const c=P[p];document.querySelectorAll('.seg button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.p===p));
+    pct.max=c.max_pct;pct.value=c.pct;amt.min=c.min;amt.max=c.max;amt.step=c.step;amt.value=c.amt;$('#amtL').textContent=c.label;upd()}
+  function capNote(){const n=$('#capNote');if(n)n.hidden=!(cur!=='flower'&&+pct.value>70)}
+  function upd(){const p=+pct.value,a=+amt.value,mg=Math.round(a*1000*p/100);
+    $('#pctV').textContent=p+'%';$('#jarPct').textContent=p+'%';
+    $('#amtV').textContent=(a<1?a.toFixed(2).replace(/0$/,''):a.toFixed(a%1?1:0))+' '+(a===1?'gram':'grams');
+    $('#mg').textContent=mg.toLocaleString('en-US');
+    const n=mg/10;$('#cmp').innerHTML=`That's as much THC as <b>${n>=10?Math.round(n).toLocaleString('en-US'):n.toFixed(1)}</b> full packages of edibles under Canada's 10 mg limit.`;
+    const full=Math.floor(Math.min(n,300)),frac=Math.min(n,300)-full;let h='';for(let i=0;i<full;i++)h+='<i></i>';if(frac>0.05&&full<300)h+=`<i class="part" style="--p:${Math.round(frac*100)}%"></i>`;
+    if(n>300)h+=`<span style="font-size:.8125rem;color:#59626a;margin-left:6px">+${Math.round(n-300)} more</span>`;$('#doses').innerHTML=h;
+    const f=$('#calcFill'),hgt=170*p/100;f.setAttribute('y',214-hgt);f.setAttribute('height',hgt);f.setAttribute('fill',p>35?'#2F5D34':'#4E7A4A')}
+  document.querySelectorAll('.seg button').forEach(b=>b.onclick=()=>{set(b.dataset.p);capNote()});
+  pct.oninput=()=>{upd();capNote()};amt.oninput=upd;set('flower');capNote();
+})();
+
+/* 3 · sales by year */
+(function(){
+  const D=[[2019,55.8,0],[2020,221.5,0],[2021,380.7,0],[2022,478.7,0],[2023,484.5,0],[2024,433.1,242.1],[2025,236.0,829.4],[2026,138.0,844.1]];
+  const F=$('#sales').getBoundingClientRect().width<520?1.9:1;
+  const W=900,H=F>1?520:340,L=F>1?96:60,R=20,Tp=F>1?40:24,B=F>1?60:40,mx=1200;
+  const bw=(W-L-R)/D.length, Y=v=>Tp+(H-Tp-B)*(1-v/mx);
+  let g='';
+  for(const v of [0,300,600,900,1200]) g+=`<line x1="${L}" x2="${W-R}" y1="${Y(v)}" y2="${Y(v)}" stroke="#d7ddd9"/>`+T(L-8,Y(v)+4,v?'$'+(v>=1000?(v/1000)+'B':v+'M'):'$0','text-anchor="end" font-size="${13*F}" fill="#59626a"');
+  D.forEach(([y,m,a],i)=>{const x=L+i*bw+bw*.18,w=bw*.64;
+    const ym=Y(m),ya=Y(m+a);
+    g+=`<rect class="bar" x="${x}" y="${ym}" width="${w}" height="${Y(0)-ym}" fill="#2F7F6F"><title>${y} medical: $${m}M</title></rect>`;
+    if(a) g+=`<rect class="bar" x="${x}" y="${ya}" width="${w}" height="${ym-ya-2}" fill="#C9A24A"><title>${y} adult use: $${a}M</title></rect>`;
+    g+=T(x+w/2,ya-8,F>1?'$'+Math.round(m+a):'$'+Math.round(m+a)+'M','text-anchor="middle" font-size="${13*F}" font-weight="800" fill="#1A1F24"');
+    g+=T(x+w/2,H-18,F>1?("'"+String(y).slice(2)):y,'text-anchor="middle" font-size="${13*F}" fill="#59626a"');});
+  g+=`<line x1="${L}" x2="${W-R}" y1="${Y(0)}" y2="${Y(0)}" stroke="#1A1F24"/>`;
+  $('#sales').setAttribute('viewBox',`0 0 ${W} ${H}`);$('#sales').innerHTML=g;
+})();
+
+/* 4 · odds bars grow in */
+(function(){
+  const bars=document.querySelectorAll('#odds .br'), mx=5;
+  const go=()=>bars.forEach(b=>b.style.width=(+b.dataset.w/mx*100)+'%');
+  if(reduce){go();return}
+  bars.forEach(b=>b.style.width='0');
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){go();io.disconnect()}}),{threshold:.4});io.observe($('#odds'));
+})();
+</script>
+</body></html>

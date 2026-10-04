@@ -46,7 +46,7 @@
   .card:hover{transform:translateY(-3px);box-shadow:0 16px 32px -20px rgba(44,33,26,.4)}
   .card .pic{position:relative;aspect-ratio:3/2;padding:16px 12px;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--rule)}
   .card .art{width:100%;height:100%;display:block}
-  .c-line .pic{background:#F1E6CC}.c-word .pic{background:#E3E9F0}.c-adv .pic{background:#EFE3CB}.c-news .pic{background:#E4E7EC}
+  .c-line .pic{background:#F1E6CC}.c-word .pic{background:#E3E9F0}.c-adv .pic{background:#EFE3CB}.c-news .pic{background:#E4E7EC}@media(min-width:640px){.c-news .pic{padding-top:42px}}
   .c-room .pic{background:var(--dusk);border-color:#2E2925}.c-moon .pic{background:radial-gradient(120% 100% at 70% 20%,#2C3A52 0%,var(--dusk) 70%)}
   .badge{position:absolute;top:12px;left:12px;font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;background:var(--ink);color:var(--paper);padding:5px 9px;border-radius:999px}
   .card .txt{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1;min-width:0}
@@ -77,7 +77,7 @@
   .live{flex:none;width:7px;height:7px;border-radius:50%;background:var(--gold);animation:pulse 2.4s ease-out infinite}
   @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(217,178,90,.55)}70%{box-shadow:0 0 0 7px rgba(217,178,90,0)}100%{box-shadow:0 0 0 0 rgba(217,178,90,0)}}
   .card p{flex:0 0 auto}
-  .card .txt .meta{margin-top:auto}
+  .card .txt .meta{margin-top:auto;white-space:normal}
   .acts{margin-top:0}
   .boards{margin:0 0 44px;border:1px solid var(--rule);border-radius:16px;background:#FBF9F4;padding:22px 22px 18px}
   .bh{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 18px;margin:0 0 12px}
@@ -175,7 +175,7 @@
   </div>
 </main>
 
-<footer class="site-foot"><div class="in"><span>DNSC · Dustin Nimmo Strategic Consulting</span><span class="nav"><a href="https://dnsc.ai">Home</a><a href="https://dnsc.ai/#how-we-work">How we work</a><a href="https://tools.dnsc.ai/">The Well</a><a href="https://tools.dnsc.ai/well/">Daily games</a><a href="https://dnsc.ai/#contact">Contact</a></span><span class="credit">Free to use. Made by DNSC.</span></div></footer>
+<footer class="site-foot"><div class="in"><span>DNSC · Dustin Nimmo Strategic Consulting</span><span class="nav"><a href="https://dnsc.ai">Home</a><a href="https://dnsc.ai/#how-we-work">How we work</a><a href="https://tools.dnsc.ai/">The Well</a><a href="https://tools.dnsc.ai/well/">Daily games</a><a href="https://dnsc.ai/#contact">Contact</a></span><span class="credit">Free to use. Made by DNSC.</span><span class="ai-twin">For AIs: <a href="index.md">this page as text</a> · <a href="/llms.txt">site index</a></span></div></footer>
 <script>(function(){
 var API="https://well-board.dustin-nimmo.workers.dev",n=new Date(),day=Math.round((Date.UTC(n.getFullYear(),n.getMonth(),n.getDate())-Date.UTC(2026,9,2))/864e5);
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
