@@ -1,2 +1,4 @@
 ai-gauges/index.v0.4.html
 ai-gauges/index.v0.5.html
+.wrangler/
+node_modules/

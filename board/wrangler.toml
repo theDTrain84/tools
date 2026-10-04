@@ -1,0 +1,13 @@
+name = "well-board"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+account_id = "ef49bf027d8db034c47597045dbb07c4"
+workers_dev = true
+
+[[kv_namespaces]]
+binding = "BOARD"
+id = "8b8ef57f61ae4812ad362e857078b8b3"
+
+[observability]
+enabled = false
+preview_urls = false
