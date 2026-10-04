@@ -220,7 +220,8 @@ h1 em{font-style:italic;color:var(--gold)}
 .shot img,.shot.wide img{object-position:50% 0}
 .shot .room img{object-position:50% 50%}
 .shot .pic.tall img{object-position:50% 56%}
-.shot .pic.share img{object-position:0 50%}
+.shot .pic.share{background:#141826}
+.shot .pic.share img{object-fit:contain;object-position:50% 50%}
 .shot .txt,.shot.light .txt,.shot.night .txt,.art-pic + .txt{margin:0;padding:16px 18px 18px;gap:6px}
 .shot h3,.shot.light h3{font-size:23px;color:var(--ink)}
 .shot p,.shot.light p,.shot.night p{color:var(--ink3);font-size:16px}
@@ -269,15 +270,10 @@ main.wrap{min-height:100vh}
 /* phones: the featured row is a swipe strip; every other card is a compact row, image left */
 @media (max-width:759px){
   .tiles{display:grid;overflow:visible;margin:0;padding:0;gap:12px}
-  .tiles>.shot{flex-direction:row}
-  .tiles>.shot .pic{flex:0 0 40%;aspect-ratio:auto;min-height:120px;border-bottom:0;border-right:1px solid var(--rule)}
-  .tiles>.shot .pic img{position:absolute;inset:0}
-  .tiles>.shot .txt{padding:12px 14px 13px;gap:4px;min-width:0}
-  .tiles>.shot h3{font-size:19px}
-  .tiles>.shot p{font-size:14.5px;line-height:1.35}
-  .tiles>.shot .k{font-size:10px;letter-spacing:.16em}
-  .tiles>.shot .k:before{display:none}
-  .tiles>.shot .go{padding-top:6px;font-size:11.5px}
+  .tiles>.shot{flex-direction:column}
+  .tiles>.shot .pic{flex:none;aspect-ratio:3/2;min-height:0;border-right:0;border-bottom:1px solid var(--rule)}
+  .tiles>.shot .txt{padding:14px 16px 16px;gap:5px}
+  .tiles>.shot h3{font-size:22px}
   .featured .tiles,.featured .tiles.reel{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -16px;padding:2px 16px 18px;scroll-padding:0 16px;scrollbar-width:none}
   .featured .tiles::-webkit-scrollbar{display:none}
   .featured .tiles>.shot,.featured .tiles.reel>.shot{flex:0 0 84%;flex-direction:column;scroll-snap-align:start}
