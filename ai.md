@@ -20,6 +20,8 @@ Small things, cooked fresh each morning.
 
 [All daily games →](https://tools.dnsc.ai/well/)
 
+[Image: The Daily Line crossword]
+
 Learning AI
 
 #### [The Daily Line](https://tools.dnsc.ai/well/daily-line/)
@@ -28,6 +30,8 @@ One small crossword on the words of AI.
 
 Open →
 
+[Image: The Morning Edition crossword]
+
 AI in the news
 
 #### [The Morning Edition](https://tools.dnsc.ai/well/morning-edition/)
@@ -35,6 +39,8 @@ AI in the news
 Yesterday's AI news, as a crossword.
 
 Open →
+
+[Image: One Word, a word a day]
 
 A word a day
 
@@ -113,6 +119,8 @@ Dashboard
 Your own AI use: tokens, energy, water and carbon.
 
 Open →
+
+[Image: The Well: small things, every day]
 
 Every day
 

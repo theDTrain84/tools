@@ -12,7 +12,7 @@ From the record, Sept. 29 to Oct. 4
 
 Six companies and the President signed one page over lunch on September 29.
 
-Related · The same week at the Department of War: [the task force](https://tools.dnsc.ai/civic/task-force/).
+Related · At the Department of War, September 30: [the task force](https://tools.dnsc.ai/civic/task-force/).
 
 [Image: The East Room of the White House set for lunch, guests along a long table, the press at the far end.]
 
@@ -24,7 +24,7 @@ The East Room, September 29, 2026 · Official White House photo by Daniel Torok 
 
 Who was at the table
 
-### Six companies signed. Microsoft and Amazon did not.
+### Eight companies at the table. Six signed.
 
 Outside the West Wing lobby · after lunch · 33 minutes at the microphones
 
@@ -458,7 +458,7 @@ That is the state of enforcement on October 4: a good idea.
 
 Built by Dustin Nimmo, founder of [DNSC](https://dnsc.ai) in West Chester, Ohio.
 
-Related · The same week at the Department of War: [the task force](https://tools.dnsc.ai/civic/task-force/).
+Related · At the Department of War, September 30: [the task force](https://tools.dnsc.ai/civic/task-force/).
 
 **Sources and photographs**
 

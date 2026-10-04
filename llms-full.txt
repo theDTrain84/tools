@@ -24,6 +24,8 @@ Small things, cooked fresh each morning.
 
 [All daily games →](https://tools.dnsc.ai/well/)
 
+[Image: The Daily Line crossword]
+
 Learning AI
 
 #### [The Daily Line](https://tools.dnsc.ai/well/daily-line/)
@@ -32,6 +34,8 @@ One small crossword on the words of AI.
 
 Open →
 
+[Image: The Morning Edition crossword]
+
 AI in the news
 
 #### [The Morning Edition](https://tools.dnsc.ai/well/morning-edition/)
@@ -39,6 +43,8 @@ AI in the news
 Yesterday's AI news, as a crossword.
 
 Open →
+
+[Image: One Word, a word a day]
 
 A word a day
 
@@ -118,6 +124,8 @@ Your own AI use: tokens, energy, water and carbon.
 
 Open →
 
+[Image: The Well: small things, every day]
+
 Every day
 
 #### [Daily games](https://tools.dnsc.ai/well/)
@@ -195,7 +203,7 @@ From the record, Sept. 29 to Oct. 4
 
 Six companies and the President signed one page over lunch on September 29.
 
-Related · The same week at the Department of War: [the task force](https://tools.dnsc.ai/civic/task-force/).
+Related · At the Department of War, September 30: [the task force](https://tools.dnsc.ai/civic/task-force/).
 
 [Image: The East Room of the White House set for lunch, guests along a long table, the press at the far end.]
 
@@ -207,7 +215,7 @@ The East Room, September 29, 2026 · Official White House photo by Daniel Torok 
 
 Who was at the table
 
-### Six companies signed. Microsoft and Amazon did not.
+### Eight companies at the table. Six signed.
 
 Outside the West Wing lobby · after lunch · 33 minutes at the microphones
 
@@ -641,7 +649,7 @@ That is the state of enforcement on October 4: a good idea.
 
 Built by Dustin Nimmo, founder of [DNSC](https://dnsc.ai) in West Chester, Ohio.
 
-Related · The same week at the Department of War: [the task force](https://tools.dnsc.ai/civic/task-force/).
+Related · At the Department of War, September 30: [the task force](https://tools.dnsc.ai/civic/task-force/).
 
 **Sources and photographs**
 
@@ -975,7 +983,7 @@ By the numbers
 
 **0** statements found on the co-directors' pay or employment status [7][8]
 
-**Related, from the same week**[The table](https://tools.dnsc.ai/civic/the-table/) What six companies and the President signed at lunch on September 29.
+**Related**[The table](https://tools.dnsc.ai/civic/the-table/) What six companies and the President signed at lunch on September 29.
 
 From the announcement · about 32:42
 

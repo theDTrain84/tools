@@ -275,7 +275,7 @@ By the numbers
 
 **0** statements found on the co-directors' pay or employment status [7][8]
 
-**Related, from the same week**[The table](https://tools.dnsc.ai/civic/the-table/) What six companies and the President signed at lunch on September 29.
+**Related**[The table](https://tools.dnsc.ai/civic/the-table/) What six companies and the President signed at lunch on September 29.
 
 From the announcement · about 32:42
 

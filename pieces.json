@@ -6,7 +6,7 @@
       "slug": "the-table",
       "href": "civic/the-table/",
       "title": "The table",
-      "line": "Six companies signed a one-page accord over lunch. Here is the room, the page, the faces, and what it binds.",
+      "line": "Six companies and the President signed one page over lunch on September 29. The room, the page, the faces, and what it binds.",
       "type": "piece",
       "section": "civic",
       "topic": "The accord",
@@ -17,13 +17,14 @@
       "preview": "assets/previews/the-table.jpg",
       "related": [
         "task-force"
-      ]
+      ],
+      "updated": "2026-10-04"
     },
     {
       "slug": "task-force",
       "href": "civic/task-force/",
       "title": "The task force",
-      "line": "The same week at the Department of War: a 120-day study of future war and a new command for drones. From the record.",
+      "line": "On September 30 the Secretary of War asked three people to tell the Department what the next war will need. A 120-day study and a new command for drones, from the record.",
       "type": "piece",
       "section": "civic",
       "topic": "Department of War",
@@ -34,7 +35,8 @@
       "preview": "assets/previews/task-force.jpg",
       "related": [
         "the-table"
-      ]
+      ],
+      "updated": "2026-10-04"
     },
     {
       "slug": "gas-tax",
