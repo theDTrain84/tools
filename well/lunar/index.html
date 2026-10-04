@@ -68,6 +68,12 @@ h2{font-family:var(--disp);font-weight:500;font-size:clamp(26px,4.4vw,34px);line
 .glow{animation:pulse 10s ease-in-out infinite alternate;transform-origin:center}
 @keyframes pulse{from{opacity:.55}to{opacity:1}}
 .phase{font-family:var(--disp);font-weight:500;font-size:clamp(32px,6vw,46px);line-height:1.05;margin:4px 0 6px}
+.turn{margin:14px 0 4px;padding:14px 16px;border-left:3px solid var(--gold);background:rgba(255,255,255,.04)}
+.turn[hidden]{display:none}
+.turn .tk{font-family:var(--mono,ui-monospace,monospace);font-size:11px;letter-spacing:.12em;text-transform:uppercase;opacity:.7;margin:0 0 6px}
+.turn .tq{font-family:var(--disp);font-size:clamp(19px,2.6vw,24px);line-height:1.25;margin:0 0 8px}
+.turn p.tl{margin:0;font-size:15px;line-height:1.5;opacity:.85}
+.turn p.tl+p.tl{margin-top:6px}
 .season{font-family:var(--disp);font-style:italic;font-size:21px;color:var(--gold);margin:0 0 4px}
 .meaning{color:var(--paper2);margin:0 0 20px;max-width:56ch}
 .facts{display:grid;grid-template-columns:1fr 1fr;gap:16px 20px;margin:0 0 14px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -223,6 +229,7 @@ summary:hover{border-color:var(--ink4)}
         <p class="phase" id="t-phase"></p>
         <p class="season" id="t-season"></p>
         <p class="meaning" id="t-meaning"></p>
+        <div class="turn" id="t-turn" hidden></div>
         <dl class="facts" id="t-facts"></dl>
         <div class="row"><span class="loc" id="t-loc"></span><button class="btn" id="geo" type="button">Use my location</button></div>
       </div>
@@ -1017,6 +1024,16 @@ if (typeof document !== "undefined") (function () {
 
   buildIndex(); syncMeta();
   const t = renderTonight(); renderMonth(); renderSky(); renderTraditions(t.l, t.season);
+  /* The turn: on a threshold day (new, quarters, full) a short public note lands in turn.json. Shown for two days, then it goes quiet. */
+  fetch("turn.json", { cache: "no-store" }).then(r => r.ok ? r.json() : null).then(j => {
+    if (!j || !j.date || !j.question) return;
+    const age = (new Date(ymd(new Date()) + "T12:00:00") - new Date(j.date + "T12:00:00")) / 864e5;
+    if (age < 0 || age > 2) return;
+    const esc = x => String(x || "").replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+    const el = $("t-turn");
+    el.innerHTML = `<p class="tk">The turn · ${esc(j.name)}</p><p class="tq">${esc(j.question)}</p>` + (j.line ? `<p class="tl">${esc(j.line)}</p>` : "") + (j.table ? `<p class="tl">${esc(j.table)}</p>` : "");
+    el.hidden = false;
+  }).catch(() => {});
   if (events.length) status("");
   /* Roll over at midnight and keep Tonight fresh. */
   let lastDay = ymd(new Date());
