@@ -20,7 +20,7 @@ Related · At the Department of War, September 30: [the task force](https://tool
 
 I think it's morally binding, yeah.
 
-**The President** · asked whether the accord is binding in any way · 0:57 into the press availability [19]
+**Donald J. Trump**, President of the United States · asked whether the accord is binding in any way · 0:57 into the press availability [19]
 
 The East Room, September 29, 2026 · Official White House photo by Daniel Torok · public domain
 
@@ -38,15 +38,15 @@ What they said, after
 
 At the lunch table, East Room.Official White House photo by Daniel Torok · public domain · cropped
 
-#### The head of the tableWhat the President said
+#### The head of the tableWhat Donald J. Trump said
 
 We're also thinking about forming a committee of sorts where we put maybe 10 people on that committee. It could be from that group.
 
-**Donald J. Trump** · 2:22
+**Donald J. Trump**, President of the United States · 2:22
 
 The committee is in the future tense and is not in the accord. As of October 4 there is no committee, no calendar and no czar.
 
-**More from the President**
+**More from Donald J. Trump, President of the United States**
 
 "Why not convene this group on a quarterly basis, on a yearly basis?" "Well, did I say we wouldn't?"
 
@@ -76,7 +76,7 @@ Cross-talk throughout: "Mr. President. Mr. President." At 20:53 a follow-up on s
 
 Across from the President, East Room.Official White House photo by Daniel Torok · public domain · cropped
 
-#### The other seat at the headWhat the Speaker said
+#### The other seat at the headWhat Mike Johnson said
 
 Trust is earned. It's not automatic.
 
@@ -84,7 +84,7 @@ Trust is earned. It's not automatic.
 
 He also described how a pledge becomes a bill: the House passed the Ratepayer Protection Act three weeks earlier. The Senate fell three votes short of taking it up the next day. [21]
 
-**More from the Speaker**
+**More from Mike Johnson, Speaker of the House**
 
 "We just codified about three weeks ago in the House, we passed with almost no dissenting votes the Ratepayer Protection Act. That is a codification of President Trump's Ratepayer protection pledge."
 
@@ -102,19 +102,19 @@ House vote 417 to 3; Senate procedural vote Sept. 30, 57 to 43, short of 60.
 
 Taking the question outside the West Wing; Elon Musk behind.Official White House photo by Joyce Boghosian · public domain · cropped
 
-#### SignedWhat Jensen said
+#### SignedWhat Jensen Huang said
 
 There's no conflict between innovation, technology and safety.
 
-**Jensen Huang** · 8:00
+**Jensen Huang**, chief executive of Nvidia · 8:00
 
 The answer assumes safety is a technology the industry builds and judges.
 
-**More from Jensen**
+**More from Jensen Huang, chief executive of Nvidia**
 
 "Do you all agree with the president that no guardrails are necessary, that you can self-regulate and that this existential threat that you've all talked about can actually be managed? That's a question for you all actually."
 
-A reporter, 7:33 · The President, 7:49: "I can tell you the answer is yes."
+A reporter, 7:33 · President Trump, 7:49: "I can tell you the answer is yes."
 
 "We are gonna have to create new technologies to advance the capabilities of AI, but we're also creating new technologies to advance the safety of AI. All of this technology is being developed by the industry today."
 
@@ -130,15 +130,15 @@ A reporter, 7:33 · The President, 7:49: "I can tell you the answer is yes."
 
 At the lunch table, East Room.Official White House photo by Daniel Torok · public domain · cropped
 
-#### SignedWhat Zuck said
+#### SignedWhat Mark Zuckerberg said
 
 So we drafted a set of principles and commitments.
 
-**Mark Zuckerberg** · 21:52
+**Mark Zuckerberg**, chief executive of Meta · 21:52
 
 One of the page's authors, in his own words. He also said why it holds no standard: "people wanna do some different things."
 
-**More from Zuck**
+**More from Mark Zuckerberg, chief executive of Meta**
 
 "I can kind of summarize what I think we all signed today."
 
@@ -162,19 +162,19 @@ One of the page's authors, in his own words. He also said why it holds no standa
 
 At the lunch table, East Room.Official White House photo by Daniel Torok · public domain · cropped
 
-#### SignedWhat Elon said
+#### SignedWhat Elon Musk said
 
 By far the most likely outcome is an age of abundance, where we don't have just a universal basic income, we have universal high income.
 
-**Elon Musk** · 29:26 · asked what people will do for work
+**Elon Musk**, chief executive of xAI · 29:26 · asked what people will do for work
 
 Asked what people will do for work, he answered with an outcome. He said nothing at the microphones about the accord itself.
 
-**More from Elon**
+**More from Elon Musk, chief executive of xAI**
 
 "Do you want them to stay away from homes when they're building these data centers?"
 
-27:02, asking the President, after a reporter asked about data centers in residential areas · The President, 27:08: "Yeah, I think I want them to be in the right location within a community." A signer asking the President what the rule is; no such rule is written anywhere they signed.
+27:02, asking the President, after a reporter asked about data centers in residential areas · President Trump, 27:08: "Yeah, I think I want them to be in the right location within a community." A signer asking the President what the rule is; no such rule is written anywhere they signed.
 
 "Jobs are going to change. Jobs have always changed. Being a computer used to be a job."
 
@@ -190,15 +190,15 @@ Asked what people will do for work, he answered with an outcome. He said nothing
 
 At the microphones outside the West Wing, September 29, moments before he answered.Frame from the video of the press availability · clipped by the author
 
-#### SignedWhat Dario said
+#### SignedWhat Dario Amodei said
 
 The mechanism, how we address those risks is still under discussion.
 
-**Dario Amodei** · 20:15
+**Dario Amodei**, chief executive of Anthropic · 20:15
 
 The page he had just signed is the mechanism. The one follow-up asking whether self-policing is enough was cut off twice.
 
-**More from Dario**
+**More from Dario Amodei, chief executive of Anthropic**
 
 "Can we just bring Dario to the front for a second?"
 
@@ -216,19 +216,19 @@ A reporter, 20:51: "Dario, do you think, do you think that self-policing is a" T
 
 Outside the West Wing, after lunch.Official White House photo · public domain · cropped
 
-#### SignedWhat Sundar said
+#### SignedWhat Sundar Pichai said
 
 We are signing up to a set of processes and controls like we do in other areas like financial controls in a company.
 
-**Sundar Pichai** · 23:44
+**Sundar Pichai**, chief executive of Google · 23:44
 
 Financial controls exist because a statute requires them, an outside auditor must attest, a federal board inspects the auditors, and the audit committee hires them by law. The accord borrows the vocabulary and leaves out the statute. [22]
 
-**More from Sundar**
+**More from Sundar Pichai, chief executive of Google**
 
 "You have no idea who these people are. These are the biggest people in the world. You have no idea who the hell they are. This guy is a monster and nobody knows. What a great life. To be a monster and not have to go through this."
 
-The President, 22:58, introducing him · A reporter: "What's your name, sir?" The President: "Just all you have to know is Sundar."
+President Trump, 22:58, introducing him · A reporter: "What's your name, sir?" The President: "Just all you have to know is Sundar."
 
 "Hopefully a better tagline than I'm a monster, but" [Laughs]
 
@@ -244,15 +244,15 @@ Pichai, 23:16
 
 At the microphones outside the West Wing, September 29, as he spoke.Frame from the video of the press availability · clipped by the author
 
-#### SignedWhat Greg said
+#### SignedWhat Greg Brockman said
 
 We build artificial intelligence to benefit everyone.
 
-**Greg Brockman**, president · 7:10
+**Greg Brockman**, president of OpenAI · 7:10
 
 Seven minutes after the President announced the name was now SI, he said "artificial intelligence," twice; the President supplied the company's name. The next day OpenAI's chief executive declined the Senate's invitation to its hearing on rogue agents. [7]
 
-**More from Greg**
+**More from Greg Brockman, president of OpenAI**
 
 "We build artificial intelligence because" "This is OpenAI." "OpenAI. Thank you, Mr. President."
 
