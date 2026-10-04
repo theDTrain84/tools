@@ -232,6 +232,19 @@ h1 em{font-style:italic;color:var(--gold)}
 /* the featured row: the same card, a little larger */
 .featured{padding:28px 0 0}
 .featured .shot h3{font-size:clamp(23px,2.1vw,28px)}
+/* up front: a hand-picked row that slides one card at a time */
+.fhead{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 14px}
+.reel-nav{display:flex;gap:8px}
+.reel-nav button{width:44px;height:44px;border-radius:50%;border:1px solid var(--rule);background:none;color:var(--ink2);font-family:var(--mono);font-size:15px;line-height:1;cursor:pointer;display:grid;place-items:center;transition:border-color .2s,color .2s,background .2s}
+.reel-nav button:hover{border-color:var(--walnut);color:var(--walnut);background:var(--paper2)}
+.featured .tiles.reel{display:flex;gap:22px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;margin:-6px -6px 0;padding:6px 6px 24px;scroll-padding:0 6px}
+.featured .tiles.reel::-webkit-scrollbar{display:none}
+.featured .tiles.reel:focus-visible{outline:2px solid var(--sky);outline-offset:2px;border-radius:16px}
+.featured .tiles.reel>.shot{flex:0 0 calc((100% - 44px)/3);scroll-snap-align:start}
+.dots{display:flex;justify-content:center;gap:2px;margin-top:-10px}
+.dots button{width:28px;height:28px;padding:0;border:0;background:none;cursor:pointer;display:grid;place-items:center}
+.dots button:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--rule);transition:background .3s,transform .3s}
+.dots button[aria-current="true"]:before{background:var(--walnut);transform:scale(1.25)}
 
 /* chips: a bar that sticks under the nav; pressing one changes only what is below it */
 .chips-bar{position:sticky;top:var(--navh,58px);z-index:15;background:rgba(243,239,231,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
@@ -265,9 +278,11 @@ main.wrap{min-height:100vh}
   .tiles>.shot .k{font-size:10px;letter-spacing:.16em}
   .tiles>.shot .k:before{display:none}
   .tiles>.shot .go{padding-top:6px;font-size:11.5px}
-  .featured .tiles{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -16px;padding:2px 16px 6px;scrollbar-width:none}
+  .featured .tiles,.featured .tiles.reel{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -16px;padding:2px 16px 18px;scroll-padding:0 16px;scrollbar-width:none}
   .featured .tiles::-webkit-scrollbar{display:none}
-  .featured .tiles>.shot{flex:0 0 84%;flex-direction:column;scroll-snap-align:center}
+  .featured .tiles>.shot,.featured .tiles.reel>.shot{flex:0 0 84%;flex-direction:column;scroll-snap-align:start}
+  .reel-nav{display:none}
+  .dots{margin-top:-6px}
   .featured .tiles>.shot .pic{flex:none;aspect-ratio:3/2;min-height:0;border-right:0;border-bottom:1px solid var(--rule)}
   .featured .tiles>.shot .txt{padding:14px 16px 16px}
   .featured .tiles>.shot h3{font-size:22px}
@@ -435,6 +450,34 @@ card.addEventListener('mouseenter',run);card.addEventListener('focus',run);new M
     const go=d.querySelector('.go');if(go)go.replaceWith(el('p','soon','Soon'));
     return d;
   }
+  function reel(track,head,w){
+    const cards=[...track.children];if(cards.length<2)return;
+    track.tabIndex=0;track.setAttribute('role','region');track.setAttribute('aria-roledescription','carousel');track.setAttribute('aria-labelledby','up-front-k');
+    const nav=el('div','reel-nav');const prev=el('button','','←'),next=el('button','','→');
+    prev.type=next.type='button';prev.setAttribute('aria-label','Previous');next.setAttribute('aria-label','Next');nav.append(prev,next);head.append(nav);
+    const dots=el('div','dots');w.append(dots);
+    const reduce=matchMedia('(prefers-reduced-motion: reduce)');
+    let idx=0,count=0,paused=false,stopped=false;
+    const step=()=>cards[1].offsetLeft-cards[0].offsetLeft;
+    const max=()=>track.scrollWidth-track.clientWidth;
+    const layout=()=>{const st=step(),m=max();const n=st>0?Math.min(cards.length,Math.floor(m/st+.5)+1):1;
+      if(n!==count){count=n;dots.textContent='';for(let i=0;i<n;i++){const d=el('button');d.type='button';d.setAttribute('aria-label','Show card '+(i+1)+' of '+n);d.addEventListener('click',()=>go(i));dots.append(d);}}
+      const show=count>1;nav.hidden=!show;dots.hidden=!show;mark();};
+    const mark=()=>{[...dots.children].forEach((d,i)=>d.setAttribute('aria-current',String(i===idx)));};
+    let timer;const arm=()=>{clearTimeout(timer);timer=setTimeout(()=>{if(!paused&&!stopped&&!reduce.matches&&!document.hidden)go(idx+1,true);else arm();},7000);};
+    const go=(i,auto)=>{if(count<2)return;arm();idx=(i+count)%count;const left=Math.min(idx*step(),max());
+      track.scrollTo({left:left,behavior:reduce.matches?'auto':'smooth'});mark();};
+    let t;track.addEventListener('scroll',()=>{clearTimeout(t);t=setTimeout(()=>{const st=step();if(!st)return;const m=max();idx=track.scrollLeft>=m-2?count-1:Math.round(track.scrollLeft/st);mark();},120);},{passive:true});
+    prev.addEventListener('click',()=>go(idx-1));next.addEventListener('click',()=>go(idx+1));
+    track.addEventListener('keydown',e=>{if(e.target!==track)return;if(e.key==='ArrowRight'){e.preventDefault();go(idx+1);}else if(e.key==='ArrowLeft'){e.preventDefault();go(idx-1);}});
+    // pause while a person is looking or focused; stop for good once they swipe it themselves
+    w.addEventListener('mouseenter',()=>paused=true);w.addEventListener('mouseleave',()=>paused=false);
+    w.addEventListener('focusin',()=>paused=true);w.addEventListener('focusout',e=>{if(!w.contains(e.relatedTarget))paused=false;});
+    track.addEventListener('touchstart',()=>{stopped=true;clearTimeout(timer);},{passive:true});
+    track.addEventListener('wheel',e=>{if(Math.abs(e.deltaX)>Math.abs(e.deltaY))stopped=true;},{passive:true});
+    arm();
+    addEventListener('resize',layout);layout();
+  }
   function render(data){
     const list=(data&&Array.isArray(data.pieces)?data.pieces:[]).filter(p=>p&&p.slug&&p.title&&p.href&&(p.section==='games'||HEAD[p.section]));
     if(!list.length)return;
@@ -456,21 +499,23 @@ card.addEventListener('mouseenter',run);card.addEventListener('focus',run);new M
       const rest=[...tiles.children].filter(c=>!used.has(c));
       cards.concat(rest).forEach(c=>tiles.appendChild(c));
     }
-    // the featured stack: two or three large cards under the hero
-    const feat=order.filter(p=>p.featured).slice(0,3);
+    // up front: every featured piece, in manifest order, in a row that slides one card at a time
+    const feat=list.filter(p=>p.featured);
     const hero=document.querySelector('header.hero');
     let fsec=null;
     if(feat.length&&hero){
-      fsec=el('section','featured');fsec.setAttribute('aria-label','Featured');
+      fsec=el('section','featured');fsec.setAttribute('aria-labelledby','up-front-k');
       const w=el('div','wrap');
-      const tiles=el('div','tiles');
+      const head=el('div','fhead');const k=el('p','k','Up front');k.id='up-front-k';head.append(k);
+      const tiles=el('div','tiles reel');
       feat.forEach(p=>{
         const s=statics.get(p.href);let c;
         if(s&&p.status!=='coming'){c=s.cloneNode(true);c.classList.remove('wide','live');}
         else if(s){c=soonify(s);c.classList.remove('wide');}
         else c=build(p,false);
         c.dataset.type=p.type||'';stamp(c,p);tiles.append(c);});
-      w.append(tiles);fsec.append(w);hero.after(fsec);
+      w.append(head,tiles);fsec.append(w);hero.after(fsec);
+      reel(tiles,head,w);
     }
     // touch screens: cards made here come alive in view, like the ones written above
     if('IntersectionObserver' in window&&matchMedia('(hover:none)').matches){
