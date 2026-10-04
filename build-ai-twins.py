@@ -749,9 +749,9 @@ def build_twin(rel, today, day):
 
 SECTIONS = [
     ("Civic tools", ["follow-the-money/", "gas-tax/", "cannabis/"]),
-    ("Daily games", ["well/", "well/daily-line/", "well/morning-edition/",
+    ("Games and practices", ["well/", "well/daily-line/", "well/morning-edition/",
                      "well/one-word/", "well/one-word-advanced/", "well/five-moves/"]),
-    ("Quiet rooms", ["well/walk-in/", "well/river/", "well/lunar/"]),
+    ("Practices", ["well/walk-in/", "well/river/", "well/lunar/"]),
     ("Teaching", ["recipes/", "recipes/morning-inbox/", "ai-gauges/"]),
 ]
 OPTIONAL = ["follow-the-money/v1-dustin/"]
@@ -763,7 +763,7 @@ def short_title(t):
 
 # pieces.json: the shelf the landing page renders from. When a page has an entry, its
 # llms.txt section and one-line description come from there, so the index and the page agree.
-SECTION_NAMES = {"civic": "Civic tools", "games": "Daily games", "rooms": "Quiet rooms", "teaching": "Teaching"}
+SECTION_NAMES = {"civic": "Civic tools", "games": "Games and practices", "rooms": "Practices", "teaching": "Teaching"}
 
 
 def load_pieces():
@@ -827,7 +827,7 @@ def main():
     L = ["# The Well, from DNSC", "",
          "> Free tools for the community from DNSC (Dustin Nimmo Strategic Consulting, West Chester, Ohio): "
          "civic tools that follow public money and public law from the record with every source linked, "
-         "daily games that teach the vocabulary and the news of AI, quiet rooms, and teaching for working with AI. "
+         "games that teach the vocabulary and the news of AI, practices that hold the day, and teaching for working with AI. "
          "Every page has a plain text twin at index.md beside it.", "",
          f"Start at the landing page as text: [The Well]({SITE}ai.md). "
          "Teaching: https://dnsc.ai/teaching · The open method: https://github.com/theDTrain84/mise-en-place", ""]

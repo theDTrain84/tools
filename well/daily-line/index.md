@@ -2,7 +2,7 @@
 
 > A daily five by five crossword that teaches the vocabulary of working with AI. One a day, free, made by DNSC.
 
-Daily games
+Games and practices
 
 ## The Daily Line.
 

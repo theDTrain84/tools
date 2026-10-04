@@ -1,6 +1,6 @@
 # The Well, from DNSC
 
-> Free tools for the community from DNSC (Dustin Nimmo Strategic Consulting, West Chester, Ohio): civic tools that follow public money and public law from the record with every source linked, daily games that teach the vocabulary and the news of AI, quiet rooms, and teaching for working with AI. Every page has a plain text twin at index.md beside it.
+> Free tools for the community from DNSC (Dustin Nimmo Strategic Consulting, West Chester, Ohio): civic tools that follow public money and public law from the record with every source linked, games that teach the vocabulary and the news of AI, practices that hold the day, and teaching for working with AI. Every page has a plain text twin at index.md beside it.
 
 Start at the landing page as text: [The Well](https://tools.dnsc.ai/ai.md). Teaching: https://dnsc.ai/teaching · The open method: https://github.com/theDTrain84/mise-en-place
 
@@ -12,7 +12,7 @@ Start at the landing page as text: [The Well](https://tools.dnsc.ai/ai.md). Teac
 - [Issue 2, in Plain Numbers](https://tools.dnsc.ai/follow-the-money/index.md): What the November school bond means for your tax bill, with every number sourced from the public record.
 - [What's in the jar · Cannabis in Ohio](https://tools.dnsc.ai/cannabis/index.md): How strong today's cannabis is, what Ohio's law allows, where the money goes, and what the research says, in plain numbers with every source linked.
 
-## Daily games
+## Games and practices
 
 - [One Word Advanced](https://tools.dnsc.ai/well/one-word-advanced/index.md): Seven letters, seven tries. For the word people.
 - [The Daily Line](https://tools.dnsc.ai/well/daily-line/index.md): One small crossword on the words of AI.
@@ -20,7 +20,7 @@ Start at the landing page as text: [The Well](https://tools.dnsc.ai/ai.md). Teac
 - [One Word](https://tools.dnsc.ai/well/one-word/index.md): One word about AI, found in six tries.
 - [Five Moves](https://tools.dnsc.ai/well/five-moves/index.md): A daily sorting game. Twenty cards, five moves of working with AI: Listen, Map, Build, Trust, Teach.
 
-## Quiet rooms
+## Practices
 
 - [The Walk-in](https://tools.dnsc.ai/well/walk-in/index.md): Hold the people from your day.
 - [The River](https://tools.dnsc.ai/well/river/index.md): Set down what's heavy. Watch it go.
@@ -30,7 +30,7 @@ Start at the landing page as text: [The Well](https://tools.dnsc.ai/ai.md). Teac
 
 - [The Recipe Book](https://tools.dnsc.ai/recipes/index.md): Working systems for the AI you already have.
 - [AI Gauges](https://tools.dnsc.ai/ai-gauges/index.md): Your own AI use: tokens, energy, water and carbon.
-- [Daily games](https://tools.dnsc.ai/well/index.md): Word games that teach AI, and a few quiet rooms.
+- [Games and practices](https://tools.dnsc.ai/well/index.md): Word games that teach AI, and the practices that hold the day. Some daily, some weekly.
 - [The morning inbox · Recipe card](https://tools.dnsc.ai/recipes/morning-inbox/index.md): A recipe card: AI triages your inbox into three tiers, labels only, drafts the replies that need you, and sends a short digest. You still send every email.
 
 ## Optional

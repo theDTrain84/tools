@@ -2,7 +2,7 @@
 
 > A daily sorting game. Twenty cards, five moves of working with AI: Listen, Map, Build, Trust, Teach.
 
-Daily games
+Games and practices
 
 ## Five moves, all at once.
 

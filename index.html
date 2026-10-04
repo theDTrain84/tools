@@ -307,7 +307,7 @@ main.wrap{min-height:100vh}
 <div class="in">
 <p class="k">The Well</p>
 <h1>Made for the community, <em>given away.</em></h1>
-<p>A well keeps filling. Daily games that teach the vocabulary and the news of AI, quiet rooms, the moon over your weeks, free tools from the public record, and the writing. Come back any day; there is always more.</p>
+<p>A well keeps filling. Games that teach the vocabulary and the news of AI, practices that hold the day, the moon over your weeks, free tools from the public record, and the writing. Come back any day; there is always more.</p>
 </div>
 <p class="where" aria-label="Where this photo was taken">Back porch, Lake Waynoka.</p>
 </header>
@@ -316,8 +316,8 @@ main.wrap{min-height:100vh}
 <svg class="orbit" viewBox="0 0 256 256" aria-hidden="true"><circle cx="128" cy="128" r="110" fill="none" stroke="#CFC6B8" stroke-width="1.2"/><circle cx="128" cy="128" r="78" fill="none" stroke="#CFC6B8" stroke-width=".8" stroke-dasharray="1 5"/><circle cx="128" cy="18" r="5" fill="#3E6A9E" opacity=".55"/><circle cx="233" cy="94" r="5" fill="#B4862E" opacity=".6"/><circle cx="193" cy="217" r="5" fill="#623E2A" opacity=".45"/><circle cx="63" cy="217" r="5" fill="#A69686" opacity=".6"/><circle cx="23" cy="94" r="5" fill="#D9B25A" opacity=".7"/></svg>
 <div class="wrap">
 <div class="head">
-<div><p class="k">Daily · Free · No account</p><h2 id="well-h">Every day</h2>
-<p>Small things, cooked fresh each morning.</p></div>
+<div><p class="k">Daily · Weekly · Free · No account</p><h2 id="well-h">Games and practices</h2>
+<p>Small things, some daily, some weekly.</p></div>
 <a class="allwell" href="well/">All daily games →</a>
 </div>
 </div>
@@ -346,12 +346,12 @@ main.wrap{min-height:100vh}
 <a class="shot light" href="https://dnsc.ai/teaching"><div class="pic"><img src="assets/previews/teaching.jpg" width="1200" height="800" alt="The Teaching page: Declare. Practice. Become. beside a live clock of the day's rhythms" loading="lazy"></div><div class="txt"><p class="k on-dark">Teaching</p><h3>How a person and an AI work together</h3><p>The rhythms, the corrections, and the whole stack behind this practice. Ten minutes, with a live clock.</p><span class="go">Open <i>→</i></span></div></a>
 <a class="shot light" href="recipes/"><div class="pic"><img src="assets/previews/recipes.jpg" width="1200" height="800" alt="The Recipe Book: the recipes we cook with, starting with the morning inbox" loading="lazy"></div><div class="txt"><p class="k on-dark">Recipes</p><h3>The Recipe Book</h3><p>Working systems for the AI you already have.</p><span class="go">Open <i>→</i></span></div></a>
 <a class="shot light" href="ai-gauges/"><div class="pic"><img src="assets/previews/gauges.jpg" width="1200" height="800" alt="AI Gauges: a dashboard of dials for energy, output tokens, water, cache and carbon" loading="lazy"></div><div class="txt"><p class="k on-dark">Dashboard</p><h3>AI Gauges</h3><p>Your own AI use: tokens, energy, water and carbon.</p><span class="go">Open <i>→</i></span></div></a>
-<a class="shot light" href="well/"><div class="pic"><img src="assets/previews/well.jpg" width="1200" height="800" alt="The Well: small things, every day" loading="lazy" decoding="async"></div><div class="txt"><p class="k on-dark">Every day</p><h3>Daily games</h3><p>Word games that teach AI, and a few quiet rooms.</p><span class="go">Play <i>→</i></span></div></a>
+<a class="shot light" href="well/"><div class="pic"><img src="assets/previews/well.jpg" width="1200" height="800" alt="The Well: games and practices" loading="lazy" decoding="async"></div><div class="txt"><p class="k on-dark">Daily · Weekly</p><h3>Games and practices</h3><p>Word games that teach AI, and a few quiet rooms.</p><span class="go">Play <i>→</i></span></div></a>
 </div>
 </section>
 
 <section class="group" aria-labelledby="life-h">
-<div class="head"><div><p class="k">Quiet · Free · No account</p><h2 id="life-h">Tools for life</h2><p>Rooms to hold the day, and the moon over your weeks.</p></div></div>
+<div class="head"><div><p class="k">Quiet · Free · No account</p><h2 id="life-h">Practices</h2><p>Rooms to hold the day, and the moon over your weeks.</p></div></div>
 <div class="tiles">
 <a class="shot night" href="well/walk-in/"><div class="pic room r-walk"><img src="assets/previews/room-walkin.jpg" alt="The Walk-in breathing ring at dusk" loading="lazy" decoding="async"></div><div class="txt"><p class="k on-dark">A quiet room</p><h3>The Walk-in</h3><p>Hold the people from your day.</p><span class="go">Open <i>→</i></span></div></a>
 <a class="shot night" href="well/river/"><div class="pic room r-river"><img src="assets/previews/room-river.jpg" alt="Leaves on dark water in The River" loading="lazy" decoding="async"></div><div class="txt"><p class="k on-dark">Letting go</p><h3>The River</h3><p>Set down what's heavy. Watch it go.</p><span class="go">Open <i>→</i></span></div></a>
@@ -414,7 +414,7 @@ card.addEventListener('mouseenter',run);card.addEventListener('focus',run);new M
   if(!window.fetch) return;
   const HEAD={civic:'civic-h',rooms:'life-h',teaching:'ai-h'};
   const tilesFor=s=>{if(s==='games')return document.querySelector('.shelf .tiles');const h=document.getElementById(HEAD[s]);return h?h.closest('section').querySelector('.tiles'):null;};
-  const CHIPS=[['All',''],['Tools','tool'],['Stories','piece'],['Games','game'],['Rooms','room'],['Teaching','teaching']];
+  const CHIPS=[['All',''],['Tools','tool'],['Stories','piece'],['Games','game'],['Practices','room'],['Teaching','teaching']];
   const ORBIT='<svg class="orbit-art" viewBox="0 0 300 200" aria-hidden="true"><circle cx="150" cy="100" r="70" fill="none" stroke="#CFC6B8" stroke-width="1.2"/><circle cx="150" cy="100" r="46" fill="none" stroke="#B4862E" stroke-opacity=".45" stroke-width=".8" stroke-dasharray="1 5"/><circle cx="150" cy="30" r="4.5" fill="#3E6A9E"/><circle cx="216.6" cy="78.4" r="4.5" fill="#B4862E"/><circle cx="191.1" cy="156.6" r="4.5" fill="#623E2A"/><circle cx="108.9" cy="156.6" r="4.5" fill="#A69686"/><circle cx="83.4" cy="78.4" r="4.5" fill="#D9B25A"/></svg>';
   const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!=null)n.textContent=text;return n;};
   const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];

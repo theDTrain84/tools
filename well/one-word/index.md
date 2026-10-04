@@ -2,7 +2,7 @@
 
 > One five letter word a day about working with AI. Six tries, paper tiles, and a short teaching when you finish. Free, made by DNSC.
 
-Daily games
+Games and practices
 
 ## One Word
 

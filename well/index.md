@@ -1,10 +1,10 @@
-# Daily games · The Well · DNSC
+# Games and practices · The Well · DNSC
 
-> Daily games that teach AI: two crosswords, One Word and One Word Advanced, and a few quiet rooms. A few minutes each, free.
+> Games that teach AI and practices that hold the day: two crosswords, One Word and One Word Advanced, the Walk-in, the River and Lunar Life. Some daily, some weekly. A few minutes each, free.
 
-## Daily games
+## Games and practices
 
-Daily games that teach AI. A few minutes each, free.
+Games that teach AI and practices that hold the day. Some daily, some weekly. A few minutes each, free.
 
 ### Today’s games
 
@@ -12,7 +12,7 @@ Daily games that teach AI. A few minutes each, free.
 
 A small crossword on the words of AI.
 
-5 × 5 · about three minutes
+Daily · 5 × 5 · about three minutes
 
 Play
 
@@ -54,13 +54,13 @@ Fewest guesses, then fastest. Fresh every morning.
 
 1. No one yet today. [Be the first →](https://tools.dnsc.ai/well/one-word-advanced/)
 
-### Quiet rooms
+### Practices
 
 #### The Walk-in
 
 Hold the people in your day.
 
-Two minutes, any time
+Daily · two minutes
 
 Step in
 
@@ -68,7 +68,7 @@ Step in
 
 Your weeks, by the light of the moon.
 
-Bring your calendar
+Weekly · bring your calendar
 
 Look up
 
@@ -76,7 +76,7 @@ Look up
 
 Set down what’s heavy. Let it go.
 
-As long as you need
+Any time · as long as you need
 
 Go to the water
 

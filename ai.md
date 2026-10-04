@@ -8,15 +8,15 @@ The Well
 
 ## Made for the community, given away.
 
-A well keeps filling. Daily games that teach the vocabulary and the news of AI, quiet rooms, the moon over your weeks, free tools from the public record, and the writing. Come back any day; there is always more.
+A well keeps filling. Games that teach the vocabulary and the news of AI, practices that hold the day, the moon over your weeks, free tools from the public record, and the writing. Come back any day; there is always more.
 
 Back porch, Lake Waynoka.
 
-Daily · Free · No account
+Daily · Weekly · Free · No account
 
-### Every day
+### Games and practices
 
-Small things, cooked fresh each morning.
+Small things, some daily, some weekly.
 
 [All daily games →](https://tools.dnsc.ai/well/)
 
@@ -120,11 +120,11 @@ Your own AI use: tokens, energy, water and carbon.
 
 Open →
 
-[Image: The Well: small things, every day]
+[Image: The Well: games and practices]
 
-Every day
+Daily · Weekly
 
-#### [Daily games](https://tools.dnsc.ai/well/)
+#### [Games and practices](https://tools.dnsc.ai/well/)
 
 Word games that teach AI, and a few quiet rooms.
 
@@ -132,7 +132,7 @@ Play →
 
 Quiet · Free · No account
 
-### Tools for life
+### Practices
 
 Rooms to hold the day, and the moon over your weeks.
 

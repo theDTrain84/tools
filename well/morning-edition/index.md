@@ -2,7 +2,7 @@
 
 > What happened in AI yesterday, as a crossword. Built each weekday morning from primary sources. Free, made by DNSC.
 
-Daily games · AI in the news
+Games and practices · AI in the news
 
 ## The Morning Edition.
 

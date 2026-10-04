@@ -38,3 +38,7 @@ The laws, carried over from the Stillness Sanctuary and the World Tree in Gumbo 
 
 ## How to add a thing
 One folder under `well/` with an `index.html`, the shared shell (`../../assets/site.css`, nav, footer, crumb), fonts via Google Fonts, no external JS, everything in one file, a card on `well/index.html`. Daily content is a bank in the file, picked by day number from 2026-10-02. Keep each under 70 KB. Phone first. No em dashes in copy. The site says "we."
+
+
+## Weekly (his 1187, Oct 4, 2026)
+"I think these are daily games and practices… Some may be weekly. Like a large weekly crossword puzzle. A weekly centering practice. A daily practice." Queue: a large weekly crossword (Sunday-size, the week's AI news); a weekly centering practice (a room, ~10 minutes, one sitting a week). Cadence shows on every card: Daily · Weekly · Any time.

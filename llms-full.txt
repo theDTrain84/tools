@@ -12,15 +12,15 @@ The Well
 
 ## Made for the community, given away.
 
-A well keeps filling. Daily games that teach the vocabulary and the news of AI, quiet rooms, the moon over your weeks, free tools from the public record, and the writing. Come back any day; there is always more.
+A well keeps filling. Games that teach the vocabulary and the news of AI, practices that hold the day, the moon over your weeks, free tools from the public record, and the writing. Come back any day; there is always more.
 
 Back porch, Lake Waynoka.
 
-Daily · Free · No account
+Daily · Weekly · Free · No account
 
-### Every day
+### Games and practices
 
-Small things, cooked fresh each morning.
+Small things, some daily, some weekly.
 
 [All daily games →](https://tools.dnsc.ai/well/)
 
@@ -124,11 +124,11 @@ Your own AI use: tokens, energy, water and carbon.
 
 Open →
 
-[Image: The Well: small things, every day]
+[Image: The Well: games and practices]
 
-Every day
+Daily · Weekly
 
-#### [Daily games](https://tools.dnsc.ai/well/)
+#### [Games and practices](https://tools.dnsc.ai/well/)
 
 Word games that teach AI, and a few quiet rooms.
 
@@ -136,7 +136,7 @@ Play →
 
 Quiet · Free · No account
 
-### Tools for life
+### Practices
 
 Rooms to hold the day, and the moon over your weeks.
 
@@ -1809,7 +1809,7 @@ Source: https://tools.dnsc.ai/cannabis/ · Generated from the page on Oct 4, 202
 
 > One Word Advanced: one seven letter word a day about working with AI. Seven tries, paper tiles, and a teaching you can use at work tomorrow. Free, made by DNSC.
 
-Daily games · Advanced
+Games and practices · Advanced
 
 ## One Word Advanced
 
@@ -1850,7 +1850,7 @@ Source: https://tools.dnsc.ai/well/one-word-advanced/ · Generated from the page
 
 > A daily five by five crossword that teaches the vocabulary of working with AI. One a day, free, made by DNSC.
 
-Daily games
+Games and practices
 
 ## The Daily Line.
 
@@ -1885,7 +1885,7 @@ Source: https://tools.dnsc.ai/well/daily-line/ · Generated from the page on Oct
 
 > What happened in AI yesterday, as a crossword. Built each weekday morning from primary sources. Free, made by DNSC.
 
-Daily games · AI in the news
+Games and practices · AI in the news
 
 ## The Morning Edition.
 
@@ -1920,7 +1920,7 @@ Source: https://tools.dnsc.ai/well/morning-edition/ · Generated from the page o
 
 > One five letter word a day about working with AI. Six tries, paper tiles, and a short teaching when you finish. Free, made by DNSC.
 
-Daily games
+Games and practices
 
 ## One Word
 
@@ -1961,7 +1961,7 @@ Source: https://tools.dnsc.ai/well/one-word/ · Generated from the page on Oct 4
 
 > A daily sorting game. Twenty cards, five moves of working with AI: Listen, Map, Build, Trust, Teach.
 
-Daily games
+Games and practices
 
 ## Five moves, all at once.
 
@@ -2353,13 +2353,13 @@ Source: https://tools.dnsc.ai/ai-gauges/ · Generated from the page on Oct 4, 20
 
 * * *
 
-# Daily games · The Well · DNSC
+# Games and practices · The Well · DNSC
 
-> Daily games that teach AI: two crosswords, One Word and One Word Advanced, and a few quiet rooms. A few minutes each, free.
+> Games that teach AI and practices that hold the day: two crosswords, One Word and One Word Advanced, the Walk-in, the River and Lunar Life. Some daily, some weekly. A few minutes each, free.
 
-## Daily games
+## Games and practices
 
-Daily games that teach AI. A few minutes each, free.
+Games that teach AI and practices that hold the day. Some daily, some weekly. A few minutes each, free.
 
 ### Today’s games
 
@@ -2367,7 +2367,7 @@ Daily games that teach AI. A few minutes each, free.
 
 A small crossword on the words of AI.
 
-5 × 5 · about three minutes
+Daily · 5 × 5 · about three minutes
 
 Play
 
@@ -2409,13 +2409,13 @@ Fewest guesses, then fastest. Fresh every morning.
 
 1. No one yet today. [Be the first →](https://tools.dnsc.ai/well/one-word-advanced/)
 
-### Quiet rooms
+### Practices
 
 #### The Walk-in
 
 Hold the people in your day.
 
-Two minutes, any time
+Daily · two minutes
 
 Step in
 
@@ -2423,7 +2423,7 @@ Step in
 
 Your weeks, by the light of the moon.
 
-Bring your calendar
+Weekly · bring your calendar
 
 Look up
 
@@ -2431,7 +2431,7 @@ Look up
 
 Set down what’s heavy. Let it go.
 
-As long as you need
+Any time · as long as you need
 
 Go to the water
 

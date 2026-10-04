@@ -2,7 +2,7 @@
 
 > One Word Advanced: one seven letter word a day about working with AI. Seven tries, paper tiles, and a teaching you can use at work tomorrow. Free, made by DNSC.
 
-Daily games · Advanced
+Games and practices · Advanced
 
 ## One Word Advanced
 
