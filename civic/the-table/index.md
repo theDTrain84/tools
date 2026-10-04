@@ -12,6 +12,8 @@ From the record, Sept. 29 to Oct. 4
 
 Six companies and the President signed one page over lunch on September 29.
 
+Published October 4, 2026
+
 Related · At the Department of War, September 30: [the task force](https://tools.dnsc.ai/civic/task-force/).
 
 [Image: The East Room of the White House set for lunch, guests along a long table, the press at the far end.]

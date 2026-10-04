@@ -12,6 +12,8 @@ From the record · Sept. 30 to Oct. 4
 
 On September 30 the Secretary of War asked three people to tell the Department what the next war will need. Two of them build it.
 
+Published October 4, 2026
+
 [Image: Palmer Luckey, Newt Gingrich and Elon Musk standing at a balcony rail in the auditorium at Quantico, the audience below them applauding.]
 
 From left, Palmer Luckey, Newt Gingrich and Elon Musk stand during the Secretary's remarks, Quantico, Va., September 30, 2026.Official DoW photo by Navy Petty Officer 1st Class Eric Brann · public domain · cropped [4]
