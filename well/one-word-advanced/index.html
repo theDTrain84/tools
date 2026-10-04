@@ -359,7 +359,8 @@ function board(won,fresh){
   document.getElementById("lbEd").textContent=ADV?"Advanced":"Regular";
   var j=document.getElementById("join"),msg=document.getElementById("lbMsg");
   if(won&&!st.posted&&!st.skipped){
-    if(!st.name){st.name=newName();save()}
+    var nmOk=function(n){var x=(n||"").split(" ");return x.length===2&&NM.A.indexOf(x[0])>=0&&NM.N.indexOf(x[1])>=0};
+    if(!nmOk(st.name)){st.name=newName();save()}
     j.hidden=false;document.getElementById("nm").textContent=st.name;
     document.getElementById("reroll").onclick=function(){st.name=newName();save();document.getElementById("nm").textContent=st.name};
     document.getElementById("skip").onclick=function(){st.skipped=true;save();j.hidden=true};
