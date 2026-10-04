@@ -5,77 +5,77 @@
  "no": 1,
  "size": 11,
  "g": [
-  "#GAS##SOCKS",
-  "#AGE##PRONE",
-  "#LEES#ADMIT",
-  "SONNET#EAT#",
-  "ART#NOIR###",
-  "YES#SON#FAN",
-  "###PENS#ACE",
+  "#SAP##PAINT",
+  "#AGO##ORDER",
+  "#TEST#DELAY",
+  "WINTER#NET#",
+  "ART#MESA###",
+  "YES#PET#DAY",
+  "###POLE#ACE",
   "#SIR#SELECT",
-  "AUDIT#TORO#",
-  "DRONE##AIR#",
-  "DELTA##FED#"
+  "AUDIT#LIMO#",
+  "DRONE##FOR#",
+  "DELTA##END#"
  ],
  "a": [
   [
-   "GAS",
-   "What most cars still run on"
+   "SAP",
+   "Sticky stuff from a maple tree"
   ],
   [
-   "SOCKS",
-   "Pair in the drawer, often missing one"
+   "PAINT",
+   "What goes on the wall before the pictures do"
   ],
   [
-   "AGE",
-   "How old you are"
+   "AGO",
+   "Back in time"
   ],
   [
-   "PRONE",
-   "Lying face down"
-  ],
-  [
-   "LEES",
-   "Sediment at the bottom of a wine bottle"
-  ],
-  [
-   "ADMIT",
-   "Own up to"
-  ],
-  [
-   "SONNET",
-   "Claude ___ 5.5, the model Anthropic released Sept. 28: about 30 percent faster than the one before it",
+   "ORDER",
+   "Executive ___ 14434, signed Sept. 29, tells federal agencies to write Super Intelligence where they wrote AI",
    {
-    "src": "https://www.anthropic.com/claude-sonnet-5-5"
+    "src": "https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/"
    }
   ],
   [
-   "EAT",
-   "Sit down to dinner"
+   "TEST",
+   "Quiz, or trial run"
+  ],
+  [
+   "DELAY",
+   "Push back, as a launch date"
+  ],
+  [
+   "WINTER",
+   "Season of sledding and soup"
+  ],
+  [
+   "NET",
+   "What a tennis ball has to clear"
   ],
   [
    "ART",
    "What hangs in a museum"
   ],
   [
-   "NOIR",
-   "Film ___: shadowy crime movies"
+   "MESA",
+   "Flat-topped hill of the Southwest"
   ],
   [
    "YES",
    "The answer you were hoping for"
   ],
   [
-   "SON",
-   "Boy in the family"
+   "PET",
+   "Dog or cat at home"
   ],
   [
-   "FAN",
-   "Someone in the stands with a painted face"
+   "DAY",
+   "Twenty-four hours"
   ],
   [
-   "PENS",
-   "Ballpoints, for example"
+   "POLE",
+   "Fishing rod, or the North one"
   ],
   [
    "ACE",
@@ -100,8 +100,8 @@
    }
   ],
   [
-   "TORO",
-   "Bull, in a Spanish ring"
+   "LIMO",
+   "Long car for a big night"
   ],
   [
    "DRONE",
@@ -111,30 +111,30 @@
    }
   ],
   [
-   "AIR",
-   "What we breathe"
+   "FOR",
+   "In favor of"
   ],
   [
    "DELTA",
    "Where a river fans out into the sea"
   ],
   [
-   "FED",
-   "Gave dinner to"
+   "END",
+   "The very last part"
   ]
  ],
  "d": [
   [
-   "SAY",
-   "Have your ___: speak up"
+   "WAY",
+   "Path, or manner"
   ],
   [
    "ADD",
    "Put in, as a pinch of salt"
   ],
   [
-   "GALORE",
-   "In abundance"
+   "SATIRE",
+   "Humor with a point to make"
   ],
   [
    "SURE",
@@ -152,55 +152,52 @@
    "Someone you look up to, maybe too much"
   ],
   [
-   "SEEN",
-   "Noticed"
+   "POST",
+   "Mail, or put up online"
   ],
   [
    "PRINT",
    "Fine ___: the part of a contract worth reading twice"
   ],
   [
-   "SENSE",
-   "Common ___"
+   "TEMPO",
+   "Speed of the music"
   ],
   [
    "TEA",
    "Afternoon cup"
   ],
   [
-   "TOONS",
-   "Saturday morning cartoons, for short"
+   "REELS",
+   "Spools of film or fishing line"
   ],
   [
-   "SPA",
-   "Place for a long soak"
+   "POD",
+   "Where peas grow up together"
   ],
   [
-   "INSET",
-   "Small map set inside a bigger one"
+   "STEEL",
+   "Metal of bridges and beams"
   ],
   [
-   "ORDER",
-   "Executive ___ 14434, signed Sept. 29, tells federal agencies to write Super Intelligence where they wrote AI",
-   {
-    "src": "https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/"
-   }
+   "ARENA",
+   "Big room for a game or a concert"
   ],
   [
-   "LOAF",
-   "Bread from the bakery"
+   "LIFE",
+   "Everything from birth on"
   ],
   [
-   "COMA",
-   "State of deep unconsciousness"
+   "IDLE",
+   "Running, but going nowhere"
   ],
   [
-   "FAERIE",
-   "Fairy, in old poetry"
+   "DAEMON",
+   "Program that runs quietly in the background of a computer"
   ],
   [
-   "KNIT",
-   "Make a scarf with two needles"
+   "NEAT",
+   "Tidy"
   ],
   [
    "ACCORD",
@@ -210,12 +207,12 @@
    }
   ],
   [
-   "SET",
-   "Ready, ___, go"
+   "TRY",
+   "Give it a shot"
   ],
   [
-   "NET",
-   "What a tennis ball has to clear"
+   "YET",
+   "So far"
   ]
  ],
  "w": "ACCORD",
@@ -230,11 +227,6 @@
    "title": "Six AI companies sign a White House accord on frontier model safety (Nextgov)",
    "url": "https://nextgov.com/artificial-intelligence/2026/09/white-house-unveils-super-intelligence-executive-order-and-industry-accord/416325",
    "date": "2026-09-29"
-  },
-  {
-   "title": "Anthropic releases Claude Sonnet 5.5",
-   "url": "https://www.anthropic.com/claude-sonnet-5-5",
-   "date": "2026-09-28"
   },
   {
    "title": "A Senate resolution to create a Select Committee on Artificial Intelligence",
@@ -276,6 +268,6 @@
    "url": "https://investor.tsmc.com/english/financial-calendar"
   }
  ],
- "cooked": "2026-10-04T22:30:00Z",
+ "cooked": "2026-10-04T23:45:00Z",
  "checked": true
 }
