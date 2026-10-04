@@ -557,13 +557,9 @@ What they actually signed
 
 ### One page of text. One page of signatures. Written in "should."
 
-[Image: Page two of the accord: the President's signature at left and six company signatures at right.]
+[Image: Page one of the accord: the title, the preamble, the four numbered layers, and three closing paragraphs.][Image: Page two of the accord: the President's signature at left and six company signatures at right.]
 
-**Page one, the text**
-
-[Image: Page one of the accord: the title, the preamble, the four numbered layers, and three closing paragraphs.]
-
-Page two, as the President posted it that evening. Under his signature the title reads "President of the Unites States."Posted by the President on Truth Social, Sept. 29, 2026, 5:24 PM · a government document from the public record [18]
+Both pages, as the President posted them that evening. Under his signature the title reads "President of the Unites States."Posted by the President on Truth Social, Sept. 29, 2026, 5:24 PM · a government document from the public record [18]
 
 We believe every company is responsible for developing its own technology safely.
 
@@ -1803,6 +1799,45 @@ Source: https://tools.dnsc.ai/cannabis/ · Generated from the page on Oct 4, 202
 
 * * *
 
+# The Sunday Edition · The Well · DNSC
+
+> The week in AI, as one big crossword, with what's coming next week. New every Sunday at 6 PM, built from primary sources. Free, made by DNSC.
+
+Weekly · AI in the news
+
+## The Sunday Edition.
+
+The week in AI, as one big crossword. New every Sunday at 6 PM.
+
+Puzzle · 0:00
+
+[Interactive: Crossword grid, drawn by the page in your browser.]
+
+Buttons: Check, Reveal word.
+
+### Across
+
+### Down
+
+Solved
+
+A button: Copy result.
+
+### Coming this week
+
+Dated, with the page each one comes from.
+
+**How it works**
+
+Tap a square, or click it, and type. Tap again to turn between across and down. Arrows move, Tab or Enter jumps to the next clue. A new grid arrives every Sunday at 6 PM Eastern, built from the week's primary sources: the documents and the dates. The links for each answer appear after you solve, so they never give answers away. Your progress stays in this browser only.
+
+---
+
+Source: https://tools.dnsc.ai/well/sunday-edition/ · Generated from the page on Oct 4, 2026
+
+
+* * *
+
 # One Word Advanced · The Well · DNSC
 
 > One Word Advanced: one seven letter word a day about working with AI. Seven tries, paper tiles, and a teaching you can use at work tomorrow. Free, made by DNSC.
@@ -2512,45 +2547,6 @@ Built inside an investment bank over ten weeks, first for the CEO, then for a co
 ---
 
 Source: https://tools.dnsc.ai/recipes/morning-inbox/ · Generated from the page on Oct 4, 2026
-
-
-* * *
-
-# The Sunday Edition · The Well · DNSC
-
-> The week in AI, as one big crossword, with what's coming next week. New every Sunday at 6 PM, built from primary sources. Free, made by DNSC.
-
-Weekly · AI in the news
-
-## The Sunday Edition.
-
-The week in AI, as one big crossword. New every Sunday at 6 PM.
-
-Puzzle · 0:00
-
-[Interactive: Crossword grid, drawn by the page in your browser.]
-
-Buttons: Check, Reveal word.
-
-### Across
-
-### Down
-
-Solved
-
-A button: Copy result.
-
-### Coming this week
-
-Dated, with the page each one comes from.
-
-**How it works**
-
-Tap a square, or click it, and type. Tap again to turn between across and down. Arrows move, Tab or Enter jumps to the next clue. A new grid arrives every Sunday at 6 PM Eastern, built from the week's primary sources: the documents and the dates. The links for each answer appear after you solve, so they never give answers away. Your progress stays in this browser only.
-
----
-
-Source: https://tools.dnsc.ai/well/sunday-edition/ · Generated from the page on Oct 4, 2026
 
 
 * * *

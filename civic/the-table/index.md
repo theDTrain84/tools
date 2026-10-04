@@ -366,13 +366,9 @@ What they actually signed
 
 ### One page of text. One page of signatures. Written in "should."
 
-[Image: Page two of the accord: the President's signature at left and six company signatures at right.]
+[Image: Page one of the accord: the title, the preamble, the four numbered layers, and three closing paragraphs.][Image: Page two of the accord: the President's signature at left and six company signatures at right.]
 
-**Page one, the text**
-
-[Image: Page one of the accord: the title, the preamble, the four numbered layers, and three closing paragraphs.]
-
-Page two, as the President posted it that evening. Under his signature the title reads "President of the Unites States."Posted by the President on Truth Social, Sept. 29, 2026, 5:24 PM · a government document from the public record [18]
+Both pages, as the President posted them that evening. Under his signature the title reads "President of the Unites States."Posted by the President on Truth Social, Sept. 29, 2026, 5:24 PM · a government document from the public record [18]
 
 We believe every company is responsible for developing its own technology safely.
 
