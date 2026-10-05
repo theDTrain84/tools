@@ -1,6 +1,6 @@
 # The Well, from DNSC: every page as text
 
-Generated Oct 5, 2026 from https://tools.dnsc.ai/. Index: https://tools.dnsc.ai/llms.txt
+Generated Oct 4, 2026 from https://tools.dnsc.ai/. Index: https://tools.dnsc.ai/llms.txt
 
 # The Well · DNSC
 
@@ -15,6 +15,54 @@ The Well
 A well keeps filling. Games that teach the vocabulary and the news of AI, practices that hold the day, the moon over your weeks, free tools from the public record, and the writing. Come back any day; there is always more.
 
 Back porch, Lake Waynoka.
+
+Daily · Weekly · Free · No account
+
+### Games and practices
+
+Small things, some daily, some weekly.
+
+[All daily games →](https://tools.dnsc.ai/well/)
+
+[Image: The Daily Line crossword]
+
+Learning AI
+
+#### [The Daily Line](https://tools.dnsc.ai/well/daily-line/)
+
+One small crossword on the words of AI.
+
+Open →
+
+[Image: The Morning Edition crossword]
+
+AI in the news
+
+#### [The Morning Edition](https://tools.dnsc.ai/well/morning-edition/)
+
+Yesterday's AI news, as a crossword.
+
+Open →
+
+[Image: One Word, a word a day]
+
+A word a day
+
+#### [One Word](https://tools.dnsc.ai/well/one-word/)
+
+One word about AI, found in six tries.
+
+Open →
+
+[Image: One Word Advanced, a daily stretch]
+
+A daily stretch
+
+#### [One Word Advanced](https://tools.dnsc.ai/well/one-word-advanced/)
+
+Seven letters, seven tries. For the word people.
+
+Open →
 
 Civic
 
@@ -132,61 +180,13 @@ A piece a week, on working with AI, on rhythms, and on the question we ask every
 
 First piece this month.
 
-Daily · Weekly · Free · No account
-
-### Games and practices
-
-Small things, some daily, some weekly.
-
-[All daily games →](https://tools.dnsc.ai/well/)
-
-[Image: The Daily Line crossword]
-
-Learning AI
-
-#### [The Daily Line](https://tools.dnsc.ai/well/daily-line/)
-
-One small crossword on the words of AI.
-
-Open →
-
-[Image: The Morning Edition crossword]
-
-AI in the news
-
-#### [The Morning Edition](https://tools.dnsc.ai/well/morning-edition/)
-
-Yesterday's AI news, as a crossword.
-
-Open →
-
-[Image: One Word, a word a day]
-
-A word a day
-
-#### [One Word](https://tools.dnsc.ai/well/one-word/)
-
-One word about AI, found in six tries.
-
-Open →
-
-[Image: One Word Advanced, a daily stretch]
-
-A daily stretch
-
-#### [One Word Advanced](https://tools.dnsc.ai/well/one-word-advanced/)
-
-Seven letters, seven tries. For the word people.
-
-Open →
-
 Want help putting these to work with your people?
 
 [Start a conversation](https://dnsc.ai/#contact)
 
 ---
 
-Source: https://tools.dnsc.ai/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/ · Generated from the page on Oct 4, 2026
 
 
 * * *
@@ -519,7 +519,7 @@ Figures come from H.B. 519 as passed, the Legislative Service Commission and Bud
 
 ---
 
-Source: https://tools.dnsc.ai/gas-tax/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/gas-tax/ · Generated from the page on Oct 4, 2026
 
 
 * * *
@@ -1032,7 +1032,7 @@ Company logos are trademarks of their owners, used here to identify them.
 
 ---
 
-Source: https://tools.dnsc.ai/civic/the-table/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/civic/the-table/ · Generated from the page on Oct 4, 2026
 
 
 * * *
@@ -1378,7 +1378,7 @@ Last verified Oct 4, 2026. If a fact here is wrong, say so and it will be fixed 
 
 ---
 
-Source: https://tools.dnsc.ai/civic/task-force/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/civic/task-force/ · Generated from the page on Oct 4, 2026
 
 
 * * *
@@ -1514,7 +1514,7 @@ Verified **The credits are changing under state law.** The 10 percent non-busine
 11. Ohio General Assembly, [House Bill 96 status](https://www.legislature.ohio.gov/legislation/136/hb96/status) (veto item passed notwithstanding the Governor's objections, House July 21 and Senate Oct 1, 2025) and [House Bill 186](https://www.legislature.ohio.gov/legislation/136/hb186) (signed Dec 19, 2025; effective March 20, 2026).
 12. Butler County Board of Elections, [**November 4, 2025 General Election results**](https://liveresults.boe.ohio.gov/ENR/butlerohenr/22/en/Index_22.html) (Lakota Local School Issue 10: 12,068 for, 18,718 against, 76 of 76 precincts).
 
-Last verified Oct 2, 2026. Corrections: if a number here is wrong, the page changes and says what changed. Built from public records by a resident; the county treasurer's bill is always the record. An independent project, built from public records; no campaign or political organization paid for it or directs it. It provides information only and does not endorse or oppose any ballot measure. Figures are estimates based on publicly available data and may not reflect every factor that affects an individual parcel, such as exemptions, credits or special assessments. Contact the Butler County Auditor’s office for your exact tax amount.
+Last verified Oct 2, 2026. Corrections: if a number here is wrong, the page changes and says what changed. Built from public records by a resident; the county treasurer's bill is always the record.
 
 **How this bond came to be**
 
@@ -1547,7 +1547,7 @@ Ohio taxes **35 percent** of a home's appraised value. West Chester Township hom
 
 ---
 
-Source: https://tools.dnsc.ai/follow-the-money/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/follow-the-money/ · Generated from the page on Oct 4, 2026
 
 
 * * *
@@ -1796,7 +1796,7 @@ Last verified Oct 4, 2026. Medical facts here are summaries of research, not med
 
 ---
 
-Source: https://tools.dnsc.ai/cannabis/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/cannabis/ · Generated from the page on Oct 4, 2026
 
 
 * * *
@@ -1833,7 +1833,7 @@ Tap a square, or click it, and type. Tap again to turn between across and down. 
 
 ---
 
-Source: https://tools.dnsc.ai/well/sunday-edition/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/well/sunday-edition/ · Generated from the page on Oct 4, 2026
 
 
 * * *
@@ -1874,7 +1874,7 @@ Type a five letter word and press Enter. Blue means the right letter in the righ
 
 ---
 
-Source: https://tools.dnsc.ai/well/one-word-advanced/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/well/one-word-advanced/ · Generated from the page on Oct 4, 2026
 
 
 * * *
@@ -1909,7 +1909,7 @@ Tap a square, or click it, and type. Tap again to turn between across and down. 
 
 ---
 
-Source: https://tools.dnsc.ai/well/daily-line/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/well/daily-line/ · Generated from the page on Oct 4, 2026
 
 
 * * *
@@ -1944,7 +1944,7 @@ Tap a square, or click it, and type. Tap again to turn between across and down. 
 
 ---
 
-Source: https://tools.dnsc.ai/well/morning-edition/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/well/morning-edition/ · Generated from the page on Oct 4, 2026
 
 
 * * *
@@ -1985,7 +1985,7 @@ Type a five letter word and press Enter. Blue means the right letter in the righ
 
 ---
 
-Source: https://tools.dnsc.ai/well/one-word/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/well/one-word/ · Generated from the page on Oct 4, 2026
 
 
 * * *
@@ -2018,7 +2018,7 @@ Pick four cards that belong to the same move and press Submit. Three right shows
 
 ---
 
-Source: https://tools.dnsc.ai/well/five-moves/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/well/five-moves/ · Generated from the page on Oct 4, 2026
 
 
 * * *
@@ -2055,7 +2055,7 @@ Kept only in this browser. Come back tomorrow; the ring will be empty again.
 
 ---
 
-Source: https://tools.dnsc.ai/well/walk-in/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/well/walk-in/ · Generated from the page on Oct 4, 2026
 
 
 * * *
@@ -2117,7 +2117,7 @@ Nothing you write here is saved or sent. It lives on the leaf until the water ta
 
 ---
 
-Source: https://tools.dnsc.ai/well/river/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/well/river/ · Generated from the page on Oct 4, 2026
 
 
 * * *
@@ -2194,18 +2194,19 @@ The year's sky
 
 Full moons, showers, planets, eclipses, and the turning points of the year. Upcoming first.
 
-1. **Oct 7 · Draconids** (Meteors). Radiant near the head of Draco. Watch in the early evening. In nearly every culture the dragon guards a treasure or a threshold. What are you guarding?
-2. **Oct 21 · Orionids** (Meteors). Halley's debris again. Fast meteors and bright fireballs. They seem to fly from Orion's club. What falls is what was released.
-3. **Oct 24 · Mercury retrograde begins** (Astrology). Read the contract three times before signing.
-4. **Oct 26 · Hunter's Moon** (Full moon). Leaves falling, fields cleared, what remains in view. What becomes visible when you stop adding new things?
-5. **Oct 31 · Samhain** (Wheel of the year). The last cross-quarter festival of the year. A night to remember the dead. The boundary is thin tonight, and it is intimate. The ones you have lost are close.
-6. **Nov 4 · Taurid fireballs** (Meteors). About 5 an hour, known for bright fireballs. Two streams, one from an asteroid and one from a comet, meet in the same sky. Collaboration is built into the universe.
-7. **Nov 13 · Mercury retrograde ends** (Astrology). Clear to proceed.
-8. **Nov 17 · Leonids** (Meteors). Usually 10 to 15 an hour. In 1966, thousands a minute for a few minutes. The Leonids storm on a 33-year cycle. The last storm was 2001. Patience is readiness.
-9. **Nov 24 · Beaver Supermoon, Kartik Purnima** (Full moon). A supermoon on Kartik Purnima, which celebrates Shiva's victory over Tripurasura. A moon of preparation, with a light hard to ignore.
-10. **Dec 13 · Geminids** (Meteors). Up to 150 an hour, in many colors. The best shower of winter. Most showers come from comets. The Geminids come from the asteroid 3200 Phaethon. Even rock, given time, becomes light.
-11. **Dec 21 · December solstice** (Solstice). The shortest day. Winter begins in the north. The darkest day is the moment the light starts back. That is physics, and it is theology.
-12. **Dec 24 · Cold Supermoon** (Full moon). Third supermoon of the year. The Cree call it the Frost Exploding Trees Moon. The Cold Moon rides highest and stays longest. The longest nights hold the most moonlight.
+1. **Oct 4 · Saturn at opposition** (Planet). Saturn at its closest and brightest. The rings show in a small telescope. Saturn's rings may be young by the sky's measure. Even the icons of the cosmos arrived at some point.
+2. **Oct 7 · Draconids** (Meteors). Radiant near the head of Draco. Watch in the early evening. In nearly every culture the dragon guards a treasure or a threshold. What are you guarding?
+3. **Oct 21 · Orionids** (Meteors). Halley's debris again. Fast meteors and bright fireballs. They seem to fly from Orion's club. What falls is what was released.
+4. **Oct 24 · Mercury retrograde begins** (Astrology). Read the contract three times before signing.
+5. **Oct 26 · Hunter's Moon** (Full moon). Leaves falling, fields cleared, what remains in view. What becomes visible when you stop adding new things?
+6. **Oct 31 · Samhain** (Wheel of the year). The last cross-quarter festival of the year. A night to remember the dead. The boundary is thin tonight, and it is intimate. The ones you have lost are close.
+7. **Nov 4 · Taurid fireballs** (Meteors). About 5 an hour, known for bright fireballs. Two streams, one from an asteroid and one from a comet, meet in the same sky. Collaboration is built into the universe.
+8. **Nov 13 · Mercury retrograde ends** (Astrology). Clear to proceed.
+9. **Nov 17 · Leonids** (Meteors). Usually 10 to 15 an hour. In 1966, thousands a minute for a few minutes. The Leonids storm on a 33-year cycle. The last storm was 2001. Patience is readiness.
+10. **Nov 24 · Beaver Supermoon, Kartik Purnima** (Full moon). A supermoon on Kartik Purnima, which celebrates Shiva's victory over Tripurasura. A moon of preparation, with a light hard to ignore.
+11. **Dec 13 · Geminids** (Meteors). Up to 150 an hour, in many colors. The best shower of winter. Most showers come from comets. The Geminids come from the asteroid 3200 Phaethon. Even rock, given time, becomes light.
+12. **Dec 21 · December solstice** (Solstice). The shortest day. Winter begins in the north. The darkest day is the moment the light starts back. That is physics, and it is theology.
+13. **Dec 24 · Cold Supermoon** (Full moon). Third supermoon of the year. The Cree call it the Frost Exploding Trees Moon. The Cold Moon rides highest and stays longest. The longest nights hold the most moonlight.
 
 **Earlier in the year**
 
@@ -2239,11 +2240,10 @@ Full moons, showers, planets, eclipses, and the turning points of the year. Upco
 28. **Aug 28 · Sturgeon Moon** (Full moon). Named for the ancient fish of the Great Lakes. A deep partial lunar eclipse this night. The sturgeon finds what sustains it along the bottom. What sustains you?
 29. **Sep 23 · September equinox** (Equinox). Day and night nearly equal again. Autumn begins in the north. Balance returns for a day. Equilibrium is a passage.
 30. **Sep 26 · Harvest Moon** (Full moon). The full moon nearest the equinox, rising only minutes later each night. The only moon named for its usefulness. It stays longer and gives light when light is needed most.
-31. **Oct 4 · Saturn at opposition** (Planet). Saturn at its closest and brightest. The rings show in a small telescope. Saturn's rings may be young by the sky's measure. Even the icons of the cosmos arrived at some point.
 
 ---
 
-Source: https://tools.dnsc.ai/well/lunar/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/well/lunar/ · Generated from the page on Oct 4, 2026
 
 
 * * *
@@ -2262,7 +2262,7 @@ Each card is a working system you can set up with the AI you already have: what 
 
 ---
 
-Source: https://tools.dnsc.ai/recipes/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/recipes/ · Generated from the page on Oct 4, 2026
 
 
 * * *
@@ -2381,7 +2381,7 @@ Mise · v0.6 · measured means read from your logs; estimates carry a band and a
 
 ---
 
-Source: https://tools.dnsc.ai/ai-gauges/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/ai-gauges/ · Generated from the page on Oct 4, 2026
 
 
 * * *
@@ -2478,7 +2478,7 @@ Go to the water
 
 ---
 
-Source: https://tools.dnsc.ai/well/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/well/ · Generated from the page on Oct 4, 2026
 
 
 * * *
@@ -2554,7 +2554,7 @@ Built inside an investment bank over ten weeks, first for the CEO, then for a co
 
 ---
 
-Source: https://tools.dnsc.ai/recipes/morning-inbox/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/recipes/morning-inbox/ · Generated from the page on Oct 4, 2026
 
 
 * * *
@@ -2719,7 +2719,7 @@ Ohio taxes **35 percent** of a home's appraised value. West Chester Township hom
 
 ---
 
-Source: https://tools.dnsc.ai/follow-the-money/v1-dustin/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/follow-the-money/v1-dustin/ · Generated from the page on Oct 4, 2026
 
 
 * * *

@@ -12,6 +12,52 @@ A well keeps filling. Games that teach the vocabulary and the news of AI, practi
 
 Back porch, Lake Waynoka.
 
+Daily · Weekly · Free · No account
+
+### Games and practices
+
+Small things, some daily, some weekly.
+
+[All daily games →](https://tools.dnsc.ai/well/)
+
+[Image: The Daily Line crossword]
+
+Learning AI
+
+#### [The Daily Line](https://tools.dnsc.ai/well/daily-line/)
+
+One small crossword on the words of AI.
+
+Open →
+
+[Image: The Morning Edition crossword]
+
+AI in the news
+
+#### [The Morning Edition](https://tools.dnsc.ai/well/morning-edition/)
+
+Yesterday's AI news, as a crossword.
+
+Open →
+
+[Image: One Word, a word a day]
+
+A word a day
+
+#### [One Word](https://tools.dnsc.ai/well/one-word/)
+
+One word about AI, found in six tries.
+
+Open →
+
+A daily stretch
+
+#### [One Word Advanced](https://tools.dnsc.ai/well/one-word-advanced/)
+
+Seven letters, seven tries. For the word people.
+
+Open →
+
 Civic
 
 ### Know what the decisions cost.
@@ -128,58 +174,10 @@ A piece a week, on working with AI, on rhythms, and on the question we ask every
 
 First piece this month.
 
-Daily · Weekly · Free · No account
-
-### Games and practices
-
-Small things, some daily, some weekly.
-
-[All daily games →](https://tools.dnsc.ai/well/)
-
-[Image: The Daily Line crossword]
-
-Learning AI
-
-#### [The Daily Line](https://tools.dnsc.ai/well/daily-line/)
-
-One small crossword on the words of AI.
-
-Open →
-
-[Image: The Morning Edition crossword]
-
-AI in the news
-
-#### [The Morning Edition](https://tools.dnsc.ai/well/morning-edition/)
-
-Yesterday's AI news, as a crossword.
-
-Open →
-
-[Image: One Word, a word a day]
-
-A word a day
-
-#### [One Word](https://tools.dnsc.ai/well/one-word/)
-
-One word about AI, found in six tries.
-
-Open →
-
-[Image: One Word Advanced, a daily stretch]
-
-A daily stretch
-
-#### [One Word Advanced](https://tools.dnsc.ai/well/one-word-advanced/)
-
-Seven letters, seven tries. For the word people.
-
-Open →
-
 Want help putting these to work with your people?
 
 [Start a conversation](https://dnsc.ai/#contact)
 
 ---
 
-Source: https://tools.dnsc.ai/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/ · Generated from the page on Oct 4, 2026
