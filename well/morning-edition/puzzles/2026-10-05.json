@@ -1,0 +1,130 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-10-05",
+ "no": 1,
+ "size": 7,
+ "g": [
+  "ALL#HAS",
+  "DOE#ERA",
+  "STAPLES",
+  "##RAM##",
+  "CENTERS",
+  "AYE#TIE",
+  "RED#SPA"
+ ],
+ "a": [
+  [
+   "ALL",
+   "Every last one"
+  ],
+  [
+   "HAS",
+   "Owns"
+  ],
+  [
+   "DOE",
+   "Female deer"
+  ],
+  [
+   "ERA",
+   "Span of history"
+  ],
+  [
+   "STAPLES",
+   "Pantry basics like flour and rice"
+  ],
+  [
+   "RAM",
+   "Male sheep"
+  ],
+  [
+   "CENTERS",
+   "Amazon pledged $1 billion over five years to the communities around its data ___ (Oct. 2)",
+   {
+    "src": "https://www.aboutamazon.com/news/company-news/amazon-data-centers-built-together"
+   }
+  ],
+  [
+   "AYE",
+   "A yes vote"
+  ],
+  [
+   "TIE",
+   "Even score"
+  ],
+  [
+   "RED",
+   "Color of a ripe tomato"
+  ],
+  [
+   "SPA",
+   "Place to unwind"
+  ]
+ ],
+ "d": [
+  [
+   "ADS",
+   "OpenAI says it will test visual ___ in ChatGPT during image generation, starting later this month in the US",
+   {
+    "src": "https://openai.com/index/new-chatgpt-ads-format-and-measurement/"
+   }
+  ],
+  [
+   "CAR",
+   "It's parked in the driveway"
+  ],
+  [
+   "LOT",
+   "Plenty"
+  ],
+  [
+   "EYE",
+   "Keep an ___ on: watch closely"
+  ],
+  [
+   "LEARNED",
+   "Picked up, as a skill"
+  ],
+  [
+   "PAT",
+   "Gentle tap"
+  ],
+  [
+   "HELMETS",
+   "Bike riders' headgear"
+  ],
+  [
+   "ARE",
+   "Exist"
+  ],
+  [
+   "RIP",
+   "Tear"
+  ],
+  [
+   "SAS",
+   "Scandinavian airline, by its initials"
+  ],
+  [
+   "SEA",
+   "Where the waves are"
+  ]
+ ],
+ "w": "CENTERS",
+ "n": "A data center is the building where AI actually runs: rows of computers, plus the power and water that keep them going. When we read AI news, we can ask where the center sits, what it draws from the town around it, and what the town gets back. Amazon's Oct. 2 post answers those questions in its own words, and the local filings are where we check them.",
+ "sources": [
+  {
+   "title": "Amazon commits $1 billion over five years to data center communities and says it no longer uses NDAs with government agencies",
+   "url": "https://www.aboutamazon.com/news/company-news/amazon-data-centers-built-together",
+   "date": "2026-10-02"
+  },
+  {
+   "title": "OpenAI plans to test visual ads during ChatGPT image generation, starting later in October in the US",
+   "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement/",
+   "date": "2026-10-04"
+  }
+ ],
+ "cooked": "2026-10-05T13:29:07Z",
+ "checked": true
+}
