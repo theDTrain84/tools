@@ -71,7 +71,7 @@ Right through the holidays. Here's how it works at the station.
 
 Swipe the calendar →
 
-**Day 1** of 90. Next up: Halloween.
+**Day 1** of 90. 89 to go, through January 2.
 
 [Chart: Calendar from October 4, 2026 to January 2, 2027 with Halloween, Thanksgiving, Christmas and New Year's marked]
 

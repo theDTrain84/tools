@@ -577,7 +577,7 @@ details.more ul.lk li{margin:4px 0}
   <div class="ch" data-ink="#C77A2B" data-lab="the holiday"><p class="k">2 · The holiday</p><h2>Ninety days, October&nbsp;4 to January&nbsp;2.</h2><p class="dek">Right through the holidays. Here's how it works at the station.</p></div>
   <div class="strip seasons">
     <p class="swipe">Swipe the calendar →</p>
-    <div class="daycount"><b id="dayN">Day 1</b><span id="dayS">of 90. Next up: Halloween.</span></div>
+    <div class="daycount"><b id="dayN">Day 1</b><span id="dayS">of 90. 89 to go, through January 2.</span></div>
     <svg id="season" viewBox="0 0 1000 190" role="img" aria-label="Calendar from October 4, 2026 to January 2, 2027 with Halloween, Thanksgiving, Christmas and New Year's marked"></svg>
   </div>
   <div class="strip" style="margin-top:18px">
@@ -1078,7 +1078,7 @@ function txt(parent,x,y,s,attrs){const t=el('text',Object.assign({x,y},attrs||{}
   el('rect',{x:X0,y:BY,width:Math.max(2,xt-X0),height:BH,fill:'#1A1F24',opacity:.12},svg);
   const next=[[27,'Halloween'],[53,'Thanksgiving'],[82,'Christmas'],[89,"New Year's Day"],[90,'the last day']].find(e=>e[0]>=d);
   document.getElementById('dayN').textContent=now<D0?'Starts Oct 4':(d>90?'Over':d===90?'Last day':'Day '+(d+1));
-  document.getElementById('dayS').textContent=now<D0?'90 days, through New Year’s.':(d>90?'The tax returned January 3, 2027.':d===90?'The tax returns tomorrow.':'of 90.'+(next?' Next up: '+next[1]+'.':''));
+  document.getElementById('dayS').textContent=now<D0?'90 days, through New Year’s.':(d>90?'The tax returned January 3, 2027.':d===90?'The tax returns tomorrow.':'of 90. '+(90-d-1)+' to go, through January 2.');
 })();
 
 /* ---- 3 · statehouse money flow, on the months it lands ---- */
