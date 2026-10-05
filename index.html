@@ -546,5 +546,6 @@ card.addEventListener('mouseenter',run);card.addEventListener('focus',run);new M
   fetch('pieces.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();}).then(data=>{try{render(data);}catch(e){console.warn('shelf',e);}}).catch(()=>{});
 })();
 </script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4cca1d9e1eab422b9abffe2ffd5a9399"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
