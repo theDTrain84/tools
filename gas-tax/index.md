@@ -28,6 +28,8 @@ A text field: What a gallon really costs, starting at $4.26.
 
 A slider sets Price per gallon, tax included from 2.5 to 8, starting at 4.26.
 
+Ohio's tax is a flat amount per gallon, 38.5 cents on gasoline and 47 cents on diesel, not a percentage. The price changes what you pay the station, not what the holiday saves.
+
 A slider sets Fill-ups per week from 0.5 to 5, starting at 1.
 
 This fill-up really costs
@@ -226,7 +228,7 @@ Ohio · U.S. average · Brent crude oil · Iran war, from Feb 28, 2026
 
 Source: U.S. Energy Information Administration: weekly Brent crude spot price, and weekly retail regular gasoline for Ohio and the U.S. Gas prices are released every Monday. The war timeline follows EIA's [Apr 7](https://www.eia.gov/todayinenergy/detail.php?id=67424) and [Jul 15, 2026](https://www.eia.gov/todayinenergy/detail.php?id=67865) notes and its [September outlook](https://www.eia.gov/outlooks/steo/archives/sep26.pdf).
 
-**Go deeper: where the road money comes from, where Ohio's oil comes from, and what Washington did on diesel**
+**Go deeper: where the road money comes from, where Ohio's oil comes from, what Washington did on diesel, and why diesel didn't come down**
 
 The statehouse
 
@@ -355,11 +357,39 @@ It takes an act of Congress. The President said in May he intended to suspend th
 - Penn Wharton Budget Model via The Philadelphia Inquirer, [Your savings from a summer gas tax holiday](https://www.inquirer.com/news/gas-tax-holiday-summer-saves-penn-wharton-budget-model-20220624.html) (pass-through in Maryland, Georgia, Connecticut, 2022).
 - Congressional Research Service, [Funding and Financing Highways and Public Transportation](https://www.everycrsreport.com/files/2023-05-24_R47573_2fdd993640445d646286ecfe0df6cc5570d409a6.html) ($118 billion general-fund transfer under the 2021 law; 2028 shortfall).
 
+Two stations, October 2026
+
+### Why diesel didn't come down.
+
+[Image: A Wawa price sign: ethanol free $4.36, diesel $6.21, regular $3.36.]
+
+Wawa · photographed by the author, October 2026
+
+[Image: A Thorntons price sign at Tylersville Road: unleaded $3.49, diesel $6.09.]
+
+Thorntons at Tylersville Road · photographed by the author, October 2026
+
+Diesel costs $2.85 more than regular at one station and $2.60 more at the other, about $2.70 a gallon on fuels from the same barrel. The tax holiday is not the gap: Ohio took 38.5¢ off gasoline and 47¢ off diesel.
+
+**The pool is low.** Diesel and heating oil come from the same pool of fuel, called distillate. U.S. distillate stocks have been below their five-year range since April. The last week of September they stood at 105.2 million barrels, 18.4 million less than a year earlier, and the Energy Information Administration expects them to stay below the five-year low through most of 2027.
+
+**Supply was pulled three ways.** The Iran war cut the distillate that Middle East refineries ship. Ukraine has struck Russian refineries at least 100 times since August 2025; in July Russia banned diesel exports, and they fell by nearly half. With the world short, U.S. refiners sell more abroad: U.S. net exports of distillate have been near or above their five-year high every month since February.
+
+**Refiners earn more on diesel.** The week of September 21, a gallon of diesel sold wholesale in New York Harbor for $2.17 more than the Brent crude it came from. A gallon of gasoline sold for 79¢ more. EIA expects diesel's margin to stay above $2 a gallon from August through November. The national average for diesel reached $6.53 that week, the highest in EIA's weekly series, which begins in 1994; this week it is $6.20. Heating-oil season draws on the same pool.
+
+**Sources for this part**
+
+- U.S. Energy Information Administration, [Short-Term Energy Outlook, September 2026](https://www.eia.gov/outlooks/steo/archives/sep26.pdf), U.S. Petroleum Products (distillate below the five-year range since April and below the five-year low through most of 2027; lost supply from the Middle East, Russia and China; net exports near or above the five-year high since February; diesel crack spreads above $2 a gallon August through November; heating oil).
+- EIA, [Weekly U.S. ending stocks of distillate fuel oil](https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WDISTUS1&f=W), from the Weekly Petroleum Status Report (105.2 million barrels the week ending Sep 25, 2026; 123.6 million a year earlier).
+- Oil & Gas Journal, [Falling Russian diesel exports tighten global distillate markets](https://www.ogj.com/general-interest/economics-markets/news/55391756/falling-russian-diesel-exports-tighten-global-distillate-markets), Jul 17, 2026 (at least 100 strikes on Russian refineries since August 2025; the export ban; exports down nearly half).
+- EIA spot prices, [New York Harbor ultra-low-sulfur diesel](https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=EER_EPD2DXL0_PF4_Y35NY_DPG&f=D), [New York Harbor conventional gasoline](https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=EER_EPMRU_PF4_Y35NY_DPG&f=D) and [Brent crude](https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RBRTE&f=D), daily, Sep 21 to 25, 2026 (week averages: diesel $4.96, gasoline $3.58, Brent $117.08 a barrel, or $2.79 a gallon).
+- EIA, [Weekly U.S. on-highway diesel retail price](https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=EMD_EPD2D_PTE_NUS_DPG&f=W) and the [Gasoline and Diesel Fuel Update](https://www.eia.gov/petroleum/gasdiesel/) ($6.529 the week of Sep 21, 2026, the series high since March 1994; $6.199 the week of Oct 5; the 2022 high was $5.810).
+
 Built by **Dustin Nimmo**, founder of [DNSC](https://dnsc.ai) in West Chester, Ohio.
 
 Figures come from H.B. 519 as passed, the Legislative Service Commission and Budget Office, the Ohio Department of Taxation, the U.S. Energy Information Administration and the sources folded under each part. Last verified Oct 4, 2026. If a number here is wrong, say so and it will be fixed and noted.
 
-Posted October 4, 2026 · Revised October 6, 2026, 7:50 AM: the federal diesel tax deferral of Oct 5 added to the diesel side of your tank and to the Washington card behind Go deeper; the walk itself unchanged since Oct 5.
+Posted October 4, 2026 · Revised October 6, 2026, 11:17 AM: added why diesel didn't come down, with the author's photographs, behind Go deeper, and a note under the price slider; at 7:50 AM the federal diesel tax deferral of Oct 5 was added to the diesel side of your tank and the Washington card.
 
 ---
 

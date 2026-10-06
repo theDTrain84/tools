@@ -112,4 +112,4 @@ Mise · v0.6 · measured means read from your logs; estimates carry a band and a
 
 ---
 
-Source: https://tools.dnsc.ai/ai-gauges/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/ai-gauges/ · Generated from the page on Oct 6, 2026
