@@ -54,17 +54,15 @@ The district's own forecast shows its general fund cash going negative in FY2030
 
 Source: Lakota Five-Year Forecast and its notes (including the FY2025 transfers), approved by the board Aug 24, 2026. FY2027 on are projections.[4]
 
-#### What the district's forecast assumes
+#### What the forecast assumes
 
-**Operating levy in the forecast.** 3.6 mills, assumed to pass in 2028 and collected from 2029.
+**The levy.** 3.6 mills, passing in 2028 and collected from 2029. Not filed and on no ballot as of Oct 2, 2026.
 
-**What it would raise.** $11.3 million in FY2029 and $21.8 million in FY2030, in the forecasts approved Feb 23 and Aug 24, 2026.
+**What it would raise.** $11.3 million in FY2029, $21.8 million in FY2030.
 
-**On this home, per year.** 3.6 mills on 35 percent of the appraised value, before credits. The same whether Issue 2 passes or fails.
+**On this home, per year.** On 35 percent of the appraised value, before credits. The same whether Issue 2 passes or fails.
 
-**Status.** On no ballot and not filed, as of Oct 2, 2026. The treasurer's notes say savings from the facilities plan could reduce or remove the need for it.
-
-Sources: Lakota Five-Year Forecasts, approved Feb 23 and Aug 24, 2026.[4]
+Sources: Lakota Five-Year Forecasts, Feb 23 and Aug 24, 2026.[4]
 
 ### Where your whole bill goes
 
@@ -129,7 +127,7 @@ Verified **The credits are changing under state law.** The 10 percent non-busine
 11. Ohio General Assembly, [House Bill 96 status](https://www.legislature.ohio.gov/legislation/136/hb96/status) (veto item passed notwithstanding the Governor's objections, House July 21 and Senate Oct 1, 2025) and [House Bill 186](https://www.legislature.ohio.gov/legislation/136/hb186) (signed Dec 19, 2025; effective March 20, 2026).
 12. Butler County Board of Elections, [**November 4, 2025 General Election results**](https://liveresults.boe.ohio.gov/ENR/butlerohenr/22/en/Index_22.html) (Lakota Local School Issue 10: 12,068 for, 18,718 against, 76 of 76 precincts).
 
-Last verified Oct 2, 2026. Corrections: if a number here is wrong, the page changes and says what changed. Built from public records by a resident; the county treasurer's bill is always the record.
+Last verified Oct 2, 2026. Corrections: if a number here is wrong, the page changes and says what changed. Built from public records by a resident; the county treasurer's bill is always the record. An independent project, built from public records; no campaign or political organization paid for it or directs it. It provides information only and does not endorse or oppose any ballot measure. Figures are estimates based on publicly available data and may not reflect every factor that affects an individual parcel, such as exemptions, credits or special assessments. Contact the Butler County Auditor’s office for your exact tax amount.
 
 **How this bond came to be**
 
@@ -162,4 +160,4 @@ Ohio taxes **35 percent** of a home's appraised value. West Chester Township hom
 
 ---
 
-Source: https://tools.dnsc.ai/follow-the-money/ · Generated from the page on Oct 4, 2026
+Source: https://tools.dnsc.ai/follow-the-money/ · Generated from the page on Oct 5, 2026
