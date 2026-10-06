@@ -1,0 +1,81 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-10-06",
+ "size": 7,
+ "g": [
+  "###CHAT",
+  "##CHASE",
+  "#CHICKS",
+  "BRACKET",
+  "RANKED#",
+  "ANGER##",
+  "SEEN###"
+ ],
+ "a": [
+  [
+   "CHAT",
+   "The text box, for now"
+  ],
+  [
+   "CHASE",
+   "Run after"
+  ],
+  [
+   "CHICKS",
+   "Baby birds"
+  ],
+  [
+   "BRACKET",
+   "Tournament chart"
+  ],
+  [
+   "RANKED",
+   "Put in order, best to worst"
+  ],
+  [
+   "ANGER",
+   "Hot feeling"
+  ],
+  [
+   "SEEN",
+   "Spotted"
+  ]
+ ],
+ "d": [
+  [
+   "BRAS",
+   "Undergarments"
+  ],
+  [
+   "CRANE",
+   "Tall bird, or a lifting machine"
+  ],
+  [
+   "CHANGE",
+   "Coins in your pocket"
+  ],
+  [
+   "CHICKEN",
+   "Coop resident"
+  ],
+  [
+   "HACKER",
+   "One who breaks into systems"
+  ],
+  [
+   "ASKED",
+   "Put a question"
+  ],
+  [
+   "TEST",
+   "Trial run"
+  ]
+ ],
+ "w": "CHAT",
+ "n": "The chat box is where most people meet the model, and it is the least of what the model can do. Behind it sit the product, the connections it can reach and, when you give it a job and tools, the agent. Learn the four words and any AI conversation makes sense.",
+ "sources": [],
+ "checked": true,
+ "no": 5,
+ "cooked": "2026-10-06T10:23:00Z"
+}

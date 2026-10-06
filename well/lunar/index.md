@@ -119,4 +119,4 @@ Full moons, showers, planets, eclipses, and the turning points of the year. Upco
 
 ---
 
-Source: https://tools.dnsc.ai/well/lunar/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/well/lunar/ · Generated from the page on Oct 6, 2026

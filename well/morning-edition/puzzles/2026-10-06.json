@@ -1,0 +1,90 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-10-06",
+ "size": 7,
+ "g": [
+  "###DEMI",
+  "##LINED",
+  "#FISCAL",
+  "CONSOLE",
+  "ORDERS#",
+  "SCENE##",
+  "TENT###"
+ ],
+ "a": [
+  [
+   "DEMI",
+   "Half: prefix"
+  ],
+  [
+   "LINED",
+   "Like notebook paper"
+  ],
+  [
+   "FISCAL",
+   "___ year"
+  ],
+  [
+   "CONSOLE",
+   "Game machine under the TV"
+  ],
+  [
+   "ORDERS",
+   "What a waiter takes"
+  ],
+  [
+   "SCENE",
+   "Part of a play"
+  ],
+  [
+   "TENT",
+   "Camper's shelter"
+  ]
+ ],
+ "d": [
+  [
+   "COST",
+   "What something sets you back"
+  ],
+  [
+   "FORCE",
+   "The White House's new Super Intelligence ___, announced Oct. 4 to coordinate the government's engagement with AI",
+   {
+    "src": "https://www.npr.org/2026/10/04/nx-s1-5990781/jay-clayton-ai-czar-trump"
+   }
+  ],
+  [
+   "LINDEN",
+   "Tree with heart-shaped leaves"
+  ],
+  [
+   "DISSENT",
+   "Disagree, on the record"
+  ],
+  [
+   "ENCORE",
+   "One more song, by request"
+  ],
+  [
+   "MEALS",
+   "Breakfast, lunch and dinner"
+  ],
+  [
+   "IDLE",
+   "Not in use"
+  ]
+ ],
+ "w": "FORCE",
+ "n": "The new force is charged with coordinating how the federal government engages AI companies and the public. For your work, the line that matters is still the one your own team writes: what may go into an AI, what needs a check first, and what never goes in.",
+ "sources": [
+  {
+   "title": "The White House names a Super Intelligence Force to coordinate its engagement with AI (NPR)",
+   "url": "https://www.npr.org/2026/10/04/nx-s1-5990781/jay-clayton-ai-czar-trump",
+   "date": "2026-10-04"
+  }
+ ],
+ "checked": true,
+ "no": 2,
+ "cooked": "2026-10-06T10:23:00Z"
+}

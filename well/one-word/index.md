@@ -34,4 +34,4 @@ Type a five letter word and press Enter. Blue means the right letter in the righ
 
 ---
 
-Source: https://tools.dnsc.ai/well/one-word/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/well/one-word/ · Generated from the page on Oct 6, 2026

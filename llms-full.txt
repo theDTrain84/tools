@@ -1,6 +1,6 @@
 # The Well, from DNSC: every page as text
 
-Generated Oct 5, 2026 from https://tools.dnsc.ai/. Index: https://tools.dnsc.ai/llms.txt
+Generated Oct 6, 2026 from https://tools.dnsc.ai/. Index: https://tools.dnsc.ai/llms.txt
 
 # The Well · DNSC
 
@@ -186,7 +186,7 @@ Want help putting these to work with your people?
 
 ---
 
-Source: https://tools.dnsc.ai/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/ · Generated from the page on Oct 6, 2026
 
 
 * * *
@@ -553,7 +553,7 @@ Posted October 4, 2026 · Revised October 5, 2026, 9:40 PM: a shorter walk for t
 
 ---
 
-Source: https://tools.dnsc.ai/gas-tax/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/gas-tax/ · Generated from the page on Oct 6, 2026
 
 
 * * *
@@ -1066,7 +1066,7 @@ Company logos are trademarks of their owners, used here to identify them.
 
 ---
 
-Source: https://tools.dnsc.ai/civic/the-table/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/civic/the-table/ · Generated from the page on Oct 6, 2026
 
 
 * * *
@@ -1412,7 +1412,7 @@ Last verified Oct 4, 2026. If a fact here is wrong, say so and it will be fixed 
 
 ---
 
-Source: https://tools.dnsc.ai/civic/task-force/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/civic/task-force/ · Generated from the page on Oct 6, 2026
 
 
 * * *
@@ -1579,7 +1579,7 @@ Ohio taxes **35 percent** of a home's appraised value. West Chester Township hom
 
 ---
 
-Source: https://tools.dnsc.ai/follow-the-money/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/follow-the-money/ · Generated from the page on Oct 6, 2026
 
 
 * * *
@@ -1828,7 +1828,7 @@ Last verified Oct 4, 2026. Medical facts here are summaries of research, not med
 
 ---
 
-Source: https://tools.dnsc.ai/cannabis/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/cannabis/ · Generated from the page on Oct 6, 2026
 
 
 * * *
@@ -1865,7 +1865,7 @@ Tap a square, or click it, and type. Tap again to turn between across and down. 
 
 ---
 
-Source: https://tools.dnsc.ai/well/sunday-edition/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/well/sunday-edition/ · Generated from the page on Oct 6, 2026
 
 
 * * *
@@ -1906,7 +1906,7 @@ Type a five letter word and press Enter. Blue means the right letter in the righ
 
 ---
 
-Source: https://tools.dnsc.ai/well/one-word-advanced/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/well/one-word-advanced/ · Generated from the page on Oct 6, 2026
 
 
 * * *
@@ -1941,7 +1941,7 @@ Tap a square, or click it, and type. Tap again to turn between across and down. 
 
 ---
 
-Source: https://tools.dnsc.ai/well/daily-line/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/well/daily-line/ · Generated from the page on Oct 6, 2026
 
 
 * * *
@@ -1976,7 +1976,7 @@ Tap a square, or click it, and type. Tap again to turn between across and down. 
 
 ---
 
-Source: https://tools.dnsc.ai/well/morning-edition/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/well/morning-edition/ · Generated from the page on Oct 6, 2026
 
 
 * * *
@@ -2017,7 +2017,7 @@ Type a five letter word and press Enter. Blue means the right letter in the righ
 
 ---
 
-Source: https://tools.dnsc.ai/well/one-word/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/well/one-word/ · Generated from the page on Oct 6, 2026
 
 
 * * *
@@ -2050,7 +2050,7 @@ Pick four cards that belong to the same move and press Submit. Three right shows
 
 ---
 
-Source: https://tools.dnsc.ai/well/five-moves/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/well/five-moves/ · Generated from the page on Oct 6, 2026
 
 
 * * *
@@ -2087,7 +2087,7 @@ Kept only in this browser. Come back tomorrow; the ring will be empty again.
 
 ---
 
-Source: https://tools.dnsc.ai/well/walk-in/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/well/walk-in/ · Generated from the page on Oct 6, 2026
 
 
 * * *
@@ -2149,7 +2149,7 @@ Nothing you write here is saved or sent. It lives on the leaf until the water ta
 
 ---
 
-Source: https://tools.dnsc.ai/well/river/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/well/river/ · Generated from the page on Oct 6, 2026
 
 
 * * *
@@ -2275,7 +2275,7 @@ Full moons, showers, planets, eclipses, and the turning points of the year. Upco
 
 ---
 
-Source: https://tools.dnsc.ai/well/lunar/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/well/lunar/ · Generated from the page on Oct 6, 2026
 
 
 * * *
@@ -2294,7 +2294,7 @@ Each card is a working system you can set up with the AI you already have: what 
 
 ---
 
-Source: https://tools.dnsc.ai/recipes/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/recipes/ · Generated from the page on Oct 6, 2026
 
 
 * * *
@@ -2413,7 +2413,7 @@ Mise · v0.6 · measured means read from your logs; estimates carry a band and a
 
 ---
 
-Source: https://tools.dnsc.ai/ai-gauges/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/ai-gauges/ · Generated from the page on Oct 6, 2026
 
 
 * * *
@@ -2510,7 +2510,7 @@ Go to the water
 
 ---
 
-Source: https://tools.dnsc.ai/well/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/well/ · Generated from the page on Oct 6, 2026
 
 
 * * *
@@ -2586,7 +2586,7 @@ Built inside an investment bank over ten weeks, first for the CEO, then for a co
 
 ---
 
-Source: https://tools.dnsc.ai/recipes/morning-inbox/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/recipes/morning-inbox/ · Generated from the page on Oct 6, 2026
 
 
 * * *
@@ -2751,7 +2751,7 @@ Ohio taxes **35 percent** of a home's appraised value. West Chester Township hom
 
 ---
 
-Source: https://tools.dnsc.ai/follow-the-money/v1-dustin/ · Generated from the page on Oct 5, 2026
+Source: https://tools.dnsc.ai/follow-the-money/v1-dustin/ · Generated from the page on Oct 6, 2026
 
 
 * * *
