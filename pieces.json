@@ -1,264 +1,265 @@
 {
-  "version": 1,
-  "note": "The Well's shelf. One entry per card. The landing page and build-ai-twins.py both read this file. Newest first within each section; featured entries form the stack at the top.",
-  "pieces": [
-    {
-      "slug": "gas-tax",
-      "href": "gas-tax/",
-      "title": "A Holiday for the Holidays",
-      "line": "Ohio's 38.5¢ gas tax is off every gallon for 90 days. Set your tank, see what you save, then follow the oil from the pump to the barrel.",
-      "type": "tool",
-      "section": "civic",
-      "topic": "Ohio · Gas tax holiday",
-      "date": "2026-10-04",
-      "featured": true,
-      "share": "assets/share/gas-tax.jpg",
-      "preview": "assets/previews/gas-tax.jpg",
-      "related": [
-        "follow-the-money"
-      ]
-    },
-    {
-      "slug": "follow-the-money",
-      "href": "follow-the-money/",
-      "title": "Issue 2, in Plain Numbers",
-      "line": "What the November school bond means for your tax bill, with every number sourced from the public record.",
-      "type": "tool",
-      "section": "civic",
-      "topic": "Lakota schools · Issue 2",
-      "date": "2026-10-02",
-      "featured": true,
-      "share": "assets/share/issue-2.jpg",
-      "preview": "assets/previews/ftm.jpg",
-      "related": [
-        "gas-tax"
-      ]
-    },
-    {
-      "slug": "the-table",
-      "href": "civic/the-table/",
-      "title": "The table",
-      "line": "The President and six AI companies signed a one-page accord on superintelligence over lunch on September 29. The room, the page, the faces, and what it binds.",
-      "type": "piece",
-      "section": "civic",
-      "topic": "The accord",
-      "date": "2026-10-04",
-      "status": "live",
-      "featured": true,
-      "share": "assets/share/the-table.jpg",
-      "preview": "assets/previews/the-table.jpg",
-      "related": [
-        "task-force"
-      ],
-      "updated": "2026-10-04"
-    },
-    {
-      "slug": "task-force",
-      "href": "civic/task-force/",
-      "title": "The task force",
-      "line": "On September 30 the Secretary of War asked Elon Musk, Palmer Luckey and Newt Gingrich what the next war will need, and announced a new command for drones. A 120-day study, from the record.",
-      "type": "piece",
-      "section": "civic",
-      "topic": "Department of War",
-      "date": "2026-10-04",
-      "status": "live",
-      "featured": true,
-      "share": "assets/share/task-force.jpg",
-      "preview": "assets/previews/task-force.jpg",
-      "related": [
-        "the-table"
-      ],
-      "updated": "2026-10-04"
-    },
-    {
-      "slug": "daily-line",
-      "href": "well/daily-line/",
-      "title": "The Daily Line",
-      "line": "One small crossword on the words of AI.",
-      "type": "game",
-      "section": "games",
-      "topic": "Daily · Learning AI",
-      "date": "2026-10-02",
-      "featured": false,
-      "share": "assets/share/daily-line.jpg",
-      "preview": "assets/previews/crossword.jpg",
-      "related": [
-        "morning-edition"
-      ]
-    },
-    {
-      "slug": "morning-edition",
-      "href": "well/morning-edition/",
-      "title": "The Morning Edition",
-      "line": "Yesterday's AI news, as a crossword.",
-      "type": "game",
-      "section": "games",
-      "topic": "Daily · AI in the news",
-      "date": "2026-10-02",
-      "featured": false,
-      "share": "assets/share/morning-edition.jpg",
-      "preview": "assets/previews/morning.jpg",
-      "related": [
-        "daily-line"
-      ]
-    },
-    {
-      "slug": "sunday-edition",
-      "href": "well/sunday-edition/",
-      "title": "The Sunday Edition",
-      "line": "The week in AI as one big crossword, with what's coming next week. New every Sunday at 6 PM.",
-      "type": "game",
-      "section": "games",
-      "topic": "Weekly · AI in the news",
-      "date": "2026-10-04",
-      "updated": "2026-10-04",
-      "status": "live",
-      "featured": false,
-      "share": "assets/share/sunday-edition.jpg",
-      "preview": "assets/previews/sunday-edition.jpg",
-      "related": [
-        "morning-edition"
-      ]
-    },
-    {
-      "slug": "one-word",
-      "href": "well/one-word/",
-      "title": "One Word",
-      "line": "One word about AI, found in six tries.",
-      "type": "game",
-      "section": "games",
-      "topic": "Daily · A word a day",
-      "date": "2026-10-02",
-      "featured": false,
-      "share": "assets/share/one-word-2.jpg",
-      "preview": "assets/previews/oneword.jpg",
-      "related": [
-        "one-word-advanced"
-      ]
-    },
-    {
-      "slug": "one-word-advanced",
-      "href": "well/one-word-advanced/",
-      "title": "One Word Advanced",
-      "line": "Seven letters, seven tries. For the word people.",
-      "type": "game",
-      "section": "games",
-      "topic": "Daily · A stretch",
-      "date": "2026-10-03",
-      "featured": false,
-      "share": "assets/share/one-word-advanced.jpg",
-      "preview": "assets/previews/oneword-advanced.jpg",
-      "related": [
-        "one-word"
-      ]
-    },
-    {
-      "slug": "walk-in",
-      "href": "well/walk-in/",
-      "title": "The Walk-in",
-      "line": "Hold the people from your day.",
-      "type": "room",
-      "section": "rooms",
-      "topic": "Daily practice",
-      "date": "2026-10-02",
-      "featured": false,
-      "share": "assets/share/walk-in.jpg",
-      "preview": "assets/previews/room-walkin.jpg",
-      "related": [
-        "river"
-      ]
-    },
-    {
-      "slug": "river",
-      "href": "well/river/",
-      "title": "The River",
-      "line": "Set down what's heavy. Watch it go.",
-      "type": "room",
-      "section": "rooms",
-      "topic": "Practice · any time",
-      "date": "2026-10-02",
-      "featured": false,
-      "share": "assets/share/river.jpg",
-      "preview": "assets/previews/room-river.jpg",
-      "related": [
-        "walk-in"
-      ]
-    },
-    {
-      "slug": "lunar",
-      "href": "well/lunar/",
-      "title": "Lunar Life",
-      "line": "The moon over your own weeks.",
-      "type": "room",
-      "section": "rooms",
-      "topic": "Weekly practice",
-      "date": "2026-10-02",
-      "featured": false,
-      "share": "assets/share/lunar.jpg",
-      "preview": "assets/previews/room-lunar.jpg",
-      "related": []
-    },
-    {
-      "slug": "teaching",
-      "href": "https://dnsc.ai/teaching",
-      "title": "How a person and an AI work together",
-      "line": "The rhythms, the corrections, and the whole stack behind this practice. Ten minutes, with a live clock.",
-      "type": "teaching",
-      "section": "teaching",
-      "topic": "Teaching",
-      "date": "2026-10-02",
-      "featured": false,
-      "share": "assets/share/teaching.jpg",
-      "preview": "assets/previews/teaching.jpg",
-      "related": [
-        "recipes"
-      ]
-    },
-    {
-      "slug": "recipes",
-      "href": "recipes/",
-      "title": "The Recipe Book",
-      "line": "Working systems for the AI you already have.",
-      "type": "teaching",
-      "section": "teaching",
-      "topic": "Recipes",
-      "date": "2026-10-02",
-      "featured": false,
-      "share": "assets/share/recipes.jpg",
-      "preview": "assets/previews/recipes.jpg",
-      "related": [
-        "teaching"
-      ]
-    },
-    {
-      "slug": "ai-gauges",
-      "href": "ai-gauges/",
-      "title": "AI Gauges",
-      "line": "Your own AI use: tokens, energy, water and carbon.",
-      "type": "teaching",
-      "section": "teaching",
-      "topic": "Dashboard",
-      "date": "2026-10-02",
-      "featured": false,
-      "share": "assets/share/gauges.jpg",
-      "preview": "assets/previews/gauges.jpg",
-      "related": []
-    },
-    {
-      "slug": "daily-games",
-      "href": "well/",
-      "title": "Games and practices",
-      "line": "Word games that teach AI, and the practices that hold the day. Some daily, some weekly.",
-      "type": "game",
-      "section": "teaching",
-      "topic": "Daily · Weekly",
-      "date": "2026-10-02",
-      "featured": false,
-      "share": "assets/share/daily-games.jpg",
-      "preview": "assets/previews/well.jpg",
-      "related": [
-        "daily-line"
-      ]
-    }
-  ]
+ "version": 1,
+ "note": "The Well's shelf. One entry per card. The landing page and build-ai-twins.py both read this file. Newest first within each section; featured entries form the stack at the top.",
+ "pieces": [
+  {
+   "slug": "gas-tax",
+   "href": "gas-tax/",
+   "title": "A Holiday for the Holidays",
+   "line": "Ohio's 38.5¢ gas tax is off every gallon for 90 days. Set your tank, see what you save, then follow the oil from the pump to the barrel.",
+   "type": "tool",
+   "section": "civic",
+   "topic": "Ohio · Gas tax holiday",
+   "date": "2026-10-04",
+   "featured": true,
+   "share": "assets/share/gas-tax.jpg",
+   "preview": "assets/previews/gas-tax.jpg",
+   "related": [
+    "follow-the-money"
+   ],
+   "updated": "2026-10-05"
+  },
+  {
+   "slug": "follow-the-money",
+   "href": "follow-the-money/",
+   "title": "Issue 2, in Plain Numbers",
+   "line": "What the November school bond means for your tax bill, with every number sourced from the public record.",
+   "type": "tool",
+   "section": "civic",
+   "topic": "Lakota schools · Issue 2",
+   "date": "2026-10-02",
+   "featured": true,
+   "share": "assets/share/issue-2.jpg",
+   "preview": "assets/previews/ftm.jpg",
+   "related": [
+    "gas-tax"
+   ]
+  },
+  {
+   "slug": "the-table",
+   "href": "civic/the-table/",
+   "title": "The table",
+   "line": "The President and six AI companies signed a one-page accord on superintelligence over lunch on September 29. The room, the page, the faces, and what it binds.",
+   "type": "piece",
+   "section": "civic",
+   "topic": "The accord",
+   "date": "2026-10-04",
+   "status": "live",
+   "featured": true,
+   "share": "assets/share/the-table.jpg",
+   "preview": "assets/previews/the-table.jpg",
+   "related": [
+    "task-force"
+   ],
+   "updated": "2026-10-04"
+  },
+  {
+   "slug": "task-force",
+   "href": "civic/task-force/",
+   "title": "The task force",
+   "line": "On September 30 the Secretary of War asked Elon Musk, Palmer Luckey and Newt Gingrich what the next war will need, and announced a new command for drones. A 120-day study, from the record.",
+   "type": "piece",
+   "section": "civic",
+   "topic": "Department of War",
+   "date": "2026-10-04",
+   "status": "live",
+   "featured": true,
+   "share": "assets/share/task-force.jpg",
+   "preview": "assets/previews/task-force.jpg",
+   "related": [
+    "the-table"
+   ],
+   "updated": "2026-10-04"
+  },
+  {
+   "slug": "daily-line",
+   "href": "well/daily-line/",
+   "title": "The Daily Line",
+   "line": "One small crossword on the words of AI.",
+   "type": "game",
+   "section": "games",
+   "topic": "Daily · Learning AI",
+   "date": "2026-10-02",
+   "featured": false,
+   "share": "assets/share/daily-line.jpg",
+   "preview": "assets/previews/crossword.jpg",
+   "related": [
+    "morning-edition"
+   ]
+  },
+  {
+   "slug": "morning-edition",
+   "href": "well/morning-edition/",
+   "title": "The Morning Edition",
+   "line": "Yesterday's AI news, as a crossword.",
+   "type": "game",
+   "section": "games",
+   "topic": "Daily · AI in the news",
+   "date": "2026-10-02",
+   "featured": false,
+   "share": "assets/share/morning-edition.jpg",
+   "preview": "assets/previews/morning.jpg",
+   "related": [
+    "daily-line"
+   ]
+  },
+  {
+   "slug": "sunday-edition",
+   "href": "well/sunday-edition/",
+   "title": "The Sunday Edition",
+   "line": "The week in AI as one big crossword, with what's coming next week. New every Sunday at 6 PM.",
+   "type": "game",
+   "section": "games",
+   "topic": "Weekly · AI in the news",
+   "date": "2026-10-04",
+   "updated": "2026-10-04",
+   "status": "live",
+   "featured": false,
+   "share": "assets/share/sunday-edition.jpg",
+   "preview": "assets/previews/sunday-edition.jpg",
+   "related": [
+    "morning-edition"
+   ]
+  },
+  {
+   "slug": "one-word",
+   "href": "well/one-word/",
+   "title": "One Word",
+   "line": "One word about AI, found in six tries.",
+   "type": "game",
+   "section": "games",
+   "topic": "Daily · A word a day",
+   "date": "2026-10-02",
+   "featured": false,
+   "share": "assets/share/one-word-2.jpg",
+   "preview": "assets/previews/oneword.jpg",
+   "related": [
+    "one-word-advanced"
+   ]
+  },
+  {
+   "slug": "one-word-advanced",
+   "href": "well/one-word-advanced/",
+   "title": "One Word Advanced",
+   "line": "Seven letters, seven tries. For the word people.",
+   "type": "game",
+   "section": "games",
+   "topic": "Daily · A stretch",
+   "date": "2026-10-03",
+   "featured": false,
+   "share": "assets/share/one-word-advanced.jpg",
+   "preview": "assets/previews/oneword-advanced.jpg",
+   "related": [
+    "one-word"
+   ]
+  },
+  {
+   "slug": "walk-in",
+   "href": "well/walk-in/",
+   "title": "The Walk-in",
+   "line": "Hold the people from your day.",
+   "type": "room",
+   "section": "rooms",
+   "topic": "Daily practice",
+   "date": "2026-10-02",
+   "featured": false,
+   "share": "assets/share/walk-in.jpg",
+   "preview": "assets/previews/room-walkin.jpg",
+   "related": [
+    "river"
+   ]
+  },
+  {
+   "slug": "river",
+   "href": "well/river/",
+   "title": "The River",
+   "line": "Set down what's heavy. Watch it go.",
+   "type": "room",
+   "section": "rooms",
+   "topic": "Practice · any time",
+   "date": "2026-10-02",
+   "featured": false,
+   "share": "assets/share/river.jpg",
+   "preview": "assets/previews/room-river.jpg",
+   "related": [
+    "walk-in"
+   ]
+  },
+  {
+   "slug": "lunar",
+   "href": "well/lunar/",
+   "title": "Lunar Life",
+   "line": "The moon over your own weeks.",
+   "type": "room",
+   "section": "rooms",
+   "topic": "Weekly practice",
+   "date": "2026-10-02",
+   "featured": false,
+   "share": "assets/share/lunar.jpg",
+   "preview": "assets/previews/room-lunar.jpg",
+   "related": []
+  },
+  {
+   "slug": "teaching",
+   "href": "https://dnsc.ai/teaching",
+   "title": "How a person and an AI work together",
+   "line": "The rhythms, the corrections, and the whole stack behind this practice. Ten minutes, with a live clock.",
+   "type": "teaching",
+   "section": "teaching",
+   "topic": "Teaching",
+   "date": "2026-10-02",
+   "featured": false,
+   "share": "assets/share/teaching.jpg",
+   "preview": "assets/previews/teaching.jpg",
+   "related": [
+    "recipes"
+   ]
+  },
+  {
+   "slug": "recipes",
+   "href": "recipes/",
+   "title": "The Recipe Book",
+   "line": "Working systems for the AI you already have.",
+   "type": "teaching",
+   "section": "teaching",
+   "topic": "Recipes",
+   "date": "2026-10-02",
+   "featured": false,
+   "share": "assets/share/recipes.jpg",
+   "preview": "assets/previews/recipes.jpg",
+   "related": [
+    "teaching"
+   ]
+  },
+  {
+   "slug": "ai-gauges",
+   "href": "ai-gauges/",
+   "title": "AI Gauges",
+   "line": "Your own AI use: tokens, energy, water and carbon.",
+   "type": "teaching",
+   "section": "teaching",
+   "topic": "Dashboard",
+   "date": "2026-10-02",
+   "featured": false,
+   "share": "assets/share/gauges.jpg",
+   "preview": "assets/previews/gauges.jpg",
+   "related": []
+  },
+  {
+   "slug": "daily-games",
+   "href": "well/",
+   "title": "Games and practices",
+   "line": "Word games that teach AI, and the practices that hold the day. Some daily, some weekly.",
+   "type": "game",
+   "section": "teaching",
+   "topic": "Daily · Weekly",
+   "date": "2026-10-02",
+   "featured": false,
+   "share": "assets/share/daily-games.jpg",
+   "preview": "assets/previews/well.jpg",
+   "related": [
+    "daily-line"
+   ]
+  }
+ ]
 }
