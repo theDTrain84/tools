@@ -3,6 +3,22 @@
  "note": "The Well's shelf. One entry per card. The landing page and build-ai-twins.py both read this file. Newest first within each section; featured entries form the stack at the top.",
  "pieces": [
   {
+   "slug": "word-for-word-2026-10-06",
+   "href": "civic/word-for-word-2026-10-06/",
+   "title": "Word for Word around the world",
+   "line": "Trump, Putin, Zelenskyy, Netanyahu, Xi, Modi and Lula, in their own words, on Iran, Kaliningrad, negotiations, a cockpit attack, the Chinese nation, peace and a runoff.",
+   "type": "piece",
+   "section": "weekly",
+   "topic": "Heads of state · in their own words",
+   "date": "2026-10-06",
+   "status": "live",
+   "share": "assets/share/word-for-word-2026-10-06.jpg",
+   "preview": "assets/previews/word-for-word-2026-10-06.jpg",
+   "related": [
+    "the-table"
+   ]
+  },
+  {
    "slug": "gas-tax",
    "href": "gas-tax/",
    "title": "A Holiday for the Holidays",

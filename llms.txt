@@ -12,6 +12,10 @@ Start at the landing page as text: [The Well](https://tools.dnsc.ai/ai.md). Teac
 - [Issue 2, in Plain Numbers](https://tools.dnsc.ai/follow-the-money/index.md): What the November school bond means for your tax bill, with every number sourced from the public record.
 - [What's in the jar · Cannabis in Ohio](https://tools.dnsc.ai/cannabis/index.md): How strong today's cannabis is, what Ohio's law allows, where the money goes, and what the research says, in plain numbers with every source linked.
 
+## Weekly
+
+- [Word for Word around the world](https://tools.dnsc.ai/civic/word-for-word-2026-10-06/index.md): Trump, Putin, Zelenskyy, Netanyahu, Xi, Modi and Lula, in their own words, on Iran, Kaliningrad, negotiations, a cockpit attack, the Chinese nation, peace and a runoff.
+
 ## Games and practices
 
 - [The Sunday Edition](https://tools.dnsc.ai/well/sunday-edition/index.md): The week in AI as one big crossword, with what's coming next week. New every Sunday at 6 PM.

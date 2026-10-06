@@ -749,6 +749,7 @@ def build_twin(rel, today, day):
 
 SECTIONS = [
     ("Civic tools", ["follow-the-money/", "gas-tax/", "cannabis/"]),
+    ("Weekly", []),
     ("Games and practices", ["well/", "well/daily-line/", "well/morning-edition/",
                      "well/one-word/", "well/one-word-advanced/", "well/five-moves/"]),
     ("Practices", ["well/walk-in/", "well/river/", "well/lunar/"]),
@@ -763,7 +764,7 @@ def short_title(t):
 
 # pieces.json: the shelf the landing page renders from. When a page has an entry, its
 # llms.txt section and one-line description come from there, so the index and the page agree.
-SECTION_NAMES = {"civic": "Civic tools", "games": "Games and practices", "rooms": "Practices", "teaching": "Teaching"}
+SECTION_NAMES = {"civic": "Civic tools", "weekly": "Weekly", "games": "Games and practices", "rooms": "Practices", "teaching": "Teaching"}
 
 
 def load_pieces():

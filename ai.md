@@ -86,6 +86,12 @@ Ohio's 38.5¢ gas tax is off every gallon for 90 days. Set your tank, see what y
 
 Open →
 
+Weekly
+
+### Things that keep a day.
+
+Word for Word around the world lands every Tuesday at six.
+
 Working with AI
 
 ### Use what you already have, on purpose.

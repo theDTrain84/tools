@@ -340,6 +340,11 @@ main.wrap{min-height:100vh}
 </div>
 </section>
 
+<section class="group" aria-labelledby="weekly-h">
+<div class="head"><div><p class="k">Weekly</p><h2 id="weekly-h">Things that keep a day.</h2><p>Word for Word around the world lands every Tuesday at six.</p></div></div>
+<div class="tiles"></div>
+</section>
+
 <section class="group" aria-labelledby="ai-h">
 <div class="head"><div><p class="k">Working with AI</p><h2 id="ai-h">Use what you already have, on purpose.</h2><p>The same practices we teach, free to take home.</p></div></div>
 <div class="tiles">
@@ -412,7 +417,7 @@ card.addEventListener('mouseenter',run);card.addEventListener('focus',run);new M
    If the manifest does not load, the cards written above stay exactly as they are. */
 (()=>{
   if(!window.fetch) return;
-  const HEAD={civic:'civic-h',rooms:'life-h',teaching:'ai-h'};
+  const HEAD={civic:'civic-h',weekly:'weekly-h',rooms:'life-h',teaching:'ai-h'};
   const tilesFor=s=>{if(s==='games')return document.querySelector('.shelf .tiles');const h=document.getElementById(HEAD[s]);return h?h.closest('section').querySelector('.tiles'):null;};
   const CHIPS=[['All',''],['Tools','tool'],['Stories','piece'],['Games','game'],['Practices','room'],['Teaching','teaching']];
   const ORBIT='<svg class="orbit-art" viewBox="0 0 300 200" aria-hidden="true"><circle cx="150" cy="100" r="70" fill="none" stroke="#CFC6B8" stroke-width="1.2"/><circle cx="150" cy="100" r="46" fill="none" stroke="#B4862E" stroke-opacity=".45" stroke-width=".8" stroke-dasharray="1 5"/><circle cx="150" cy="30" r="4.5" fill="#3E6A9E"/><circle cx="216.6" cy="78.4" r="4.5" fill="#B4862E"/><circle cx="191.1" cy="156.6" r="4.5" fill="#623E2A"/><circle cx="108.9" cy="156.6" r="4.5" fill="#A69686"/><circle cx="83.4" cy="78.4" r="4.5" fill="#D9B25A"/></svg>';
@@ -481,7 +486,7 @@ card.addEventListener('mouseenter',run);card.addEventListener('focus',run);new M
     const statics=new Map();document.querySelectorAll('a.shot[href]').forEach(a=>{const h=a.getAttribute('href');if(!statics.has(h))statics.set(h,a);});
     // plan every section before touching the page
     const plan=[];
-    for(const s of ['games','civic','teaching','rooms']){
+    for(const s of ['games','civic','weekly','teaching','rooms']){
       const tiles=tilesFor(s);if(!tiles)continue;
       const cards=order.filter(p=>p.section===s).map(p=>{
         let c=statics.get(p.href);
