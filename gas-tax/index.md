@@ -226,7 +226,7 @@ Ohio · U.S. average · Brent crude oil · Iran war, from Feb 28, 2026
 
 Source: U.S. Energy Information Administration: weekly Brent crude spot price, and weekly retail regular gasoline for Ohio and the U.S. Gas prices are released every Monday. The war timeline follows EIA's [Apr 7](https://www.eia.gov/todayinenergy/detail.php?id=67424) and [Jul 15, 2026](https://www.eia.gov/todayinenergy/detail.php?id=67865) notes and its [September outlook](https://www.eia.gov/outlooks/steo/archives/sep26.pdf).
 
-**Go deeper: where the road money comes from, and where Ohio's oil comes from**
+**Go deeper: where the road money comes from, where Ohio's oil comes from, and what a federal pause would add**
 
 The statehouse
 
@@ -332,11 +332,31 @@ EIA lists Ohio's crude sources as Canada, the Midcontinent, North Dakota, the Ap
 - Energy Transfer, [Mid-Valley Pipeline tariff](https://commoncarrier.energytransfer.com/InfoPost/CommonCarriers/resources/MVPL/Tariffs/MVPL_FERC_483.23.0.pdf); Enbridge, [Stockbridge Terminal](https://www.enbridge.com/~/media/Enb/Documents/Factsheets/FS_ENB_Stockbridge_Terminal.pdf).
 - EIA, [Gasoline and Diesel Fuel Update](https://www.eia.gov/petroleum/gasdiesel/), "What we pay for in a gallon," May 2026; [Factors affecting gasoline prices](https://www.eia.gov/energyexplained/gasoline/factors-affecting-gasoline-prices.php).
 
+If Washington follows Ohio
+
+### A federal pause would take 18.4¢ more off every gallon.
+
+After Ohio's pause took effect, Sen. Bernie Moreno wrote: "Now it's time for the Federal Government to follow suit with a temporary suspension!" Here is what that would mean, from the record.
+
+The federal tax is 18.4¢ on gasoline and 24.4¢ on diesel, unchanged since 1993. On a 15-gallon tank that is $2.76 a fill, on top of Ohio's $5.77, while both ran. When Maryland, Georgia and Connecticut paused their state taxes in 2022, 65 to 87 percent of the cut reached the pump, so about two dollars of the $2.76 would likely show up.
+
+Every federal fuel-tax dollar goes to the Highway Trust Fund, which pays for roads and transit. A three-month pause was scored at about $10 billion in 2022. The fund already cannot cover itself: the 2021 infrastructure law moved $118 billion from the general fund into it, and the Congressional Budget Office projects it runs short again by 2028. A suspension means Congress backfills from general revenue, or the fund runs shorter. Ohio did the same in miniature, with $725 million from its own general fund.
+
+It takes an act of Congress. The President said in May he intended to suspend the tax; bills from both parties have been introduced since.
+
+**Sources for this part**
+
+- Yahoo News, [Ohio Senator calls for federal gas tax relief](https://www.yahoo.com/news/politics/articles/ohio-senator-calls-federal-gas-103000479.html) (Moreno's post, Oct 2026).
+- Thomson Reuters, [GOP lawmakers, Trump push proposals to suspend federal gas tax](https://tax.thomsonreuters.com/news/gop-lawmakers-trump-push-proposals-to-suspend-federal-gas-tax/) (the 2026 bills; the May statement).
+- The Bond Buyer, [Biden pushes federal gas tax holiday](https://bondbuyer.com/news/biden-pushes-federal-gas-tax-holiday) (2022: three months, about $10 billion to the Highway Trust Fund).
+- Penn Wharton Budget Model via The Philadelphia Inquirer, [Your savings from a summer gas tax holiday](https://www.inquirer.com/news/gas-tax-holiday-summer-saves-penn-wharton-budget-model-20220624.html) (pass-through in Maryland, Georgia, Connecticut, 2022).
+- Congressional Research Service, [Funding and Financing Highways and Public Transportation](https://www.everycrsreport.com/files/2023-05-24_R47573_2fdd993640445d646286ecfe0df6cc5570d409a6.html) ($118 billion general-fund transfer under the 2021 law; 2028 shortfall).
+
 Built by **Dustin Nimmo**, founder of [DNSC](https://dnsc.ai) in West Chester, Ohio.
 
 Figures come from H.B. 519 as passed, the Legislative Service Commission and Budget Office, the Ohio Department of Taxation, the U.S. Energy Information Administration and the sources folded under each part. Last verified Oct 4, 2026. If a number here is wrong, say so and it will be fixed and noted.
 
-Posted October 4, 2026 · Revised October 5, 2026, 8:20 PM: a shorter walk for the public; the statehouse and the refinery folded under Go deeper; the war question kept, with the record on how fast prices come back.
+Posted October 4, 2026 · Revised October 5, 2026, 9:40 PM: a shorter walk for the public; the statehouse and the refinery folded under Go deeper, with a card on what a federal pause would add; the war question kept, with the record on how fast prices come back.
 
 ---
 
