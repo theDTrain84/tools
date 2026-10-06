@@ -14,8 +14,6 @@ Ohio took its 38.5¢ gas tax off every gallon for 90 days. Start with your own t
 
 1 · Your pump
 
-Gold is what you pay. Teal is what Ohio's general fund now covers for you.
-
 [Chart: A fuel tank, filled to your tank size]
 
 ### How big is your tank?
@@ -37,6 +35,8 @@ This fill-up really costs
 You pay
 
 Ohio pays
+
+Gold is what you pay. Teal is what Ohio's general fund now covers for you.
 
 **For your business: vehicles, gallons, savings**
 
@@ -67,13 +67,13 @@ Trucks that cross state lines pay Ohio's fuel use tax on the miles they drive in
 
 ### Ninety days, October 4 to January 2.
 
-Right through the holidays. Here's how it works at the station.
-
 Swipe the calendar →
 
 **Day 1** of 90. 89 to go, through January 2.
 
 [Chart: Calendar from October 4, 2026 to January 2, 2027 with Halloween, Thanksgiving, Christmas and New Year's marked]
+
+Right through the holidays. Here's how it works at the station.
 
 [Chart: A line drawing of a gas station]
 
@@ -105,7 +105,130 @@ Swipe the calendar →
 - Ohio General Assembly, [H.B. 519 status](https://www.legislature.ohio.gov/legislation/136/hb519/status).
 - U.S. Energy Information Administration, [federal fuel taxes](https://www.eia.gov/tools/faqs/faq.php?id=10&t=10).
 
-3 · The statehouse
+3 · The auction
+
+"Oil markets are essentially a global auction. The highest bidder will win the available supply."
+
+*U.S. Energy Information Administration*
+
+Swipe the map →
+
+[Chart: World map of the oil flows in the story]
+
+Canada and the U.S. to Ohio · Venezuela · Russia · Persian Gulf, about half blocked · Buyers bidding · Routes simplified
+
+**Every refinery bids for the same barrels.** Oil sells on one world market, so a shortage anywhere raises the price everywhere, including Ohio.
+
+**A fifth of the world's oil went through Hormuz.** About 20 million barrels a day in 2024. Since Feb 28, about half of that has stopped.
+
+**Venezuela's oil changed course.** After the U.S. lifted most sanctions in January, Venezuelan crude to the U.S. rose from 137,000 barrels a day to 701,000 by July, almost all of it to the Gulf Coast. Ohio refines none of it.
+
+**The Americas pumped more.** The U.S., Canada, Brazil, Guyana and Argentina add about 1.4 million barrels a day this year, far short of what's missing from the Gulf.
+
+**Canada sells Ohio its oil, through a tense year.** The U.S. put a 10% tariff on Canadian energy in March 2025. Even so, 90% of Canada's crude exports still came to the U.S. in 2025, and Line 5 keeps feeding Toledo's refineries.
+
+**Russia's oil found new buyers.** After U.S. sanctions in October 2025 and the Hormuz shutdown, India bought a record 2.6 million barrels a day of Russian crude in July.
+
+**If the war ends: what changes, and how fast**
+
+How fast prices come back
+
+In 2022, the U.S. average for regular gas peaked at **$5.01** a gallon the week of June 13 and was back to **$3.09** the week of December 26, about six months later.
+
+Pump prices tend to rise fast and fall slowly: crude moves first, and refiners and stations pass a drop along more slowly than a rise, in part because they manage their stocks through price.
+
+A St. Louis Fed study found that an expected 1% rise in oil lifted gas 0.52% within a week, while an expected 1% drop lowered it 0.24%.
+
+No one can promise a price. Here is what the record and the forecasters show.
+
+Before the war, about 20 million barrels a day moved through Hormuz. By May it was under 10. If the war ends, it won't snap back overnight: the IEA says "a full recovery will not be immediate," because mines must be cleared and supply chains rebuilt, and it expects most of the rebound in 2027.
+
+It happened once already · −52¢
+
+In the three weeks after the mid-June deal to reopen the strait, Ohio's price fell 52¢, to **$3.56** on July 6. Prices had been easing since May on reports of a deal. The relief lasted about three weeks.
+
+Same agency, two forecasts · 57¢ apart
+
+In July, with the strait open, the federal EIA expected Midwest gas to average **$3.17** this October to December. In September, assuming the strait stays constrained through year end, it expected **$3.74**. Two forecasts under different conditions.
+
+How fast it reaches the pump · 2.4¢
+
+Each $1 change in a barrel of crude moves gas about 2.4¢ a gallon. About half shows up within two weeks and 80% within four. Pump prices fall more slowly than crude does.
+
+How big is 38.5¢?
+
+The gas tax holiday
+
+**38.5¢**
+
+Ohio, three weeks after the June deal
+
+**52¢**
+
+Between EIA's July and September forecasts
+
+**57¢**
+
+**Sources for this part**
+
+- EIA, [Oil prices and outlook](https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php) (the "global auction" line).
+- EIA, [Weekly U.S. regular gasoline retail price](https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=EMM_EPMR_PTE_NUS_DPG&f=W), all formulations ($5.006 the week of June 13, 2022; $3.091 the week of December 26, 2022).
+- Federal Reserve Bank of St. Louis, Michael T. Owyang and E. Katarina Vermann, ["Rockets and Feathers: Why Don't Gasoline Prices Always Move in Sync with Oil Prices?"](https://www.stlouisfed.org/publications/regional-economist/october-2014/rockets-and-feathers-why-dont-gasoline-prices-always-move-in-sync-with-oil-prices), The Regional Economist, Oct 2014 (inventories, pricing, the 0.52% and 0.24% first-week responses).
+- EIA, [Today in Energy, June 2025](https://www.eia.gov/todayinenergy/detail.php?id=65504): about 20 million barrels a day through the Strait of Hormuz in 2024, about 20% of global petroleum liquids consumption.
+- Congressional Research Service, [Insight IN12637](https://www.congress.gov/crs_external_products/IN/PDF/IN12637/IN12637.1.pdf), Jan 9, 2026 (the Jan 3 operation and Venezuela's acting government); U.S. Treasury general licenses 46 to 52, Jan to Mar 2026.
+- EIA, [U.S. crude oil imports from Venezuela](https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=MCRIMUSVE2&f=M), monthly (137 kb/d Dec 2025; 701 kb/d Jul 2026).
+- IEA, [Oil Market Report, September 2026](https://www.iea.org/reports/oil-market-report-september-2026): the U.S., Canada, Brazil, Guyana and Argentina add 1.4 mb/d in 2026.
+- EIA, [weekly Brent spot price](https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RBRTE&f=W) (about $71 before the war; weekly highs above $120).
+- Map arcs show the flows in this story, simplified; they are not shipping routes.
+- Congressional Research Service, [IF12595](https://www.congress.gov/crs_external_products/IF/PDF/IF12595/IF12595.31.pdf), Mar 30, 2026 (tariffs on Canada, the 10% energy rate, USMCA exemptions).
+- Canada Energy Regulator, [Overview of 2025 Canada–U.S. energy trade](https://www.cer-rec.gc.ca/en/data-analysis/energy-markets/market-snapshots/2026/market-snapshot-overview-of-2025-canada-us-energy-trade.html), May 27, 2026 (90.1% of crude exports to the U.S.; Trans Mountain).
+- Michigan Attorney General, [Line 5 ruling](https://www.michigan.gov/ag/news/press-releases/2026/04/22/us-supreme-court-unanimously-rules-ag-nessels-line-5-lawsuit), Apr 22, 2026.
+- gCaptain, [Treasury sanctions Rosneft and Lukoil](https://gcaptain.com/u-s-treasury-sanctions-russias-largest-oil-companies-over-ukraine/), Oct 2025, and [waiver for stranded Russian cargoes](https://gcaptain.com/treasury-extends-russian-oil-waiver-as-hormuz-crisis-tightens-global-supplies/), 2026.
+- KSE Institute, [Russian Oil Tracker, August 2026](https://institute.kse.ua/wp-content/uploads/2026/08/rot_eng_august_2026.pdf) (India 2.6 mb/d in July; product exports at a record low); CREA, [August 2026 analysis](https://energyandcleanair.org/august-2026-monthly-analysis-of-russian-fossil-fuel-exports-and-sanctions/) (port strikes).
+- IEA, [Oil Market Report, June 2026](https://www.iea.org/reports/oil-market-report-june-2026) ("a full recovery will not be immediate"; Hormuz flow fell to 9.6 mb/d in May) and [September 2026](https://www.iea.org/reports/oil-market-report-september-2026) (recovery deferred to 2027).
+- EIA, Short-Term Energy Outlook, [July 2026](https://www.eia.gov/outlooks/steo/archives/jul26.pdf) (Midwest regular $3.17 for Oct to Dec with the strait open; "retail prices historically decrease more slowly than crude oil prices") and [September 2026](https://www.eia.gov/outlooks/steo/archives/sep26.pdf) ($3.74 with the strait constrained through year end).
+- EIA, [Today in Energy, June 26, 2012](https://www.eia.gov/todayinenergy/detail.php?id=6850): each $1 a barrel moves gasoline about 2.4¢ a gallon; about half within two weeks and 80% within four.
+- EIA, [Today in Energy, Apr 7, 2026](https://www.eia.gov/todayinenergy/detail.php?id=67424) (the Feb 28 strikes and the strait's "de facto closure") and [July 15, 2026](https://www.eia.gov/todayinenergy/detail.php?id=67865) (the June deal, the late-June low, the renewed blockade).
+
+4 · The barrel
+
+### The barrel sets the price.
+
+Brent crude, the world's benchmark, the week before the war and the latest week. The holiday moves the pump 38.5¢; the barrel moves everything else.
+
+### The price of a barrel
+
+Brent crude, weekly, EIA
+
+Before the war, week of Feb 27
+
+$71
+
+a barrel of Brent crude.
+
+Latest, week of Sep 25
+
+$117
+
+a barrel. Up 64% since the war began.
+
+**Why prices are this high.** Since the Iran war began on February 28, about half the tankers through the Strait of Hormuz have stopped. Ohio's gas followed the barrel, from $2.89 to a peak of $4.78 in May. The holiday takes 38.5¢ off the price; the rest follows the world oil market.
+
+**Oil and pump prices, week by week, since 2020**
+
+A deal in mid-June reopened the strait for a few weeks; it frayed in July, and the U.S. blockade of Iranian oil returned. Beyond crude, a gallon carries refining and retail costs and the 18.4¢ federal tax.
+
+A choice (Time range): Since 2020, 2026.
+
+Ohio · U.S. average · Brent crude oil · Iran war, from Feb 28, 2026
+
+[Chart: Weekly Brent crude oil price and Ohio and U.S. regular gasoline prices since 2020]
+
+Source: U.S. Energy Information Administration: weekly Brent crude spot price, and weekly retail regular gasoline for Ohio and the U.S. Gas prices are released every Monday. The war timeline follows EIA's [Apr 7](https://www.eia.gov/todayinenergy/detail.php?id=67424) and [Jul 15, 2026](https://www.eia.gov/todayinenergy/detail.php?id=67865) notes and its [September outlook](https://www.eia.gov/outlooks/steo/archives/sep26.pdf).
+
+**Go deeper: where the road money comes from, and where Ohio's oil comes from**
+
+The statehouse
 
 ### $725 million from the state's own fund covers the road money.
 
@@ -162,7 +285,7 @@ The general fund's money left over at year end, after bills already promised, wa
 - Ohio Legislative Service Commission, [Bill Analysis, H.B. 519](https://www.legislature.ohio.gov/download?key=28854) (the 65% and 55% splits).
 - Ohio Legislative Budget Office, [Budget Footnotes, July 2026](https://www.lsc.ohio.gov/assets/organizations/legislative-service-commission/files/fy-2026-budget-footnotes-july-2026.pdf) and [Budget Stabilization Fund, July 2026](https://www.lsc.ohio.gov/assets/organizations/legislative-service-commission/files/infographics-budget-stabilization-fund-july-2026.pdf).
 
-4 · The refinery
+The refinery
 
 ### Ohio refines oil from Canada and the Midwest.
 
@@ -209,121 +332,12 @@ EIA lists Ohio's crude sources as Canada, the Midcontinent, North Dakota, the Ap
 - Energy Transfer, [Mid-Valley Pipeline tariff](https://commoncarrier.energytransfer.com/InfoPost/CommonCarriers/resources/MVPL/Tariffs/MVPL_FERC_483.23.0.pdf); Enbridge, [Stockbridge Terminal](https://www.enbridge.com/~/media/Enb/Documents/Factsheets/FS_ENB_Stockbridge_Terminal.pdf).
 - EIA, [Gasoline and Diesel Fuel Update](https://www.eia.gov/petroleum/gasdiesel/), "What we pay for in a gallon," May 2026; [Factors affecting gasoline prices](https://www.eia.gov/energyexplained/gasoline/factors-affecting-gasoline-prices.php).
 
-5 · The auction
-
-"Oil markets are essentially a global auction. The highest bidder will win the available supply."
-
-*U.S. Energy Information Administration*
-
-A choice (Show the world now or if the war ends): Now, What if the war ends?
-
-Swipe the map →
-
-[Chart: World map of the oil flows in the story]
-
-Canada and the U.S. to Ohio · Venezuela · Russia · Persian Gulf, about half blocked · Buyers bidding · Routes simplified
-
-**Every refinery bids for the same barrels.** Oil sells on one world market, so a shortage anywhere raises the price everywhere, including Ohio.
-
-**A fifth of the world's oil went through Hormuz.** About 20 million barrels a day in 2024. Since Feb 28, about half of that has stopped.
-
-**Venezuela's oil changed course.** After the U.S. lifted most sanctions in January, Venezuelan crude to the U.S. rose from 137,000 barrels a day to 701,000 by July, almost all of it to the Gulf Coast. Ohio refines none of it.
-
-**The Americas pumped more.** The U.S., Canada, Brazil, Guyana and Argentina add about 1.4 million barrels a day this year, far short of what's missing from the Gulf.
-
-**Canada sells Ohio its oil, through a tense year.** The U.S. put a 10% tariff on Canadian energy in March 2025. Even so, 90% of Canada's crude exports still came to the U.S. in 2025, and Line 5 keeps feeding Toledo's refineries.
-
-**Russia's oil found new buyers.** After U.S. sanctions in October 2025 and the Hormuz shutdown, India bought a record 2.6 million barrels a day of Russian crude in July.
-
-No one can promise a price. Here is what the record and the forecasters show.
-
-Before the war, about 20 million barrels a day moved through Hormuz. By May it was under 10. If the war ends, it won't snap back overnight: the IEA says "a full recovery will not be immediate," because mines must be cleared and supply chains rebuilt, and it expects most of the rebound in 2027.
-
-It happened once already · −52¢
-
-In the three weeks after the mid-June deal to reopen the strait, Ohio's price fell 52¢, to **$3.56** on July 6. Prices had been easing since May on reports of a deal. The relief lasted about three weeks.
-
-Same agency, two forecasts · 57¢ apart
-
-In July, with the strait open, the federal EIA expected Midwest gas to average **$3.17** this October to December. In September, assuming the strait stays constrained through year end, it expected **$3.74**. Two forecasts under different conditions.
-
-How fast it reaches the pump · 2.4¢
-
-Each $1 change in a barrel of crude moves gas about 2.4¢ a gallon. About half shows up within two weeks and 80% within four. Pump prices fall more slowly than crude does.
-
-How big is 38.5¢?
-
-The gas tax holiday
-
-**38.5¢**
-
-Ohio, three weeks after the June deal
-
-**52¢**
-
-Between EIA's July and September forecasts
-
-**57¢**
-
-**Sources for this part**
-
-- EIA, [Oil prices and outlook](https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php) (the "global auction" line).
-- EIA, [Today in Energy, June 2025](https://www.eia.gov/todayinenergy/detail.php?id=65504): about 20 million barrels a day through the Strait of Hormuz in 2024, about 20% of global petroleum liquids consumption.
-- Congressional Research Service, [Insight IN12637](https://www.congress.gov/crs_external_products/IN/PDF/IN12637/IN12637.1.pdf), Jan 9, 2026 (the Jan 3 operation and Venezuela's acting government); U.S. Treasury general licenses 46 to 52, Jan to Mar 2026.
-- EIA, [U.S. crude oil imports from Venezuela](https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=MCRIMUSVE2&f=M), monthly (137 kb/d Dec 2025; 701 kb/d Jul 2026).
-- IEA, [Oil Market Report, September 2026](https://www.iea.org/reports/oil-market-report-september-2026): the U.S., Canada, Brazil, Guyana and Argentina add 1.4 mb/d in 2026.
-- EIA, [weekly Brent spot price](https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RBRTE&f=W) (about $71 before the war; weekly highs above $120).
-- Map arcs show the flows in this story, simplified; they are not shipping routes.
-- Congressional Research Service, [IF12595](https://www.congress.gov/crs_external_products/IF/PDF/IF12595/IF12595.31.pdf), Mar 30, 2026 (tariffs on Canada, the 10% energy rate, USMCA exemptions).
-- Canada Energy Regulator, [Overview of 2025 Canada–U.S. energy trade](https://www.cer-rec.gc.ca/en/data-analysis/energy-markets/market-snapshots/2026/market-snapshot-overview-of-2025-canada-us-energy-trade.html), May 27, 2026 (90.1% of crude exports to the U.S.; Trans Mountain).
-- Michigan Attorney General, [Line 5 ruling](https://www.michigan.gov/ag/news/press-releases/2026/04/22/us-supreme-court-unanimously-rules-ag-nessels-line-5-lawsuit), Apr 22, 2026.
-- gCaptain, [Treasury sanctions Rosneft and Lukoil](https://gcaptain.com/u-s-treasury-sanctions-russias-largest-oil-companies-over-ukraine/), Oct 2025, and [waiver for stranded Russian cargoes](https://gcaptain.com/treasury-extends-russian-oil-waiver-as-hormuz-crisis-tightens-global-supplies/), 2026.
-- KSE Institute, [Russian Oil Tracker, August 2026](https://institute.kse.ua/wp-content/uploads/2026/08/rot_eng_august_2026.pdf) (India 2.6 mb/d in July; product exports at a record low); CREA, [August 2026 analysis](https://energyandcleanair.org/august-2026-monthly-analysis-of-russian-fossil-fuel-exports-and-sanctions/) (port strikes).
-- IEA, [Oil Market Report, June 2026](https://www.iea.org/reports/oil-market-report-june-2026) ("a full recovery will not be immediate"; Hormuz flow fell to 9.6 mb/d in May) and [September 2026](https://www.iea.org/reports/oil-market-report-september-2026) (recovery deferred to 2027).
-- EIA, Short-Term Energy Outlook, [July 2026](https://www.eia.gov/outlooks/steo/archives/jul26.pdf) (Midwest regular $3.17 for Oct to Dec with the strait open; "retail prices historically decrease more slowly than crude oil prices") and [September 2026](https://www.eia.gov/outlooks/steo/archives/sep26.pdf) ($3.74 with the strait constrained through year end).
-- EIA, [Today in Energy, June 26, 2012](https://www.eia.gov/todayinenergy/detail.php?id=6850): each $1 a barrel moves gasoline about 2.4¢ a gallon; about half within two weeks and 80% within four.
-- EIA, [Today in Energy, Apr 7, 2026](https://www.eia.gov/todayinenergy/detail.php?id=67424) (the Feb 28 strikes and the strait's "de facto closure") and [July 15, 2026](https://www.eia.gov/todayinenergy/detail.php?id=67865) (the June deal, the late-June low, the renewed blockade).
-
-6 · The barrel
-
-### The barrel sets the price.
-
-Brent crude, the world's benchmark, the week before the war and the latest week. The holiday moves the pump 38.5¢; the barrel moves everything else.
-
-### The price of a barrel
-
-Brent crude, weekly, EIA
-
-Before the war, week of Feb 27
-
-$71
-
-a barrel of Brent crude.
-
-Latest, week of Sep 25
-
-$117
-
-a barrel. Up 64% since the war began.
-
-**Why prices are this high.** Since the Iran war began on February 28, about half the tankers through the Strait of Hormuz have stopped. Ohio's gas followed the barrel, from $2.89 to a peak of $4.78 in May. The holiday takes 38.5¢ off the price; the rest follows the world oil market.
-
-**Oil and pump prices, week by week, since 2020**
-
-A deal in mid-June reopened the strait for a few weeks; it frayed in July, and the U.S. blockade of Iranian oil returned. Beyond crude, a gallon carries refining and retail costs and the 18.4¢ federal tax.
-
-A choice (Time range): Since 2020, 2026.
-
-Ohio · U.S. average · Brent crude oil · Iran war, from Feb 28, 2026
-
-[Chart: Weekly Brent crude oil price and Ohio and U.S. regular gasoline prices since 2020]
-
-Source: U.S. Energy Information Administration: weekly Brent crude spot price, and weekly retail regular gasoline for Ohio and the U.S. Gas prices are released every Monday. The war timeline follows EIA's [Apr 7](https://www.eia.gov/todayinenergy/detail.php?id=67424) and [Jul 15, 2026](https://www.eia.gov/todayinenergy/detail.php?id=67865) notes and its [September outlook](https://www.eia.gov/outlooks/steo/archives/sep26.pdf).
-
 Built by **Dustin Nimmo**, founder of [DNSC](https://dnsc.ai) in West Chester, Ohio.
 
 Figures come from H.B. 519 as passed, the Legislative Service Commission and Budget Office, the Ohio Department of Taxation, the U.S. Energy Information Administration and the sources folded under each part. Last verified Oct 4, 2026. If a number here is wrong, say so and it will be fixed and noted.
 
+Posted October 4, 2026 · Revised October 5, 2026, 8:20 PM: a shorter walk for the public; the statehouse and the refinery folded under Go deeper; the war question kept, with the record on how fast prices come back.
+
 ---
 
-Source: https://tools.dnsc.ai/gas-tax/ · Generated from the page on Oct 4, 2026
+Source: https://tools.dnsc.ai/gas-tax/ · Generated from the page on Oct 5, 2026

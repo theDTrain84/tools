@@ -473,6 +473,45 @@ details.more ul.lk li{margin:4px 0}
 .bio p b{color:var(--ink);font-weight:800}
 .bio p.sm{margin-top:8px;font-size:.9375rem;color:var(--ink-3)}
 @media (prefers-reduced-motion:reduce){.glow,.flip1,.flip2,.hdrop,.hnum1,.hnum2,.htag,.twinkle,.flow .run,.map .flowln{animation:none!important}.hnum1{opacity:0}.draw .ln,.draw .lt{stroke-dashoffset:0;transition:none}}
+/* ===== public cut (PUBLIC_CUT=1) ===== */
+.ch p.dek.dek-after{margin:14px 0 0}
+.ch2-dek{margin:20px 0 0;font-size:1.125rem;line-height:1.5;color:var(--ink-2);max-width:60ch}
+.ch1-dek{margin:14px 0 0;font-size:1.125rem;line-height:1.5;color:var(--ink-2);max-width:60ch}
+details.deeper{margin-top:48px;border-top:2px solid var(--ink)}
+details.deeper>summary{font-family:var(--serif);font-weight:600;font-size:clamp(1.25rem,2.6vw,1.6rem);line-height:1.2;color:var(--ink);padding:16px 0;gap:14px}
+details.deeper>summary::before{flex:none;width:30px;height:30px;font-size:1.05rem;border-width:2px;border-color:var(--ink)}
+details.deeper>.deep-in>.ch:first-child{margin-top:16px}
+.range{height:36px}
+.range::-webkit-slider-runnable-track{height:6px;border-radius:3px}
+.range::-webkit-slider-thumb{width:32px;height:32px;margin-top:-13px}
+.daycount b{font-size:clamp(2.6rem,5vw,3.2rem)}
+@media (max-width:560px){
+  .tankbox{grid-template-columns:150px minmax(0,1fr);gap:2px 14px}
+  .tankbox .ask{display:contents}
+  .tankbox .tank{grid-column:1;grid-row:1/4}
+  .tankbox .ask h2,.tankbox .gal,.tankbox .seg{grid-column:2}
+  .tankbox #gal{grid-column:1/-1}
+  .gal{font-size:2.8rem}
+  .range{height:48px;margin:12px 0 4px}
+  .range::-webkit-slider-runnable-track{height:8px;border-radius:4px}
+  .range::-webkit-slider-thumb{width:40px;height:40px;margin-top:-16px;border-width:5px}
+  .ans{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ans .o:first-child{grid-column:1/-1;display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-right:0;border-bottom:1px solid var(--rule)}
+  .ans .o:first-child .ol{min-height:0}
+  .ans .o:first-child .ov{font-size:1.6rem;margin:0}
+  .ans .o.hi .ov,.ans .o.st .ov{font-size:2.5rem}
+  .ans .o .ol{min-height:0}
+  .daycount b{font-size:3.2rem}
+  .daycount span{font-size:1.125rem}
+  #season{min-width:900px}
+}
+.wifold{margin-top:16px}
+.wifold .wi{margin-top:0}
+.wfast{border:2px solid var(--ink);border-bottom:0;background:#fff;padding:12px 16px 4px}
+.wfast .cap{display:block;margin-bottom:6px}
+.wfast p{margin:0 0 10px;font-size:1.0625rem;line-height:1.5;color:var(--ink-2)}
+.wfast p b{color:var(--ink)}
+@media (max-width:560px){.wfast{padding:12px 12px 4px}}
 </style>
 <link rel="icon" href="/assets/favicon.png">
 </head>
@@ -496,7 +535,7 @@ details.more ul.lk li{margin:4px 0}
   <div class="route"><span class="trav" aria-hidden="true"><svg viewBox="0 0 26 34"><path id="travP" d="M13 1C13 1 1 16 1 23a12 12 0 0 0 24 0C25 16 13 1 13 1Z" fill="#D9A43A"/></svg><b id="travL">gas</b></span>
 
   <!-- 1 -->
-  <div class="ch ch1" data-ink="#D9A43A" data-lab="gas"><p class="k">1 · Your pump</p><p class="dek">Gold is what you pay. Teal is what Ohio's general fund now covers for you.</p></div>
+  <div class="ch ch1" data-ink="#D9A43A" data-lab="gas"><p class="k">1 · Your pump</p></div>
   <section class="sheet" aria-labelledby="h-tank">
       <div class="tankbox">
         <svg class="tank" id="tank" viewBox="0 0 240 300" role="img" aria-label="A fuel tank, filled to your tank size">
@@ -552,6 +591,7 @@ details.more ul.lk li{margin:4px 0}
       </div>
       <p class="say" id="say"></p>
     </section>
+  <p class="ch1-dek">Gold is what you pay. Teal is what Ohio's general fund now covers for you.</p>
   <details class="more"><summary>For your business: vehicles, gallons, savings</summary><div class="in" style="max-width:none"><section class="sheet biz" aria-labelledby="h-biz">
       <div class="sh"><h2 id="h-biz">For your business</h2></div>
       <div class="fields">
@@ -574,13 +614,14 @@ details.more ul.lk li{margin:4px 0}
     <li>Method: savings per gallon are the old rate minus the holiday rate (38.49¢ gas, 46.99¢ diesel); each fill-up assumes a full tank; a weekly habit repeats 90 ÷ 7 ≈ 12.9 times.</li>
   </ul></div></details>
 
-  <!-- 2 -->
-  <div class="ch" data-ink="#C77A2B" data-lab="the holiday"><p class="k">2 · The holiday</p><h2>Ninety days, October&nbsp;4 to January&nbsp;2.</h2><p class="dek">Right through the holidays. Here's how it works at the station.</p></div>
+    <!-- 2 -->
+  <div class="ch" data-ink="#C77A2B" data-lab="the holiday"><p class="k">2 · The holiday</p><h2>Ninety days, October&nbsp;4 to January&nbsp;2.</h2></div>
   <div class="strip seasons">
     <p class="swipe">Swipe the calendar →</p>
     <div class="daycount"><b id="dayN">Day 1</b><span id="dayS">of 90. 89 to go, through January 2.</span></div>
     <svg id="season" viewBox="0 0 1000 190" role="img" aria-label="Calendar from October 4, 2026 to January 2, 2027 with Halloween, Thanksgiving, Christmas and New Year's marked"></svg>
   </div>
+  <p class="ch2-dek">Right through the holidays. Here's how it works at the station.</p>
   <div class="strip" style="margin-top:18px">
     <div class="station">
       <svg class="art draw" id="stationArt" viewBox="0 0 440 300" role="img" aria-label="A line drawing of a gas station">
@@ -619,8 +660,87 @@ details.more ul.lk li{margin:4px 0}
     </ul>
   </div></details>
 
-  <!-- 3 -->
-  <div class="ch" data-ink="#2E6B4E" data-lab="the money"><p class="k">3 · The statehouse</p><h2>$725 million from the state's own fund covers the road money.</h2><p class="dek">Fuel tax pays for roads and bridges. The state set aside money from its general fund, so ODOT, cities, counties and townships still get paid, on the months the tax would have arrived.</p></div>
+    <!-- 3 (live 5) -->
+  <div class="ch" data-ink="#24897F" data-lab="the world"><p class="k">3 · The auction</p><p class="pull">"Oil markets are essentially a global auction. The highest bidder will win the available supply."</p><cite>U.S. Energy Information Administration</cite></div>
+  <div class="strip">
+        <p class="swipe">Swipe the map →</p><div class="map"><svg id="worldMap" role="img" aria-label="World map of the oil flows in the story"></svg><div class="legend2 legend3"><span><i style="border-color:#24897F"></i>Canada and the U.S. to Ohio</span><span><i style="border-color:#C77A2B"></i>Venezuela</span><span><i style="border-color:#8C5A3C"></i>Russia</span><span><i style="border-color:#8A949B"></i>Persian Gulf, about half blocked</span><span><i class="dot" style="background:none;border:2px solid #D9A43A"></i>Buyers bidding</span><span>Routes simplified</span></div></div>
+    <div class="wnote" id="wnote"><div><b>Every refinery bids for the same barrels.</b><span>Oil sells on one world market, so a shortage anywhere raises the price everywhere, including Ohio.</span></div>
+<div><b>A fifth of the world's oil went through Hormuz.</b><span>About 20 million barrels a day in 2024. Since Feb 28, about half of that has stopped.</span></div>
+<div><b>Venezuela's oil changed course.</b><span>After the U.S. lifted most sanctions in January, Venezuelan crude to the U.S. rose from 137,000 barrels a day to 701,000 by July, almost all of it to the Gulf Coast. Ohio refines none of it.</span></div>
+<div><b>The Americas pumped more.</b><span>The U.S., Canada, Brazil, Guyana and Argentina add about 1.4 million barrels a day this year, far short of what's missing from the Gulf.</span></div>
+<div><b>Canada sells Ohio its oil, through a tense year.</b><span>The U.S. put a 10% tariff on Canadian energy in March 2025. Even so, 90% of Canada's crude exports still came to the U.S. in 2025, and Line 5 keeps feeding Toledo's refineries.</span></div>
+<div><b>Russia's oil found new buyers.</b><span>After U.S. sanctions in October 2025 and the Hormuz shutdown, India bought a record 2.6 million barrels a day of Russian crude in July.</span></div>
+</div>
+    <details class="more wifold" id="wiFold"><summary>If the war ends: what changes, and how fast</summary><div class="in" style="max-width:none">
+      <div class="wfast"><span class="cap">How fast prices come back</span>
+        <p>In 2022, the U.S. average for regular gas peaked at <b>$5.01</b> a gallon the week of June&nbsp;13 and was back to <b>$3.09</b> the week of December&nbsp;26, about six months later.</p>
+        <p>Pump prices tend to rise fast and fall slowly: crude moves first, and refiners and stations pass a drop along more slowly than a rise, in part because they manage their stocks through price.</p>
+        <p>A St. Louis Fed study found that an expected 1% rise in oil lifted gas 0.52% within a week, while an expected 1% drop lowered it 0.24%.</p>
+      </div>
+      <div class="wi" id="wi">
+        <p class="lede">No one can promise a price. Here is what the record and the forecasters show.</p>
+        <p class="asay2">Before the war, about 20 million barrels a day moved through Hormuz. By May it was under 10. If the war ends, it won't snap back overnight: the IEA says "a full recovery will not be immediate," because mines must be cleared and supply chains rebuilt, and it expects most of the rebound in 2027.</p>
+        <div class="three">
+          <div class="pt"><span class="cap">It happened once already</span><span class="big">−52¢</span><p>In the three weeks after the mid-June deal to reopen the strait, Ohio's price fell 52¢, to <b>$3.56</b> on July 6. Prices had been easing since May on reports of a deal. The relief lasted about three weeks.</p></div>
+          <div class="pt"><span class="cap">Same agency, two forecasts</span><span class="big">57¢ apart</span><p>In July, with the strait open, the federal EIA expected Midwest gas to average <b>$3.17</b> this October to December. In September, assuming the strait stays constrained through year end, it expected <b>$3.74</b>. Two forecasts under different conditions.</p></div>
+          <div class="pt"><span class="cap">How fast it reaches the pump</span><span class="big">2.4¢</span><p>Each $1 change in a barrel of crude moves gas about 2.4¢ a gallon. About half shows up within two weeks and 80% within four. Pump prices fall more slowly than crude does.</p></div>
+        </div>
+        <div class="persp">
+          <span class="cap">How big is 38.5¢?</span>
+          <div class="pr"><span>The gas tax holiday</span><div class="tr"><div class="br h" style="width:67.5%"></div></div><b>38.5¢</b></div>
+          <div class="pr"><span>Ohio, three weeks after the June deal</span><div class="tr"><div class="br" style="width:91.2%"></div></div><b>52¢</b></div>
+          <div class="pr"><span>Between EIA's July and September forecasts</span><div class="tr"><div class="br" style="width:100%"></div></div><b>57¢</b></div>
+        </div>
+      </div>
+    </div></details>
+  </div>
+  <details class="more"><summary>Sources for this part</summary><div class="in"><ul class="lk">
+    <li>EIA, <a href="https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php" target="_blank" rel="noopener">Oil prices and outlook</a> (the "global auction" line).</li>
+    <li>EIA, <a href="https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&amp;s=EMM_EPMR_PTE_NUS_DPG&amp;f=W" target="_blank" rel="noopener">Weekly U.S. regular gasoline retail price</a>, all formulations ($5.006 the week of June 13, 2022; $3.091 the week of December 26, 2022).</li>
+    <li>Federal Reserve Bank of St. Louis, Michael T. Owyang and E. Katarina Vermann, <a href="https://www.stlouisfed.org/publications/regional-economist/october-2014/rockets-and-feathers-why-dont-gasoline-prices-always-move-in-sync-with-oil-prices" target="_blank" rel="noopener">"Rockets and Feathers: Why Don't Gasoline Prices Always Move in Sync with Oil Prices?"</a>, The Regional Economist, Oct 2014 (inventories, pricing, the 0.52% and 0.24% first-week responses).</li>
+    <li>EIA, <a href="https://www.eia.gov/todayinenergy/detail.php?id=65504" target="_blank" rel="noopener">Today in Energy, June 2025</a>: about 20 million barrels a day through the Strait of Hormuz in 2024, about 20% of global petroleum liquids consumption.</li>
+<li>Congressional Research Service, <a href="https://www.congress.gov/crs_external_products/IN/PDF/IN12637/IN12637.1.pdf" target="_blank" rel="noopener">Insight IN12637</a>, Jan 9, 2026 (the Jan 3 operation and Venezuela's acting government); U.S. Treasury general licenses 46 to 52, Jan to Mar 2026.</li>
+<li>EIA, <a href="https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&amp;s=MCRIMUSVE2&amp;f=M" target="_blank" rel="noopener">U.S. crude oil imports from Venezuela</a>, monthly (137 kb/d Dec 2025; 701 kb/d Jul 2026).</li>
+<li>IEA, <a href="https://www.iea.org/reports/oil-market-report-september-2026" target="_blank" rel="noopener">Oil Market Report, September 2026</a>: the U.S., Canada, Brazil, Guyana and Argentina add 1.4 mb/d in 2026.</li>
+<li>EIA, <a href="https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&amp;s=RBRTE&amp;f=W" target="_blank" rel="noopener">weekly Brent spot price</a> (about $71 before the war; weekly highs above $120).</li>
+<li>Map arcs show the flows in this story, simplified; they are not shipping routes.</li>
+<li>Congressional Research Service, <a href="https://www.congress.gov/crs_external_products/IF/PDF/IF12595/IF12595.31.pdf" target="_blank" rel="noopener">IF12595</a>, Mar 30, 2026 (tariffs on Canada, the 10% energy rate, USMCA exemptions).</li>
+<li>Canada Energy Regulator, <a href="https://www.cer-rec.gc.ca/en/data-analysis/energy-markets/market-snapshots/2026/market-snapshot-overview-of-2025-canada-us-energy-trade.html" target="_blank" rel="noopener">Overview of 2025 Canada–U.S. energy trade</a>, May 27, 2026 (90.1% of crude exports to the U.S.; Trans Mountain).</li>
+<li>Michigan Attorney General, <a href="https://www.michigan.gov/ag/news/press-releases/2026/04/22/us-supreme-court-unanimously-rules-ag-nessels-line-5-lawsuit" target="_blank" rel="noopener">Line 5 ruling</a>, Apr 22, 2026.</li>
+<li>gCaptain, <a href="https://gcaptain.com/u-s-treasury-sanctions-russias-largest-oil-companies-over-ukraine/" target="_blank" rel="noopener">Treasury sanctions Rosneft and Lukoil</a>, Oct 2025, and <a href="https://gcaptain.com/treasury-extends-russian-oil-waiver-as-hormuz-crisis-tightens-global-supplies/" target="_blank" rel="noopener">waiver for stranded Russian cargoes</a>, 2026.</li>
+<li>KSE Institute, <a href="https://institute.kse.ua/wp-content/uploads/2026/08/rot_eng_august_2026.pdf" target="_blank" rel="noopener">Russian Oil Tracker, August 2026</a> (India 2.6 mb/d in July; product exports at a record low); CREA, <a href="https://energyandcleanair.org/august-2026-monthly-analysis-of-russian-fossil-fuel-exports-and-sanctions/" target="_blank" rel="noopener">August 2026 analysis</a> (port strikes).</li>
+<li>IEA, <a href="https://www.iea.org/reports/oil-market-report-june-2026" target="_blank" rel="noopener">Oil Market Report, June 2026</a> ("a full recovery will not be immediate"; Hormuz flow fell to 9.6 mb/d in May) and <a href="https://www.iea.org/reports/oil-market-report-september-2026" target="_blank" rel="noopener">September 2026</a> (recovery deferred to 2027).</li>
+<li>EIA, Short-Term Energy Outlook, <a href="https://www.eia.gov/outlooks/steo/archives/jul26.pdf" target="_blank" rel="noopener">July 2026</a> (Midwest regular $3.17 for Oct to Dec with the strait open; "retail prices historically decrease more slowly than crude oil prices") and <a href="https://www.eia.gov/outlooks/steo/archives/sep26.pdf" target="_blank" rel="noopener">September 2026</a> ($3.74 with the strait constrained through year end).</li>
+<li>EIA, <a href="https://www.eia.gov/todayinenergy/detail.php?id=6850" target="_blank" rel="noopener">Today in Energy, June 26, 2012</a>: each $1 a barrel moves gasoline about 2.4¢ a gallon; about half within two weeks and 80% within four.</li>
+<li>EIA, <a href="https://www.eia.gov/todayinenergy/detail.php?id=67424" target="_blank" rel="noopener">Today in Energy, Apr 7, 2026</a> (the Feb 28 strikes and the strait's "de facto closure") and <a href="https://www.eia.gov/todayinenergy/detail.php?id=67865" target="_blank" rel="noopener">July 15, 2026</a> (the June deal, the late-June low, the renewed blockade).</li>
+
+  </ul></div></details>
+
+    <!-- 4 (live 6) -->
+  <div class="ch" data-ink="#1A1F24" data-lab="the barrel"><p class="k">4 · The barrel</p><h2>The barrel sets the price.</h2><p class="dek">Brent crude, the world's benchmark, the week before the war and the latest week. The holiday moves the pump 38.5¢; the barrel moves everything else.</p></div>
+  <section class="sheet pump" aria-labelledby="h-pump">
+    <div class="sh"><h2 id="h-pump">The price of a barrel</h2><span class="tag" id="pumpTag">Brent crude, weekly, EIA</span></div>
+    <div class="sb">
+      <div class="now">
+        <div><span class="cap" id="nowLbl">Before the war, week of Feb 27</span><div class="v" id="nowV">$71</div><p id="nowSub">a barrel of Brent crude.</p></div>
+        <div class="hol"><span class="cap" id="holLbl">Latest, week of Sep 25</span><div class="v" id="holV">$117</div><p id="holSub">a barrel. Up 64% since the war began.</p></div>
+      </div>
+      <p class="why"><b>Why prices are this high.</b> Since the Iran war began on February 28, about half the tankers through the Strait of Hormuz have stopped. Ohio's gas followed the barrel, from $2.89 to a peak of $4.78 in May. The holiday takes 38.5¢ off the price; the rest follows the world oil market.</p>
+      <details class="more" id="chartFold"><summary>Oil and pump prices, week by week, since 2020</summary><div class="in" style="max-width:none">
+      <p>A deal in mid-June reopened the strait for a few weeks; it frayed in July, and the U.S. blockade of Iranian oil returned. Beyond crude, a gallon carries refining and retail costs and the 18.4¢ federal tax.</p>
+      <div class="chartwrap">
+        <div class="seg" role="group" aria-label="Time range" style="margin:0 0 10px"><button type="button" id="rAll" aria-pressed="true">Since 2020</button><button type="button" id="r26" aria-pressed="false">2026</button></div>
+        <div class="legend"><span><i></i>Ohio</span><span><i class="us"></i>U.S. average</span><span><i style="background:#24897F"></i>Brent crude oil</span><span><i class="war"></i>Iran war, from Feb 28, 2026</span></div>
+        <svg id="pchart" viewBox="0 0 760 330" role="img" aria-label="Weekly Brent crude oil price and Ohio and U.S. regular gasoline prices since 2020"></svg>
+        <div class="tip" id="ptip"></div>
+      </div>
+      </div></details>
+      <p class="src" id="pumpSrc">Source: U.S. Energy Information Administration: weekly Brent crude spot price, and weekly retail regular gasoline for Ohio and the U.S. Gas prices are released every Monday. The war timeline follows EIA's <a href="https://www.eia.gov/todayinenergy/detail.php?id=67424" target="_blank" rel="noopener">Apr 7</a> and <a href="https://www.eia.gov/todayinenergy/detail.php?id=67865" target="_blank" rel="noopener">Jul 15, 2026</a> notes and its <a href="https://www.eia.gov/outlooks/steo/archives/sep26.pdf" target="_blank" rel="noopener">September outlook</a>.</p>
+    </div>
+  </section>
+    <!-- go deeper (live 3, 4) -->
+  <details class="more deeper" id="deeper"><summary>Go deeper: where the road money comes from, and where Ohio's oil comes from</summary><div class="deep-in">
+  <div class="ch" data-ink="#2E6B4E" data-lab="the money"><p class="k">The statehouse</p><h2>$725 million from the state's own fund covers the road money.</h2><p class="dek">Fuel tax pays for roads and bridges. The state set aside money from its general fund, so ODOT, cities, counties and townships still get paid, on the months the tax would have arrived.</p></div>
   <div class="strip flow">
     <p class="swipe">Swipe the chart →</p>
     <svg id="flowSvg" viewBox="0 0 1000 545" role="img" aria-label="Money flows from the Ohio Statehouse to road budgets between December and February"></svg>
@@ -647,8 +767,7 @@ details.more ul.lk li{margin:4px 0}
     <li>Ohio Legislative Budget Office, <a href="https://www.lsc.ohio.gov/assets/organizations/legislative-service-commission/files/fy-2026-budget-footnotes-july-2026.pdf" target="_blank" rel="noopener">Budget Footnotes, July 2026</a> and <a href="https://www.lsc.ohio.gov/assets/organizations/legislative-service-commission/files/infographics-budget-stabilization-fund-july-2026.pdf" target="_blank" rel="noopener">Budget Stabilization Fund, July 2026</a>.</li>
   </ul></div></details>
 
-  <!-- 4 -->
-  <div class="ch" data-ink="#1A1F24" data-lab="crude"><p class="k">4 · The refinery</p><h2>Ohio refines oil from Canada and the Midwest.</h2><p class="dek">Four refineries turn crude into the gas in your tank. Almost all of it arrives by pipeline.</p></div>
+    <div class="ch" data-ink="#1A1F24" data-lab="crude"><p class="k">The refinery</p><h2>Ohio refines oil from Canada and the Midwest.</h2><p class="dek">Four refineries turn crude into the gas in your tank. Almost all of it arrives by pipeline.</p></div>
   <div class="strip">
     <div class="mapwrap">
       <p class="swipe">Swipe the map →</p><div class="map"><svg id="ohioMap" role="img" aria-label="Map of Ohio with its four refineries and the main pipelines coming in"></svg>
@@ -684,77 +803,7 @@ details.more ul.lk li{margin:4px 0}
       <li>EIA, <a href="https://www.eia.gov/petroleum/gasdiesel/" target="_blank" rel="noopener">Gasoline and Diesel Fuel Update</a>, "What we pay for in a gallon," May 2026; <a href="https://www.eia.gov/energyexplained/gasoline/factors-affecting-gasoline-prices.php" target="_blank" rel="noopener">Factors affecting gasoline prices</a>.</li>
     </ul></div></details>
 
-  <!-- 5 -->
-  <div class="ch" data-ink="#24897F" data-lab="the world"><p class="k">5 · The auction</p><p class="pull">"Oil markets are essentially a global auction. The highest bidder will win the available supply."</p><cite>U.S. Energy Information Administration</cite></div>
-  <div class="strip">
-    <div class="wtoggle" role="group" aria-label="Show the world now or if the war ends"><button type="button" id="wNow" aria-pressed="true">Now</button><button type="button" id="wEnd" aria-pressed="false">What if the war ends?</button></div>
-    <p class="swipe">Swipe the map →</p><div class="map"><svg id="worldMap" role="img" aria-label="World map of the oil flows in the story"></svg><div class="legend2 legend3"><span><i style="border-color:#24897F"></i>Canada and the U.S. to Ohio</span><span><i style="border-color:#C77A2B"></i>Venezuela</span><span><i style="border-color:#8C5A3C"></i>Russia</span><span><i style="border-color:#8A949B"></i>Persian Gulf, about half blocked</span><span><i class="dot" style="background:none;border:2px solid #D9A43A"></i>Buyers bidding</span><span>Routes simplified</span></div></div>
-    <div class="wnote" id="wnote"><div><b>Every refinery bids for the same barrels.</b><span>Oil sells on one world market, so a shortage anywhere raises the price everywhere, including Ohio.</span></div>
-<div><b>A fifth of the world's oil went through Hormuz.</b><span>About 20 million barrels a day in 2024. Since Feb 28, about half of that has stopped.</span></div>
-<div><b>Venezuela's oil changed course.</b><span>After the U.S. lifted most sanctions in January, Venezuelan crude to the U.S. rose from 137,000 barrels a day to 701,000 by July, almost all of it to the Gulf Coast. Ohio refines none of it.</span></div>
-<div><b>The Americas pumped more.</b><span>The U.S., Canada, Brazil, Guyana and Argentina add about 1.4 million barrels a day this year, far short of what's missing from the Gulf.</span></div>
-<div><b>Canada sells Ohio its oil, through a tense year.</b><span>The U.S. put a 10% tariff on Canadian energy in March 2025. Even so, 90% of Canada's crude exports still came to the U.S. in 2025, and Line 5 keeps feeding Toledo's refineries.</span></div>
-<div><b>Russia's oil found new buyers.</b><span>After U.S. sanctions in October 2025 and the Hormuz shutdown, India bought a record 2.6 million barrels a day of Russian crude in July.</span></div>
-</div>
-    <div id="wiWrap" hidden><div class="wi" id="wi">
-        <p class="lede">No one can promise a price. Here is what the record and the forecasters show.</p>
-        <p class="asay2">Before the war, about 20 million barrels a day moved through Hormuz. By May it was under 10. If the war ends, it won't snap back overnight: the IEA says "a full recovery will not be immediate," because mines must be cleared and supply chains rebuilt, and it expects most of the rebound in 2027.</p>
-        <div class="three">
-          <div class="pt"><span class="cap">It happened once already</span><span class="big">−52¢</span><p>In the three weeks after the mid-June deal to reopen the strait, Ohio's price fell 52¢, to <b>$3.56</b> on July 6. Prices had been easing since May on reports of a deal. The relief lasted about three weeks.</p></div>
-          <div class="pt"><span class="cap">Same agency, two forecasts</span><span class="big">57¢ apart</span><p>In July, with the strait open, the federal EIA expected Midwest gas to average <b>$3.17</b> this October to December. In September, assuming the strait stays constrained through year end, it expected <b>$3.74</b>. Two forecasts under different conditions.</p></div>
-          <div class="pt"><span class="cap">How fast it reaches the pump</span><span class="big">2.4¢</span><p>Each $1 change in a barrel of crude moves gas about 2.4¢ a gallon. About half shows up within two weeks and 80% within four. Pump prices fall more slowly than crude does.</p></div>
-        </div>
-        <div class="persp">
-          <span class="cap">How big is 38.5¢?</span>
-          <div class="pr"><span>The gas tax holiday</span><div class="tr"><div class="br h" style="width:67.5%"></div></div><b>38.5¢</b></div>
-          <div class="pr"><span>Ohio, three weeks after the June deal</span><div class="tr"><div class="br" style="width:91.2%"></div></div><b>52¢</b></div>
-          <div class="pr"><span>Between EIA's July and September forecasts</span><div class="tr"><div class="br" style="width:100%"></div></div><b>57¢</b></div>
-        </div>
-      </div>
-</div>
-  </div>
-  <details class="more"><summary>Sources for this part</summary><div class="in"><ul class="lk">
-    <li>EIA, <a href="https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php" target="_blank" rel="noopener">Oil prices and outlook</a> (the "global auction" line).</li>
-    <li>EIA, <a href="https://www.eia.gov/todayinenergy/detail.php?id=65504" target="_blank" rel="noopener">Today in Energy, June 2025</a>: about 20 million barrels a day through the Strait of Hormuz in 2024, about 20% of global petroleum liquids consumption.</li>
-<li>Congressional Research Service, <a href="https://www.congress.gov/crs_external_products/IN/PDF/IN12637/IN12637.1.pdf" target="_blank" rel="noopener">Insight IN12637</a>, Jan 9, 2026 (the Jan 3 operation and Venezuela's acting government); U.S. Treasury general licenses 46 to 52, Jan to Mar 2026.</li>
-<li>EIA, <a href="https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&amp;s=MCRIMUSVE2&amp;f=M" target="_blank" rel="noopener">U.S. crude oil imports from Venezuela</a>, monthly (137 kb/d Dec 2025; 701 kb/d Jul 2026).</li>
-<li>IEA, <a href="https://www.iea.org/reports/oil-market-report-september-2026" target="_blank" rel="noopener">Oil Market Report, September 2026</a>: the U.S., Canada, Brazil, Guyana and Argentina add 1.4 mb/d in 2026.</li>
-<li>EIA, <a href="https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&amp;s=RBRTE&amp;f=W" target="_blank" rel="noopener">weekly Brent spot price</a> (about $71 before the war; weekly highs above $120).</li>
-<li>Map arcs show the flows in this story, simplified; they are not shipping routes.</li>
-<li>Congressional Research Service, <a href="https://www.congress.gov/crs_external_products/IF/PDF/IF12595/IF12595.31.pdf" target="_blank" rel="noopener">IF12595</a>, Mar 30, 2026 (tariffs on Canada, the 10% energy rate, USMCA exemptions).</li>
-<li>Canada Energy Regulator, <a href="https://www.cer-rec.gc.ca/en/data-analysis/energy-markets/market-snapshots/2026/market-snapshot-overview-of-2025-canada-us-energy-trade.html" target="_blank" rel="noopener">Overview of 2025 Canada–U.S. energy trade</a>, May 27, 2026 (90.1% of crude exports to the U.S.; Trans Mountain).</li>
-<li>Michigan Attorney General, <a href="https://www.michigan.gov/ag/news/press-releases/2026/04/22/us-supreme-court-unanimously-rules-ag-nessels-line-5-lawsuit" target="_blank" rel="noopener">Line 5 ruling</a>, Apr 22, 2026.</li>
-<li>gCaptain, <a href="https://gcaptain.com/u-s-treasury-sanctions-russias-largest-oil-companies-over-ukraine/" target="_blank" rel="noopener">Treasury sanctions Rosneft and Lukoil</a>, Oct 2025, and <a href="https://gcaptain.com/treasury-extends-russian-oil-waiver-as-hormuz-crisis-tightens-global-supplies/" target="_blank" rel="noopener">waiver for stranded Russian cargoes</a>, 2026.</li>
-<li>KSE Institute, <a href="https://institute.kse.ua/wp-content/uploads/2026/08/rot_eng_august_2026.pdf" target="_blank" rel="noopener">Russian Oil Tracker, August 2026</a> (India 2.6 mb/d in July; product exports at a record low); CREA, <a href="https://energyandcleanair.org/august-2026-monthly-analysis-of-russian-fossil-fuel-exports-and-sanctions/" target="_blank" rel="noopener">August 2026 analysis</a> (port strikes).</li>
-<li>IEA, <a href="https://www.iea.org/reports/oil-market-report-june-2026" target="_blank" rel="noopener">Oil Market Report, June 2026</a> ("a full recovery will not be immediate"; Hormuz flow fell to 9.6 mb/d in May) and <a href="https://www.iea.org/reports/oil-market-report-september-2026" target="_blank" rel="noopener">September 2026</a> (recovery deferred to 2027).</li>
-<li>EIA, Short-Term Energy Outlook, <a href="https://www.eia.gov/outlooks/steo/archives/jul26.pdf" target="_blank" rel="noopener">July 2026</a> (Midwest regular $3.17 for Oct to Dec with the strait open; "retail prices historically decrease more slowly than crude oil prices") and <a href="https://www.eia.gov/outlooks/steo/archives/sep26.pdf" target="_blank" rel="noopener">September 2026</a> ($3.74 with the strait constrained through year end).</li>
-<li>EIA, <a href="https://www.eia.gov/todayinenergy/detail.php?id=6850" target="_blank" rel="noopener">Today in Energy, June 26, 2012</a>: each $1 a barrel moves gasoline about 2.4¢ a gallon; about half within two weeks and 80% within four.</li>
-<li>EIA, <a href="https://www.eia.gov/todayinenergy/detail.php?id=67424" target="_blank" rel="noopener">Today in Energy, Apr 7, 2026</a> (the Feb 28 strikes and the strait's "de facto closure") and <a href="https://www.eia.gov/todayinenergy/detail.php?id=67865" target="_blank" rel="noopener">July 15, 2026</a> (the June deal, the late-June low, the renewed blockade).</li>
-
-  </ul></div></details>
-
-  <!-- 6 -->
-  <div class="ch" data-ink="#1A1F24" data-lab="the barrel"><p class="k">6 · The barrel</p><h2>The barrel sets the price.</h2><p class="dek">Brent crude, the world's benchmark, the week before the war and the latest week. The holiday moves the pump 38.5¢; the barrel moves everything else.</p></div>
-  <section class="sheet pump" aria-labelledby="h-pump">
-    <div class="sh"><h2 id="h-pump">The price of a barrel</h2><span class="tag" id="pumpTag">Brent crude, weekly, EIA</span></div>
-    <div class="sb">
-      <div class="now">
-        <div><span class="cap" id="nowLbl">Before the war, week of Feb 27</span><div class="v" id="nowV">$71</div><p id="nowSub">a barrel of Brent crude.</p></div>
-        <div class="hol"><span class="cap" id="holLbl">Latest, week of Sep 25</span><div class="v" id="holV">$117</div><p id="holSub">a barrel. Up 64% since the war began.</p></div>
-      </div>
-      <p class="why"><b>Why prices are this high.</b> Since the Iran war began on February 28, about half the tankers through the Strait of Hormuz have stopped. Ohio's gas followed the barrel, from $2.89 to a peak of $4.78 in May. The holiday takes 38.5¢ off the price; the rest follows the world oil market.</p>
-      <details class="more" id="chartFold"><summary>Oil and pump prices, week by week, since 2020</summary><div class="in" style="max-width:none">
-      <p>A deal in mid-June reopened the strait for a few weeks; it frayed in July, and the U.S. blockade of Iranian oil returned. Beyond crude, a gallon carries refining and retail costs and the 18.4¢ federal tax.</p>
-      <div class="chartwrap">
-        <div class="seg" role="group" aria-label="Time range" style="margin:0 0 10px"><button type="button" id="rAll" aria-pressed="true">Since 2020</button><button type="button" id="r26" aria-pressed="false">2026</button></div>
-        <div class="legend"><span><i></i>Ohio</span><span><i class="us"></i>U.S. average</span><span><i style="background:#24897F"></i>Brent crude oil</span><span><i class="war"></i>Iran war, from Feb 28, 2026</span></div>
-        <svg id="pchart" viewBox="0 0 760 330" role="img" aria-label="Weekly Brent crude oil price and Ohio and U.S. regular gasoline prices since 2020"></svg>
-        <div class="tip" id="ptip"></div>
-      </div>
-      </div></details>
-      <p class="src" id="pumpSrc">Source: U.S. Energy Information Administration: weekly Brent crude spot price, and weekly retail regular gasoline for Ohio and the U.S. Gas prices are released every Monday. The war timeline follows EIA's <a href="https://www.eia.gov/todayinenergy/detail.php?id=67424" target="_blank" rel="noopener">Apr 7</a> and <a href="https://www.eia.gov/todayinenergy/detail.php?id=67865" target="_blank" rel="noopener">Jul 15, 2026</a> notes and its <a href="https://www.eia.gov/outlooks/steo/archives/sep26.pdf" target="_blank" rel="noopener">September outlook</a>.</p>
-    </div>
-  </section>
+    </div></details>
   </div>
 
   <div class="bio">
@@ -762,6 +811,7 @@ details.more ul.lk li{margin:4px 0}
     <div>
       <p>Built by <b>Dustin Nimmo</b>, founder of <a href="https://dnsc.ai">DNSC</a> in West&nbsp;Chester, Ohio.</p>
       <p class="sm">Figures come from H.B. 519 as passed, the Legislative Service Commission and Budget Office, the Ohio Department of Taxation, the U.S. Energy Information Administration and the sources folded under each part. Last verified Oct 4, 2026. If a number here is wrong, say so and it will be fixed and noted.</p>
+    <p class="sm rev">Posted October 4, 2026 · Revised October 5, 2026, 8:20 PM: a shorter walk for the public; the statehouse and the refinery folded under Go deeper; the war question kept, with the record on how fast prices come back.</p>
       <p class="sm ai-twin">For AIs: <a href="index.md">this page as text</a> · <a href="/llms.txt">site index</a></p>
     </div>
   </div>
@@ -1030,7 +1080,7 @@ const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
     const y=Math.max(0,Math.min(r.height-40,mid-r.top));
     trav.style.top=y+'px';
     let cur=chs[0];
-    for(const c of chs){ if(c.getBoundingClientRect().top<mid+20) cur=c; }
+    for(const c of chs){ if(!c.getClientRects().length) continue; if(c.getBoundingClientRect().top<mid+20) cur=c; }
     P.setAttribute('fill',cur.dataset.ink); if(L.textContent!==cur.dataset.lab) L.textContent=cur.dataset.lab;
   }
   addEventListener('scroll',()=>{if(!raf) raf=requestAnimationFrame(place)},{passive:true});
@@ -1193,6 +1243,9 @@ function txt(parent,x,y,s,attrs){const t=el('text',Object.assign({x,y},attrs||{}
 })();
 /* the folded chart draws when it opens */
 (function(){const f=document.getElementById('chartFold'); if(f) f.addEventListener('toggle',()=>{if(f.open) drawPump()});})();
+
+/* public cut: the what-if fold redraws the map for the war-ends case while open */
+(function(){const f=document.getElementById('wiFold'); if(!f) return; f.addEventListener('toggle',()=>{window.worldState&&window.worldState(f.open)});})();
 
 </script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4cca1d9e1eab422b9abffe2ffd5a9399"}'></script><!-- End Cloudflare Web Analytics -->
