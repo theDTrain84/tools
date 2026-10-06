@@ -1,6 +1,6 @@
 # The Well, from DNSC: every page as text
 
-Generated Oct 4, 2026 from https://tools.dnsc.ai/. Index: https://tools.dnsc.ai/llms.txt
+Generated Oct 5, 2026 from https://tools.dnsc.ai/. Index: https://tools.dnsc.ai/llms.txt
 
 # The Well · DNSC
 
@@ -186,7 +186,7 @@ Want help putting these to work with your people?
 
 ---
 
-Source: https://tools.dnsc.ai/ · Generated from the page on Oct 4, 2026
+Source: https://tools.dnsc.ai/ · Generated from the page on Oct 5, 2026
 
 
 * * *
@@ -206,8 +206,6 @@ Free, from the public record
 Ohio took its 38.5¢ gas tax off every gallon for 90 days. Start with your own tank, then follow the oil from your pump to the price of a barrel.
 
 1 · Your pump
-
-Gold is what you pay. Teal is what Ohio's general fund now covers for you.
 
 [Chart: A fuel tank, filled to your tank size]
 
@@ -230,6 +228,8 @@ This fill-up really costs
 You pay
 
 Ohio pays
+
+Gold is what you pay. Teal is what Ohio's general fund now covers for you.
 
 **For your business: vehicles, gallons, savings**
 
@@ -260,13 +260,13 @@ Trucks that cross state lines pay Ohio's fuel use tax on the miles they drive in
 
 ### Ninety days, October 4 to January 2.
 
-Right through the holidays. Here's how it works at the station.
-
 Swipe the calendar →
 
 **Day 1** of 90. 89 to go, through January 2.
 
 [Chart: Calendar from October 4, 2026 to January 2, 2027 with Halloween, Thanksgiving, Christmas and New Year's marked]
+
+Right through the holidays. Here's how it works at the station.
 
 [Chart: A line drawing of a gas station]
 
@@ -298,7 +298,130 @@ Swipe the calendar →
 - Ohio General Assembly, [H.B. 519 status](https://www.legislature.ohio.gov/legislation/136/hb519/status).
 - U.S. Energy Information Administration, [federal fuel taxes](https://www.eia.gov/tools/faqs/faq.php?id=10&t=10).
 
-3 · The statehouse
+3 · The auction
+
+"Oil markets are essentially a global auction. The highest bidder will win the available supply."
+
+*U.S. Energy Information Administration*
+
+Swipe the map →
+
+[Chart: World map of the oil flows in the story]
+
+Canada and the U.S. to Ohio · Venezuela · Russia · Persian Gulf, about half blocked · Buyers bidding · Routes simplified
+
+**Every refinery bids for the same barrels.** Oil sells on one world market, so a shortage anywhere raises the price everywhere, including Ohio.
+
+**A fifth of the world's oil went through Hormuz.** About 20 million barrels a day in 2024. Since Feb 28, about half of that has stopped.
+
+**Venezuela's oil changed course.** After the U.S. lifted most sanctions in January, Venezuelan crude to the U.S. rose from 137,000 barrels a day to 701,000 by July, almost all of it to the Gulf Coast. Ohio refines none of it.
+
+**The Americas pumped more.** The U.S., Canada, Brazil, Guyana and Argentina add about 1.4 million barrels a day this year, far short of what's missing from the Gulf.
+
+**Canada sells Ohio its oil, through a tense year.** The U.S. put a 10% tariff on Canadian energy in March 2025. Even so, 90% of Canada's crude exports still came to the U.S. in 2025, and Line 5 keeps feeding Toledo's refineries.
+
+**Russia's oil found new buyers.** After U.S. sanctions in October 2025 and the Hormuz shutdown, India bought a record 2.6 million barrels a day of Russian crude in July.
+
+**If the war ends: what changes, and how fast**
+
+How fast prices come back
+
+In 2022, the U.S. average for regular gas peaked at **$5.01** a gallon the week of June 13 and was back to **$3.09** the week of December 26, about six months later.
+
+Pump prices tend to rise fast and fall slowly: crude moves first, and refiners and stations pass a drop along more slowly than a rise, in part because they manage their stocks through price.
+
+A St. Louis Fed study found that an expected 1% rise in oil lifted gas 0.52% within a week, while an expected 1% drop lowered it 0.24%.
+
+No one can promise a price. Here is what the record and the forecasters show.
+
+Before the war, about 20 million barrels a day moved through Hormuz. By May it was under 10. If the war ends, it won't snap back overnight: the IEA says "a full recovery will not be immediate," because mines must be cleared and supply chains rebuilt, and it expects most of the rebound in 2027.
+
+It happened once already · −52¢
+
+In the three weeks after the mid-June deal to reopen the strait, Ohio's price fell 52¢, to **$3.56** on July 6. Prices had been easing since May on reports of a deal. The relief lasted about three weeks.
+
+Same agency, two forecasts · 57¢ apart
+
+In July, with the strait open, the federal EIA expected Midwest gas to average **$3.17** this October to December. In September, assuming the strait stays constrained through year end, it expected **$3.74**. Two forecasts under different conditions.
+
+How fast it reaches the pump · 2.4¢
+
+Each $1 change in a barrel of crude moves gas about 2.4¢ a gallon. About half shows up within two weeks and 80% within four. Pump prices fall more slowly than crude does.
+
+How big is 38.5¢?
+
+The gas tax holiday
+
+**38.5¢**
+
+Ohio, three weeks after the June deal
+
+**52¢**
+
+Between EIA's July and September forecasts
+
+**57¢**
+
+**Sources for this part**
+
+- EIA, [Oil prices and outlook](https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php) (the "global auction" line).
+- EIA, [Weekly U.S. regular gasoline retail price](https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=EMM_EPMR_PTE_NUS_DPG&f=W), all formulations ($5.006 the week of June 13, 2022; $3.091 the week of December 26, 2022).
+- Federal Reserve Bank of St. Louis, Michael T. Owyang and E. Katarina Vermann, ["Rockets and Feathers: Why Don't Gasoline Prices Always Move in Sync with Oil Prices?"](https://www.stlouisfed.org/publications/regional-economist/october-2014/rockets-and-feathers-why-dont-gasoline-prices-always-move-in-sync-with-oil-prices), The Regional Economist, Oct 2014 (inventories, pricing, the 0.52% and 0.24% first-week responses).
+- EIA, [Today in Energy, June 2025](https://www.eia.gov/todayinenergy/detail.php?id=65504): about 20 million barrels a day through the Strait of Hormuz in 2024, about 20% of global petroleum liquids consumption.
+- Congressional Research Service, [Insight IN12637](https://www.congress.gov/crs_external_products/IN/PDF/IN12637/IN12637.1.pdf), Jan 9, 2026 (the Jan 3 operation and Venezuela's acting government); U.S. Treasury general licenses 46 to 52, Jan to Mar 2026.
+- EIA, [U.S. crude oil imports from Venezuela](https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=MCRIMUSVE2&f=M), monthly (137 kb/d Dec 2025; 701 kb/d Jul 2026).
+- IEA, [Oil Market Report, September 2026](https://www.iea.org/reports/oil-market-report-september-2026): the U.S., Canada, Brazil, Guyana and Argentina add 1.4 mb/d in 2026.
+- EIA, [weekly Brent spot price](https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RBRTE&f=W) (about $71 before the war; weekly highs above $120).
+- Map arcs show the flows in this story, simplified; they are not shipping routes.
+- Congressional Research Service, [IF12595](https://www.congress.gov/crs_external_products/IF/PDF/IF12595/IF12595.31.pdf), Mar 30, 2026 (tariffs on Canada, the 10% energy rate, USMCA exemptions).
+- Canada Energy Regulator, [Overview of 2025 Canada–U.S. energy trade](https://www.cer-rec.gc.ca/en/data-analysis/energy-markets/market-snapshots/2026/market-snapshot-overview-of-2025-canada-us-energy-trade.html), May 27, 2026 (90.1% of crude exports to the U.S.; Trans Mountain).
+- Michigan Attorney General, [Line 5 ruling](https://www.michigan.gov/ag/news/press-releases/2026/04/22/us-supreme-court-unanimously-rules-ag-nessels-line-5-lawsuit), Apr 22, 2026.
+- gCaptain, [Treasury sanctions Rosneft and Lukoil](https://gcaptain.com/u-s-treasury-sanctions-russias-largest-oil-companies-over-ukraine/), Oct 2025, and [waiver for stranded Russian cargoes](https://gcaptain.com/treasury-extends-russian-oil-waiver-as-hormuz-crisis-tightens-global-supplies/), 2026.
+- KSE Institute, [Russian Oil Tracker, August 2026](https://institute.kse.ua/wp-content/uploads/2026/08/rot_eng_august_2026.pdf) (India 2.6 mb/d in July; product exports at a record low); CREA, [August 2026 analysis](https://energyandcleanair.org/august-2026-monthly-analysis-of-russian-fossil-fuel-exports-and-sanctions/) (port strikes).
+- IEA, [Oil Market Report, June 2026](https://www.iea.org/reports/oil-market-report-june-2026) ("a full recovery will not be immediate"; Hormuz flow fell to 9.6 mb/d in May) and [September 2026](https://www.iea.org/reports/oil-market-report-september-2026) (recovery deferred to 2027).
+- EIA, Short-Term Energy Outlook, [July 2026](https://www.eia.gov/outlooks/steo/archives/jul26.pdf) (Midwest regular $3.17 for Oct to Dec with the strait open; "retail prices historically decrease more slowly than crude oil prices") and [September 2026](https://www.eia.gov/outlooks/steo/archives/sep26.pdf) ($3.74 with the strait constrained through year end).
+- EIA, [Today in Energy, June 26, 2012](https://www.eia.gov/todayinenergy/detail.php?id=6850): each $1 a barrel moves gasoline about 2.4¢ a gallon; about half within two weeks and 80% within four.
+- EIA, [Today in Energy, Apr 7, 2026](https://www.eia.gov/todayinenergy/detail.php?id=67424) (the Feb 28 strikes and the strait's "de facto closure") and [July 15, 2026](https://www.eia.gov/todayinenergy/detail.php?id=67865) (the June deal, the late-June low, the renewed blockade).
+
+4 · The barrel
+
+### The barrel sets the price.
+
+Brent crude, the world's benchmark, the week before the war and the latest week. The holiday moves the pump 38.5¢; the barrel moves everything else.
+
+### The price of a barrel
+
+Brent crude, weekly, EIA
+
+Before the war, week of Feb 27
+
+$71
+
+a barrel of Brent crude.
+
+Latest, week of Sep 25
+
+$117
+
+a barrel. Up 64% since the war began.
+
+**Why prices are this high.** Since the Iran war began on February 28, about half the tankers through the Strait of Hormuz have stopped. Ohio's gas followed the barrel, from $2.89 to a peak of $4.78 in May. The holiday takes 38.5¢ off the price; the rest follows the world oil market.
+
+**Oil and pump prices, week by week, since 2020**
+
+A deal in mid-June reopened the strait for a few weeks; it frayed in July, and the U.S. blockade of Iranian oil returned. Beyond crude, a gallon carries refining and retail costs and the 18.4¢ federal tax.
+
+A choice (Time range): Since 2020, 2026.
+
+Ohio · U.S. average · Brent crude oil · Iran war, from Feb 28, 2026
+
+[Chart: Weekly Brent crude oil price and Ohio and U.S. regular gasoline prices since 2020]
+
+Source: U.S. Energy Information Administration: weekly Brent crude spot price, and weekly retail regular gasoline for Ohio and the U.S. Gas prices are released every Monday. The war timeline follows EIA's [Apr 7](https://www.eia.gov/todayinenergy/detail.php?id=67424) and [Jul 15, 2026](https://www.eia.gov/todayinenergy/detail.php?id=67865) notes and its [September outlook](https://www.eia.gov/outlooks/steo/archives/sep26.pdf).
+
+**Go deeper: where the road money comes from, where Ohio's oil comes from, and what a federal pause would add**
+
+The statehouse
 
 ### $725 million from the state's own fund covers the road money.
 
@@ -355,7 +478,7 @@ The general fund's money left over at year end, after bills already promised, wa
 - Ohio Legislative Service Commission, [Bill Analysis, H.B. 519](https://www.legislature.ohio.gov/download?key=28854) (the 65% and 55% splits).
 - Ohio Legislative Budget Office, [Budget Footnotes, July 2026](https://www.lsc.ohio.gov/assets/organizations/legislative-service-commission/files/fy-2026-budget-footnotes-july-2026.pdf) and [Budget Stabilization Fund, July 2026](https://www.lsc.ohio.gov/assets/organizations/legislative-service-commission/files/infographics-budget-stabilization-fund-july-2026.pdf).
 
-4 · The refinery
+The refinery
 
 ### Ohio refines oil from Canada and the Midwest.
 
@@ -402,124 +525,35 @@ EIA lists Ohio's crude sources as Canada, the Midcontinent, North Dakota, the Ap
 - Energy Transfer, [Mid-Valley Pipeline tariff](https://commoncarrier.energytransfer.com/InfoPost/CommonCarriers/resources/MVPL/Tariffs/MVPL_FERC_483.23.0.pdf); Enbridge, [Stockbridge Terminal](https://www.enbridge.com/~/media/Enb/Documents/Factsheets/FS_ENB_Stockbridge_Terminal.pdf).
 - EIA, [Gasoline and Diesel Fuel Update](https://www.eia.gov/petroleum/gasdiesel/), "What we pay for in a gallon," May 2026; [Factors affecting gasoline prices](https://www.eia.gov/energyexplained/gasoline/factors-affecting-gasoline-prices.php).
 
-5 · The auction
+If Washington follows Ohio
 
-"Oil markets are essentially a global auction. The highest bidder will win the available supply."
+### A federal pause would take 18.4¢ more off every gallon.
 
-*U.S. Energy Information Administration*
+After Ohio's pause took effect, Sen. Bernie Moreno wrote: "Now it's time for the Federal Government to follow suit with a temporary suspension!" Here is what that would mean, from the record.
 
-A choice (Show the world now or if the war ends): Now, What if the war ends?
+The federal tax is 18.4¢ on gasoline and 24.4¢ on diesel, unchanged since 1993. On a 15-gallon tank that is $2.76 a fill, on top of Ohio's $5.77, while both ran. When Maryland, Georgia and Connecticut paused their state taxes in 2022, 65 to 87 percent of the cut reached the pump, so about two dollars of the $2.76 would likely show up.
 
-Swipe the map →
+Every federal fuel-tax dollar goes to the Highway Trust Fund, which pays for roads and transit. A three-month pause was scored at about $10 billion in 2022. The fund already cannot cover itself: the 2021 infrastructure law moved $118 billion from the general fund into it, and the Congressional Budget Office projects it runs short again by 2028. A suspension means Congress backfills from general revenue, or the fund runs shorter. Ohio did the same in miniature, with $725 million from its own general fund.
 
-[Chart: World map of the oil flows in the story]
-
-Canada and the U.S. to Ohio · Venezuela · Russia · Persian Gulf, about half blocked · Buyers bidding · Routes simplified
-
-**Every refinery bids for the same barrels.** Oil sells on one world market, so a shortage anywhere raises the price everywhere, including Ohio.
-
-**A fifth of the world's oil went through Hormuz.** About 20 million barrels a day in 2024. Since Feb 28, about half of that has stopped.
-
-**Venezuela's oil changed course.** After the U.S. lifted most sanctions in January, Venezuelan crude to the U.S. rose from 137,000 barrels a day to 701,000 by July, almost all of it to the Gulf Coast. Ohio refines none of it.
-
-**The Americas pumped more.** The U.S., Canada, Brazil, Guyana and Argentina add about 1.4 million barrels a day this year, far short of what's missing from the Gulf.
-
-**Canada sells Ohio its oil, through a tense year.** The U.S. put a 10% tariff on Canadian energy in March 2025. Even so, 90% of Canada's crude exports still came to the U.S. in 2025, and Line 5 keeps feeding Toledo's refineries.
-
-**Russia's oil found new buyers.** After U.S. sanctions in October 2025 and the Hormuz shutdown, India bought a record 2.6 million barrels a day of Russian crude in July.
-
-No one can promise a price. Here is what the record and the forecasters show.
-
-Before the war, about 20 million barrels a day moved through Hormuz. By May it was under 10. If the war ends, it won't snap back overnight: the IEA says "a full recovery will not be immediate," because mines must be cleared and supply chains rebuilt, and it expects most of the rebound in 2027.
-
-It happened once already · −52¢
-
-In the three weeks after the mid-June deal to reopen the strait, Ohio's price fell 52¢, to **$3.56** on July 6. Prices had been easing since May on reports of a deal. The relief lasted about three weeks.
-
-Same agency, two forecasts · 57¢ apart
-
-In July, with the strait open, the federal EIA expected Midwest gas to average **$3.17** this October to December. In September, assuming the strait stays constrained through year end, it expected **$3.74**. Two forecasts under different conditions.
-
-How fast it reaches the pump · 2.4¢
-
-Each $1 change in a barrel of crude moves gas about 2.4¢ a gallon. About half shows up within two weeks and 80% within four. Pump prices fall more slowly than crude does.
-
-How big is 38.5¢?
-
-The gas tax holiday
-
-**38.5¢**
-
-Ohio, three weeks after the June deal
-
-**52¢**
-
-Between EIA's July and September forecasts
-
-**57¢**
+It takes an act of Congress. The President said in May he intended to suspend the tax; bills from both parties have been introduced since.
 
 **Sources for this part**
 
-- EIA, [Oil prices and outlook](https://www.eia.gov/energyexplained/oil-and-petroleum-products/prices-and-outlook.php) (the "global auction" line).
-- EIA, [Today in Energy, June 2025](https://www.eia.gov/todayinenergy/detail.php?id=65504): about 20 million barrels a day through the Strait of Hormuz in 2024, about 20% of global petroleum liquids consumption.
-- Congressional Research Service, [Insight IN12637](https://www.congress.gov/crs_external_products/IN/PDF/IN12637/IN12637.1.pdf), Jan 9, 2026 (the Jan 3 operation and Venezuela's acting government); U.S. Treasury general licenses 46 to 52, Jan to Mar 2026.
-- EIA, [U.S. crude oil imports from Venezuela](https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=MCRIMUSVE2&f=M), monthly (137 kb/d Dec 2025; 701 kb/d Jul 2026).
-- IEA, [Oil Market Report, September 2026](https://www.iea.org/reports/oil-market-report-september-2026): the U.S., Canada, Brazil, Guyana and Argentina add 1.4 mb/d in 2026.
-- EIA, [weekly Brent spot price](https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RBRTE&f=W) (about $71 before the war; weekly highs above $120).
-- Map arcs show the flows in this story, simplified; they are not shipping routes.
-- Congressional Research Service, [IF12595](https://www.congress.gov/crs_external_products/IF/PDF/IF12595/IF12595.31.pdf), Mar 30, 2026 (tariffs on Canada, the 10% energy rate, USMCA exemptions).
-- Canada Energy Regulator, [Overview of 2025 Canada–U.S. energy trade](https://www.cer-rec.gc.ca/en/data-analysis/energy-markets/market-snapshots/2026/market-snapshot-overview-of-2025-canada-us-energy-trade.html), May 27, 2026 (90.1% of crude exports to the U.S.; Trans Mountain).
-- Michigan Attorney General, [Line 5 ruling](https://www.michigan.gov/ag/news/press-releases/2026/04/22/us-supreme-court-unanimously-rules-ag-nessels-line-5-lawsuit), Apr 22, 2026.
-- gCaptain, [Treasury sanctions Rosneft and Lukoil](https://gcaptain.com/u-s-treasury-sanctions-russias-largest-oil-companies-over-ukraine/), Oct 2025, and [waiver for stranded Russian cargoes](https://gcaptain.com/treasury-extends-russian-oil-waiver-as-hormuz-crisis-tightens-global-supplies/), 2026.
-- KSE Institute, [Russian Oil Tracker, August 2026](https://institute.kse.ua/wp-content/uploads/2026/08/rot_eng_august_2026.pdf) (India 2.6 mb/d in July; product exports at a record low); CREA, [August 2026 analysis](https://energyandcleanair.org/august-2026-monthly-analysis-of-russian-fossil-fuel-exports-and-sanctions/) (port strikes).
-- IEA, [Oil Market Report, June 2026](https://www.iea.org/reports/oil-market-report-june-2026) ("a full recovery will not be immediate"; Hormuz flow fell to 9.6 mb/d in May) and [September 2026](https://www.iea.org/reports/oil-market-report-september-2026) (recovery deferred to 2027).
-- EIA, Short-Term Energy Outlook, [July 2026](https://www.eia.gov/outlooks/steo/archives/jul26.pdf) (Midwest regular $3.17 for Oct to Dec with the strait open; "retail prices historically decrease more slowly than crude oil prices") and [September 2026](https://www.eia.gov/outlooks/steo/archives/sep26.pdf) ($3.74 with the strait constrained through year end).
-- EIA, [Today in Energy, June 26, 2012](https://www.eia.gov/todayinenergy/detail.php?id=6850): each $1 a barrel moves gasoline about 2.4¢ a gallon; about half within two weeks and 80% within four.
-- EIA, [Today in Energy, Apr 7, 2026](https://www.eia.gov/todayinenergy/detail.php?id=67424) (the Feb 28 strikes and the strait's "de facto closure") and [July 15, 2026](https://www.eia.gov/todayinenergy/detail.php?id=67865) (the June deal, the late-June low, the renewed blockade).
-
-6 · The barrel
-
-### The barrel sets the price.
-
-Brent crude, the world's benchmark, the week before the war and the latest week. The holiday moves the pump 38.5¢; the barrel moves everything else.
-
-### The price of a barrel
-
-Brent crude, weekly, EIA
-
-Before the war, week of Feb 27
-
-$71
-
-a barrel of Brent crude.
-
-Latest, week of Sep 25
-
-$117
-
-a barrel. Up 64% since the war began.
-
-**Why prices are this high.** Since the Iran war began on February 28, about half the tankers through the Strait of Hormuz have stopped. Ohio's gas followed the barrel, from $2.89 to a peak of $4.78 in May. The holiday takes 38.5¢ off the price; the rest follows the world oil market.
-
-**Oil and pump prices, week by week, since 2020**
-
-A deal in mid-June reopened the strait for a few weeks; it frayed in July, and the U.S. blockade of Iranian oil returned. Beyond crude, a gallon carries refining and retail costs and the 18.4¢ federal tax.
-
-A choice (Time range): Since 2020, 2026.
-
-Ohio · U.S. average · Brent crude oil · Iran war, from Feb 28, 2026
-
-[Chart: Weekly Brent crude oil price and Ohio and U.S. regular gasoline prices since 2020]
-
-Source: U.S. Energy Information Administration: weekly Brent crude spot price, and weekly retail regular gasoline for Ohio and the U.S. Gas prices are released every Monday. The war timeline follows EIA's [Apr 7](https://www.eia.gov/todayinenergy/detail.php?id=67424) and [Jul 15, 2026](https://www.eia.gov/todayinenergy/detail.php?id=67865) notes and its [September outlook](https://www.eia.gov/outlooks/steo/archives/sep26.pdf).
+- Yahoo News, [Ohio Senator calls for federal gas tax relief](https://www.yahoo.com/news/politics/articles/ohio-senator-calls-federal-gas-103000479.html) (Moreno's post, Oct 2026).
+- Thomson Reuters, [GOP lawmakers, Trump push proposals to suspend federal gas tax](https://tax.thomsonreuters.com/news/gop-lawmakers-trump-push-proposals-to-suspend-federal-gas-tax/) (the 2026 bills; the May statement).
+- The Bond Buyer, [Biden pushes federal gas tax holiday](https://bondbuyer.com/news/biden-pushes-federal-gas-tax-holiday) (2022: three months, about $10 billion to the Highway Trust Fund).
+- Penn Wharton Budget Model via The Philadelphia Inquirer, [Your savings from a summer gas tax holiday](https://www.inquirer.com/news/gas-tax-holiday-summer-saves-penn-wharton-budget-model-20220624.html) (pass-through in Maryland, Georgia, Connecticut, 2022).
+- Congressional Research Service, [Funding and Financing Highways and Public Transportation](https://www.everycrsreport.com/files/2023-05-24_R47573_2fdd993640445d646286ecfe0df6cc5570d409a6.html) ($118 billion general-fund transfer under the 2021 law; 2028 shortfall).
 
 Built by **Dustin Nimmo**, founder of [DNSC](https://dnsc.ai) in West Chester, Ohio.
 
 Figures come from H.B. 519 as passed, the Legislative Service Commission and Budget Office, the Ohio Department of Taxation, the U.S. Energy Information Administration and the sources folded under each part. Last verified Oct 4, 2026. If a number here is wrong, say so and it will be fixed and noted.
 
+Posted October 4, 2026 · Revised October 5, 2026, 9:40 PM: a shorter walk for the public; the statehouse and the refinery folded under Go deeper, with a card on what a federal pause would add; the war question kept, with the record on how fast prices come back.
+
 ---
 
-Source: https://tools.dnsc.ai/gas-tax/ · Generated from the page on Oct 4, 2026
+Source: https://tools.dnsc.ai/gas-tax/ · Generated from the page on Oct 5, 2026
 
 
 * * *
@@ -1032,7 +1066,7 @@ Company logos are trademarks of their owners, used here to identify them.
 
 ---
 
-Source: https://tools.dnsc.ai/civic/the-table/ · Generated from the page on Oct 4, 2026
+Source: https://tools.dnsc.ai/civic/the-table/ · Generated from the page on Oct 5, 2026
 
 
 * * *
@@ -1378,7 +1412,7 @@ Last verified Oct 4, 2026. If a fact here is wrong, say so and it will be fixed 
 
 ---
 
-Source: https://tools.dnsc.ai/civic/task-force/ · Generated from the page on Oct 4, 2026
+Source: https://tools.dnsc.ai/civic/task-force/ · Generated from the page on Oct 5, 2026
 
 
 * * *
@@ -1439,17 +1473,15 @@ The district's own forecast shows its general fund cash going negative in FY2030
 
 Source: Lakota Five-Year Forecast and its notes (including the FY2025 transfers), approved by the board Aug 24, 2026. FY2027 on are projections.[4]
 
-#### What the district's forecast assumes
+#### What the forecast assumes
 
-**Operating levy in the forecast.** 3.6 mills, assumed to pass in 2028 and collected from 2029.
+**The levy.** 3.6 mills, passing in 2028 and collected from 2029. Not filed and on no ballot as of Oct 2, 2026.
 
-**What it would raise.** $11.3 million in FY2029 and $21.8 million in FY2030, in the forecasts approved Feb 23 and Aug 24, 2026.
+**What it would raise.** $11.3 million in FY2029, $21.8 million in FY2030.
 
-**On this home, per year.** 3.6 mills on 35 percent of the appraised value, before credits. The same whether Issue 2 passes or fails.
+**On this home, per year.** On 35 percent of the appraised value, before credits. The same whether Issue 2 passes or fails.
 
-**Status.** On no ballot and not filed, as of Oct 2, 2026. The treasurer's notes say savings from the facilities plan could reduce or remove the need for it.
-
-Sources: Lakota Five-Year Forecasts, approved Feb 23 and Aug 24, 2026.[4]
+Sources: Lakota Five-Year Forecasts, Feb 23 and Aug 24, 2026.[4]
 
 ### Where your whole bill goes
 
@@ -1514,7 +1546,7 @@ Verified **The credits are changing under state law.** The 10 percent non-busine
 11. Ohio General Assembly, [House Bill 96 status](https://www.legislature.ohio.gov/legislation/136/hb96/status) (veto item passed notwithstanding the Governor's objections, House July 21 and Senate Oct 1, 2025) and [House Bill 186](https://www.legislature.ohio.gov/legislation/136/hb186) (signed Dec 19, 2025; effective March 20, 2026).
 12. Butler County Board of Elections, [**November 4, 2025 General Election results**](https://liveresults.boe.ohio.gov/ENR/butlerohenr/22/en/Index_22.html) (Lakota Local School Issue 10: 12,068 for, 18,718 against, 76 of 76 precincts).
 
-Last verified Oct 2, 2026. Corrections: if a number here is wrong, the page changes and says what changed. Built from public records by a resident; the county treasurer's bill is always the record.
+Last verified Oct 2, 2026. Corrections: if a number here is wrong, the page changes and says what changed. Built from public records by a resident; the county treasurer's bill is always the record. An independent project, built from public records; no campaign or political organization paid for it or directs it. It provides information only and does not endorse or oppose any ballot measure. Figures are estimates based on publicly available data and may not reflect every factor that affects an individual parcel, such as exemptions, credits or special assessments. Contact the Butler County Auditor’s office for your exact tax amount.
 
 **How this bond came to be**
 
@@ -1547,7 +1579,7 @@ Ohio taxes **35 percent** of a home's appraised value. West Chester Township hom
 
 ---
 
-Source: https://tools.dnsc.ai/follow-the-money/ · Generated from the page on Oct 4, 2026
+Source: https://tools.dnsc.ai/follow-the-money/ · Generated from the page on Oct 5, 2026
 
 
 * * *
@@ -1796,7 +1828,7 @@ Last verified Oct 4, 2026. Medical facts here are summaries of research, not med
 
 ---
 
-Source: https://tools.dnsc.ai/cannabis/ · Generated from the page on Oct 4, 2026
+Source: https://tools.dnsc.ai/cannabis/ · Generated from the page on Oct 5, 2026
 
 
 * * *
@@ -1833,7 +1865,7 @@ Tap a square, or click it, and type. Tap again to turn between across and down. 
 
 ---
 
-Source: https://tools.dnsc.ai/well/sunday-edition/ · Generated from the page on Oct 4, 2026
+Source: https://tools.dnsc.ai/well/sunday-edition/ · Generated from the page on Oct 5, 2026
 
 
 * * *
@@ -1874,7 +1906,7 @@ Type a five letter word and press Enter. Blue means the right letter in the righ
 
 ---
 
-Source: https://tools.dnsc.ai/well/one-word-advanced/ · Generated from the page on Oct 4, 2026
+Source: https://tools.dnsc.ai/well/one-word-advanced/ · Generated from the page on Oct 5, 2026
 
 
 * * *
@@ -1909,7 +1941,7 @@ Tap a square, or click it, and type. Tap again to turn between across and down. 
 
 ---
 
-Source: https://tools.dnsc.ai/well/daily-line/ · Generated from the page on Oct 4, 2026
+Source: https://tools.dnsc.ai/well/daily-line/ · Generated from the page on Oct 5, 2026
 
 
 * * *
@@ -1944,7 +1976,7 @@ Tap a square, or click it, and type. Tap again to turn between across and down. 
 
 ---
 
-Source: https://tools.dnsc.ai/well/morning-edition/ · Generated from the page on Oct 4, 2026
+Source: https://tools.dnsc.ai/well/morning-edition/ · Generated from the page on Oct 5, 2026
 
 
 * * *
@@ -1985,7 +2017,7 @@ Type a five letter word and press Enter. Blue means the right letter in the righ
 
 ---
 
-Source: https://tools.dnsc.ai/well/one-word/ · Generated from the page on Oct 4, 2026
+Source: https://tools.dnsc.ai/well/one-word/ · Generated from the page on Oct 5, 2026
 
 
 * * *
@@ -2018,7 +2050,7 @@ Pick four cards that belong to the same move and press Submit. Three right shows
 
 ---
 
-Source: https://tools.dnsc.ai/well/five-moves/ · Generated from the page on Oct 4, 2026
+Source: https://tools.dnsc.ai/well/five-moves/ · Generated from the page on Oct 5, 2026
 
 
 * * *
@@ -2055,7 +2087,7 @@ Kept only in this browser. Come back tomorrow; the ring will be empty again.
 
 ---
 
-Source: https://tools.dnsc.ai/well/walk-in/ · Generated from the page on Oct 4, 2026
+Source: https://tools.dnsc.ai/well/walk-in/ · Generated from the page on Oct 5, 2026
 
 
 * * *
@@ -2117,7 +2149,7 @@ Nothing you write here is saved or sent. It lives on the leaf until the water ta
 
 ---
 
-Source: https://tools.dnsc.ai/well/river/ · Generated from the page on Oct 4, 2026
+Source: https://tools.dnsc.ai/well/river/ · Generated from the page on Oct 5, 2026
 
 
 * * *
@@ -2194,19 +2226,18 @@ The year's sky
 
 Full moons, showers, planets, eclipses, and the turning points of the year. Upcoming first.
 
-1. **Oct 4 · Saturn at opposition** (Planet). Saturn at its closest and brightest. The rings show in a small telescope. Saturn's rings may be young by the sky's measure. Even the icons of the cosmos arrived at some point.
-2. **Oct 7 · Draconids** (Meteors). Radiant near the head of Draco. Watch in the early evening. In nearly every culture the dragon guards a treasure or a threshold. What are you guarding?
-3. **Oct 21 · Orionids** (Meteors). Halley's debris again. Fast meteors and bright fireballs. They seem to fly from Orion's club. What falls is what was released.
-4. **Oct 24 · Mercury retrograde begins** (Astrology). Read the contract three times before signing.
-5. **Oct 26 · Hunter's Moon** (Full moon). Leaves falling, fields cleared, what remains in view. What becomes visible when you stop adding new things?
-6. **Oct 31 · Samhain** (Wheel of the year). The last cross-quarter festival of the year. A night to remember the dead. The boundary is thin tonight, and it is intimate. The ones you have lost are close.
-7. **Nov 4 · Taurid fireballs** (Meteors). About 5 an hour, known for bright fireballs. Two streams, one from an asteroid and one from a comet, meet in the same sky. Collaboration is built into the universe.
-8. **Nov 13 · Mercury retrograde ends** (Astrology). Clear to proceed.
-9. **Nov 17 · Leonids** (Meteors). Usually 10 to 15 an hour. In 1966, thousands a minute for a few minutes. The Leonids storm on a 33-year cycle. The last storm was 2001. Patience is readiness.
-10. **Nov 24 · Beaver Supermoon, Kartik Purnima** (Full moon). A supermoon on Kartik Purnima, which celebrates Shiva's victory over Tripurasura. A moon of preparation, with a light hard to ignore.
-11. **Dec 13 · Geminids** (Meteors). Up to 150 an hour, in many colors. The best shower of winter. Most showers come from comets. The Geminids come from the asteroid 3200 Phaethon. Even rock, given time, becomes light.
-12. **Dec 21 · December solstice** (Solstice). The shortest day. Winter begins in the north. The darkest day is the moment the light starts back. That is physics, and it is theology.
-13. **Dec 24 · Cold Supermoon** (Full moon). Third supermoon of the year. The Cree call it the Frost Exploding Trees Moon. The Cold Moon rides highest and stays longest. The longest nights hold the most moonlight.
+1. **Oct 7 · Draconids** (Meteors). Radiant near the head of Draco. Watch in the early evening. In nearly every culture the dragon guards a treasure or a threshold. What are you guarding?
+2. **Oct 21 · Orionids** (Meteors). Halley's debris again. Fast meteors and bright fireballs. They seem to fly from Orion's club. What falls is what was released.
+3. **Oct 24 · Mercury retrograde begins** (Astrology). Read the contract three times before signing.
+4. **Oct 26 · Hunter's Moon** (Full moon). Leaves falling, fields cleared, what remains in view. What becomes visible when you stop adding new things?
+5. **Oct 31 · Samhain** (Wheel of the year). The last cross-quarter festival of the year. A night to remember the dead. The boundary is thin tonight, and it is intimate. The ones you have lost are close.
+6. **Nov 4 · Taurid fireballs** (Meteors). About 5 an hour, known for bright fireballs. Two streams, one from an asteroid and one from a comet, meet in the same sky. Collaboration is built into the universe.
+7. **Nov 13 · Mercury retrograde ends** (Astrology). Clear to proceed.
+8. **Nov 17 · Leonids** (Meteors). Usually 10 to 15 an hour. In 1966, thousands a minute for a few minutes. The Leonids storm on a 33-year cycle. The last storm was 2001. Patience is readiness.
+9. **Nov 24 · Beaver Supermoon, Kartik Purnima** (Full moon). A supermoon on Kartik Purnima, which celebrates Shiva's victory over Tripurasura. A moon of preparation, with a light hard to ignore.
+10. **Dec 13 · Geminids** (Meteors). Up to 150 an hour, in many colors. The best shower of winter. Most showers come from comets. The Geminids come from the asteroid 3200 Phaethon. Even rock, given time, becomes light.
+11. **Dec 21 · December solstice** (Solstice). The shortest day. Winter begins in the north. The darkest day is the moment the light starts back. That is physics, and it is theology.
+12. **Dec 24 · Cold Supermoon** (Full moon). Third supermoon of the year. The Cree call it the Frost Exploding Trees Moon. The Cold Moon rides highest and stays longest. The longest nights hold the most moonlight.
 
 **Earlier in the year**
 
@@ -2240,10 +2271,11 @@ Full moons, showers, planets, eclipses, and the turning points of the year. Upco
 28. **Aug 28 · Sturgeon Moon** (Full moon). Named for the ancient fish of the Great Lakes. A deep partial lunar eclipse this night. The sturgeon finds what sustains it along the bottom. What sustains you?
 29. **Sep 23 · September equinox** (Equinox). Day and night nearly equal again. Autumn begins in the north. Balance returns for a day. Equilibrium is a passage.
 30. **Sep 26 · Harvest Moon** (Full moon). The full moon nearest the equinox, rising only minutes later each night. The only moon named for its usefulness. It stays longer and gives light when light is needed most.
+31. **Oct 4 · Saturn at opposition** (Planet). Saturn at its closest and brightest. The rings show in a small telescope. Saturn's rings may be young by the sky's measure. Even the icons of the cosmos arrived at some point.
 
 ---
 
-Source: https://tools.dnsc.ai/well/lunar/ · Generated from the page on Oct 4, 2026
+Source: https://tools.dnsc.ai/well/lunar/ · Generated from the page on Oct 5, 2026
 
 
 * * *
@@ -2262,7 +2294,7 @@ Each card is a working system you can set up with the AI you already have: what 
 
 ---
 
-Source: https://tools.dnsc.ai/recipes/ · Generated from the page on Oct 4, 2026
+Source: https://tools.dnsc.ai/recipes/ · Generated from the page on Oct 5, 2026
 
 
 * * *
@@ -2381,7 +2413,7 @@ Mise · v0.6 · measured means read from your logs; estimates carry a band and a
 
 ---
 
-Source: https://tools.dnsc.ai/ai-gauges/ · Generated from the page on Oct 4, 2026
+Source: https://tools.dnsc.ai/ai-gauges/ · Generated from the page on Oct 5, 2026
 
 
 * * *
@@ -2478,7 +2510,7 @@ Go to the water
 
 ---
 
-Source: https://tools.dnsc.ai/well/ · Generated from the page on Oct 4, 2026
+Source: https://tools.dnsc.ai/well/ · Generated from the page on Oct 5, 2026
 
 
 * * *
@@ -2554,7 +2586,7 @@ Built inside an investment bank over ten weeks, first for the CEO, then for a co
 
 ---
 
-Source: https://tools.dnsc.ai/recipes/morning-inbox/ · Generated from the page on Oct 4, 2026
+Source: https://tools.dnsc.ai/recipes/morning-inbox/ · Generated from the page on Oct 5, 2026
 
 
 * * *
@@ -2719,7 +2751,7 @@ Ohio taxes **35 percent** of a home's appraised value. West Chester Township hom
 
 ---
 
-Source: https://tools.dnsc.ai/follow-the-money/v1-dustin/ · Generated from the page on Oct 4, 2026
+Source: https://tools.dnsc.ai/follow-the-money/v1-dustin/ · Generated from the page on Oct 5, 2026
 
 
 * * *

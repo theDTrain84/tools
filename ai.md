@@ -50,6 +50,8 @@ One word about AI, found in six tries.
 
 Open →
 
+[Image: One Word Advanced, a daily stretch]
+
 A daily stretch
 
 #### [One Word Advanced](https://tools.dnsc.ai/well/one-word-advanced/)
@@ -180,4 +182,4 @@ Want help putting these to work with your people?
 
 ---
 
-Source: https://tools.dnsc.ai/ · Generated from the page on Oct 4, 2026
+Source: https://tools.dnsc.ai/ · Generated from the page on Oct 5, 2026

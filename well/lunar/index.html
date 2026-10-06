@@ -23,7 +23,7 @@
 <meta name="description" content="The moon over your own weeks. Bring your calendar in and see it on the lunar cycle. It stays in your browser.">
 <meta name="theme-color" content="#1B1916">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../assets/site.css">
 <style>
 :root{--paper:#F3EFE7;--paper2:#E9E3D7;--rule:#CFC6B8;--ink:#2C211A;--ink2:#4A3A2F;--ink3:#7A6A5D;--ink4:#A69686;--walnut:#3E6A9E;--ochre:#B4862E;--gold:#D9B25A;--sky:#3E6A9E;--dusk:#1B1916;--card:#24201C;--line:#3A342E;--mono:"IBM Plex Mono",ui-monospace,monospace;--disp:Fraunces,Georgia,serif}
@@ -44,13 +44,13 @@ a{color:var(--gold)}
 a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible,label:focus-within{outline:2px solid var(--sky);outline-offset:2px}
 .crumb{font-family:var(--mono);font-size:12.5px;color:var(--ink4);text-decoration:none;letter-spacing:.04em}
 .crumb:hover{color:var(--paper)}
-.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin:26px 0 10px}
+.eyebrow{font-family:"Fraunces",Georgia,serif;font-style:italic;font-weight:500;font-size:calc(11.5px*.95 + 2px);letter-spacing:0;text-transform:none;color:var(--gold);margin:26px 0 10px}
 h1{font-family:var(--disp);font-weight:500;font-size:clamp(36px,7.4vw,62px);line-height:1.03;margin:0 0 14px;letter-spacing:-.012em;max-width:17ch}
 .lede{color:var(--paper2);font-size:21px;max-width:620px;margin:0}
 section{margin-top:60px}
 h2{font-family:var(--disp);font-weight:500;font-size:clamp(26px,4.4vw,34px);line-height:1.1;margin:0 0 6px}
 .sub{color:var(--ink4);margin:0 0 20px;max-width:62ch}
-.k{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink4)}
+.k{font-family:"Fraunces",Georgia,serif;font-style:italic;font-weight:500;font-size:calc(11px*.95 + 2px);letter-spacing:0;text-transform:none;color:var(--ink4)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
 .btn{font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;border-radius:999px;padding:10px 16px;min-height:44px;cursor:pointer;border:1px solid var(--line);background:transparent;color:var(--paper);line-height:1.2}
 .btn:hover{border-color:var(--ink4)}
@@ -167,6 +167,7 @@ summary:hover{border-color:var(--ink4)}
 .trad dd{margin:0;color:var(--ink4);font-size:15.5px}
 .thead{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
 .thead .eyebrow{margin-bottom:6px}
+#t-date{font-family:var(--mono);font-style:normal;font-weight:400;font-size:11px;letter-spacing:.2em;text-transform:uppercase}
 .tlede{font-size:clamp(25px,4.6vw,36px);max-width:26ch;margin:0 0 10px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
 .chip{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--ink4);background:transparent;border:1px solid var(--line);border-radius:999px;padding:8px 13px;min-height:44px;cursor:pointer}
