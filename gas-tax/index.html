@@ -739,7 +739,7 @@ details.deeper>.deep-in>.ch:first-child{margin-top:16px}
     </div>
   </section>
     <!-- go deeper (live 3, 4) -->
-  <details class="more deeper" id="deeper"><summary>Go deeper: where the road money comes from, where Ohio's oil comes from, and what a federal pause would add</summary><div class="deep-in">
+  <details class="more deeper" id="deeper"><summary>Go deeper: where the road money comes from, where Ohio's oil comes from, and what Washington did on diesel</summary><div class="deep-in">
   <div class="ch" data-ink="#2E6B4E" data-lab="the money"><p class="k">The statehouse</p><h2>$725 million from the state's own fund covers the road money.</h2><p class="dek">Fuel tax pays for roads and bridges. The state set aside money from its general fund, so ODOT, cities, counties and townships still get paid, on the months the tax would have arrived.</p></div>
   <div class="strip flow">
     <p class="swipe">Swipe the chart →</p>
@@ -803,13 +803,15 @@ details.deeper>.deep-in>.ch:first-child{margin-top:16px}
       <li>EIA, <a href="https://www.eia.gov/petroleum/gasdiesel/" target="_blank" rel="noopener">Gasoline and Diesel Fuel Update</a>, "What we pay for in a gallon," May 2026; <a href="https://www.eia.gov/energyexplained/gasoline/factors-affecting-gasoline-prices.php" target="_blank" rel="noopener">Factors affecting gasoline prices</a>.</li>
     </ul></div></details>
 
-    <div class="ch" data-ink="#2E6B4E" data-lab="federal"><p class="k">If Washington follows Ohio</p><h2>A federal pause would take 18.4&cent; more off every gallon.</h2><p class="dek">After Ohio's pause took effect, Sen. Bernie Moreno wrote: "Now it's time for the Federal Government to follow suit with a temporary suspension!" Here is what that would mean, from the record.</p></div>
+    <div class="ch" data-ink="#2E6B4E" data-lab="federal"><p class="k">Washington followed, for diesel</p><h2>On Oct 5 the federal diesel tax was deferred through Dec 31. Gasoline was not.</h2><p class="dek">An executive order, "Emergency Tax Relief on Diesel Fuel," lets off-road dyed diesel be used on the highway and defers the 24.4&cent; federal diesel tax on it for the rest of the year, with no interest or penalties, and tells Treasury to look for a way to forgive the deferred tax. It says nothing about gasoline, and it asks states to match it, which Ohio already has. The catch: dyed diesel is sold by farm and construction suppliers, and most retail pumps do not carry it.</p></div>
   <div class="in">
+    <p><b>And for gasoline?</b> After Ohio's pause took effect, Sen. Bernie Moreno wrote: "Now it's time for the Federal Government to follow suit with a temporary suspension!" Here is what that would mean, from the record.</p>
     <p>The federal tax is 18.4&cent; on gasoline and 24.4&cent; on diesel, unchanged since 1993. On a 15-gallon tank that is $2.76 a fill, on top of Ohio's $5.77, while both ran. When Maryland, Georgia and Connecticut paused their state taxes in 2022, 65 to 87 percent of the cut reached the pump, so about two dollars of the $2.76 would likely show up.</p>
     <p>Every federal fuel-tax dollar goes to the Highway Trust Fund, which pays for roads and transit. A three-month pause was scored at about $10 billion in 2022. The fund already cannot cover itself: the 2021 infrastructure law moved $118 billion from the general fund into it, and the Congressional Budget Office projects it runs short again by 2028. A suspension means Congress backfills from general revenue, or the fund runs shorter. Ohio did the same in miniature, with $725 million from its own general fund.</p>
     <p>It takes an act of Congress. The President said in May he intended to suspend the tax; bills from both parties have been introduced since.</p>
   </div>
   <details class="more"><summary>Sources for this part</summary><div class="in"><ul class="lk">
+    <li>The White House, <a href="https://www.whitehouse.gov/presidential-actions/2026/10/emergency-tax-relief-on-diesel-fuel/" target="_blank" rel="noopener">Emergency Tax Relief on Diesel Fuel</a>, Executive Order, Oct 5, 2026; and the <a href="https://www.whitehouse.gov/fact-sheets/2026/10/fact-sheet-president-donald-j-trump-promotes-diesel-affordability/" target="_blank" rel="noopener">fact sheet</a> (dyed diesel on the highway; the 24.4&cent; federal diesel tax deferred for the rest of the year, no interest or penalties).</li>
     <li>Yahoo News, <a href="https://www.yahoo.com/news/politics/articles/ohio-senator-calls-federal-gas-103000479.html" target="_blank" rel="noopener">Ohio Senator calls for federal gas tax relief</a> (Moreno's post, Oct 2026).</li>
     <li>Thomson Reuters, <a href="https://tax.thomsonreuters.com/news/gop-lawmakers-trump-push-proposals-to-suspend-federal-gas-tax/" target="_blank" rel="noopener">GOP lawmakers, Trump push proposals to suspend federal gas tax</a> (the 2026 bills; the May statement).</li>
     <li>The Bond Buyer, <a href="https://bondbuyer.com/news/biden-pushes-federal-gas-tax-holiday" target="_blank" rel="noopener">Biden pushes federal gas tax holiday</a> (2022: three months, about $10 billion to the Highway Trust Fund).</li>
@@ -824,7 +826,7 @@ details.deeper>.deep-in>.ch:first-child{margin-top:16px}
     <div>
       <p>Built by <b>Dustin Nimmo</b>, founder of <a href="https://dnsc.ai">DNSC</a> in West&nbsp;Chester, Ohio.</p>
       <p class="sm">Figures come from H.B. 519 as passed, the Legislative Service Commission and Budget Office, the Ohio Department of Taxation, the U.S. Energy Information Administration and the sources folded under each part. Last verified Oct 4, 2026. If a number here is wrong, say so and it will be fixed and noted.</p>
-    <p class="sm rev">Posted October 4, 2026 · Revised October 5, 2026, 9:40 PM: a shorter walk for the public; the statehouse and the refinery folded under Go deeper, with a card on what a federal pause would add; the war question kept, with the record on how fast prices come back.</p>
+    <p class="sm rev">Posted October 4, 2026 · Revised October 6, 2026, 7:50 AM: the federal diesel tax deferral of Oct 5 added to the diesel side of your tank and to the Washington card behind Go deeper; the walk itself unchanged since Oct 5.</p>
       <p class="sm ai-twin">For AIs: <a href="index.md">this page as text</a> · <a href="/llms.txt">site index</a></p>
     </div>
   </div>
@@ -929,7 +931,8 @@ function update(){
   $('#perFill').textContent=money(pf,true);
   $('#tYou').textContent=money(you,true); $('#tOh').textContent=money(pf,true);
   const n=Math.round(f*WEEKS), pct=Math.round(s/p*100);
-  $('#say').innerHTML=`Ohio's general fund covers <b>${(s*100).toFixed(1).replace('.0','')}¢ of every gallon</b>, about ${pct}% of the price. At ${fillWords(f).toLowerCase()}, that's about <b>${n} fill-up${n===1?'':'s'}</b> and <b>${money(tot)}</b> paid by the state for you before the holiday ends on January 2.`;
+  const fed=fuel==='diesel'?` <span class="fed">Washington added its part on Oct 5: the federal diesel tax, 24.4¢ a gallon, is deferred through Dec 31 on dyed diesel used on the highway, no interest or penalties. On this fill that is another <b>${money(g*0.244,true)}</b>, where a station sells dyed diesel.</span>`:'';
+  $('#say').innerHTML=`Ohio's general fund covers <b>${(s*100).toFixed(1).replace('.0','')}¢ of every gallon</b>, about ${pct}% of the price. At ${fillWords(f).toLowerCase()}, that's about <b>${n} fill-up${n===1?'':'s'}</b> and <b>${money(tot)}</b> paid by the state for you before the holiday ends on January 2.`+fed;
   document.querySelectorAll('#samps .samp').forEach(b=>b.setAttribute('aria-pressed',+b.dataset.g===g));
   renderAlloc();
   if(!running){running=true;requestAnimationFrame(tick)}
