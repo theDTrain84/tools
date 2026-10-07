@@ -752,7 +752,7 @@ SECTIONS = [
     ("Weekly", []),
     ("Games and practices", ["well/", "well/daily-line/", "well/morning-edition/",
                      "well/one-word/", "well/one-word-advanced/", "well/five-moves/"]),
-    ("Practices", ["well/walk-in/", "well/river/", "well/lunar/"]),
+    ("Practices", ["well/walk-in/", "well/river/"]),
     ("Teaching", ["recipes/", "recipes/morning-inbox/", "ai-gauges/"]),
 ]
 OPTIONAL = ["follow-the-money/v1-dustin/"]

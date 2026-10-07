@@ -1,6 +1,6 @@
 # The Well · DNSC
 
-> The Well, from DNSC: daily games that teach the vocabulary and the news of AI, quiet rooms, the moon over your weeks, free civic tools from the public record, teaching, and writing. Free, and always filling.
+> The Well, from DNSC: free daily games that teach the words and the news of AI, practices for the workday, civic tools built from the public record, teaching, and writing. No account, no cost.
 
 [Image: An American flag at sunrise on a porch in Ohio, photographed by Dustin Nimmo]
 
@@ -8,7 +8,7 @@ The Well
 
 ## Made for the community, given away.
 
-A well keeps filling. Games that teach the vocabulary and the news of AI, practices that hold the day, the moon over your weeks, free tools from the public record, and the writing. Come back any day; there is always more.
+Free things we make and give away: daily games that teach the words and the news of AI, practices for the workday, tools built from the public record, and our writing. No account, no cost.
 
 Back porch, Lake Waynoka.
 
@@ -142,7 +142,7 @@ Quiet · Free · No account
 
 ### Practices
 
-Rooms to hold the day, and the moon over your weeks.
+Two short practices for the end of a workday.
 
 [Image: The Walk-in breathing ring at dusk]
 
@@ -161,16 +161,6 @@ Letting go
 #### [The River](https://tools.dnsc.ai/well/river/)
 
 Set down what's heavy. Watch it go.
-
-Open →
-
-[Image: Tonight's moon in Lunar Life]
-
-The moon
-
-#### [Lunar Life](https://tools.dnsc.ai/well/lunar/)
-
-The moon over your own weeks.
 
 Open →
 
