@@ -1,0 +1,89 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-10-07",
+ "size": 7,
+ "g": [
+  "#CHOP##",
+  "#HOURS#",
+  "CARROTS",
+  "AIM#DOE",
+  "PRODUCT",
+  "#SNACK#",
+  "##EYES#"
+ ],
+ "a": [
+  [
+   "CHOP",
+   "Cut into pieces"
+  ],
+  [
+   "HOURS",
+   "Store ___, when it's open"
+  ],
+  [
+   "CARROTS",
+   "Orange stew vegetables"
+  ],
+  [
+   "AIM",
+   "Point at a target"
+  ],
+  [
+   "DOE",
+   "Female deer"
+  ],
+  [
+   "PRODUCT",
+   "The app you open, built on top of the model"
+  ],
+  [
+   "SNACK",
+   "Bite between meals"
+  ],
+  [
+   "EYES",
+   "What you read with"
+  ]
+ ],
+ "d": [
+  [
+   "CAP",
+   "Bottle top"
+  ],
+  [
+   "CHAIRS",
+   "Seats at the table"
+  ],
+  [
+   "HORMONE",
+   "Chemical messenger in the body"
+  ],
+  [
+   "OUR",
+   "Belonging to us"
+  ],
+  [
+   "DAY",
+   "Twenty-four hours"
+  ],
+  [
+   "PRODUCE",
+   "Fresh fruits and vegetables"
+  ],
+  [
+   "STOCKS",
+   "Shares on the market"
+  ],
+  [
+   "SET",
+   "Ready, ___, go"
+  ]
+ ],
+ "w": "PRODUCT",
+ "n": "The product is the part you see: the app, its buttons, its memory settings, the tools it can reach. Two products can run the same model underneath and still do very different things for you. When one tool feels smarter than another, look at the product first.",
+ "sources": [],
+ "checked": true,
+ "no": 6,
+ "cooked": "2026-10-07T10:10:00Z"
+}

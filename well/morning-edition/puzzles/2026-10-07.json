@@ -1,0 +1,122 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-10-07",
+ "size": 7,
+ "g": [
+  "LAW#FLY",
+  "AGO#LIE",
+  "PERMITS",
+  "##RUG##",
+  "WEIGHTS",
+  "ARE#TOP",
+  "SAD#SEA"
+ ],
+ "a": [
+  [
+   "LAW",
+   "Rule passed by a legislature"
+  ],
+  [
+   "FLY",
+   "Travel by plane"
+  ],
+  [
+   "AGO",
+   "In the past"
+  ],
+  [
+   "LIE",
+   "Untruth"
+  ],
+  [
+   "PERMITS",
+   "Allows"
+  ],
+  [
+   "RUG",
+   "Floor covering"
+  ],
+  [
+   "WEIGHTS",
+   "A lab said Oct. 5 it will release its new model's ___ under an open license later this month",
+   {
+    "src": "https://reflection.ai/blog/introducing-beam"
+   }
+  ],
+  [
+   "ARE",
+   "Exist"
+  ],
+  [
+   "TOP",
+   "Highest point"
+  ],
+  [
+   "SAD",
+   "Down in the dumps"
+  ],
+  [
+   "SEA",
+   "Ocean"
+  ]
+ ],
+ "d": [
+  [
+   "LAP",
+   "One trip around the track"
+  ],
+  [
+   "WAS",
+   "Existed"
+  ],
+  [
+   "AGE",
+   "Years lived"
+  ],
+  [
+   "ERA",
+   "Long stretch of history"
+  ],
+  [
+   "WORRIED",
+   "Anxious"
+  ],
+  [
+   "MUG",
+   "Coffee cup"
+  ],
+  [
+   "FLIGHTS",
+   "Plane trips"
+  ],
+  [
+   "LIT",
+   "Turned on, as a lamp"
+  ],
+  [
+   "TOE",
+   "Foot digit"
+  ],
+  [
+   "YES",
+   "Opposite of no"
+  ],
+  [
+   "SPA",
+   "Place for a massage"
+  ]
+ ],
+ "w": "WEIGHTS",
+ "n": "Weights are the numbers a model learned in training. When a lab releases them, anyone can download the model and run it on their own machines, which matters for information that cannot leave your building. A good question to ask of any AI tool: whose computer does this run on?",
+ "sources": [
+  {
+   "title": "A lab introduces Beam, a large sparse model it says it will release with open weights (Reflection)",
+   "url": "https://reflection.ai/blog/introducing-beam",
+   "date": "2026-10-05"
+  }
+ ],
+ "checked": true,
+ "no": 3,
+ "cooked": "2026-10-07T10:10:00Z"
+}

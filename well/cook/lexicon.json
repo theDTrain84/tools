@@ -197,6 +197,10 @@
   {
    "word": "RESET",
    "meaning": "Start fresh with a short summary"
+  },
+  {
+   "word": "PRODUCT",
+   "meaning": "The app you open, built on top of the model"
   }
  ]
 }
