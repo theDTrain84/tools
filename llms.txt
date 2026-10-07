@@ -29,6 +29,7 @@ Start at the landing page as text: [The Well](https://tools.dnsc.ai/ai.md). Teac
 
 - [The Walk-in](https://tools.dnsc.ai/well/walk-in/index.md): Hold the people from your day.
 - [The River](https://tools.dnsc.ai/well/river/index.md): Set down what's heavy. Watch it go.
+- [Lunar Life](https://tools.dnsc.ai/well/lunar/index.md): The moon over your own weeks.
 
 ## Teaching
 
@@ -36,7 +37,6 @@ Start at the landing page as text: [The Well](https://tools.dnsc.ai/ai.md). Teac
 - [AI Gauges](https://tools.dnsc.ai/ai-gauges/index.md): Your own AI use: tokens, energy, water and carbon.
 - [Games and practices](https://tools.dnsc.ai/well/index.md): Word games that teach AI, and the practices that hold the day. Some daily, some weekly.
 - [The morning inbox · Recipe card](https://tools.dnsc.ai/recipes/morning-inbox/index.md): A recipe card: AI triages your inbox into three tiers, labels only, drafts the replies that need you, and sends a short digest. You still send every email.
-- [Lunar Life](https://tools.dnsc.ai/well/lunar/index.md): The moon over your own weeks. Bring your calendar in and see it on the lunar cycle. It stays in your browser.
 
 ## Optional
 

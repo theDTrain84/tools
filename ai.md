@@ -142,7 +142,7 @@ Quiet · Free · No account
 
 ### Practices
 
-Two short practices for the end of a workday.
+Short practices for the workday and the weeks around it.
 
 [Image: The Walk-in breathing ring at dusk]
 
@@ -161,6 +161,16 @@ Letting go
 #### [The River](https://tools.dnsc.ai/well/river/)
 
 Set down what's heavy. Watch it go.
+
+Open →
+
+[Image: Tonight's moon in Lunar Life]
+
+The moon
+
+#### [Lunar Life](https://tools.dnsc.ai/well/lunar/)
+
+The moon over your own weeks.
 
 Open →
 
