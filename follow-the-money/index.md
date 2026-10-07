@@ -38,7 +38,9 @@ Today
 |---|---|---|---|
 | School-bond tax per year |  |  |  |
 
-Your actual bill is a bit lower after state credits; the old bonds get them, and Issue 2 would not. The 2029 columns are estimates. The ballot's 2.20 mills is an estimated average over 37 years: each year the county sets the rate to collect only what that year's bond payments need, so it tends to fall as home values rise. Neither the ballot language nor the district's announcement states a maximum rate. None of this includes the possible operating levy below, which is not on this ballot.
+**How the rate works.** A bond is a fixed amount of debt. Each year the county sets the millage so it collects only that year's payment, spread across every property in the district. When home values rise, the rate goes down, so the district collects the same dollars and no more. For a home whose value rises along with the district's, the bill stays about the same over the life of the bond; a home that rises faster than average pays a little more, and one that rises slower pays a little less. If values fell, the rate would rise to cover the same payment. The 2.20 mills on the ballot is the estimated average over 37 years.
+
+Your actual bill is a bit lower after state credits; the old bonds get them, and Issue 2 would not. The 2029 columns are estimates. None of this includes the possible operating levy below, which is not on this ballot.
 
 Source: Issue 2 ballot language and board resolution (June 9, 2026); Ohio DTE 27 tax rate abstract, tax year 2025; Lakota audited debt schedule, FY2025. Figures as of Oct 2, 2026.[6][1][2]
 
@@ -143,7 +145,7 @@ Verified **The credits are changing under state law.** The 10 percent non-busine
 
 Last verified Oct 2, 2026. Corrections: if a number here is wrong, the page changes and says what changed. Built from public records by a resident; the county treasurer's bill is always the record. An independent project, built from public records; no campaign or political organization paid for it or directs it. It provides information only and does not endorse or oppose any ballot measure. Figures are estimates based on publicly available data and may not reflect every factor that affects an individual parcel, such as exemptions, credits or special assessments. For questions about your property’s current tax calculations, contact the Butler County Auditor’s office. Future tax amounts may change.
 
-Posted October 2, 2026 · Revised October 6, 2026, 1:10 PM: the estimate note reworded at the campaign’s request, so it no longer suggests the Auditor can give a future amount. · Revised October 7, 2026, 3:10 PM: after a reader’s review, the answer now shows both comparisons (against today and against failing) with the district’s own words; the district’s stated benefits added from its October mailer; the millage note explains how the rate is set each year; the possible operating levy reframed as a forecast placeholder and moved below the bill.
+Posted October 2, 2026 · Revised October 6, 2026, 1:10 PM: the estimate note reworded at the campaign’s request, so it no longer suggests the Auditor can give a future amount. · Revised October 7, 2026, 3:10 PM: after a reader’s review, the answer now shows both comparisons (against today and against failing) with the district’s own words; the district’s stated benefits added from its October mailer; the millage note explains how the rate is set each year; the possible operating levy reframed as a forecast placeholder and moved below the bill. · Revised October 7, 2026, 3:30 PM: a plain note on how the yearly rate works, so the bill stays steady as values rise.
 
 **How this bond came to be**
 
