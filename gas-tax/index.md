@@ -393,4 +393,4 @@ Posted October 4, 2026 · Revised October 6, 2026, 11:17 AM: added why diesel di
 
 ---
 
-Source: https://tools.dnsc.ai/gas-tax/ · Generated from the page on Oct 6, 2026
+Source: https://tools.dnsc.ai/gas-tax/ · Generated from the page on Oct 7, 2026

@@ -38,7 +38,7 @@ Today
 |---|---|---|---|
 | School-bond tax per year |  |  |  |
 
-Your actual bill is a bit lower after state credits; the old bonds get them, and Issue 2 would not. The 2029 columns are estimates: the county sets bond rates each year, and the ballot's 2.20 mills is an average over 37 years. None of this includes the possible operating levy below, which is not on this ballot.
+Your actual bill is a bit lower after state credits; the old bonds get them, and Issue 2 would not. The 2029 columns are estimates. The ballot's 2.20 mills is an estimated average over 37 years: each year the county sets the rate to collect only what that year's bond payments need, so it tends to fall as home values rise. Neither the ballot language nor the district's announcement states a maximum rate. None of this includes the possible operating levy below, which is not on this ballot.
 
 Source: Issue 2 ballot language and board resolution (June 9, 2026); Ohio DTE 27 tax rate abstract, tax year 2025; Lakota audited debt schedule, FY2025. Figures as of Oct 2, 2026.[6][1][2]
 
@@ -46,23 +46,19 @@ Source: Issue 2 ballot language and board resolution (June 9, 2026); Ohio DTE 27
 
 The plan costs $300.6 million. Local taxpayers would pay $223.5 million; the state would pay 33 percent of the $233.8 million co-funded work (about $77 million in the April plan; $76.7 million in the state's July approval). Grades 6 to 12 move into 4 campuses, and 21 buildings become 18.
 
+#### What the district says it would do
+
+**All students.** Fewer grade bands: preschool, K to 5, 6 to 8, 9 to 12, and more time in each building.
+
+**Elementary.** Less crowding and smaller classes as sixth graders move to middle schools; art, music and gym all year.
+
+**Middle and high school.** More electives, starting in sixth grade; freshmen on the main high school campus.
+
+**Operations.** Three fewer buildings to run; fewer traveling teachers; bus routes that could support a return of K to 12 busing.
+
+Source: Lakota Local Schools mailer, "Know the Facts: Master Facilities Plan and Nov. 3 Bond Issue," October 2026. These are the district's projections.
+
 Source: Lakota board presentation "The Plan," April 13, 2026; Ohio Facilities Construction Commission conditional approval, July 28, 2026.[8]
-
-### Not on this ballot: a possible operating levy
-
-The district's own forecast shows its general fund cash going negative in FY2030 without new money. It assumes a 3.6-mill operating levy from 2029. That levy is separate from Issue 2 and is not on this ballot. The treasurer's notes add that savings from the facilities plan could reduce or remove the need for it.
-
-Source: Lakota Five-Year Forecast and its notes (including the FY2025 transfers), approved by the board Aug 24, 2026. FY2027 on are projections.[4]
-
-#### What the forecast assumes
-
-**The levy.** 3.6 mills, passing in 2028 and collected from 2029. Not filed and on no ballot as of Oct 2, 2026.
-
-**What it would raise.** $11.3 million in FY2029, $21.8 million in FY2030.
-
-**On this home, per year.** On 35 percent of the appraised value, before credits. The same whether Issue 2 passes or fails.
-
-Sources: Lakota Five-Year Forecasts, Feb 23 and Aug 24, 2026.[4]
 
 ### Where your whole bill goes
 
@@ -75,6 +71,24 @@ Sources: Lakota Five-Year Forecasts, Feb 23 and Aug 24, 2026.[4]
 Issue 6 on the same ballot renews the county's 1-mill mental-health levy at the current rate.
 
 Source: Butler County Auditor, 2025 tax rates and Current Tax Distribution, tax district M56: each body's effective (after reduction factor) residential rate, before credits.[3]
+
+### Looking ahead: a forecast assumption, not on this ballot
+
+The district's five-year forecast, approved by the board on Aug. 24, 2026, assumes a 3.6-mill operating levy collected from 2029. It is a planning placeholder: not approved, not filed, and its size and timing could change. The treasurer's notes say savings from the facilities plan could reduce or remove the need for it. It is separate from Issue 2. It is here so a voter can see the district's whole forecast alongside this year's ballot.
+
+**See the forecast**
+
+Source: Lakota Five-Year Forecast and its notes (including the FY2025 transfers), approved by the board Aug 24, 2026. FY2027 on are projections.[4]
+
+#### What the forecast assumes
+
+**The levy.** 3.6 mills, collected from 2029 in the Aug. 24 forecast. Not filed and on no ballot as of Oct. 7, 2026.
+
+**What it would raise.** $11.3 million in FY2029, $21.8 million in FY2030.
+
+**If it happened exactly as forecast, on this home.** a year, on 35 percent of the appraised value, before credits. The same whether Issue 2 passes or fails.
+
+Sources: Lakota Five-Year Forecasts, Feb 23 and Aug 24, 2026.[4]
 
 **Fine print: sources, timeline and method**
 
@@ -129,7 +143,7 @@ Verified **The credits are changing under state law.** The 10 percent non-busine
 
 Last verified Oct 2, 2026. Corrections: if a number here is wrong, the page changes and says what changed. Built from public records by a resident; the county treasurer's bill is always the record. An independent project, built from public records; no campaign or political organization paid for it or directs it. It provides information only and does not endorse or oppose any ballot measure. Figures are estimates based on publicly available data and may not reflect every factor that affects an individual parcel, such as exemptions, credits or special assessments. For questions about your property’s current tax calculations, contact the Butler County Auditor’s office. Future tax amounts may change.
 
-Posted October 2, 2026 · Revised October 6, 2026, 1:10 PM: the estimate note reworded at the campaign’s request, so it no longer suggests the Auditor can give a future amount.
+Posted October 2, 2026 · Revised October 6, 2026, 1:10 PM: the estimate note reworded at the campaign’s request, so it no longer suggests the Auditor can give a future amount. · Revised October 7, 2026, 3:10 PM: after a reader’s review, the answer now shows both comparisons (against today and against failing) with the district’s own words; the district’s stated benefits added from its October mailer; the millage note explains how the rate is set each year; the possible operating levy reframed as a forecast placeholder and moved below the bill.
 
 **How this bond came to be**
 
@@ -162,4 +176,4 @@ Ohio taxes **35 percent** of a home's appraised value. West Chester Township hom
 
 ---
 
-Source: https://tools.dnsc.ai/follow-the-money/ · Generated from the page on Oct 6, 2026
+Source: https://tools.dnsc.ai/follow-the-money/ · Generated from the page on Oct 7, 2026
