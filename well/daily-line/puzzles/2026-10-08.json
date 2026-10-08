@@ -1,0 +1,89 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-10-08",
+ "size": 7,
+ "g": [
+  "##VAT##",
+  "#HIRES#",
+  "FORESTS",
+  "ANT#TOE",
+  "ROUTINE",
+  "#RAINY#",
+  "##LEG##"
+ ],
+ "a": [
+  [
+   "VAT",
+   "Big tank for dye or wine"
+  ],
+  [
+   "HIRES",
+   "Brings on board, as new staff"
+  ],
+  [
+   "FORESTS",
+   "Woods that go on for miles"
+  ],
+  [
+   "ANT",
+   "Picnic crasher with six legs"
+  ],
+  [
+   "TOE",
+   "Little piggy on your foot"
+  ],
+  [
+   "ROUTINE",
+   "The same steps at the same time each day, like a morning check-in with your AI"
+  ],
+  [
+   "RAINY",
+   "Like a day for umbrellas"
+  ],
+  [
+   "LEG",
+   "One stage of a relay"
+  ]
+ ],
+ "d": [
+  [
+   "FAR",
+   "A long way off"
+  ],
+  [
+   "HONOR",
+   "Show respect to"
+  ],
+  [
+   "VIRTUAL",
+   "Online rather than in the room"
+  ],
+  [
+   "ARE",
+   "\"We ___ here\""
+  ],
+  [
+   "TIE",
+   "Score that ends even"
+  ],
+  [
+   "TESTING",
+   "Trying something out before trusting it"
+  ],
+  [
+   "STONY",
+   "Cold and unmoved, as a stare"
+  ],
+  [
+   "SEE",
+   "Look at"
+  ]
+ ],
+ "w": "ROUTINE",
+ "n": "A routine is how a good habit with AI survives a busy week. The same few steps at the same time, a morning list, a review before anything leaves your hands, turn one-off tries into a practice. Pick one small routine and keep it for five days.",
+ "sources": [],
+ "checked": true,
+ "no": 7,
+ "cooked": "2026-10-08T10:35:00Z"
+}

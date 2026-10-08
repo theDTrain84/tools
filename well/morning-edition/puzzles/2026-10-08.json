@@ -1,0 +1,98 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-10-08",
+ "size": 7,
+ "g": [
+  "###BETA",
+  "##TOXIC",
+  "#CARPET",
+  "TENDERS",
+  "ELDERS#",
+  "ALERT##",
+  "MOMS###"
+ ],
+ "a": [
+  [
+   "BETA",
+   "Early test version of software"
+  ],
+  [
+   "TOXIC",
+   "Poisonous"
+  ],
+  [
+   "CARPET",
+   "Wall-to-wall floor covering"
+  ],
+  [
+   "TENDERS",
+   "Offers, as of payment"
+  ],
+  [
+   "ELDERS",
+   "Respected older members of a community"
+  ],
+  [
+   "ALERT",
+   "Wide awake and watchful"
+  ],
+  [
+   "MOMS",
+   "Mothers, informally"
+  ]
+ ],
+ "d": [
+  [
+   "TEAM",
+   "DARPA said Oct. 7 that four more quantum computing ___s entered the final stage of its benchmark test",
+   {
+    "src": "https://www.darpa.mil/news/2026/four-more-teams-enter-quantum-benchmarking-initiative-final-stage"
+   }
+  ],
+  [
+   "CELLO",
+   "Big string instrument played sitting down"
+  ],
+  [
+   "TANDEM",
+   "Bicycle built for two"
+  ],
+  [
+   "BORDERS",
+   "Edges of a map's countries"
+  ],
+  [
+   "EXPERT",
+   "Person who really knows the subject"
+  ],
+  [
+   "TIERS",
+   "An AI lab said Oct. 6 its cyber program now offers vetted security teams three access ___",
+   {
+    "src": "https://www.anthropic.com/news/cyber-verification-program"
+   }
+  ],
+  [
+   "ACTS",
+   "Parts of a play"
+  ]
+ ],
+ "w": "TIERS",
+ "n": "Tiers mean the same AI can be more or less open depending on who is asking and why. Security teams that pass a check get fewer limits, everyone else gets the default. When you pick a tool for your work, ask which tier you are on and what that tier is allowed to do.",
+ "sources": [
+  {
+   "title": "An AI lab sorts its cyber access program into three tiers for vetted security teams (Anthropic)",
+   "url": "https://www.anthropic.com/news/cyber-verification-program",
+   "date": "2026-10-06"
+  },
+  {
+   "title": "Four more teams enter the final stage of the government's quantum computing test (DARPA)",
+   "url": "https://www.darpa.mil/news/2026/four-more-teams-enter-quantum-benchmarking-initiative-final-stage",
+   "date": "2026-10-07"
+  }
+ ],
+ "checked": true,
+ "no": 4,
+ "cooked": "2026-10-08T10:35:00Z"
+}
