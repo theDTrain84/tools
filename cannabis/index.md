@@ -242,4 +242,4 @@ Last verified Oct 4, 2026. Medical facts here are summaries of research, not med
 
 ---
 
-Source: https://tools.dnsc.ai/cannabis/ · Generated from the page on Oct 7, 2026
+Source: https://tools.dnsc.ai/cannabis/ · Generated from the page on Oct 8, 2026

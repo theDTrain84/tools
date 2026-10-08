@@ -70,18 +70,17 @@ The year's sky
 
 Full moons, showers, planets, eclipses, and the turning points of the year. Upcoming first.
 
-1. **Oct 7 · Draconids** (Meteors). Radiant near the head of Draco. Watch in the early evening. In nearly every culture the dragon guards a treasure or a threshold. What are you guarding?
-2. **Oct 21 · Orionids** (Meteors). Halley's debris again. Fast meteors and bright fireballs. They seem to fly from Orion's club. What falls is what was released.
-3. **Oct 24 · Mercury retrograde begins** (Astrology). Read the contract three times before signing.
-4. **Oct 26 · Hunter's Moon** (Full moon). Leaves falling, fields cleared, what remains in view. What becomes visible when you stop adding new things?
-5. **Oct 31 · Samhain** (Wheel of the year). The last cross-quarter festival of the year. A night to remember the dead. The boundary is thin tonight, and it is intimate. The ones you have lost are close.
-6. **Nov 4 · Taurid fireballs** (Meteors). About 5 an hour, known for bright fireballs. Two streams, one from an asteroid and one from a comet, meet in the same sky. Collaboration is built into the universe.
-7. **Nov 13 · Mercury retrograde ends** (Astrology). Clear to proceed.
-8. **Nov 17 · Leonids** (Meteors). Usually 10 to 15 an hour. In 1966, thousands a minute for a few minutes. The Leonids storm on a 33-year cycle. The last storm was 2001. Patience is readiness.
-9. **Nov 24 · Beaver Supermoon, Kartik Purnima** (Full moon). A supermoon on Kartik Purnima, which celebrates Shiva's victory over Tripurasura. A moon of preparation, with a light hard to ignore.
-10. **Dec 13 · Geminids** (Meteors). Up to 150 an hour, in many colors. The best shower of winter. Most showers come from comets. The Geminids come from the asteroid 3200 Phaethon. Even rock, given time, becomes light.
-11. **Dec 21 · December solstice** (Solstice). The shortest day. Winter begins in the north. The darkest day is the moment the light starts back. That is physics, and it is theology.
-12. **Dec 24 · Cold Supermoon** (Full moon). Third supermoon of the year. The Cree call it the Frost Exploding Trees Moon. The Cold Moon rides highest and stays longest. The longest nights hold the most moonlight.
+1. **Oct 21 · Orionids** (Meteors). Halley's debris again. Fast meteors and bright fireballs. They seem to fly from Orion's club. What falls is what was released.
+2. **Oct 24 · Mercury retrograde begins** (Astrology). Read the contract three times before signing.
+3. **Oct 26 · Hunter's Moon** (Full moon). Leaves falling, fields cleared, what remains in view. What becomes visible when you stop adding new things?
+4. **Oct 31 · Samhain** (Wheel of the year). The last cross-quarter festival of the year. A night to remember the dead. The boundary is thin tonight, and it is intimate. The ones you have lost are close.
+5. **Nov 4 · Taurid fireballs** (Meteors). About 5 an hour, known for bright fireballs. Two streams, one from an asteroid and one from a comet, meet in the same sky. Collaboration is built into the universe.
+6. **Nov 13 · Mercury retrograde ends** (Astrology). Clear to proceed.
+7. **Nov 17 · Leonids** (Meteors). Usually 10 to 15 an hour. In 1966, thousands a minute for a few minutes. The Leonids storm on a 33-year cycle. The last storm was 2001. Patience is readiness.
+8. **Nov 24 · Beaver Supermoon, Kartik Purnima** (Full moon). A supermoon on Kartik Purnima, which celebrates Shiva's victory over Tripurasura. A moon of preparation, with a light hard to ignore.
+9. **Dec 13 · Geminids** (Meteors). Up to 150 an hour, in many colors. The best shower of winter. Most showers come from comets. The Geminids come from the asteroid 3200 Phaethon. Even rock, given time, becomes light.
+10. **Dec 21 · December solstice** (Solstice). The shortest day. Winter begins in the north. The darkest day is the moment the light starts back. That is physics, and it is theology.
+11. **Dec 24 · Cold Supermoon** (Full moon). Third supermoon of the year. The Cree call it the Frost Exploding Trees Moon. The Cold Moon rides highest and stays longest. The longest nights hold the most moonlight.
 
 **Earlier in the year**
 
@@ -116,7 +115,8 @@ Full moons, showers, planets, eclipses, and the turning points of the year. Upco
 29. **Sep 23 · September equinox** (Equinox). Day and night nearly equal again. Autumn begins in the north. Balance returns for a day. Equilibrium is a passage.
 30. **Sep 26 · Harvest Moon** (Full moon). The full moon nearest the equinox, rising only minutes later each night. The only moon named for its usefulness. It stays longer and gives light when light is needed most.
 31. **Oct 4 · Saturn at opposition** (Planet). Saturn at its closest and brightest. The rings show in a small telescope. Saturn's rings may be young by the sky's measure. Even the icons of the cosmos arrived at some point.
+32. **Oct 7 · Draconids** (Meteors). Radiant near the head of Draco. Watch in the early evening. In nearly every culture the dragon guards a treasure or a threshold. What are you guarding?
 
 ---
 
-Source: https://tools.dnsc.ai/well/lunar/ · Generated from the page on Oct 7, 2026
+Source: https://tools.dnsc.ai/well/lunar/ · Generated from the page on Oct 8, 2026

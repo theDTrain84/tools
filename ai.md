@@ -184,8 +184,8 @@ First piece this month.
 
 Want help putting these to work with your people?
 
-[Start a conversation](https://dnsc.ai/deeper#contact)
+[Start a conversation](https://dnsc.ai/#contact)
 
 ---
 
-Source: https://tools.dnsc.ai/ · Generated from the page on Oct 7, 2026
+Source: https://tools.dnsc.ai/ · Generated from the page on Oct 8, 2026

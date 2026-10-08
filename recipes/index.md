@@ -12,4 +12,4 @@ Each card is a working system you can set up with the AI you already have: what 
 
 ---
 
-Source: https://tools.dnsc.ai/recipes/ · Generated from the page on Oct 7, 2026
+Source: https://tools.dnsc.ai/recipes/ · Generated from the page on Oct 8, 2026
