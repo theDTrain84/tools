@@ -1,0 +1,63 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-10-09",
+ "size": 5,
+ "g": [
+  "##BEE",
+  "#PLAY",
+  "PAUSE",
+  "ACNE#",
+  "LET##"
+ ],
+ "a": [
+  [
+   "BEE",
+   "Spelling contest"
+  ],
+  [
+   "PLAY",
+   "Press this to start the song"
+  ],
+  [
+   "PAUSE",
+   "Stop before you send, to read what your AI wrote"
+  ],
+  [
+   "ACNE",
+   "Teen skin trouble"
+  ],
+  [
+   "LET",
+   "Allow"
+  ]
+ ],
+ "d": [
+  [
+   "PAL",
+   "Buddy"
+  ],
+  [
+   "PACE",
+   "Speed you keep"
+  ],
+  [
+   "BLUNT",
+   "Not sharp"
+  ],
+  [
+   "EASE",
+   "Comfort"
+  ],
+  [
+   "EYE",
+   "Part you read with"
+  ]
+ ],
+ "w": "PAUSE",
+ "n": "A pause is the cheapest safety check in AI work. Before anything leaves your hands, an email, a number, a claim, stop and read it as the person receiving it would. Most mistakes are caught in that one breath.",
+ "sources": [],
+ "checked": true,
+ "no": 8,
+ "cooked": "2026-10-09T10:30:00Z"
+}

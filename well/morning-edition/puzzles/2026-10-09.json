@@ -1,0 +1,72 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-10-09",
+ "size": 5,
+ "g": [
+  "#HOSE",
+  "MERCY",
+  "ALGAE",
+  "PLANS",
+  "SONS#"
+ ],
+ "a": [
+  [
+   "HOSE",
+   "Garden watering tube"
+  ],
+  [
+   "MERCY",
+   "Compassion shown to someone in your power"
+  ],
+  [
+   "ALGAE",
+   "Green growth on a pond"
+  ],
+  [
+   "PLANS",
+   "An AI company said Oct. 8 its docs, slides and design tools are now on every one of its paid and free ___",
+   {
+    "src": "https://claude.com/resources/articles/dashboards-and-motion"
+   }
+  ],
+  [
+   "SONS",
+   "Boys, to their parents"
+  ]
+ ],
+ "d": [
+  [
+   "MAPS",
+   "Atlas pages"
+  ],
+  [
+   "HELLO",
+   "Friendly greeting"
+  ],
+  [
+   "ORGAN",
+   "Heart or liver, for example"
+  ],
+  [
+   "SCANS",
+   "Reads quickly"
+  ],
+  [
+   "EYES",
+   "They see"
+  ]
+ ],
+ "w": "PLANS",
+ "n": "Which plan you are on decides which AI tools you get. When a feature moves from paid-only to every plan, more people can try it at work without asking for a budget. Before you build a habit on a tool, check what your plan includes and what your company approved.",
+ "sources": [
+  {
+   "title": "An AI company opens its docs, slides and design tools to every plan, and adds dashboards and animation (Anthropic)",
+   "url": "https://claude.com/resources/articles/dashboards-and-motion",
+   "date": "2026-10-08"
+  }
+ ],
+ "checked": true,
+ "no": 5,
+ "cooked": "2026-10-09T10:30:00Z"
+}
