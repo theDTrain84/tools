@@ -506,4 +506,4 @@ Company logos are trademarks of their owners, used here to identify them.
 
 ---
 
-Source: https://tools.dnsc.ai/civic/the-table/ · Generated from the page on Oct 8, 2026
+Source: https://tools.dnsc.ai/civic/the-table/ · Generated from the page on Oct 9, 2026

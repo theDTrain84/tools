@@ -70,7 +70,7 @@ Plain answers from public records, so neighbors can talk about the same numbers.
 
 Lakota schools · Issue 2
 
-#### [Issue 2, in Plain Numbers](https://tools.dnsc.ai/follow-the-money/?v=20261007b)
+#### [Issue 2, in Plain Numbers](https://tools.dnsc.ai/follow-the-money/?v=20261009)
 
 What the November school bond means for your tax bill, with every number sourced from the public record.
 
@@ -188,4 +188,4 @@ Want help putting these to work with your people?
 
 ---
 
-Source: https://tools.dnsc.ai/ · Generated from the page on Oct 8, 2026
+Source: https://tools.dnsc.ai/ · Generated from the page on Oct 9, 2026

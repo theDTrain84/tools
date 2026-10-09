@@ -158,4 +158,4 @@ Ohio taxes **35 percent** of a home's appraised value. West Chester Township hom
 
 ---
 
-Source: https://tools.dnsc.ai/follow-the-money/v1-dustin/ · Generated from the page on Oct 8, 2026
+Source: https://tools.dnsc.ai/follow-the-money/v1-dustin/ · Generated from the page on Oct 9, 2026

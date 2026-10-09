@@ -38,7 +38,7 @@
 <style>
 :root{
   --paper:#EEF2EE;--sheet:#ffffff;--ink:#1A1F24;--ink-2:#3d454c;--ink-3:#59626a;
-  --green:#2E6B4E;--green-1:#e3ece6;--rule:#B8C2BC;--rule-2:#d7ddd9;--teal:#0F6B6F;--gold:#C9A24A;
+  --green:#2E6B4E;--green-1:#e3ece6;--green-2:#8DB39F;--rule:#B8C2BC;--rule-2:#d7ddd9;--teal:#0F6B6F;--gold:#C9A24A;
   --face:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --body:1.25rem;   /* 20px, larger than standard by request */
   --num:1.375rem;
@@ -174,6 +174,84 @@ table.items{width:100%;border-collapse:collapse}
 .levies tbody th .sw{display:inline-block;width:12px;height:12px;margin-right:8px;vertical-align:0}
 .aside{margin:14px 0 0;padding:10px 12px;border:1px solid var(--rule);background:var(--green-1);font-size:1.0625rem}
 
+/* context sections */
+.story{margin-top:28px}
+.story .sb{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.45fr);gap:0 32px;align-items:start}
+.story .sb > *{grid-column:1/-1;min-width:0}
+.story .sb > .txt{grid-column:1;grid-row:1}
+.story .sb > .fig{grid-column:2;grid-row:1}
+.story.full .sb{display:block}
+@media (max-width:1060px){.story .sb{display:block}.story .sb > .fig{margin-top:14px}}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table.tbl{width:100%;border-collapse:collapse;font-size:1rem;margin:14px 0 0}
+.tbl caption{text-align:left;font-weight:800;font-size:1.0625rem;padding:0 0 6px;line-height:1.3}
+.tbl th,.tbl td{padding:7px 8px;border-top:1px solid var(--rule-2);vertical-align:top;text-align:left;line-height:1.4}
+.tbl thead th{font-weight:700;font-size:.9375rem;color:var(--green);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);vertical-align:bottom;line-height:1.25}
+.tbl tbody th{font-weight:600}
+.tbl th:first-child,.tbl td:first-child{padding-left:0}
+.tbl th:last-child,.tbl td:last-child{padding-right:0}
+.tbl .n{text-align:right;white-space:nowrap}
+.tbl thead .n{white-space:normal}
+.tbl td.n{font-weight:700}
+.small{font-size:.9375rem;line-height:1.45;color:var(--ink-2);margin:8px 0 0;max-width:62ch}
+.fig .ckey{border-top:0;padding:0 0 8px}
+.ckey .sw{display:inline-block;width:14px;height:14px;margin-right:6px;vertical-align:-2px}
+.ckey i.ln{display:inline-block;width:24px;height:0;background:none;border:0;border-top:3px solid var(--ink);vertical-align:4px;margin-right:6px}
+.ckey i.ln.d{border-top-style:dashed}
+.ckey i.dot{display:inline-block;width:14px;height:14px;box-sizing:border-box;border-radius:50%;background:var(--ink);border:2px solid var(--ink);vertical-align:-2px;margin-right:6px}
+.ckey i.dot.open{background:#fff}
+.marks{list-style:none;margin:10px 0 0;padding:0}
+.marks li{display:grid;grid-template-columns:24px minmax(0,1fr);gap:10px;padding:8px 0;border-top:1px solid var(--rule-2);font-size:1rem;line-height:1.45}
+.marks .mk{width:22px;height:22px;border-radius:50%;background:var(--ink);color:#fff;font-weight:800;font-size:.8125rem;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.marks .mk.hollow{background:#fff;color:var(--ink);border:2px solid var(--ink)}
+.marks b{font-weight:800}
+.ub{display:inline-block;position:relative;width:60px;height:10px;background:var(--green-1);margin-left:8px;vertical-align:0}
+.ub i{position:absolute;left:0;top:0;bottom:0;background:var(--ink)}
+.ub::after{content:"";position:absolute;left:80%;top:-3px;bottom:-3px;width:2px;background:var(--green)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:14px;margin-top:18px}
+.card{border:1px solid var(--ink);background:#fff;padding:12px 14px 14px}
+.card h3{margin:0;font-size:1.125rem;font-weight:800;line-height:1.3}
+.card .meta{margin:2px 0 6px;font-size:.9375rem;color:var(--ink-3);line-height:1.4}
+.card p{margin:6px 0 0;font-size:1rem;line-height:1.5}
+.card p b{font-weight:800}
+.tl{list-style:none;margin:16px 0 0;padding:0;max-width:880px}
+.tl li{display:grid;grid-template-columns:3.4em minmax(0,1fr);gap:0 18px}
+.tl .yr{font-weight:900;font-size:1.0625rem;text-align:right;padding-top:10px}
+.tl .it{position:relative;border-left:2px solid var(--ink);padding:10px 0 14px 18px}
+.tl .it::before{content:"";position:absolute;left:-8px;top:16px;width:14px;height:14px;border-radius:50%;background:#fff;border:2px solid var(--ink);box-sizing:border-box}
+.tl .law .it::before{background:var(--ink)}
+.tl h3{margin:0;font-size:1.0625rem;font-weight:800;line-height:1.35}
+.tl p{margin:4px 0 0;font-size:1rem;line-height:1.5;max-width:66ch}
+.tl .lim{color:var(--ink-2)}
+.qt{margin:0 0 14px;padding:4px 0 4px 14px;border-left:4px solid var(--green);font-size:1.0625rem;line-height:1.5}
+.qt p{margin:0 0 6px}
+.qt .who{font-size:.9375rem;color:var(--ink-3);margin:2px 0 0}
+.lbl.draft{border:1.5px dashed #7a5c12;color:#6b5214;background:#fbf4e2;font-size:.75rem;vertical-align:4px;margin:0 0 0 8px;white-space:nowrap}
+.pbtns{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 14px}
+.paths{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:start}
+@media (max-width:900px){.paths{grid-template-columns:minmax(0,1fr)}}
+.path{border:1px solid var(--rule);padding:12px 14px 4px;background:#fff;scroll-margin-top:12px}
+.path.on{border:2px solid var(--ink);padding:11px 13px 3px}
+.path h3{margin:0 0 8px;font-size:1.125rem;font-weight:800}
+.pt{list-style:none;margin:0;padding:0}
+.pt li{position:relative;border-left:2px solid var(--ink);padding:4px 0 14px 18px;margin-left:7px}
+.pt li:last-child{border-left-color:transparent}
+.pt li::before{content:"";position:absolute;left:-8px;top:7px;width:14px;height:14px;border-radius:50%;background:#fff;border:2px solid var(--ink);box-sizing:border-box}
+.pt li:first-child::before{background:var(--ink)}
+.pt .when{display:block;font-size:.9375rem;font-weight:800;color:var(--green);line-height:1.3}
+.pt p{margin:2px 0 0;font-size:1rem;line-height:1.5}
+.pt .mm{color:var(--ink-3);font-size:.875rem;white-space:nowrap}
+.path.play li{animation:step .5s cubic-bezier(.16,1,.3,1) both;animation-delay:calc(var(--i,0) * 160ms)}
+@keyframes step{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.path.play li{animation:none}}
+.either{margin:16px 0 0;border:2px solid var(--ink);padding:10px 14px;background:#f1f4f1;font-size:1.0625rem;line-height:1.5}
+.else{margin-top:16px;border:1px dashed var(--ink-3);padding:12px 14px;background:var(--paper)}
+.else h3{margin:0;font-size:1.0625rem;font-weight:800}
+.else .meta{margin:2px 0 6px;font-size:.9375rem;color:var(--ink-3)}
+.else ul{margin:0;padding-left:18px}
+.else li{font-size:1rem;line-height:1.5;padding:3px 0}
+@media (max-width:560px){.tbl{font-size:.9375rem}.tbl th,.tbl td{padding:6px 5px}.tbl td .ub{display:block;margin:6px 0 0 auto}.path{padding:10px 10px 2px}.path.on{padding:9px 9px 1px}.tl li{grid-template-columns:2.8em minmax(0,1fr);gap:0 12px}.tl .yr{font-size:1rem}.tl .it{padding-left:14px}}
+
 /* fine print */
 details.fine{margin-top:28px;background:var(--sheet);border:1px solid var(--ink)}
 details.fine>summary{list-style:none;cursor:pointer;padding:14px 18px;font-weight:800;font-size:1.25rem;display:flex;align-items:center;gap:12px;min-height:56px;background:#fff}
@@ -234,6 +312,43 @@ footer b{font-weight:800;color:var(--ink)}
   .top{padding-bottom:10px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+/* folds: the section's quiet "More", and per-item folds */
+details.more{margin:14px 0 0;border-top:1px solid var(--rule);grid-column:1/-1}
+details.more>summary{list-style:none;cursor:pointer;display:block;position:relative;min-height:44px;padding:10px 0 6px 32px;font-weight:800;font-size:1rem;line-height:1.45;color:var(--green)}
+details.more>summary::-webkit-details-marker{display:none}
+details.more>summary::before{content:"+";position:absolute;left:0;top:11px;display:flex;align-items:center;justify-content:center;width:20px;height:20px;border:2px solid var(--green);border-radius:3px;font-size:15px;line-height:1}
+details.more[open]>summary::before{content:"\2212"}
+details.more>summary .mh{margin-left:6px;font-weight:500;font-size:.9375rem;color:var(--ink-3)}
+details.more>summary:hover .mh{color:var(--ink-2)}
+details.more>:not(summary):first-of-type{margin-top:4px}
+details.more .marks{margin-top:6px}
+.ans details.more{margin:0;padding:0 14px;border-top:1px solid var(--rule)}
+.ans details.more .asay{border-top:0;padding:0 0 12px}
+.stub details.more{margin-top:8px}
+details.itf>summary{list-style:none;cursor:pointer;display:block;position:relative;padding-right:30px;border-radius:2px}
+details.itf>summary::-webkit-details-marker{display:none}
+details.itf>summary::after{content:"+";position:absolute;right:0;top:0;width:22px;height:22px;display:flex;align-items:center;justify-content:center;border:1.5px solid var(--rule);border-radius:3px;color:var(--green);font-weight:800;font-size:15px;line-height:1;background:#fff}
+details.itf[open]>summary::after{content:"\2212";border-color:var(--green)}
+details.itf>summary:hover::after{border-color:var(--green)}
+details.itf .one{display:block;font-size:1rem;line-height:1.45;margin-top:2px;color:var(--ink)}
+details.itf .itb{padding-top:2px}
+details.itf[open] .one{display:none}
+.card details.itf .meta{display:block;margin:2px 0 4px}
+.card .itb p.meta{margin:8px 0 0}
+.pt .one{font-size:1rem}
+.marks.keys{margin-top:14px}
+.marks.keys li{padding:6px 0;font-weight:600}
+.wrap a[href="#h-time"]{font-weight:600}
+/* how Lakota compares */
+.cmpt{min-width:680px}
+.cmpt tbody th{position:sticky;left:0;z-index:1;background:#fff;white-space:nowrap}
+.comps .facts{max-width:72ch}.comps .facts>div{font-size:1.0625rem}
+.comps .pbtns .samp{flex:1 1 auto;text-align:center}
+@media (max-width:560px){.comps .pbtns .samp{font-size:.9375rem;padding:5px 8px}}
+.cmpt tr.me th,.cmpt tr.me td{background:var(--green-1);font-weight:800}
+.cmpt tr.avg th,.cmpt tr.avg td{border-top:2px solid var(--ink);color:var(--ink-2)}
+#comp-cap{display:block;margin:0 0 6px;font-size:1rem;color:var(--ink)}
+.ckey .sw.hz{box-sizing:border-box;background:repeating-linear-gradient(135deg,var(--green) 0 1.5px,#fff 1.5px 5px);border:1.5px solid var(--green)}
 </style>
 <div class="wrap">
   <header class="top">
@@ -241,11 +356,11 @@ footer b{font-weight:800;color:var(--ink)}
       <svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9" fill="#0F6B6F"/><path d="M9 21 L20 11 L31 21" fill="none" stroke="#F4EFE6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 20 v9 h16 v-9" fill="none" stroke="#F4EFE6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="20" cy="26" r="2.3" fill="#C9A24A"/></svg>
       <div class="nm">Issue 2, in Plain Numbers<span>The Lakota school bond, from the public record</span></div>
     </div>
-    <div class="ref"><span>Tax year 2025 rates</span><span>Lakota Local School District</span><span>Tax district M56, West Chester Township</span></div>
+    <div class="ref"><span>Tax year 2025 rates</span><span>Lakota Local School District</span><span>Tax district M56, West Chester Township</span><span>Revised Oct 9, 2026</span></div>
   </header>
 
   <h1>What Issue 2 means for your tax bill</h1>
-  <p class="intro">A local school bond on the November 3, 2026 ballot: Issue 2, Lakota Local School District, Butler County, Ohio. Type in your home and see what it means for your tax bill. Every number comes from the public record, with the source cited.</p>
+  <p class="intro">Issue 2 is the Lakota Local School District bond on the November 3, 2026 ballot in Butler County, Ohio. Type in your home to see what it means for your tax bill, with every number cited to the public record.</p>
   <details class="why"><summary>Why this exists</summary><p>The official figures are spread across several documents: millage, abstracts, roll-offs, a plan in one PDF and a ballot line in another. This tool brings them into one place, each traced to its public source, as an example of a new kind of helpful tool for citizens.</p></details>
 
   <div class="lead">
@@ -267,14 +382,15 @@ footer b{font-weight:800;color:var(--ink)}
         <div class="samps" id="samps"></div>
       </div>
       <div class="ans">
-        <div class="ah"><h2>Your school-bond tax per year</h2></div>
+        <div class="ah"><h2>Your school-bond tax per month</h2></div>
         <div class="trio">
-          <div class="o"><span class="ol">Today</span><span class="ov" data-k="t0"></span></div>
-          <div class="o fut"><span class="ol">2029 on, if it passes</span><span class="ov" data-k="ty"></span></div>
-          <div class="o fut"><span class="ol">2029 on, if it fails</span><span class="ov"><span data-k="tn"></span><small>or less</small></span></div>
+          <div class="o"><span class="ol">Today</span><span class="ov" data-k="m0"></span></div>
+          <div class="o fut"><span class="ol">2029 on, if it passes</span><span class="ov" data-k="my"></span></div>
+          <div class="o fut"><span class="ol">2029 on, if it fails</span><span class="ov"><span data-k="mn"></span></span></div>
           <div class="gap"><span id="gaplbl"></span></div>
         </div>
         <p class="asay" id="asay"></p>
+        <details class="more"><summary>More <span class="mh">both comparisons, in full</span></summary><p class="asay" id="asay-more"></p></details>
       </div>
       <table class="items">
         <caption id="h-items">School-bond levies on this home, per year</caption>
@@ -283,9 +399,14 @@ footer b{font-weight:800;color:var(--ink)}
         <tfoot><tr><th scope="row">School-bond tax per year</th><td data-k="t0"></td><td class="est" data-k="ty"></td><td class="est" data-k="tn"></td></tr></tfoot>
       </table>
       <div class="stub">
-        <p><b>How the rate works.</b> A bond is a fixed amount of debt. Each year the county sets the millage so it collects only that year's payment, spread across every property in the district. When home values rise, the rate goes down, so the district collects the same dollars and no more. For a home whose value rises along with the district's, the bill stays about the same over the life of the bond; a home that rises faster than average pays a little more, and one that rises slower pays a little less. If values fell, the rate would rise to cover the same payment. The 2.20 mills on the ballot is the estimated average over 37 years.</p>
-        <p>Your actual bill is a bit lower after state credits; the old bonds get them, and Issue 2 would not. The 2029 columns are estimates. None of this includes the possible operating levy below, which is not on this ballot.</p>
+        <p>The 2029 columns are estimates.</p>
+        <details class="more"><summary>More <span class="mh">how the rate works, credits, sources</span></summary>
+        <p><b>How the rate works.</b> A bond is a fixed amount of debt. Each year the county sets the millage so it collects only that year's payment, spread across every property in the district. When home values rise, the rate goes down, so the district collects the same dollars and no more. For a home whose value rises along with the district's, the bill stays about the same over the life of the bond; a home that rises faster than average pays a little more, and one that rises slower pays a little less. If values fell, the rate would rise to cover the same payment. The 2.20 mills on the ballot is the estimated average over 37 years.<a class="cite" href="#fn-rate">*</a></p>
+        <p>Your actual bill is a bit lower after state credits; the old bonds get them, and Issue 2 would not. None of this includes the possible operating levy below, which is not on this ballot.</p>
+        <p class="src" id="fn-rate"><b>* About the rate.</b> Ohio law has the county auditor estimate an <i>average</i> rate over the life of the bonds, assuming equal yearly principal and flat property values (Ohio Revised Code 133.18 and 5705.218). Each year the county levies what that year's payment needs, so a given year can come in a little above or below 2.20 mills. What is fixed is the amount borrowed, $223,483,492.</p>
+        <p class="src">Older debt: the district says about 2.2 of today’s 2.28 bond mills roll off after 2028. Smaller older series run through 2035, about $2 million a year. Whether they are paid from the voted bond levy or the permanent-improvement fund is not yet confirmed (see "Unknown" in the fine print). If the levy pays them, up to about a third of a mill could stay on the bill either way; this table leaves that line out.<a class="cite" href="#src-7">7</a></p>
         <p class="src">Source: Issue 2 ballot language and board resolution (June 9, 2026); Ohio DTE 27 tax rate abstract, tax year 2025; Lakota audited debt schedule, FY2025. Figures as of Oct 2, 2026.<a class="cite" href="#src-6">6</a><a class="cite" href="#src-1">1</a><a class="cite" href="#src-2">2</a></p>
+        </details>
       </div>
     </section>
 
@@ -293,9 +414,11 @@ footer b{font-weight:800;color:var(--ink)}
     <section class="sheet" aria-labelledby="h-build">
       <div class="sh"><h2 id="h-build">What the $300.6 million plan would build</h2></div>
       <div class="sb">
-        <p class="sub">The plan costs $300.6 million. Local taxpayers would pay $223.5 million; the state would pay 33 percent of the $233.8 million co-funded work (about $77 million in the April plan; $76.7 million in the state's July approval). Grades 6 to 12 move into 4 campuses, and 21 buildings become 18.</p>
+        <p class="sub">Local taxpayers would pay $223.5 million and the state about $77 million. Grades 6 to 12 move into 4 campuses, and 21 buildings become 18.</p>
         <div class="plan" id="build"></div>
-        <div class="facts" style="margin-top:14px">
+        <details class="more"><summary>More <span class="mh">the state share, the district's goals, sources</span></summary>
+        <p class="small">The plan costs $300.6 million. The state would pay 33 percent of the $233.8 million co-funded work (about $77 million in the April plan; $76.7 million in the state's July approval).</p>
+        <div class="facts">
           <h3>What the district says it would do</h3>
           <div><b>All students.</b> Fewer grade bands: preschool, K to 5, 6 to 8, 9 to 12, and more time in each building.</div>
           <div><b>Elementary.</b> Less crowding and smaller classes as sixth graders move to middle schools; art, music and gym all year.</div>
@@ -304,6 +427,7 @@ footer b{font-weight:800;color:var(--ink)}
           <p class="src">Source: Lakota Local Schools mailer, "Know the Facts: Master Facilities Plan and Nov. 3 Bond Issue," October 2026. These are the district's projections.</p>
         </div>
         <p class="src">Source: Lakota board presentation "The Plan," April 13, 2026; Ohio Facilities Construction Commission conditional approval, July 28, 2026.<a class="cite" href="#src-8">8</a></p>
+        </details>
       </div>
     </section>
   </div>
@@ -312,7 +436,7 @@ footer b{font-weight:800;color:var(--ink)}
 
     
     <section class="sheet" aria-labelledby="h-bill">
-        <div class="sh"><h2 id="h-bill">Where your whole bill goes</h2></div>
+        <div class="sh"><h2 id="h-bill">Lakota schools get about 56 cents of each dollar on your bill</h2></div>
         <div class="sb">
           <p class="sub" id="bill-sub"></p>
           <div class="split" id="split" role="img"></div>
@@ -322,15 +446,19 @@ footer b{font-weight:800;color:var(--ink)}
             <tbody id="levies"></tbody>
             <tfoot><tr><th scope="row" style="padding-left:0">Total, before credits</th><td></td><td data-k="bill" style="padding-right:0"></td></tr></tfoot>
           </table>
+          <details class="more"><summary>More <span class="mh">Liberty Township, Issue 6, source</span></summary>
+          <p class="small">Liberty Township homes in Lakota pay about 3 fewer township mills (gross).</p>
           <p class="aside">Issue 6 on the same ballot renews the county's 1-mill mental-health levy at the current rate.</p>
           <p class="src">Source: Butler County Auditor, 2025 tax rates and Current Tax Distribution, tax district M56: each body's effective (after reduction factor) residential rate, before credits.<a class="cite" href="#src-3">3</a></p>
+          </details>
         </div>
       </section>
     <section class="sheet" aria-labelledby="h-oper">
-        <div class="sh"><h2 id="h-oper">Looking ahead: a forecast assumption, not on this ballot</h2></div>
+        <div class="sh"><h2 id="h-oper">Not on this ballot: a 3.6-mill operating levy in the district's forecast</h2></div>
         <div class="sb">
-          <p class="sub">The district's five-year forecast, approved by the board on Aug. 24, 2026, assumes a 3.6-mill operating levy collected from 2029. It is a planning placeholder: not approved, not filed, and its size and timing could change. The treasurer's notes say savings from the facilities plan could reduce or remove the need for it. It is separate from Issue 2. It is here so a voter can see the district's whole forecast alongside this year's ballot.</p>
-          <details class="why" style="margin-top:6px"><summary>See the forecast</summary>
+          <p class="sub">The forecast assumes it from 2029 as a planning placeholder, separate from Issue 2.</p>
+          <details class="more"><summary>See the forecast</summary>
+          <p class="small">The board approved the five-year forecast on Aug. 24, 2026. The levy itself is not approved and not filed, and its size and timing could change. The treasurer's notes say savings from the facilities plan could reduce or remove the need for it. It is here so a voter can see the district's whole forecast alongside this year's ballot.</p>
           <div class="chart" id="cashchart"></div>
           <p class="src">Source: Lakota Five-Year Forecast and its notes (including the FY2025 transfers), approved by the board Aug 24, 2026. FY2027 on are projections.<a class="cite" href="#src-4">4</a></p>
           <div class="facts" id="oper-table">
@@ -346,6 +474,292 @@ footer b{font-weight:800;color:var(--ink)}
       
     
   </div>
+
+  <!-- ===== Context sections (prototype, Oct 8, 2026) ===== -->
+
+  <section class="sheet story" aria-labelledby="h-money">
+    <div class="sh"><h2 id="h-money">Most of Lakota's money comes from local sources</h2></div>
+    <div class="sb">
+      <!-- NOTE for review: the state's own report (Cupp) says outright that it counts rollback and homestead as state money. For the Census, the research file infers it by reconciling Lakota's dollars (Census state revenue matches state aid plus rollback). -->
+      <div class="txt">
+        <p class="sub">Local sources paid 64.7 percent in fiscal 2024. The state's share peaked at 38.3 percent in 2003.<a class="cite" href="#src-13">13</a></p>
+        <ol class="marks keys">
+          <li><span class="mk">1</span><span>1997, DeRolph I</span></li>
+          <li><span class="mk">2</span><span>2013, House Bill 59</span></li>
+          <li><span class="mk">3</span><span>2021, the guarantee</span></li>
+          <li><span class="mk">4</span><span>2023, the value update</span></li>
+        </ol>
+      </div>
+      <div class="fig">
+        <div class="ckey" aria-hidden="true"><span><i class="sw" style="background:var(--green)"></i>Local property tax 57.4%</span><span><i class="sw" style="background:var(--green-2)"></i>Other local 7.3%</span><span><i class="sw" style="background:var(--gold)"></i>State 28.8%</span><span><i class="sw" style="background:var(--ink-3)"></i>Federal 6.6%</span><span>(FY2024)</span></div>
+        <div class="chart" id="revchart"></div>
+      </div>
+      <details class="more"><summary>More <span class="mh">what the markers mean, per-pupil dollars, how we count</span></summary>
+        <p class="sub">Fiscal 2024 is the year ending June 2024. In it, 57.4 percent of Lakota's revenue came from property tax and 7.3 percent from other local money; the federal government paid 6.6 percent.<a class="cite" href="#src-13">13</a></p>
+        <p class="sub">Since House Bill 920 in 1976, a voted levy collects the same dollars when home values rise, and its rate falls instead. New local money comes from new levies, new construction, unvoted millage and payments in lieu of taxes.<a class="cite" href="#src-17">17</a><a class="cite" href="#src-14">14</a></p>
+        <ol class="marks">
+          <li><span class="mk">1</span><span><b>1997, DeRolph I.</b> The Ohio Supreme Court rules that the state's school funding system violates the constitution's "thorough and efficient" clause. Lakota's state share rose from 33.9 percent in fiscal 2001 to 38.3 percent in 2003.<a class="cite" href="#src-18">18</a><a class="cite" href="#src-13">13</a></span></li>
+          <li><span class="mk">2</span><span><b>2013, House Bill 59.</b> The state's rollback (10 percent, plus 2.5 percent on owner-occupied homes) ends for levies passed on or after Nov. 5, 2013. Lakota's 2013 levy passed that day, so homeowners pay its full cost.<a class="cite" href="#src-17">17</a></span></li>
+          <li><span class="mk">3</span><span><b>2021, the guarantee.</b> The state's new formula (House Bill 110) calculates less aid for Lakota than it received in fiscal 2021, so a guarantee holds it at that level. In the district's fiscal 2027 forecast, the guarantee is $24.4 million on top of $23.3 million in formula aid.<a class="cite" href="#src-14">14</a><a class="cite" href="#src-17">17</a></span></li>
+          <li><span class="mk">4</span><span><b>2023, the value update.</b> Property values rise 32.9 percent. Under House Bill 920, Lakota's effective residential operating rate falls from 30.28 to 23.29 mills.<a class="cite" href="#src-14">14</a><a class="cite" href="#src-16">16</a></span></li>
+        </ol>
+        <p class="small">Each marker sits at the first fiscal year the change touched. Federal shares in 2021 to 2023 include one-time pandemic aid.</p>
+        <div class="tw"><table class="tbl">
+          <caption>Revenue per pupil, all funds</caption>
+          <thead><tr><th scope="col">Measure</th><th scope="col" class="n">FY2005</th><th scope="col" class="n">FY2024</th><th scope="col" class="n">Change</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">State, as reported</th><td class="n">$3,260</td><td class="n">$3,755</td><td class="n">+15%</td></tr>
+            <tr><th scope="row">Local, as reported</th><td class="n">$5,067</td><td class="n">$8,448</td><td class="n">+67%</td></tr>
+            <tr><th scope="row">State, in 2025 dollars</th><td class="n">$5,376</td><td class="n">$3,854</td><td class="n">&minus;28%</td></tr>
+            <tr><th scope="row">Local, in 2025 dollars</th><td class="n">$8,355</td><td class="n">$8,671</td><td class="n">+4%</td></tr>
+          </tbody>
+        </table></div>
+        <p class="small">Consumer prices rose about 61 percent from 2005 to 2024 (CPI-U, annual average). The 2025-dollar figures use the same index. The changes are our arithmetic on the Census figures.<a class="cite" href="#src-13">13</a></p>
+        <p class="aside"><b>How we count.</b> These shares come from the US Census Bureau, which counts the state's rollback and homestead payments (the state's share of many homeowners' school taxes) as state money. The state's own district report does the same and puts Lakota's state share at 27.9 percent for fiscal 2025.<a class="cite" href="#src-16">16</a> The district's 2026 Financial Prospectus counts that money as local and shows 75 percent local, 21 percent state and 4 percent federal for fiscal 2025.<span class="cs"></span><a class="cite" href="#src-15">15</a> This section uses the Census count throughout.</p>
+      <p class="src">Source: US Census Bureau, Annual Survey of School System Finances, all funds, fiscal 1992 to 2024 (the Census has not yet published 2025). Each year's four shares are scaled to add to 100. Policy dates from the Ohio Legislative Service Commission and the Ohio Supreme Court.<a class="cite" href="#src-13">13</a><a class="cite" href="#src-17">17</a><a class="cite" href="#src-18">18</a></p>
+      </details>
+    </div>
+  </section>
+
+  <section class="sheet story" aria-labelledby="h-room">
+    <div class="sh"><h2 id="h-room">Enrollment peaked in 2009-10; the district says schools are over capacity</h2></div>
+    <div class="sb">
+      <!-- REVIEW: the derived total for all 22 building spaces (17,354 students, 17,345 draft seats, 100%) does not reproduce the district's "more than 700" or the 771 in news reports. The district has not published its worksheet, so the page does not set the two side by side. Ask COO Craig Hatfield or Treasurer Randy Bertram for the worksheet. Also unresolved: the high-school bond vote date (FY2000 audit: bonds issued May 1994; WCPO: Feb 1995). -->
+      <div class="txt">
+        <p class="sub">The district says Lakota is "overcapacity by more than 700 students." The dashed line is a projection that counts students a little differently.<a class="cite" href="#src-7">7</a><a class="cite" href="#src-9">9</a></p>
+        <ol class="marks keys">
+          <li><span class="mk">1</span><span>1994/95, high-school bond passes</span></li>
+          <li><span class="mk">2</span><span>Nov 2000, bond and levy pass</span></li>
+          <li><span class="mk hollow">3</span><span>2004 to 2005, three questions fail</span></li>
+          <li><span class="mk">4</span><span>Nov 2005, bond and levy pass</span></li>
+          <li><span class="mk hollow">5</span><span>2010 to 2011, three levies fail</span></li>
+          <li><span class="mk">6</span><span>Nov 2013, levy passes</span></li>
+          <li><span class="mk hollow">7</span><span>Nov 2025, Issue 10 fails</span></li>
+        </ol>
+      </div>
+      <div class="fig">
+        <div class="ckey" aria-hidden="true"><span><i class="ln"></i>District count (audited reports)</span><span><i class="ln d"></i>Projection (FutureThink, March 2026)</span><span><i class="dot"></i>Passed</span><span><i class="dot open"></i>Failed</span></div>
+        <div class="chart" id="enrchart"></div>
+      </div>
+      <details class="more"><summary>More <span class="mh">the counts, the votes, building use, sources</span></summary>
+        <p class="sub">By the district's count in its audited reports, enrollment rose from 10,205 in 1991-92 to a peak of 18,473 in 2009-10. It fell to 15,991 in 2014-15 and was 17,564 in 2023-24.<a class="cite" href="#src-19">19</a></p>
+        <p class="sub">A March 2026 projection by FutureThink, done at the state's request, shows 16,754 students in 2033-34 and 16,555 by 2035-36. It counts students a little differently, leaving out regular preschool and full-time career-tech students. The same firm's July 2024 projection showed 19,074 for 2033-34.<a class="cite" href="#src-9">9</a><a class="cite" href="#src-20">20</a></p>
+        <p class="sub">The district's FAQ says: "According to the Ohio Facilities Construction Commission's (OFCC) guidelines, Lakota is overcapacity by more than 700 students, when comparing our enrollment to the size of our schools."<a class="cite" href="#src-7">7</a></p>
+        <ol class="marks">
+          <li><span class="mk">1</span><span><b>1994/95.</b> A bond for two new high schools passes; East and West open in 1997.<a class="cite" href="#src-19">19</a><a class="cite" href="#src-21">21</a></span></li>
+          <li><span class="mk">2</span><span><b>Nov 2000.</b> A combined bond (1.74 mills) and operating levy passes. It builds Plains Junior and VanGorden, open in 2003.<a class="cite" href="#src-19">19</a></span></li>
+          <li><span class="mk hollow">3</span><span><b>Mar 2004 to Feb 2005.</b> Three bond-and-levy questions fail, the last two by 316 votes and by 5 votes.<a class="cite" href="#src-21">21</a></span></li>
+          <li><span class="mk">4</span><span><b>Nov 8, 2005.</b> An $84.3 million bond with a 5.6-mill operating levy passes, 52.9 percent for.<a class="cite" href="#src-21">21</a></span></li>
+          <li><span class="mk hollow">5</span><span><b>May 2010 to Nov 2011.</b> Three operating levies fail.<a class="cite" href="#src-21">21</a></span></li>
+          <li><span class="mk">6</span><span><b>Nov 5, 2013.</b> A 5.5-mill levy (3.5 operating, 2.0 permanent improvement) passes by 288 votes.<a class="cite" href="#src-21">21</a></span></li>
+          <li><span class="mk hollow">7</span><span><b>Nov 4, 2025.</b> Issue 10, a $506 million bond and levy, fails with 60.8 percent against.<a class="cite" href="#src-12">12</a></span></li>
+        </ol>
+        <div class="tw"><table class="tbl">
+          <caption>Building use by level, 2023-24 (derived)</caption>
+          <thead><tr><th scope="col">Level</th><th scope="col" class="n">Students</th><th scope="col" class="n">Draft seats</th><th scope="col" class="n">Use</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Elementary and early childhood (14 buildings)</th><td class="n">9,345</td><td class="n">8,424</td><td class="n">111%<span class="ub" aria-hidden="true"><i style="width:88.8%"></i></span></td></tr>
+            <tr><th scope="row">Junior schools (4)</th><td class="n">2,608</td><td class="n">2,909</td><td class="n">90%<span class="ub" aria-hidden="true"><i style="width:72%"></i></span></td></tr>
+            <tr><th scope="row">Freshman schools (2)</th><td class="n">1,359</td><td class="n">2,024</td><td class="n">67%<span class="ub" aria-hidden="true"><i style="width:53.6%"></i></span></td></tr>
+            <tr><th scope="row">High schools (2)</th><td class="n">4,042</td><td class="n">3,988</td><td class="n">101%<span class="ub" aria-hidden="true"><i style="width:80.8%"></i></span></td></tr>
+          </tbody>
+        </table></div>
+        <p class="small"><b>How we derived this.</b> Students are 2023-24 enrollment by building from the district's FY2024 audited report. Seats are the "existing student capacity" in the district's January 2026 draft table, which sizes each building by the Ohio School Design Manual for the proposed grade bands. Use is students divided by seats; the green tick marks 100 percent. This is our arithmetic, and the ratios are rough where a building's grades would change. It is not a district figure.<a class="cite" href="#src-19">19</a><a class="cite" href="#src-20">20</a></p>
+      <p class="src">Source: Lakota annual financial reports, operating statistics (enrollment), FY2001 to FY2024; FutureThink enrollment report, March 11, 2026; Ohio Secretary of State and Butler County Board of Elections results; Lakota FAQ, updated Sept 25, 2026. The projection uses a different count and is drawn apart from the district line.<a class="cite" href="#src-19">19</a><a class="cite" href="#src-9">9</a><a class="cite" href="#src-21">21</a><a class="cite" href="#src-7">7</a></p>
+      </details>
+    </div>
+  </section>
+
+  <section class="sheet story comps" aria-labelledby="h-comps">
+    <div class="sh"><h2 id="h-comps">How Lakota compares with 15 Ohio districts</h2></div>
+    <div class="sb">
+      <div class="txt">
+        <p class="sub">Lakota's operating revenue per pupil is the lowest of the 16, and its state report card rating is 4.5 stars.<a class="cite" href="#src-37">37</a><a class="cite" href="#src-38">38</a></p>
+        <div class="pbtns" role="group" aria-label="Choose a chart">
+          <button type="button" class="samp cbtn" data-m="rev" aria-pressed="true" aria-controls="compchart">Revenue per pupil</button>
+          <button type="button" class="samp cbtn" data-m="bond" aria-pressed="false" aria-controls="compchart">Bond per student</button>
+        </div>
+      </div>
+      <div class="fig">
+        <p class="cap" id="comp-cap">Operating revenue per pupil, fiscal 2025<a class="cite" href="#src-37">37</a></p>
+        <div class="ckey" id="comp-key" aria-hidden="true"></div>
+        <div class="chart" id="compchart"></div>
+      </div>
+      <details class="more"><summary>More <span class="mh">the money table, the bond record, cautions, sources</span></summary>
+        <p class="sub">The 15 are large suburban districts, most of them around Columbus, and Lakota's Southwest Ohio neighbors. Among the 16, Lakota ranks 15th in operating spending per pupil, 6th in state share, 12th in effective residential mills, 7th in property value per pupil and 6th in median income (1 is highest).<a class="cite" href="#src-37">37</a></p>
+        <div class="tw"><table class="tbl cmpt">
+          <caption>Money per pupil, fiscal 2025<a class="cite" href="#src-37">37</a></caption>
+          <thead><tr><th scope="col">District</th><th scope="col" class="n">Operating revenue per pupil</th><th scope="col" class="n">Operating spending per pupil</th><th scope="col" class="n">State share of revenue</th><th scope="col" class="n">Effective residential mills</th><th scope="col" class="n">Property value per pupil (assessed)</th><th scope="col" class="n">Median income (2023 Ohio returns)</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Dublin</th><td class="n">$19,118</td><td class="n">$19,065</td><td class="n">13.5%</td><td class="n">41.49</td><td class="n">$346,343</td><td class="n">$67,060</td></tr>
+            <tr><th scope="row">Worthington</th><td class="n">$18,808</td><td class="n">$19,496</td><td class="n">18.2%</td><td class="n">42.64</td><td class="n">$319,980</td><td class="n">$61,304</td></tr>
+            <tr><th scope="row">Sycamore</th><td class="n">$18,073</td><td class="n">$18,635</td><td class="n">12.9%</td><td class="n">25.66</td><td class="n">$461,492</td><td class="n">$73,122</td></tr>
+            <tr><th scope="row">Princeton</th><td class="n">$17,952</td><td class="n">$18,690</td><td class="n">21.3%</td><td class="n">23.39</td><td class="n">$381,361</td><td class="n">$45,584</td></tr>
+            <tr><th scope="row">Olentangy</th><td class="n">$17,111</td><td class="n">$17,263</td><td class="n">16.1%</td><td class="n">36.81</td><td class="n">$309,610</td><td class="n">$85,564</td></tr>
+            <tr><th scope="row">Forest Hills</th><td class="n">$16,952</td><td class="n">$15,849</td><td class="n">22.1%</td><td class="n">31.84</td><td class="n">$312,213</td><td class="n">$68,373</td></tr>
+            <tr><th scope="row">Hilliard</th><td class="n">$16,829</td><td class="n">$16,080</td><td class="n">25.8%</td><td class="n">37.95</td><td class="n">$300,220</td><td class="n">$59,679</td></tr>
+            <tr><th scope="row">Mason</th><td class="n">$16,720</td><td class="n">$15,716</td><td class="n">27.6%</td><td class="n">29.39</td><td class="n">$349,710</td><td class="n">$69,580</td></tr>
+            <tr><th scope="row">Westerville</th><td class="n">$16,559</td><td class="n">$17,495</td><td class="n">24.4%</td><td class="n">34.32</td><td class="n">$312,506</td><td class="n">$53,755</td></tr>
+            <tr><th scope="row">South-Western</th><td class="n">$16,470</td><td class="n">$16,173</td><td class="n">47.5%</td><td class="n">20.83</td><td class="n">$234,249</td><td class="n">$43,900</td></tr>
+            <tr><th scope="row">West Clermont</th><td class="n">$15,556</td><td class="n">$15,107</td><td class="n">30.5%</td><td class="n">29.79</td><td class="n">$306,161</td><td class="n">$47,012</td></tr>
+            <tr><th scope="row">Hamilton City</th><td class="n">$15,484</td><td class="n">$15,781</td><td class="n">65.7%</td><td class="n">20.01</td><td class="n">$152,079</td><td class="n">$38,188</td></tr>
+            <tr><th scope="row">Kings</th><td class="n">$15,377</td><td class="n">$15,022</td><td class="n">22.1%</td><td class="n">32.22</td><td class="n">$322,917</td><td class="n">$57,716</td></tr>
+            <tr><th scope="row">Pickerington</th><td class="n">$15,080</td><td class="n">$14,756</td><td class="n">48.1%</td><td class="n">21.44</td><td class="n">$192,460</td><td class="n">$55,420</td></tr>
+            <tr><th scope="row">Fairfield</th><td class="n">$14,749</td><td class="n">$14,121</td><td class="n">36.6%</td><td class="n">22.49</td><td class="n">$275,863</td><td class="n">$45,798</td></tr>
+            <tr class="me"><th scope="row">Lakota</th><td class="n">$13,887</td><td class="n">$14,229</td><td class="n">27.9%</td><td class="n">23.25</td><td class="n">$313,379</td><td class="n">$62,000</td></tr>
+            <tr class="avg"><th scope="row">Ohio average</th><td class="n">$18,352</td><td class="n">$17,609</td><td class="n">37.0%</td><td class="n">27.75</td><td class="n">$295,379</td><td class="n">$47,740</td></tr>
+          </tbody>
+        </table></div>
+        <p class="small">Effective residential mills are the operating rate on homes and farms after House Bill 920 reductions, tax year 2024. Property value is assessed value as the state reports it. The Ohio average is the average district. Lakota was rated 4.5 stars in 2024-25, one of four districts here at 4.5 with Dublin, Sycamore and Forest Hills; Olentangy and Mason were rated 5. The 2025-26 report card again rates Lakota 4.5.<a class="cite" href="#src-37">37</a><a class="cite" href="#src-38">38</a></p>
+        <div class="facts">
+          <h3>The bond record, 2015 to 2026</h3>
+          <div><b>Building bonds.</b> 9 of the 14 peers in the ballot review put a building bond on the ballot since 2015, and all 9 passed at least one; 14 of their 20 bond questions passed. Mason, Fairfield, Hamilton City, Princeton and Forest Hills had no bond vote in that time. West Clermont was not part of the ballot review.<a class="cite" href="#src-40">40</a></div>
+          <div><b>Olentangy failed, then passed.</b> A $350 million bond with two levies got 36.6 percent in March 2024. Twenty months later, a bond-only $235 million, 33 percent smaller, passed with 56.2 percent.<a class="cite" href="#src-40">40</a></div>
+          <div><b>Pickerington failed twice, then passed.</b> A $95 million bond got 47.0 percent in November 2020 and 39.1 percent in May 2021. An $89.9 million bond passed in November 2022 with 57.6 percent.<a class="cite" href="#src-40">40</a></div>
+          <div><b>Kings failed twice, then passed.</b> A junior high bond got 49.0 percent in November 2019 and 48.6 percent in April 2020. A $142 million high school bond passed in March 2024 with 52.7 percent.<a class="cite" href="#src-40">40</a></div>
+          <div><b>Lakota's Issue 10.</b> Its 39.2 percent in November 2025 is among the three weakest building-bond results in this set, with Olentangy's 36.6 percent and Pickerington's 39.1 percent. Both of those districts later passed a bond.<a class="cite" href="#src-12">12</a><a class="cite" href="#src-40">40</a></div>
+          <div><b>On the same ballot.</b> South-Western City asks voters on Nov 3, 2026 for a $220 million bond at 2.26 mills over 38 years.<a class="cite" href="#src-41">41</a></div>
+          <div><b>What followed failures.</b> Most documented cuts after a failure followed failed operating levies or income taxes: Fairfield cut busing to the state minimum after March 2024, Princeton froze hiring and cut 40 positions over two years after November 2024, and Pickerington made $3.28 million a year in first-phase cuts after May 2026. Westerville (33 positions) and Olentangy (redistricting, modular classrooms, larger classes and new fees) made cuts after questions that paired a bond with operating money. After the bond-only failures in Kings and Pickerington from 2019 to 2021, we found no documented cuts.<a class="cite" href="#src-42">42</a></div>
+        </div>
+        <p class="small"><b>The bond chart.</b> Each bar is a bond's face amount divided by the district's October 2025 headcount (17,013 for Lakota): $223.5 million for Issue 2 and $506.4 million for Issue 10. Older bonds use today's enrollment and are not adjusted for inflation, so they look smaller than they were. Sycamore's bar uses its $127.5 million program cost, because the bond's face amount was not confirmed. South-Western's 2018 bar is its local share; the state added about the same. The median of the 13 passed peer bonds with a known face amount is about $8,270 per student.<a class="cite" href="#src-39">39</a><a class="cite" href="#src-40">40</a><a class="cite" href="#src-6">6</a><a class="cite" href="#src-7">7</a></p>
+        <div class="facts">
+          <h3>Cautions</h3>
+          <div><b>Student counts differ.</b> The state counts 16,736 Lakota students for fiscal 2025, and the table's per-pupil figures use the state's count for every district. The district's own counts run higher: 17,564 in 2023-24 in its audited report and 17,249 in 2025-26 in the FutureThink study.<a class="cite" href="#src-37">37</a><a class="cite" href="#src-19">19</a><a class="cite" href="#src-9">9</a></div>
+          <div><b>Economic disadvantage is left out.</b> Pickerington and Hamilton City report nearly every student as economically disadvantaged (99.7 and 100 percent), which reflects how students were counted, so that measure does not compare across these districts.<a class="cite" href="#src-37">37</a></div>
+          <div><b>Forest Hills is incomplete.</b> Its ballot record for 2015 to 2018 and late 2023 to 2026 could not be fully checked, and its 2014 bond amount was not found.<a class="cite" href="#src-40">40</a></div>
+          <div><b>State share.</b> The state's report counts rollback and homestead payments as state money; the district's prospectus counts them as local (see "How we count," above).<a class="cite" href="#src-37">37</a><a class="cite" href="#src-15">15</a></div>
+          <div><b>Size.</b> Five of the neighbors (Sycamore, Kings, Princeton, Forest Hills and West Clermont) enroll under half as many students as Lakota.<a class="cite" href="#src-37">37</a></div>
+        </div>
+      <p class="src">Source: Ohio Department of Education and Workforce, FY2025 District Profile Report and October 2025 enrollment headcount; Ohio School Report Cards, 2024-25 and 2025-26; county boards of elections results and notices, 2015 to 2026; news reports on cuts, as listed in the sources.<a class="cite" href="#src-37">37</a><a class="cite" href="#src-38">38</a><a class="cite" href="#src-39">39</a><a class="cite" href="#src-40">40</a><a class="cite" href="#src-41">41</a><a class="cite" href="#src-42">42</a></p>
+      </details>
+    </div>
+  </section>
+
+  <section class="sheet story" aria-labelledby="h-arts">
+    <div class="sh"><h2 id="h-arts">Under the plan, the district says band would start in grade 6</h2></div>
+    <div class="sb">
+      <!-- OPEN QUESTION for the district (do not state on the page until answered): the district's K-6 specials page says students "participate in year-round daily specials," while the superintendent's Oct 6, 2026 video says the plan would replace "short stints in art and music and P.E." with year-long rotations. Ask how often a K-5 student gets art, music and PE in 2026-27 (minutes per week; blocks or all year). Until then the page states only "weekly" art, per the district's site. -->
+      <div class="txt">
+        <p class="sub">Sixth grade would move to the middle schools, where the district says electives would begin.<a class="cite" href="#src-7">7</a></p>
+      </div>
+      <div class="fig">
+        <div class="tw"><table class="tbl" style="margin-top:0">
+          <caption>Today and under the plan, in the district's words</caption>
+          <thead><tr><th scope="col">Program</th><th scope="col">Today</th><th scope="col">Under the plan</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Band</th><td>Starts in grade 7</td><td>"Access to electives, including band, beginning in sixth grade"</td></tr>
+            <tr><th scope="row">Choir</th><td>Starts in junior high (grades 7 and 8)</td><td>Not stated</td></tr>
+            <tr><th scope="row">Theater</th><td>"Beginning as early as junior high"</td><td>Not stated</td></tr>
+            <tr><th scope="row">Elementary art</th><td>"A weekly hands-on experience in producing art"</td><td>"Consistent, year-round specials (e.g. art, music, gym)" in K-5</td></tr>
+            <tr><th scope="row">Sixth grade</th><td>In elementary schools (grades 3 to 6)</td><td>In middle schools (grades 6 to 8)</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="cards">
+        <article class="card"><details class="itf">
+          <summary><h3>Houston, a randomized study</h3><span class="meta">Bowen and Kisida, 2019</span><span class="one">Fewer discipline infractions and better writing; no significant effect on math, reading, science or attendance.</span></summary>
+          <div class="itb">
+          <p class="meta">42 schools chosen by lottery; 10,548 students in grades 3 to 8; school years 2015-16 and 2016-17.<a class="cite" href="#src-23">23</a></p>
+          <p><b>Found:</b> 3.6 percentage points fewer students with discipline infractions; writing scores up 0.13 standard deviations; compassion up 0.08. No significant effect on math, reading, science or attendance.</p>
+          <p><b>Limits:</b> The program added arts partnerships (performances, field trips, artist residencies) at about $14.67 per student a year, separate from school band or art classes. Principals volunteered, Houston is arts-rich, and the results cover two years only.</p>
+          </div>
+        </details></article>
+        <article class="card"><details class="itf">
+          <summary><h3>OECD review of the research</h3><span class="meta">Winner, Goldstein and Vincent-Lancrin, 2013</span><span class="one">Classroom drama strengthens verbal skills; experiments do not yet show arts classes raising academic results.</span></summary>
+          <div class="itb">
+          <p class="meta">Studies in 11 languages.<a class="cite" href="#src-24">24</a></p>
+          <p><b>Found:</b> Classroom drama strengthens verbal skills. Experimental studies of arts classes "do not (yet) show a significant causal impact" on academic results, and there is "no evidence that music education has any causal impact on mathematics scores." Its conclusion: "the main justification for arts education is clearly the acquisition of artistic habits of mind."</p>
+          <p><b>Limits:</b> Written before the Houston study. Later reviews dispute its finding on music and IQ.</p>
+          </div>
+        </details></article>
+        <article class="card"><details class="itf">
+          <summary><h3>What Ohio law requires</h3><span class="meta">Ohio Revised Code 3313.60 and 3313.603</span><span class="one">Every district's curriculum must include "the fine arts, including music."</span></summary>
+          <div class="itb">
+          <p class="meta">Ohio Revised Code 3313.60 and 3313.603.<a class="cite" href="#src-25">25</a></p>
+          <p><b>Found:</b> Every district's curriculum must include "the fine arts, including music." Most students need two semesters of fine arts, taken in grades 7 to 12, to graduate.</p>
+          <p><b>Limits:</b> We found no state minimum for elementary art or music time, and no required ratio of arts teachers since 2015. That search was not a full legal review.</p>
+          </div>
+        </details></article>
+      </div>
+      <details class="more"><summary>More <span class="mh">choir, theater, art, sources</span></summary>
+        <p class="sub">Band starts in grade 7 today. Under the plan, sixth grade moves to the middle schools, and the district says electives, including band, would begin in grade 6.<a class="cite" href="#src-22">22</a><a class="cite" href="#src-7">7</a></p>
+        <p class="sub">Choir and theater start in junior high, and elementary art is weekly, per the district's pages.<a class="cite" href="#src-22">22</a> The district says K-5 students would get "consistent, year-round specials." Its FAQ also says that if the bond passes, "all programs will be reviewed," including K-5 specials.<span class="cs"></span><a class="cite" href="#src-7">7</a></p>
+      <p class="src">Source: Lakota Arts and Activities, K-6 Specials and Kindergarten pages; Lakota FAQ, updated Sept 25, 2026; the studies and statutes named on each card.<a class="cite" href="#src-22">22</a><a class="cite" href="#src-7">7</a><a class="cite" href="#src-23">23</a><a class="cite" href="#src-24">24</a><a class="cite" href="#src-25">25</a></p>
+      </details>
+    </div>
+  </section>
+
+  <section class="sheet story full" aria-labelledby="h-time">
+    <div class="sh"><h2 id="h-time">Research ties new school buildings to home prices; test results are mixed</h2></div>
+    <div class="sb">
+      <p class="sub">Ohio's schools rest on land set aside in 1785 and a constitutional duty written in 1851. We found no study that measures how much Ohio home prices change when a levy passes or fails.</p>
+      <ol class="tl">
+        <li class="law"><span class="yr">1785</span><div class="it"><details class="itf"><summary><h3>Land Ordinance <span class="lbl">Law</span></h3><span class="one">Lot 16 of every township is reserved "for the maintenance of public schools."</span></summary><div class="itb"><p>Lot 16 of every township is reserved "for the maintenance of public schools." The first survey under it was Ohio's Seven Ranges.<a class="cite" href="#src-26">26</a></p><p class="lim">Limits: a way to fund schools with land. It shows intent, not results.</p></div></details></div></li>
+        <li class="law"><span class="yr">1787</span><div class="it"><details class="itf"><summary><h3>Northwest Ordinance, Article 3 <span class="lbl">Law</span></h3><span class="one">Schools and "the means of education shall forever be encouraged."</span></summary><div class="itb"><p>"Religion, morality, and knowledge, being necessary to good government and the happiness of mankind, schools and the means of education shall forever be encouraged."<a class="cite" href="#src-27">27</a></p><p class="lim">Limits: a statement of purpose with no money attached.</p></div></details></div></li>
+        <li class="law"><span class="yr">1851</span><div class="it"><details class="itf"><summary><h3>Ohio Constitution, Article VI, Section 2 <span class="lbl">Law</span></h3><span class="one">The General Assembly must "secure a thorough and efficient system of common schools throughout the state."</span></summary><div class="itb"><p>The General Assembly must "secure a thorough and efficient system of common schools throughout the state."<a class="cite" href="#src-28">28</a></p><p class="lim">Limits: the courts decide what "thorough and efficient" means.</p></div></details></div></li>
+        <li class="law"><span class="yr">1976</span><div class="it"><details class="itf"><summary><h3>House Bill 920 <span class="lbl">Law</span></h3><span class="one">When values rise, voted levies collect the same dollars and the rate falls.</span></summary><div class="itb"><p>When values rise, voted levies collect the same dollars and the rate falls. A 1980 amendment put this in the Ohio Constitution.<a class="cite" href="#src-17">17</a></p><p class="lim">Limits: districts at the 20-mill floor are an exception. Lakota's effective residential rate, about 23 mills, is above it.<a class="cite" href="#src-16">16</a></p></div></details></div></li>
+        <li class="law"><span class="yr">1997</span><div class="it"><details class="itf"><summary><h3>DeRolph I and the School Facilities Commission <span class="lbl">Court</span></h3><span class="one">The Ohio Supreme Court rules 4 to 3 that the school funding system violates Article VI, Section 2.</span></summary><div class="itb"><p>The Ohio Supreme Court rules 4 to 3 that the school funding system violates Article VI, Section 2. Among the laws it holds unconstitutional is the Classroom Facilities Act, "to the extent that it is underfunded." The same year, Senate Bill 102 creates the Ohio School Facilities Commission, the agency now named the Ohio Facilities Construction Commission that co-funds Issue 2.<a class="cite" href="#src-18">18</a></p><p class="lim">Limits: legal holdings about the state's duty, not studies of results. The court ruled three more times, through 2002.</p></div></details></div></li>
+        <li><span class="yr">2010</span><div class="it"><details class="itf"><summary><h3>Cellini, Ferreira and Rothstein, California <span class="lbl u">Study</span></h3><span class="one">Where school bonds narrowly passed, home prices rose at once.</span></summary><div class="itb"><p>Where school bonds narrowly passed, home prices rose at once. Buyers valued each $1 of school capital spending at "$1.50 or more."<a class="cite" href="#src-29">29</a></p><p>Bonds voted 1987 to 2006.<a class="cite" href="#src-29">29</a></p><p class="lim">Limits: California only, close elections only. It measures what buyers pay; the authors find test scores explain only a small part of it.</p></div></details></div></li>
+        <li><span class="yr">2014</span><div class="it"><details class="itf"><summary><h3>Neilson and Zimmerman, New Haven <span class="lbl u">Study</span></h3><span class="one">New school buildings raised reading scores and nearby home prices.</span></summary><div class="itb"><p>New school buildings raised reading scores by 0.15 standard deviations by year six, with no math effect, and raised nearby home prices by "roughly 10%."<a class="cite" href="#src-30">30</a></p><p class="lim">Limits: one city; not a randomized study.</p></div></details></div></li>
+        <li><span class="yr">2016</span><div class="it"><details class="itf"><summary><h3>Jackson, Johnson and Persico, national <span class="lbl u">Study</span></h3><span class="one">More spending per pupil led to more years of school, higher wages and less adult poverty.</span></summary><div class="itb"><p>Ten percent more spending per pupil in each of 12 school years led to 0.31 more years of school, about 7 percent higher wages and 3.2 percentage points less adult poverty. The effects were larger for children from low-income families.<a class="cite" href="#src-31">31</a></p><p class="lim">Limits: about operating money over many years, not buildings. Children born 1955 to 1985.</p></div></details></div></li>
+        <li><span class="yr">2016</span><div class="it"><details class="itf"><summary><h3>Martorell, Stange and McFarlin, Texas <span class="lbl u">Study</span></h3><span class="one">Building campaigns showed "little evidence" of higher achievement.</span></summary><div class="itb"><p>Nearly 1,400 bond-funded building campaigns, comparing close votes: "little evidence" of higher achievement, and "very precise zero" effects for students in renovated campuses.<a class="cite" href="#src-32">32</a></p><p>Texas, 1997 to 2010.<a class="cite" href="#src-32">32</a></p><p class="lim">Limits: Texas only; test scores only, with no home prices.</p></div></details></div></li>
+        <li><span class="yr">2017</span><div class="it"><details class="itf"><summary><h3>Conlin and Thompson, Ohio <span class="lbl u">Study</span></h3><span class="one">Test proficiency and home prices dipped at first, then rose.</span></summary><div class="itb"><p>Ohio's state building program, over $10 billion in 231 districts from 1997 to 2011: the share of students passing state tests dipped in the first couple of years, then rose. Home prices dipped in the short term, then gained.<a class="cite" href="#src-33">33</a></p><p class="lim">Limits: measures the share of students proficient. Part of the effect may come from operating spending. Sizes are not in the abstract.</p></div></details></div></li>
+        <li><span class="yr">2018</span><div class="it"><details class="itf"><summary><h3>Lafortune, Rothstein and Schanzenbach, national <span class="lbl u">Study</span></h3><span class="one">School finance reforms after 1990 gradually raised achievement in low-income districts.</span></summary><div class="itb"><p>School finance reforms after 1990 raised achievement in low-income districts, gradually: 0.12 to 0.24 standard deviations per $1,000 per pupil in yearly spending.<a class="cite" href="#src-34">34</a></p><p class="lim">Limits: the numbers come from the 2016 working paper; the published article gives none in its abstract. Measured on national test samples.</p></div></details></div></li>
+        <li><span class="yr">2022</span><div class="it"><details class="itf"><summary><h3>Lafortune and Sch&ouml;nholzer, Los Angeles <span class="lbl u">Study</span></h3><span class="one">New schools raised test scores, attendance and home prices.</span></summary><div class="itb"><p>New schools raised test scores, attendance and home prices. Each $1 spent "generated $1.62 in household value," about a quarter of it through test score gains.<a class="cite" href="#src-35">35</a></p><p class="lim">Limits: one very large district. The $1.62 combines projected earnings with home values.</p></div></details></div></li>
+      </ol>
+      <details class="more"><summary>More <span class="mh">what the studies add up to, sources</span></summary>
+      <p class="small">In the studies below that measured home prices, prices rose after new school building spending; in Ohio they dipped first. Test score results are mixed, and the Texas study found none.</p>
+      <p class="src">Source: the laws, rulings and studies cited on each line. Study findings are quoted or taken from each paper's abstract or working paper, as marked in the sources.<a class="cite" href="#src-26">26</a><a class="cite" href="#src-29">29</a><a class="cite" href="#src-35">35</a></p>
+      </details>
+    </div>
+  </section>
+
+  <section class="sheet story full" aria-labelledby="h-paths">
+    <div class="sh"><h2 id="h-paths">Two paths, in time</h2></div>
+    <div class="sb">
+      <!-- REVIEW: superintendent quotes are from the publisher captions of the Oct 6, 2026 video, at the [minute marks] shown; check each against the audio before publishing ("2930" in the captions = 2029-30). Strike count: the FAQ says that if the November 2026 issue fails, Lakota "will have two additional attempts," so the page does not count Issue 10 (Nov 2025) as a strike. Payoff year left out: bonds dated about Feb 1, 2027, up to 37 years, first collection 2029; the final year (2063, 2064 or 2065) is not stated in the sources in hand. "Half-day kindergarten" does not appear in the 2026 district text and is not used. -->
+      <p class="sub">What the district says happens next, by date, either way.</p>
+      <div class="pbtns" role="group" aria-label="Show a path step by step">
+        <button type="button" class="samp pbtn" data-path="pass" aria-pressed="false" aria-controls="path-pass">If Issue 2 passes</button>
+        <button type="button" class="samp pbtn" data-path="fail" aria-pressed="false" aria-controls="path-fail">If Issue 2 fails</button>
+      </div>
+      <div class="paths">
+        <div class="path" id="path-pass">
+          <h3>If Issue 2 passes</h3>
+          <ol class="pt">
+            <li><details class="itf"><summary><span class="when">Nov 3, 2026</span><span class="one">Voters decide Issue 2.</span></summary><div class="itb"><p>Voters decide Issue 2: $223,483,492 in bonds over up to 37 years, an estimated average of 2.20 mills.<a class="cite" href="#src-6">6</a></p></div></details></li>
+            <li><details class="itf"><summary><span class="when">About Feb 1, 2027</span><span class="one">The bonds are dated.</span></summary><div class="itb"><p>The bonds are dated, at an estimated 5.00 percent average interest rate in the board's resolution.<a class="cite" href="#src-6">6</a></p></div></details></li>
+            <li><details class="itf"><summary><span class="when">After the vote, before construction</span><span class="one">A new traffic study.</span></summary><div class="itb"><p>A new traffic study for entrances, exits and traffic flow. "A new traffic study will need to be done to determine the final options for traffic flow, including entrance/exit locations." The FAQ adds: "Safety and traffic flow will be reviewed again prior to construction beginning."<a class="cite" href="#src-7">7</a></p></div></details><!-- PLACEHOLDER: a later line on recent crashes near schools goes here once that research is verified. Do not fill in until then. --></li>
+            <li><details class="itf"><summary><span class="when">Next</span><span class="one">Designs and construction begin.</span></summary><div class="itb"><p>Designs and construction begin. "We would begin construction," the superintendent says. <span class="mm">[06:45]</span><a class="cite" href="#src-36">36</a></p></div></details></li>
+            <li><span class="when">After 2028</span><p>About 2.2 mills of older bonds roll off.<a class="cite" href="#src-7">7</a></p></li>
+            <li><details class="itf"><summary><span class="when">2029</span><span class="one">Collection of the new 2.2 mills begins.</span></summary><div class="itb"><p>Collection of the new 2.2 mills begins. The superintendent calls it "an anticipated no new tax increase." <span class="mm">[13:38]</span><a class="cite" href="#src-36">36</a> The calculator above shows the cost against today and against a failed vote.</p></div></details></li>
+            <li><details class="itf"><summary><span class="when">Start of the 2029-30 school year</span><span class="one">Students move into the new buildings and grade bands.</span></summary><div class="itb"><p>Students move into the new and renovated buildings and the new grade bands: preschool, K to 5, 6 to 8 and 9 to 12. <span class="mm">[06:50]</span><a class="cite" href="#src-36">36</a><a class="cite" href="#src-7">7</a></p></div></details></li>
+            <li><details class="itf"><summary><span class="when">After occupancy</span><span class="one">Four buildings are demolished.</span></summary><div class="itb"><p>Adena, Ridge, Central/Creekside and West Freshman are demolished. <span class="mm">[07:03]</span><a class="cite" href="#src-36">36</a></p></div></details></li>
+            <li><details class="itf"><summary><span class="when">2029-30 on, K to 5</span><span class="one">Smaller classes and year-round specials, per the superintendent.</span></summary><div class="itb"><p>Class sizes, "instead of sitting at 27 plus is going to look more like 23 or 24," and specials in "year round rotations" in place of "short stints in art and music and P.E.," per the superintendent. <span class="mm">[04:29, 04:42]</span><a class="cite" href="#src-36">36</a></p></div></details></li>
+            <li><details class="itf"><summary><span class="when">2029-30 on, grades 6 to 8</span><span class="one">Sixth graders move to middle school.</span></summary><div class="itb"><p>Sixth graders move to middle school with "earlier access to electives." <span class="mm">[05:03]</span> The FAQ says electives, "including band," begin in sixth grade.<a class="cite" href="#src-36">36</a><a class="cite" href="#src-7">7</a></p></div></details></li>
+            <li><details class="itf"><summary><span class="when">After the move</span><span class="one">Fewer traveling teachers and three fewer buildings.</span></summary><div class="itb"><p>"Fewer traveling teachers," the superintendent says, <span class="mm">[08:33]</span> and three fewer buildings to maintain, per the FAQ.<a class="cite" href="#src-36">36</a><a class="cite" href="#src-7">7</a></p></div></details></li>
+          </ol>
+        </div>
+        <div class="path" id="path-fail">
+          <h3>If Issue 2 fails</h3>
+          <ol class="pt">
+            <li><span class="when">Nov 3, 2026</span><p>Issue 2 does not pass.</p></li>
+            <li><details class="itf"><summary><span class="when">After the vote</span><span class="one">The grade bands cannot change, the FAQ says.</span></summary><div class="itb"><p>"If the bond issue is not approved, we cannot shift the grade-band configuration, which is necessary to address overcrowding and large class sizes," the FAQ says.<a class="cite" href="#src-7">7</a></p></div></details></li>
+            <li><details class="itf"><summary><span class="when">After the vote</span><span class="one">The district's traffic study waits on the vote.</span></summary><div class="itb"><p>The district's traffic study waits on the vote. The FAQ says the study "is pending the outcome of the Nov. 3 vote by the community due to its cost."<a class="cite" href="#src-7">7</a></p></div></details><!-- PLACEHOLDER: a later line on recent crashes near schools goes here once that research is verified. Do not fill in until then. --></li>
+            <li><details class="itf"><summary><span class="when">Today, per the district</span><span class="one">Overcrowding stays as the district describes it.</span></summary><div class="itb"><p>Overcrowding stays as the district describes it: "overcapacity by more than 700 students," and "many K-5 classrooms have 27 or more students, with some classes exceeding 30."<a class="cite" href="#src-7">7</a></p></div></details></li>
+            <li><details class="itf"><summary><span class="when">Next, options</span><span class="one">Other options, including all-day kindergarten.</span></summary><div class="itb"><p>"Other options will need to be considered, including all-day kindergarten." The FAQ adds: "there are other options that would be considered before eliminating all-day kindergarten because of its educational impact. These options include specials, electives and a tuition-based all-day kindergarten."<a class="cite" href="#src-7">7</a> Today Lakota offers all-day kindergarten to all families, with a half-day morning option.<span class="cs"></span><a class="cite" href="#src-22">22</a></p></div></details></li>
+            <li><span class="when">After 2028</span><p>The older bonds' 2.2 mills still roll off, and the school-bond line on the bill goes to $0.<a class="cite" href="#src-7">7</a></p></li>
+            <li><details class="itf"><summary><span class="when">Later ballots</span><span class="one">Two more tries before the state's $77 million goes elsewhere.</span></summary><div class="itb"><p>"Lakota will have two additional attempts at passing a bond issue. If a bond issue is not approved by voters after three attempts, the OFCC will apply the $77 million to another district's facilities plan," the FAQ says. The superintendent calls it "three strikes and you're out." <span class="mm">[11:27]</span><a class="cite" href="#src-7">7</a><a class="cite" href="#src-36">36</a></p></div></details></li>
+          </ol>
+        </div>
+      </div>
+      <p class="either"><b>Either way.</b> The forecast's assumed 3.6-mill operating levy, collected from 2029, applies whether Issue 2 passes or fails.<a class="cite" href="#src-4">4</a></p>
+      <details class="more"><summary>More <span class="mh">research elsewhere, sources</span></summary>
+      <p class="small">What research found in other places and other times is in the <a href="#h-time">timeline above</a>. These are not predictions for Lakota.</p>
+      <p class="src">Source: Lakota Master Facilities Plan FAQ, updated Sept 25, 2026; district post "The Big Picture," Sept 25, 2026; Resolution to Proceed, June 9, 2026; "2026 Master Facilities Plan and November Bond Information," district video, Oct 6, 2026, with minute marks from its captions; Five-Year Forecast, Aug 24, 2026. These are the district's statements and plans.<a class="cite" href="#src-7">7</a><a class="cite" href="#src-6">6</a><a class="cite" href="#src-36">36</a><a class="cite" href="#src-4">4</a></p>
+      </details>
+    </div>
+  </section>
 
   <details class="fine">
     <summary>Fine print: sources, timeline and method<span class="pm" aria-hidden="true"></span></summary>
@@ -363,12 +777,12 @@ footer b{font-weight:800;color:var(--ink)}
       <p><span class="lbl u">Unknown</span> Whether the smaller series after 2028 are paid from the voted bond levy or from the 2-mill permanent-improvement fund. That decides whether a residual of up to about a third of a mill stays on the bill in 2029 to 2035 either way. A public-records request for the debt-service schedule by series and by fund settles it.</p>
       <p><span class="lbl v">Verified</span> <b>The county's own Levy Calculator, run on a West Chester home appraised at $322,330 (taxable $112,820), Sept 29 and again Oct 2, 2026.</b> It shows the Lakota bond as <b>Current Tax $0.00, Additional Tax $248.20</b>. The same parcel's Current Tax Distribution tab shows the two existing Lakota bonds at 2.28 mills, <b>$257.21</b> a year. The calculator shows only the new levy; the current bond tax is on the separate distribution tab.<a class="cite" href="#src-3">3</a></p>
       <p><span class="lbl v">Verified</span> <b>An operating levy is in the district's own five-year forecast</b>, approved by the board Feb 23, 2026 and again Aug 24, 2026: a new <b>3.6-mill</b> operating levy assumed to pass in 2028 and collect from 2029 ($11.3M in FY2029, $21.8M in FY2030). It is on no ballot. It would apply whether Issue 2 passes or fails.<a class="cite" href="#src-4">4</a></p>
-      <p><span class="lbl v">Verified</span> <b>Issue 2 as certified by the Butler County Board of Elections and the board's June 9, 2026 resolution (5 to 0):</b> a bond issue of $223,483,492 over 37 years, estimated average 2.20 mills, about $77 per $100,000 of market value on a certified taxable value of $5,338,361,890, bonds dated about Feb 1, 2027 at an estimated net average interest rate of 5.00%, first collection 2029.<a class="cite" href="#src-5">5</a><a class="cite" href="#src-6">6</a> <b>Total repayment, estimated:</b> at the resolution's 5% estimate and level payments over 37 years, total repayment would be roughly $495 million, about $13.4 million a year, of which about $271 million is interest. That is an arithmetic estimate from the resolution's own figures, not a district number; the real schedule depends on the rates when the bonds sell.<a class="cite" href="#src-6">6</a></p><p><span class="lbl v">Verified</span> <b>One mill in Lakota is about $5.34 million</b> on the taxable value the county auditor certified for the resolution ($5,338,361,890).<a class="cite" href="#src-6">6</a> The 2026 reappraisal raised values countywide by a median of 19 percent (auditor's FAQ, June 30, 2026);<a class="cite" href="#src-10">10</a> the district's August forecast assumes 9 percent for homes.<a class="cite" href="#src-4">4</a> Because a bond levy raises a fixed dollar amount, higher values mean fewer mills, not more dollars.</p>
+      <p><span class="lbl v">Verified</span> <b>Issue 2 as certified by the Butler County Board of Elections and the board's June 9, 2026 resolution (5 to 0):</b> a bond issue of $223,483,492 over 37 years, estimated average 2.20 mills, about $77 per $100,000 of market value on a certified taxable value of $5,338,361,890, bonds dated about Feb 1, 2027 at an estimated net average interest rate of 5.00%, first collection 2029.<a class="cite" href="#src-5">5</a><a class="cite" href="#src-6">6</a> <b>Total repayment, estimated:</b> at the resolution's 5% estimate and level payments over 37 years, total repayment would be roughly $495 million, about $13.4 million a year, of which about $271 million is interest. That is an arithmetic estimate from the resolution's own figures, not a district number; the real schedule depends on the rates when the bonds sell.<a class="cite" href="#src-6">6</a></p><p><span class="lbl v">Verified</span> <b>One mill in Lakota is about $5.34 million</b> on the taxable value the county auditor certified for the resolution ($5,338,361,890).<a class="cite" href="#src-6">6</a> The 2026 reappraisal raised values countywide by a median of 19 percent (auditor's FAQ, June 30, 2026);<span class="cs"></span><a class="cite" href="#src-10">10</a> the district's August forecast assumes 9 percent for homes.<span class="cs"></span><a class="cite" href="#src-4">4</a> Because a bond levy raises a fixed dollar amount, higher values mean fewer mills, not more dollars.</p>
       <p><span class="lbl v">Verified</span> <b>The ballot question, as the board's June 9, 2026 resolution sets it:</b> "Shall bonds be issued by the Lakota Local School District... in the principal amount of $223,483,492, to be repaid annually over a maximum period of 37 years, and an annual levy of property taxes be made outside the ten-mill limitation, estimated by the county auditor to average over the repayment period of the bond issue 2.20 mills for each $1 of taxable value, which amounts to $77 for each $100,000 of the county auditor's market value, commencing in 2028, first due in calendar year 2029..."<a class="cite" href="#src-6">6</a></p>
       <p><span class="lbl v">Verified</span> <b>The votes (board roll calls).</b> May 20, 2026, resolution of necessity: passed 4 to 1. The same night an earned-income-tax alternative failed 2 to 3. June 9, 2026, resolution to proceed: passed 5 to 0.<a class="cite" href="#src-6">6</a></p>
       <p><span class="lbl v">Verified</span> <b>What the money builds (board deck, April 13, 2026, "The Plan").</b> Plains Junior addition and renovation $58.7M; East Freshman addition and renovation $55.3M; East High School campus $57.6M; West High School campus $58.3M; demolition of Ridge, Adena and Creekside/West Freshman about $3.8M; locally funded items $51.5M; permanent improvements $15.3M. Total $300.6M ($300,627,663); state share 33 percent of the $233.8M co-funded work, about $77.1M; local share $223,483,492. Grades K to 5 stay in 13 elementaries; 6 to 8 at East Freshman and Plains; 9 to 12 at East and West. Twenty-one buildings become eighteen. The state's Facilities Construction Commission gave conditional approval July 28, 2026 (Classroom Facilities Assistance Program, Segment One): state share $76,681,895, and the board must accept by Nov 25, 2026.<a class="cite" href="#src-8">8</a></p>
       <p><span class="lbl v">Verified</span> <b>Enrollment (FutureThink study, done at the state's request, March 11, 2026):</b> 17,249 students in all in 2025 to 26. On the study's projection basis (16,913, which leaves out regular preschool and full-time JVS students), enrollment peaks near 17,116 in 2029 to 30 and ends 358 lower by 2035 to 36. The district's March 26, 2026 post says the state's 2024 study had forecast about 2,000 more students over ten years; its FAQ says buildings are over capacity by more than 700 today.<a class="cite" href="#src-9">9</a><a class="cite" href="#src-7">7</a></p>
-      <p><span class="lbl v">Verified</span> <b>The credits are changing under state law.</b> The 10 percent non-business and 2.5 percent owner-occupancy credits apply only to levies approved before late 2013; the state abstract marks the 2000 and 2005 bonds as qualifying, and a new bond would not.<a class="cite" href="#src-1">1</a><a class="cite" href="#src-10">10</a> House Bill 186 raises the owner-occupancy credit (to as much as 15.38 percent) and phases the non-business credit down to zero over four years starting tax year 2026, on qualifying levies only. Its inflation-cap credit is $0 for the Lakota school levies, because the district's operating levies have not reached the 20-mill floor; Lakota homes may still get the Butler Tech (JVSD) portion, estimated at $12.16 per $100,000. House Bill 96's veto override (item 66, completed Oct 1, 2025) ends replacement, emergency and substitute levies for elections on or after Jan 1, 2026. This page shows the bill before credits; your treasurer's bill applies them.<a class="cite" href="#src-10">10</a><a class="cite" href="#src-11">11</a></p>
+      <p><span class="lbl v">Verified</span> <b>The credits are changing under state law.</b> The 10 percent non-business and 2.5 percent owner-occupancy credits apply only to levies approved before late 2013; the state abstract marks the 2000 and 2005 bonds as qualifying, and a new bond would not.<a class="cite" href="#src-1">1</a><a class="cite" href="#src-10">10</a> House Bill 186 raises the owner-occupancy credit (to as much as 15.38 percent) and phases the non-business credit down to zero over four years starting tax year 2026, on qualifying levies only. Its inflation-cap credit is $0 for the Lakota school levies, because the district's operating levies have not reached the 20-mill floor; Lakota homes may still get the Butler Tech (JVSD) portion, estimated at $12.16 per $100,000. House Bill 96's veto override (item 66, completed Oct 1, 2025) ends replacement, emergency and substitute levies for elections on or after Jan 1, 2026. This page shows the bill before credits; your treasurer's bill applies them.<span class="cs"></span><a class="cite" href="#src-10">10</a><a class="cite" href="#src-11">11</a></p>
       <p style="margin-top:14px"><b>Where this comes from.</b> Every number above traces to one of these. Tap a superscript to jump here.</p>
       <ol class="srcs">
         <li id="src-1">Ohio Division of Tax Equalization, <a href="https://auditor.bcohio.gov/Documents/Real%20Estate/Reports/DTE27_2025_09_2025_FINAL.pdf" target="_blank" rel="noopener"><b>DTE 27 Abstract of Tax Rates, tax year 2025, Butler County</b></a>, Lakota LSD page (report page 7, dated 12/21/2025), posted on the county auditor's Reports page; the county's <a href="https://auditor.bcohio.gov/real_estate/taxes/levies/index.php" target="_blank" rel="noopener">Tax Levies page</a> describes it.</li>
@@ -383,9 +797,39 @@ footer b{font-weight:800;color:var(--ink)}
         <li id="src-10">Butler County Auditor, <a href="https://auditor.bcohio.gov/real_estate/owner_occupancy_credit/index.php" target="_blank" rel="noopener">Owner-Occupancy Tax Reduction</a>, <a href="https://auditor.bcohio.gov/real_estate/homestead_new/index.php" target="_blank" rel="noopener">Homestead Exemption</a>, <a href="https://auditor.bcohio.gov/Documents/Real%20Estate/2026%20FAQ%20values%20taxes%20NN%20June%2030%20(002).pdf" target="_blank" rel="noopener">2026 Property Value and Tax FAQ</a> (June 30, 2026), <a href="https://auditor.bcohio.gov/Documents/Real%20Estate/Property%20Tax%20Reform%20Guide%20Jan2026.pdf" target="_blank" rel="noopener">Property Tax Reform Guide</a> (Jan 2026) and <a href="https://auditor.bcohio.gov/Documents/Real%20Estate/Taxes/2026%20ICC%20FAQ%20July%20Auditor%20%20Treasurer%20Combined%20LS3.pdf" target="_blank" rel="noopener">Inflation Cap Credit guide</a> (July 2026).</li>
         <li id="src-11">Ohio General Assembly, <a href="https://www.legislature.ohio.gov/legislation/136/hb96/status" target="_blank" rel="noopener">House Bill 96 status</a> (veto item passed notwithstanding the Governor's objections, House July 21 and Senate Oct 1, 2025) and <a href="https://www.legislature.ohio.gov/legislation/136/hb186" target="_blank" rel="noopener">House Bill 186</a> (signed Dec 19, 2025; effective March 20, 2026).</li>
       <li id="src-12">Butler County Board of Elections, <a href="https://liveresults.boe.ohio.gov/ENR/butlerohenr/22/en/Index_22.html" target="_blank" rel="noopener"><b>November 4, 2025 General Election results</b></a> (Lakota Local School Issue 10: 12,068 for, 18,718 against, 76 of 76 precincts).</li>
+      <li id="src-13">US Census Bureau, <a href="https://www2.census.gov/programs-surveys/school-finances/tables/" target="_blank" rel="noopener"><b>Annual Survey of School System Finances</b></a> (F-33), district files for fiscal 1992 to 2024, Lakota LSD, Butler County (NCES ID 3904611): total, local, property-tax, state and federal revenue and fall enrollment; shares and per-pupil figures computed. Inflation: BLS consumer price index (CPI-U), annual average, via <a href="https://fred.stlouisfed.org/series/CPIAUCSL" target="_blank" rel="noopener">FRED</a>.</li>
+      <li id="src-14">Lakota Local School District, <a href="https://public.education.ohio.gov/geoDoc/5-yrForecast/FY27%20(2027P0000)%20-%20First%20Required%20Submission/Lakota_046110/Lakota_046110_OCTAssumptionsFY27.pdf" target="_blank" rel="noopener"><b>FY27 five-year forecast assumptions</b></a>, filed with the Ohio Department of Education and Workforce, August 2026 (guarantee and formula aid, the 2023 value update, sources of local revenue).</li>
+      <li id="src-15">Lakota Local School District, <a href="https://resources.finalsite.net/images/v1785439261/lakotaonlinecom/nz8riisf27gi2394cwgh/Lakota_FinancialProspectus_2026_FINAL.pdf" target="_blank" rel="noopener"><b>2026 Financial Prospectus</b></a>, "Lakota's Revenue Sources."</li>
+      <li id="src-16">Ohio Department of Education and Workforce, <a href="https://education.ohio.gov/Topics/Finance-and-Funding/School-Payment-Reports/District-Profile-Reports" target="_blank" rel="noopener"><b>District Profile Reports</b></a> (the "Cupp report"), FY2021 to FY2025: Lakota's revenue shares and effective residential operating millage.</li>
+      <li id="src-17">Ohio Legislative Service Commission, <a href="https://lsc.ohio.gov/assets/organizations/legislative-service-commission/files/school-funding-resources-2019-school-funding-complete-resource.pdf" target="_blank" rel="noopener"><b>School Funding Complete Resource 2019</b></a> (House Bill 920 reduction factors, rollbacks) and <a href="https://lsc.ohio.gov/assets/legislation/134/hb110/en/files/hb110-edu-bill-analysis-as-enrolled-134th-general-assembly.pdf" target="_blank" rel="noopener">analysis of House Bill 110</a> (2021); Hamilton County Auditor, <a href="https://wedge3.hcauditor.org/view/re/1190A03004700/2015/levies" target="_blank" rel="noopener">levy notice on House Bill 59</a> (rollback ends for levies passed Nov 5, 2013 or later).</li>
+      <li id="src-18">Supreme Court of Ohio, <b>DeRolph v. State</b>: <a href="https://www.supremecourt.ohio.gov/rod/docs/pdf/0/1997/1997-ohio-84.pdf" target="_blank" rel="noopener">1997-Ohio-84</a>, <a href="https://www.supremecourt.ohio.gov/rod/docs/pdf/0/2000/2000-ohio-437.pdf" target="_blank" rel="noopener">2000-Ohio-437</a>, <a href="https://www.supremecourt.ohio.gov/rod/docs/pdf/0/2001/2001-ohio-1343.pdf" target="_blank" rel="noopener">2001-Ohio-1343</a>, <a href="https://www.supremecourt.ohio.gov/rod/docs/pdf/0/2002/2002-ohio-6750.pdf" target="_blank" rel="noopener">2002-Ohio-6750</a>; Ohio Legislative Service Commission, <a href="https://lsc.ohio.gov/assets/organizations/legislative-service-commission/files/school-facilities-october-2025.pdf" target="_blank" rel="noopener">School Facilities Assistance</a>, October 2025.</li>
+      <li id="src-19">Lakota Local School District, <b>annual financial reports</b>, operating statistics (enrollment) and debt notes: <a href="https://ohioauditor.gov/auditsearch/Reports/2001/lakota_local_school_district_00-butler.pdf" target="_blank" rel="noopener">FY2000</a>, <a href="https://ohioauditor.gov/AuditSearch/Reports/2002/lakota_local_school_district_01-butler.pdf" target="_blank" rel="noopener">FY2001</a>, <a href="https://ohioauditor.gov/AuditSearch/Reports/2007/Lakota_Local_School_District_06-Butler.pdf" target="_blank" rel="noopener">FY2006</a> (Ohio Auditor of State), <a href="https://resources.finalsite.net/images/v1631516981/lakotaonlinecom/gr6ndzumfsfzpxupeurs/ComprehensiveAnnualFinancialReport-CAFR2013.pdf" target="_blank" rel="noopener">FY2013</a>, <a href="https://resources.finalsite.net/images/v1716568466/lakotaonlinecom/zjad5mdjw6klutsoulrc/LakotaLSDACFR2023.pdf" target="_blank" rel="noopener">FY2023</a> and <a href="https://cdnm.heyzine.com/files/uploaded/690ac9e2dbcb773e5d4c42b0a5619b10d34ff972.pdf" target="_blank" rel="noopener">FY2024</a> (as posted by the district).</li>
+      <li id="src-20">Lakota Master Facilities Plan documents: <a href="https://resources.finalsite.net/images/v1769180503/lakotaonlinecom/xqoah9x9rchlcodylnlx/MFPDiscussionDocumentsforTech.pdf" target="_blank" rel="noopener"><b>Options to Consider</b></a>, January 2026 (draft capacity table, page 4), and <a href="https://resources.finalsite.net/images/v1758977538/lakotaonlinecom/fkvjszhc9koypg9axffl/OFCCApproval.pdf" target="_blank" rel="noopener"><b>OFCC Agreement and Building Assessments</b></a> (with the July 30, 2024 enrollment projection).</li>
+      <li id="src-21">Election results: Ohio Secretary of State, <a href="https://data.ohiosos.gov/portal/past-election-results" target="_blank" rel="noopener"><b>past election results</b></a>, statewide tax-issue files from 2003; Butler County Board of Elections, <a href="https://elections.bcohio.gov/data_and_resources/results.php" target="_blank" rel="noopener">results</a>, including <a href="https://elections.bcohio.gov/Permanent/Results/20131105.pdf" target="_blank" rel="noopener">Nov 5, 2013</a>; WCPO, <a href="https://www.wcpo.com/news/insider/sports-vault-remembering-when-lakota-high-school-became-east-and-west" target="_blank" rel="noopener">on the 1990s high-school bond</a>.</li>
+      <li id="src-22">Lakota Local Schools, <a href="https://www.lakotaonline.com/academics/student-support/fine-arts-activities" target="_blank" rel="noopener"><b>Arts and Activities</b></a>, <a href="https://www.lakotaonline.com/academics/learning/k-6-learning/specials" target="_blank" rel="noopener">K-6 Specials</a> and <a href="https://www.lakotaonline.com/academics/learning/k-6-learning/kindergarten" target="_blank" rel="noopener">Kindergarten</a> pages, read Oct 8, 2026.</li>
+      <li id="src-23">Daniel H. Bowen and Brian Kisida, <a href="https://www.arts.gov/sites/default/files/Research-Art-Works-TAMU.pdf" target="_blank" rel="noopener"><b>"Investigating Causal Effects of Arts Education Experiences: Experimental Evidence from Houston's Arts Access Initiative"</b></a>, Kinder Institute, Rice University, February 2019.</li>
+      <li id="src-24">Ellen Winner, Thalia Goldstein and St&eacute;phan Vincent-Lancrin, <a href="https://www.oecd.org/en/publications/art-for-art-s-sake_9789264180789-en.html" target="_blank" rel="noopener"><b>Art for Art's Sake? The Impact of Arts Education</b></a>, OECD, 2013.</li>
+      <li id="src-25">Ohio Revised Code <a href="https://codes.ohio.gov/ohio-revised-code/section-3313.60" target="_blank" rel="noopener"><b>3313.60</b></a> (curriculum) and <a href="https://codes.ohio.gov/ohio-revised-code/section-3313.603" target="_blank" rel="noopener"><b>3313.603</b></a> (graduation); WOSU, <a href="https://www.wosu.org/news/2015-04-14/state-board-of-ed-kills-staffing-requirement" target="_blank" rel="noopener">State Board ends the staffing rule</a>, April 14, 2015.</li>
+      <li id="src-26"><a href="http://www.in.gov/history/about-indiana-history-and-trivia/explore-indiana-history-by-topic/indiana-documents-leading-to-statehood/land-ordinance-of-1785/" target="_blank" rel="noopener"><b>Land Ordinance of 1785</b></a> (Indiana Historical Bureau transcription); Ohio History Connection, <a href="https://remarkableohio.org/marker/18-15-land-ordinance-of-1785-the-seven-ranges/" target="_blank" rel="noopener">marker 18-15, the Seven Ranges</a>.</li>
+      <li id="src-27"><a href="https://avalon.law.yale.edu/18th_century/nworder.asp" target="_blank" rel="noopener"><b>Northwest Ordinance</b></a>, July 13, 1787, Article 3 (Avalon Project, Yale Law School).</li>
+      <li id="src-28"><a href="https://codes.ohio.gov/ohio-constitution/section-6.2" target="_blank" rel="noopener"><b>Ohio Constitution, Article VI, Section 2</b></a>, adopted 1851.</li>
+      <li id="src-29">Stephanie Riegg Cellini, Fernando Ferreira and Jesse Rothstein, <a href="https://ideas.repec.org/a/oup/qjecon/v125y2010i1p215-261..html" target="_blank" rel="noopener"><b>"The Value of School Facility Investments"</b></a>, Quarterly Journal of Economics 125(1), 2010; <a href="https://www.nber.org/papers/w14516" target="_blank" rel="noopener">NBER working paper</a>.</li>
+      <li id="src-30">Christopher Neilson and Seth Zimmerman, <a href="https://ideas.repec.org/a/eee/pubeco/v120y2014icp18-31.html" target="_blank" rel="noopener"><b>"The effect of school construction on test scores, school enrollment, and home prices"</b></a>, Journal of Public Economics 120, 2014.</li>
+      <li id="src-31">C. Kirabo Jackson, Rucker Johnson and Claudia Persico, <a href="https://ideas.repec.org/a/oup/qjecon/v131y2016i1p157-218..html" target="_blank" rel="noopener"><b>"The Effects of School Spending on Educational and Economic Outcomes"</b></a>, Quarterly Journal of Economics 131(1), 2016 (published figures).</li>
+      <li id="src-32">Paco Martorell, Kevin Stange and Isaac McFarlin, <a href="https://ideas.repec.org/a/eee/pubeco/v140y2016icp13-29.html" target="_blank" rel="noopener"><b>"Investing in schools: capital spending, facility conditions, and student achievement"</b></a>, Journal of Public Economics 140, 2016.</li>
+      <li id="src-33">Michael Conlin and Paul N. Thompson, <a href="https://ideas.repec.org/a/eee/ecoedu/v59y2017icp13-28.html" target="_blank" rel="noopener"><b>"Impacts of new school facility construction: An analysis of a state-financed capital subsidy program in Ohio"</b></a>, Economics of Education Review 59, 2017 (abstract).</li>
+      <li id="src-34">Julien Lafortune, Jesse Rothstein and Diane Whitmore Schanzenbach, <a href="https://www.aeaweb.org/articles?id=10.1257/app.20160567" target="_blank" rel="noopener"><b>"School Finance Reform and the Distribution of Student Achievement"</b></a>, AEJ: Applied Economics 10(2), 2018; figures from the <a href="https://www.nber.org/papers/w22011" target="_blank" rel="noopener">2016 NBER working paper</a>.</li>
+      <li id="src-35">Julien Lafortune and David Sch&ouml;nholzer, <a href="https://ideas.repec.org/a/aea/aejapp/v14y2022i3p254-89.html" target="_blank" rel="noopener"><b>"The Impact of School Facility Investments on Students and Homeowners: Evidence from Los Angeles"</b></a>, AEJ: Applied Economics 14(3), 2022.</li>
+      <li id="src-36">Lakota Local Schools, <a href="https://www.youtube.com/watch?v=SMMb7Wt0bg4" target="_blank" rel="noopener"><b>"2026 Master Facilities Plan and November Bond Information"</b></a>, video, posted Oct 6, 2026 (about 15 minutes); minute marks on this page come from its published captions.</li>
+      <li id="src-37">Ohio Department of Education and Workforce, <a href="https://education.ohio.gov/getattachment/Topics/Finance-and-Funding/School-Payment-Reports/District-Profile-Reports/FY2025-District-Profile-Report/FY25-District-Profile-Report-Final-Revised-3-10-26-posted.xlsx.aspx?lang=en-US" target="_blank" rel="noopener"><b>FY2025 District Profile Report</b></a> (the "Cupp report," revised March 10, 2026), "District Data" and "Statewide Data" sheets: enrolled ADM, total operating revenue and expenditure per pupil, state share of revenue, effective Class I operating millage, assessed valuation per pupil, Ohio median income and share of students economically disadvantaged, for Lakota and 15 districts; ranks are our count.</li>
+      <li id="src-38">Ohio School Report Cards, <a href="https://reportcard.education.ohio.gov/download" target="_blank" rel="noopener"><b>data downloads</b></a>: district overall star ratings, 2024-25 (<code>DISTRICT_HIGH_LEVEL_2425.xlsx</code>) and 2025-26 (<code>DISTRICT_HIGH_LEVEL_2526.xlsx</code>).</li>
+      <li id="src-39">Ohio Department of Education and Workforce, <a href="https://education.ohio.gov/getattachment/Topics/Data/Frequently-Requested-Data/Enrollment-Data/oct_hdcnt_fy26.xls.aspx?lang=en-US" target="_blank" rel="noopener"><b>Fall Enrollment (Headcount), October 2025</b></a>, district totals including preschool; bond dollars per student are our arithmetic.</li>
+      <li id="src-40">County boards of elections, official results and notices of election, 2015 to 2026: <a href="https://vote.franklincountyohio.gov" target="_blank" rel="noopener">Franklin</a>, <a href="https://vote.delawarecountyohio.gov/data/olsd/" target="_blank" rel="noopener">Delaware</a> (Olentangy), <a href="https://www.boe.ohio.gov/fairfield/c/elecres/20221108results.pdf" target="_blank" rel="noopener">Fairfield</a> (Pickerington; each election's results file), <a href="https://vote.warrencountyohio.gov/Results/VotingArchives/Index" target="_blank" rel="noopener">Warren</a> (Kings, Mason), <a href="https://votehamiltoncountyohio.gov" target="_blank" rel="noopener">Hamilton</a> (Sycamore, Princeton, Forest Hills) and <a href="https://elections.bcohio.gov/data_and_resources/results.php" target="_blank" rel="noopener">Butler</a> (Fairfield, Hamilton City); multi-county results are sums of the county totals. Sycamore's $127.5 million program cost: <a href="https://shp.com/2023/01/17/sycamore-schools-completes-several-projects/" target="_blank" rel="noopener">SHP</a>, January 17, 2023.</li>
+      <li id="src-41">Franklin County Board of Elections, <a href="https://vote.franklincountyohio.gov/getmedia/4fad3ffb-6d70-4711-8aa8-4f70eb5d2522/Notice-of-Election-South-Western-CSD-Bond-Issue" target="_blank" rel="noopener"><b>Notice of Election, South-Western City School District bond issue</b></a>, November 3, 2026.</li>
+      <li id="src-42">What followed failures: WCPO on <a href="https://www.wcpo.com/news/local-news/hamilton-county/fairfield/voters-reject-fairfield-school-levy-district-to-move-forward-with-service-reductions" target="_blank" rel="noopener">Fairfield</a> (March 2024) and <a href="https://www.wcpo.com/news/local-news/hamilton-county/sharonville/princeton-city-schools-announce-budget-cuts-and-hiring-freeze-after-tax-levy-failure" target="_blank" rel="noopener">Princeton</a> (November 2024); WOSU on <a href="https://www.wosu.org/politics-government/2025-09-23/westerville-city-schools-warn-of-bleak-future-should-income-tax-issue-fail-in-november" target="_blank" rel="noopener">Westerville</a>, September 23, 2025; NBC4 on <a href="https://www.nbc4i.com/news/local-news/pickerington/pickerington-schools-begin-cuts-will-make-more-if-future-levies-fail/amp/" target="_blank" rel="noopener">Pickerington</a>; 1808 Delaware, <a href="https://1808delaware.com/schools/whats-new-in-olentangy-schools-april-board-meeting-recap/" target="_blank" rel="noopener">Olentangy April 2024 board recap</a>; Kings Local Schools, <a href="https://kingslocal.net/district-blog/entry/kings-bond-issue-election-results-463/" target="_blank" rel="noopener">2020 bond results</a>.</li>
       </ol>
       <p class="src">Last verified Oct 2, 2026. Corrections: if a number here is wrong, the page changes and says what changed. Built from public records by a resident; the county treasurer's bill is always the record. An independent project, built from public records; no campaign or political organization paid for it or directs it. It provides information only and does not endorse or oppose any ballot measure. Figures are estimates based on publicly available data and may not reflect every factor that affects an individual parcel, such as exemptions, credits or special assessments. For questions about your property’s current tax calculations, contact the Butler County Auditor’s office. Future tax amounts may change.</p>
-      <p class="src">Posted October 2, 2026 · Revised October 6, 2026, 1:10 PM: the estimate note reworded at the campaign’s request, so it no longer suggests the Auditor can give a future amount. · Revised October 7, 2026, 3:10 PM: after a reader’s review, the answer now shows both comparisons (against today and against failing) with the district’s own words; the district’s stated benefits added from its October mailer; the millage note explains how the rate is set each year; the possible operating levy reframed as a forecast placeholder and moved below the bill. · Revised October 7, 2026, 3:30 PM: a plain note on how the yearly rate works, so the bill stays steady as values rise.</p>
+      <p class="src">Posted October 2, 2026 · Revised October 9, 2026: monthly costs lead the calculator; new sections on where Lakota’s money comes from, students and room, how Lakota compares with 15 Ohio districts, the arts in the plan, schools and community over time, and two paths in time; the older-debt line comes out of the totals and is explained in the fine print. Earlier revision, October 6, 2026, 1:10 PM: the estimate note reworded at the campaign’s request, so it no longer suggests the Auditor can give a future amount. · Revised October 7, 2026, 3:10 PM: after a reader’s review, the answer now shows both comparisons (against today and against failing) with the district’s own words; the district’s stated benefits added from its October mailer; the millage note explains how the rate is set each year; the possible operating levy reframed as a forecast placeholder and moved below the bill. · Revised October 7, 2026, 3:30 PM: a plain note on how the yearly rate works, so the bill stays steady as values rise.</p>
     </div>
   </details>
 <details class="docs">
@@ -436,7 +880,7 @@ const YEARS=[
   {y:2026,old:2.28,sm:0,nb:0},{y:2027,old:2.28,sm:0,nb:0},{y:2028,old:2.28,sm:0,nb:0},
   {y:2029,old:0,sm:0.35,nb:2.20},{y:2030,old:0,sm:0.35,nb:2.20},{y:2031,old:0,sm:0.35,nb:2.20},{y:2032,old:0,sm:0.35,nb:2.20},
   {y:2033,old:0,sm:0.35,nb:2.20},{y:2034,old:0,sm:0.35,nb:2.20},{y:2035,old:0,sm:0.35,nb:2.20}];
-const ITEMS=[['2000 bond','1.00 mills today; ends after 2028',1.00,0,0],['2005 bond and refundings','1.28 mills today; ends after 2028',1.28,0,0],['Older debt that may stay either way','Estimate; may be $0',0,0.35,0.35],['Issue 2 new bond','2.20 mills',0,2.20,0]];
+const ITEMS=[['2000 bond','1.00 mills today; ends after 2028',1.00,0,0],['2005 bond and refundings','1.28 mills today; ends after 2028',1.28,0,0],['Issue 2 new bond','2.20 mills',0,2.20,0]];
 const SAMPLES=[{addr:'The county calculator check, $322,330',v:322330},{addr:'A home on Cinnamon Woods Dr',v:325000},{addr:'A home on Wetherington Dr',v:640000}];
 const BUILD=[['Plains Junior addition and renovation',58.7],['West High School campus',58.3],['East High School campus',57.6],['East Freshman addition and renovation',55.3],['Locally funded items',51.5],['Permanent improvements',15.3],['Demolition of Ridge, Adena and Creekside/West Freshman',3.8]];
 const CASH=[['FY24',116.3],['FY25',63.5],['FY26',51.7],['FY27',38.3],['FY28',24.0],['FY29',7.1],['FY30',-12.1],['FY31',-32.7]];
@@ -505,6 +949,8 @@ function tick(el,key,to,f){const from=shown[key];shown[key]=to;if(reduce||from==
 const money=n=>n<0.5?'$0':fmt(n);
 /* each levy line is rounded to the dollar on its own; column totals are the sum of the shown lines, so the table always adds up and the Issue 2 line equals the ballot-rate cost */
 const lineCosts=j=>ITEMS.map(it=>Math.round(millCost(appr,it[2+j])));
+/* monthly figures come from the unrounded yearly cost, so $269.50 a year reads as $22 a month, matching the ballot's $77 per $100,000 */
+const exM=j=>ITEMS.reduce((a,it)=>a+millCost(appr,it[2+j]),0)/12;
 
 function render(){
   $('#valtxt').value=fmt(appr);
@@ -513,13 +959,14 @@ function render(){
   const cols=[0,1,2].map(lineCosts);
   [0,1,2].forEach(j=>{const r=cols[j];ITEMS.forEach((it,i)=>{const el=document.querySelector(`[data-k="i${i}${j}"]`);el.textContent=r[i]?fmt(r[i]):'$0';});});
   const sum=a=>a.reduce((x,y)=>x+y,0), today=sum(cols[0]), yv=sum(cols[1]), nv=sum(cols[2]), d=yv-nv;
-  const vals={t0:today,ty:yv,tn:nv,diff:d,total:Math.round(d*37/1000)*1000,bill:EFF*(TAXABLE*appr)/1000};
+  const vals={t0:today,ty:yv,tn:nv,m0:exM(0),my:exM(1),mn:exM(2),diff:d,total:Math.round(d*37/1000)*1000,bill:EFF*(TAXABLE*appr)/1000};
   const operEl=document.querySelector('[data-k="oper"]'); if(operEl) operEl.textContent=fmt(Math.round(millCost(appr,3.6)));
   document.querySelectorAll('[data-k]').forEach(el=>{const k=el.dataset.k; if(!(k in vals))return; tick(el,k,vals[k],k==='total'?(n=>'About '+fmt(Math.round(n/1000)*1000)+' in total'):k==='diff'?(n=>fmt(n)+' a year'):fmt);});
-  $('#gaplbl').textContent=`${fmt(d)} a year difference`;
-  $('#asay').innerHTML=`<b>Compared with today:</b> you pay about ${fmt(vals.t0)} a year now for bonds that end after 2028. If it passes, the new bond is about ${fmt(d)} a year from 2029, or about ${fmt(vals.ty)} with the older debt that may stay on the bill either way. <b>Compared with failing:</b> passing is about ${fmt(d)} a year more, the ballot's estimate of $77 per $100,000 of home value. The district's mailer says it "does not anticipate an increase in the current bond tax rate" and puts the cost at $6.42 a month per $100,000 of home value. That and the difference above are both true; they start from different points.`;
+  $('#gaplbl').textContent=`${fmt(exM(1)-exM(2))} a month difference`;
+  $('#asay').innerHTML=`The ballot's figures compare passing with failing; the district's mailer, which "does not anticipate an increase in the current bond tax rate," compares passing with today.`;
+  $('#asay-more').innerHTML=`<b>Compared with today:</b> you pay about ${fmt(vals.m0)} a month now for bonds that end after 2028. If it passes, the new bond is about ${fmt(vals.my)} a month from 2029. If it fails, the school-bond line drops to $0. <b>Compared with failing:</b> passing is about ${fmt(exM(1)-exM(2))} a month more (${fmt(d)} a year), the ballot's estimate of $77 a year per $100,000 of home value. The district's mailer says it "does not anticipate an increase in the current bond tax rate" and puts the cost at $6.42 a month per $100,000 of home value. Both are true; they start from different points.<a class="cite" href="#fn-rate">*</a>`;
   const base=EFF*(TAXABLE*appr)/1000;
-  $('#bill-sub').textContent=`A ${fmt(appr)} West Chester home pays about ${fmt(base)} a year before credits. Lakota schools get about 56 cents of each dollar. Liberty Township homes in Lakota pay about 3 fewer township mills (gross).`;
+  $('#bill-sub').textContent=`A ${fmt(appr)} West Chester home pays about ${fmt(base)} a year before credits.`;
   $('#split').innerHTML=LEVIES.map(([n,m,c])=>`<span style="width:${(m/EFF*100).toFixed(2)}%;background:${c}" title="${n}"></span>`).join('');
   $('#split').setAttribute('aria-label','Bill split: '+LEVIES.map(([n,m])=>`${n} ${fmt(millCost(appr,m))}`).join(', '));
   $('#levies').innerHTML=LEVIES.map(([n,m,c])=>`<tr><th scope="row" style="padding-left:0"><span class="sw" style="background:${c}"></span>${n}</th><td>${m.toFixed(2)}</td><td style="padding-right:0">${fmt(millCost(appr,m))}</td></tr>`).join('');
@@ -527,19 +974,130 @@ function render(){
 }
 function setVal(v){appr=Math.max(20000,Math.min(5000000,Math.round(v)||350000));$('#val').value=Math.max(120000,Math.min(800000,appr));render();}
 $('#samps').innerHTML=SAMPLES.map((s,i)=>`<button type="button" class="samp" aria-pressed="false" data-i="${i}">${s.addr}</button>`).join('');
-const clearSamps=()=>document.querySelectorAll('.samp').forEach(x=>x.setAttribute('aria-pressed','false'));
-document.querySelectorAll('.samp').forEach(b=>b.onclick=()=>{clearSamps();b.setAttribute('aria-pressed','true');setVal(SAMPLES[+b.dataset.i].v);});
+const clearSamps=()=>document.querySelectorAll('#samps .samp').forEach(x=>x.setAttribute('aria-pressed','false'));
+document.querySelectorAll('#samps .samp').forEach(b=>b.onclick=()=>{clearSamps();b.setAttribute('aria-pressed','true');setVal(SAMPLES[+b.dataset.i].v);});
 $('#val').addEventListener('input',e=>{clearSamps();setVal(+e.target.value);});
 const fromTxt=()=>{clearSamps();setVal(parseFloat($('#valtxt').value.replace(/[^0-9.]/g,'')));};
 $('#valtxt').addEventListener('change',fromTxt);$('#valtxt').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();fromTxt();}});
 $('#valtxt').addEventListener('focus',e=>e.target.select());
-let raf,lastW=innerWidth;addEventListener('resize',()=>{if(innerWidth===lastW)return;lastW=innerWidth;cancelAnimationFrame(raf);raf=requestAnimationFrame(()=>{cashChart();});});
+let raf,lastW=innerWidth;addEventListener('resize',()=>{if(innerWidth===lastW)return;lastW=innerWidth;cancelAnimationFrame(raf);raf=requestAnimationFrame(()=>{cashChart();revChart();enrollChart();compChart();});});
 /* footnotes live inside folded sections: open every enclosing <details> before jumping (Safari and Firefox do not always auto-expand) */
 const openTo=id=>{const t=document.getElementById(id);if(!t)return;for(let d=t.closest('details');d;d=d.parentElement&&d.parentElement.closest('details'))d.open=true;t.scrollIntoView({block:'start'});};
-document.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a[href^="#src-"]');if(!a)return;e.preventDefault();const id=a.getAttribute('href').slice(1);history.replaceState(null,'','#'+id);openTo(id);});
-if(/^#src-\d+$/.test(location.hash))openTo(location.hash.slice(1));
-buildList();render();
-(document.fonts&&document.fonts.ready||Promise.resolve()).then(()=>{cashChart();});
+document.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a[href^="#src-"],a[href^="#fn-"],a[href^="#h-"]');if(!a)return;e.preventDefault();const id=a.getAttribute('href').slice(1);history.replaceState(null,'','#'+id);openTo(id);});
+if(/^#(src-\d+|fn-[\w-]+)$/.test(location.hash))openTo(location.hash.slice(1));
+/* the forecast chart sits in a fold: draw it at its real width when the fold opens */
+document.addEventListener('toggle',e=>{if(e.target.open&&e.target.querySelector&&e.target.querySelector('#cashchart'))cashChart();},true);
+/* ===== Context charts (prototype) ===== */
+/* Census F-33, all funds, Lakota LSD (NCES 3904611): [FY, local property tax %, other local %, state %, federal %] */
+const REV=[[1992,56.1,7.4,35.1,1.4],[1993,53.1,13.1,32.4,1.3],[1994,55.5,8.5,34.7,1.3],[1995,54.2,13.6,31.0,1.2],[1996,54.0,12.0,32.7,1.4],[1997,56.5,9.8,32.4,1.3],[1998,57.5,8.3,33.2,1.1],[1999,57.7,7.7,33.3,1.4],[2000,54.3,10.4,34.0,1.3],[2001,54.8,9.7,33.9,1.5],[2002,54.3,6.9,37.7,1.1],[2003,53.8,6.4,38.3,1.6],[2004,53.6,5.9,38.2,2.3],[2005,52.9,6.4,38.2,2.5],[2006,54.6,7.3,35.1,3.1],[2007,55.3,9.1,32.9,2.7],[2008,51.9,10.7,34.1,3.2],[2009,53.4,6.8,36.6,3.2],[2010,52.6,6.0,35.8,5.6],[2011,50.3,6.1,37.3,6.2],[2012,54.1,6.1,34.9,4.8],[2013,54.8,6.1,34.4,4.7],[2014,55.4,6.0,34.4,4.2],[2015,56.0,6.7,33.8,3.5],[2016,56.6,6.3,33.2,3.9],[2017,56.7,6.7,32.2,4.4],[2018,57.5,7.2,31.8,3.5],[2019,56.6,7.6,31.6,4.2],[2020,58.0,7.1,30.7,4.3],[2021,57.9,4.2,30.2,7.7],[2022,58.5,4.1,29.6,7.8],[2023,56.5,6.0,28.0,9.4],[2024,57.4,7.3,28.8,6.6]];
+/* policy markers at the first fiscal year each change touched: DeRolph I, HB 59, HB 110 guarantee, 2023 value update */
+const TURN=[[1997,1],[2014,2],[2022,3],[2024,4]];
+/* District-reported enrollment, Lakota ACFR operating statistics: [FY, students] */
+const ENR=[[1992,10205],[1993,10937],[1994,11637],[1995,12193],[1996,12700],[1997,13077],[1998,13530],[1999,14139],[2000,14659],[2001,15143],[2002,15498],[2003,15845],[2004,16358],[2005,16961],[2006,17422],[2007,17782],[2008,18234],[2009,18330],[2010,18473],[2011,18426],[2012,17663],[2013,16815],[2014,16484],[2015,15991],[2016,16224],[2017,16206],[2018,16203],[2019,16563],[2020,16718],[2021,16785],[2022,17167],[2023,17455],[2024,17564]];
+/* FutureThink, March 11, 2026: 2025-26 base and projection (its own count) */
+const PROJ=[[2026,16913],[2027,17059],[2028,17057],[2029,17069],[2030,17116],[2031,17077],[2032,16940],[2033,16823],[2034,16754],[2035,16633],[2036,16555]];
+/* ballot markers: [FY position, list number, passed?] */
+const VOTES=[[1994.5,1,1],[2001,2,1],[2004.5,3,0],[2006,4,1],[2011,5,0],[2014,6,1],[2026,7,0]];
+const GREEN2='#8DB39F', GOLD='#C9A24A';
+const schoolYr=fy=>`${fy-1}-${String(fy).slice(2)}`;
+const halo=`paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round"`;
+
+function revChart(){
+  const box=$('#revchart'); if(!box) return;
+  const W=Math.max(300,Math.round(box.clientWidth||520)), narrow=W<520, fs=narrow?13:14;
+  const H=narrow?290:330, L=narrow?40:46, R=12, top=36, bot=28, ih=H-top-bot, iw=W-L-R;
+  const y0=1992,y1=2024, sx=y=>L+iw*(y-y0)/(y1-y0), sy=p=>top+ih-ih*p/100, P=(x,y)=>`${x.toFixed(1)},${y.toFixed(1)}`;
+  const COLS=[GREEN,GREEN2,GOLD,INK3];
+  const cum=REV.map(([y,...v])=>{const s=v.reduce((a,b)=>a+b,0);let c=0;return {y,c:[0,...v.map(x=>c+=x/s*100)]};});
+  let g='';
+  for(let k=0;k<4;k++){const up=cum.map(d=>P(sx(d.y),sy(d.c[k+1]))), dn=cum.slice().reverse().map(d=>P(sx(d.y),sy(d.c[k])));g+=`<polygon points="${up.concat(dn).join(' ')}" fill="${COLS[k]}"/>`;}
+  for(let k=1;k<4;k++) g+=`<polyline points="${cum.map(d=>P(sx(d.y),sy(d.c[k]))).join(' ')}" fill="none" stroke="#fff" stroke-width="1.5"/>`;
+  [25,50,75].forEach(p=>{g+=`<line x1="${L}" x2="${L+iw}" y1="${sy(p)}" y2="${sy(p)}" stroke="#fff" stroke-opacity=".45"/>`;});
+  [0,25,50,75,100].forEach(p=>{g+=`<text x="${L-6}" y="${sy(p)+5}" font-size="${fs-1}" text-anchor="end" fill="${INK3}">${p}%</text>`;});
+  g+=`<line x1="${L}" x2="${L+iw}" y1="${sy(0)}" y2="${sy(0)}" stroke="${INK}" stroke-width="2"/>`;
+  const at=y=>cum.find(d=>d.y===y).c, ca=at(2005), cb=at(2008);
+  g+=`<text x="${sx(2005.5)}" y="${sy(ca[1]/2)+5}" font-size="${fs}" font-weight="800" text-anchor="middle" fill="#fff">Local property tax</text>`;
+  g+=`<text x="${sx(2008)}" y="${sy((cb[2]+cb[3])/2)+5}" font-size="${fs}" font-weight="800" text-anchor="middle" fill="${INK}">State</text>`;
+  const r=narrow?9:10, xs=TURN.map(t=>sx(t[0]));
+  for(let i=xs.length-2;i>=0;i--) if(xs[i+1]-xs[i]<2*r+3) xs[i]=xs[i+1]-(2*r+3);
+  TURN.forEach(([y,n],i)=>{const x=sx(y), cx=xs[i], cy=top-17;
+    g+=`<line x1="${x}" x2="${x}" y1="${top}" y2="${sy(0)}" stroke="${INK}" stroke-width="1.5" stroke-dasharray="4 3"/>`;
+    g+=`<path d="M${cx},${cy+r}L${x},${top}" stroke="${INK}" stroke-width="1.5" fill="none"/>`;
+    g+=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="${INK}"/><text x="${cx}" y="${cy+4.5}" font-size="${fs-1}" font-weight="800" text-anchor="middle" fill="#fff">${n}</text>`;});
+  const st=narrow?8:4; for(let y=y0;y<=y1;y+=st) g+=`<text x="${sx(y)}" y="${sy(0)+20}" font-size="${fs-1}" text-anchor="${y===y0?'start':y===y1?'end':'middle'}" fill="${INK3}">${y}</text>`;
+  box.innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Stacked area chart of Lakota revenue by source, fiscal 1992 to 2024, as shares of 100 percent. Local property tax stays between about 50 and 58 percent. The state share is 35.1 percent in 1992, peaks at 38.3 percent in 2003 and is 28.8 percent in 2024. Other local money is 4 to 14 percent and federal 1 to 9 percent. Numbered markers: 1, DeRolph, 1997; 2, House Bill 59, 2013; 3, the guarantee, 2021; 4, the 2023 value update.">${g}</svg>`;
+}
+
+function enrollChart(){
+  const box=$('#enrchart'); if(!box) return;
+  const W=Math.max(300,Math.round(box.clientWidth||520)), narrow=W<520, fs=narrow?13:14;
+  const L=narrow?50:58, R=narrow?10:14, top=26, ih=narrow?220:250, rowP=top+ih+46, rowF=rowP+26, H=rowF+16, iw=W-L-R;
+  const x0=1992,x1=2036, sx=y=>L+iw*(y-x0)/(x1-x0), sy=v=>top+ih-ih*v/20000;
+  const pts=a=>a.map(([x,v])=>`${sx(x).toFixed(1)},${sy(v).toFixed(1)}`).join(' ');
+  let g=`<defs>${hatch('pj','#cfd6d1','#ffffff',7)}</defs>`;
+  g+=`<rect x="${sx(2025)}" y="${top}" width="${sx(x1)-sx(2025)}" height="${ih}" fill="url(#pj)"/>`;
+  for(let v=0;v<=20000;v+=5000){const y=sy(v);g+=`<line x1="${L}" x2="${L+iw}" y1="${y}" y2="${y}" stroke="${v?GRID:INK}" stroke-width="${v?1:2}"/><text x="${L-8}" y="${y+5}" font-size="${fs-1}" text-anchor="end" fill="${INK3}">${v.toLocaleString('en-US')}</text>`;}
+  g+=`<text x="${sx(2025)+6}" y="${sy(0)-8}" font-size="${fs-1}" font-weight="700" fill="${INK2}" ${halo}>Projection</text>`;
+  VOTES.forEach(([x,,p])=>{g+=`<line x1="${sx(x)}" x2="${sx(x)}" y1="${top}" y2="${p?rowP:rowF}" stroke="#a9b3ad" stroke-dasharray="2 3"/>`;});
+  g+=`<polyline points="${pts(ENR)}" fill="none" stroke="${INK}" stroke-width="3" stroke-linejoin="round"/>`;
+  g+=`<polyline points="${pts(PROJ)}" fill="none" stroke="${INK}" stroke-width="3" stroke-dasharray="7 5"/>`;
+  const dot=(x,v,o)=>`<circle cx="${sx(x)}" cy="${sy(v)}" r="5" fill="${o?'#fff':INK}" stroke="${INK}" stroke-width="2.5"/>`;
+  const lab=(x,y,t,a,w)=>`<text x="${x}" y="${y}" font-size="${fs}" font-weight="${w||700}" text-anchor="${a}" fill="${INK}" ${halo}>${t}</text>`;
+  g+=dot(2010,18473)+lab(sx(2010),sy(18473)-12,'18,473 peak, 2009-10','middle',800);
+  g+=dot(1992,10205)+lab(sx(1992)+8,sy(10205)+22,'10,205 in 1991-92','start');
+  g+=dot(2024,17564)+lab(sx(2024)+4,sy(17564)+44,'17,564 in 2023-24','end');
+  g+=dot(2034,16754,1)+dot(2036,16555,1);
+  g+=lab(sx(2036),sy(16555)+(narrow?66:24),'16,555 by 2035-36','end');
+  if(!narrow) g+=lab(sx(2036),sy(16754)-12,'16,754 in 2033-34','end');
+  const step=iw>520?5:10; for(let y=x0;y<=x1;y+=step) g+=`<text x="${sx(y)}" y="${top+ih+20}" font-size="${fs-1}" text-anchor="middle" fill="${INK3}" ${halo}>${schoolYr(y)}</text>`;
+  [[rowP,'Passed'],[rowF,'Failed']].forEach(([y,t])=>{g+=`<text x="${L-8}" y="${y+5}" font-size="${fs-1}" font-weight="700" text-anchor="end" fill="${INK2}">${t}</text>`;});
+  VOTES.forEach(([x,n,p])=>{const cy=p?rowP:rowF, cx=sx(x);g+=`<circle cx="${cx}" cy="${cy}" r="10" fill="${p?INK:'#fff'}" stroke="${INK}" stroke-width="2"/><text x="${cx}" y="${cy+4.5}" font-size="${fs-1}" font-weight="800" text-anchor="middle" fill="${p?'#fff':INK}">${n}</text>`;});
+  box.innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Line chart of Lakota enrollment by the district's count, 1991-92 to 2023-24: 10,205 in 1991-92, a peak of 18,473 in 2009-10, 15,991 in 2014-15 and 17,564 in 2023-24. A separate dashed line shows the FutureThink projection from 16,913 in 2025-26 to 16,754 in 2033-34 and 16,555 in 2035-36. Markers show bonds and levies that passed in 1994/95, 2000, 2005 and 2013, and failures in 2004 to 2005, 2010 to 2011 and 2025.">${g}</svg>`;
+}
+
+/* ===== How Lakota compares ===== */
+/* ODEW FY2025 District Profile Report (Cupp), "Total Revenue Per Pupil FY25"; Ohio = average district */
+const COMP=[['Lakota',13887],['Olentangy',17111],['South-Western',16470],['Dublin',19118],['Hilliard',16829],['Westerville',16559],['Pickerington',15080],['Worthington',18808],['Mason',16720],['Sycamore',18073],['Kings',15377],['Fairfield',14749],['Hamilton City',15484],['Princeton',17952],['Forest Hills',16952],['West Clermont',15556]], OHIO_REV=18352;
+/* bond face amount / ODEW Oct 2025 headcount: peer bonds that passed 2015 to 2026, plus Lakota's two asks (k: 2 = Issue 2, 10 = Issue 10) */
+const BONDPP=[['Lakota Issue 10, failed 2025',29770,10],['Lakota Issue 2, Nov 2026',13140,2],['Kings 2024',28050],['Worthington 2022',21730],['Sycamore 2019 (program cost)',21400],['Dublin 2018',11480],['Olentangy 2025',9630],['Hilliard 2024',8760],['Dublin 2023',8530],['Worthington 2018',8270],['Pickerington 2022',7580],['Westerville 2019',7120],['Olentangy 2020',5520],['South-Western 2018 (local share)',4210],['Olentangy 2016',3260],['Hilliard 2016',3080]];
+const PEER='#a3aaaf';
+let compMode='rev';
+function compChart(){
+  const box=$('#compchart'); if(!box) return;
+  const bond=compMode==='bond', W=Math.max(300,Math.round(box.clientWidth||520)), narrow=W<560, fs=narrow?13:14;
+  const rows=(bond?BONDPP:COMP.map(([n,v])=>[n,v,n==='Lakota'?1:0])).slice().sort((a,b)=>b[1]-a[1]);
+  const max=bond?30000:20000, LW=narrow?0:Math.ceil(Math.max(...rows.map(r=>r[0].length))*fs*0.56)+16, VR=Math.ceil(fs*4.4)+8;
+  const top=bond?4:30, barH=narrow?12:18, rowH=narrow?fs+barH+15:30, x0=LW, bw=W-LW-VR, sx=v=>x0+bw*v/max, H=top+rows.length*rowH+4;
+  const money=v=>'$'+v.toLocaleString('en-US');
+  let bars='', labs='';
+  rows.forEach(([n,v,k],i)=>{
+    const me=!!k, y=top+i*rowH, by=narrow?y+fs+5:y+(rowH-barH)/2, mid=by+barH/2+fs*0.36;
+    bars+=`<rect x="${x0}" y="${by}" width="${(sx(v)-x0).toFixed(1)}" height="${barH}" fill="${k===10?'url(#cmp10)':me?GREEN:PEER}"${k===10?` stroke="${GREEN}" stroke-width="1.5"`:''}/>`;
+    labs+=`<text x="${narrow?0:LW-10}" y="${narrow?y+fs:mid}" font-size="${fs}" font-weight="${me?800:500}" text-anchor="${narrow?'start':'end'}" fill="${INK}" ${halo}>${n}</text>`;
+    labs+=`<rect x="${(sx(v)+3).toFixed(1)}" y="${(mid-fs*0.95).toFixed(1)}" width="${(money(v).length*fs*0.62+6).toFixed(1)}" height="${(fs*1.3).toFixed(1)}" fill="#fff"/><text x="${(sx(v)+6).toFixed(1)}" y="${mid}" font-size="${fs}" font-weight="${me?800:600}" fill="${INK}" ${halo}>${money(v)}</text>`;
+  });
+  let g=`<defs>${hatch('cmp10',GREEN,'#ffffff',6)}</defs>${bars}${narrow?'':`<line x1="${x0}" x2="${x0}" y1="${top-4}" y2="${H}" stroke="${INK}" stroke-width="2"/>`}`;
+  if(!bond){const xa=sx(OHIO_REV);g+=`<line x1="${xa}" x2="${xa}" y1="${top-8}" y2="${H}" stroke="${INK}" stroke-width="2" stroke-dasharray="5 4"/><text x="${xa+4}" y="${top-12}" font-size="${fs}" font-weight="700" text-anchor="end" fill="${INK}" ${halo}>Ohio average ${money(OHIO_REV)}</text>`;}
+  g+=labs;
+  const list=rows.map(([n,v])=>`${n} ${money(v)}`).join(', ');
+  box.innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${bond?`Horizontal bar chart of bond face amount per student, using October 2025 enrollment and not adjusted for inflation, largest to smallest: ${list}.`:`Horizontal bar chart of total operating revenue per pupil, fiscal 2025, highest to lowest: ${list}. Ohio average ${money(OHIO_REV)}.`}">${g}</svg>`;
+  $('#comp-cap').innerHTML=bond?'Bond size per student: today\'s enrollment, not adjusted for inflation<a class="cite" href="#src-39">39</a><a class="cite" href="#src-40">40</a><a class="cite" href="#src-6">6</a><a class="cite" href="#src-7">7</a>':'Operating revenue per pupil, fiscal 2025<a class="cite" href="#src-37">37</a>';
+  $('#comp-key').innerHTML=bond?'<span><i class="sw" style="background:var(--green)"></i>Lakota Issue 2</span><span><i class="sw hz"></i>Lakota Issue 10, failed</span><span><i class="sw" style="background:#a3aaaf"></i>Peer bonds that passed</span>':'<span><i class="sw" style="background:var(--green)"></i>Lakota</span><span><i class="sw" style="background:#a3aaaf"></i>The 15 other districts</span><span><i class="ln d"></i>Ohio average</span>';
+}
+document.querySelectorAll('.cbtn').forEach(b=>b.addEventListener('click',()=>{compMode=b.dataset.m;document.querySelectorAll('.cbtn').forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));compChart();}));
+
+/* two paths: both always visible; a button replays that path step by step */
+document.querySelectorAll('.pt').forEach(ol=>[...ol.children].forEach((li,i)=>li.style.setProperty('--i',i)));
+const pbtns=document.querySelectorAll('.pbtn');
+pbtns.forEach(b=>b.addEventListener('click',()=>{
+  const p=document.getElementById('path-'+b.dataset.path);
+  pbtns.forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));
+  document.querySelectorAll('.path').forEach(x=>x.classList.toggle('on',x===p));
+  if(!reduce){p.classList.remove('play');void p.offsetWidth;p.classList.add('play');}
+  if(innerWidth<=900) p.scrollIntoView({block:'start',behavior:reduce?'auto':'smooth'});
+}));
+buildList();render();revChart();enrollChart();compChart();
+(document.fonts&&document.fonts.ready||Promise.resolve()).then(()=>{cashChart();revChart();enrollChart();compChart();});
 </script>
 
 
