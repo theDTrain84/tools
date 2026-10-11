@@ -1,0 +1,252 @@
+{
+ "v": 1,
+ "track": "weekly",
+ "date": "2026-10-11",
+ "size": 11,
+ "g": [
+  "#MASS##EGG#",
+  "HAIKU##ROAR",
+  "ENDING#RATE",
+  "AGES#ROOTED",
+  "PAD#PEAR###",
+  "###BANKS###",
+  "###ALAS#CAN",
+  "SCALED#ALOE",
+  "POLL#EFFORT",
+  "AMMO##LASTS",
+  "#EAT##UREA#"
+ ],
+ "a": [
+  [
+   "MASS",
+   "Weight, to a physicist; a Sunday service, to many"
+  ],
+  [
+   "EGG",
+   "Breakfast that can be scrambled"
+  ],
+  [
+   "HAIKU",
+   "Claude ___ 5.5, released Oct. 7, is Anthropic's fastest small model",
+   {
+    "src": "https://www.anthropic.com/claude-haiku-5-5"
+   }
+  ],
+  [
+   "ROAR",
+   "What a crowd does after a touchdown"
+  ],
+  [
+   "ENDING",
+   "Last chapter of a story"
+  ],
+  [
+   "RATE",
+   "___payers: Ohioans who would pay $16 billion more for electricity from 2027 to 2034, says an Oct. 5 data center study",
+   {
+    "src": "https://www.sciotoanalysis.com/news/scioto-analysis-releases-cost-benefit-analysis-of-data-center-policies-in-ohio"
+   }
+  ],
+  [
+   "AGES",
+   "A long, long time"
+  ],
+  [
+   "ROOTED",
+   "Planted firmly"
+  ],
+  [
+   "PAD",
+   "Paper for notes, or a cushion for a knee"
+  ],
+  [
+   "PEAR",
+   "Fruit that ripens best off the tree"
+  ],
+  [
+   "BANKS",
+   "Where a river meets the land on either side"
+  ],
+  [
+   "ALAS",
+   "A sad sigh, from the old books"
+  ],
+  [
+   "CAN",
+   "Is able to"
+  ],
+  [
+   "SCALED",
+   "Climbed to the top of"
+  ],
+  [
+   "ALOE",
+   "Plant kept on the sill for sunburns"
+  ],
+  [
+   "POLL",
+   "Survey taken before an election"
+  ],
+  [
+   "EFFORT",
+   "Claude Haiku 5.5, out Oct. 7, has an adjustable ___ setting, from Low to Max",
+   {
+    "src": "https://www.anthropic.com/claude-haiku-5-5"
+   }
+  ],
+  [
+   "AMMO",
+   "Facts saved up for an argument, informally"
+  ],
+  [
+   "LASTS",
+   "Holds up over time"
+  ],
+  [
+   "EAT",
+   "Sit down to supper"
+  ],
+  [
+   "UREA",
+   "Compound first made in a lab in 1828, a milestone for chemistry"
+  ]
+ ],
+ "d": [
+  [
+   "HEAP",
+   "Big pile"
+  ],
+  [
+   "SPA",
+   "Place for a soak and a rest"
+  ],
+  [
+   "MANGA",
+   "Japanese comics"
+  ],
+  [
+   "COME",
+   "Opposite of go"
+  ],
+  [
+   "AIDED",
+   "Gave a hand to"
+  ],
+  [
+   "ALMA",
+   "___ mater"
+  ],
+  [
+   "SKIS",
+   "Winter gear for the slopes"
+  ],
+  [
+   "BALLOT",
+   "A Common Cause project reported Oct. 5 that six chatbots got basic facts wrong about California's 2026 ___",
+   {
+    "src": "https://sfstandard.com/2026/10/05/ai-chatbots-california-election-errors-report/"
+   }
+  ],
+  [
+   "SUN",
+   "It rises in the east"
+  ],
+  [
+   "PALE",
+   "Light in color"
+  ],
+  [
+   "GRENADE",
+   "French word for a pomegranate"
+  ],
+  [
+   "OAKS",
+   "Mighty trees from little acorns"
+  ],
+  [
+   "FLU",
+   "Bug that goes around each winter"
+  ],
+  [
+   "ERRORS",
+   "What a Common Cause project found when it asked six chatbots about California's ballot, as reported Oct. 5",
+   {
+    "src": "https://sfstandard.com/2026/10/05/ai-chatbots-california-election-errors-report/"
+   }
+  ],
+  [
+   "AFAR",
+   "From a long way off"
+  ],
+  [
+   "GOAT",
+   "Farm animal that will try to eat anything"
+  ],
+  [
+   "CLOSE",
+   "Near"
+  ],
+  [
+   "GATE",
+   "Where you wait to board a flight"
+  ],
+  [
+   "AORTA",
+   "The body's main artery"
+  ],
+  [
+   "RED",
+   "Color of a stop sign"
+  ],
+  [
+   "NETS",
+   "What fishers cast"
+  ]
+ ],
+ "w": "BALLOT",
+ "n": "A ballot is a short list with long consequences. This week a watchdog asked six chatbots about California's and found basic errors. When you ask an AI about an election, treat the answer as a lead and check it against your county board of elections, where the ballot itself comes from.",
+ "sources": [
+  {
+   "title": "A Columbus firm weighs five data center policies for Ohio, 2027 to 2034",
+   "url": "https://www.sciotoanalysis.com/news/scioto-analysis-releases-cost-benefit-analysis-of-data-center-policies-in-ohio",
+   "date": "2026-10-05"
+  },
+  {
+   "title": "Chatbots make basic errors about California's 2026 ballot, a Common Cause project finds (San Francisco Standard)",
+   "url": "https://sfstandard.com/2026/10/05/ai-chatbots-california-election-errors-report/",
+   "date": "2026-10-05"
+  },
+  {
+   "title": "Anthropic releases Claude Haiku 5.5, with an adjustable effort setting",
+   "url": "https://www.anthropic.com/claude-haiku-5-5",
+   "date": "2026-10-07"
+  }
+ ],
+ "coming": [
+  {
+   "date": "2026-10-13",
+   "end": "2026-10-15",
+   "text": "TechCrunch Disrupt in San Francisco: three days of startup launches and talks.",
+   "url": "https://techcrunch.com/events/tc-disrupt-2026/"
+  },
+  {
+   "date": "2026-10-14",
+   "text": "The International AI Summit in Dublin, hosted by Ireland during its turn leading the Council of the European Union.",
+   "url": "https://enterprise.gov.ie/en/news-and-events/department-events/ai-summit-2026.html"
+  },
+  {
+   "date": "2026-10-15",
+   "text": "TSMC, the world's largest contract chipmaker, reports third-quarter results at 2:00 PM Taipei time.",
+   "url": "https://investor.tsmc.com/english/financial-calendar"
+  },
+  {
+   "date": "2026-10-15",
+   "end": "2026-10-16",
+   "text": "The AI in Science Summit in Dublin, the European Union's yearly conference on AI in research.",
+   "url": "https://era.gv.at/events/ai-in-science-summit-2026/"
+  }
+ ],
+ "checked": true,
+ "no": 2,
+ "cooked": "2026-10-11T17:25:00-04:00"
+}
