@@ -1,0 +1,63 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-10-12",
+ "size": 5,
+ "g": [
+  "#FLOW",
+  "OLIVE",
+  "PANEL",
+  "AMEND",
+  "LESS#"
+ ],
+ "a": [
+  [
+   "FLOW",
+   "What a river does, and a good workday too"
+  ],
+  [
+   "OLIVE",
+   "Fruit pressed for oil"
+  ],
+  [
+   "PANEL",
+   "Group of experts on a stage"
+  ],
+  [
+   "AMEND",
+   "Change a rule to fix it"
+  ],
+  [
+   "LESS",
+   "Opposite of more"
+  ]
+ ],
+ "d": [
+  [
+   "OPAL",
+   "Milky gemstone with flashes of color"
+  ],
+  [
+   "FLAME",
+   "A candle's glow"
+  ],
+  [
+   "LINES",
+   "What an AI may do on its own, and what it never does: write these down first"
+  ],
+  [
+   "OVENS",
+   "Where the bread bakes"
+  ],
+  [
+   "WELD",
+   "Join metal with heat"
+  ]
+ ],
+ "w": "LINES",
+ "n": "Lines are the short list of what your AI may do on its own and what it never does without you: send, pay, post, delete. Write them down before the work starts, and put them where the AI reads them every time. Clear lines make it easier to say yes to everything else.",
+ "sources": [],
+ "checked": true,
+ "cooked": "2026-10-12T06:10:00-04:00",
+ "no": 9
+}

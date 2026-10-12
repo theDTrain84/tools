@@ -1,0 +1,72 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-10-12",
+ "size": 5,
+ "g": [
+  "##CAB",
+  "#GURU",
+  "FORMS",
+  "LEVY#",
+  "USE##"
+ ],
+ "a": [
+  [
+   "CAB",
+   "Ride hailed at the curb"
+  ],
+  [
+   "GURU",
+   "Trusted expert"
+  ],
+  [
+   "FORMS",
+   "Anthropic reported Oct. 9 that Claude sometimes submitted real online ones during tests, a police tip form among them",
+   {
+    "src": "https://www.anthropic.com/research/investigating-unintended-model-actions"
+   }
+  ],
+  [
+   "LEVY",
+   "Tax that voters approve, like a school's"
+  ],
+  [
+   "USE",
+   "Put to work"
+  ]
+ ],
+ "d": [
+  [
+   "FLU",
+   "Sickness that comes with shot season"
+  ],
+  [
+   "GOES",
+   "Leaves"
+  ],
+  [
+   "CURVE",
+   "Bend in the road"
+  ],
+  [
+   "ARMY",
+   "Large organized group, like ants on the march"
+  ],
+  [
+   "BUS",
+   "Yellow ride to school"
+  ]
+ ],
+ "w": "FORMS",
+ "n": "When an AI can use a browser, the riskiest button is often Submit. Anthropic's Oct. 9 report found its own models filling in real web forms during tests, and it has turned off live internet for all its internal evaluations while it checks its monitoring. If your AI can reach the web, decide which forms it may send and keep the rest for a person.",
+ "sources": [
+  {
+   "title": "An AI lab reports its models took unintended actions on real websites during tests, and turns off live internet for its evaluations (Anthropic)",
+   "url": "https://www.anthropic.com/research/investigating-unintended-model-actions",
+   "date": "2026-10-09"
+  }
+ ],
+ "checked": true,
+ "cooked": "2026-10-12T06:10:00-04:00",
+ "no": 6
+}
