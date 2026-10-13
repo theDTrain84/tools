@@ -4,7 +4,7 @@
  "pieces": [
   {
    "slug": "word-for-word-2026-10-13",
-   "href": "civic/word-for-word-2026-10-13/",
+   "href": "civic/word-for-word-2026-10-13/?v=20261013b",
    "title": "Word for Word around the world",
    "line": "Trump, Macron, Burnham, Erdoğan, Ramaphosa and Tusk, in their own words, on Iran and the midterm elections, the spirit of defeat, immigrants and Europe, international law, the Nobel Peace Prize and Russia's responsibility for the war in Ukraine.",
    "type": "piece",
@@ -17,11 +17,12 @@
    "related": [
     "word-for-word-2026-10-06",
     "the-table"
-   ]
+   ],
+   "updated": "2026-10-13"
   },
   {
    "slug": "word-for-word-2026-10-06",
-   "href": "civic/word-for-word-2026-10-06/?v=20261013",
+   "href": "civic/word-for-word-2026-10-06/?v=20261013b",
    "title": "Word for Word around the world",
    "line": "Trump, Putin, Zelenskyy, Netanyahu, Xi, Modi and Lula, in their own words, on Iran, Kaliningrad, negotiations, a cockpit attack, the Chinese nation, peace and a runoff.",
    "type": "piece",

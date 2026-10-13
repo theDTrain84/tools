@@ -27,6 +27,8 @@ Donald Trump, taken elsewhere: South Lawn, the White House, October 5, 2026. Pho
 
 United States · October 8, 2026
 
+Donald Trump, President of the United States, on the war with Iran and the timing of any new attack relative to the midterm elections, in a post on Truth Social.
+
 > I want to make it clear to everybody that, while Iran is in very bad condition, both Economically and Militarily, and while the Blockade will remain in full force and effect, with Oil flowing in Record Numbers of Barrels through the Hormuz Strait (22 Million Barrels, last night alone, with not one barrel coming from, or going to, Iran!), we will not be attacking Iran at any time prior to the Midterm Elections to be held in the United States on November 3rd.
 
 His own post, read through an archive capture linked to the original
@@ -104,6 +106,8 @@ Emmanuel Macron at Bpifrance Inno Génération, Paris, October 8, 2026. Frame fr
 
 France · October 8, 2026
 
+Emmanuel Macron, President of France, on the national mood and the economy, to entrepreneurs at Bpifrance's annual gathering in Paris.
+
 > And so I ask one thing of you: do not give in to the Manichaeism in the air that is coming back, which is the spirit of defeat our country has known many times in its history. It is the spirit of 1870, of 1940, of so many times in our economic history when people say: ‘we're done for, we look at the others, we're done for, for this or that reason.’
 
 Spoken in French; translation ours, from the Élysée transcript
@@ -146,6 +150,8 @@ The transcript is the Élysée's own text. [8]
 Andy Burnham with reporters at the Innovation Nation Summit, Manchester, October 9, 2026. [Photo: Lauren Hurley / No 10 Downing Street, CC BY-NC-ND 4.0.](https://www.flickr.com/photos/number10gov/55578199937/)
 
 United Kingdom · October 9, 2026
+
+Andy Burnham, Prime Minister of the United Kingdom, on immigrants who found British companies and Britain's outlook toward Europe, at the Innovation Nation Summit in Manchester.
 
 > And let me just say for a moment, we thank them for coming here. We welcome them here. We need the brightest and the best from across the world, researchers, academics, entrepreneurs to keep choosing here. And it's why we will have an international outlook in everything that we do, building closer ties with Europe and making sure that we have that outlook in everything that we do, not too much of the division that we've seen in the last decade.
 
@@ -194,6 +200,8 @@ Recep Tayyip Erdoğan at the International Justice Summit, Istanbul, October 9, 
 
 Turkey · October 9, 2026
 
+Recep Tayyip Erdoğan, President of Turkey, on international law and the veto in the UN Security Council, at the International Justice Summit in Istanbul.
+
 > International law is almost suspended. International agreements have, so to speak, lost their force. The rulings of international courts likewise cannot be enforced. Principles, norms, the rules at the center of the system, all of them have been trampled underfoot. Dear friends, I do not say these things for bombast, for polemic or for agitation; on the contrary, these are bitter truths we must face.
 
 Spoken in Turkish; translation ours, from the Presidency's transcript
@@ -238,6 +246,8 @@ Let us admit that we have a system that comes apart wherever you take hold of it
 Cyril Ramaphosa, taken elsewhere: Phuthaditjhaba, Free State, October 9, 2026. Frame from the Presidency video, clipped by the author.
 
 South Africa · October 9, 2026
+
+Cyril Ramaphosa, President of South Africa, on the 2026 Nobel Peace Prize awarded to Navi Pillay of South Africa, in a written statement from the Presidency.
 
 > We are proud that Justice Pillay joins Chief Albert Luthuli, Archbishop Desmond Tutu, President Mandela and Former President FW de Klerk in highlighting the far-reaching impact of South Africans on peace, justice and the advancement of humanity.
 
@@ -289,6 +299,8 @@ The passing of Archbishop Emeritus Desmond Tutu is another chapter of bereavemen
 Donald Tusk at the opening of the Warsaw Security Forum, Warsaw, October 12, 2026. Frame from the Kancelaria Premiera video, clipped by the author.
 
 Poland · October 12, 2026
+
+Donald Tusk, Prime Minister of Poland, on Russia's responsibility for the war in Ukraine, opening the Warsaw Security Forum.
 
 > No one and nothing will lift Russia's full, 100 percent responsibility for the war in Ukraine. Anyone who tries symmetry here, anyone who suggests that it is Ukraine that is responsible for the war, gives an extraordinarily valuable gift to the aggressor, Putin.
 
@@ -367,13 +379,15 @@ This war is also ours. There is a war going on. Our task is to make the entire t
 
 Minute marks read "about" where no official transcript exists.
 
-**Related**[Word for Word around the world, Sept. 30 to Oct. 6](https://tools.dnsc.ai/civic/word-for-word-2026-10-06/?v=20261013) Trump, Putin, Zelenskyy, Netanyahu, Xi, Modi and Lula, in their own words, on Iran, Kaliningrad, negotiations, a cockpit attack, the Chinese nation, peace and a runoff.
+**Related**[Word for Word around the world, Sept. 30 to Oct. 6](https://tools.dnsc.ai/civic/word-for-word-2026-10-06/?v=20261013b) Trump, Putin, Zelenskyy, Netanyahu, Xi, Modi and Lula, in their own words, on Iran, Kaliningrad, negotiations, a cockpit attack, the Chinese nation, peace and a runoff.
 
 **Related**[The table](https://tools.dnsc.ai/civic/the-table/) The President and six AI companies signed a one-page accord on superintelligence over lunch on September 29.
 
 Built by **Dustin Nimmo**, founder of [DNSC](https://dnsc.ai) in West Chester, Ohio.
 
 Last verified Oct 13, 2026. If a fact here is wrong, say so and it will be fixed and noted.
+
+Posted October 13, 2026 · Revised October 13, 2026, 6:58 PM: a one-line setup above each quote, who said it and what it is about.
 
 ---
 

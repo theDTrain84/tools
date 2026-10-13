@@ -28,6 +28,8 @@ Donald Trump in Grand Island, Nebraska, October 5, 2026. Frame from the Factba.s
 
 United States · October 5, 2026
 
+Donald Trump, President of the United States, on gasoline prices and the war with Iran, at a campaign rally in Grand Island, Nebraska.
+
 > They can take out a city. Let them take, let it, let them take out Los Angeles. Let them take out San Diego. That's, this is a very small price to pay, and it's gonna be over very soon.
 
 Words as transcribed by Factba.se (Roll Call), false starts included
@@ -75,6 +77,8 @@ Vladimir Putin at the Valdai Discussion Club plenary session, October 1, 2026. P
 
 Russia · October 1, 2026
 
+Vladimir Putin, President of Russia, on NATO exercises in the Baltic, Kaliningrad and how Russia would answer an attack, at the Valdai Discussion Club in Moscow.
+
 > If it comes to a direct attack on the Russian Federation – in this case, Kaliningrad, although it could potentially involve other territories as well – the question of Russia using all the weapons at its disposal would inevitably and immediately arise. That is inevitable.
 
 Spoken in Russian; English from the Kremlin's own transcript
@@ -119,6 +123,8 @@ In the event of a threat to the territorial integrity of our country and to defe
 Volodymyr Zelenskyy in his evening address, October 5, 2026. [Image: Office of the President of Ukraine, president.gov.ua, CC BY-NC-ND 4.0.](https://www.president.gov.ua)
 
 Ukraine · October 5, 2026
+
+Volodymyr Zelenskyy, President of Ukraine, on air defense after Russian strikes and whether Russia will negotiate, in his nightly video address.
 
 > Leaders can see what is happening and that Russia is definitely not going to move from escalation to negotiations.
 
@@ -167,6 +173,8 @@ Benjamin Netanyahu in a video statement from the Prime Minister's Office, Octobe
 
 Israel · October 2, 2026
 
+Benjamin Netanyahu, Prime Minister of Israel, on the flydubai flight to Tel Aviv that was diverted after its co-pilot attacked the captain, in a video statement from his office.
+
 > As time passes, the picture is becoming clearer. Yaniv and his heroic companions prevented a disaster on the scale of 9/11. The attacker underwent Islamist radicalization. He intended to crash the plane with all its passengers on board.
 
 Spoken in Hebrew; English text of the Prime Minister's Office post
@@ -207,6 +215,8 @@ We will exact a very high price for any act of aggression against us from any qu
 Xi Jinping, taken elsewhere: New Delhi, September 12, 2026. Photo: Prime Minister's Office, India (PIB), GODL-India, via Wikimedia Commons.
 
 China · September 30, 2026
+
+Xi Jinping, President of China, on the country's direction, Taiwan and foreign policy, at the reception for the 77th anniversary of the People's Republic in Beijing.
 
 > The great rejuvenation of the Chinese nation is unstoppable. As long as we remain confident, stay focused on our goals and move forward steadily, step by step, success will ultimately belong to the great CPC, the great Chinese people and the great People's Republic of China.
 
@@ -253,6 +263,8 @@ Narendra Modi at the joint press statement with Swiss President Guy Parmelin, Hy
 
 India · October 5, 2026
 
+Narendra Modi, Prime Minister of India, on peace in Ukraine and in West Asia, in a joint press statement with the President of Switzerland in New Delhi.
+
 > Be it Ukraine or West Asia, India has consistently supported every meaningful effort towards peace.
 
 Spoken in Hindi; English as rendered by IANS
@@ -297,6 +309,8 @@ The official English reads "not of war"; "not an era of war" is the press wordin
 Luiz Inácio Lula da Silva speaks after the first-round results, São Paulo, October 4, 2026. Photo: Paulo Pinto/Agência Brasil.
 
 Brazil · October 4, 2026
+
+Luiz Inácio Lula da Silva, President of Brazil, on the first-round result and the runoff, to supporters in São Paulo on election night.
 
 > The result is often unexpected. We never get everything we wanted. I confess to you that I was convinced I would win the election in the first round, but I have thought that before, too.
 
@@ -395,7 +409,7 @@ Built by **Dustin Nimmo**, founder of [DNSC](https://dnsc.ai) in West Chester, O
 
 Last verified Oct 6, 2026. If a fact here is wrong, say so and it will be fixed and noted.
 
-Posted October 6, 2026 · Revised October 13, 2026, 6:44 PM: added Donald Trump's own October 8 post on the Grand Island remark to What the office said after, with its source [29].
+Posted October 6, 2026 · Revised October 13, 2026, 6:44 PM: added Donald Trump's own October 8 post on the Grand Island remark to What the office said after, with its source [29]. Revised again October 13, 2026, 6:58 PM: a one-line setup above each quote, who said it and what it is about.
 
 ---
 
