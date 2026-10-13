@@ -1,0 +1,63 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-10-13",
+ "size": 5,
+ "g": [
+  "##CRY",
+  "#SHOE",
+  "SPECS",
+  "KICK#",
+  "INK##"
+ ],
+ "a": [
+  [
+   "CRY",
+   "Shed tears"
+  ],
+  [
+   "SHOE",
+   "It comes with a lace"
+  ],
+  [
+   "SPECS",
+   "Glasses, casually"
+  ],
+  [
+   "KICK",
+   "What a soccer player does to the ball"
+  ],
+  [
+   "INK",
+   "What a pen runs on"
+  ]
+ ],
+ "d": [
+  [
+   "SKI",
+   "Glide down a snowy slope"
+  ],
+  [
+   "SPIN",
+   "Twirl, or tilt the story"
+  ],
+  [
+   "CHECK",
+   "Verify before you trust: look up the source, the date and the byline before you pass it on"
+  ],
+  [
+   "ROCK",
+   "Stone"
+  ],
+  [
+   "YES",
+   "Word of agreement"
+  ]
+ ],
+ "w": "CHECK",
+ "n": "Check is the habit of verifying before you trust. With AI drafting so much of what we read, the quick check is a name, a date and a source you can open. It takes a minute and it keeps your own record clean.",
+ "sources": [],
+ "checked": true,
+ "cooked": "2026-10-13T06:35:00-04:00",
+ "no": 10
+}

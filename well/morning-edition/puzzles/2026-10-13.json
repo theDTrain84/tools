@@ -1,0 +1,72 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-10-13",
+ "size": 5,
+ "g": [
+  "##FOR",
+  "#TRUE",
+  "SWORD",
+  "PINS#",
+  "ANT##"
+ ],
+ "a": [
+  [
+   "FOR",
+   "In favor of"
+  ],
+  [
+   "TRUE",
+   "Accurate, like a fact you can check"
+  ],
+  [
+   "SWORD",
+   "A knight's blade"
+  ],
+  [
+   "PINS",
+   "What holds a map to a corkboard"
+  ],
+  [
+   "ANT",
+   "Tiny worker at a picnic"
+  ]
+ ],
+ "d": [
+  [
+   "SPA",
+   "Place for a massage and a steam"
+  ],
+  [
+   "TWIN",
+   "One of a matched pair"
+  ],
+  [
+   "FRONT",
+   "False ___: OpenAI's Oct. 8 term for the invented journalists and sham think tank two banned campaigns used to launder conflict messaging",
+   {
+    "src": "https://openai.com/index/disrupting-ai-enabled-false-front-operations/"
+   }
+  ],
+  [
+   "OURS",
+   "Belonging to us"
+  ],
+  [
+   "RED",
+   "Color of a stop sign"
+  ]
+ ],
+ "w": "FRONT",
+ "n": "A byline is a claim, and claims can be made up. OpenAI's Oct. 8 report found almost 100 articles placed under seven invented journalist names across roughly a dozen online outlets, written with help from its models. Before you share or cite a piece, check that the writer has a record outside that one page.",
+ "sources": [
+  {
+   "title": "An AI lab bans two influence campaigns that used invented journalists and a fake think tank to place stories (OpenAI)",
+   "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations/",
+   "date": "2026-10-08"
+  }
+ ],
+ "checked": true,
+ "cooked": "2026-10-13T06:35:00-04:00",
+ "no": 7
+}
