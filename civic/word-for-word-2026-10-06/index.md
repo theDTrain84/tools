@@ -395,7 +395,7 @@ Built by **Dustin Nimmo**, founder of [DNSC](https://dnsc.ai) in West Chester, O
 
 Last verified Oct 6, 2026. If a fact here is wrong, say so and it will be fixed and noted.
 
-Posted October 6, 2026 · Revised October 13, 2026, 6:55 PM: added Donald Trump's own October 8 post on the Grand Island remark to What the office said after, with its source [29].
+Posted October 6, 2026 · Revised October 13, 2026, 6:44 PM: added Donald Trump's own October 8 post on the Grand Island remark to What the office said after, with its source [29].
 
 ---
 
