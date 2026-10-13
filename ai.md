@@ -188,4 +188,4 @@ Want help putting these to work with your people?
 
 ---
 
-Source: https://tools.dnsc.ai/ · Generated from the page on Oct 9, 2026
+Source: https://tools.dnsc.ai/ · Generated from the page on Oct 13, 2026

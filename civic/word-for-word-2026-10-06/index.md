@@ -65,6 +65,10 @@ No, he didn't, you buffoons. He was saying the U.S. is fighting to STOP Iran fro
 
 The rally passage itself does not mention nuclear weapons. [1]
 
+His own post on Truth Social, Thursday, October 8, 2026, 2:59 p.m. EDT, read through an archive capture linked to the original; the post's first two sentences, of four [29]
+
+The Fake and Artificial News is out there trying to say that I'm inviting the enemy to bomb San Diego and Los Angeles when, in actuality, what I was talking about was that a temporary increase in the price of Gasoline is a small price to pay for Iran not having a Nuclear Weapon and, if you want to see a big price, can you imagine what it would be like if they bombed San Diego and/or Los Angeles? All I was doing was making a comparison between paying a little more, for a short time, for Gasoline, versus the bombing of our Major Cities.
+
 [Image: Vladimir Putin seated in an armchair at a microphone on the Valdai stage]
 
 Vladimir Putin at the Valdai Discussion Club plenary session, October 1, 2026. Photo: kremlin.ru, CC BY 4.0.
@@ -381,6 +385,7 @@ Iran: no verbatim text from the presidency this week; not included.
 26. CUT, October 2022. cut.org.br/noticias/nos-vamos-ganhar-estas-eleicoes-diz-lula-ao-anunciar-campanha-pelo-2-turno-96fb
 27. Correio Braziliense, October 2022. correiobraziliense.com.br/politica/2022/10/amp/5041393-apenas-uma-prorrogacao-diz-lula-sobre-ida-ao-segundo-turno.html
 28. Volodymyr Zelenskyy, official Telegram channel, October 5, 2026, call readouts: t.me/V_Zelenskiy_official/21219 (Macron), /21217 (Tusk), /21221 (Jetten)
+29. Trump's Truth (Defending Democracy Together), archive capture of Donald Trump's Truth Social post, October 8, 2026, 2:59 p.m. EDT. trumpstruth.org/statuses/42204; original: truthsocial.com/@realDonaldTrump/117406823254412991
 
 Minute marks read "about" where no official transcript exists.
 
@@ -390,6 +395,8 @@ Built by **Dustin Nimmo**, founder of [DNSC](https://dnsc.ai) in West Chester, O
 
 Last verified Oct 6, 2026. If a fact here is wrong, say so and it will be fixed and noted.
 
+Posted October 6, 2026 · Revised October 13, 2026, 6:55 PM: added Donald Trump's own October 8 post on the Grand Island remark to What the office said after, with its source [29].
+
 ---
 
-Source: https://tools.dnsc.ai/civic/word-for-word-2026-10-06/ · Generated from the page on Oct 9, 2026
+Source: https://tools.dnsc.ai/civic/word-for-word-2026-10-06/ · Generated from the page on Oct 13, 2026

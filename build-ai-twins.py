@@ -777,6 +777,7 @@ def load_pieces():
         href = (p or {}).get("href", "")
         if not href or "://" in href or href.startswith("/") or p.get("section") not in SECTION_NAMES:
             continue  # off-site cards (dnsc.ai) have no page here
+        href = href.split("?")[0]  # a versioned link (?v=) still points at the same page
         p = dict(p, rel=href if href.endswith("/") else href + "/")
         out.append(p)
     return out

@@ -3,8 +3,25 @@
  "note": "The Well's shelf. One entry per card. The landing page and build-ai-twins.py both read this file. Newest first within each section; featured entries form the stack at the top.",
  "pieces": [
   {
+   "slug": "word-for-word-2026-10-13",
+   "href": "civic/word-for-word-2026-10-13/",
+   "title": "Word for Word around the world",
+   "line": "Trump, Macron, Burnham, Erdoğan, Ramaphosa and Tusk, in their own words, on Iran and the midterm elections, the spirit of defeat, immigrants and Europe, international law, the Nobel Peace Prize and Russia's responsibility for the war in Ukraine.",
+   "type": "piece",
+   "section": "weekly",
+   "topic": "Heads of state · in their own words",
+   "date": "2026-10-13",
+   "status": "live",
+   "share": "assets/share/word-for-word-2026-10-13.jpg",
+   "preview": "assets/previews/word-for-word-2026-10-13.jpg",
+   "related": [
+    "word-for-word-2026-10-06",
+    "the-table"
+   ]
+  },
+  {
    "slug": "word-for-word-2026-10-06",
-   "href": "civic/word-for-word-2026-10-06/",
+   "href": "civic/word-for-word-2026-10-06/?v=20261013",
    "title": "Word for Word around the world",
    "line": "Trump, Putin, Zelenskyy, Netanyahu, Xi, Modi and Lula, in their own words, on Iran, Kaliningrad, negotiations, a cockpit attack, the Chinese nation, peace and a runoff.",
    "type": "piece",
@@ -16,7 +33,8 @@
    "preview": "assets/previews/word-for-word-2026-10-06.jpg",
    "related": [
     "the-table"
-   ]
+   ],
+   "updated": "2026-10-13"
   },
   {
    "slug": "gas-tax",
