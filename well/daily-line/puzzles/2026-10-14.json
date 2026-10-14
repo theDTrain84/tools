@@ -1,0 +1,63 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-10-14",
+ "size": 5,
+ "g": [
+  "#WAKE",
+  "SOLID",
+  "AMONG",
+  "GAUGE",
+  "ENDS#"
+ ],
+ "a": [
+  [
+   "WAKE",
+   "The start of a session, when an AI reads its notes before it says hello"
+  ],
+  [
+   "SOLID",
+   "Firm, like ground you can build on"
+  ],
+  [
+   "AMONG",
+   "In the company of"
+  ],
+  [
+   "GAUGE",
+   "A dial that shows how much is left in the tank"
+  ],
+  [
+   "ENDS",
+   "Finishes"
+  ]
+ ],
+ "d": [
+  [
+   "SAGE",
+   "Herb in the stuffing, or a wise elder"
+  ],
+  [
+   "WOMAN",
+   "Adult she"
+  ],
+  [
+   "ALOUD",
+   "How to read a clue to catch what the eye misses"
+  ],
+  [
+   "KINGS",
+   "Chess pieces that must be protected"
+  ],
+  [
+   "EDGE",
+   "The rim of the table"
+  ]
+ ],
+ "w": "WAKE",
+ "n": "Wake is the first minute of a session, when an AI reads what it wrote yesterday before it does anything new. Without that minute every day starts cold and the same questions come back. Give your AI a place to leave notes, and make reading them the first step.",
+ "sources": [],
+ "checked": true,
+ "cooked": "2026-10-14T06:06:57-04:00",
+ "no": 11
+}

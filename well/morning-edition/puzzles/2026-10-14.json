@@ -1,0 +1,75 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-10-14",
+ "size": 5,
+ "g": [
+  "#PAPA",
+  "ERROR",
+  "DIGIT",
+  "ICONS",
+  "TENT#"
+ ],
+ "a": [
+  [
+   "PAPA",
+   "Dad, to a toddler"
+  ],
+  [
+   "ERROR",
+   "A mistake in the output: name it plainly, then fix it at the source"
+  ],
+  [
+   "DIGIT",
+   "Any one of 0 through 9"
+  ],
+  [
+   "ICONS",
+   "The small pictures on a phone's home screen"
+  ],
+  [
+   "TENT",
+   "Shelter you pitch"
+  ]
+ ],
+ "d": [
+  [
+   "EDIT",
+   "Change a draft"
+  ],
+  [
+   "PRICE",
+   "Launch ___ for Gemini 4 Argon in Google's Oct. 13 post: $2 per million input tokens and $10 per million output tokens, rising to $4 and $20 after Nov. 30",
+   {
+    "src": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+   }
+  ],
+  [
+   "ARGON",
+   "Gemini 4 ___: the frontier model Google opened to developers through its API on Oct. 13, with one limit of a million tokens shared across input and output",
+   {
+    "src": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+   }
+  ],
+  [
+   "POINT",
+   "What a good argument makes"
+  ],
+  [
+   "ARTS",
+   "Painting, music and dance, together"
+  ]
+ ],
+ "w": "ARGON",
+ "n": "Argon is the name Google gave the Gemini 4 model it opened to developers on Oct. 13. Two lines in the post matter for your work: one limit of a million tokens shared between what you send and what comes back, and a launch price that doubles after Nov. 30. When a tool gets a new engine, read the price page before you build a routine on it.",
+ "sources": [
+  {
+   "title": "Google opens Gemini 4 Argon to developers through its API, with launch pricing through Nov. 30 (Google)",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+   "date": "2026-10-13"
+  }
+ ],
+ "checked": true,
+ "cooked": "2026-10-14T06:06:57-04:00",
+ "no": 8
+}
