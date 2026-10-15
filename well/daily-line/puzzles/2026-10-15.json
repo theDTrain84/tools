@@ -1,0 +1,63 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-10-15",
+ "size": 5,
+ "g": [
+  "##AID",
+  "#ALSO",
+  "BUILT",
+  "URGE#",
+  "TAN##"
+ ],
+ "a": [
+  [
+   "AID",
+   "Help"
+  ],
+  [
+   "ALSO",
+   "In addition"
+  ],
+  [
+   "BUILT",
+   "Step three, done: the system is ___ and running"
+  ],
+  [
+   "URGE",
+   "A strong nudge"
+  ],
+  [
+   "TAN",
+   "Beach color"
+  ]
+ ],
+ "d": [
+  [
+   "BUT",
+   "The small word before the objection"
+  ],
+  [
+   "AURA",
+   "The feel a room gives off"
+  ],
+  [
+   "ALIGN",
+   "Point the AI and the team the same way"
+  ],
+  [
+   "ISLE",
+   "Small island"
+  ],
+  [
+   "DOT",
+   "The point in a web address"
+  ]
+ ],
+ "w": "ALIGN",
+ "n": "Align means pointing the AI and the team the same way before the work starts: one goal, one set of rules, the same words for the same things. Most AI trouble at work is two people asking the same tool for different things. Write the aim down once, in a place the team and the AI both read.",
+ "sources": [],
+ "checked": true,
+ "cooked": "2026-10-15T06:17:30-04:00",
+ "no": 12
+}

@@ -1,0 +1,72 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-10-15",
+ "size": 5,
+ "g": [
+  "#BIAS",
+  "TENSE",
+  "ALPHA",
+  "BLUES",
+  "SETS#"
+ ],
+ "a": [
+  [
+   "BIAS",
+   "Political ___: in its Oct. 14 post on the midterms, Anthropic says its newest models score 99% on its own political evenhandedness evaluation",
+   {
+    "src": "https://www.anthropic.com/news/2026-us-midterms"
+   }
+  ],
+  [
+   "TENSE",
+   "Past, present or future"
+  ],
+  [
+   "ALPHA",
+   "First Greek letter, or an early test build"
+  ],
+  [
+   "BLUES",
+   "Twelve-bar music from the Delta"
+  ],
+  [
+   "SETS",
+   "Tennis units"
+  ]
+ ],
+ "d": [
+  [
+   "TABS",
+   "Browser pages lined up along the top"
+  ],
+  [
+   "BELLE",
+   "The ___ of the ball"
+  ],
+  [
+   "INPUT",
+   "What you type into the box, counted in tokens"
+  ],
+  [
+   "ASHES",
+   "What a fire leaves behind"
+  ],
+  [
+   "SEAS",
+   "Seven of them, in the old count"
+  ]
+ ],
+ "w": "BIAS",
+ "n": "Bias is the lean in an answer. Anthropic's Oct. 14 post on the midterms says its newest models score 99% on its own evenhandedness test, and it names two faults it still sees: caveats nobody asked for and uneven hedging between political views. The score is the company's own measure. When a tool talks politics, ask who graded it and where the voting facts came from.",
+ "sources": [
+  {
+   "title": "Anthropic lays out its safeguards for the 2026 US midterms: usage figures, a voting-information partner, bias testing and bans (Anthropic)",
+   "url": "https://www.anthropic.com/news/2026-us-midterms",
+   "date": "2026-10-14"
+  }
+ ],
+ "checked": true,
+ "cooked": "2026-10-15T06:17:30-04:00",
+ "no": 9
+}
