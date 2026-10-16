@@ -6,6 +6,8 @@ Start at the landing page as text: [The Well](https://tools.dnsc.ai/ai.md). Teac
 
 ## Civic tools
 
+- [Kroger's 3,000](https://tools.dnsc.ai/civic/kroger/index.md): Kroger, the company behind 2,697 supermarkets from Cincinnati to Los Angeles, told staff on October 12 that about 3,000 of its 8,200 corporate jobs will be cut over three years.
+- [HomeView](https://tools.dnsc.ai/civic/homeview/index.md): HomeView is Apple's new small AI computer for the kitchen counter: a 7-inch screen on a speaker, with a camera and Apple's A18 chip.
 - [A Holiday for the Holidays · Ohio's Gas Tax Holiday](https://tools.dnsc.ai/gas-tax/index.md): Ohio's 38.5¢ gas tax is off every gallon for 90 days. Set your tank, see what you save, then follow the oil from the pump to the barrel.
 - [The table](https://tools.dnsc.ai/civic/the-table/index.md): The President and six AI companies signed a one-page accord on superintelligence over lunch on September 29. The room, the page, the faces, and what it binds.
 - [The task force](https://tools.dnsc.ai/civic/task-force/index.md): On September 30 the Secretary of War asked Elon Musk, Palmer Luckey and Newt Gingrich what the next war will need, and announced a new command for drones. A 120-day study, from the record.
