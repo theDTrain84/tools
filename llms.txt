@@ -6,12 +6,7 @@ Start at the landing page as text: [The Well](https://tools.dnsc.ai/ai.md). Teac
 
 ## Civic tools
 
-- [Who owns the pipes](https://tools.dnsc.ai/civic/who-owns-the-pipes/index.md): Nine people and four families hold the most votes behind the apps, networks and papers most Americans use, from each company's own filings, with how many people each one reaches and who owns the local news.
-- [Eight States and OpenAI](https://tools.dnsc.ai/civic/openai-eight-states/index.md): On October 14 the attorneys general of Arizona, Arkansas, Idaho, Iowa, Kansas, Montana, Nebraska and West Virginia each sued OpenAI in their own state courts; the complaints, the asks, the timeline and what a judge could order, from the record.
-- [Kroger's 3,000](https://tools.dnsc.ai/civic/kroger/index.md): Kroger, the company behind 2,697 supermarkets from Cincinnati to Los Angeles, told staff on October 12 that about 3,000 of its 8,200 corporate jobs will be cut over three years.
 - [A Holiday for the Holidays · Ohio's Gas Tax Holiday](https://tools.dnsc.ai/gas-tax/index.md): Ohio's 38.5¢ gas tax is off every gallon for 90 days. Set your tank, see what you save, then follow the oil from the pump to the barrel.
-- [The table](https://tools.dnsc.ai/civic/the-table/index.md): The President and six AI companies signed a one-page accord on superintelligence over lunch on September 29. The room, the page, the faces, and what it binds.
-- [The task force](https://tools.dnsc.ai/civic/task-force/index.md): On September 30 the Secretary of War asked Elon Musk, Palmer Luckey and Newt Gingrich what the next war will need, and announced a new command for drones. A 120-day study, from the record.
 - [Issue 2, in Plain Numbers](https://tools.dnsc.ai/follow-the-money/index.md): What the November school bond means for your tax bill, with every number sourced from the public record.
 - [What's in the jar · Cannabis in Ohio](https://tools.dnsc.ai/cannabis/index.md): How strong today's cannabis is, what Ohio's law allows, where the money goes, and what the research says, in plain numbers with every source linked.
 
@@ -37,12 +32,17 @@ Start at the landing page as text: [The Well](https://tools.dnsc.ai/ai.md). Teac
 
 ## Teaching
 
-- [HomeView](https://tools.dnsc.ai/stories/homeview/index.md): HomeView is Apple's new small AI computer for the kitchen counter: a 7-inch screen on a speaker, with a camera and Apple's A18 chip.
 - [The Recipe Book](https://tools.dnsc.ai/recipes/index.md): Working systems for the AI you already have.
 - [AI Gauges](https://tools.dnsc.ai/ai-gauges/index.md): Your own AI use: tokens, energy, water and carbon.
 - [Games and practices](https://tools.dnsc.ai/well/index.md): Word games that teach AI, and the practices that hold the day. Some daily, some weekly.
 - [The morning inbox · Recipe card](https://tools.dnsc.ai/recipes/morning-inbox/index.md): A recipe card: AI triages your inbox into three tiers, labels only, drafts the replies that need you, and sends a short digest. You still send every email.
 - [HomeView · moved](https://tools.dnsc.ai/civic/homeview/index.md): 
+- [Kroger's 3,000](https://tools.dnsc.ai/civic/kroger/index.md): On October 12, 2026 Kroger, the Cincinnati grocer with 2,697 supermarkets, told staff that about 3,000 of its 8,200 corporate jobs will be cut over three years. What Kroger is, what corporate means at a grocer, the memo, the company's AI plan for its app and stores, what it changes for shoppers, store workers, pharmacy customers and Cincinnati, from the record.
+- [Eight States and OpenAI](https://tools.dnsc.ai/civic/openai-eight-states/index.md): On October 14, 2026, the attorneys general of Arizona, Arkansas, Idaho, Iowa, Kansas, Montana, Nebraska and West Virginia each sued OpenAI over ChatGPT in their own state courts. What ChatGPT is, what the states say, what each asks the courts for, how a chatbot learns to agree in OpenAI's own words, the timeline since 2024, and what has changed in the app, from the record.
+- [The task force](https://tools.dnsc.ai/civic/task-force/index.md): On September 30, 2026 the Secretary of War named Elon Musk, Palmer Luckey and Newt Gingrich to co-direct a 120-day study of future war. Who they are, what they build, what they hold and sell to the Department, what it means for Ohio, and what the study can and cannot decide.
+- [The table](https://tools.dnsc.ai/civic/the-table/index.md): What six companies and a President signed on September 29, 2026: the page in their words, the faces and what each one said after, what it binds, what it doesn't, and what would.
+- [Who owns the pipes](https://tools.dnsc.ai/civic/who-owns-the-pipes/index.md): Thirteen people and families hold the most votes behind the apps, networks and papers Americans use: who they are, everything they own, how many people each reaches, how a minority of the shares becomes control, and who owns local news across the country and in Butler County, Ohio, from the companies' own filings, October 2026.
+- [HomeView](https://tools.dnsc.ai/stories/homeview/index.md): On October 13, 2026 Apple announced HomeView, a $299 home hub with a screen, a camera and Siri AI: what it does, how a home connects to it, what stays in the house and what leaves it, and a day with it.
 
 ## Optional
 

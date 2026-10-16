@@ -60,6 +60,12 @@ Seven letters, seven tries. For the word people.
 
 Open →
 
+The table
+
+### Understanding the week, from the record.
+
+Stories about AI, business and power, built from documents and dates: who is in the room, what was decided, and who it reaches.
+
 Civic
 
 ### Know what the decisions cost.
