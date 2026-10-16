@@ -3,6 +3,24 @@
  "note": "The Well's shelf. One entry per card. The landing page and build-ai-twins.py both read this file. Newest first within each section; featured entries form the stack at the top.",
  "pieces": [
   {
+   "slug": "openai-eight-states",
+   "href": "civic/openai-eight-states/?v=20261016",
+   "title": "Eight states sue OpenAI over ChatGPT. They say it was marketed as safe while designed to agree with its users.",
+   "line": "On October 14 the attorneys general of Arizona, Arkansas, Idaho, Iowa, Kansas, Montana, Nebraska and West Virginia each sued OpenAI in their own state courts; the complaints, the asks, the timeline and what a judge could order, from the record.",
+   "type": "piece",
+   "section": "civic",
+   "topic": "Eight states · OpenAI",
+   "date": "2026-10-16",
+   "status": "live",
+   "featured": true,
+   "share": "assets/share/openai-eight-states.jpg",
+   "preview": "assets/previews/openai-eight-states.jpg",
+   "related": [
+    "the-table"
+   ],
+   "updated": "2026-10-16"
+  },
+  {
    "slug": "kroger",
    "href": "civic/kroger/?v=20261016",
    "title": "3,000 of Kroger's 8,200 corporate jobs will be cut. Over three years, citing technology.",

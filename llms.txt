@@ -6,6 +6,7 @@ Start at the landing page as text: [The Well](https://tools.dnsc.ai/ai.md). Teac
 
 ## Civic tools
 
+- [Eight States and OpenAI](https://tools.dnsc.ai/civic/openai-eight-states/index.md): On October 14 the attorneys general of Arizona, Arkansas, Idaho, Iowa, Kansas, Montana, Nebraska and West Virginia each sued OpenAI in their own state courts; the complaints, the asks, the timeline and what a judge could order, from the record.
 - [Kroger's 3,000](https://tools.dnsc.ai/civic/kroger/index.md): Kroger, the company behind 2,697 supermarkets from Cincinnati to Los Angeles, told staff on October 12 that about 3,000 of its 8,200 corporate jobs will be cut over three years.
 - [A Holiday for the Holidays · Ohio's Gas Tax Holiday](https://tools.dnsc.ai/gas-tax/index.md): Ohio's 38.5¢ gas tax is off every gallon for 90 days. Set your tank, see what you save, then follow the oil from the pump to the barrel.
 - [The table](https://tools.dnsc.ai/civic/the-table/index.md): The President and six AI companies signed a one-page accord on superintelligence over lunch on September 29. The room, the page, the faces, and what it binds.
