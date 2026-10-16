@@ -1,0 +1,67 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-10-16",
+ "size": 5,
+ "g": [
+  "#SPAS",
+  "OMEGA",
+  "RISEN",
+  "ALONE",
+  "LEST#"
+ ],
+ "a": [
+  [
+   "SPAS",
+   "Places for a soak and a steam"
+  ],
+  [
+   "OMEGA",
+   "Last Greek letter"
+  ],
+  [
+   "RISEN",
+   "Up from bed, or from the dead"
+  ],
+  [
+   "ALONE",
+   "With no one else in the room"
+  ],
+  [
+   "LEST",
+   "For fear that"
+  ]
+ ],
+ "d": [
+  [
+   "ORAL",
+   "Spoken, as an exam"
+  ],
+  [
+   "SMILE",
+   "What a good photo asks for"
+  ],
+  [
+   "PESOS",
+   "Money in Mexico City"
+  ],
+  [
+   "AGENT",
+   "An AI that takes steps on your behalf"
+  ],
+  [
+   "SANE",
+   "Of sound mind"
+  ]
+ ],
+ "w": "AGENT",
+ "n": "An agent is an AI that takes steps, not just answers: it opens the file, runs the search, drafts the email, moves to the next thing. The difference from a chat window is that steps have consequences. Before you hand an agent a job, write down which steps it may take on its own and which ones wait for you.",
+ "sources": [],
+ "checked": true,
+ "_theme_placed": [
+  "AGENT"
+ ],
+ "_seconds": 0.1,
+ "cooked": "2026-10-16T07:56:51-04:00",
+ "no": 13
+}

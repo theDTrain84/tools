@@ -1,0 +1,76 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-10-16",
+ "size": 5,
+ "g": [
+  "#VETO",
+  "GIVEN",
+  "IDEAL",
+  "FERRY",
+  "TOYS#"
+ ],
+ "a": [
+  [
+   "VETO",
+   "What Anthropic says it holds no power of over an outside evaluator's report, in its Oct. 15 post on independent evaluators",
+   {
+    "src": "https://www.anthropic.com/news/an-update-on-independent-evaluators"
+   }
+  ],
+  [
+   "GIVEN",
+   "Taken as true from the start"
+  ],
+  [
+   "IDEAL",
+   "Perfect, on paper"
+  ],
+  [
+   "FERRY",
+   "Boat that crosses the river on a schedule"
+  ],
+  [
+   "TOYS",
+   "What the kids leave on the floor"
+  ]
+ ],
+ "d": [
+  [
+   "GIFT",
+   "Something given, nothing owed"
+  ],
+  [
+   "VIDEO",
+   "Reels, clips and the rest"
+  ],
+  [
+   "EVERY",
+   "Each one, no exceptions"
+  ],
+  [
+   "TEARS",
+   "What cutting onions brings"
+  ],
+  [
+   "ONLY",
+   "Just this and nothing else"
+  ]
+ ],
+ "w": "VETO",
+ "n": "A veto is the power to kill a report before it leaves the building. Anthropic's Oct. 15 post says six people from an outside evaluator now sit inside the company with employee-level access, can publish what they find without approval, and can only be made to redact narrow, predefined categories. The company set the categories and ranked its evaluators in three tiers of access. When a tool's maker says it was checked, ask who checked, what they could see, and who held the pen at the end.",
+ "sources": [
+  {
+   "title": "Anthropic gives an outside evaluator employee-level access and no veto over its findings, with two more evaluators named and three access tiers (Anthropic)",
+   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+   "date": "2026-10-15"
+  }
+ ],
+ "checked": true,
+ "_theme_placed": [
+  "VETO"
+ ],
+ "_seconds": 0.1,
+ "cooked": "2026-10-16T07:56:51-04:00",
+ "no": 10
+}
