@@ -12,7 +12,7 @@
    "topic": "Cincinnati · Kroger",
    "date": "2026-10-16",
    "status": "live",
-   "featured": false,
+   "featured": true,
    "share": "assets/share/kroger.jpg",
    "preview": "assets/previews/kroger.jpg",
    "related": [
@@ -22,15 +22,15 @@
   },
   {
    "slug": "homeview",
-   "href": "civic/homeview/?v=20261016",
+   "href": "stories/homeview/?v=20261016b",
    "title": "HomeView, Apple's $299 kitchen hub, recognizes six faces and runs the lights and locks",
    "line": "HomeView is Apple's new small AI computer for the kitchen counter: a 7-inch screen on a speaker, with a camera and Apple's A18 chip.",
    "type": "piece",
-   "section": "civic",
-   "topic": "Apple · HomeView",
+   "section": "teaching",
+   "topic": "Apple · HomeView · Working with AI",
    "date": "2026-10-16",
    "status": "live",
-   "featured": false,
+   "featured": true,
    "share": "assets/share/homeview.jpg",
    "preview": "assets/previews/homeview.jpg",
    "updated": "2026-10-16"
