@@ -1,6 +1,6 @@
 # The Well, from DNSC: every page as text
 
-Generated Oct 13, 2026 from https://tools.dnsc.ai/. Index: https://tools.dnsc.ai/llms.txt
+Generated Oct 16, 2026 from https://tools.dnsc.ai/. Index: https://tools.dnsc.ai/llms.txt
 
 # The Well · DNSC
 
@@ -74,7 +74,7 @@ Plain answers from public records, so neighbors can talk about the same numbers.
 
 Lakota schools · Issue 2
 
-#### [Issue 2, in Plain Numbers](https://tools.dnsc.ai/follow-the-money/?v=20261009)
+#### [Issue 2, in Plain Numbers](https://tools.dnsc.ai/follow-the-money/?v=20261016)
 
 What the November school bond means for your tax bill, with every number sourced from the public record.
 
@@ -192,7 +192,7 @@ Want help putting these to work with your people?
 
 ---
 
-Source: https://tools.dnsc.ai/ · Generated from the page on Oct 13, 2026
+Source: https://tools.dnsc.ai/ · Generated from the page on Oct 16, 2026
 
 
 * * *
@@ -592,7 +592,7 @@ Posted October 4, 2026 · Revised October 6, 2026, 11:17 AM: added why diesel di
 
 ---
 
-Source: https://tools.dnsc.ai/gas-tax/ · Generated from the page on Oct 13, 2026
+Source: https://tools.dnsc.ai/gas-tax/ · Generated from the page on Oct 16, 2026
 
 
 * * *
@@ -1105,7 +1105,7 @@ Company logos are trademarks of their owners, used here to identify them.
 
 ---
 
-Source: https://tools.dnsc.ai/civic/the-table/ · Generated from the page on Oct 13, 2026
+Source: https://tools.dnsc.ai/civic/the-table/ · Generated from the page on Oct 16, 2026
 
 
 * * *
@@ -1451,7 +1451,7 @@ Last verified Oct 4, 2026. If a fact here is wrong, say so and it will be fixed 
 
 ---
 
-Source: https://tools.dnsc.ai/civic/task-force/ · Generated from the page on Oct 13, 2026
+Source: https://tools.dnsc.ai/civic/task-force/ · Generated from the page on Oct 16, 2026
 
 
 * * *
@@ -1762,29 +1762,6 @@ Choir and theater start in junior high, and elementary art is weekly, per the di
 
 Source: Lakota Arts and Activities, K-6 Specials and Kindergarten pages; Lakota FAQ, updated Sept 25, 2026; the studies and statutes named on each card.[22][7][23][24][25]
 
-### Research ties new school buildings to home prices; test results are mixed
-
-Ohio's schools rest on land set aside in 1785 and a constitutional duty written in 1851. We found no study that measures how much Ohio home prices change when a levy passes or fails.
-
-1. 1785 **Land Ordinance Law Lot 16 of every township is reserved "for the maintenance of public schools."** Lot 16 of every township is reserved "for the maintenance of public schools." The first survey under it was Ohio's Seven Ranges.[26] Limits: a way to fund schools with land. It shows intent, not results.
-2. 1787 **Northwest Ordinance, Article 3 Law Schools and "the means of education shall forever be encouraged."** "Religion, morality, and knowledge, being necessary to good government and the happiness of mankind, schools and the means of education shall forever be encouraged."[27] Limits: a statement of purpose with no money attached.
-3. 1851 **Ohio Constitution, Article VI, Section 2 Law The General Assembly must "secure a thorough and efficient system of common schools throughout the state."** The General Assembly must "secure a thorough and efficient system of common schools throughout the state."[28] Limits: the courts decide what "thorough and efficient" means.
-4. 1976 **House Bill 920 Law When values rise, voted levies collect the same dollars and the rate falls.** When values rise, voted levies collect the same dollars and the rate falls. A 1980 amendment put this in the Ohio Constitution.[17] Limits: districts at the 20-mill floor are an exception. Lakota's effective residential rate, about 23 mills, is above it.[16]
-5. 1997 **DeRolph I and the School Facilities Commission Court The Ohio Supreme Court rules 4 to 3 that the school funding system violates Article VI, Section 2.** The Ohio Supreme Court rules 4 to 3 that the school funding system violates Article VI, Section 2. Among the laws it holds unconstitutional is the Classroom Facilities Act, "to the extent that it is underfunded." The same year, Senate Bill 102 creates the Ohio School Facilities Commission, the agency now named the Ohio Facilities Construction Commission that co-funds Issue 2.[18] Limits: legal holdings about the state's duty, not studies of results. The court ruled three more times, through 2002.
-6. 2010 **Cellini, Ferreira and Rothstein, California Study Where school bonds narrowly passed, home prices rose at once.** Where school bonds narrowly passed, home prices rose at once. Buyers valued each $1 of school capital spending at "$1.50 or more."[29] Bonds voted 1987 to 2006.[29] Limits: California only, close elections only. It measures what buyers pay; the authors find test scores explain only a small part of it.
-7. 2014 **Neilson and Zimmerman, New Haven Study New school buildings raised reading scores and nearby home prices.** New school buildings raised reading scores by 0.15 standard deviations by year six, with no math effect, and raised nearby home prices by "roughly 10%."[30] Limits: one city; not a randomized study.
-8. 2016 **Jackson, Johnson and Persico, national Study More spending per pupil led to more years of school, higher wages and less adult poverty.** Ten percent more spending per pupil in each of 12 school years led to 0.31 more years of school, about 7 percent higher wages and 3.2 percentage points less adult poverty. The effects were larger for children from low-income families.[31] Limits: about operating money over many years, not buildings. Children born 1955 to 1985.
-9. 2016 **Martorell, Stange and McFarlin, Texas Study Building campaigns showed "little evidence" of higher achievement.** Nearly 1,400 bond-funded building campaigns, comparing close votes: "little evidence" of higher achievement, and "very precise zero" effects for students in renovated campuses.[32] Texas, 1997 to 2010.[32] Limits: Texas only; test scores only, with no home prices.
-10. 2017 **Conlin and Thompson, Ohio Study Test proficiency and home prices dipped at first, then rose.** Ohio's state building program, over $10 billion in 231 districts from 1997 to 2011: the share of students passing state tests dipped in the first couple of years, then rose. Home prices dipped in the short term, then gained.[33] Limits: measures the share of students proficient. Part of the effect may come from operating spending. Sizes are not in the abstract.
-11. 2018 **Lafortune, Rothstein and Schanzenbach, national Study School finance reforms after 1990 gradually raised achievement in low-income districts.** School finance reforms after 1990 raised achievement in low-income districts, gradually: 0.12 to 0.24 standard deviations per $1,000 per pupil in yearly spending.[34] Limits: the numbers come from the 2016 working paper; the published article gives none in its abstract. Measured on national test samples.
-12. 2022 **Lafortune and Schönholzer, Los Angeles Study New schools raised test scores, attendance and home prices.** New schools raised test scores, attendance and home prices. Each $1 spent "generated $1.62 in household value," about a quarter of it through test score gains.[35] Limits: one very large district. The $1.62 combines projected earnings with home values.
-
-**More what the studies add up to, sources**
-
-In the studies below that measured home prices, prices rose after new school building spending; in Ohio they dipped first. Test score results are mixed, and the Texas study found none.
-
-Source: the laws, rulings and studies cited on each line. Study findings are quoted or taken from each paper's abstract or working paper, as marked in the sources.[26][29][35]
-
 ### Two paths, in time
 
 What the district says happens next, by date, either way.
@@ -1811,15 +1788,13 @@ A choice (Show a path step by step): If Issue 2 passes, If Issue 2 fails.
 2. **After the vote · The grade bands cannot change, the FAQ says.** "If the bond issue is not approved, we cannot shift the grade-band configuration, which is necessary to address overcrowding and large class sizes," the FAQ says.[7]
 3. **After the vote · The district's traffic study waits on the vote.** The district's traffic study waits on the vote. The FAQ says the study "is pending the outcome of the Nov. 3 vote by the community due to its cost."[7]
 4. **Today, per the district · Overcrowding stays as the district describes it.** Overcrowding stays as the district describes it: "overcapacity by more than 700 students," and "many K-5 classrooms have 27 or more students, with some classes exceeding 30."[7]
-5. **Next, options · Other options, including all-day kindergarten.** "Other options will need to be considered, including all-day kindergarten." The FAQ adds: "there are other options that would be considered before eliminating all-day kindergarten because of its educational impact. These options include specials, electives and a tuition-based all-day kindergarten."[7] Today Lakota offers all-day kindergarten to all families, with a half-day morning option.[22]
+5. **Next, what gets cut · The district's own list: specials, electives, and all-day kindergarten moving to tuition.** "Other options will need to be considered, including all-day kindergarten." The FAQ adds: "there are other options that would be considered before eliminating all-day kindergarten because of its educational impact. These options include specials, electives and a tuition-based all-day kindergarten."[7] Today Lakota offers all-day kindergarten to all families, with a half-day morning option.[22]
 6. After 2028 The older bonds' 2.2 mills still roll off, and the school-bond line on the bill goes to $0.[7]
 7. **Later ballots · Two more tries before the state's $77 million goes elsewhere.** "Lakota will have two additional attempts at passing a bond issue. If a bond issue is not approved by voters after three attempts, the OFCC will apply the $77 million to another district's facilities plan," the FAQ says. The superintendent calls it "three strikes and you're out." [11:27][7][36]
 
 **Either way.** The forecast's assumed 3.6-mill operating levy, collected from 2029, applies whether Issue 2 passes or fails.[4]
 
-**More research elsewhere, sources**
-
-What research found in other places and other times is in the timeline above. These are not predictions for Lakota.
+**More sources**
 
 Source: Lakota Master Facilities Plan FAQ, updated Sept 25, 2026; district post "The Big Picture," Sept 25, 2026; Resolution to Proceed, June 9, 2026; "2026 Master Facilities Plan and November Bond Information," district video, Oct 6, 2026, with minute marks from its captions; Five-Year Forecast, Aug 24, 2026. These are the district's statements and plans.[7][6][36][4]
 
@@ -1906,7 +1881,7 @@ Verified **The credits are changing under state law.** The 10 percent non-busine
 
 Last verified Oct 2, 2026. Corrections: if a number here is wrong, the page changes and says what changed. Built from public records by a resident; the county treasurer's bill is always the record. An independent project, built from public records; no campaign or political organization paid for it or directs it. It provides information only and does not endorse or oppose any ballot measure. Figures are estimates based on publicly available data and may not reflect every factor that affects an individual parcel, such as exemptions, credits or special assessments. For questions about your property’s current tax calculations, contact the Butler County Auditor’s office. Future tax amounts may change.
 
-Posted October 2, 2026 · Revised October 9, 2026: monthly costs lead the calculator; new sections on where Lakota’s money comes from, students and room, how Lakota compares with 15 Ohio districts, the arts in the plan, schools and community over time, and two paths in time; the older-debt line comes out of the totals and is explained in the fine print. Earlier revision, October 6, 2026, 1:10 PM: the estimate note reworded at the campaign’s request, so it no longer suggests the Auditor can give a future amount. · Revised October 7, 2026, 3:10 PM: after a reader’s review, the answer now shows both comparisons (against today and against failing) with the district’s own words; the district’s stated benefits added from its October mailer; the millage note explains how the rate is set each year; the possible operating levy reframed as a forecast placeholder and moved below the bill. · Revised October 7, 2026, 3:30 PM: a plain note on how the yearly rate works, so the bill stays steady as values rise.
+Posted October 2, 2026 · Revised October 16, 2026: the section of laws and studies on school buildings, test scores and home prices is removed (the studies were from other places and times, and the results were mixed); the "if it fails" path now says plainly what the district lists for cuts. · Revised October 9, 2026: monthly costs lead the calculator; new sections on where Lakota’s money comes from, students and room, how Lakota compares with 15 Ohio districts, the arts in the plan, schools and community over time, and two paths in time; the older-debt line comes out of the totals and is explained in the fine print. Earlier revision, October 6, 2026, 1:10 PM: the estimate note reworded at the campaign’s request, so it no longer suggests the Auditor can give a future amount. · Revised October 7, 2026, 3:10 PM: after a reader’s review, the answer now shows both comparisons (against today and against failing) with the district’s own words; the district’s stated benefits added from its October mailer; the millage note explains how the rate is set each year; the possible operating levy reframed as a forecast placeholder and moved below the bill. · Revised October 7, 2026, 3:30 PM: a plain note on how the yearly rate works, so the bill stays steady as values rise.
 
 **How this bond came to be**
 
@@ -1939,7 +1914,7 @@ Ohio taxes **35 percent** of a home's appraised value. West Chester Township hom
 
 ---
 
-Source: https://tools.dnsc.ai/follow-the-money/ · Generated from the page on Oct 13, 2026
+Source: https://tools.dnsc.ai/follow-the-money/ · Generated from the page on Oct 16, 2026
 
 
 * * *
@@ -2188,7 +2163,7 @@ Last verified Oct 4, 2026. Medical facts here are summaries of research, not med
 
 ---
 
-Source: https://tools.dnsc.ai/cannabis/ · Generated from the page on Oct 13, 2026
+Source: https://tools.dnsc.ai/cannabis/ · Generated from the page on Oct 16, 2026
 
 
 * * *
@@ -2586,7 +2561,7 @@ Posted October 13, 2026 · Revised October 13, 2026, 6:58 PM: a one-line setup a
 
 ---
 
-Source: https://tools.dnsc.ai/civic/word-for-word-2026-10-13/ · Generated from the page on Oct 13, 2026
+Source: https://tools.dnsc.ai/civic/word-for-word-2026-10-13/ · Generated from the page on Oct 16, 2026
 
 
 * * *
@@ -3006,7 +2981,7 @@ Posted October 6, 2026 · Revised October 13, 2026, 6:44 PM: added Donald Trump'
 
 ---
 
-Source: https://tools.dnsc.ai/civic/word-for-word-2026-10-06/ · Generated from the page on Oct 13, 2026
+Source: https://tools.dnsc.ai/civic/word-for-word-2026-10-06/ · Generated from the page on Oct 16, 2026
 
 
 * * *
@@ -3043,7 +3018,7 @@ Tap a square, or click it, and type. Tap again to turn between across and down. 
 
 ---
 
-Source: https://tools.dnsc.ai/well/sunday-edition/ · Generated from the page on Oct 13, 2026
+Source: https://tools.dnsc.ai/well/sunday-edition/ · Generated from the page on Oct 16, 2026
 
 
 * * *
@@ -3084,7 +3059,7 @@ Type a five letter word and press Enter. Blue means the right letter in the righ
 
 ---
 
-Source: https://tools.dnsc.ai/well/one-word-advanced/ · Generated from the page on Oct 13, 2026
+Source: https://tools.dnsc.ai/well/one-word-advanced/ · Generated from the page on Oct 16, 2026
 
 
 * * *
@@ -3119,7 +3094,7 @@ Tap a square, or click it, and type. Tap again to turn between across and down. 
 
 ---
 
-Source: https://tools.dnsc.ai/well/daily-line/ · Generated from the page on Oct 13, 2026
+Source: https://tools.dnsc.ai/well/daily-line/ · Generated from the page on Oct 16, 2026
 
 
 * * *
@@ -3154,7 +3129,7 @@ Tap a square, or click it, and type. Tap again to turn between across and down. 
 
 ---
 
-Source: https://tools.dnsc.ai/well/morning-edition/ · Generated from the page on Oct 13, 2026
+Source: https://tools.dnsc.ai/well/morning-edition/ · Generated from the page on Oct 16, 2026
 
 
 * * *
@@ -3195,7 +3170,7 @@ Type a five letter word and press Enter. Blue means the right letter in the righ
 
 ---
 
-Source: https://tools.dnsc.ai/well/one-word/ · Generated from the page on Oct 13, 2026
+Source: https://tools.dnsc.ai/well/one-word/ · Generated from the page on Oct 16, 2026
 
 
 * * *
@@ -3228,7 +3203,7 @@ Pick four cards that belong to the same move and press Submit. Three right shows
 
 ---
 
-Source: https://tools.dnsc.ai/well/five-moves/ · Generated from the page on Oct 13, 2026
+Source: https://tools.dnsc.ai/well/five-moves/ · Generated from the page on Oct 16, 2026
 
 
 * * *
@@ -3265,7 +3240,7 @@ Kept only in this browser. Come back tomorrow; the ring will be empty again.
 
 ---
 
-Source: https://tools.dnsc.ai/well/walk-in/ · Generated from the page on Oct 13, 2026
+Source: https://tools.dnsc.ai/well/walk-in/ · Generated from the page on Oct 16, 2026
 
 
 * * *
@@ -3327,7 +3302,7 @@ Nothing you write here is saved or sent. It lives on the leaf until the water ta
 
 ---
 
-Source: https://tools.dnsc.ai/well/river/ · Generated from the page on Oct 13, 2026
+Source: https://tools.dnsc.ai/well/river/ · Generated from the page on Oct 16, 2026
 
 
 * * *
@@ -3453,7 +3428,7 @@ Full moons, showers, planets, eclipses, and the turning points of the year. Upco
 
 ---
 
-Source: https://tools.dnsc.ai/well/lunar/ · Generated from the page on Oct 13, 2026
+Source: https://tools.dnsc.ai/well/lunar/ · Generated from the page on Oct 16, 2026
 
 
 * * *
@@ -3472,7 +3447,7 @@ Each card is a working system you can set up with the AI you already have: what 
 
 ---
 
-Source: https://tools.dnsc.ai/recipes/ · Generated from the page on Oct 13, 2026
+Source: https://tools.dnsc.ai/recipes/ · Generated from the page on Oct 16, 2026
 
 
 * * *
@@ -3591,7 +3566,7 @@ Mise · v0.6 · measured means read from your logs; estimates carry a band and a
 
 ---
 
-Source: https://tools.dnsc.ai/ai-gauges/ · Generated from the page on Oct 13, 2026
+Source: https://tools.dnsc.ai/ai-gauges/ · Generated from the page on Oct 16, 2026
 
 
 * * *
@@ -3688,7 +3663,7 @@ Go to the water
 
 ---
 
-Source: https://tools.dnsc.ai/well/ · Generated from the page on Oct 13, 2026
+Source: https://tools.dnsc.ai/well/ · Generated from the page on Oct 16, 2026
 
 
 * * *
@@ -3764,7 +3739,7 @@ Built inside an investment bank over ten weeks, first for the CEO, then for a co
 
 ---
 
-Source: https://tools.dnsc.ai/recipes/morning-inbox/ · Generated from the page on Oct 13, 2026
+Source: https://tools.dnsc.ai/recipes/morning-inbox/ · Generated from the page on Oct 16, 2026
 
 
 * * *
@@ -3929,7 +3904,7 @@ Ohio taxes **35 percent** of a home's appraised value. West Chester Township hom
 
 ---
 
-Source: https://tools.dnsc.ai/follow-the-money/v1-dustin/ · Generated from the page on Oct 13, 2026
+Source: https://tools.dnsc.ai/follow-the-money/v1-dustin/ · Generated from the page on Oct 16, 2026
 
 
 * * *
