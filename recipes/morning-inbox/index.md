@@ -69,4 +69,4 @@ Built inside an investment bank over ten weeks, first for the CEO, then for a co
 
 ---
 
-Source: https://tools.dnsc.ai/recipes/morning-inbox/ · Generated from the page on Oct 13, 2026
+Source: https://tools.dnsc.ai/recipes/morning-inbox/ · Generated from the page on Oct 16, 2026

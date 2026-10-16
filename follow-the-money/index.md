@@ -4,7 +4,7 @@
 
 Issue 2, in Plain Numbers · The Lakota school bond, from the public record
 
-Tax year 2025 rates · Lakota Local School District · Tax district M56, West Chester Township · Revised Oct 9, 2026
+Tax year 2025 rates · Lakota Local School District · Tax district M56, West Chester Township · Revised Oct 16, 2026
 
 ## What Issue 2 means for your tax bill
 
