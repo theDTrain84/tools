@@ -1,0 +1,262 @@
+{
+ "v": 1,
+ "track": "weekly",
+ "date": "2026-10-18",
+ "size": 11,
+ "g": [
+  "#FRAT##LOT#",
+  "SLADE##APES",
+  "WONDER#BELA",
+  "ARTS#EVENLY",
+  "GAS#FUEL###",
+  "###PINES###",
+  "###LAIR#HAT",
+  "TOMATO#TELE",
+  "OBEY#NOODLE",
+  "NOTE##ARGON",
+  "#EAR##KNEW#"
+ ],
+ "a": [
+  [
+   "FRAT",
+   "Greek-letter house on a college campus, for short"
+  ],
+  [
+   "LOT",
+   "A whole bunch, or a place to park"
+  ],
+  [
+   "SLADE",
+   "Band that spelled it 'Cum On Feel the Noize' in 1973"
+  ],
+  [
+   "APES",
+   "Copies, as a style"
+  ],
+  [
+   "WONDER",
+   "Muse ___, the frontier model Meta released Oct. 12, built around what its post calls Active Memory",
+   {
+    "src": "https://research.meta.ai/blog/muse-wonder"
+   }
+  ],
+  [
+   "BELA",
+   "Bartok of Hungarian music, or Lugosi of Dracula"
+  ],
+  [
+   "ARTS",
+   "Liberal ___"
+  ],
+  [
+   "EVENLY",
+   "In equal shares"
+  ],
+  [
+   "GAS",
+   "What the pump sells"
+  ],
+  [
+   "FUEL",
+   "What a fire needs more of"
+  ],
+  [
+   "PINES",
+   "Longs for, or evergreens with needles"
+  ],
+  [
+   "LAIR",
+   "A dragon's den"
+  ],
+  [
+   "HAT",
+   "Cap, fedora or bonnet"
+  ],
+  [
+   "TOMATO",
+   "Garden fruit most people call a vegetable"
+  ],
+  [
+   "TELE",
+   "Prefix with vision or scope"
+  ],
+  [
+   "OBEY",
+   "Follow the rules"
+  ],
+  [
+   "NOODLE",
+   "Noggin, informally, or a strand of pasta"
+  ],
+  [
+   "NOTE",
+   "A short written reminder"
+  ],
+  [
+   "ARGON",
+   "Gemini 4 ___ came to the Gemini app Oct. 13 for Google AI Pro and Ultra subscribers",
+   {
+    "src": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-availability"
+   }
+  ],
+  [
+   "EAR",
+   "Where a cob keeps its kernels, or where you keep your earbud"
+  ],
+  [
+   "KNEW",
+   "Was sure of"
+  ]
+ ],
+ "d": [
+  [
+   "SWAG",
+   "Free stuff handed out at a conference"
+  ],
+  [
+   "TON",
+   "Two thousand pounds"
+  ],
+  [
+   "FLORA",
+   "The plant life of a place"
+  ],
+  [
+   "OBOE",
+   "Double-reed instrument that tunes the orchestra"
+  ],
+  [
+   "RANTS",
+   "Goes on and on about it"
+  ],
+  [
+   "META",
+   "Company whose Muse Wonder model, released Oct. 12, is built around Active Memory",
+   {
+    "src": "https://research.meta.ai/blog/muse-wonder"
+   }
+  ],
+  [
+   "ADDS",
+   "Puts two and two together"
+  ],
+  [
+   "PLAYER",
+   "The ___ page, where YouTube Music's new AI labels appear as of Oct. 14",
+   {
+    "src": "https://blog.youtube/news-and-events/youtube-music-ai-labels/"
+   }
+  ],
+  [
+   "TEE",
+   "Where a golf hole begins"
+  ],
+  [
+   "FIAT",
+   "Italian carmaker, or a decree"
+  ],
+  [
+   "REUNION",
+   "Gathering of old classmates"
+  ],
+  [
+   "VEER",
+   "Swerve off course"
+  ],
+  [
+   "OAK",
+   "Tree that drops acorns"
+  ],
+  [
+   "LABELS",
+   "What YouTube Music began adding Oct. 14 to songs created primarily with generative AI",
+   {
+    "src": "https://blog.youtube/news-and-events/youtube-music-ai-labels/"
+   }
+  ],
+  [
+   "TORN",
+   "Ripped, or undecided"
+  ],
+  [
+   "OPEN",
+   "___ weights: how DeepSeek shipped V4.1-Flash-1017 on Hugging Face Oct. 17, under an MIT license",
+   {
+    "src": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
+   }
+  ],
+  [
+   "HEDGE",
+   "Google says Gemini 4 Argon, in the app since Oct. 13, answers 'more directly with less' of this",
+   {
+    "src": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-availability"
+   }
+  ],
+  [
+   "TELL",
+   "Spill the beans"
+  ],
+  [
+   "ALLOW",
+   "Give the go-ahead"
+  ],
+  [
+   "SAY",
+   "Have a ___ in the matter"
+  ],
+  [
+   "TEEN",
+   "Someone from thirteen to nineteen"
+  ]
+ ],
+ "w": "WONDER",
+ "n": "A week of releases, and the quiet word in them was memory. Meta's first frontier model is built to carry what you told it last time, and Google's new Gemini is built to say less and hedge less. When a tool starts remembering you, ask where that memory lives and who can read it; the answer is in the model card, which is why we link one.",
+ "sources": [
+  {
+   "title": "Meta releases Muse Wonder, a frontier model built around Active Memory",
+   "url": "https://research.meta.ai/blog/muse-wonder",
+   "date": "2026-10-12"
+  },
+  {
+   "title": "Gemini 4 Argon comes to the Gemini app, answering with less hedging",
+   "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-availability",
+   "date": "2026-10-13"
+  },
+  {
+   "title": "YouTube Music adds labels to songs made primarily with generative AI",
+   "url": "https://blog.youtube/news-and-events/youtube-music-ai-labels/",
+   "date": "2026-10-14"
+  },
+  {
+   "title": "DeepSeek posts V4.1-Flash-1017 to Hugging Face under an MIT license",
+   "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+   "date": "2026-10-17"
+  }
+ ],
+ "coming": [
+  {
+   "date": "2026-10-19",
+   "end": "2026-10-20",
+   "text": "AI & Big Data Expo Europe at the RAI in Amsterdam, two days of enterprise AI talks and stands.",
+   "url": "https://www.ai-expo.net/europe/"
+  },
+  {
+   "date": "2026-10-20",
+   "text": "Netflix posts third-quarter results at about 1:01 PM Pacific, with a live interview at 1:45 PM Pacific.",
+   "url": "https://s22.q4cdn.com/959853165/files/doc_news/Netflix-to-Announce-Third-Quarter-2026-Financial-Results-2026.pdf"
+  },
+  {
+   "date": "2026-10-21",
+   "text": "Tesla posts third-quarter results after the market closes, webcast at 5:30 PM Eastern.",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001318605/000162828026064366/exhibit991111111.htm"
+  },
+  {
+   "date": "2026-10-21",
+   "text": "IBM reports third-quarter earnings; the webcast runs on its investor site.",
+   "url": "https://www.ibm.com/investor/events/presentations"
+  }
+ ],
+ "checked": true,
+ "no": 3,
+ "cooked": "2026-10-18T17:30:00-04:00"
+}
