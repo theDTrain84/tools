@@ -1,0 +1,63 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-10-19",
+ "size": 5,
+ "g": [
+  "#FLIP",
+  "SLIDE",
+  "TOKEN",
+  "AREAS",
+  "BASS#"
+ ],
+ "a": [
+  [
+   "FLIP",
+   "Turn over, as a pancake"
+  ],
+  [
+   "SLIDE",
+   "One page of a deck"
+  ],
+  [
+   "TOKEN",
+   "The unit an AI model reads and writes, about four letters of English"
+  ],
+  [
+   "AREAS",
+   "Regions on a map"
+  ],
+  [
+   "BASS",
+   "The low end of the band"
+  ]
+ ],
+ "d": [
+  [
+   "STAB",
+   "A quick try at something"
+  ],
+  [
+   "FLORA",
+   "The plants of a place"
+  ],
+  [
+   "LIKES",
+   "Thumbs up, on a feed"
+  ],
+  [
+   "IDEAS",
+   "What a brainstorm produces"
+  ],
+  [
+   "PENS",
+   "They run dry mid-signature"
+  ]
+ ],
+ "w": "TOKEN",
+ "n": "A token is the piece a model actually reads: a short chunk of text, about four letters of English, so a page is roughly 500 of them. Every model has a limit on how many it can hold at once, and every call is priced by the count. When a long document starts getting flat answers, the count is the first thing to check.",
+ "sources": [],
+ "checked": true,
+ "cooked": "2026-10-19T10:41:10-04:00",
+ "no": 14
+}

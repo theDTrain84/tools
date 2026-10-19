@@ -1,0 +1,85 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-10-19",
+ "size": 5,
+ "g": [
+  "##BIG",
+  "#DATA",
+  "GATES",
+  "ATOM#",
+  "PEN##"
+ ],
+ "a": [
+  [
+   "BIG",
+   "Large, in a word"
+  ],
+  [
+   "DATA",
+   "Facts and figures in rows and columns"
+  ],
+  [
+   "GATES",
+   "What Anthropic's Oct. 16 research post says Claude cut 17-fold in one quantum circuit design, using 12% more qubits",
+   {
+    "src": "https://www.anthropic.com/research/designing-efficient-quantum-circuits"
+   }
+  ],
+  [
+   "ATOM",
+   "Smallest piece of an element"
+  ],
+  [
+   "PEN",
+   "What signs on the line"
+  ]
+ ],
+ "d": [
+  [
+   "GAP",
+   "What Anthropic's Oct. 16 research post measures between US adults and its own staff: 39% versus 91% expect AI to make a top-prize scientific discovery by 2030",
+   {
+    "src": "https://www.anthropic.com/research/ai-expectations-gap"
+   }
+  ],
+  [
+   "DATE",
+   "What a document carries at the top"
+  ],
+  [
+   "BATON",
+   "Handed off in a relay"
+  ],
+  [
+   "ITEM",
+   "One line on a list"
+  ],
+  [
+   "GAS",
+   "What the stove runs on"
+  ]
+ ],
+ "w": "GATES",
+ "n": "A gate is one step in a quantum circuit, and fewer steps means a program that can run on smaller machines sooner. Anthropic's Oct. 16 post says Claude proposed a design, got a score from a checker program, and tried again with no person between rounds, and the loop beat the best published circuits on eight tasks. The same day its survey put the public at 39% and its own staff at 91% on whether AI makes a top-prize discovery by 2030. When a tool makes a claim, ask who scored it, and notice how far your own expectations sit from the people who built it.",
+ "sources": [
+  {
+   "title": "Claude designs quantum circuits with fewer gates than the best published ones on eight tasks, scored by a checker program in a closed loop (Anthropic research)",
+   "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+   "date": "2026-10-16"
+  },
+  {
+   "title": "The AI expectations gap: 10,980 US adults and 1,334 staff surveyed in August; 39% versus 91% expect a top-prize discovery by 2030 (Anthropic research)",
+   "url": "https://www.anthropic.com/research/ai-expectations-gap",
+   "date": "2026-10-16"
+  }
+ ],
+ "checked": true,
+ "_theme_placed": [
+  "GATES",
+  "GAP"
+ ],
+ "_seconds": 0.0,
+ "cooked": "2026-10-19T10:39:04-04:00",
+ "no": 11
+}
