@@ -1,0 +1,84 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-10-20",
+ "size": 5,
+ "g": [
+  "#PLUS",
+  "GRAPE",
+  "RINSE",
+  "ADDED",
+  "BEST#"
+ ],
+ "a": [
+  [
+   "PLUS",
+   "Sign for more"
+  ],
+  [
+   "GRAPE",
+   "Fruit that grows on a vine"
+  ],
+  [
+   "RINSE",
+   "Run water over the dishes"
+  ],
+  [
+   "ADDED",
+   "What Anthropic's Oct. 18 post says another 2% of its shares can be, at the board's discretion, for every 50% rise in the company's value above a set baseline",
+   {
+    "src": "https://www.anthropic.com/news/public-benefit-fund"
+   }
+  ],
+  [
+   "BEST",
+   "Top of the class"
+  ]
+ ],
+ "d": [
+  [
+   "GRAB",
+   "Snatch"
+  ],
+  [
+   "PRIDE",
+   "A family of lions, or a feeling"
+  ],
+  [
+   "LANDS",
+   "Comes down on the runway"
+  ],
+  [
+   "UPSET",
+   "A win nobody saw coming"
+  ],
+  [
+   "SEED",
+   "What Anthropic's Oct. 16 research post says Claude traced, for five NIST curves, to a 1990s random number generator started from the clock",
+   {
+    "src": "https://www.anthropic.com/research/ecdsa-curve-origins"
+   }
+  ]
+ ],
+ "w": "SEED",
+ "n": "A seed is the starting number a random generator grows from, and for 25 years nobody could say where the seeds behind five NIST elliptic curves came from. Anthropic's Oct. 16 post says Claude found that each one was an ordinary 1990s generator started from the clock, with every start time falling between May 1997 and April 1998, and that this is not a break or a weakness in the curves. The same weekend the company's Oct. 18 post committed 5% of its shares to a Public Benefit Fund, subject to a stockholder vote, with 2% more added at the board's discretion at each valuation milestone. When a standard or a pledge says a number was random or a gift was given, ask where it started and who decides what gets added.",
+ "sources": [
+  {
+   "title": "Claude traces the seeds of five NIST elliptic curves to a 1990s random number generator started from Unix timestamps between May 1997 and April 1998; no break or weakness (Anthropic research)",
+   "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+   "date": "2026-10-16"
+  },
+  {
+   "title": "Anthropic commits 5% of its shares, subject to stockholder approval, to a wholly owned Public Benefit Fund LLC, with 2% more added at the board's discretion for every 50% rise in value above a set baseline (Anthropic news)",
+   "url": "https://www.anthropic.com/news/public-benefit-fund",
+   "date": "2026-10-18"
+  }
+ ],
+ "checked": true,
+ "_theme_placed": [
+  "SEED"
+ ],
+ "_seconds": 1.8,
+ "cooked": "2026-10-20T06:07:31-04:00",
+ "no": 12
+}

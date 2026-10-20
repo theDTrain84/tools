@@ -1,0 +1,67 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-10-20",
+ "size": 5,
+ "g": [
+  "#VAST",
+  "EAGLE",
+  "ALIEN",
+  "RULES",
+  "SEEK#"
+ ],
+ "a": [
+  [
+   "VAST",
+   "Enormous"
+  ],
+  [
+   "EAGLE",
+   "Bird on the back of a quarter"
+  ],
+  [
+   "ALIEN",
+   "From another planet"
+  ],
+  [
+   "RULES",
+   "House ___: the one page an AI reads before it starts work"
+  ],
+  [
+   "SEEK",
+   "Hide and ___"
+  ]
+ ],
+ "d": [
+  [
+   "EARS",
+   "They hold up a pair of glasses"
+  ],
+  [
+   "VALUE",
+   "What a bargain has"
+  ],
+  [
+   "AGILE",
+   "Quick on your feet"
+  ],
+  [
+   "SLEEK",
+   "Smooth and glossy"
+  ],
+  [
+   "TENS",
+   "Perfect scores from the judges"
+  ]
+ ],
+ "w": "RULES",
+ "n": "House rules are the short page an AI reads at the start of every session: who it works for, what it may do on its own, what it never does without a person, and where things live. Writing them down is the part of the system you can actually read, and when an AI does something strange the first question is what the rules said. Keep them to one page, change them when you learn something, and date the change.",
+ "sources": [],
+ "checked": true,
+ "_theme_placed": [
+  "RULES"
+ ],
+ "_seconds": 0.3,
+ "cooked": "2026-10-20T06:07:31-04:00",
+ "no": 15
+}
