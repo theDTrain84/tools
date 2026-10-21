@@ -1,0 +1,84 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-10-21",
+ "size": 5,
+ "g": [
+  "LOT##",
+  "AURA#",
+  "BRAND",
+  "#SITE",
+  "##TIN"
+ ],
+ "a": [
+  [
+   "LOT",
+   "Parking place"
+  ],
+  [
+   "AURA",
+   "Glow around a person"
+  ],
+  [
+   "BRAND",
+   "What Google's Oct. 20 post says Gemini keeps consistent across a small business's visuals once the owner uploads a kit, fonts and colors",
+   {
+    "src": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/"
+   }
+  ],
+  [
+   "SITE",
+   "Where a building goes up"
+  ],
+  [
+   "TIN",
+   "Can metal"
+  ]
+ ],
+ "d": [
+  [
+   "LAB",
+   "Where Google DeepMind's Oct. 15 post says a 97-residue bacteriocin candidate surfaced by an agent is now headed, for validation",
+   {
+    "src": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/"
+   }
+  ],
+  [
+   "OURS",
+   "Belonging to us"
+  ],
+  [
+   "TRAIT",
+   "One feature of a character"
+  ],
+  [
+   "ANTI",
+   "Prefix meaning against"
+  ],
+  [
+   "DEN",
+   "Lion's home"
+  ]
+ ],
+ "w": "BRAND",
+ "n": "Two posts, one shape: an agent is handed the files and asked to carry the work to a result. Google's Oct. 20 post puts a small business's brand kit, finances and ad accounts in front of Gemini and promises on-brand visuals and financial models in seconds, rolling out to all Gemini app users in the coming days. DeepMind's Oct. 15 post hands an agent millions of uncharacterized protein entries and gets back a candidate antibiotic and a wet-lab plan. In both, the value sits in what the agent was connected to, and the last step is still a person at a bench or a desk.",
+ "sources": [
+  {
+   "title": "Gemini gets a business page, marketing and finance skills and connections to Business Profile, Ads, Workspace, Shopify, Canva, Xero and Wix; rolling out globally to all Gemini app users in the coming days (Google)",
+   "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/",
+   "date": "2026-10-20"
+  },
+  {
+   "title": "An agentic workflow in Google Antigravity surfaces a 97-residue bacteriocin candidate against Streptococcus pseudopneumoniae and proposes a wet-lab plan; the candidate is in validation (Google DeepMind)",
+   "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+   "date": "2026-10-15"
+  }
+ ],
+ "checked": true,
+ "_theme_placed": [
+  "BRAND"
+ ],
+ "_seconds": 0.0,
+ "no": 13,
+ "cooked": "2026-10-21T06:06:10-04:00"
+}

@@ -1,0 +1,67 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-10-21",
+ "size": 5,
+ "g": [
+  "##DAY",
+  "#TRUE",
+  "LEARN",
+  "ALFA#",
+  "BET##"
+ ],
+ "a": [
+  [
+   "DAY",
+   "Opposite of night"
+  ],
+  [
+   "TRUE",
+   "The opposite of false"
+  ],
+  [
+   "LEARN",
+   "What a Well puzzle is for"
+  ],
+  [
+   "ALFA",
+   "A, in the NATO alphabet"
+  ],
+  [
+   "BET",
+   "Wager"
+  ]
+ ],
+ "d": [
+  [
+   "LAB",
+   "Where experiments happen"
+  ],
+  [
+   "TELE",
+   "Prefix with vision"
+  ],
+  [
+   "DRAFT",
+   "What an AI's first pass is, until a person reads it aloud and signs it"
+  ],
+  [
+   "AURA",
+   "Glow around a person"
+  ],
+  [
+   "YEN",
+   "Money in Tokyo"
+  ]
+ ],
+ "w": "DRAFT",
+ "n": "A draft is a first pass that is not yet anyone's word. An AI writes drafts well and fast; the person who sends one is its author, and the cut is where the authorship happens. Treat every AI page as a draft until you have read it aloud, removed what you would never say, and put your name on what is left.",
+ "sources": [],
+ "checked": true,
+ "_theme_placed": [
+  "DRAFT"
+ ],
+ "_seconds": 0.1,
+ "no": 16,
+ "cooked": "2026-10-21T06:06:10-04:00"
+}
