@@ -1,0 +1,90 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-10-22",
+ "size": 5,
+ "g": [
+  "ADS##",
+  "REAP#",
+  "CELLS",
+  "#PEEK",
+  "##SAY"
+ ],
+ "a": [
+  [
+   "ADS",
+   "What an Oct. 21 OpenAI post says more than 100,000 advertisers have now placed in ChatGPT, as the program expands to 26 new countries",
+   {
+    "src": "https://openai.com/index/chatgpt-ads-expands-26-new-countries"
+   }
+  ],
+  [
+   "REAP",
+   "Harvest"
+  ],
+  [
+   "CELLS",
+   "Brain ___: an Oct. 21 OpenAI post says thousands of distributed AI agents searched data from millions of them for promising research leads",
+   {
+    "src": "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
+   }
+  ],
+  [
+   "PEEK",
+   "Quick look"
+  ],
+  [
+   "SAY",
+   "Have a word"
+  ]
+ ],
+ "d": [
+  [
+   "ARC",
+   "Curved path"
+  ],
+  [
+   "DEEP",
+   "Far down"
+  ],
+  [
+   "SALES",
+   "What a store rings up"
+  ],
+  [
+   "PLEA",
+   "Earnest request"
+  ],
+  [
+   "SKY",
+   "Where the stars are"
+  ]
+ ],
+ "w": "ADS",
+ "n": "Two posts from one lab on one day point two ways. One says ChatGPT's ads now reach 26 more countries, and a companion post on how the ad system was built says the ads are kept separate from the answers. The other sends thousands of agents through data from millions of brain cells and comes back with research leads. When an assistant both answers and sells space, know which part of the screen is which, and ask who paid for what you are reading.",
+ "sources": [
+  {
+   "title": "ChatGPT ads expand to 26 new countries; more than 100,000 advertisers have used the platform (OpenAI)",
+   "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+   "date": "2026-10-21"
+  },
+  {
+   "title": "How the ChatGPT ad system was built to keep ads separate from answers (OpenAI)",
+   "url": "https://openai.com/index/building-chatgpt-ad-stack",
+   "date": "2026-10-21"
+  },
+  {
+   "title": "Thousands of AI agents search data from millions of brain cells for research leads, with PerturbAI and Scripps Research (OpenAI)",
+   "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+   "date": "2026-10-21"
+  }
+ ],
+ "checked": true,
+ "_theme_placed": [
+  "ADS",
+  "CELLS"
+ ],
+ "_seconds": 0.0,
+ "no": 14,
+ "cooked": "2026-10-22T06:05:46-04:00"
+}

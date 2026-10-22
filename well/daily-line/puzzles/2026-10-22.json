@@ -1,0 +1,67 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-10-22",
+ "size": 5,
+ "g": [
+  "#CURB",
+  "MANIA",
+  "ACIDS",
+  "SHOES",
+  "TENS#"
+ ],
+ "a": [
+  [
+   "CURB",
+   "Edge of a sidewalk"
+  ],
+  [
+   "MANIA",
+   "Wild enthusiasm"
+  ],
+  [
+   "ACIDS",
+   "Lemon juice and vinegar, chemically"
+  ],
+  [
+   "SHOES",
+   "Laced pair by the door"
+  ],
+  [
+   "TENS",
+   "Ten-dollar bills"
+  ]
+ ],
+ "d": [
+  [
+   "MAST",
+   "Where a sail hangs"
+  ],
+  [
+   "CACHE",
+   "A saved copy kept close, so an AI does not redo the same work when you send the same long instructions again"
+  ],
+  [
+   "UNION",
+   "Joining of two"
+  ],
+  [
+   "RIDES",
+   "Trips on a bike or a bus"
+  ],
+  [
+   "BASS",
+   "Low voice in a choir"
+  ]
+ ],
+ "w": "CACHE",
+ "n": "A cache is a saved copy kept close at hand so the same work is not done twice. AI services now cache the long, unchanging front of a request, the standing instructions and reference documents, so sending them again costs less and comes back faster. Put what never changes first and what changes each time last, and keep your standing instructions the same from day to day.",
+ "sources": [],
+ "checked": true,
+ "_theme_placed": [
+  "CACHE"
+ ],
+ "_seconds": 0.1,
+ "no": 17,
+ "cooked": "2026-10-22T06:05:46-04:00"
+}
