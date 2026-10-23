@@ -1,0 +1,75 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-10-23",
+ "size": 5,
+ "g": [
+  "#DASH",
+  "FORCE",
+  "ANGEL",
+  "SOUND",
+  "TREE#"
+ ],
+ "a": [
+  [
+   "DASH",
+   "Quick sprint"
+  ],
+  [
+   "FORCE",
+   "Push or pull"
+  ],
+  [
+   "ANGEL",
+   "Heavenly messenger"
+  ],
+  [
+   "SOUND",
+   "Healthy, as a sleeper"
+  ],
+  [
+   "TREE",
+   "Oak or maple"
+  ]
+ ],
+ "d": [
+  [
+   "FAST",
+   "First word in how an Oct. 22 OpenAI post describes the decisions its new Decisions API makes for apps, ahead of focused and low-cost",
+   {
+    "src": "https://openai.com/index/decisions-api"
+   }
+  ],
+  [
+   "DONOR",
+   "One who gives blood"
+  ],
+  [
+   "ARGUE",
+   "Make a case"
+  ],
+  [
+   "SCENE",
+   "Part of an act in a play"
+  ],
+  [
+   "HELD",
+   "Kept in hand"
+  ]
+ ],
+ "w": "FAST",
+ "n": "An Oct. 22 post introduced an interface built for fast, focused, low-cost decisions inside apps. Plenty of the choices an app makes are small: which folder a message goes in, whether a request needs a person. For those, a quick, cheap call often fits better than the largest model available, so match the size of the tool to the size of the decision.",
+ "sources": [
+  {
+   "title": "A new interface for fast, focused, low-cost decisions inside apps (OpenAI)",
+   "url": "https://openai.com/index/decisions-api",
+   "date": "2026-10-22"
+  }
+ ],
+ "checked": true,
+ "_theme_placed": [
+  "FAST"
+ ],
+ "no": 15,
+ "cooked": "2026-10-23T06:11:05-04:00"
+}

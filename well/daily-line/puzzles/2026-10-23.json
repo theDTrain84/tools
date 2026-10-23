@@ -1,0 +1,66 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-10-23",
+ "size": 5,
+ "g": [
+  "DIM##",
+  "ACES#",
+  "MODEL",
+  "#NINE",
+  "##ADD"
+ ],
+ "a": [
+  [
+   "DIM",
+   "Low, as a light at night"
+  ],
+  [
+   "ACES",
+   "Top cards in the deck"
+  ],
+  [
+   "MODEL",
+   "The trained system underneath an AI tool; one of them can sit behind many different apps"
+  ],
+  [
+   "NINE",
+   "Innings in a baseball game"
+  ],
+  [
+   "ADD",
+   "Put two and two together"
+  ]
+ ],
+ "d": [
+  [
+   "DAM",
+   "Wall that holds back a river"
+  ],
+  [
+   "ICON",
+   "Small picture you tap to open an app"
+  ],
+  [
+   "MEDIA",
+   "Newspapers, radio and television, together"
+  ],
+  [
+   "SEND",
+   "Hit this to mail a message"
+  ],
+  [
+   "LED",
+   "Was in front"
+  ]
+ ],
+ "w": "MODEL",
+ "n": "The model is the trained system underneath; the app is the window you type into. One model can power a chat window, a phone assistant and a tool inside your spreadsheet, and one app can switch the model behind it. When you compare AI tools, ask which model each one runs and when it last changed, because that is often what changed when the answers did.",
+ "sources": [],
+ "checked": true,
+ "_theme_placed": [
+  "MODEL"
+ ],
+ "no": 18,
+ "cooked": "2026-10-23T06:11:05-04:00"
+}
