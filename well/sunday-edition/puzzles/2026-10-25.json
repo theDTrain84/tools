@@ -1,0 +1,295 @@
+{
+ "v": 1,
+ "track": "weekly",
+ "date": "2026-10-25",
+ "size": 11,
+ "g": [
+  "#BODY##ROW#",
+  "VENUE##EVIL",
+  "ALIENS#MERE",
+  "SLOT#OPENED",
+  "TEN#SUED###",
+  "###SPRAY###",
+  "###PECK#PAN",
+  "APIECE#LITE",
+  "RARE#SKILLS",
+  "EPIC##IDEAS",
+  "#ASH##TOSS#"
+ ],
+ "a": [
+  [
+   "BODY",
+   "Torso, limbs and all"
+  ],
+  [
+   "ROW",
+   "Line of seats, or a spat"
+  ],
+  [
+   "VENUE",
+   "Where the show is"
+  ],
+  [
+   "EVIL",
+   "The opposite of good"
+  ],
+  [
+   "ALIENS",
+   "Visitors from another planet, in the movies"
+  ],
+  [
+   "MERE",
+   "Nothing more than"
+  ],
+  [
+   "SLOT",
+   "Where the coin goes"
+  ],
+  [
+   "OPENED",
+   "What Anthropic did Oct. 22 with a call for life-science guest investigators: 8 to 12 weeks beside its researchers, models run at no cost to them",
+   {
+    "src": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences"
+   }
+  ],
+  [
+   "TEN",
+   "Number of West Memphis nonprofit and municipal groups sharing the first $1.25 million of Google's energy fund, announced Oct. 19",
+   {
+    "src": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/arkansas-partnerships/"
+   }
+  ],
+  [
+   "SUED",
+   "Took to court"
+  ],
+  [
+   "SPRAY",
+   "Mist from a bottle"
+  ],
+  [
+   "PECK",
+   "A quick kiss, or a quarter bushel"
+  ],
+  [
+   "PAN",
+   "Skillet, or trash a movie"
+  ],
+  [
+   "APIECE",
+   "Each"
+  ],
+  [
+   "LITE",
+   "Light, on a soda can"
+  ],
+  [
+   "RARE",
+   "Barely cooked, or hard to find"
+  ],
+  [
+   "SKILLS",
+   "Agent ___, the open standard Anthropic donated Oct. 22 to the Agentic AI Foundation, about 1 million of them published so far",
+   {
+    "src": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+   }
+  ],
+  [
+   "EPIC",
+   "Long heroic poem, or anything huge"
+  ],
+  [
+   "IDEAS",
+   "Light bulbs over heads"
+  ],
+  [
+   "ASH",
+   "What a campfire leaves"
+  ],
+  [
+   "TOSS",
+   "Flip, as a coin or a salad"
+  ]
+ ],
+ "d": [
+  [
+   "VAST",
+   "Huge"
+  ],
+  [
+   "ARE",
+   "Exist"
+  ],
+  [
+   "BELLE",
+   "The ___ of the ball"
+  ],
+  [
+   "PAPA",
+   "Dad, to a toddler, or the P in a radio alphabet"
+  ],
+  [
+   "ONION",
+   "Vegetable with layers, and tears"
+  ],
+  [
+   "IRIS",
+   "Flower, or the colored part of the eye"
+  ],
+  [
+   "DUET",
+   "Claude ___, the proactive agent app Anthropic opened Oct. 21 as a research preview, by waitlist for US Pro and Max subscribers",
+   {
+    "src": "https://claude.com/resources/articles/claude-duet"
+   }
+  ],
+  [
+   "SPEECH",
+   "What Mistral's Voxtral 3 family, out Oct. 20, turns into text in more than 50 languages, and text back into",
+   {
+    "src": "https://mistral.ai/news/voxtral-3"
+   }
+  ],
+  [
+   "YEN",
+   "Tokyo money, or a craving"
+  ],
+  [
+   "SPEC",
+   "On ___: built before a buyer is lined up"
+  ],
+  [
+   "SOURCES",
+   "Primary ___: what every news clue in this grid links to"
+  ],
+  [
+   "PEAK",
+   "When the 1-gigawatt virtual power plant Google and Voltus announced Oct. 22 asks thermostats and batteries to ease off",
+   {
+    "src": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virtual-power-plant-1-gigawatt/"
+   }
+  ],
+  [
+   "KIT",
+   "Brand ___, one thing a small business can upload so the Gemini app keeps its visual style, per Google's Oct. 20 post",
+   {
+    "src": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/"
+   }
+  ],
+  [
+   "REMEDY",
+   "Cure"
+  ],
+  [
+   "LIDO",
+   "Outdoor public pool, in British English"
+  ],
+  [
+   "OVEN",
+   "Where the bread bakes"
+  ],
+  [
+   "PILES",
+   "Heaps"
+  ],
+  [
+   "WIRE",
+   "What carries the current"
+  ],
+  [
+   "ATLAS",
+   "Book of maps, or what the ForTy forest map released Oct. 22 amounts to: every 10-by-10-meter patch of land on Earth sorted into six types",
+   {
+    "src": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/"
+   }
+  ],
+  [
+   "LED",
+   "Lightbulb letters, or showed the way"
+  ],
+  [
+   "NESS",
+   "Headland, in Scotland, as in a famous loch"
+  ]
+ ],
+ "w": "DUET",
+ "n": "The word of the week was permission. One agent app now shows you what it is about to do and waits before it sends or pays, one lab now trains its biggest models with no internet at all, and a government institute published what happened when a model under test acted on real people anyway. When a tool can act for you, find the line it will not cross without you, and check that it is written down.",
+ "sources": [
+  {
+   "title": "Anthropic opens Claude Duet, a proactive agent app, as a research preview by waitlist",
+   "url": "https://claude.com/resources/articles/claude-duet",
+   "date": "2026-10-21"
+  },
+  {
+   "title": "Anthropic donates the Agent Skills standard to the Agentic AI Foundation",
+   "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+   "date": "2026-10-22"
+  },
+  {
+   "title": "Anthropic opens a call for life-science guest investigators",
+   "url": "https://www.anthropic.com/news/open-call-guest-investigators-life-sciences",
+   "date": "2026-10-22"
+  },
+  {
+   "title": "Mistral releases the Voxtral 3 speech family and a voice agent SDK",
+   "url": "https://mistral.ai/news/voxtral-3",
+   "date": "2026-10-20"
+  },
+  {
+   "title": "Google and Voltus expand to a 1-gigawatt virtual power plant on the PJM grid",
+   "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/virtual-power-plant-1-gigawatt/",
+   "date": "2026-10-22"
+  },
+  {
+   "title": "Google adds small business tools to the Gemini app",
+   "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/",
+   "date": "2026-10-20"
+  },
+  {
+   "title": "Google sends the first $1.25 million of its West Memphis energy fund to ten local groups",
+   "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/arkansas-partnerships/",
+   "date": "2026-10-19"
+  },
+  {
+   "title": "ForTy, a 10-meter map of the world's forest types, released under an open license",
+   "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+   "date": "2026-10-22"
+  },
+  {
+   "title": "OpenAI: frontier model training now runs with no internet access after a September incident",
+   "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+   "date": "2026-10-23"
+  },
+  {
+   "title": "UK AI Security Institute: investigating alignment failures in its July incident",
+   "url": "https://www.aisi.gov.uk/blog/investigating-alignment-failures-in-aisis-incident",
+   "date": "2026-10-23"
+  }
+ ],
+ "coming": [
+  {
+   "date": "2026-10-27",
+   "end": "2026-10-29",
+   "text": "ODSC AI West, three days of data science and AI talks and workshops at the Hyatt Regency SFO.",
+   "url": "https://odsc.ai/west"
+  },
+  {
+   "date": "2026-10-28",
+   "text": "Microsoft posts fiscal first-quarter results; the investor page lists the date.",
+   "url": "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+  },
+  {
+   "date": "2026-10-29",
+   "text": "Amazon's third-quarter earnings call, 2:00 PM Pacific, webcast on its investor site.",
+   "url": "https://ir.aboutamazon.com/events/event-details/2026/Q3-2026-Amazoncom-Inc-Earnings-Conference-Call/default.aspx"
+  },
+  {
+   "date": "2026-10-29",
+   "text": "Intel reports third-quarter results promptly after the market closes, with a call at 2 PM Pacific.",
+   "url": "https://www.intc.com/news-events/press-releases/detail/1782/intel-to-report-third-quarter-2026-financial-results"
+  }
+ ],
+ "checked": true,
+ "no": 4,
+ "cooked": "2026-10-26T08:45:00-04:00"
+}
