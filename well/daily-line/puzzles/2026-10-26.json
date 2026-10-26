@@ -1,0 +1,66 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-10-26",
+ "size": 5,
+ "g": [
+  "ASH##",
+  "LOUD#",
+  "LIMIT",
+  "#LOVE",
+  "##RAN"
+ ],
+ "a": [
+  [
+   "ASH",
+   "What is left when the fire is out"
+  ],
+  [
+   "LOUD",
+   "Hard on the ears"
+  ],
+  [
+   "LIMIT",
+   "The cap on an AI tool: how much text it can hold at once, how often you can ask, how long it will work before it stops"
+  ],
+  [
+   "LOVE",
+   "Zero, on a tennis court"
+  ],
+  [
+   "RAN",
+   "Moved fast on foot"
+  ]
+ ],
+ "d": [
+  [
+   "ALL",
+   "Every last one"
+  ],
+  [
+   "SOIL",
+   "Where the seeds go in"
+  ],
+  [
+   "HUMOR",
+   "Sense of ___"
+  ],
+  [
+   "DIVA",
+   "Star of the opera, with demands"
+  ],
+  [
+   "TEN",
+   "Fingers on two hands"
+  ]
+ ],
+ "w": "LIMIT",
+ "n": "Every AI tool has limits, some printed and some you only meet: how much it can hold in one session, how many requests an hour, how long it will run a job before it stops. When the answers go thin late in a long session, you have usually hit one. Start a fresh session for each new job, paste only what the job needs, and keep the standing instructions short so the room stays big enough for the work.",
+ "sources": [],
+ "checked": true,
+ "_theme_placed": [
+  "LIMIT"
+ ],
+ "no": 19,
+ "cooked": "2026-10-26T08:19:00-04:00"
+}

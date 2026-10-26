@@ -1,0 +1,84 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-10-26",
+ "size": 5,
+ "g": [
+  "##RED",
+  "#HEAR",
+  "DIARY",
+  "ADDS#",
+  "YES##"
+ ],
+ "a": [
+  [
+   "RED",
+   "___ teaming: the adversarial testing an Oct. 23 OpenAI post says it now runs at high compute, beside offline training environments, to contain frontier model training",
+   {
+    "src": "https://openai.com/index/securing-our-frontier-model-training-environment"
+   }
+  ],
+  [
+   "HEAR",
+   "Take in a sound"
+  ],
+  [
+   "DIARY",
+   "Book of one's days"
+  ],
+  [
+   "ADDS",
+   "Puts in more"
+  ],
+  [
+   "YES",
+   "What a nod means"
+  ]
+ ],
+ "d": [
+  [
+   "DAY",
+   "Sunrise to sunrise"
+  ],
+  [
+   "HIDE",
+   "Tuck out of sight"
+  ],
+  [
+   "READS",
+   "What an Oct. 23 OpenAI engineering post says got 12 times faster for the storage layer behind more than 1 billion ChatGPT users, with global caching and shared tenancy",
+   {
+    "src": "https://openai.com/index/scaling-storage-one-billion-users-part-two"
+   }
+  ],
+  [
+   "EARS",
+   "Corn comes in them"
+  ],
+  [
+   "DRY",
+   "Like a towel off the line"
+  ]
+ ],
+ "w": "READS",
+ "n": "Two Oct. 23 posts from one lab show the two kinds of work behind a chat window. One moves frontier training into offline environments and tests them hard before anything new runs; the other makes the storage under a billion accounts read 12 times faster. When your assistant answers quicker this week, or goes quiet for a day, both of these are often why, so judge the tool by how it behaves over weeks and keep your own copy of anything you cannot afford to lose.",
+ "sources": [
+  {
+   "title": "Frontier model training moves to offline environments with high compute red teaming (OpenAI)",
+   "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+   "date": "2026-10-23"
+  },
+  {
+   "title": "Storage for more than 1 billion ChatGPT users: shared tenancy, global caching, 12 times faster reads, Part II (OpenAI)",
+   "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+   "date": "2026-10-23"
+  }
+ ],
+ "checked": true,
+ "_theme_placed": [
+  "READS",
+  "RED"
+ ],
+ "no": 16,
+ "cooked": "2026-10-26T08:19:00-04:00"
+}
