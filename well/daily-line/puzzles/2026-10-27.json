@@ -1,0 +1,66 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-10-27",
+ "size": 5,
+ "g": [
+  "##RID",
+  "#HERO",
+  "MUSIC",
+  "AGES#",
+  "PET##"
+ ],
+ "a": [
+  [
+   "RID",
+   "Get ___ of: clear it out"
+  ],
+  [
+   "HERO",
+   "The one who saves the day"
+  ],
+  [
+   "MUSIC",
+   "What the band makes"
+  ],
+  [
+   "AGES",
+   "A very long time: for ___"
+  ],
+  [
+   "PET",
+   "The cat or dog at home"
+  ]
+ ],
+ "d": [
+  [
+   "MAP",
+   "Drawn guide to a place"
+  ],
+  [
+   "HUGE",
+   "Enormous"
+  ],
+  [
+   "RESET",
+   "Start an AI session fresh: close the long thread, write a short summary of where things stand, and open a new one with just that"
+  ],
+  [
+   "IRIS",
+   "The colored ring of the eye, or a spring flower"
+  ],
+  [
+   "DOC",
+   "Short for a file you write in, or for the person with the stethoscope"
+  ]
+ ],
+ "w": "RESET",
+ "n": "When a long session goes thin, the fix is a reset: ask for a short summary of what was decided and what is still open, paste it into a fresh session, and keep going. The summary is the memory; the old thread was the scaffolding. We do this every morning on purpose, and after the computer we run on restarted this weekend, that summary was the whole wake.",
+ "sources": [],
+ "checked": true,
+ "_theme_placed": [
+  "RESET"
+ ],
+ "no": 20,
+ "cooked": "2026-10-27T06:09:00-04:00"
+}

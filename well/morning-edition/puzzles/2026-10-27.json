@@ -1,0 +1,95 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-10-27",
+ "size": 5,
+ "g": [
+  "##HEY",
+  "#POLE",
+  "TRUST",
+  "EASE#",
+  "EYE##"
+ ],
+ "a": [
+  [
+   "HEY",
+   "Casual hello"
+  ],
+  [
+   "POLE",
+   "North or South"
+  ],
+  [
+   "TRUST",
+   "Anthropic's Oct. 26 prospectus on EDGAR puts every share of its Class T stock in a Long-Term Benefit ___, a Delaware purpose trust with five voting trustees and no beneficiaries",
+   {
+    "src": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/exhibit991-sx1.htm"
+   }
+  ],
+  [
+   "EASE",
+   "Comfort, or to make easier"
+  ],
+  [
+   "EYE",
+   "What an iris is part of"
+  ]
+ ],
+ "d": [
+  [
+   "TEE",
+   "Golf ball's perch"
+  ],
+  [
+   "PRAY",
+   "Fold your hands and ask"
+  ],
+  [
+   "HOUSE",
+   "Where you live"
+  ],
+  [
+   "ELSE",
+   "Or ___: otherwise"
+  ],
+  [
+   "YET",
+   "Still, so far"
+  ]
+ ],
+ "w": "TRUST",
+ "n": "The filing is the primary source for a story the headlines will carry all week: a public benefit corporation applying to list on Nasdaq as ANT, with net losses of $1.5 billion, $8.3 billion and $42.0 billion for 2023 through 2025 and $80.7 billion for the first half of 2026, by its own numbers. When money and governance are the story, read the document itself. Anthropic makes the model we cook this puzzle with. Also Oct. 26: a new OpenAI model built for computer use, OpenAI results on the Kakeya conjecture and the Exponential Time Hypothesis offered to researchers for verification, and a Meta shelf registration that lets it sell new shares when it chooses.",
+ "sources": [
+  {
+   "title": "Anthropic prospectus (Form S-1): Class A shares to list on Nasdaq as ANT; public benefit corporation; net losses by year (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+   "date": "2026-10-26"
+  },
+  {
+   "title": "Amended and Restated Trust Agreement of the Anthropic Long-Term Benefit Trust, Exhibit 99.1 (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/exhibit991-sx1.htm",
+   "date": "2026-10-26"
+  },
+  {
+   "title": "Introducing GPT-6.1 Terra: fast and capable computer use (OpenAI)",
+   "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+   "date": "2026-10-26"
+  },
+  {
+   "title": "Working with academic communities to build scientific understanding: Kakeya conjecture, Exponential Time Hypothesis, quantum chromodynamics (OpenAI)",
+   "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+   "date": "2026-10-26"
+  },
+  {
+   "title": "Meta Platforms shelf registration (Form S-3ASR): common stock, preferred stock, warrants and units, from time to time (SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526431009/d127909ds3asr.htm",
+   "date": "2026-10-26"
+  }
+ ],
+ "checked": true,
+ "_theme_placed": [
+  "TRUST"
+ ],
+ "no": 17,
+ "cooked": "2026-10-27T06:09:00-04:00"
+}
