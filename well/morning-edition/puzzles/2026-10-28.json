@@ -1,0 +1,95 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-10-28",
+ "size": 5,
+ "g": [
+  "#GROW",
+  "BEACH",
+  "UNITE",
+  "LINEN",
+  "LEST#"
+ ],
+ "a": [
+  [
+   "GROW",
+   "Get bigger"
+  ],
+  [
+   "BEACH",
+   "Sand by the sea"
+  ],
+  [
+   "UNITE",
+   "Bring together"
+  ],
+  [
+   "LINEN",
+   "Cloth for summer shirts and tablecloths"
+  ],
+  [
+   "LEST",
+   "For fear that"
+  ]
+ ],
+ "d": [
+  [
+   "BULL",
+   "Market on the rise, or the animal in the ring"
+  ],
+  [
+   "GENIE",
+   "Google DeepMind's Oct. 27 post introduces ___ 4, a world model that generates audio natively alongside scenes you can explore, in research preview for trusted testers, with SynthID watermarks on all its video and audio",
+   {
+    "src": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+   }
+  ],
+  [
+   "RAINS",
+   "Pours"
+  ],
+  [
+   "OCTET",
+   "Group of eight musicians"
+  ],
+  [
+   "WHEN",
+   "At what time"
+  ]
+ ],
+ "w": "GENIE",
+ "n": "A world model builds a place you can walk through and change, with sound and characters that talk back; the post is as clear about what still drifts (object permanence over long sessions, legible text, spatial accuracy) as about what works. Also Oct. 27: Oracle is putting its business applications inside ChatGPT through plugins, and its U.S. customers can buy OpenAI access through the Oracle Marketplace. Oct. 26: Apple's Siri AI added five languages and memory of past conversations, in beta, and Cloudflare published a dated account of a cache bug that put pieces of other customers' answers into 155 responses from one model between Aug. 27 and Sep. 9. When a provider writes up its own failure with dates and numbers, read that document first.",
+ "sources": [
+  {
+   "title": "Genie 4: a new generation of world simulation; native audio, research preview for trusted testers, SynthID on all output (Google DeepMind)",
+   "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+   "date": "2026-10-27"
+  },
+  {
+   "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT (OpenAI)",
+   "url": "https://openai.com/index/oracle-apps-in-chatgpt/",
+   "date": "2026-10-27"
+  },
+  {
+   "title": "Oracle reinvents enterprise computing for the AI era with OpenAI: AI Workspace, AI Security Mesh, SMB bundle, Marketplace access (Oracle press release)",
+   "url": "https://www.oracle.com/news/announcement/ai-world-oracle-reinvents-enterprise-computing-for-the-ai-era-with-openai-2026-10-27/",
+   "date": "2026-10-27"
+  },
+  {
+   "title": "Siri AI is available in more languages starting today: French, Japanese, Korean, Portuguese, Spanish; recall of past conversations; beta in 27.2 (Apple Newsroom)",
+   "url": "https://www.apple.com/newsroom/2026/10/siri-ai-is-available-in-more-languages-starting-today/",
+   "date": "2026-10-26"
+  },
+  {
+   "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and the remediation with SGLang: 155 responses, Aug. 27 to Sep. 9 (Cloudflare blog)",
+   "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+   "date": "2026-10-26"
+  }
+ ],
+ "checked": true,
+ "_theme_placed": [
+  "GENIE"
+ ],
+ "cooked": "2026-10-28T06:20:00-04:00",
+ "no": 18
+}

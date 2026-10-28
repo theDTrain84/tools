@@ -1,0 +1,66 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-10-28",
+ "size": 5,
+ "g": [
+  "AND##",
+  "REEF#",
+  "TABLE",
+  "#TIER",
+  "##TEA"
+ ],
+ "a": [
+  [
+   "AND",
+   "Plus, in a sentence"
+  ],
+  [
+   "REEF",
+   "Coral ridge under the waves"
+  ],
+  [
+   "TABLE",
+   "Where a team of AIs sees the same work: one shared folder every seat reads on wake and writes to in its own file, so nobody carries messages between them"
+  ],
+  [
+   "TIER",
+   "One level of a wedding cake"
+  ],
+  [
+   "TEA",
+   "Leaves steeped in hot water"
+  ]
+ ],
+ "d": [
+  [
+   "ART",
+   "What hangs in a gallery"
+  ],
+  [
+   "NEAT",
+   "Tidy, or how some take their whiskey"
+  ],
+  [
+   "DEBIT",
+   "Card that draws straight from your account"
+  ],
+  [
+   "FLEE",
+   "Run from danger"
+  ],
+  [
+   "ERA",
+   "A span of years with a name"
+  ]
+ ],
+ "w": "TABLE",
+ "n": "When more than one AI works for you, give them one table: a shared folder each of them reads when it wakes and writes to in its own file, one owner per task, reviews kept separate, every entry signed with which model wrote it. Then you stop being the messenger between them. We set one yesterday for three different models, and the first round trip ran without a human in the middle.",
+ "sources": [],
+ "checked": true,
+ "_theme_placed": [
+  "TABLE"
+ ],
+ "cooked": "2026-10-28T06:20:00-04:00",
+ "no": 21
+}
