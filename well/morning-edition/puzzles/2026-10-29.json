@@ -1,0 +1,94 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-10-29",
+ "size": 5,
+ "g": [
+  "WHO##",
+  "IONS#",
+  "TRIAL",
+  "#NOVA",
+  "##NEW"
+ ],
+ "a": [
+  [
+   "WHO",
+   "Question word for a person"
+  ],
+  [
+   "IONS",
+   "Charged particles"
+  ],
+  [
+   "TRIAL",
+   "Clinical ___: the stage Anthropic's Oct. 27 drug-development post says a candidate could reach in humans as soon as late 2028, after one partner's lab tested about 1,010 Claude-assisted antibody variants in roughly ten weeks",
+   {
+    "src": "https://www.anthropic.com/research/early-progress-drug-development"
+   }
+  ],
+  [
+   "NOVA",
+   "Star that suddenly brightens"
+  ],
+  [
+   "NEW",
+   "Just out"
+  ]
+ ],
+ "d": [
+  [
+   "WIT",
+   "Quick humor"
+  ],
+  [
+   "HORN",
+   "Brass instrument, or a car's warning"
+  ],
+  [
+   "ONION",
+   "Bulb that can make you cry"
+  ],
+  [
+   "SAVE",
+   "Anthropic's Oct. 27 expanded agreement with the GSA gives government buyers 40% off Claude and is estimated to ___ the government $1 billion",
+   {
+    "src": "https://www.anthropic.com/news/expanding-partnership-gsa"
+   }
+  ],
+  [
+   "LAW",
+   "What a bill becomes when it passes both chambers and is signed"
+  ]
+ ],
+ "w": "TRIAL",
+ "n": "Two posts from one lab on one day: a 40% government discount, now used by about 500 federal, state and local organizations, and a drug pipeline counted in tested variants with a date for human trials. Read the numbers a post commits to (a dollar estimate, a count, a year) and check back when the date arrives. Also: on Oct. 26 OpenAI released GPT-6.1 Terra, a model built for visual reasoning and computer use, and on Oct. 28 Axiom announced a computer-checked version of the classification of finite simple groups in the Lean proof language, which it says ran to about 43 million lines built in 24 days with AI agents.",
+ "sources": [
+  {
+   "title": "Early progress on accelerating drug development with Claude: six partners, about 1,010 antibody variants tested, human trials as soon as late 2028 (Anthropic)",
+   "url": "https://www.anthropic.com/research/early-progress-drug-development",
+   "date": "2026-10-27"
+  },
+  {
+   "title": "Expanding our partnership with GSA: 40% off Claude Enterprise, Claude for Government and the API; an estimated $1 billion saved; about 500 government organizations (Anthropic)",
+   "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+   "date": "2026-10-27"
+  },
+  {
+   "title": "Introducing GPT-6.1 Terra: visual reasoning, computer use and coding (OpenAI)",
+   "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+   "date": "2026-10-26"
+  },
+  {
+   "title": "The classification of finite simple groups, formalized in Lean: about 43.1 million lines in 24 days (Axiom announcement)",
+   "url": "https://x.com/axiommathai/status/2115089794867040584",
+   "date": "2026-10-28"
+  }
+ ],
+ "checked": true,
+ "_theme_placed": [
+  "TRIAL",
+  "SAVE"
+ ],
+ "cooked": "2026-10-29T06:40:00-04:00",
+ "no": 19
+}

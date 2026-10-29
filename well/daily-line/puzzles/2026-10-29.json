@@ -1,0 +1,66 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-10-29",
+ "size": 5,
+ "g": [
+  "##SPA",
+  "#THAT",
+  "VOICE",
+  "AUNT#",
+  "TRY##"
+ ],
+ "a": [
+  [
+   "SPA",
+   "Place for a massage and a steam"
+  ],
+  [
+   "THAT",
+   "The one over there"
+  ],
+  [
+   "VOICE",
+   "Many AIs now listen to it: a note spoken into your phone and turned to text on your own computer, so the words never leave the house"
+  ],
+  [
+   "AUNT",
+   "Your parent's sister"
+  ],
+  [
+   "TRY",
+   "Give it a go"
+  ]
+ ],
+ "d": [
+  [
+   "VAT",
+   "Big tank at a winery"
+  ],
+  [
+   "TOUR",
+   "Trip with a guide"
+  ],
+  [
+   "SHINY",
+   "Freshly polished"
+  ],
+  [
+   "PACT",
+   "Agreement between two parties"
+  ],
+  [
+   "ATE",
+   "Had dinner"
+  ]
+ ],
+ "w": "VOICE",
+ "n": "Many AIs now listen when you speak. Record a voice note on your phone and a small speech model on your own computer can turn it into text in about a minute, so nothing leaves the house. Talking is the fastest way to hand over what is in your head; keep the written copy too, because the transcript is what you and your AI will search later.",
+ "sources": [],
+ "checked": true,
+ "_theme_placed": [
+  "VOICE"
+ ],
+ "cooked": "2026-10-29T06:40:00-04:00",
+ "no": 22
+}
