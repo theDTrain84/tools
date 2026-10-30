@@ -1,0 +1,66 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-10-30",
+ "size": 5,
+ "g": [
+  "##LAP",
+  "#LAMA",
+  "WATER",
+  "EVEN#",
+  "TAX##"
+ ],
+ "a": [
+  [
+   "LAP",
+   "Once around the track"
+  ],
+  [
+   "LAMA",
+   "Buddhist teacher in Tibet"
+  ],
+  [
+   "WATER",
+   "Many data centers use it to carry heat away from the chips that answer your questions"
+  ],
+  [
+   "EVEN",
+   "Like 2, 4 and 6"
+  ],
+  [
+   "TAX",
+   "What the IRS collects"
+  ]
+ ],
+ "d": [
+  [
+   "WET",
+   "Like a fresh coat of paint"
+  ],
+  [
+   "LAVA",
+   "It flows from a volcano"
+  ],
+  [
+   "LATEX",
+   "Glove material"
+  ],
+  [
+   "AMEN",
+   "Final word of a prayer"
+  ],
+  [
+   "PAR",
+   "Expected score on a golf hole"
+  ]
+ ],
+ "w": "WATER",
+ "n": "Every answer an AI gives runs on chips in a data center, and many data centers use water to carry the heat away. That water comes from somewhere local: a river, a city system, or the ground underneath. When a data center is proposed near you, the useful questions are how much it will draw, from which source, and what returns to that source afterward.",
+ "sources": [],
+ "checked": true,
+ "_theme_placed": [
+  "WATER"
+ ],
+ "cooked": "2026-10-30T06:40:00-04:00",
+ "no": 23
+}

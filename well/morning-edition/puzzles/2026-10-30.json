@@ -1,0 +1,90 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-10-30",
+ "size": 5,
+ "g": [
+  "#CRAB",
+  "WHOSE",
+  "EIGHT",
+  "BLUES",
+  "SEES#"
+ ],
+ "a": [
+  [
+   "CRAB",
+   "Shellfish that walks sideways"
+  ],
+  [
+   "WHOSE",
+   "Question word about ownership"
+  ],
+  [
+   "EIGHT",
+   "NVIDIA's open Nemotron 3.5 Transcribe, released Oct. 28, transcribes 40 languages and was trained on conversations of up to ___ speakers",
+   {
+    "src": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B"
+   }
+  ],
+  [
+   "BLUES",
+   "Music born in the Mississippi Delta"
+  ],
+  [
+   "SEES",
+   "Spots"
+  ]
+ ],
+ "d": [
+  [
+   "WEBS",
+   "Spider creations"
+  ],
+  [
+   "CHILE",
+   "Hot pepper, in the New Mexico spelling"
+  ],
+  [
+   "ROGUE",
+   "Lovable scoundrel"
+  ],
+  [
+   "ASHES",
+   "What's left after a fire"
+  ],
+  [
+   "BETS",
+   "Wagers"
+  ]
+ ],
+ "w": "EIGHT",
+ "n": "An open transcription model you can download and run on your own hardware arrived the same day a lab handed its strongest security model to cyber defenders before anyone else. Both are choices about where the power sits: a model on your own machine keeps your recordings at home, and a staged release gives the people guarding systems a head start. Also: Meta is funding research at five universities, including three projects at Ohio State's College of Medicine on heart failure, chest X-rays and dementia, with patient data kept inside each school; and LlamaIndex published a 0.1 draft of a Document Parsing Protocol, 140 rules for how AI should read tables, forms and charts, open for public comment.",
+ "sources": [
+  {
+   "title": "Nemotron 3.5 Transcribe: an open-weight model for transcription in 40 languages, recordings up to one hour (NVIDIA model card)",
+   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+   "date": "2026-10-28"
+  },
+  {
+   "title": "Introducing Gemini 4 Carbon: 88.2% on SEC-bench Pro, offered first to a subset of cyber defenders (Google)",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+   "date": "2026-10-28"
+  },
+  {
+   "title": "Supporting medical and scientific research at five universities, with patient data kept inside each institution (Meta)",
+   "url": "https://research.meta.ai/blog/supporting-medical-scientific-research",
+   "date": "2026-10-28"
+  },
+  {
+   "title": "Introducing the Document Parsing Protocol: 140 rules, draft 0.1, open for comment (LlamaIndex)",
+   "url": "https://www.llamaindex.ai/blog/introducing-the-document-parsing-protocol",
+   "date": "2026-10-28"
+  }
+ ],
+ "checked": true,
+ "_theme_placed": [
+  "EIGHT"
+ ],
+ "cooked": "2026-10-30T06:40:00-04:00",
+ "no": 20
+}
