@@ -1,0 +1,260 @@
+{
+ "v": 1,
+ "track": "weekly",
+ "date": "2026-11-01",
+ "size": 11,
+ "g": [
+  "#POST##POT#",
+  "ELITE##UREA",
+  "VALUES#BALI",
+  "ICED#CALLER",
+  "LED#TAXI###",
+  "###SONIC###",
+  "###TONS#SUM",
+  "OCTANE#OTTO",
+  "DRUG#ROBOTS",
+  "DONE##LOVES",
+  "#PAD##DEER#"
+ ],
+ "a": [
+  [
+   "POST",
+   "Mail, or a fence piece"
+  ],
+  [
+   "POT",
+   "Where the soup simmers"
+  ],
+  [
+   "ELITE",
+   "The very best"
+  ],
+  [
+   "UREA",
+   "Compound in many fertilizers"
+  ],
+  [
+   "VALUES",
+   "OpenAI's updated Model Spec, posted Oct. 29, is built around five of these, honesty and care among them",
+   {
+    "src": "https://openai.com/index/updated-model-spec/"
+   }
+  ],
+  [
+   "BALI",
+   "Indonesian island known for its rice terraces"
+  ],
+  [
+   "ICED",
+   "Like tea in July"
+  ],
+  [
+   "CALLER",
+   "Voice on the other end of the line"
+  ],
+  [
+   "LED",
+   "Showed the way"
+  ],
+  [
+   "TAXI",
+   "Yellow cab"
+  ],
+  [
+   "SONIC",
+   "Of sound, as a boom"
+  ],
+  [
+   "TONS",
+   "Loads and loads"
+  ],
+  [
+   "SUM",
+   "Total"
+  ],
+  [
+   "OCTANE",
+   "Rating at the gas pump"
+  ],
+  [
+   "OTTO",
+   "First name that reads the same backward"
+  ],
+  [
+   "DRUG",
+   "Anthropic's Oct. 27 update reports early progress speeding up this kind of development, from antibody designs to mouse results",
+   {
+    "src": "https://www.anthropic.com/research/early-progress-drug-development"
+   }
+  ],
+  [
+   "ROBOTS",
+   "OpenAI proposed Oct. 30 a shared signal in a site's ___.txt file saying whether its pages may be used for AI training",
+   {
+    "src": "https://openai.com/index/helping-websites-express-ai-training-preferences/"
+   }
+  ],
+  [
+   "DONE",
+   "Finished"
+  ],
+  [
+   "LOVES",
+   "Adores"
+  ],
+  [
+   "PAD",
+   "Notepad, or a place to live"
+  ],
+  [
+   "DEER",
+   "Doe or buck"
+  ]
+ ],
+ "d": [
+  [
+   "EVIL",
+   "Wicked"
+  ],
+  [
+   "ODD",
+   "Like 3, 5 or 7"
+  ],
+  [
+   "PLACE",
+   "Spot"
+  ],
+  [
+   "CROP",
+   "Harvest, or trim a photo"
+  ],
+  [
+   "OILED",
+   "Like a squeaky hinge, after the fix"
+  ],
+  [
+   "TUNA",
+   "Sandwich fish"
+  ],
+  [
+   "STUD",
+   "Earring style"
+  ],
+  [
+   "STAGED",
+   "How Google is opening Gemini 4 Carbon, announced Oct. 28: a subset of cyber defenders first, then trusted partners",
+   {
+    "src": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+   }
+  ],
+  [
+   "TEE",
+   "Golf peg"
+  ],
+  [
+   "TOON",
+   "Cartoon, for short"
+  ],
+  [
+   "SCANNER",
+   "Machine that turns paper into a file"
+  ],
+  [
+   "AXIS",
+   "Line a planet spins on"
+  ],
+  [
+   "OLD",
+   "The opposite of new"
+  ],
+  [
+   "PUBLIC",
+   "What Anthropic plans to go, per the S-1 it filed Oct. 26 for a Nasdaq listing under the symbol ANT",
+   {
+    "src": "https://www.anthropic.com/news/s1-sec"
+   }
+  ],
+  [
+   "OBOE",
+   "Double-reed woodwind"
+  ],
+  [
+   "ORAL",
+   "Spoken, as an exam"
+  ],
+  [
+   "STOVE",
+   "Where the pot sits"
+  ],
+  [
+   "TELE",
+   "Prefix with phone or scope"
+  ],
+  [
+   "UTTER",
+   "Say out loud"
+  ],
+  [
+   "AIR",
+   "What we breathe"
+  ],
+  [
+   "MOSS",
+   "Green carpet on a forest stone"
+  ]
+ ],
+ "w": "PUBLIC",
+ "n": "The week of five documents. A stock filing, a model spec, a robots file, a staged release and a drug-development update each came from the people who wrote them, and every clue here points back to that page. When AI news moves fast, start at the document and read what it actually says.",
+ "sources": [
+  {
+   "title": "Anthropic files an S-1 for a proposed IPO, with a Nasdaq listing planned under ANT",
+   "url": "https://www.anthropic.com/news/s1-sec",
+   "date": "2026-10-26"
+  },
+  {
+   "title": "Anthropic reports early progress speeding up drug development with Claude",
+   "url": "https://www.anthropic.com/research/early-progress-drug-development",
+   "date": "2026-10-27"
+  },
+  {
+   "title": "Google introduces Gemini 4 Carbon with staged access, cyber defenders first",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+   "date": "2026-10-28"
+  },
+  {
+   "title": "OpenAI updates its Model Spec around five values",
+   "url": "https://openai.com/index/updated-model-spec/",
+   "date": "2026-10-29"
+  },
+  {
+   "title": "OpenAI proposes a robots.txt signal for AI training preferences",
+   "url": "https://openai.com/index/helping-websites-express-ai-training-preferences/",
+   "date": "2026-10-30"
+  }
+ ],
+ "coming": [
+  {
+   "date": "2026-11-03",
+   "text": "AMD reports third quarter results after the market closes, with a call at 5 p.m. ET.",
+   "url": "https://ir.amd.com/news-events/press-releases/detail/1300/amd-to-report-fiscal-third-quarter-2026-financial-results"
+  },
+  {
+   "date": "2026-11-03",
+   "text": "Supermicro, the AI server maker, holds its first quarter earnings call at 5 p.m. ET.",
+   "url": "https://ir.supermicro.com/news/news-details/2026/Supermicro-Provides-First-Quarter-of-Fiscal-Year-2027-Preliminary-Business-Update/default.aspx"
+  },
+  {
+   "date": "2026-11-04",
+   "text": "Arm reports second quarter results after the market closes, with a call at 2 p.m. PT.",
+   "url": "https://newsroom.arm.com/news/arm-announces-earnings-release-date-for-second-quarter-fiscal-year-ending-2027"
+  },
+  {
+   "date": "2026-11-04",
+   "text": "Qualcomm reports fourth quarter and full-year results after the market closes, with a call at 1:45 p.m. PT.",
+   "url": "https://investor.qualcomm.com/news-events/press-releases/news-details/2026/Qualcomm-Schedules-Fourth-Quarter-and-Fiscal-2026-Earnings-Release-and-Conference-Call/default.aspx"
+  }
+ ],
+ "checked": true,
+ "no": 5,
+ "cooked": "2026-11-01T17:25:00-05:00"
+}
