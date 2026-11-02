@@ -1,0 +1,85 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-11-02",
+ "size": 5,
+ "g": [
+  "##THE",
+  "#SEEN",
+  "AHEAD",
+  "SEND#",
+  "HAS##"
+ ],
+ "a": [
+  [
+   "THE",
+   "Most common word in English"
+  ],
+  [
+   "SEEN",
+   "Spotted"
+  ],
+  [
+   "AHEAD",
+   "In front"
+  ],
+  [
+   "SEND",
+   "Button that mails a message"
+  ],
+  [
+   "HAS",
+   "Owns"
+  ]
+ ],
+ "d": [
+  [
+   "ASH",
+   "Tree whose wood makes many baseball bats"
+  ],
+  [
+   "SHEA",
+   "Butter in many lotions"
+  ],
+  [
+   "TEENS",
+   "OpenAI said Oct. 30 that ChatGPT will restrict practical information about weapons and security systems for these users",
+   {
+    "src": "https://openai.com/index/community-safety-report-and-new-protections-for-teens/"
+   }
+  ],
+  [
+   "HEAD",
+   "Top of a line"
+  ],
+  [
+   "END",
+   "Finish"
+  ]
+ ],
+ "w": "TEENS",
+ "n": "Two Friday announcements were about who gets a say. ChatGPT is tightening what teen accounts can get and will alert parents when a teen's account is shut off for violence policy violations. And websites will get one shared signal in robots.txt saying whether their pages may be used to train AI, which participating providers say they will honor. If you run a site or share a home with a teenager, both are settings worth knowing. Also: Project ProtoStar, a Hugging Face effort to make publicly funded science ready for AI, opens its first challenge today, running to Nov. 13.",
+ "sources": [
+  {
+   "title": "Community safety report and new protections for teens: tighter limits for teen accounts, parent alerts, a report every six months (OpenAI)",
+   "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens/",
+   "date": "2026-10-30"
+  },
+  {
+   "title": "One shared robots.txt signal for websites to say whether their content may train AI (OpenAI)",
+   "url": "https://openai.com/index/helping-websites-express-ai-training-preferences/",
+   "date": "2026-10-30"
+  },
+  {
+   "title": "Project ProtoStar: making publicly funded science AI-ready, first challenge Nov. 2 to 13 (Hugging Face)",
+   "url": "https://huggingface.co/blog/announcing-project-protostar",
+   "date": "2026-10-29"
+  }
+ ],
+ "checked": true,
+ "_theme_placed": [
+  "TEENS"
+ ],
+ "cooked": "2026-11-02T06:25:00-05:00",
+ "no": 21
+}

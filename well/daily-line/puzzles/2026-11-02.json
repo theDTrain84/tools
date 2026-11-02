@@ -1,0 +1,66 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-11-02",
+ "size": 5,
+ "g": [
+  "##SIP",
+  "#SORE",
+  "HABIT",
+  "AGES#",
+  "TAR##"
+ ],
+ "a": [
+  [
+   "SIP",
+   "Small taste of hot coffee"
+  ],
+  [
+   "SORE",
+   "Aching after a workout"
+  ],
+  [
+   "HABIT",
+   "A small practice kept daily, like asking your AI to help plan the morning before the inbox opens"
+  ],
+  [
+   "AGES",
+   "A very long time"
+  ],
+  [
+   "TAR",
+   "Black goo on a fresh road"
+  ]
+ ],
+ "d": [
+  [
+   "HAT",
+   "Cap or fedora"
+  ],
+  [
+   "SAGA",
+   "Long family story"
+  ],
+  [
+   "SOBER",
+   "Serious in mood"
+  ],
+  [
+   "IRIS",
+   "Colored part of the eye"
+  ],
+  [
+   "PET",
+   "Dog or cat at home"
+  ]
+ ],
+ "w": "HABIT",
+ "n": "The quickest way to get good with AI is a small habit: the same kind of question at the same hour, every day. A few minutes each morning beats one long session a month, because repetition shows you what it does well and where it slips. Pick one daily task this week and hand it a first pass.",
+ "sources": [],
+ "checked": true,
+ "_theme_placed": [
+  "HABIT"
+ ],
+ "cooked": "2026-11-02T06:25:00-05:00",
+ "no": 24
+}
