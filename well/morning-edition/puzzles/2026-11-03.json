@@ -1,0 +1,86 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-11-03",
+ "size": 5,
+ "g": [
+  "##OFF",
+  "#FREE",
+  "CABLE",
+  "OMIT#",
+  "PET##"
+ ],
+ "a": [
+  [
+   "OFF",
+   "Switched ___"
+  ],
+  [
+   "FREE",
+   "Costing nothing"
+  ],
+  [
+   "CABLE",
+   "Cord behind the TV"
+  ],
+  [
+   "OMIT",
+   "Leave out"
+  ],
+  [
+   "PET",
+   "Household animal"
+  ]
+ ],
+ "d": [
+  [
+   "COP",
+   "Officer on the beat"
+  ],
+  [
+   "FAME",
+   "Renown"
+  ],
+  [
+   "ORBIT",
+   "Google said Oct. 30 that its Gemma 4 model, running on a TPU aboard a prototype satellite, wrote a haiku from here",
+   {
+    "src": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/"
+   }
+  ],
+  [
+   "FELT",
+   "Craft fabric, or sensed"
+  ],
+  [
+   "FEE",
+   "Charge for a service"
+  ]
+ ],
+ "w": "ORBIT",
+ "n": "A benchmark published Monday, GDPx, set 11 kinds of expert work in front of the frontier models, from chip design to finance to law, and the best of them scored 12 percent. Finance and legal tasks came back near zero across the board. Hold that next to the week's other two notes: an AI model wrote a haiku from a satellite, and the usage policy for Claude, effective Nov. 12, now bars sustained and needless cruelty toward the model. The machines are far from doing your job and close enough to be in the room.",
+ "sources": [
+  {
+   "title": "GDPx: a benchmark of 11 high-value domains built with 14 specialist partners; the top model scores 12 percent (SemiAnalysis)",
+   "url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities",
+   "date": "2026-11-02"
+  },
+  {
+   "title": "Gemma 4 ran on a TPU aboard a prototype satellite and sent down a haiku (Google Research, Project Suncatcher update)",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+   "date": "2026-10-30"
+  },
+  {
+   "title": "Usage policy update, effective Nov. 12: a new prohibition on sustained and needless abusive or cruel behavior toward the models (Anthropic)",
+   "url": "https://www.anthropic.com/news/2026-usage-policy-update",
+   "date": "2026-10-08"
+  }
+ ],
+ "checked": true,
+ "_theme_placed": [
+  "ORBIT"
+ ],
+ "_seconds": 0.0,
+ "cooked": "2026-11-03T06:30:00-05:00",
+ "no": 22
+}

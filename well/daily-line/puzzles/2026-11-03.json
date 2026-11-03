@@ -1,0 +1,67 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-11-03",
+ "size": 5,
+ "g": [
+  "#RACK",
+  "HUMAN",
+  "ALIKE",
+  "RENEW",
+  "PROS#"
+ ],
+ "a": [
+  [
+   "RACK",
+   "Shelf for spices or shoes"
+  ],
+  [
+   "HUMAN",
+   "The one who stays in the loop and makes the call"
+  ],
+  [
+   "ALIKE",
+   "Much the same"
+  ],
+  [
+   "RENEW",
+   "Sign up for another year"
+  ],
+  [
+   "PROS",
+   "Points in favor"
+  ]
+ ],
+ "d": [
+  [
+   "HARP",
+   "Instrument with a frame of strings"
+  ],
+  [
+   "RULER",
+   "Twelve inches of straightedge"
+  ],
+  [
+   "AMINO",
+   "___ acid, building block of protein"
+  ],
+  [
+   "CAKES",
+   "Birthday desserts"
+  ],
+  [
+   "KNEW",
+   "Was sure of"
+  ]
+ ],
+ "w": "HUMAN",
+ "n": "Human in the loop means a person reads what the AI produced and decides, with their name on the decision. The AI can draft the letter, sort the list, or lay out the choices. It cannot vote, sign, hire, or apologize. Keep those for yourself and hand it everything that leads up to them.",
+ "sources": [],
+ "checked": true,
+ "_theme_placed": [
+  "HUMAN"
+ ],
+ "_seconds": 0.2,
+ "cooked": "2026-11-03T06:30:00-05:00",
+ "no": 25
+}
