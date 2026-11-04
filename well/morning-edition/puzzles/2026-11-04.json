@@ -1,0 +1,86 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-11-04",
+ "size": 5,
+ "g": [
+  "#GREW",
+  "BRAVO",
+  "EATER",
+  "SPEND",
+  "TEST#"
+ ],
+ "a": [
+  [
+   "GREW",
+   "Got bigger"
+  ],
+  [
+   "BRAVO",
+   "Shout for an encore"
+  ],
+  [
+   "EATER",
+   "Picky ___"
+  ],
+  [
+   "SPEND",
+   "Menlo Ventures said Nov. 3 that enterprise AI ___ reached $176.8 billion by September, 5.4 times last year",
+   {
+    "src": "https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/"
+   }
+  ],
+  [
+   "TEST",
+   "Pop quiz"
+  ]
+ ],
+ "d": [
+  [
+   "BEST",
+   "Top of the class"
+  ],
+  [
+   "GRAPE",
+   "Fruit on a vine"
+  ],
+  [
+   "RATES",
+   "Prices per hour"
+  ],
+  [
+   "EVENT",
+   "Something on the calendar"
+  ],
+  [
+   "WORD",
+   "Unit of a sentence"
+  ]
+ ],
+ "w": "SPEND",
+ "n": "Three documents from one day. A venture survey of nearly 400 enterprises says AI deployment spending reached $176.8 billion by September, about 2.5 times what those companies had planned, with three labs taking 69 cents of every dollar. OpenAI's LifeVal paper grades models on 148 kinds of life tasks, finding childcare, moving, managing money, that 3,800 people priced at $1.7 trillion a year in willingness to pay. And Anthropic's amended offering filing lists $895.4 billion in committed spend, substantially all for compute, beside $17.0 billion of revenue in the quarter. For your work: the sellers have already committed the money and the buyers already blew past plan. Keep your own line, a plan, a number, and a review of what the spend returned. The Well is cooked on Anthropic's models, for the record.",
+ "sources": [
+  {
+   "title": "2026 State of Enterprise AI: $176.8B deployment spend by September, 5.4x last year; three labs hold 69 percent; survey of nearly 400 decision-makers fielded Sept. 8 to 26 (Menlo Ventures)",
+   "url": "https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/",
+   "date": "2026-11-03"
+  },
+  {
+   "title": "LifeVal: a benchmark of personalized consumer tasks across 148 categories, built from a willingness-to-pay survey of 3,800 people and the American Time Use Survey (OpenAI, paper dated Nov. 3)",
+   "url": "https://cdn.openai.com/pdf/lifeval.pdf",
+   "date": "2026-11-03"
+  },
+  {
+   "title": "Amendment No. 1 to Form S-1, cover dated Nov. 2: $895.4 billion aggregate committed spend, substantially all compute and infrastructure; $17.0 billion revenue for the quarter ended Sept. 30 (Anthropic, SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm",
+   "date": "2026-11-02"
+  }
+ ],
+ "checked": true,
+ "_theme_placed": [
+  "SPEND"
+ ],
+ "_seconds": 0.1,
+ "cooked": "2026-11-04T06:06:35-05:00",
+ "no": 23
+}

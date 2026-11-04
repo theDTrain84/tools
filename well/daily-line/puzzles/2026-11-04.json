@@ -1,0 +1,67 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-11-04",
+ "size": 5,
+ "g": [
+  "#CLUB",
+  "SLOPE",
+  "LOOSE",
+  "ASPEN",
+  "BEST#"
+ ],
+ "a": [
+  [
+   "CLUB",
+   "Golf bag item"
+  ],
+  [
+   "SLOPE",
+   "Ski run"
+  ],
+  [
+   "LOOSE",
+   "Opposite of tight"
+  ],
+  [
+   "ASPEN",
+   "Tree whose leaves tremble"
+  ],
+  [
+   "BEST",
+   "Finest"
+  ]
+ ],
+ "d": [
+  [
+   "SLAB",
+   "Thick flat piece of stone"
+  ],
+  [
+   "CLOSE",
+   "The end-of-day note: what changed, what is open"
+  ],
+  [
+   "LOOPS",
+   "The human stays in these"
+  ],
+  [
+   "UPSET",
+   "Surprise win, in sports"
+  ],
+  [
+   "BEEN",
+   "\"Where have you ___?\""
+  ]
+ ],
+ "w": "CLOSE",
+ "n": "The close is the note you write when the day's work ends: what changed, what is still open, where the files are. Three lines are enough. An AI that writes one starts tomorrow warm, and so does the person who reads it. Keep it in the same place every day, so the next session or the next teammate reads it before anything else.",
+ "sources": [],
+ "checked": true,
+ "_theme_placed": [
+  "CLOSE"
+ ],
+ "_seconds": 0.0,
+ "cooked": "2026-11-04T06:06:35-05:00",
+ "no": 26
+}
