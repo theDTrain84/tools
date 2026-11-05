@@ -1,0 +1,67 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-11-05",
+ "size": 5,
+ "g": [
+  "#RASH",
+  "DELTA",
+  "EAGER",
+  "ADAPT",
+  "DYES#"
+ ],
+ "a": [
+  [
+   "RASH",
+   "Hasty"
+  ],
+  [
+   "DELTA",
+   "Land at a river's mouth"
+  ],
+  [
+   "EAGER",
+   "Keen to begin"
+  ],
+  [
+   "ADAPT",
+   "Adjust to new conditions"
+  ],
+  [
+   "DYES",
+   "Colors the cloth"
+  ]
+ ],
+ "d": [
+  [
+   "DEAD",
+   "Like a phone at zero percent"
+  ],
+  [
+   "READY",
+   "Set to go"
+  ],
+  [
+   "ALGAE",
+   "Pond green"
+  ],
+  [
+   "STEPS",
+   "An agent works in small ___"
+  ],
+  [
+   "HART",
+   "Stag, in old poems"
+  ]
+ ],
+ "w": "STEPS",
+ "n": "An agent does its work in steps: read the file, draft the change, run the check, write the note. Small steps are where you can watch it, stop it, and correct it before the next one. When you ask for something large, ask for the list of steps first and then the first step alone; you will see sooner whether the work is going where you want.",
+ "sources": [],
+ "checked": true,
+ "_theme_placed": [
+  "STEPS"
+ ],
+ "_seconds": 0.0,
+ "cooked": "2026-11-05T13:53:46-05:00",
+ "no": 27
+}

@@ -1,0 +1,91 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-11-05",
+ "size": 5,
+ "g": [
+  "#SWIM",
+  "STATE",
+  "WAGES",
+  "AROMA",
+  "PENS#"
+ ],
+ "a": [
+  [
+   "SWIM",
+   "Do laps"
+  ],
+  [
+   "STATE",
+   "Ai2's StateBench, posted Nov. 3, tests whether a model can follow ___ changes through a long document; on the longest, hardest problems, frontier models fell to 13 percent or lower",
+   {
+    "src": "https://huggingface.co/blog/allenai/statebench"
+   }
+  ],
+  [
+   "WAGES",
+   "Pay for the week"
+  ],
+  [
+   "AROMA",
+   "Coffee shop scent"
+  ],
+  [
+   "PENS",
+   "Desk drawer stock"
+  ]
+ ],
+ "d": [
+  [
+   "SWAP",
+   "Trade"
+  ],
+  [
+   "STARE",
+   "Fixed look"
+  ],
+  [
+   "WAGON",
+   "Red toy with a handle"
+  ],
+  [
+   "ITEMS",
+   "Things on a list"
+  ],
+  [
+   "MESA",
+   "Flat-topped hill"
+  ]
+ ],
+ "w": "STATE",
+ "n": "Four documents from three days. Ai2's StateBench asks a model to follow a value as it changes across a long document; frontier models handled the two easy levels and fell to 13 percent or lower on the longest problems where values are carried forward or passed by reference. Apple opened Siri AI to every developer through App Intents in the 27.3 betas, a preview that ships to customers in a few months, and its annual report for the year ended Sept. 26 says AI agents \"can take actions autonomously\" and \"may behave in unintended or unpredictable ways,\" with some consequences, \"such as deleting data or completing transactions,\" difficult or impossible to reverse. Anthropic's Frontier Red Team released a research prototype that proves a reply came from a committed set of model weights, at roughly 70 to 95 times the GPU time of the model itself. For your work: the state of things lives in a file you keep, the current numbers, the open items, what changed today. Hand that file to the AI at the start, have it rewrite the file at the end, and keep the steps that cannot be undone, the send and the payment, with a person. The Well is cooked on Anthropic's models, for the record.",
+ "sources": [
+  {
+   "title": "StateBench: four levels of state tracking over long documents; frontier models at 13 percent or lower on the longest general finite problems; report, dataset and code released (Ai2)",
+   "url": "https://huggingface.co/blog/allenai/statebench",
+   "date": "2026-11-03"
+  },
+  {
+   "title": "Siri AI is now open to all developers: App Intents in the iOS, iPadOS, macOS and visionOS 27.3 betas; a developer preview, shipping to customers in a few months, App Store submissions opening in the spring (Apple Developer News)",
+   "url": "https://developer.apple.com/news/?id=gdk2umrf",
+   "date": "2026-11-03"
+  },
+  {
+   "title": "Form 10-K for the fiscal year ended Sept. 26, 2026, Item 1A: AI agents \"can take actions autonomously\" and \"may behave in unintended or unpredictable ways\"; some consequences \"difficult or impossible to reverse\" (Apple, SEC EDGAR)",
+   "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+   "date": "2026-11-03"
+  },
+  {
+   "title": "Progress on provable inference: FlashProve, an open-source research prototype that proves a response came from committed weights; about 110 tokens per second on one H100, 70 to 95 times the GPU time of plain inference; Apache 2.0 code and Lean proofs (Anthropic)",
+   "url": "https://www.anthropic.com/research/provable-inference",
+   "date": "2026-11-02"
+  }
+ ],
+ "checked": true,
+ "_theme_placed": [
+  "STATE"
+ ],
+ "_seconds": 0.1,
+ "cooked": "2026-11-05T13:53:46-05:00",
+ "no": 24
+}
