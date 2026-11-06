@@ -1,0 +1,106 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-11-06",
+ "size": 5,
+ "g": [
+  "#GIFT",
+  "VIDEO",
+  "EVERY",
+  "TEARS",
+  "ONLY#"
+ ],
+ "a": [
+  [
+   "GIFT",
+   "Wrapped surprise"
+  ],
+  [
+   "VIDEO",
+   "Gemini Omni 1.2 Flash, posted Nov. 5, makes and edits ___ clips up to 15 seconds long, up from 10, at $0.07 per second for 720p, a 30 percent price cut",
+   {
+    "src": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+   }
+  ],
+  [
+   "EVERY",
+   "Each and all"
+  ],
+  [
+   "TEARS",
+   "What chopping onions brings"
+  ],
+  [
+   "ONLY",
+   "Just"
+  ]
+ ],
+ "d": [
+  [
+   "VETO",
+   "Governor's no"
+  ],
+  [
+   "GIVEN",
+   "Handed over"
+  ],
+  [
+   "IDEAL",
+   "Best possible"
+  ],
+  [
+   "FERRY",
+   "Boat that crosses the river"
+  ],
+  [
+   "TOYS",
+   "Playroom clutter"
+  ]
+ ],
+ "w": "VIDEO",
+ "n": "Seven documents from one day. Google's Gemini Omni 1.2 Flash makes and edits video clips up to 15 seconds, up from 10, at $0.07 per second for 720p, a 30 percent cut, and every clip carries a SynthID watermark. OpenAI's GPT-6 Cyber, released Nov. 5 to a first group of approved Daybreak Red customers, scores 48.5 percent on ExploitGym, up from 32.1, stayed inside its assigned scope in 99.93 percent of honeypot tests without a safety prompt, and turned up 81 previously unknown high-severity Firefox flaws; the company classes it Critical for cybersecurity under its Preparedness Framework. Anthropic's report on how researchers use Claude read 207,049 sessions from August and September: data analysis is a third of chat sessions and nearly half of Claude Code sessions, while gathering data and forming new hypotheses, the parts researchers say matter most, get the least. Nvidia published two pieces on the hardware under all this: the Vera CPU, built for agents that bounce between reasoning and running code, with 1,000 agent sandboxes brought up in 10.8 seconds against 88.4 on x86 in one partner's test, and an argument that memory, the scarcest part of an AI data center, now has to be spread across tiers because adding more of it has stopped paying. On Hugging Face, Nvidia opened four Cosmos 3 Nano world models for driving and two-arm robot simulation, and Gradium's Phonon, a 65 MB text-to-speech model, runs on a phone with no network and leads the open leaderboard for time to first sound. For your work: the tools are getting cheaper and smaller, and they are starting to run on the device in your hand. The same day's research shows where the gap stays: the model is strongest at analysis and writing, and weakest at gathering the facts and deciding what question to ask. Keep those two with a person. The Well is cooked on Anthropic's models, for the record.",
+ "sources": [
+  {
+   "title": "GPT-6 Cyber: 48.5 percent on ExploitGym, up from 32.1; in scope on 99.93 percent of honeypot tests without a safety prompt; 81 new high-severity Firefox flaws and 948 Linux kernel exploits; classed Critical under the Preparedness Framework; first to approved Daybreak Red customers (OpenAI)",
+   "url": "https://openai.com/index/introducing-gpt-6-cyber/",
+   "date": "2026-11-05"
+  },
+  {
+   "title": "AI for scientific discovery: 207,049 sessions from Aug. 2 to Sept. 30; data analysis a third of Claude sessions and nearly half of Claude Code sessions; data gathering 11.5 percent of sessions against 28.6 percent of researcher time; survey of 528 scientists (Anthropic)",
+   "url": "https://www.anthropic.com/research/how-researchers-use-claude",
+   "date": "2026-11-05"
+  },
+  {
+   "title": "Gemini Omni 1.2 Flash: clips up to 15 seconds, $0.07 per second for 720p, a 30 percent cut from Omni 1.1, SynthID on every output, generally available in the Gemini API (Google)",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+   "date": "2026-11-05"
+  },
+  {
+   "title": "Vera CPU: 1.6 times more agents per watt than the fastest x86 CPU in a modeled 100-megawatt data center; partner tests including 1,000 agent sandboxes online in 10.8 seconds against 88.4 on x86 (NVIDIA)",
+   "url": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+   "date": "2026-11-05"
+  },
+  {
+   "title": "More performance from every byte: HBM per GPU up about 3 percent from Blackwell Ultra to Vera Rubin while agentic throughput per dollar rose up to 30 times; 4-bit NVFP4 weights and KV cache; paused context moved to cheaper tiers (NVIDIA)",
+   "url": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/",
+   "date": "2026-11-05"
+  },
+  {
+   "title": "Cosmos 3 Nano: four open-weight world models, 16B parameters, for multi-view driving data and two-arm robot simulation, OpenMDW 1.1 license (NVIDIA on Hugging Face)",
+   "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+   "date": "2026-11-05"
+  },
+  {
+   "title": "Phonon TTS: models of about 65 MB and 75 MB; the 31m English model under Apache 2.0, the 40m five-language model non-commercial; 28 ms to first audio on CPU; 200,000 downloads in two weeks (Gradium on Hugging Face)",
+   "url": "https://huggingface.co/blog/phonon-tts",
+   "date": "2026-11-05"
+  }
+ ],
+ "checked": true,
+ "_theme_placed": [
+  "VIDEO"
+ ],
+ "_seconds": 0.1,
+ "cooked": "2026-11-06T06:14:38-05:00",
+ "no": 25
+}

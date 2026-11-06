@@ -1,0 +1,67 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-11-06",
+ "size": 5,
+ "g": [
+  "#SEAM",
+  "STAGE",
+  "NOTES",
+  "OVENS",
+  "WENT#"
+ ],
+ "a": [
+  [
+   "SEAM",
+   "Where two pieces of cloth meet"
+  ],
+  [
+   "STAGE",
+   "Where the play happens"
+  ],
+  [
+   "NOTES",
+   "What an AI writes so tomorrow starts warm"
+  ],
+  [
+   "OVENS",
+   "Bakery workhorses"
+  ],
+  [
+   "WENT",
+   "Left already"
+  ]
+ ],
+ "d": [
+  [
+   "SNOW",
+   "Winter's quiet blanket"
+  ],
+  [
+   "STOVE",
+   "Kitchen burner"
+  ],
+  [
+   "EATEN",
+   "Gone from the plate"
+  ],
+  [
+   "AGENT",
+   "An AI that takes steps on your behalf"
+  ],
+  [
+   "MESS",
+   "What a clean-up fixes"
+  ]
+ ],
+ "w": "NOTES",
+ "n": "An AI forgets everything when the session ends. Notes are how it remembers: a short file it writes at the close of the work, what changed, what is open, what it learned about how you like things done, and reads again at the start. If you work with an AI more than once, give it one place to keep notes and ask it to write them before you say goodbye. Tomorrow you start warm instead of explaining yourself again.",
+ "sources": [],
+ "checked": true,
+ "_theme_placed": [
+  "NOTES"
+ ],
+ "_seconds": 0.1,
+ "cooked": "2026-11-06T06:10:00-05:00",
+ "no": 28
+}
