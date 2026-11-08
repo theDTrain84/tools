@@ -4,4 +4,4 @@ This story moved to [tools.dnsc.ai/stories/homeview/](https://tools.dnsc.ai/stor
 
 ---
 
-Source: https://tools.dnsc.ai/civic/homeview/ · Generated from the page on Oct 16, 2026
+Source: https://tools.dnsc.ai/civic/homeview/ · Generated from the page on Nov 8, 2026

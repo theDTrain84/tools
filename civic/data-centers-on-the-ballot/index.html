@@ -1,0 +1,982 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Data centers on the ballot</title>
+<meta name="description" content="46 data-center questions were on local ballots in ten states on November 3. Of the 44 with a count, voters took the side that limits data centers in 43. Ohio had 21 of the questions, in 18 places, and the limiting side won all 21. What a data center is and why a town votes on one; all 46 questions by state with the official count; Ohio&#x27;s 21 in detail; the City of Trenton&#x27;s Issue 17, the Supreme Court case that put it on the ballot, the annexation and the county moratorium; the four bills at the statehouse and the state&#x27;s tax deal. Unofficial results.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DNSC">
+<meta property="og:title" content="46 data-center questions were on local ballots in ten states on November 3. Of the 44 with a count, voters took the side that limits data centers in 43. Ohio had 21 of the questions, in 18 places, and the limiting side won all 21.">
+<meta property="og:description" content="The one exception was the City of Harwood, North Dakota, where a charter amendment requiring review of large industrial projects failed, 105 to 325. Two Maine towns, Brownfield and Freedom, had posted no count by Wednesday morning. Every count on this page is unofficial until the canvasses close.">
+<meta property="og:url" content="https://tools.dnsc.ai/civic/data-centers-on-the-ballot/">
+<meta property="og:image" content="https://tools.dnsc.ai/assets/share/data-centers-on-the-ballot.jpg?v=20261104">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A drawn tally: forty-six small squares in ten rows, one row per state; forty-three filled in for the side that limits data centers, one in North Dakota for the data-center side, two in Maine outlined with no count yet.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="46 data-center questions were on local ballots in ten states on November 3. Of the 44 with a count, voters took the side that limits data centers in 43. Ohio had 21 of the questions, in 18 places, and the limiting side won all 21.">
+<meta name="twitter:description" content="The one exception was the City of Harwood, North Dakota, where a charter amendment requiring review of large industrial projects failed, 105 to 325. Two Maine towns, Brownfield and Freedom, had posted no count by Wednesday morning. Every count on this page is unofficial until the canvasses close.">
+<meta name="twitter:image" content="https://tools.dnsc.ai/assets/share/data-centers-on-the-ballot.jpg?v=20261104">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Public+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Data centers on the ballot: a cool paper page built as a tally sheet. The side that limits data centers in evergreen, the data-center side in indigo; gold only as hairlines. Light only. */
+:root{
+  --ground:#F3F6F8;--sheet:#ffffff;--ink:#161B21;--ink-2:#38414A;--ink-3:#5A636C;
+  --rule:#C3CBD3;--rule-2:#E3E7EB;--gold:#C9A24A;
+  --g:#146C4E;--g-1:#DCEFE6;--g-2:#A9D6C1;--d:#4F55B8;--d-1:#E3E4F7;--x:#B42318;--o:#4A5A68;--o-1:#E6EBEF;
+  --face:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;color:var(--ink);background:var(--ground);font-family:var(--face);font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums lining-nums}
+::selection{background:var(--g-1)}
+a{color:var(--g);text-decoration-thickness:1.5px;text-underline-offset:.18em}
+a:hover{text-decoration-thickness:3px}
+:focus-visible{outline:3px solid var(--g);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px 48px}
+@media (max-width:420px){.wrap{padding-inline:16px}}
+.dnsc-back{font-family:var(--mono);font-size:12.5px;letter-spacing:.04em;padding:10px 20px;border-bottom:1px solid rgba(127,127,127,.25);background:rgba(127,127,127,.06)}
+.dnsc-back a{color:inherit;opacity:.8;text-decoration:none}
+.dnsc-back span{opacity:.35;margin:0 10px}
+.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:10px 24px;padding:22px 0 12px;border-bottom:2px solid var(--ink)}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{width:38px;height:38px;flex:none}
+.brand .nm{font-weight:800;font-size:1rem;letter-spacing:.12em;text-transform:uppercase;line-height:1.3}
+.brand .nm span{display:block;font-weight:500;font-size:.9rem;letter-spacing:0;text-transform:none;color:var(--ink-2)}
+.ref{font-family:var(--mono);font-size:.8rem;letter-spacing:.04em;color:var(--ink-3);text-align:right;line-height:1.5}
+.ref span{display:block}
+@media (max-width:700px){.ref{text-align:left}}
+.kick,.k{font-family:var(--serif);font-style:italic;font-weight:500;font-size:calc(.8125rem*.95 + 2px);letter-spacing:0;color:var(--ink-3);margin:0 0 8px}
+.kick::before,.k::before{content:"";display:inline-block;width:18px;height:1.5px;background:var(--gold);vertical-align:.3em;margin-right:8px}
+.c{font-family:var(--mono);font-size:.74em;letter-spacing:.02em;white-space:nowrap;vertical-align:.12em}
+.c a{color:var(--ink-3);text-decoration:none;padding:0 1px}
+.c a:hover{color:var(--g);text-decoration:underline}
+p{max-width:65ch;text-wrap:pretty}
+
+/* hero: the headline on the left, the tally on the right */
+.hero{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:0 48px;align-items:center;padding:40px 0 10px}
+.hero>.ha{grid-column:1;grid-row:1;align-self:end}.hero>.hb{grid-column:1;grid-row:2;align-self:start}.hero>.tally{grid-column:2;grid-row:1/3}
+@media (max-width:860px){.hero{grid-template-columns:minmax(0,1fr);gap:22px;padding-top:26px}.hero>.ha,.hero>.hb,.hero>.tally{grid-column:1;grid-row:auto}}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(1.6rem,3.5vw,2.5rem);line-height:1.12;letter-spacing:-.015em;margin:0 0 18px;text-wrap:balance;max-width:none}
+.hero h1 .g{color:var(--g)}.hero h1 .d{color:var(--d)}
+.lede{font-weight:400;font-size:clamp(1.04rem,1.7vw,1.18rem);line-height:1.5;color:var(--ink-2);margin:0;max-width:58ch}
+.cares{margin:16px 0 0;max-width:56ch;font-size:1.02rem;line-height:1.5;color:var(--ink);padding-left:12px;border-left:3px solid var(--gold)}
+.stamp{margin:16px 0 0;font-family:var(--mono);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);max-width:none}
+.tally{margin:0;background:var(--sheet);border:1.5px solid var(--ink);border-radius:20px;padding:16px 16px 14px;max-width:380px;justify-self:center;width:100%}
+.tally svg{display:block;width:100%;height:auto}
+.tally .wl{font:500 10px var(--mono);fill:var(--ink-3);letter-spacing:.04em}
+.tally .wn{font:400 9px var(--mono);fill:var(--ink-3)}
+.tally .wg{fill:var(--g);stroke:var(--g);stroke-width:1}
+.tally .wd{fill:var(--d);stroke:var(--d);stroke-width:1}
+.tally .wp{fill:none;stroke:var(--ink-3);stroke-width:1;stroke-dasharray:2 2}
+.tally .big{display:block;font:800 clamp(1.7rem,3vw,2.3rem)/1 var(--face);letter-spacing:-.03em;color:var(--ink);margin:12px 0 4px}
+.tally .big b{color:var(--g)}
+.tally p{margin:0;font-size:.9rem;line-height:1.42;color:var(--ink-2)}
+.tally p+p{margin-top:8px}
+.tally .lg{display:flex;flex-wrap:wrap;gap:6px 14px;margin:10px 0 0;font-size:.78rem;color:var(--ink-3)}
+.tally .lg i{display:inline-block;width:11px;height:11px;border-radius:2px;vertical-align:-1px;margin-right:5px}
+.tally .lg .a i{background:var(--g)}.tally .lg .b i{background:var(--d)}.tally .lg .p i{border:1px dashed var(--ink-3)}
+@media (max-width:860px){.tally{max-width:none;justify-self:stretch}}
+
+/* jump bar */
+.jump{position:sticky;top:0;z-index:5;margin:26px -20px 0;padding:8px 20px;background:rgba(243,246,248,.92);backdrop-filter:blur(6px);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.jump::-webkit-scrollbar{display:none}
+.jump ul{display:flex;gap:6px;margin:0;padding:0;list-style:none;white-space:nowrap}
+.jump a{display:inline-block;font-family:var(--mono);font-size:.76rem;letter-spacing:.02em;color:var(--ink-2);text-decoration:none;padding:7px 10px;border-radius:999px;border:1px solid transparent;min-height:34px}
+.jump a:hover{border-color:var(--rule);background:var(--sheet);color:var(--ink)}
+@media (max-width:420px){.jump{margin-inline:-16px;padding-inline:16px}}
+
+/* chapter heads */
+.ch{margin:72px 0 22px;max-width:64ch;scroll-margin-top:60px}
+.ch h2{font-family:var(--face);font-weight:800;font-size:clamp(1.4rem,3vw,2.05rem);line-height:1.12;letter-spacing:-.025em;margin:0;text-wrap:balance}
+.ch .dek{margin:10px 0 0;color:var(--ink-2);max-width:64ch}
+@media (max-width:520px){.ch{margin-top:56px}}
+h3{font:800 1.08rem/1.25 var(--face);margin:26px 0 10px}
+.prose p{margin:0 0 14px;color:var(--ink-2)}
+.prose p b{color:var(--ink)}
+
+/* what a data center is: a drawn building and three figures */
+.dc{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:18px 32px;align-items:start;margin:18px 0 0;max-width:900px}
+@media (max-width:760px){.dc{grid-template-columns:minmax(0,1fr)}}
+.dc figure{margin:0;background:var(--sheet);border:1.5px solid var(--ink);border-radius:20px;padding:14px}
+.dc figure svg{display:block;width:100%;height:auto}
+.dc figcaption{margin-top:8px;font-size:.82rem;line-height:1.4;color:var(--ink-3)}
+.figs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0}
+.figs div{background:var(--sheet);border:1.5px solid var(--ink);border-radius:14px;padding:12px 12px 10px;min-width:0}
+.figs .n{display:block;font:800 clamp(1.3rem,2.4vw,1.75rem)/1.05 var(--face);letter-spacing:-.03em;color:var(--g);overflow-wrap:anywhere}
+.figs span.l{display:block;margin-top:6px;font-size:.84rem;line-height:1.35;color:var(--ink-2)}
+@media (max-width:560px){.figs{grid-template-columns:minmax(0,1fr)}}
+
+/* the kinds of question: a glossary ledger */
+.kinds{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 18px;margin:18px 0 0;padding:0;list-style:none;max-width:900px}
+@media (max-width:700px){.kinds{grid-template-columns:minmax(0,1fr)}}
+.kinds li{background:var(--sheet);border:1.5px solid var(--ink);border-radius:16px;padding:12px 14px 10px;min-width:0}
+.kinds li i{font-style:normal;font-weight:800;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;display:inline-block;padding:1px 6px;border-radius:5px;margin:0 0 6px}
+.kinds li p{margin:0;font-size:.94rem;line-height:1.45;color:var(--ink-2)}
+.kinds li p b{color:var(--ink)}
+.kinds li .ex{display:block;margin-top:6px;font-family:var(--mono);font-size:.7rem;letter-spacing:.02em;color:var(--ink-3);line-height:1.45}
+i.ban,i.cap{color:var(--g);background:var(--g-1)}
+i.mor{color:#0F5F6B;background:#D9EEF1}
+i.vote,i.rev{color:#6A4A00;background:#F6ECCF}
+i.ref,i.zon{color:#3F5A84;background:#E1E9F6}
+i.adv{color:var(--ink-2);background:var(--o-1)}
+i.tax,i.allow{color:var(--d);background:var(--d-1)}
+i.tr{font-style:normal;font-family:var(--mono);font-weight:500;font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;color:var(--x);border:1px solid var(--x);border-radius:4px;padding:0 5px;margin-left:4px;vertical-align:1px;white-space:nowrap}
+
+/* the national board: a tally sheet by state */
+.board{margin:22px 0 0;background:var(--sheet);border:1.5px solid var(--ink);border-radius:20px;padding:6px 16px 10px;position:relative}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;padding:10px 0 8px;font-size:.84rem;color:var(--ink-2);border-bottom:1px solid var(--rule)}
+.legend i{display:inline-block;width:14px;height:14px;border-radius:3px;vertical-align:-2px;margin-right:6px}
+.legend .lg i{background:var(--g)}.legend .ld i{background:var(--d)}
+.legend .l5 i{width:2px;height:16px;background:var(--ink);border-radius:0;vertical-align:-4px}
+.st h3{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin:18px 0 2px;padding:10px 0 8px;border-bottom:2px solid var(--ink);font-size:1.05rem;position:sticky;top:50px;background:var(--sheet);z-index:2}
+.st h3 .ab{font-family:var(--serif);font-weight:600;font-size:1.5rem;letter-spacing:.02em;color:var(--g);min-width:2.2ch}
+.st h3 .ct{font-family:var(--mono);font-weight:400;font-size:.72rem;letter-spacing:.02em;color:var(--ink-3);margin-left:auto}
+@media (max-width:560px){.st h3 .ct{margin-left:0;flex-basis:100%}}
+.row{display:grid;grid-template-columns:minmax(0,190px) minmax(0,1fr) minmax(0,150px) minmax(0,256px) 118px;gap:4px 16px;align-items:center;padding:12px 0;border-bottom:1px solid var(--rule-2)}
+.st .row:last-child{border-bottom:0}
+.row .who b{display:block;font-size:.98rem;line-height:1.25;color:var(--ink)}
+.row .who span{display:block;font-family:var(--mono);font-size:.7rem;letter-spacing:.02em;color:var(--ink-3);margin-top:3px;line-height:1.5}
+.row .who .off{color:var(--ink-3);text-decoration-thickness:1px}
+.row .kind{font-size:.86rem;line-height:1.38;color:var(--ink-2)}
+.row .kind i{font-style:normal;font-weight:800;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;display:inline-block;padding:1px 6px;border-radius:5px;margin-right:6px}
+.row .bar{position:relative;display:flex;height:20px;background:var(--rule-2);border-radius:5px;overflow:hidden;min-width:0}
+.row .bar span{display:block;height:100%;flex:none}
+.row .bar .lim{background:var(--g)}.row .bar .dc{background:var(--d)}
+.row .bar::after{content:"";position:absolute;left:50%;top:-2px;bottom:-2px;width:2px;background:var(--ink)}
+.row .bar.none{background:repeating-linear-gradient(135deg,var(--rule-2) 0 6px,var(--sheet) 6px 12px)}
+.row .bar.none::after{display:none}
+.row .nums{display:grid;grid-template-columns:repeat(4,minmax(0,auto));gap:0 10px;font-family:var(--mono);font-size:.78rem;color:var(--ink-2);white-space:nowrap}
+.row .nums b{font-weight:500;color:var(--ink)}
+.row .nums .pc{font-weight:500;color:var(--ink)}
+.row .nums small{display:block;font-size:.62rem;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-3)}
+.row .res{font-family:var(--mono);font-size:.7rem;letter-spacing:.05em;text-transform:uppercase;font-weight:500;text-align:right;line-height:1.35}
+.row.won .res{color:var(--g)}.row.lost .res{color:var(--d)}.row.pend .res{color:var(--ink-3)}
+.row.lost{background:var(--d-1);margin:0 -16px;padding-inline:16px;border-radius:0}
+@media (max-width:1000px){.row{grid-template-columns:minmax(0,1fr) minmax(0,1fr) 118px;grid-template-areas:"who kind res" "bar bar bar" "nums nums nums"}.row .who{grid-area:who}.row .kind{grid-area:kind}.row .res{grid-area:res}.row .bar{grid-area:bar;margin-top:6px}.row .nums{grid-area:nums;margin-top:4px}}
+@media (max-width:600px){.row{grid-template-columns:minmax(0,1fr) 104px;grid-template-areas:"who res" "kind kind" "bar bar" "nums nums"}.row .nums{grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 10px}.board{padding-inline:12px}.row.lost{margin:0 -12px;padding-inline:12px}.row .res{font-size:.64rem}}
+.tnote{margin:12px 0 0;font-size:.9rem;line-height:1.45;color:var(--ink-2);max-width:72ch}
+
+/* Ohio's 21: a dot plot, one line per place */
+.dots{margin:22px 0 0;padding:0;list-style:none;background:var(--sheet);border:1.5px solid var(--ink);border-radius:20px;padding:6px 16px 10px}
+.axis{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr) minmax(0,300px);gap:4px 16px;padding:10px 0 8px;border-bottom:1px solid var(--rule);font-family:var(--mono);font-size:.7rem;letter-spacing:.03em;color:var(--ink-3)}
+.axis .ax{display:flex;justify-content:space-between}
+.dr{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr) minmax(0,300px);gap:4px 16px;align-items:center;padding:11px 0;border-bottom:1px solid var(--rule-2)}
+.dots>.dr:last-child{border-bottom:0}
+.dr .dn b{display:block;font-size:.96rem;line-height:1.25;color:var(--ink)}
+.dr .dn span{display:block;font-family:var(--mono);font-size:.7rem;letter-spacing:.02em;color:var(--ink-3);margin-top:3px;line-height:1.5}
+.dr .dn span i{font-style:normal;font-family:var(--face);font-weight:800;font-size:.64rem;letter-spacing:.06em;text-transform:uppercase;display:inline-block;padding:0 5px;border-radius:4px}
+.dr .dt{position:relative;height:22px;min-width:0;background:linear-gradient(to right,var(--rule-2),var(--g-2));border-radius:4px}
+.dr .dt::before{content:"";position:absolute;left:0;top:-3px;bottom:-3px;width:2px;background:var(--ink)}
+.dr .dt .dot{position:absolute;top:50%;width:16px;height:16px;margin:-8px 0 0 -8px;border-radius:50%;background:var(--g);border:2.5px solid var(--sheet);box-shadow:0 0 0 1.5px var(--g)}
+.dr .dv{display:grid;grid-template-columns:repeat(4,minmax(0,auto));gap:0 10px;font-family:var(--mono);font-size:.78rem;color:var(--ink-2);white-space:nowrap}
+.dr .dv b{font-weight:500;color:var(--ink)}
+.dr .dv small{display:block;font-size:.62rem;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-3)}
+.dr .dnote{grid-column:1/-1;margin:4px 0 0;font-size:.88rem;line-height:1.45;color:var(--ink-2);max-width:80ch}
+.dr.group{display:block}
+.dr.group>.dn{margin-bottom:4px}
+.dsub{list-style:none;margin:8px 0 0;padding:0 0 0 14px;border-left:2px solid var(--rule)}
+.dsub .dr{padding:8px 0}
+.dsub .dr:last-child{border-bottom:0}
+.dsub .dr .dn b{font-size:.9rem;font-weight:700}
+@media (max-width:980px){.axis{display:none}.dr{grid-template-columns:minmax(0,1fr);gap:6px}.dr .dv{grid-template-columns:repeat(4,minmax(0,auto))}}
+@media (max-width:520px){.dr .dv{grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 10px}.dots{padding-inline:12px}}
+.maxis{display:none;font-family:var(--mono);font-size:.7rem;letter-spacing:.03em;color:var(--ink-3);padding:10px 0 8px;border-bottom:1px solid var(--rule)}
+@media (max-width:980px){.maxis{display:block}}
+
+/* Trenton: a big count and a docket */
+.tr2{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:22px 36px;align-items:start;margin:18px 0 0}
+@media (max-width:860px){.tr2{grid-template-columns:minmax(0,1fr)}}
+.count{background:var(--sheet);border:1.5px solid var(--ink);border-radius:20px;padding:16px 18px 14px;position:sticky;top:60px}
+@media (max-width:860px){.count{position:static}}
+.count .n{display:block;font:800 clamp(2.2rem,5vw,3.4rem)/1 var(--face);letter-spacing:-.04em;color:var(--g)}
+.count .n small{display:block;font:800 clamp(1.1rem,2vw,1.4rem)/1.1 var(--face);letter-spacing:-.02em;color:var(--ink-3);margin-top:4px}
+.count .n small b{color:var(--d)}
+.count p{margin:10px 0 0;font-size:.92rem;line-height:1.45;color:var(--ink-2)}
+.count .line{margin-top:12px;padding-top:12px;border-top:1px solid var(--rule)}
+.count .line b{display:block;font:800 1.5rem/1.05 var(--face);letter-spacing:-.03em;color:var(--ink)}
+.docket{list-style:none;margin:0;padding:0;position:relative}
+.docket::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:var(--rule)}
+.docket li{position:relative;padding:0 0 18px 26px}
+.docket li::before{content:"";position:absolute;left:0;top:7px;width:12px;height:12px;border-radius:50%;background:var(--sheet);border:2.5px solid var(--g)}
+.docket li.open::before{border-color:var(--ink-3);border-style:dashed}
+.docket time,.docket .when{display:block;font-family:var(--mono);font-size:.76rem;letter-spacing:.03em;color:var(--g);margin-bottom:2px}
+.docket li.open .when{color:var(--ink-3)}
+.docket p{margin:0 0 6px;color:var(--ink-2);max-width:62ch}
+.docket p b{color:var(--ink)}
+.docket p:last-child{margin:0}
+
+/* statehouse: four bill cards and the deal */
+.bills{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0 0}
+@media (max-width:960px){.bills{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.bills{grid-template-columns:minmax(0,1fr)}}
+.bill{background:var(--sheet);border:1.5px solid var(--ink);border-radius:16px;padding:12px 14px 10px;min-width:0;display:flex;flex-direction:column}
+.bill .no{font-family:var(--serif);font-weight:600;font-size:1.35rem;letter-spacing:-.01em;color:var(--ink)}
+.bill .ti{margin:2px 0 8px;font-weight:700;font-size:.92rem;line-height:1.3;color:var(--ink)}
+.bill p{margin:0 0 8px;font-size:.88rem;line-height:1.45;color:var(--ink-2)}
+.bill .stt{margin-top:auto;font-family:var(--mono);font-size:.7rem;letter-spacing:.03em;color:var(--ink-3);line-height:1.5;padding-top:8px;border-top:1px solid var(--rule-2)}
+.bill .stt b{display:block;font-weight:500;color:var(--ink)}
+.deal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:22px 0 0}
+@media (max-width:860px){.deal{grid-template-columns:minmax(0,1fr)}}
+.deal div{background:var(--sheet);border:1.5px solid var(--ink);border-radius:16px;padding:14px 16px 12px;min-width:0}
+.deal h3{margin:0 0 8px;font-size:1rem}
+.deal p{margin:0 0 8px;font-size:.92rem;line-height:1.45;color:var(--ink-2)}
+.deal p:last-child{margin:0}
+.deal p b{color:var(--ink)}
+
+/* next: a short rail */
+.entries{display:grid;gap:14px;margin:0;padding:0;list-style:none;max-width:72ch}
+.entries li{display:grid;grid-template-columns:13ch 1fr;gap:14px;align-items:start;min-width:0;padding:14px 0 0;border-top:1px solid var(--rule)}
+.entries time,.entries .when{font-family:var(--mono);font-size:.78rem;color:var(--g);padding-top:4px;white-space:nowrap}
+.entries .what{min-width:0}
+.entries .what p{margin:0 0 8px;color:var(--ink-2)}
+.entries .what p:last-child{margin-bottom:0}
+.entries .what p b{color:var(--ink)}
+@media (max-width:520px){.entries li{grid-template-columns:1fr;gap:4px}.entries time,.entries .when{padding-top:0}}
+.note{background:var(--sheet);border:1.5px solid var(--ink);border-radius:16px;padding:14px 18px;margin:22px 0 0;max-width:72ch}
+.note p{margin:0 0 8px;color:var(--ink-2)}
+.note p:last-child{margin:0}
+.note b{color:var(--ink)}
+
+/* sources */
+.srcs{margin-top:72px;max-width:860px;scroll-margin-top:60px}
+ol.src{margin:0;padding-left:1.8em;font-size:.92rem;line-height:1.5;color:var(--ink-2)}
+ol.src li{overflow-wrap:anywhere;margin-bottom:7px;scroll-margin-top:60px}
+ol.src li:target{background:var(--g-1);outline:2px solid var(--g-1)}
+.tm{font-size:.85rem;color:var(--ink-3);margin:12px 0 0}
+footer{margin-top:44px;padding-top:18px;border-top:2px solid var(--ink);max-width:860px}
+footer p{margin:0;font-size:1rem;line-height:1.6;color:var(--ink-2)}
+footer p.sm{margin-top:8px;font-size:.92rem;color:var(--ink-3)}
+
+/* motion: only when allowed; without it every element is static and visible */
+.mo .rise{opacity:0;transform:translateY(12px);transition:opacity .5s ease,transform .7s cubic-bezier(.16,1,.3,1)}
+.mo .rise.on{opacity:1;transform:none}
+.mo .tally rect{opacity:0;transition:opacity .25s ease}
+.mo .tally.on rect{opacity:1}
+.mo .row .bar span{transition:width .9s cubic-bezier(.16,1,.3,1)}
+.mo .st:not(.on) .row .bar span{width:0!important}
+.mo .dr .dot{transition:left .9s cubic-bezier(.16,1,.3,1)}
+.mo .dots:not(.on) .dr .dot{left:0!important}
+@media (prefers-reduced-motion:reduce){.mo .rise{opacity:1!important;transform:none!important;transition:none!important}.mo .tally rect{opacity:1!important}}
+@media print{.mo *{opacity:1!important;transform:none!important}}
+</style>
+<link rel="icon" href="/assets/favicon.png">
+</head>
+<body>
+<div class="dnsc-back"><a href="https://tools.dnsc.ai/">&larr; The Well</a><span>&middot;</span><a href="https://dnsc.ai">dnsc.ai</a></div>
+<div class="wrap">
+
+<header class="top">
+  <div class="brand">
+    <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="16" fill="none" stroke="#161B21" stroke-width="2.4"/><g fill="#161B21"><circle cx="20" cy="7" r="2.6"/><circle cx="32.4" cy="16" r="2.6"/><circle cx="27.6" cy="30.5" r="2.6"/><circle cx="12.4" cy="30.5" r="2.6"/><circle cx="7.6" cy="16" r="2.6"/></g></svg>
+    <div class="nm">DNSC<span>From the public record</span></div>
+  </div>
+  <div class="ref"><span>Data centers on the ballot &middot; November 4, 2026</span><span>Understanding the week, from the record</span></div>
+</header>
+
+<!-- 1 · the headline and the tally -->
+<section class="hero">
+  <div class="ha">
+    <p class="kick">Ten states &middot; 46 local ballot questions &middot; November 3, 2026</p>
+    <h1>46 data-center questions were on local ballots in ten states on November 3. Of the 44 with a count, <span class="g">voters took the side that limits data centers in 43.</span> Ohio had 21 of the questions, in 18 places, and the limiting side won all 21.</h1>
+    <p class="lede">The one exception was the City of Harwood, North Dakota, where a charter amendment requiring review of large industrial projects failed, 105 to 325. <span class="c"><a href="#s1">[1]</a><a href="#s2">[2]</a></span> Two Maine towns, Brownfield and Freedom, had posted no count by Wednesday morning. <span class="c"><a href="#s3">[3]</a></span> The roster is Ballotpedia&rsquo;s 41 questions plus five Maine and Kansas towns added by a second tracker; the counts are the county and town sheets where this desk could reach them, and a tracker&rsquo;s read where it could not. <span class="c"><a href="#s3">[3]</a><a href="#s4">[4]</a><a href="#s5">[5]</a><a href="#s6">[6]</a></span> Every count on this page is unofficial until the canvasses close.</p>
+  </div>
+  <figure class="tally rise">
+    <svg viewBox="0 0 372 230" role="img" aria-label="Forty-six small squares in ten rows, one row per state. Forty-three are filled in for the side that limits data centers, one in North Dakota is filled in for the data-center side, and two in Maine are outlined with no count yet."><text x="0" y="17.5" class="wl">OH</text><rect x="32" y="8" width="10.5" height="10.5" rx="2" class="wg"/><rect x="45" y="8" width="10.5" height="10.5" rx="2" class="wg"/><rect x="58" y="8" width="10.5" height="10.5" rx="2" class="wg"/><rect x="71" y="8" width="10.5" height="10.5" rx="2" class="wg"/><rect x="84" y="8" width="10.5" height="10.5" rx="2" class="wg"/><rect x="97" y="8" width="10.5" height="10.5" rx="2" class="wg"/><rect x="110" y="8" width="10.5" height="10.5" rx="2" class="wg"/><rect x="123" y="8" width="10.5" height="10.5" rx="2" class="wg"/><rect x="136" y="8" width="10.5" height="10.5" rx="2" class="wg"/><rect x="149" y="8" width="10.5" height="10.5" rx="2" class="wg"/><rect x="162" y="8" width="10.5" height="10.5" rx="2" class="wg"/><rect x="175" y="8" width="10.5" height="10.5" rx="2" class="wg"/><rect x="188" y="8" width="10.5" height="10.5" rx="2" class="wg"/><rect x="201" y="8" width="10.5" height="10.5" rx="2" class="wg"/><rect x="214" y="8" width="10.5" height="10.5" rx="2" class="wg"/><rect x="227" y="8" width="10.5" height="10.5" rx="2" class="wg"/><rect x="240" y="8" width="10.5" height="10.5" rx="2" class="wg"/><rect x="253" y="8" width="10.5" height="10.5" rx="2" class="wg"/><rect x="266" y="8" width="10.5" height="10.5" rx="2" class="wg"/><rect x="279" y="8" width="10.5" height="10.5" rx="2" class="wg"/><rect x="292" y="8" width="10.5" height="10.5" rx="2" class="wg"/><text x="372" y="17.5" text-anchor="end" class="wn">21 of 21</text><text x="0" y="39.5" class="wl">ME</text><rect x="32" y="30" width="10.5" height="10.5" rx="2" class="wg"/><rect x="45" y="30" width="10.5" height="10.5" rx="2" class="wg"/><rect x="58" y="30" width="10.5" height="10.5" rx="2" class="wg"/><rect x="71" y="30" width="10.5" height="10.5" rx="2" class="wg"/><rect x="84" y="30" width="10.5" height="10.5" rx="2" class="wg"/><rect x="97" y="30" width="10.5" height="10.5" rx="2" class="wg"/><rect x="110" y="30" width="10.5" height="10.5" rx="2" class="wp"/><rect x="123" y="30" width="10.5" height="10.5" rx="2" class="wp"/><text x="372" y="39.5" text-anchor="end" class="wn">6 of 6, 2 pending</text><text x="0" y="61.5" class="wl">IL</text><rect x="32" y="52" width="10.5" height="10.5" rx="2" class="wg"/><rect x="45" y="52" width="10.5" height="10.5" rx="2" class="wg"/><rect x="58" y="52" width="10.5" height="10.5" rx="2" class="wg"/><rect x="71" y="52" width="10.5" height="10.5" rx="2" class="wg"/><rect x="84" y="52" width="10.5" height="10.5" rx="2" class="wg"/><rect x="97" y="52" width="10.5" height="10.5" rx="2" class="wg"/><rect x="110" y="52" width="10.5" height="10.5" rx="2" class="wg"/><text x="372" y="61.5" text-anchor="end" class="wn">7 of 7</text><text x="0" y="83.5" class="wl">KS</text><rect x="32" y="74" width="10.5" height="10.5" rx="2" class="wg"/><rect x="45" y="74" width="10.5" height="10.5" rx="2" class="wg"/><rect x="58" y="74" width="10.5" height="10.5" rx="2" class="wg"/><rect x="71" y="74" width="10.5" height="10.5" rx="2" class="wg"/><text x="372" y="83.5" text-anchor="end" class="wn">4 of 4</text><text x="0" y="105.5" class="wl">CA</text><rect x="32" y="96" width="10.5" height="10.5" rx="2" class="wg"/><text x="372" y="105.5" text-anchor="end" class="wn">1 of 1</text><text x="0" y="127.5" class="wl">FL</text><rect x="32" y="118" width="10.5" height="10.5" rx="2" class="wg"/><text x="372" y="127.5" text-anchor="end" class="wn">1 of 1</text><text x="0" y="149.5" class="wl">ND</text><rect x="32" y="140" width="10.5" height="10.5" rx="2" class="wd"/><text x="372" y="149.5" text-anchor="end" class="wn">0 of 1</text><text x="0" y="171.5" class="wl">NJ</text><rect x="32" y="162" width="10.5" height="10.5" rx="2" class="wg"/><text x="372" y="171.5" text-anchor="end" class="wn">1 of 1</text><text x="0" y="193.5" class="wl">NV</text><rect x="32" y="184" width="10.5" height="10.5" rx="2" class="wg"/><text x="372" y="193.5" text-anchor="end" class="wn">1 of 1</text><text x="0" y="215.5" class="wl">WI</text><rect x="32" y="206" width="10.5" height="10.5" rx="2" class="wg"/><text x="372" y="215.5" text-anchor="end" class="wn">1 of 1</text></svg>
+    <span class="big"><b>43</b> of 44</span>
+    <p>Each square is one question. Filled green: the side that limits data centers won. Filled indigo: the data-center side won, once, in Harwood. Dashed: no count yet.</p>
+    <p class="lg"><span class="a"><i></i>limits won</span><span class="b"><i></i>data-center side won</span><span class="p"><i></i>no count yet</span></p>
+  </figure>
+  <div class="hb">
+    <p class="cares">A data center is a building full of computers that stores and serves the internet&rsquo;s websites, apps and AI models, and it draws electricity and cooling water around the clock. The questions below asked a town or city whether to forbid one, cap its size, pause permits, require a public vote, keep or repeal a rezoning, or set terms on a tax break.</p>
+    <p class="stamp"><time datetime="2026-11-04">Posted November 4, 2026</time> &middot; Unofficial results; Ohio&rsquo;s canvass closes November 24</p>
+  </div>
+</section>
+
+<nav class="jump" aria-label="Sections of this story">
+  <ul>
+    <li><a href="#what">What a data center is</a></li>
+    <li><a href="#board">The board, 46 questions</a></li>
+    <li><a href="#ohio">Ohio&rsquo;s 21</a></li>
+    <li><a href="#trenton">Trenton</a></li>
+    <li><a href="#statehouse">The statehouse</a></li>
+    <li><a href="#next">What happens next</a></li>
+    <li><a href="#srcs">Sources</a></li>
+  </ul>
+</nav>
+
+<!-- 2 · who cares: what a data center is, why a town votes on one, what each question does -->
+<section class="ch prose" id="what">
+  <p class="k">What the words mean</p>
+  <h2>Data centers used 4.4 percent of U.S. electricity in 2023. A town votes on one because zoning, a city charter and a tax break are all local decisions.</h2>
+  <p class="dek">The building, the power it draws, and the eight kinds of question that were on the ballot.</p>
+</section>
+<div class="dc">
+  <figure class="rise">
+    <svg viewBox="0 0 300 190" role="img" aria-label="A drawn data center: a long single-story building with rows of server racks inside, a substation feeding it power from the left, and cooling water piped in from below.">
+      <defs><pattern id="rk" width="10" height="8" patternUnits="userSpaceOnUse"><rect x="1" y="1" width="8" height="6" rx="1" fill="none" stroke="#161B21" stroke-width=".9"/></pattern></defs>
+      <text x="8" y="16" style="font:500 10px IBM Plex Mono,monospace;fill:#5A636C;letter-spacing:.04em">one building, drawn to show the parts</text>
+      <!-- substation -->
+      <g stroke="#4F55B8" stroke-width="1.6" fill="none"><rect x="12" y="78" width="40" height="40" rx="3"/><path d="M20 118v10M32 118v10M44 118v10M14 78l8-14h16l8 14M32 64V52"/><path d="M52 98h20" stroke-dasharray="3 3"/></g>
+      <text x="32" y="140" text-anchor="middle" style="font:500 8.5px IBM Plex Mono,monospace;fill:#4F55B8">power in</text>
+      <!-- building -->
+      <g><rect x="72" y="58" width="216" height="80" rx="3" fill="#fff" stroke="#161B21" stroke-width="1.8"/><rect x="80" y="70" width="200" height="56" fill="url(#rk)"/><path d="M72 58l10-12h206l-10 12" fill="#F3F6F8" stroke="#161B21" stroke-width="1.8" stroke-linejoin="round"/></g>
+      <text x="180" y="152" text-anchor="middle" style="font:500 8.5px IBM Plex Mono,monospace;fill:#38414A">rows of servers: storage, websites, apps, AI models</text>
+      <!-- cooling water -->
+      <g stroke="#146C4E" stroke-width="1.6" fill="none"><path d="M120 138v22h120v-22" /><path d="M130 176c6-6 12-6 18 0s12 6 18 0 12-6 18 0 12 6 18 0 12-6 18 0" stroke-linecap="round"/></g>
+      <text x="180" y="170" text-anchor="middle" style="font:500 8.5px IBM Plex Mono,monospace;fill:#146C4E">cooling water</text>
+      <!-- heat out -->
+      <g stroke="#B42318" stroke-width="1.4" fill="none" stroke-linecap="round"><path d="M100 40c3-6-3-10 0-16M120 40c3-6-3-10 0-16M140 40c3-6-3-10 0-16"/></g>
+      <text x="120" y="20" text-anchor="middle" style="font:500 8.5px IBM Plex Mono,monospace;fill:#B42318" dy="0">heat out</text>
+    </svg>
+    <figcaption>The parts a town&rsquo;s question reaches: how big the building may be, how much power it may draw, how much water, and whether it may be built at all.</figcaption>
+  </figure>
+  <div>
+    <p>Every search, message, video, cloud file and AI answer runs on a computer somewhere, and that somewhere is a data center: a warehouse-sized building of server racks that runs day and night. The Department of Energy&rsquo;s December 2024 report, prepared by Lawrence Berkeley National Laboratory, put U.S. data centers at about 176 terawatt-hours of electricity in 2023, 4.4 percent of everything the country used, up from 58 terawatt-hours in 2014, and projected 6.7 to 12 percent of U.S. electricity by 2028. <span class="c"><a href="#s7">[7]</a></span> The Energy Information Administration said in January 2026 that the country was in its strongest four-year run of electricity demand growth since 2000, fueled by data centers; in May it put servers at about 7 percent of commercial-sector electricity in 2025; and its September outlook has U.S. electricity sales at 4,135 billion kilowatt-hours in 2026 and 4,211 billion in 2027, driven by data centers and manufacturing. <span class="c"><a href="#s8">[8]</a><a href="#s9">[9]</a><a href="#s10">[10]</a></span></p>
+    <div class="figs rise">
+      <div><span class="n">176 TWh</span><span class="l">U.S. data centers&rsquo; electricity in 2023, 4.4 percent of the national total <span class="c"><a href="#s7">[7]</a></span></span></div>
+      <div><span class="n">6.7 to 12%</span><span class="l">the report&rsquo;s projected share of U.S. electricity by 2028, 325 to 580 TWh <span class="c"><a href="#s7">[7]</a></span></span></div>
+      <div><span class="n">4,135</span><span class="l">billion kilowatt-hours of U.S. electricity sales forecast for 2026, 4,211 in 2027 <span class="c"><a href="#s10">[10]</a></span></span></div>
+    </div>
+    <p style="margin-top:16px">A town votes on one because the decisions that let a data center be built are local. Where a building may go is zoning. What a city may do at all is written in its charter, which voters can amend by petition; in Ohio, the state constitution sets the signatures needed at 10 percent of the votes cast at the last general municipal election, the rule the Supreme Court of Ohio applied in the Trenton case below. <span class="c"><a href="#s11">[11]</a></span> A council&rsquo;s rezoning ordinance can be sent to the voters by petition. And a property tax abatement or a sales-tax exemption is an agreement a council or a state authority signs, which voters can condition. A megawatt is a measure of power demand; five of Ohio&rsquo;s amendments draw their line at 25 megawatts, the same line the state&rsquo;s utility regulator used in 2025 for its data-center tariff. <span class="c"><a href="#s12">[12]</a><a href="#s13">[13]</a><a href="#s14">[14]</a><a href="#s15">[15]</a><a href="#s16">[16]</a><a href="#s17">[17]</a></span></p>
+  </div>
+</div>
+<ul class="kinds">
+  <li><i class="ban">Charter ban</i><p>Adds a line to the city&rsquo;s charter forbidding data centers. The charter is the city&rsquo;s own constitution; a future council cannot repeal the line without another public vote.</p><span class="ex">Urbana, Piqua, Pataskala, Granville, Upper Sandusky, Edgewater, Alhambra</span></li>
+  <li><i class="cap">Size cap in megawatts</i><p>Forbids only data centers above a power line, 25 megawatts in the five Ohio amendments; smaller server rooms stay legal. A yes vote limits.</p><span class="ex">Trenton, Defiance, Conneaut, Oregon, Sunbury; Ottawa, Kansas; Emporia&rsquo;s 10 MW</span></li>
+  <li><i class="mor">Moratorium</i><p>A pause on data-center permits and applications for a set time, 180 days in most of the Maine towns, while the town writes rules.</p><span class="ex">Peru, Wells, Wiscasset, Eliot, Sabattus, Brownfield, Freedom (Maine); Bloomington&rsquo;s advisory asks for one</span></li>
+  <li><i class="vote">Voter-approval requirement</i><p>Large projects go to a public vote before the city may approve them. The building is still allowed; the decision moves from council to the ballot.</p><span class="ex">Grove City (50 acres, 20 MW or 500,000 gallons a day); Janesville ($450 million on the former GM site)</span></li>
+  <li><i class="ref">Rezoning referendum</i><p>Council already rezoned the land; petitioners put that ordinance to the voters. Yes keeps the rezoning, no repeals it, so here a no vote is the side that limits.</p><span class="ex">Wilmington&rsquo;s four ordinances; Ashville&rsquo;s referendum on a negotiating term sheet works the same way</span></li>
+  <li><i class="adv">Advisory question</i><p>Nonbinding. It tells officials what residents want and changes no law. Some asked &ldquo;allow?&rdquo; and some asked &ldquo;limit?&rdquo;, so the limiting side is no on the first and yes on the second.</p><span class="ex">Five Illinois townships and Morgan County; Monroeville; Downe Township</span></li>
+  <li><i class="tax">Tax-abatement terms, or allow</i><p>Sets conditions a developer must meet to get an incentive, or asks outright whether to add data centers as an allowed use. On an allow question, no is the side that limits.</p><span class="ex">Perry&rsquo;s financial guarantees; Boulder City&rsquo;s land-use question</span></li>
+  <li><i class="zon">Adopt township zoning</i><p>Two Adams County townships had no zoning at all. Adopting it gives the trustees a say over where a data center may go on farmland. A review requirement, Harwood&rsquo;s question, adds an independent review and a hearing before approval.</p><span class="ex">Monroe Township, Sprigg Township; Harwood, North Dakota</span></li>
+</ul>
+
+<!-- 3 · the national board -->
+<section class="ch" id="board">
+  <p class="k">The board</p>
+  <h2>43 of 44. The limiting side took between 52.6 and 88.3 percent everywhere it won. In Harwood it took 24.4.</h2>
+  <p class="dek">All 46 questions, grouped by state, Ohio first. Each bar splits yes from no; the green part is the side that limits data centers, the indigo part the data-center side, so an &ldquo;allow&rdquo; question that failed reads green. Rows marked <i class="tr">tracker only</i> carry a tracker&rsquo;s read of the count because the county or town sheet could not be reached by this desk; 15 of the 44 counted rows are marked. <span class="c"><a href="#s3">[3]</a><a href="#s4">[4]</a><a href="#s6">[6]</a></span></p>
+</section>
+<div class="board">
+  <div class="legend"><span class="lg"><i></i>Side that limits data centers</span><span class="ld"><i></i>Data-center side</span><span class="l5"><i></i>50 percent</span></div>
+<div class="st" id="st-oh"><h3><span class="ab">OH</span>Ohio<span class="ct">21 questions &middot; limiting side 21 of 21</span></h3>
+<div class="row won">
+  <div class="who"><b>City of Trenton</b><span>Butler County &middot; Issue 17 &middot; 8 of 8 <span class="c"><a href="#s12">[12]</a></span></span><span><a class="off" href="https://liveresults.boe.ohio.gov/ENR/butlerohenr/24/en/Index_24.html" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="cap">Size cap</i>Charter amendment: no data center above 25 megawatts of monthly demand or peak load. The Prologis campus already under construction is outside its reach.</div>
+  <div class="bar" role="img" aria-label="Yes 79.7 percent, no 20.3 percent; the side that limits data centers took 79.7 percent"><span class="y lim" style="width:79.68%"></span><span class="n dc" style="width:20.32%"></span></div>
+  <div class="nums"><span><small>yes</small><b>3,541</b></span><span><small>no</small>903</span><span><small>limiting side</small><span class="pc">79.7%</span></span><span><small>margin</small>+2,638</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>City of Urbana</b><span>Champaign County &middot; 8 of 8 <span class="c"><a href="#s18">[18]</a></span></span><span><a class="off" href="https://www.boe.ohio.gov/champaign/c/elecres/20261103results.pdf" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="ban">Ban</i>Charter amendment: no data centers built in the city.</div>
+  <div class="bar" role="img" aria-label="Yes 77.3 percent, no 22.7 percent; the side that limits data centers took 77.3 percent"><span class="y lim" style="width:77.25%"></span><span class="n dc" style="width:22.75%"></span></div>
+  <div class="nums"><span><small>yes</small><b>2,978</b></span><span><small>no</small>877</span><span><small>limiting side</small><span class="pc">77.3%</span></span><span><small>margin</small>+2,101</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>City of Piqua</b><span>Miami County &middot; 16 of 16 <span class="c"><a href="#s19">[19]</a></span></span><span><a class="off" href="https://www.boe.ohio.gov/miami/c/elecres/20261103results.pdf" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="ban">Ban</i>Charter amendment: no data center built in the city.</div>
+  <div class="bar" role="img" aria-label="Yes 66.7 percent, no 33.3 percent; the side that limits data centers took 66.7 percent"><span class="y lim" style="width:66.70%"></span><span class="n dc" style="width:33.30%"></span></div>
+  <div class="nums"><span><small>yes</small><b>4,061</b></span><span><small>no</small>2,027</span><span><small>limiting side</small><span class="pc">66.7%</span></span><span><small>margin</small>+2,034</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>City of Hubbard</b><span>Trumbull County &middot; final unofficial <span class="c"><a href="#s20">[20]</a></span></span><span><a class="off" href="https://boe.co.trumbull.oh.gov/pdfs/Election%20Summary.pdf" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="ban">Ban</i>Initiated ordinance: no data centers inside city limits, with no megawatt line.</div>
+  <div class="bar" role="img" aria-label="Yes 76.6 percent, no 23.4 percent; the side that limits data centers took 76.6 percent"><span class="y lim" style="width:76.58%"></span><span class="n dc" style="width:23.42%"></span></div>
+  <div class="nums"><span><small>yes</small><b>2,622</b></span><span><small>no</small>802</span><span><small>limiting side</small><span class="pc">76.6%</span></span><span><small>margin</small>+1,820</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>City of Defiance</b><span>Defiance County &middot; 12 of 12 <span class="c"><a href="#s13">[13]</a></span></span><span><a class="off" href="https://www.boe.ohio.gov/defiance/c/elecres/20261103results.pdf" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="cap">Size cap</i>Charter amendment: no data center above 25 megawatts of demand or peak load.</div>
+  <div class="bar" role="img" aria-label="Yes 64.7 percent, no 35.3 percent; the side that limits data centers took 64.7 percent"><span class="y lim" style="width:64.73%"></span><span class="n dc" style="width:35.27%"></span></div>
+  <div class="nums"><span><small>yes</small><b>3,823</b></span><span><small>no</small>2,083</span><span><small>limiting side</small><span class="pc">64.7%</span></span><span><small>margin</small>+1,740</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>City of Conneaut</b><span>Ashtabula County &middot; Issue 10 &middot; final unofficial <span class="c"><a href="#s14">[14]</a></span></span><span><a class="off" href="https://www.boe.ohio.gov/ashtabula/c/elecres/20261103results.pdf" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="cap">Size cap</i>Charter amendment: no data center above 25 megawatts of monthly demand or peak load.</div>
+  <div class="bar" role="img" aria-label="Yes 65.4 percent, no 34.6 percent; the side that limits data centers took 65.4 percent"><span class="y lim" style="width:65.39%"></span><span class="n dc" style="width:34.61%"></span></div>
+  <div class="nums"><span><small>yes</small><b>2,301</b></span><span><small>no</small>1,218</span><span><small>limiting side</small><span class="pc">65.4%</span></span><span><small>margin</small>+1,083</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>City of Pataskala</b><span>Licking County &middot; final unofficial <span class="c"><a href="#s21">[21]</a></span></span><span><a class="off" href="https://www.boe.ohio.gov/licking/c/elecres/20261103results.pdf" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="ban">Ban</i>Charter amendment: no large-scale data centers built in the city.</div>
+  <div class="bar" role="img" aria-label="Yes 73.6 percent, no 26.4 percent; the side that limits data centers took 73.6 percent"><span class="y lim" style="width:73.62%"></span><span class="n dc" style="width:26.38%"></span></div>
+  <div class="nums"><span><small>yes</small><b>5,418</b></span><span><small>no</small>1,941</span><span><small>limiting side</small><span class="pc">73.6%</span></span><span><small>margin</small>+3,477</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>Village of Granville</b><span>Licking County &middot; final unofficial <span class="c"><a href="#s21">[21]</a></span></span><span><a class="off" href="https://www.boe.ohio.gov/licking/c/elecres/20261103results.pdf" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="ban">Ban</i>Charter amendment: no data centers built in the village.</div>
+  <div class="bar" role="img" aria-label="Yes 82.4 percent, no 17.6 percent; the side that limits data centers took 82.4 percent"><span class="y lim" style="width:82.45%"></span><span class="n dc" style="width:17.55%"></span></div>
+  <div class="nums"><span><small>yes</small><b>2,015</b></span><span><small>no</small>429</span><span><small>limiting side</small><span class="pc">82.4%</span></span><span><small>margin</small>+1,586</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>City of Upper Sandusky</b><span>Wyandot County &middot; final unofficial <span class="c"><a href="#s22">[22]</a></span></span><span><a class="off" href="https://www.boe.ohio.gov/wyandot/c/elecres/20261103results.pdf" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="ban">Ban</i>Charter amendment, placed by council: no data center built in the city.</div>
+  <div class="bar" role="img" aria-label="Yes 76.9 percent, no 23.1 percent; the side that limits data centers took 76.9 percent"><span class="y lim" style="width:76.92%"></span><span class="n dc" style="width:23.08%"></span></div>
+  <div class="nums"><span><small>yes</small><b>1,893</b></span><span><small>no</small>568</span><span><small>limiting side</small><span class="pc">76.9%</span></span><span><small>margin</small>+1,325</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>Monroe Township</b><span>Adams County &middot; 1 of 1 <span class="c"><a href="#s23">[23]</a></span></span><span><a class="off" href="https://www.boe.ohio.gov/adams/c/elecres/20261103results.pdf" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="zon">Adopt zoning</i>Adopts township zoning for the unincorporated area, which gives the trustees say over where a data center may go on farmland.</div>
+  <div class="bar" role="img" aria-label="Yes 59.7 percent, no 40.3 percent; the side that limits data centers took 59.7 percent"><span class="y lim" style="width:59.68%"></span><span class="n dc" style="width:40.32%"></span></div>
+  <div class="nums"><span><small>yes</small><b>148</b></span><span><small>no</small>100</span><span><small>limiting side</small><span class="pc">59.7%</span></span><span><small>margin</small>+48</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>Sprigg Township</b><span>Adams County &middot; 1 of 1 <span class="c"><a href="#s23">[23]</a></span></span><span><a class="off" href="https://www.boe.ohio.gov/adams/c/elecres/20261103results.pdf" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="zon">Adopt zoning</i>Adopts township zoning for the unincorporated area, which gives the trustees say over where a data center may go on farmland.</div>
+  <div class="bar" role="img" aria-label="Yes 52.6 percent, no 47.4 percent; the side that limits data centers took 52.6 percent"><span class="y lim" style="width:52.63%"></span><span class="n dc" style="width:47.37%"></span></div>
+  <div class="nums"><span><small>yes</small><b>330</b></span><span><small>no</small>297</span><span><small>limiting side</small><span class="pc">52.6%</span></span><span><small>margin</small>+33</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>City of Wilmington, Ordinance O-26-04</b><span>Clinton County &middot; final unofficial <span class="c"><a href="#s24">[24]</a></span></span><span><a class="off" href="https://www.boe.ohio.gov/clinton/c/elecres/20261103results.pdf" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="ref">Rezoning referendum</i>Yes kept council&rsquo;s rezoning of 65.29 acres at 1957 SR 730 from Rural Residential to Light Industrial for a data center project; no repealed it.</div>
+  <div class="bar" role="img" aria-label="Yes 20.4 percent, no 79.6 percent; the side that limits data centers took 79.6 percent"><span class="y dc" style="width:20.39%"></span><span class="n lim" style="width:79.61%"></span></div>
+  <div class="nums"><span><small>yes</small>739</span><span><small>no</small><b>2,885</b></span><span><small>limiting side</small><span class="pc">79.6%</span></span><span><small>margin</small>+2,146</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>City of Wilmington, Ordinance O-26-05</b><span>Clinton County &middot; final unofficial <span class="c"><a href="#s24">[24]</a></span></span><span><a class="off" href="https://www.boe.ohio.gov/clinton/c/elecres/20261103results.pdf" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="ref">Rezoning referendum</i>Yes kept council&rsquo;s rezoning of 191.12 acres at McGuinn Road from Rural Residential to Light Industrial for a data center project; no repealed it.</div>
+  <div class="bar" role="img" aria-label="Yes 20.2 percent, no 79.8 percent; the side that limits data centers took 79.8 percent"><span class="y dc" style="width:20.23%"></span><span class="n lim" style="width:79.77%"></span></div>
+  <div class="nums"><span><small>yes</small>732</span><span><small>no</small><b>2,886</b></span><span><small>limiting side</small><span class="pc">79.8%</span></span><span><small>margin</small>+2,154</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>City of Wilmington, Ordinance O-26-06</b><span>Clinton County &middot; final unofficial <span class="c"><a href="#s24">[24]</a></span></span><span><a class="off" href="https://www.boe.ohio.gov/clinton/c/elecres/20261103results.pdf" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="ref">Rezoning referendum</i>Yes kept council&rsquo;s rezoning of 119.373 acres at SR 730 from Rural Residential to Light Industrial for a data center project; no repealed it.</div>
+  <div class="bar" role="img" aria-label="Yes 20.0 percent, no 80.0 percent; the side that limits data centers took 80.0 percent"><span class="y dc" style="width:20.05%"></span><span class="n lim" style="width:79.95%"></span></div>
+  <div class="nums"><span><small>yes</small>724</span><span><small>no</small><b>2,887</b></span><span><small>limiting side</small><span class="pc">80.0%</span></span><span><small>margin</small>+2,163</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>City of Wilmington, Ordinance O-26-07</b><span>Clinton County &middot; final unofficial <span class="c"><a href="#s24">[24]</a></span></span><span><a class="off" href="https://www.boe.ohio.gov/clinton/c/elecres/20261103results.pdf" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="ref">Rezoning referendum</i>Yes kept council&rsquo;s rezoning of 170.11 acres at US 68 South from Rural Residential to Light Industrial for a data center project; no repealed it.</div>
+  <div class="bar" role="img" aria-label="Yes 19.8 percent, no 80.2 percent; the side that limits data centers took 80.2 percent"><span class="y dc" style="width:19.75%"></span><span class="n lim" style="width:80.25%"></span></div>
+  <div class="nums"><span><small>yes</small>716</span><span><small>no</small><b>2,909</b></span><span><small>limiting side</small><span class="pc">80.2%</span></span><span><small>margin</small>+2,193</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>City of Sunbury</b><span>Delaware County &middot; 6 of 6 <span class="c"><a href="#s16">[16]</a></span></span><span><a class="off" href="https://vote.delawarecountyohio.gov/wp-content/uploads/2026/11/Delawares-Unofficial-Summary-Report.pdf" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="cap">Size cap</i>Charter amendment: no data center above 25 megawatts; aimed at a proposed Amazon hyperscale project.</div>
+  <div class="bar" role="img" aria-label="Yes 78.6 percent, no 21.4 percent; the side that limits data centers took 78.6 percent"><span class="y lim" style="width:78.64%"></span><span class="n dc" style="width:21.36%"></span></div>
+  <div class="nums"><span><small>yes</small><b>2,809</b></span><span><small>no</small>763</span><span><small>limiting side</small><span class="pc">78.6%</span></span><span><small>margin</small>+2,046</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>City of Oregon</b><span>Lucas County &middot; Issue 25 &middot; not stated <span class="c"><a href="#s3">[3]</a><a href="#s15">[15]</a></span></span><span><a class="off" href="https://www.lucascountyohiovotes.gov/" rel="noopener">official results page</a> <i class="tr" title="Count read from a tracker; the official sheet could not be reached by this desk">tracker only</i></span></div>
+  <div class="kind"><i class="cap">Size cap</i>Charter amendment: no data center above 25 megawatts of monthly demand or peak load.</div>
+  <div class="bar" role="img" aria-label="Yes 60.7 percent, no 39.3 percent; the side that limits data centers took 60.7 percent"><span class="y lim" style="width:60.69%"></span><span class="n dc" style="width:39.31%"></span></div>
+  <div class="nums"><span><small>yes</small><b>4,994</b></span><span><small>no</small>3,235</span><span><small>limiting side</small><span class="pc">60.7%</span></span><span><small>margin</small>+1,759</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>City of Grove City</b><span>Franklin County &middot; Issue 28 &middot; not stated <span class="c"><a href="#s3">[3]</a><a href="#s25">[25]</a></span></span><span><a class="off" href="https://vote.franklincountyohio.gov/" rel="noopener">official results page</a> <i class="tr" title="Count read from a tracker; the official sheet could not be reached by this desk">tracker only</i></span></div>
+  <div class="kind"><i class="vote">Voter approval</i>Charter amendment: a public vote before any development, expansion or property transfer of 50 or more contiguous acres, 20 or more megawatts of peak demand, or 500,000 or more gallons of water a day.</div>
+  <div class="bar" role="img" aria-label="Yes 54.6 percent, no 45.4 percent; the side that limits data centers took 54.6 percent"><span class="y lim" style="width:54.60%"></span><span class="n dc" style="width:45.40%"></span></div>
+  <div class="nums"><span><small>yes</small><b>11,317</b></span><span><small>no</small>9,411</span><span><small>limiting side</small><span class="pc">54.6%</span></span><span><small>margin</small>+1,906</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>Village of Perry</b><span>Lake County &middot; Issue 16 &middot; 1 of 1 <span class="c"><a href="#s3">[3]</a><a href="#s26">[26]</a></span></span><span><a class="off" href="https://www.lakecountyohio.gov/boe/election-results/" rel="noopener">official results page</a> <i class="tr" title="Count read from a tracker; the official sheet could not be reached by this desk">tracker only</i></span></div>
+  <div class="kind"><i class="tax">Incentive terms</i>Ordinance: a hyperscale data center developer seeking a tax abatement or other incentive must post financial guarantees; also size and noise limits.</div>
+  <div class="bar" role="img" aria-label="Yes 87.1 percent, no 12.9 percent; the side that limits data centers took 87.1 percent"><span class="y lim" style="width:87.11%"></span><span class="n dc" style="width:12.89%"></span></div>
+  <div class="nums"><span><small>yes</small><b>946</b></span><span><small>no</small>140</span><span><small>limiting side</small><span class="pc">87.1%</span></span><span><small>margin</small>+806</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>Village of Monroeville</b><span>Huron County &middot; 1 of 1 <span class="c"><a href="#s27">[27]</a></span></span><span><a class="off" href="https://www.huron.boe.ohio.gov/wp-content/uploads/Huron-County-Unofficial-Canvass-11-3-2026.pdf" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="adv">Advisory: allow?</i>Advisory, nonbinding: should the village allow data center development? Yes meant allow.</div>
+  <div class="bar" role="img" aria-label="Yes 12.2 percent, no 87.8 percent; the side that limits data centers took 87.8 percent"><span class="y dc" style="width:12.25%"></span><span class="n lim" style="width:87.75%"></span></div>
+  <div class="nums"><span><small>yes</small>55</span><span><small>no</small><b>394</b></span><span><small>limiting side</small><span class="pc">87.8%</span></span><span><small>margin</small>+339</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>Village of Ashville</b><span>Pickaway County &middot; 4 of 4 <span class="c"><a href="#s3">[3]</a><a href="#s28">[28]</a></span></span><span><a class="off" href="https://www.boe.ohio.gov/pickaway/c/elecres/20261103results.pdf" rel="noopener">official results page</a> <i class="tr" title="Count read from a tracker; the official sheet could not be reached by this desk">tracker only</i></span></div>
+  <div class="kind"><i class="ref">Agreement referendum</i>Referendum by petition: yes kept the term summary guiding the village&rsquo;s negotiations with EdgeConneX for two data centers; no rejected it.</div>
+  <div class="bar" role="img" aria-label="Yes 18.4 percent, no 81.6 percent; the side that limits data centers took 81.6 percent"><span class="y dc" style="width:18.39%"></span><span class="n lim" style="width:81.61%"></span></div>
+  <div class="nums"><span><small>yes</small>331</span><span><small>no</small><b>1,469</b></span><span><small>limiting side</small><span class="pc">81.6%</span></span><span><small>margin</small>+1,138</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+</div>
+<div class="st" id="st-me"><h3><span class="ab">ME</span>Maine<span class="ct">8 questions &middot; limiting side 6 of 6, 2 with no count yet</span></h3>
+<div class="row won">
+  <div class="who"><b>Town of North Berwick</b><span>York County &middot; town count <span class="c"><a href="#s4">[4]</a><a href="#s29">[29]</a></span></span><span><a class="off" href="https://www.townofnorthberwick.org/DocumentCenter/View/1599/General-Election-November-4-2026" rel="noopener">official results page</a> <i class="tr" title="Count read from a tracker; the official sheet could not be reached by this desk">tracker only</i></span></div>
+  <div class="kind"><i class="ban">Ban</i>Question 2: no data centers of 25,000 square feet or more.</div>
+  <div class="bar" role="img" aria-label="Yes 78.4 percent, no 21.6 percent; the side that limits data centers took 78.4 percent"><span class="y lim" style="width:78.41%"></span><span class="n dc" style="width:21.59%"></span></div>
+  <div class="nums"><span><small>yes</small><b>2,114</b></span><span><small>no</small>582</span><span><small>limiting side</small><span class="pc">78.4%</span></span><span><small>margin</small>+1,532</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>Town of Peru</b><span>Oxford County &middot; town count <span class="c"><a href="#s4">[4]</a><a href="#s30">[30]</a></span></span><span><a class="off" href="https://townofperumaine.org/" rel="noopener">official results page</a> <i class="tr" title="Count read from a tracker; the official sheet could not be reached by this desk">tracker only</i></span></div>
+  <div class="kind"><i class="mor">Moratorium</i>Article 2: a 180-day moratorium on data center development and permits.</div>
+  <div class="bar" role="img" aria-label="Yes 76.1 percent, no 23.9 percent; the side that limits data centers took 76.1 percent"><span class="y lim" style="width:76.05%"></span><span class="n dc" style="width:23.95%"></span></div>
+  <div class="nums"><span><small>yes</small><b>578</b></span><span><small>no</small>182</span><span><small>limiting side</small><span class="pc">76.1%</span></span><span><small>margin</small>+396</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>Town of Wells</b><span>York County &middot; town count <span class="c"><a href="#s4">[4]</a><a href="#s31">[31]</a></span></span><span><a class="off" href="https://www.wellstown.org/DocumentCenter/View/8557" rel="noopener">official results page</a> <i class="tr" title="Count read from a tracker; the official sheet could not be reached by this desk">tracker only</i></span></div>
+  <div class="kind"><i class="mor">Moratorium</i>Article 5: a 180-day moratorium on data center development; also voids recent permits.</div>
+  <div class="bar" role="img" aria-label="Yes 81.9 percent, no 18.1 percent; the side that limits data centers took 81.9 percent"><span class="y lim" style="width:81.94%"></span><span class="n dc" style="width:18.06%"></span></div>
+  <div class="nums"><span><small>yes</small><b>5,818</b></span><span><small>no</small>1,282</span><span><small>limiting side</small><span class="pc">81.9%</span></span><span><small>margin</small>+4,536</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>Town of Wiscasset</b><span>Lincoln County &middot; town count <span class="c"><a href="#s4">[4]</a><a href="#s32">[32]</a></span></span><span><a class="off" href="https://www.wiscasset.gov/192/Town-Clerk-Elections" rel="noopener">official results page</a> <i class="tr" title="Count read from a tracker; the official sheet could not be reached by this desk">tracker only</i></span></div>
+  <div class="kind"><i class="mor">Moratorium</i>Question 2: a six-month moratorium on applications for new or expanded data centers.</div>
+  <div class="bar" role="img" aria-label="Yes 65.7 percent, no 34.3 percent; the side that limits data centers took 65.7 percent"><span class="y lim" style="width:65.67%"></span><span class="n dc" style="width:34.33%"></span></div>
+  <div class="nums"><span><small>yes</small><b>1,362</b></span><span><small>no</small>712</span><span><small>limiting side</small><span class="pc">65.7%</span></span><span><small>margin</small>+650</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>Town of Eliot</b><span>York County &middot; town count <span class="c"><a href="#s33">[33]</a></span></span><span><a class="off" href="https://www.eliotme.gov/DocumentCenter/View/3997/Election-Results-November-3-2026---Eliot-Maine-PDF" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="mor">Moratorium</i>Question 5: a 180-day moratorium on data centers of any size.</div>
+  <div class="bar" role="img" aria-label="Yes 76.5 percent, no 23.5 percent; the side that limits data centers took 76.5 percent"><span class="y lim" style="width:76.54%"></span><span class="n dc" style="width:23.46%"></span></div>
+  <div class="nums"><span><small>yes</small><b>2,965</b></span><span><small>no</small>909</span><span><small>limiting side</small><span class="pc">76.5%</span></span><span><small>margin</small>+2,056</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>Town of Sabattus</b><span>Androscoggin County &middot; town count <span class="c"><a href="#s34">[34]</a></span></span><span><a class="off" href="https://storage.googleapis.com/juniper-media-library/571/2026/11/Sabattus%20-%20Clerk%20Return%20of%20Votes%20-%20Municipal%20Election.pdf" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="mor">Moratorium</i>A temporary moratorium, to May 2027, on data centers of 10,000 square feet or 20 megawatts or more.</div>
+  <div class="bar" role="img" aria-label="Yes 66.4 percent, no 33.6 percent; the side that limits data centers took 66.4 percent"><span class="y lim" style="width:66.43%"></span><span class="n dc" style="width:33.57%"></span></div>
+  <div class="nums"><span><small>yes</small><b>1,565</b></span><span><small>no</small>791</span><span><small>limiting side</small><span class="pc">66.4%</span></span><span><small>margin</small>+774</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row pend">
+  <div class="who"><b>Town of Brownfield</b><span>Oxford County &middot; no results posted <span class="c"><a href="#s35">[35]</a></span></span><span><a class="off" href="https://www.brownfieldmaine.gov/1196/Past-Town-Warrants-Reports" rel="noopener">official results page</a></span></div>
+  <div class="kind"><i class="mor">Moratorium</i>Question 1: a 180-day moratorium on data centers of 5,000 square feet or more.</div>
+  <div class="bar none" aria-hidden="true"></div>
+  <div class="nums"><span><small>count</small>none posted yet</span></div>
+  <div class="res">No count yet</div>
+</div>
+<div class="row pend">
+  <div class="who"><b>Town of Freedom</b><span>Waldo County &middot; no results posted <span class="c"><a href="#s36">[36]</a></span></span><span><a class="off" href="https://www.freedomme.org/" rel="noopener">official results page</a></span></div>
+  <div class="kind"><i class="mor">Moratorium</i>A temporary moratorium on data centers of any size.</div>
+  <div class="bar none" aria-hidden="true"></div>
+  <div class="nums"><span><small>count</small>none posted yet</span></div>
+  <div class="res">No count yet</div>
+</div>
+</div>
+<div class="st" id="st-il"><h3><span class="ab">IL</span>Illinois<span class="ct">7 questions &middot; limiting side 7 of 7</span></h3>
+<div class="row won">
+  <div class="who"><b>City of Bloomington</b><span>McLean County; the city runs its own election board &middot; 60 of 60 <span class="c"><a href="#s4">[4]</a><a href="#s37">[37]</a></span></span><span><a class="off" href="https://results.enr.clarityelections.com/IL/Bloomington/127392/" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="adv">Advisory: limit?</i>Advisory: should the city impose a moratorium on large data centers? Yes meant limit.</div>
+  <div class="bar" role="img" aria-label="Yes 77.6 percent, no 22.4 percent; the side that limits data centers took 77.6 percent"><span class="y lim" style="width:77.58%"></span><span class="n dc" style="width:22.42%"></span></div>
+  <div class="nums"><span><small>yes</small><b>21,851</b></span><span><small>no</small>6,316</span><span><small>limiting side</small><span class="pc">77.6%</span></span><span><small>margin</small>+15,535</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>Chouteau Township</b><span>Madison County &middot; 6 of 6 <span class="c"><a href="#s4">[4]</a><a href="#s38">[38]</a></span></span><span><a class="off" href="https://results.enr.clarityelections.com/IL/Madison/127555/" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="adv">Advisory: allow?</i>Advisory: should officials permit new data centers? Yes meant allow.</div>
+  <div class="bar" role="img" aria-label="Yes 16.7 percent, no 83.3 percent; the side that limits data centers took 83.3 percent"><span class="y dc" style="width:16.73%"></span><span class="n lim" style="width:83.27%"></span></div>
+  <div class="nums"><span><small>yes</small>365</span><span><small>no</small><b>1,817</b></span><span><small>limiting side</small><span class="pc">83.3%</span></span><span><small>margin</small>+1,452</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>Granite City Township</b><span>Madison County &middot; 17 of 17 <span class="c"><a href="#s4">[4]</a><a href="#s38">[38]</a></span></span><span><a class="off" href="https://results.enr.clarityelections.com/IL/Madison/127555/" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="adv">Advisory: allow?</i>Advisory: should officials permit new data centers? Yes meant allow.</div>
+  <div class="bar" role="img" aria-label="Yes 25.6 percent, no 74.4 percent; the side that limits data centers took 74.4 percent"><span class="y dc" style="width:25.57%"></span><span class="n lim" style="width:74.43%"></span></div>
+  <div class="nums"><span><small>yes</small>1,959</span><span><small>no</small><b>5,703</b></span><span><small>limiting side</small><span class="pc">74.4%</span></span><span><small>margin</small>+3,744</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>Nameoki Township</b><span>Madison County &middot; 8 of 8 <span class="c"><a href="#s4">[4]</a><a href="#s38">[38]</a></span></span><span><a class="off" href="https://results.enr.clarityelections.com/IL/Madison/127555/" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="adv">Advisory: allow?</i>Advisory: should officials permit new data centers? Yes meant allow.</div>
+  <div class="bar" role="img" aria-label="Yes 22.1 percent, no 77.9 percent; the side that limits data centers took 77.9 percent"><span class="y dc" style="width:22.14%"></span><span class="n lim" style="width:77.86%"></span></div>
+  <div class="nums"><span><small>yes</small>602</span><span><small>no</small><b>2,117</b></span><span><small>limiting side</small><span class="pc">77.9%</span></span><span><small>margin</small>+1,515</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>Venice Township</b><span>Madison County &middot; 4 of 4 <span class="c"><a href="#s4">[4]</a><a href="#s38">[38]</a></span></span><span><a class="off" href="https://results.enr.clarityelections.com/IL/Madison/127555/" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="adv">Advisory: allow?</i>Advisory: should officials permit new data centers? Yes meant allow.</div>
+  <div class="bar" role="img" aria-label="Yes 24.1 percent, no 75.9 percent; the side that limits data centers took 75.9 percent"><span class="y dc" style="width:24.13%"></span><span class="n lim" style="width:75.87%"></span></div>
+  <div class="nums"><span><small>yes</small>311</span><span><small>no</small><b>978</b></span><span><small>limiting side</small><span class="pc">75.9%</span></span><span><small>margin</small>+667</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>Joliet Township</b><span>Will County &middot; 37 of 37 <span class="c"><a href="#s4">[4]</a><a href="#s39">[39]</a></span></span><span><a class="off" href="https://results.enr.clarityelections.com/IL/Will/127394/" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="adv">Advisory: allow?</i>Advisory: should the township approve construction of AI data centers? Yes meant allow.</div>
+  <div class="bar" role="img" aria-label="Yes 21.1 percent, no 78.9 percent; the side that limits data centers took 78.9 percent"><span class="y dc" style="width:21.10%"></span><span class="n lim" style="width:78.90%"></span></div>
+  <div class="nums"><span><small>yes</small>3,800</span><span><small>no</small><b>14,207</b></span><span><small>limiting side</small><span class="pc">78.9%</span></span><span><small>margin</small>+10,407</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>Morgan County</b><span>countywide <span class="c"><a href="#s4">[4]</a><a href="#s40">[40]</a></span></span><span><a class="off" href="https://morgancounty-il.com/wp/departments/county-clerk/" rel="noopener">official results page</a> <i class="tr" title="Count read from a tracker; the official sheet could not be reached by this desk">tracker only</i></span></div>
+  <div class="kind"><i class="adv">Advisory: limit?</i>Advisory: should the county restrict data center construction and operation? Yes meant limit.</div>
+  <div class="bar" role="img" aria-label="Yes 88.3 percent, no 11.7 percent; the side that limits data centers took 88.3 percent"><span class="y lim" style="width:88.28%"></span><span class="n dc" style="width:11.72%"></span></div>
+  <div class="nums"><span><small>yes</small><b>9,413</b></span><span><small>no</small>1,250</span><span><small>limiting side</small><span class="pc">88.3%</span></span><span><small>margin</small>+8,163</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+</div>
+<div class="st" id="st-ks"><h3><span class="ab">KS</span>Kansas<span class="ct">4 questions &middot; limiting side 4 of 4</span></h3>
+<div class="row won">
+  <div class="who"><b>City of El Dorado</b><span>Butler County &middot; absentee complete; final unofficial <span class="c"><a href="#s41">[41]</a></span></span><span><a class="off" href="https://www.livevoterturnout.com/ENR/butlerksenr/4/en/Index_4.html" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="ban">Ban</i>No high-impact data centers or Type 2 and 3 battery storage for ten years.</div>
+  <div class="bar" role="img" aria-label="Yes 71.5 percent, no 28.5 percent; the side that limits data centers took 71.5 percent"><span class="y lim" style="width:71.49%"></span><span class="n dc" style="width:28.51%"></span></div>
+  <div class="nums"><span><small>yes</small><b>2,966</b></span><span><small>no</small>1,183</span><span><small>limiting side</small><span class="pc">71.5%</span></span><span><small>margin</small>+1,783</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>City of Emporia</b><span>Lyon County &middot; final unofficial <span class="c"><a href="#s42">[42]</a></span></span><span><a class="off" href="https://www.lyoncountyks.gov/DocumentCenter/View/2423" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="ban">Ban</i>Ballot Question 2: no high-impact data centers (above 10 megawatts or 100,000 gallons of water a day). A court has the ban on hold while it decides whether the subject can be set by citizen petition.</div>
+  <div class="bar" role="img" aria-label="Yes 60.1 percent, no 39.9 percent; the side that limits data centers took 60.1 percent"><span class="y lim" style="width:60.05%"></span><span class="n dc" style="width:39.95%"></span></div>
+  <div class="nums"><span><small>yes</small><b>4,346</b></span><span><small>no</small>2,891</span><span><small>limiting side</small><span class="pc">60.1%</span></span><span><small>margin</small>+1,455</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>City of Americus</b><span>Lyon County &middot; final unofficial <span class="c"><a href="#s42">[42]</a></span></span><span><a class="off" href="https://www.lyoncountyks.gov/DocumentCenter/View/2423" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="ban">Ban</i>No high-impact data centers or large battery storage.</div>
+  <div class="bar" role="img" aria-label="Yes 68.3 percent, no 31.7 percent; the side that limits data centers took 68.3 percent"><span class="y lim" style="width:68.33%"></span><span class="n dc" style="width:31.67%"></span></div>
+  <div class="nums"><span><small>yes</small><b>274</b></span><span><small>no</small>127</span><span><small>limiting side</small><span class="pc">68.3%</span></span><span><small>margin</small>+147</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+<div class="row won">
+  <div class="who"><b>City of Ottawa</b><span>Franklin County <span class="c"><a href="#s3">[3]</a><a href="#s43">[43]</a></span></span><span><a class="off" href="https://www.franklincoks.org/1067/Election-Results" rel="noopener">official results page</a> <i class="tr" title="Count read from a tracker; the official sheet could not be reached by this desk">tracker only</i></span></div>
+  <div class="kind"><i class="cap">Size cap</i>Question 2: no data centers above 25 megawatts for ten years. Its validity is still before the district court.</div>
+  <div class="bar" role="img" aria-label="Yes 71.9 percent, no 28.1 percent; the side that limits data centers took 71.9 percent"><span class="y lim" style="width:71.85%"></span><span class="n dc" style="width:28.15%"></span></div>
+  <div class="nums"><span><small>yes</small><b>2,882</b></span><span><small>no</small>1,129</span><span><small>limiting side</small><span class="pc">71.9%</span></span><span><small>margin</small>+1,753</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+</div>
+<div class="st" id="st-ca"><h3><span class="ab">CA</span>California<span class="ct">1 question &middot; limiting side 1 of 1</span></h3>
+<div class="row won">
+  <div class="who"><b>City of Alhambra</b><span>Los Angeles County &middot; count continuing <span class="c"><a href="#s4">[4]</a><a href="#s44">[44]</a></span></span><span><a class="off" href="https://results.lavote.gov/#year=2026&amp;election=4348" rel="noopener">official results page</a> <i class="tr" title="Count read from a tracker; the official sheet could not be reached by this desk">tracker only</i></span></div>
+  <div class="kind"><i class="ban">Ban</i>Measure DB: no data centers in the city.</div>
+  <div class="bar" role="img" aria-label="Yes 81.8 percent, no 18.2 percent; the side that limits data centers took 81.8 percent"><span class="y lim" style="width:81.84%"></span><span class="n dc" style="width:18.16%"></span></div>
+  <div class="nums"><span><small>yes</small><b>12,496</b></span><span><small>no</small>2,772</span><span><small>limiting side</small><span class="pc">81.8%</span></span><span><small>margin</small>+9,724</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+</div>
+<div class="st" id="st-fl"><h3><span class="ab">FL</span>Florida<span class="ct">1 question &middot; limiting side 1 of 1</span></h3>
+<div class="row won">
+  <div class="who"><b>City of Edgewater</b><span>Volusia County &middot; final unofficial <span class="c"><a href="#s4">[4]</a><a href="#s45">[45]</a></span></span><span><a class="off" href="https://app.enhancedvoting.com/results/public/volusia-county-fl/elections/2026GeneralElection" rel="noopener">official results page</a> <i class="tr" title="Count read from a tracker; the official sheet could not be reached by this desk">tracker only</i></span></div>
+  <div class="kind"><i class="ban">Ban</i>Charter Amendment No. 4: no approval, construction, expansion or operation of new data centers in the city.</div>
+  <div class="bar" role="img" aria-label="Yes 77.2 percent, no 22.8 percent; the side that limits data centers took 77.2 percent"><span class="y lim" style="width:77.18%"></span><span class="n dc" style="width:22.82%"></span></div>
+  <div class="nums"><span><small>yes</small><b>7,875</b></span><span><small>no</small>2,328</span><span><small>limiting side</small><span class="pc">77.2%</span></span><span><small>margin</small>+5,547</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+</div>
+<div class="st" id="st-nd"><h3><span class="ab">ND</span>North Dakota<span class="ct">1 question &middot; limiting side 0 of 1</span></h3>
+<div class="row lost">
+  <div class="who"><b>City of Harwood</b><span>Cass County &middot; 1 of 1 <span class="c"><a href="#s1">[1]</a><a href="#s2">[2]</a><a href="#s4">[4]</a></span></span><span><a class="off" href="https://resultsnd.sos.nd.gov/#bucket=results&amp;filter=SW&amp;contest=22055&amp;location=cass+county" rel="noopener">official results page</a> <i class="tr" title="Count read from a tracker; the official sheet could not be reached by this desk">tracker only</i></span></div>
+  <div class="kind"><i class="rev">Review requirement</i>Home rule charter amendment: independent review and a public hearing before approval of large industrial projects, data centers included. It would have reached future projects; the approved Applied Digital campus was outside it.</div>
+  <div class="bar" role="img" aria-label="Yes 24.4 percent, no 75.6 percent; the side that limits data centers took 24.4 percent"><span class="y lim" style="width:24.42%"></span><span class="n dc" style="width:75.58%"></span></div>
+  <div class="nums"><span><small>yes</small>105</span><span><small>no</small><b>325</b></span><span><small>limiting side</small><span class="pc">24.4%</span></span><span><small>margin</small>&minus;220</span></div>
+  <div class="res">Data center side won</div>
+</div>
+</div>
+<div class="st" id="st-nj"><h3><span class="ab">NJ</span>New Jersey<span class="ct">1 question &middot; limiting side 1 of 1</span></h3>
+<div class="row won">
+  <div class="who"><b>Downe Township</b><span>Cumberland County &middot; final unofficial <span class="c"><a href="#s4">[4]</a><a href="#s46">[46]</a></span></span><span><a class="off" href="https://results.enr.clarityelections.com/NJ/Cumberland/127562/" rel="noopener">official results page</a> </span></div>
+  <div class="kind"><i class="adv">Advisory: allow?</i>Advisory: do residents support data center development? Yes meant support.</div>
+  <div class="bar" role="img" aria-label="Yes 12.7 percent, no 87.3 percent; the side that limits data centers took 87.3 percent"><span class="y dc" style="width:12.73%"></span><span class="n lim" style="width:87.27%"></span></div>
+  <div class="nums"><span><small>yes</small>62</span><span><small>no</small><b>425</b></span><span><small>limiting side</small><span class="pc">87.3%</span></span><span><small>margin</small>+363</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+</div>
+<div class="st" id="st-nv"><h3><span class="ab">NV</span>Nevada<span class="ct">1 question &middot; limiting side 1 of 1</span></h3>
+<div class="row won">
+  <div class="who"><b>Boulder City</b><span>Clark County &middot; count continuing <span class="c"><a href="#s4">[4]</a><a href="#s47">[47]</a></span></span><span><a class="off" href="https://elections.clarkcountynv.gov/electionresultsTV/" rel="noopener">official results page</a> <i class="tr" title="Count read from a tracker; the official sheet could not be reached by this desk">tracker only</i></span></div>
+  <div class="kind"><i class="allow">Allow as a use</i>Question 1: add data centers as an approved use in the Eldorado Valley Transfer Area. Yes meant allow.</div>
+  <div class="bar" role="img" aria-label="Yes 29.5 percent, no 70.5 percent; the side that limits data centers took 70.5 percent"><span class="y dc" style="width:29.45%"></span><span class="n lim" style="width:70.55%"></span></div>
+  <div class="nums"><span><small>yes</small>1,973</span><span><small>no</small><b>4,726</b></span><span><small>limiting side</small><span class="pc">70.5%</span></span><span><small>margin</small>+2,753</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+</div>
+<div class="st" id="st-wi"><h3><span class="ab">WI</span>Wisconsin<span class="ct">1 question &middot; limiting side 1 of 1</span></h3>
+<div class="row won">
+  <div class="who"><b>City of Janesville</b><span>Rock County &middot; 40 of 40 <span class="c"><a href="#s4">[4]</a><a href="#s48">[48]</a></span></span><span><a class="off" href="https://www.co.rock.wi.us/departments/county-clerk/election-information/election-results-november-3-2026" rel="noopener">official results page</a> <i class="tr" title="Count read from a tracker; the official sheet could not be reached by this desk">tracker only</i></span></div>
+  <div class="kind"><i class="vote">Voter approval</i>A public vote before the city leases, sells or approves development of the former GM/JATCO site for any project above $450 million; tied to a proposed $8 billion data center.</div>
+  <div class="bar" role="img" aria-label="Yes 62.8 percent, no 37.2 percent; the side that limits data centers took 62.8 percent"><span class="y lim" style="width:62.82%"></span><span class="n dc" style="width:37.18%"></span></div>
+  <div class="nums"><span><small>yes</small><b>16,779</b></span><span><small>no</small>9,932</span><span><small>limiting side</small><span class="pc">62.8%</span></span><span><small>margin</small>+6,847</span></div>
+  <div class="res">Limits data centers won</div>
+</div>
+</div>
+</div>
+<p class="tnote">&ldquo;Limiting side&rdquo; is the votes cast for the side that limits data centers, divided by yes plus no. On a ban, cap, moratorium, voter-approval, review or &ldquo;limit?&rdquo; advisory question that side is yes; on an &ldquo;allow?&rdquo; advisory, an allow question, a rezoning referendum or Ashville&rsquo;s agreement referendum it is no. Margin is the limiting side&rsquo;s lead. Ballotpedia&rsquo;s election-night table appears to have coded the no side as yes for Wilmington&rsquo;s four referenda, and it ran Granville inverted; the county sheets are used here. <span class="c"><a href="#s4">[4]</a><a href="#s21">[21]</a><a href="#s24">[24]</a></span> Counts in California and Nevada continue as mail ballots arrive. <span class="c"><a href="#s44">[44]</a><a href="#s47">[47]</a></span> Emporia&rsquo;s and Ottawa&rsquo;s bans are before Kansas courts on whether the subject can be set by petition. <span class="c"><a href="#s3">[3]</a><a href="#s42">[42]</a><a href="#s43">[43]</a></span> The six Illinois and New Jersey rows read from county feeds carry the tracker&rsquo;s reading of those same feeds. <span class="c"><a href="#s4">[4]</a><a href="#s37">[37]</a><a href="#s38">[38]</a><a href="#s39">[39]</a><a href="#s46">[46]</a></span></p>
+
+<!-- 4 · Ohio's 21 -->
+<section class="ch" id="ohio">
+  <p class="k">Ohio&rsquo;s 21</p>
+  <h2>21 questions in 18 places, from Conneaut on Lake Erie to Sprigg Township on the Ohio River. The limiting side won all 21, by 52.6 percent in Sprigg Township and 87.8 in the Village of Monroeville.</h2>
+  <p class="dek">One dot per place, set where the limiting side landed between 50 and 100 percent. 17 of the 21 counts were read from the county boards&rsquo; own sheets; 4 come from a tracker and are marked. <span class="c"><a href="#s3">[3]</a><a href="#s49">[49]</a><a href="#s50">[50]</a><a href="#s51">[51]</a></span></p>
+</section>
+<ul class="dots rise">
+  <li class="axis" aria-hidden="true"><span>place &middot; county &middot; kind</span><span class="ax"><span>50%</span><span>75%</span><span>100%</span></span><span>count</span></li>
+  <li class="maxis" aria-hidden="true">dot: the limiting side&rsquo;s share, 50% at the left edge, 100% at the right</li>
+<li class="dr">
+  <div class="dn"><b>Village of Monroeville</b><span>Huron County &middot; <i class="adv">Advisory: allow?</i> <span class="c"><a href="#s27">[27]</a></span></span></div>
+  <div class="dt" role="img" aria-label="87.8 percent for the side that limits data centers"><span class="dot" style="left:75.50%"></span></div>
+  <div class="dv"><span><small>no (limits)</small><b>394</b></span><span><small>yes</small>55</span><span><small>share</small><b>87.8%</b></span><span><small>margin</small>+339</span></div>
+  
+</li>
+<li class="dr">
+  <div class="dn"><b>Village of Perry</b><span>Lake County &middot; Issue 16 &middot; <i class="tax">Incentive terms</i> <i class="tr">tracker only</i> <span class="c"><a href="#s3">[3]</a><a href="#s26">[26]</a></span></span></div>
+  <div class="dt" role="img" aria-label="87.1 percent for the side that limits data centers"><span class="dot" style="left:74.22%"></span></div>
+  <div class="dv"><span><small>yes (limits)</small><b>946</b></span><span><small>no</small>140</span><span><small>share</small><b>87.1%</b></span><span><small>margin</small>+806</span></div>
+  
+</li>
+<li class="dr">
+  <div class="dn"><b>Village of Granville</b><span>Licking County &middot; <i class="ban">Ban</i> <span class="c"><a href="#s21">[21]</a></span></span></div>
+  <div class="dt" role="img" aria-label="82.4 percent for the side that limits data centers"><span class="dot" style="left:64.89%"></span></div>
+  <div class="dv"><span><small>yes (limits)</small><b>2,015</b></span><span><small>no</small>429</span><span><small>share</small><b>82.4%</b></span><span><small>margin</small>+1,586</span></div>
+  <p class="dnote">Ballotpedia&rsquo;s election-night table printed Granville inverted and partial, 205 yes to 938 no. The Licking County sheet reads 2,015 yes to 429 no. <span class="c"><a href="#s4">[4]</a><a href="#s21">[21]</a></span></p>
+</li>
+<li class="dr">
+  <div class="dn"><b>Village of Ashville</b><span>Pickaway County &middot; <i class="ref">Agreement referendum</i> <i class="tr">tracker only</i> <span class="c"><a href="#s3">[3]</a><a href="#s28">[28]</a></span></span></div>
+  <div class="dt" role="img" aria-label="81.6 percent for the side that limits data centers"><span class="dot" style="left:63.22%"></span></div>
+  <div class="dv"><span><small>no (limits)</small><b>1,469</b></span><span><small>yes</small>331</span><span><small>share</small><b>81.6%</b></span><span><small>margin</small>+1,138</span></div>
+  
+</li>
+<li class="dr group"><div class="dn"><b>City of Wilmington, four rezoning referenda</b><span>Clinton County &middot; <i class="ref">Rezoning referendum</i> <span class="c"><a href="#s24">[24]</a></span></span></div>
+<p class="dnote">Council rezoned four parcels, 65.29 acres at 1957 SR 730, 191.12 acres at McGuinn Road, 119.373 acres at SR 730 and 170.11 acres at US 68 South, from Rural Residential to Light Industrial for a data center project. Petitioners put each ordinance to the voters. A yes vote kept the rezoning; a no vote repealed it. All four were repealed, each by about four to one. Ballotpedia&rsquo;s election-night table appears to have coded the no side as yes for these four. <span class="c"><a href="#s4">[4]</a><a href="#s24">[24]</a></span></p>
+<ul class="dsub"><li class="dr sub"><div class="dn"><b>Ordinance O-26-04</b><span>65.29 acres at 1957 SR 730 &middot; yes kept the rezoning, no repealed it</span></div><div class="dt" role="img" aria-label="79.6 percent no"><span class="dot" style="left:59.22%"></span></div><div class="dv"><span><small>no (limits)</small><b>2,885</b></span><span><small>yes</small>739</span><span><small>share</small><b>79.6%</b></span><span><small>margin</small>+2,146</span></div></li><li class="dr sub"><div class="dn"><b>Ordinance O-26-05</b><span>191.12 acres at McGuinn Road &middot; yes kept the rezoning, no repealed it</span></div><div class="dt" role="img" aria-label="79.8 percent no"><span class="dot" style="left:59.54%"></span></div><div class="dv"><span><small>no (limits)</small><b>2,886</b></span><span><small>yes</small>732</span><span><small>share</small><b>79.8%</b></span><span><small>margin</small>+2,154</span></div></li><li class="dr sub"><div class="dn"><b>Ordinance O-26-06</b><span>119.373 acres at SR 730 &middot; yes kept the rezoning, no repealed it</span></div><div class="dt" role="img" aria-label="80.0 percent no"><span class="dot" style="left:59.90%"></span></div><div class="dv"><span><small>no (limits)</small><b>2,887</b></span><span><small>yes</small>724</span><span><small>share</small><b>80.0%</b></span><span><small>margin</small>+2,163</span></div></li><li class="dr sub"><div class="dn"><b>Ordinance O-26-07</b><span>170.11 acres at US 68 South &middot; yes kept the rezoning, no repealed it</span></div><div class="dt" role="img" aria-label="80.2 percent no"><span class="dot" style="left:60.50%"></span></div><div class="dv"><span><small>no (limits)</small><b>2,909</b></span><span><small>yes</small>716</span><span><small>share</small><b>80.2%</b></span><span><small>margin</small>+2,193</span></div></li></ul></li>
+<li class="dr">
+  <div class="dn"><b>City of Trenton</b><span>Butler County &middot; Issue 17 &middot; <i class="cap">Size cap</i> <span class="c"><a href="#s12">[12]</a></span></span></div>
+  <div class="dt" role="img" aria-label="79.7 percent for the side that limits data centers"><span class="dot" style="left:59.36%"></span></div>
+  <div class="dv"><span><small>yes (limits)</small><b>3,541</b></span><span><small>no</small>903</span><span><small>share</small><b>79.7%</b></span><span><small>margin</small>+2,638</span></div>
+  
+</li>
+<li class="dr">
+  <div class="dn"><b>City of Sunbury</b><span>Delaware County &middot; <i class="cap">Size cap</i> <span class="c"><a href="#s16">[16]</a></span></span></div>
+  <div class="dt" role="img" aria-label="78.6 percent for the side that limits data centers"><span class="dot" style="left:57.28%"></span></div>
+  <div class="dv"><span><small>yes (limits)</small><b>2,809</b></span><span><small>no</small>763</span><span><small>share</small><b>78.6%</b></span><span><small>margin</small>+2,046</span></div>
+  
+</li>
+<li class="dr">
+  <div class="dn"><b>City of Urbana</b><span>Champaign County &middot; <i class="ban">Ban</i> <span class="c"><a href="#s18">[18]</a></span></span></div>
+  <div class="dt" role="img" aria-label="77.3 percent for the side that limits data centers"><span class="dot" style="left:54.50%"></span></div>
+  <div class="dv"><span><small>yes (limits)</small><b>2,978</b></span><span><small>no</small>877</span><span><small>share</small><b>77.3%</b></span><span><small>margin</small>+2,101</span></div>
+  
+</li>
+<li class="dr">
+  <div class="dn"><b>City of Upper Sandusky</b><span>Wyandot County &middot; <i class="ban">Ban</i> <span class="c"><a href="#s22">[22]</a></span></span></div>
+  <div class="dt" role="img" aria-label="76.9 percent for the side that limits data centers"><span class="dot" style="left:53.84%"></span></div>
+  <div class="dv"><span><small>yes (limits)</small><b>1,893</b></span><span><small>no</small>568</span><span><small>share</small><b>76.9%</b></span><span><small>margin</small>+1,325</span></div>
+  
+</li>
+<li class="dr">
+  <div class="dn"><b>City of Hubbard</b><span>Trumbull County &middot; <i class="ban">Ban</i> <span class="c"><a href="#s20">[20]</a></span></span></div>
+  <div class="dt" role="img" aria-label="76.6 percent for the side that limits data centers"><span class="dot" style="left:53.15%"></span></div>
+  <div class="dv"><span><small>yes (limits)</small><b>2,622</b></span><span><small>no</small>802</span><span><small>share</small><b>76.6%</b></span><span><small>margin</small>+1,820</span></div>
+  
+</li>
+<li class="dr">
+  <div class="dn"><b>City of Pataskala</b><span>Licking County &middot; <i class="ban">Ban</i> <span class="c"><a href="#s21">[21]</a></span></span></div>
+  <div class="dt" role="img" aria-label="73.6 percent for the side that limits data centers"><span class="dot" style="left:47.25%"></span></div>
+  <div class="dv"><span><small>yes (limits)</small><b>5,418</b></span><span><small>no</small>1,941</span><span><small>share</small><b>73.6%</b></span><span><small>margin</small>+3,477</span></div>
+  
+</li>
+<li class="dr">
+  <div class="dn"><b>City of Piqua</b><span>Miami County &middot; <i class="ban">Ban</i> <span class="c"><a href="#s19">[19]</a></span></span></div>
+  <div class="dt" role="img" aria-label="66.7 percent for the side that limits data centers"><span class="dot" style="left:33.41%"></span></div>
+  <div class="dv"><span><small>yes (limits)</small><b>4,061</b></span><span><small>no</small>2,027</span><span><small>share</small><b>66.7%</b></span><span><small>margin</small>+2,034</span></div>
+  <p class="dnote">Ballotpedia&rsquo;s table carried a partial count, 1,912 to 908; the Miami County general report reads 4,061 to 2,027. <span class="c"><a href="#s4">[4]</a><a href="#s19">[19]</a></span></p>
+</li>
+<li class="dr">
+  <div class="dn"><b>City of Conneaut</b><span>Ashtabula County &middot; Issue 10 &middot; <i class="cap">Size cap</i> <span class="c"><a href="#s14">[14]</a></span></span></div>
+  <div class="dt" role="img" aria-label="65.4 percent for the side that limits data centers"><span class="dot" style="left:30.78%"></span></div>
+  <div class="dv"><span><small>yes (limits)</small><b>2,301</b></span><span><small>no</small>1,218</span><span><small>share</small><b>65.4%</b></span><span><small>margin</small>+1,083</span></div>
+  
+</li>
+<li class="dr">
+  <div class="dn"><b>City of Defiance</b><span>Defiance County &middot; <i class="cap">Size cap</i> <span class="c"><a href="#s13">[13]</a></span></span></div>
+  <div class="dt" role="img" aria-label="64.7 percent for the side that limits data centers"><span class="dot" style="left:29.46%"></span></div>
+  <div class="dv"><span><small>yes (limits)</small><b>3,823</b></span><span><small>no</small>2,083</span><span><small>share</small><b>64.7%</b></span><span><small>margin</small>+1,740</span></div>
+  
+</li>
+<li class="dr">
+  <div class="dn"><b>City of Oregon</b><span>Lucas County &middot; Issue 25 &middot; <i class="cap">Size cap</i> <i class="tr">tracker only</i> <span class="c"><a href="#s3">[3]</a><a href="#s15">[15]</a></span></span></div>
+  <div class="dt" role="img" aria-label="60.7 percent for the side that limits data centers"><span class="dot" style="left:21.38%"></span></div>
+  <div class="dv"><span><small>yes (limits)</small><b>4,994</b></span><span><small>no</small>3,235</span><span><small>share</small><b>60.7%</b></span><span><small>margin</small>+1,759</span></div>
+  
+</li>
+<li class="dr">
+  <div class="dn"><b>Monroe Township</b><span>Adams County &middot; <i class="zon">Adopt zoning</i> <span class="c"><a href="#s23">[23]</a></span></span></div>
+  <div class="dt" role="img" aria-label="59.7 percent for the side that limits data centers"><span class="dot" style="left:19.35%"></span></div>
+  <div class="dv"><span><small>yes (limits)</small><b>148</b></span><span><small>no</small>100</span><span><small>share</small><b>59.7%</b></span><span><small>margin</small>+48</span></div>
+  
+</li>
+<li class="dr">
+  <div class="dn"><b>City of Grove City</b><span>Franklin County &middot; Issue 28 &middot; <i class="vote">Voter approval</i> <i class="tr">tracker only</i> <span class="c"><a href="#s3">[3]</a><a href="#s25">[25]</a></span></span></div>
+  <div class="dt" role="img" aria-label="54.6 percent for the side that limits data centers"><span class="dot" style="left:9.20%"></span></div>
+  <div class="dv"><span><small>yes (limits)</small><b>11,317</b></span><span><small>no</small>9,411</span><span><small>share</small><b>54.6%</b></span><span><small>margin</small>+1,906</span></div>
+  <p class="dnote">Ballotpedia&rsquo;s table carried a partial count, 6,110 to 4,976. <span class="c"><a href="#s4">[4]</a></span></p>
+</li>
+<li class="dr">
+  <div class="dn"><b>Sprigg Township</b><span>Adams County &middot; <i class="zon">Adopt zoning</i> <span class="c"><a href="#s23">[23]</a></span></span></div>
+  <div class="dt" role="img" aria-label="52.6 percent for the side that limits data centers"><span class="dot" style="left:5.26%"></span></div>
+  <div class="dv"><span><small>yes (limits)</small><b>330</b></span><span><small>no</small>297</span><span><small>share</small><b>52.6%</b></span><span><small>margin</small>+33</span></div>
+  <p class="dnote">The closest margin in Ohio: 33 votes of 627 cast on the question. <span class="c"><a href="#s23">[23]</a></span></p>
+</li>
+</ul>
+<p class="tnote">The Village of Monroeville&rsquo;s question was advisory and asked whether to allow data centers; 394 voted no and 55 yes. <span class="c"><a href="#s27">[27]</a></span> The City of Piqua also recalled three city commissioners the same night; the recall counts are in a separate county report this desk did not obtain. <span class="c"><a href="#s19">[19]</a></span> Tracker-only in Ohio: City of Oregon, City of Grove City, Village of Perry and Village of Ashville; the Pickaway County file at the board&rsquo;s link was still the pre-count zero report when fetched. <span class="c"><a href="#s3">[3]</a><a href="#s28">[28]</a></span></p>
+
+<!-- 5 · Trenton -->
+<section class="ch" id="trenton">
+  <p class="k">Butler County &middot; City of Trenton</p>
+  <h2>Issue 17 passed 3,541 to 903. The Supreme Court of Ohio put it on the ballot on September 1, after council declined to certify a petition with 336 valid signatures where 128 were needed.</h2>
+  <p class="dek">The charter amendment, the case, the annexation the city withdrew, the county&rsquo;s moratorium and the campus already under construction.</p>
+</section>
+<div class="tr2">
+  <div class="count rise">
+    <span class="n">3,541<small>to <b>903</b></small></span>
+    <p>Issue 17, City of Trenton, proposed charter amendment. 79.7 percent yes, 8 of 8 precincts, unofficial. <span class="c"><a href="#s12">[12]</a></span></p>
+    <div class="line"><b>25 MW</b><p>The amendment adds a section to Article IX of the charter prohibiting construction of data centers with aggregate monthly demand or peak load above 25 megawatts. The Prologis campus already under construction is outside it. The full text was not obtained by this desk; the opinion and the ballot summary describe it. <span class="c"><a href="#s11">[11]</a><a href="#s12">[12]</a></span></p></div>
+  </div>
+  <ol class="docket">
+    <li><time datetime="2025-10">October 2025</time><p><b>141 acres sold.</b> The City of Trenton sold 141 acres to Prologis at about $55,000 an acre, about $7.7 million, as reported by Data Center Dynamics and WYSO. <span class="c"><a href="#s52">[52]</a><a href="#s53">[53]</a></span></p></li>
+    <li><time datetime="2026-06-16">June 16, 2026</time><p><b>The county moratorium.</b> The Butler County commissioners voted unanimously for a six-month moratorium, effective immediately, on the approval, establishment, construction or permitting of any data center in the six townships under county zoning: Hanover, Lemon, Madison, Milford, Oxford and Ross. It runs to about mid-December 2026. The resolution number was not found in the county&rsquo;s online records. <span class="c"><a href="#s54">[54]</a><a href="#s55">[55]</a></span></p></li>
+    <li><time datetime="2026-07">July 2026</time><p><b>The tax abatement.</b> Council approved a Community Reinvestment Area agreement with Prologis: a 15-year, 75 percent property tax abatement for a campus of four single-story buildings, roughly 880,000 to 1,000,000 square feet in all, with an on-site substation. <span class="c"><a href="#s52">[52]</a><a href="#s53">[53]</a></span></p></li>
+    <li><time datetime="2026-08">August 2026</time><p><b>The annexation.</b> Trenton petitioned to annex about 601 acres in Madison and St. Clair townships, 358 of them in St. Clair, through the expedited process for a significant economic development project, an Amazon Web Services campus. Both townships filed objections. <span class="c"><a href="#s56">[56]</a><a href="#s57">[57]</a></span></p></li>
+    <li><time datetime="2026-09-01">September 1, 2026</time><p><b>The Supreme Court.</b> In <i>State ex rel. Blankenship v. Trenton City Council</i>, 2026-Ohio-3406, No. 2026-1035, the court granted a limited writ of mandamus. Council&rsquo;s refusal to certify the charter petition was unlawful: under Article XVIII, Section 9 of the Ohio Constitution the threshold is 10 percent of the votes cast at the last general municipal election, 1,277 votes in November 2025, so 128 signatures, and the petition carried 336 valid ones. The court ordered the amendment to the voters at a special election 60 to 120 days after the certifying ordinance. Council then certified it for November 3. <span class="c"><a href="#s11">[11]</a><a href="#s58">[58]</a></span></p></li>
+    <li><time datetime="2026-09">Mid-September 2026</time><p><b>The annexation withdrawn.</b> One day before the county commissioners&rsquo; public hearing, Trenton withdrew the annexation petition. The petitioners asked that any hearing be moved to a regular commissioners&rsquo; meeting on or after November 10, 2026, and reserved the right to refile. <span class="c"><a href="#s57">[57]</a></span></p></li>
+    <li><time datetime="2026-11-03">November 3, 2026</time><p><b>Issue 17.</b> 3,541 yes, 903 no. <span class="c"><a href="#s12">[12]</a></span></p></li>
+    <li class="open"><span class="when">Open</span><p>No new annexation petition or hearing date was on the county agenda when this desk looked. The county moratorium ends in about mid-December. A reported capacity figure for the Prologis campus appears in press coverage only; no city or county document stating it was obtained, so none is printed here. <span class="c"><a href="#s52">[52]</a><a href="#s54">[54]</a><a href="#s57">[57]</a></span></p></li>
+  </ol>
+</div>
+
+<!-- 6 · the statehouse and the state's deal -->
+<section class="ch" id="statehouse">
+  <p class="k">Columbus</p>
+  <h2>Four bills sit in committee. One passed the House in March. The state&rsquo;s sales-tax exemption for data-center equipment, and the utility regulator&rsquo;s 2025 tariff, are the deal the bills would change.</h2>
+  <p class="dek">Status from the House and Senate bill pages, 136th General Assembly, as of November 4. <span class="c"><a href="#s59">[59]</a><a href="#s60">[60]</a><a href="#s61">[61]</a><a href="#s62">[62]</a></span></p>
+</section>
+<div class="bills">
+  <div class="bill rise"><span class="no">H.B. 646</span><p class="ti">Create the Data Center Study Commission</p><p>Creates a state Data Center Study Commission. The Senate&rsquo;s June substitute grew into a rewrite of about 50 pages touching the sales-tax exemption, water and energy use.</p><p class="stt">Introduced January 14, 2026 &middot; passed the House March 18 &middot; reported by Senate Energy June 10, informally passed, recommitted<b>In the Senate: recommitted to the Energy Committee <span class="c"><a href="#s59">[59]</a></span></b></p></div>
+  <div class="bill rise"><span class="no">S.B. 374</span><p class="ti">Prohibit new data center sales tax exemptions</p><p>Amends ORC 122.175 so the Tax Credit Authority may grant no new data-center sales-tax exemptions. Its House companion is H.B. 957.</p><p class="stt">Introduced March 11, 2026<b>Senate Finance Committee since March 25 <span class="c"><a href="#s60">[60]</a></span></b></p></div>
+  <div class="bill rise"><span class="no">H.B. 710</span><p class="ti">Prohibit public support, limit construction of, new data centers</p><p>Would bar public incentives for new data centers and limit their construction; amends 163.01 and enacts 9.71, 9.711 and 4933.71.</p><p class="stt">Introduced February 24, 2026<b>House General Government Committee since February 25 <span class="c"><a href="#s61">[61]</a></span></b></p></div>
+  <div class="bill rise"><span class="no">H.B. 957</span><p class="ti">Prohibit new data center sales tax exemption agreements</p><p>The House companion to S.B. 374: no new exemption agreements after October 1, 2026.</p><p class="stt">Introduced May 27, 2026<b>House Ways and Means Committee since June 3 <span class="c"><a href="#s62">[62]</a></span></b></p></div>
+</div>
+<div class="deal">
+  <div class="rise"><h3>The sales-tax exemption</h3><p>Ohio Revised Code 122.175 lets the Ohio Tax Credit Authority grant a full or partial sales and use tax exemption on computer data center equipment, and on its delivery, installation and repair, under an agreement with the operator. <span class="c"><a href="#s63">[63]</a></span> JobsOhio lists the exemption among the state&rsquo;s incentive programs. <span class="c"><a href="#s64">[64]</a></span> S.B. 374 and H.B. 957 would end new agreements; the Senate&rsquo;s version of H.B. 646 would trim the exemption. <span class="c"><a href="#s59">[59]</a><a href="#s60">[60]</a><a href="#s62">[62]</a></span></p></div>
+  <div class="rise"><h3>The utility regulator&rsquo;s tariff</h3><p>On July 9, 2025, the Public Utilities Commission of Ohio adopted the stipulation among AEP Ohio, commission staff and the Consumers&rsquo; Counsel in Case No. 24-508-EL-ATA: new data-center customers above 25 megawatts pay for at least 85 percent of their subscribed capacity for up to 12 years, with exit fees, and AEP was ordered to file the tariffs and lift its moratorium on new data-center connections. <span class="c"><a href="#s17">[17]</a><a href="#s65">[65]</a></span></p></div>
+  <div class="rise"><h3>November 18, Columbus</h3><p>The third Ohio AI Summit meets at Columbus State Community College&rsquo;s Mitchell Hall. Its 10:20 AM session, &ldquo;AI and Ohio&rsquo;s Innovation Infrastructure Advantage,&rdquo; is described on the agenda as covering &ldquo;data centers and energy systems&rdquo; through &ldquo;advanced manufacturing and the companies supplying critical equipment.&rdquo; The listed speakers are the City of Westerville&rsquo;s economic development director, Vertiv&rsquo;s chief innovation officer and Google&rsquo;s head of data center market development for the Midwest. <span class="c"><a href="#s66">[66]</a></span></p></div>
+</div>
+
+<!-- 7 · what happens next -->
+<section class="ch" id="next">
+  <p class="k">What happens next</p>
+  <h2>Ohio&rsquo;s canvass runs November 14 to 24. Trenton&rsquo;s annexation hearing, if refiled, comes on or after November 10. The county moratorium ends in about mid-December. Two Maine towns still owe a count.</h2>
+</section>
+<ul class="entries">
+  <li><time datetime="2026-11-10">Nov. 10</time><div class="what"><p><b>Trenton&rsquo;s annexation.</b> The earliest date the petitioners asked for a rescheduled hearing before the Butler County commissioners. No new petition or hearing was on the county agenda when this desk looked. <span class="c"><a href="#s57">[57]</a></span></p></div></li>
+  <li><time datetime="2026-11-14">Nov. 14 to 24</time><div class="what"><p><b>The official canvass in Ohio.</b> Each county board begins its canvass between the eleventh and fifteenth day after the election and finishes by the twenty-first; for November 3 that is November 14 to 24. Provisional and late-arriving absentee ballots are counted then, and every Ohio number above can move. The other nine states run their own calendars. <span class="c"><a href="#s67">[67]</a></span></p></div></li>
+  <li><time datetime="2026-11-18">Nov. 18</time><div class="what"><p><b>The Ohio AI Summit</b> in Columbus, with its 10:20 AM infrastructure session. <span class="c"><a href="#s66">[66]</a></span></p></div></li>
+  <li><time datetime="2026-12">Mid-December</time><div class="what"><p><b>Butler County&rsquo;s moratorium</b> on data centers in the six county-zoned townships reaches six months from June 16. <span class="c"><a href="#s54">[54]</a><a href="#s55">[55]</a></span></p></div></li>
+  <li><span class="when">Pending</span><div class="what"><p><b>Brownfield and Freedom, Maine,</b> had posted no count on their moratorium questions by Wednesday morning. <span class="c"><a href="#s3">[3]</a><a href="#s35">[35]</a><a href="#s36">[36]</a></span> Emporia&rsquo;s and Ottawa&rsquo;s bans in Kansas wait on the district courts. <span class="c"><a href="#s3">[3]</a><a href="#s42">[42]</a><a href="#s43">[43]</a></span> California&rsquo;s and Nevada&rsquo;s counts continue as mail ballots arrive. <span class="c"><a href="#s44">[44]</a><a href="#s47">[47]</a></span></p></div></li>
+</ul>
+<div class="note rise">
+  <p><b>Where to check a count yourself.</b> Every row on the board links to the official results page for its county or town, and every Ohio county board posts its sheet at boe.ohio.gov or its own site. The two trackers that kept the roster are Ballotpedia&rsquo;s measure page and Redbud Consulting&rsquo;s datacentersontheballot.com; a third dashboard lists the official page for each jurisdiction. <span class="c"><a href="#s3">[3]</a><a href="#s4">[4]</a><a href="#s6">[6]</a></span></p>
+</div>
+
+<!-- sources -->
+<section class="srcs" id="srcs" aria-labelledby="srcH">
+  <p class="k" id="srcH">Sources</p>
+  <ol class="src">
+    <li id="s1">North Dakota Secretary of State, election results, Cass County, November 3, 2026, <a href="https://resultsnd.sos.nd.gov/#bucket=results&amp;filter=SW&amp;contest=22055&amp;location=cass+county">resultsnd.sos.nd.gov</a>.</li>
+    <li id="s2">Route Fifty, &ldquo;Voters reject data centers in local ballot initiatives,&rdquo; November 2026, quoting the North Dakota Secretary of State on Harwood, <a href="https://www.route-fifty.com/artificial-intelligence/2026/11/voters-reject-data-centers-local-ballot-initiatives/417033/">route-fifty.com</a>.</li>
+    <li id="s3">Redbud Consulting, &ldquo;Data Centers on the Ballot,&rdquo; results file generated November 4, 2026, 10:22 AM ET; adds Americus, Kansas, and Eliot, Sabattus, Brownfield and Freedom, Maine, to the roster, <a href="https://datacentersontheballot.com/">datacentersontheballot.com</a>.</li>
+    <li id="s4">Ballotpedia, &ldquo;Data center-related ballot measures, 2026,&rdquo; the roster of 41 November 3 questions with election-night counts, <a href="https://ballotpedia.org/Data_center-related_ballot_measures,_2026">ballotpedia.org</a>.</li>
+    <li id="s5">Ballotpedia News, &ldquo;Voters in ten states will vote on data center-related ballot measures November 3,&rdquo; November 3, 2026, <a href="https://news.ballotpedia.org/2026/11/03/voters-in-ten-states-will-vote-on-data-center-related-ballot-measures-november-3/">news.ballotpedia.org</a>.</li>
+    <li id="s6">&ldquo;Data centers and AI on the ballot,&rdquo; a public dashboard compiled November 3, 2026, which lists the official results page for each jurisdiction, <a href="https://dashboard-production-c2fc.up.railway.app/">dashboard-production-c2fc.up.railway.app</a>.</li>
+    <li id="s7">U.S. Department of Energy, &ldquo;DOE Releases New Report Evaluating Increase in Electricity Demand from Data Centers,&rdquo; December 20, 2024, summarizing the Lawrence Berkeley National Laboratory report, <a href="https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers">energy.gov</a>.</li>
+    <li id="s8">U.S. Energy Information Administration, press release, January 13, 2026, on the Short-Term Energy Outlook, <a href="https://www.eia.gov/pressroom/releases/press582.php">eia.gov</a>.</li>
+    <li id="s9">U.S. Energy Information Administration, Today in Energy, May 19, 2026, on servers&rsquo; share of commercial-sector electricity, <a href="https://www.eia.gov/todayinenergy/detail.php?id=67704">eia.gov</a>.</li>
+    <li id="s10">U.S. Energy Information Administration, Short-Term Energy Outlook, September 2026, <a href="https://www.eia.gov/outlooks/steo/archives/sep26.pdf">eia.gov</a>.</li>
+    <li id="s11">Supreme Court of Ohio, <i>State ex rel. Blankenship v. Trenton City Council</i>, 2026-Ohio-3406, No. 2026-1035, decided September 1, 2026, slip opinion, <a href="https://www.supremecourt.ohio.gov/rod/docs/pdf/0/2026/2026-Ohio-3406.pdf">supremecourt.ohio.gov</a>.</li>
+    <li id="s12">Butler County Board of Elections, unofficial results, November 3, 2026, Issue 17 City of Trenton, 8 of 8 precincts, <a href="https://liveresults.boe.ohio.gov/ENR/butlerohenr/24/en/Index_24.html">liveresults.boe.ohio.gov</a>.</li>
+    <li id="s13">Defiance County Board of Elections, unofficial results, November 3, 2026 (PDF), <a href="https://www.boe.ohio.gov/defiance/c/elecres/20261103results.pdf">boe.ohio.gov</a>.</li>
+    <li id="s14">Ashtabula County Board of Elections, unofficial results, November 3, 2026 (PDF), <a href="https://www.boe.ohio.gov/ashtabula/c/elecres/20261103results.pdf">boe.ohio.gov</a>.</li>
+    <li id="s15">Lucas County Board of Elections, results page, <a href="https://www.lucascountyohiovotes.gov/">lucascountyohiovotes.gov</a>.</li>
+    <li id="s16">Delaware County Board of Elections, unofficial summary report, November 3, 2026 (scanned PDF), <a href="https://vote.delawarecountyohio.gov/wp-content/uploads/2026/11/Delawares-Unofficial-Summary-Report.pdf">vote.delawarecountyohio.gov</a>.</li>
+    <li id="s17">Public Utilities Commission of Ohio, bulletin on the AEP Ohio data center tariff order, Case No. 24-508-EL-ATA, July 9, 2025, <a href="https://content.govdelivery.com/accounts/OHPUC/bulletins/3e8bb79">content.govdelivery.com</a>.</li>
+    <li id="s18">Champaign County Board of Elections, unofficial results, November 3, 2026 (PDF), <a href="https://www.boe.ohio.gov/champaign/c/elecres/20261103results.pdf">boe.ohio.gov</a>.</li>
+    <li id="s19">Miami County Board of Elections, unofficial results, November 3, 2026, general report (PDF), <a href="https://www.boe.ohio.gov/miami/c/elecres/20261103results.pdf">boe.ohio.gov</a>.</li>
+    <li id="s20">Trumbull County Board of Elections, election summary, November 3, 2026 (PDF), <a href="https://boe.co.trumbull.oh.gov/pdfs/Election%20Summary.pdf">boe.co.trumbull.oh.gov</a>.</li>
+    <li id="s21">Licking County Board of Elections, unofficial cumulative results, November 3, 2026 (PDF), <a href="https://www.boe.ohio.gov/licking/c/elecres/20261103results.pdf">boe.ohio.gov</a>.</li>
+    <li id="s22">Wyandot County Board of Elections, unofficial results, November 3, 2026 (scanned PDF), <a href="https://www.boe.ohio.gov/wyandot/c/elecres/20261103results.pdf">boe.ohio.gov</a>.</li>
+    <li id="s23">Adams County Board of Elections, unofficial results, November 3, 2026 (scanned PDF), <a href="https://www.boe.ohio.gov/adams/c/elecres/20261103results.pdf">boe.ohio.gov</a>.</li>
+    <li id="s24">Clinton County Board of Elections, unofficial cumulative results, November 3, 2026 (PDF), <a href="https://www.boe.ohio.gov/clinton/c/elecres/20261103results.pdf">boe.ohio.gov</a>.</li>
+    <li id="s25">Franklin County Board of Elections, results page, <a href="https://vote.franklincountyohio.gov/">vote.franklincountyohio.gov</a>.</li>
+    <li id="s26">Lake County Board of Elections, election results page, <a href="https://www.lakecountyohio.gov/boe/election-results/">lakecountyohio.gov</a>.</li>
+    <li id="s27">Huron County Board of Elections, unofficial canvass, November 3, 2026 (PDF), <a href="https://www.huron.boe.ohio.gov/wp-content/uploads/Huron-County-Unofficial-Canvass-11-3-2026.pdf">huron.boe.ohio.gov</a>.</li>
+    <li id="s28">Pickaway County Board of Elections, results file for November 3, 2026 (PDF; the file at this link was still the pre-count zero report when this desk fetched it), <a href="https://www.boe.ohio.gov/pickaway/c/elecres/20261103results.pdf">boe.ohio.gov</a>.</li>
+    <li id="s29">Town of North Berwick, Maine, general election results, November 2026 (scanned PDF), <a href="https://www.townofnorthberwick.org/DocumentCenter/View/1599/General-Election-November-4-2026">townofnorthberwick.org</a>.</li>
+    <li id="s30">Town of Peru, Maine, <a href="https://townofperumaine.org/">townofperumaine.org</a>.</li>
+    <li id="s31">Town of Wells, Maine, election results (scanned PDF), <a href="https://www.wellstown.org/DocumentCenter/View/8557">wellstown.org</a>.</li>
+    <li id="s32">Town of Wiscasset, Maine, Town Clerk, elections, <a href="https://www.wiscasset.gov/192/Town-Clerk-Elections">wiscasset.gov</a>.</li>
+    <li id="s33">Town of Eliot, Maine, moderator&rsquo;s return of votes cast, November 3, 2026 (scanned PDF), <a href="https://www.eliotme.gov/DocumentCenter/View/3997/Election-Results-November-3-2026---Eliot-Maine-PDF">eliotme.gov</a>.</li>
+    <li id="s34">Town of Sabattus, Maine, clerk&rsquo;s return of votes, municipal election, November 3, 2026 (scanned PDF), <a href="https://storage.googleapis.com/juniper-media-library/571/2026/11/Sabattus%20-%20Clerk%20Return%20of%20Votes%20-%20Municipal%20Election.pdf">storage.googleapis.com</a>.</li>
+    <li id="s35">Town of Brownfield, Maine, town warrants and reports, <a href="https://www.brownfieldmaine.gov/1196/Past-Town-Warrants-Reports">brownfieldmaine.gov</a>.</li>
+    <li id="s36">Town of Freedom, Maine, <a href="https://www.freedomme.org/">freedomme.org</a>.</li>
+    <li id="s37">Bloomington Election Commission (Illinois), results feed, November 3, 2026, <a href="https://results.enr.clarityelections.com/IL/Bloomington/127392/">results.enr.clarityelections.com</a>.</li>
+    <li id="s38">Madison County Clerk (Illinois), results feed, November 3, 2026, <a href="https://results.enr.clarityelections.com/IL/Madison/127555/">results.enr.clarityelections.com</a>.</li>
+    <li id="s39">Will County Clerk (Illinois), results feed, November 3, 2026, <a href="https://results.enr.clarityelections.com/IL/Will/127394/">results.enr.clarityelections.com</a>.</li>
+    <li id="s40">Morgan County Clerk (Illinois); the clerk posts no results online, <a href="https://morgancounty-il.com/wp/departments/county-clerk/">morgancounty-il.com</a>.</li>
+    <li id="s41">Butler County, Kansas, election results, November 3, 2026, <a href="https://www.livevoterturnout.com/ENR/butlerksenr/4/en/Index_4.html">livevoterturnout.com</a>.</li>
+    <li id="s42">Lyon County, Kansas, &ldquo;Unofficial Final&rdquo; results, November 3, 2026 (PDF), <a href="https://www.lyoncountyks.gov/DocumentCenter/View/2423">lyoncountyks.gov</a>.</li>
+    <li id="s43">Franklin County, Kansas, election results page, <a href="https://www.franklincoks.org/1067/Election-Results">franklincoks.org</a>.</li>
+    <li id="s44">Los Angeles County Registrar-Recorder/County Clerk, election results, November 3, 2026, <a href="https://results.lavote.gov/#year=2026&amp;election=4348">results.lavote.gov</a>.</li>
+    <li id="s45">Volusia County Supervisor of Elections, 2026 general election results, <a href="https://app.enhancedvoting.com/results/public/volusia-county-fl/elections/2026GeneralElection">app.enhancedvoting.com</a>.</li>
+    <li id="s46">Cumberland County Clerk (New Jersey), results feed, November 3, 2026, <a href="https://results.enr.clarityelections.com/NJ/Cumberland/127562/">results.enr.clarityelections.com</a>.</li>
+    <li id="s47">Clark County, Nevada, Election Department, results, <a href="https://elections.clarkcountynv.gov/electionresultsTV/">elections.clarkcountynv.gov</a>.</li>
+    <li id="s48">Rock County, Wisconsin, County Clerk, election results, November 3, 2026, <a href="https://www.co.rock.wi.us/departments/county-clerk/election-information/election-results-november-3-2026">co.rock.wi.us</a>.</li>
+    <li id="s49">Fortune, &ldquo;Ohio data center ballot measures,&rdquo; November 4, 2026 (21 measures in 18 municipalities), <a href="https://fortune.com/2026/11/04/ohio-data-center-ballot-measures-midterm-elections/">fortune.com</a>.</li>
+    <li id="s50">NBC4 Columbus, &ldquo;Columbus-area communities vote on data center issues,&rdquo; live results, November 3 to 4, 2026, <a href="https://www.nbc4i.com/news/your-local-election-hq/columbus-area-communities-vote-on-data-center-issues-live-results/">nbc4i.com</a>.</li>
+    <li id="s51">Ideastream Public Media, &ldquo;Northeast Ohio communities cast votes against data centers,&rdquo; November 4, 2026, <a href="https://www.ideastream.org/government-politics/2026-11-04/northeast-ohio-communities-cast-votes-against-data-centers">ideastream.org</a>.</li>
+    <li id="s52">Data Center Dynamics, &ldquo;Prologis details plans for data center campus outside Cincinnati, Ohio&rdquo;, <a href="https://www.datacenterdynamics.com/en/news/prologis-details-plans-for-data-center-campus-outside-cincinnati-ohio/">datacenterdynamics.com</a>.</li>
+    <li id="s53">WYSO, &ldquo;Trenton approves 15-year tax abatement for data center,&rdquo; July 9, 2026, <a href="https://www.wyso.org/2026-07-09/trenton-approves-15-year-tax-abatement-for-data-center">wyso.org</a>.</li>
+    <li id="s54">WVXU, &ldquo;Butler County approves data center moratorium,&rdquo; June 17, 2026, <a href="https://www.wvxu.org/environment/2026-06-17/butler-county-approves-data-center-moratorium">wvxu.org</a>.</li>
+    <li id="s55">Journal-News, &ldquo;&lsquo;We have to understand what we are committing to&rsquo;: Butler County approves 6-month data center moratorium,&rdquo; June 2026, <a href="https://www.journal-news.com/local/we-have-to-understand-what-we-are-committing-to-butler-county-approves-6-month-data/article_cdf1ab44-e310-5697-8a14-ebbf0311f198.html">journal-news.com</a>.</li>
+    <li id="s56">WVXU, &ldquo;Madison Township objects to Trenton annexation for hyperscale data center,&rdquo; August 25, 2026, <a href="https://www.wvxu.org/local-news/2026-08-25/madison-township-trenton-annex-hyperscale-data-center">wvxu.org</a>.</li>
+    <li id="s57">WCPO, &ldquo;Public hearing canceled after Trenton withdraws annexation petition for proposed Amazon data center,&rdquo; September 2026, <a href="https://www.wcpo.com/news/local-news/in-your-community/butler-county/public-hearing-canceled-after-trenton-withdraws-annexation-petition-for-proposed-amazon-data-center">wcpo.com</a>.</li>
+    <li id="s58">Court News Ohio, case summary, <i>State ex rel. Blankenship v. Trenton City Council</i>, September 1, 2026, <a href="https://courtnewsohio.gov/cases/2026/SCO/0901/261035.asp">courtnewsohio.gov</a>.</li>
+    <li id="s59">Ohio House of Representatives, H.B. 646, 136th General Assembly, status and history, <a href="https://ohiohouse.gov/legislation/136/hb646/status">ohiohouse.gov</a>.</li>
+    <li id="s60">Ohio Senate, S.B. 374, 136th General Assembly, status and history, <a href="https://ohiosenate.gov/legislation/136/sb374/status">ohiosenate.gov</a>.</li>
+    <li id="s61">Ohio House of Representatives, H.B. 710, 136th General Assembly, status and history, <a href="https://ohiohouse.gov/legislation/136/hb710/status">ohiohouse.gov</a>.</li>
+    <li id="s62">Ohio House of Representatives, H.B. 957, 136th General Assembly, status and history, <a href="https://ohiohouse.gov/legislation/136/hb957/status">ohiohouse.gov</a>.</li>
+    <li id="s63">Ohio Revised Code 122.175, tax exemption for sale, storage, use, or other consumption of computer data center equipment, <a href="https://codes.ohio.gov/ohio-revised-code/section-122.175">codes.ohio.gov</a>.</li>
+    <li id="s64">JobsOhio, &ldquo;Data Center Tax Exemption,&rdquo; program page, <a href="https://www.jobsohio.com/incentives-programs/data-center-tax-exemption">jobsohio.com</a>.</li>
+    <li id="s65">POWER, &ldquo;Regulator Approves AEP Ohio&rsquo;s Landmark Data Center Tariff,&rdquo; July 2025, on the terms of the order, <a href="https://www.powermag.com/regulator-approves-aep-ohios-landmark-data-center-tariff/">powermag.com</a>.</li>
+    <li id="s66">Ohio AI Summit, agenda, November 18, 2026, Columbus State Community College, <a href="https://www.ohioaisummit.org/agenda">ohioaisummit.org</a>.</li>
+    <li id="s67">Ohio Revised Code 3505.32, canvass of election returns, <a href="https://codes.ohio.gov/ohio-revised-code/section-3505.32">codes.ohio.gov</a>.</li>
+  </ol>
+  <p class="tm">Results are unofficial until each county, town or state office certifies its canvass. The tally, the board and the dot plot are drawn for this story from the sources above; shares and margins are computed from the counts as posted. Rows marked tracker only carry a tracker&rsquo;s reading of a count whose official sheet this desk could not reach on November 4; the official page is linked on each so a reader can check it.</p>
+</section>
+
+<footer>
+  <p>Built by <b>Dustin Nimmo</b>, founder of <a href="https://dnsc.ai">DNSC</a> in West&nbsp;Chester, Ohio.</p>
+  <p class="sm">Last verified Nov. 4, 2026, against the county and town results pages listed above. If a fact here is wrong, say so and it will be fixed and noted.</p>
+  <p class="sm ai-twin">For AIs: <a href="index.md">this page as text</a> &middot; <a href="/llms.txt">site index</a></p>
+</footer>
+</div>
+<script>
+(function(){
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce||!('IntersectionObserver' in window))return;
+  document.documentElement.classList.add('mo');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},{threshold:.08});
+  document.querySelectorAll('.rise,.st').forEach(function(el){io.observe(el);});
+  var t=document.querySelector('.tally');
+  if(t){var rs=t.querySelectorAll('rect');rs.forEach(function(r,i){r.style.transitionDelay=(i*18)+'ms';});}
+})();
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4cca1d9e1eab422b9abffe2ffd5a9399"}'></script><!-- End Cloudflare Web Analytics -->
+</body></html>

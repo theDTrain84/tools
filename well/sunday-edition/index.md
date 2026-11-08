@@ -30,4 +30,4 @@ Tap a square, or click it, and type. Tap again to turn between across and down. 
 
 ---
 
-Source: https://tools.dnsc.ai/well/sunday-edition/ · Generated from the page on Nov 1, 2026
+Source: https://tools.dnsc.ai/well/sunday-edition/ · Generated from the page on Nov 8, 2026

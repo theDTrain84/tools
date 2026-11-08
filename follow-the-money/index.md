@@ -4,7 +4,7 @@
 
 Issue 2, in Plain Numbers · The Lakota school bond, from the public record
 
-Tax year 2025 rates · Lakota Local School District · Tax district M56, West Chester Township · Revised Oct 16, 2026
+Tax year 2025 rates · Lakota Local School District · Tax district M56, West Chester Township · Revised Oct 23, 2026
 
 ## What Issue 2 means for your tax bill
 
@@ -54,15 +54,119 @@ Older debt: the district says about 2.2 of today’s 2.28 bond mills roll off af
 
 Source: Issue 2 ballot language and board resolution (June 9, 2026); Ohio DTE 27 tax rate abstract, tax year 2025; Lakota audited debt schedule, FY2025. Figures as of Oct 2, 2026.[6][1][2]
 
-### What the $300.6 million plan would build
+### How an Ohio school district is paid for
+
+Lakota's schools run mostly on local property tax. Under Ohio law a voted operating levy collects about the same dollars as homes gain value, so districts go back to voters every few years.[13][44][17]
+
+#### Where Lakota's money comes from
+
+Lakota levies no school income tax.[14] State aid follows a formula that weighs each district's property wealth and its residents' income.[47]
+
+Of each dollar Lakota took in during fiscal 2024, about 65 cents came from local sources, most of it property tax, and about 29 cents from the state.[13]
+
+57.4¢ · 28.8¢
+
+- Local property tax **57.4¢**
+- Other local money **7.3¢**
+- State **28.8¢**
+- Federal **6.6¢**
+
+US Census count. The district's prospectus counts the state's credits on homeowners' bills as local money: 75 cents local for fiscal 2025.[15]
+
+#### A voted levy raises about the same dollars every year
+
+Under House Bill 920 (1976), the state lowers each voted operating levy's effective rate as values rise, so it collects about what it did the year before from the same homes.[43][44][17] After Lakota's 2023 value update raised taxable values 32.9 percent, its effective operating rate on homes fell from 30.28 mills to 23.29.[14][16]
+
+Districts at a 20-mill floor (477 of Ohio's 611 in 2024) get growth again; Lakota is above it.[44][10]
+
+In the district's forecast, with no new levy, spending runs ahead of revenue every year from fiscal 2025 and cash falls below zero in 2030.[4][14]
+
+[Chart: Line chart of Lakota's general fund, fiscal 2024 to 2031, from the district's August 2026 forecast with no new levies. Revenue: $210.0 million in 2024, $221.0 million in 2026, $240.4 million forecast for 2031. Spending: $205.2 million in 2024, $225.8 million in 2026, $250.9 million forecast for 2031. Spending is above revenue every year from 2025.]
+
+Operating money
+
+Teachers, buses and daily costs. Lakota's last operating levy passed in November 2013, by 288 votes.[44][21]
+
+Building money, like Issue 2
+
+Issue 2 borrows $223,483,492 over up to 37 years, for the buildings in the plan and their debt only. Its rate resets each year to cover that year's payment.[6][44]
+
+#### Lakota's bond and levy votes, 1994 to 2026
+
+The 2013 operating levy was forecast to last five years; the district says it "is still funding the District in 2026, 13 years later."[59] Its forecast assumes a 3.6-mill operating levy from 2029, on no ballot yet.[4] Statewide, 24 of 66 school levies passed in May 2026.[61]
+
+Filled circles passed and open circles failed: Lakota's passes in 2005 and 2013 each came after three failed tries.[21][12][19]
+
+1. **1994/95** Bond
+2. **2000** Bond, levy
+3. **2004-05** Three tries
+4. **2005** Bond, levy
+5. **2010-11** Three levy tries
+6. **2013** Levy
+7. **2025** Issue 10
+8. **2026** Issue 2, on the ballot
+
+Revised October 23, 2026
+
+### The state's share of Lakota's revenue: 38 percent in 2003, 29 percent in 2024
+
+Per student, in 2025 dollars, state revenue fell 28 percent from fiscal 2005 to 2024 while local revenue rose 4 percent.[13]
+
+The state's share (gold) peaked at 38.3 percent in 2003 and was 28.8 percent in 2024; local sources (green) stayed between 56 and 68 percent in every year.[13]
+
+[Chart: Line chart of Lakota revenue shares by source, fiscal 1992 to 2024, US Census count. Local sources stay between about 56 and 68 percent and are 64.7 percent in 2024. The state share is 35.1 percent in 1992, peaks at 38.3 percent in 2003, is 37.3 percent in 2011 and 28.8 percent in 2024. Federal is 1 to 9 percent.]
+
+**More how the shares are counted, what changed along the way, per-pupil dollars**
+
+**How we count.** These shares come from the US Census Bureau, which counts the state's rollback and homestead payments (the state's share of many homeowners' school taxes) as state money. The state's own district report does the same and puts Lakota's state share at 27.9 percent for fiscal 2025.[16] The district's 2026 Financial Prospectus counts that money as local and shows 75 percent local, 21 percent state and 4 percent federal for fiscal 2025.[15] This section uses the Census count throughout. Each year's shares are scaled to add to 100; federal shares in 2021 to 2023 include one-time pandemic aid.
+
+##### What changed along the way
+
+**1997, DeRolph I.** The Ohio Supreme Court rules that the state's school funding system violates the constitution's "thorough and efficient" clause. Lakota's state share rose from 33.9 percent in fiscal 2001 to 38.3 percent in 2003.[18][13]
+
+**2013, House Bill 59.** The state's rollback (10 percent, plus 2.5 percent on owner-occupied homes) ends for levies passed on or after Nov. 5, 2013. Lakota's 2013 levy passed that day, so homeowners pay its full cost.[17]
+
+**2021, the guarantee.** The state's new formula (House Bill 110) calculates less aid for Lakota than it received in fiscal 2021, so a guarantee holds it at that level. In the district's fiscal 2027 forecast, the guarantee is $24.4 million on top of $23.3 million in formula aid. The forecast says, "We are considered a guarantee district and do not anticipate increases in state aid."[14][17]
+
+**2023, the value update.** Property values rise 32.9 percent. Under House Bill 920, Lakota's effective residential operating rate falls from 30.28 to 23.29 mills.[14][16]
+
+**2011 to 2024.** The state's share was 37.3 percent in fiscal 2011 and fell in 11 of the next 13 years.[13]
+
+**Against the state average.** The state's own report puts Lakota's fiscal 2025 state share at 27.9 percent; the average Ohio district's was 37.0 percent.[16][37]
+
+**Revenue per pupil, all funds**
+
+| Measure | FY2005 | FY2024 | Change |
+|---|---|---|---|
+| State, as reported | $3,260 | $3,755 | +15% |
+| Local, as reported | $5,067 | $8,448 | +67% |
+| State, in 2025 dollars | $5,376 | $3,854 | −28% |
+| Local, in 2025 dollars | $8,355 | $8,671 | +4% |
+
+Consumer prices rose about 61 percent from 2005 to 2024 (CPI-U, annual average). The 2025-dollar figures use the same index. The changes are our arithmetic on the Census figures.[13]
+
+Source: US Census Bureau, Annual Survey of School System Finances, all funds, fiscal 1992 to 2024 (the Census has not yet published 2025); Ohio Department of Education and Workforce, District Profile Reports; Lakota FY27 forecast assumptions. Policy dates from the Ohio Legislative Service Commission and the Ohio Supreme Court.[13][16][14][17][18]
+
+### Who pays for Ohio's schools: the record as of October 23, 2026
+
+- **Property owners**: Property tax paid 57.4 percent of Lakota's revenue in fiscal 2024, and homeowners pay the full amount of levies passed since November 5, 2013, with no state rollback.[13][17]
+- **Income-tax payers**: Lakota has none, and its board voted down an earned-income-tax option in May 2026; Fairfield City Schools, also in Butler County, asks for one on November 3.[14][6][5]
+- **The state**: The 2025 budget finishes the formula on 2022 cost figures, with aid to traditional districts up 0.4 percent in fiscal 2026 and 1.3 percent in 2027;[47] Republican House members' releases call it "nearly $700 million more for public education over the biennium."[57]
+- **The courts**: The Ohio Supreme Court found the system unconstitutional in 1997, 2000 and 2002, naming overreliance on local property tax in 2000, and in 2003 left the remedy to the General Assembly.[18][46]
+
+Still open in the record: how the cost of Ohio's schools is shared among property owners, income-tax payers and the state from here.
+
+### More from the record
+
+**What the $300.6 million plan would build $223.5 million local, about $77 million from the state.**
 
 Local taxpayers would pay $223.5 million and the state about $77 million. Grades 6 to 12 move into 4 campuses, and 21 buildings become 18.
 
-**More the state share, the district's goals, sources**
+The four campus projects come to about $230 million of the $300.6 million.[8]
 
 The plan costs $300.6 million. The state would pay 33 percent of the $233.8 million co-funded work (about $77 million in the April plan; $76.7 million in the state's July approval).
 
-#### What the district says it would do
+##### What the district says it would do
 
 **All students.** Fewer grade bands: preschool, K to 5, 6 to 8, 9 to 12, and more time in each building.
 
@@ -76,7 +180,9 @@ Source: Lakota Local Schools mailer, "Know the Facts: Master Facilities Plan and
 
 Source: Lakota board presentation "The Plan," April 13, 2026; Ohio Facilities Construction Commission conditional approval, July 28, 2026.[8]
 
-### Lakota schools get about 56 cents of each dollar on your bill
+**Lakota schools get about 56 cents of each dollar on your bill Every levy on a West Chester home's bill.**
+
+The school line is the widest part of the bill: 26.60 of about 47.13 effective mills.[3]
 
 **Every levy on your bill**
 
@@ -84,25 +190,21 @@ Source: Lakota board presentation "The Plan," April 13, 2026; Ohio Facilities Co
 |---|---|---|
 | Total, before credits |  |  |
 
-**More Liberty Township, Issue 6, source**
-
 Liberty Township homes in Lakota pay about 3 fewer township mills (gross).
 
 Issue 6 on the same ballot renews the county's 1-mill mental-health levy at the current rate.
 
 Source: Butler County Auditor, 2025 tax rates and Current Tax Distribution, tax district M56: each body's effective (after reduction factor) residential rate, before credits.[3]
 
-### Not on this ballot: a 3.6-mill operating levy in the district's forecast
-
-The forecast assumes it from 2029 as a planning placeholder, separate from Issue 2.
-
-**See the forecast**
+**A 3.6-mill operating levy in the district's forecast A planning placeholder from 2029, on no ballot.**
 
 The board approved the five-year forecast on Aug. 24, 2026. The levy itself is not approved and not filed, and its size and timing could change. The treasurer's notes say savings from the facilities plan could reduce or remove the need for it. It is here so a voter can see the district's whole forecast alongside this year's ballot.
 
+Without new money, the forecast's general-fund cash falls each year and goes below zero in fiscal 2030.[4]
+
 Source: Lakota Five-Year Forecast and its notes (including the FY2025 transfers), approved by the board Aug 24, 2026. FY2027 on are projections.[4]
 
-#### What the forecast assumes
+##### What the forecast assumes
 
 **The levy.** 3.6 mills, collected from 2029 in the Aug. 24 forecast. Not filed and on no ballot as of Oct. 7, 2026.
 
@@ -112,44 +214,7 @@ Source: Lakota Five-Year Forecast and its notes (including the FY2025 transfers)
 
 Sources: Lakota Five-Year Forecasts, Feb 23 and Aug 24, 2026.[4]
 
-### Most of Lakota's money comes from local sources
-
-Local sources paid 64.7 percent in fiscal 2024. The state's share peaked at 38.3 percent in 2003.[13]
-
-1. 1 · 1997, DeRolph I
-2. 2 · 2013, House Bill 59
-3. 3 · 2021, the guarantee
-4. 4 · 2023, the value update
-
-**More what the markers mean, per-pupil dollars, how we count**
-
-Fiscal 2024 is the year ending June 2024. In it, 57.4 percent of Lakota's revenue came from property tax and 7.3 percent from other local money; the federal government paid 6.6 percent.[13]
-
-Since House Bill 920 in 1976, a voted levy collects the same dollars when home values rise, and its rate falls instead. New local money comes from new levies, new construction, unvoted millage and payments in lieu of taxes.[17][14]
-
-1. 1 · **1997, DeRolph I.** The Ohio Supreme Court rules that the state's school funding system violates the constitution's "thorough and efficient" clause. Lakota's state share rose from 33.9 percent in fiscal 2001 to 38.3 percent in 2003.[18][13]
-2. 2 · **2013, House Bill 59.** The state's rollback (10 percent, plus 2.5 percent on owner-occupied homes) ends for levies passed on or after Nov. 5, 2013. Lakota's 2013 levy passed that day, so homeowners pay its full cost.[17]
-3. 3 · **2021, the guarantee.** The state's new formula (House Bill 110) calculates less aid for Lakota than it received in fiscal 2021, so a guarantee holds it at that level. In the district's fiscal 2027 forecast, the guarantee is $24.4 million on top of $23.3 million in formula aid.[14][17]
-4. 4 · **2023, the value update.** Property values rise 32.9 percent. Under House Bill 920, Lakota's effective residential operating rate falls from 30.28 to 23.29 mills.[14][16]
-
-Each marker sits at the first fiscal year the change touched. Federal shares in 2021 to 2023 include one-time pandemic aid.
-
-**Revenue per pupil, all funds**
-
-| Measure | FY2005 | FY2024 | Change |
-|---|---|---|---|
-| State, as reported | $3,260 | $3,755 | +15% |
-| Local, as reported | $5,067 | $8,448 | +67% |
-| State, in 2025 dollars | $5,376 | $3,854 | −28% |
-| Local, in 2025 dollars | $8,355 | $8,671 | +4% |
-
-Consumer prices rose about 61 percent from 2005 to 2024 (CPI-U, annual average). The 2025-dollar figures use the same index. The changes are our arithmetic on the Census figures.[13]
-
-**How we count.** These shares come from the US Census Bureau, which counts the state's rollback and homestead payments (the state's share of many homeowners' school taxes) as state money. The state's own district report does the same and puts Lakota's state share at 27.9 percent for fiscal 2025.[16] The district's 2026 Financial Prospectus counts that money as local and shows 75 percent local, 21 percent state and 4 percent federal for fiscal 2025.[15] This section uses the Census count throughout.
-
-Source: US Census Bureau, Annual Survey of School System Finances, all funds, fiscal 1992 to 2024 (the Census has not yet published 2025). Each year's four shares are scaled to add to 100. Policy dates from the Ohio Legislative Service Commission and the Ohio Supreme Court.[13][17][18]
-
-### Enrollment peaked in 2009-10; the district says schools are over capacity
+**Enrollment and building capacity Over capacity by more than 700, the district says.**
 
 The district says Lakota is "overcapacity by more than 700 students." The dashed line is a projection that counts students a little differently.[7][9]
 
@@ -161,7 +226,7 @@ The district says Lakota is "overcapacity by more than 700 students." The dashed
 6. 6 · Nov 2013, levy passes
 7. 7 · Nov 2025, Issue 10 fails
 
-**More the counts, the votes, building use, sources**
+Enrollment rose to a peak of 18,473 in 2009-10 and was 17,564 in 2023-24; the dashed projection counts students a little differently.[19][9]
 
 By the district's count in its audited reports, enrollment rose from 10,205 in 1991-92 to a peak of 18,473 in 2009-10. It fell to 15,991 in 2014-15 and was 17,564 in 2023-24.[19]
 
@@ -190,15 +255,13 @@ The district's FAQ says: "According to the Ohio Facilities Construction Commissi
 
 Source: Lakota annual financial reports, operating statistics (enrollment), FY2001 to FY2024; FutureThink enrollment report, March 11, 2026; Ohio Secretary of State and Butler County Board of Elections results; Lakota FAQ, updated Sept 25, 2026. The projection uses a different count and is drawn apart from the district line.[19][9][21][7]
 
-### How Lakota compares with 15 Ohio districts
+**How Lakota compares with 15 Ohio districts Lowest operating revenue per pupil of the 16.**
 
 Lakota's operating revenue per pupil is the lowest of the 16, and its state report card rating is 4.5 stars.[37][38]
 
 A choice (Choose a chart): Revenue per pupil, Bond per student.
 
 Operating revenue per pupil, fiscal 2025[37]
-
-**More the money table, the bond record, cautions, sources**
 
 The 15 are large suburban districts, most of them around Columbus, and Lakota's Southwest Ohio neighbors. Among the 16, Lakota ranks 15th in operating spending per pupil, 6th in state share, 12th in effective residential mills, 7th in property value per pupil and 6th in median income (1 is highest).[37]
 
@@ -226,7 +289,7 @@ The 15 are large suburban districts, most of them around Columbus, and Lakota's 
 
 Effective residential mills are the operating rate on homes and farms after House Bill 920 reductions, tax year 2024. Property value is assessed value as the state reports it. The Ohio average is the average district. Lakota was rated 4.5 stars in 2024-25, one of four districts here at 4.5 with Dublin, Sycamore and Forest Hills; Olentangy and Mason were rated 5. The 2025-26 report card again rates Lakota 4.5.[37][38]
 
-#### The bond record, 2015 to 2026
+##### The bond record, 2015 to 2026
 
 **Building bonds.** 9 of the 14 peers in the ballot review put a building bond on the ballot since 2015, and all 9 passed at least one; 14 of their 20 bond questions passed. Mason, Fairfield, Hamilton City, Princeton and Forest Hills had no bond vote in that time. West Clermont was not part of the ballot review.[40]
 
@@ -244,7 +307,7 @@ Effective residential mills are the operating rate on homes and farms after Hous
 
 **The bond chart.** Each bar is a bond's face amount divided by the district's October 2025 headcount (17,013 for Lakota): $223.5 million for Issue 2 and $506.4 million for Issue 10. Older bonds use today's enrollment and are not adjusted for inflation, so they look smaller than they were. Sycamore's bar uses its $127.5 million program cost, because the bond's face amount was not confirmed. South-Western's 2018 bar is its local share; the state added about the same. The median of the 13 passed peer bonds with a known face amount is about $8,270 per student.[39][40][6][7]
 
-#### Cautions
+##### Cautions
 
 **Student counts differ.** The state counts 16,736 Lakota students for fiscal 2025, and the table's per-pupil figures use the state's count for every district. The district's own counts run higher: 17,564 in 2023-24 in its audited report and 17,249 in 2025-26 in the FutureThink study.[37][19][9]
 
@@ -258,7 +321,7 @@ Effective residential mills are the operating rate on homes and farms after Hous
 
 Source: Ohio Department of Education and Workforce, FY2025 District Profile Report and October 2025 enrollment headcount; Ohio School Report Cards, 2024-25 and 2025-26; county boards of elections results and notices, 2015 to 2026; news reports on cuts, as listed in the sources.[37][38][39][40][41][42]
 
-### Under the plan, the district says band would start in grade 6
+**Band and the arts under the plan Band from grade 6, the district says.**
 
 Sixth grade would move to the middle schools, where the district says electives would begin.[7]
 
@@ -296,21 +359,17 @@ Ohio Revised Code 3313.60 and 3313.603.[25]
 
 **Limits:** We found no state minimum for elementary art or music time, and no required ratio of arts teachers since 2015. That search was not a full legal review.
 
-**More choir, theater, art, sources**
-
 Band starts in grade 7 today. Under the plan, sixth grade moves to the middle schools, and the district says electives, including band, would begin in grade 6.[22][7]
 
 Choir and theater start in junior high, and elementary art is weekly, per the district's pages.[22] The district says K-5 students would get "consistent, year-round specials." Its FAQ also says that if the bond passes, "all programs will be reviewed," including K-5 specials.[7]
 
 Source: Lakota Arts and Activities, K-6 Specials and Kindergarten pages; Lakota FAQ, updated Sept 25, 2026; the studies and statutes named on each card.[22][7][23][24][25]
 
-### Two paths, in time
-
-What the district says happens next, by date, either way.
+**Two paths, in time What happens next if Issue 2 passes or fails.**
 
 A choice (Show a path step by step): If Issue 2 passes, If Issue 2 fails.
 
-#### If Issue 2 passes
+##### If Issue 2 passes
 
 1. **Nov 3, 2026 · Voters decide Issue 2.** Voters decide Issue 2: $223,483,492 in bonds over up to 37 years, an estimated average of 2.20 mills.[6]
 2. **About Feb 1, 2027 · The bonds are dated.** The bonds are dated, at an estimated 5.00 percent average interest rate in the board's resolution.[6]
@@ -324,7 +383,7 @@ A choice (Show a path step by step): If Issue 2 passes, If Issue 2 fails.
 10. **2029-30 on, grades 6 to 8 · Sixth graders move to middle school.** Sixth graders move to middle school with "earlier access to electives." [05:03] The FAQ says electives, "including band," begin in sixth grade.[36][7]
 11. **After the move · Fewer traveling teachers and three fewer buildings.** "Fewer traveling teachers," the superintendent says, [08:33] and three fewer buildings to maintain, per the FAQ.[36][7]
 
-#### If Issue 2 fails
+##### If Issue 2 fails
 
 1. Nov 3, 2026 Issue 2 does not pass.
 2. **After the vote · The grade bands cannot change, the FAQ says.** "If the bond issue is not approved, we cannot shift the grade-band configuration, which is necessary to address overcrowding and large class sizes," the FAQ says.[7]
@@ -336,9 +395,67 @@ A choice (Show a path step by step): If Issue 2 passes, If Issue 2 fails.
 
 **Either way.** The forecast's assumed 3.6-mill operating levy, collected from 2029, applies whether Issue 2 passes or fails.[4]
 
-**More sources**
-
 Source: Lakota Master Facilities Plan FAQ, updated Sept 25, 2026; district post "The Big Picture," Sept 25, 2026; Resolution to Proceed, June 9, 2026; "2026 Master Facilities Plan and November Bond Information," district video, Oct 6, 2026, with minute marks from its captions; Five-Year Forecast, Aug 24, 2026. These are the district's statements and plans.[7][6][36][4]
+
+**The laws and rulings behind the levy cycle, 1976 to 2026 House Bill 920, DeRolph, the formula, 2025 changes.**
+
+1. **1976 · House Bill 920 A voted operating levy raises about the same dollars every year When home values rise, its effective rate falls.** Each year the state sets a reduction factor for each voted operating and permanent improvement levy so that it collects about what it collected the year before from property already on the tax list. The Legislative Service Commission's summary: "each year when property values increase, tax collections are adjusted downward so that taxing districts receive the same amount of revenue they received in the previous year."[43][44] New money for a district comes from new construction, unvoted (inside) millage, which is not reduced, and new levies.[44][17] There is a floor. A district's operating rate cannot be reduced below 20 mills; at the floor, the bill follows values up. In 2024, 477 of Ohio's 611 city, local and exempted village districts were at the floor.[44] Lakota's operating levies are above it.[10] Bond levies, like Issue 2, are outside the reduction factor. Their rate is set each year to collect that year's debt payment.[44][6]
+2. **1997 to 2003 · DeRolph v. State The Ohio Supreme Court ruled three times that school funding was unconstitutional In 2003 it ended the case and left the fix to the legislature.** **March 24, 1997, DeRolph I, 4 to 3.** The system violated the constitution's call for "a thorough and efficient system of common schools."[18][46] **May 1998.** A one-cent sales tax for schools went to voters and lost, 79.91 to 20.09 percent.[46] **May 11, 2000, DeRolph II.** Still unconstitutional. Among seven items to fix, the court listed overreliance on local property tax and "phantom revenue," which includes "property tax revenue credited to a school district when its tax base increases, but which is never actually received by the district due to ... tax-reduction factors."[18][46] **September 2001, DeRolph III.** The Court found most of the new system complied and said it would be constitutional once the state made further changes, including full funding of parity aid by July 1, 2003.[18][46] **December 11, 2002, DeRolph IV.** The Court vacated that order and held that "the current school funding system is unconstitutional."[18][46] **May 16, 2003.** The court ended the litigation: "The duty now lies with the General Assembly to remedy an educational system that has been found by the majority in DeRolph IV to still be unconstitutional." The Legislative Service Commission noted in August 2024 that "no new case has been filed."[46]
+3. **2020 to 2025 · federal pandemic relief The federal pandemic money for schools is spent Lakota's last ESSER dollars show up in its fiscal 2024 audit.** Ohio's schools received $7.14 billion in federal pandemic relief. Most of it came in three rounds of ESSER, the Elementary and Secondary School Emergency Relief fund: $489.2 million, $1.99 billion and an estimated $4.47 billion. The third round was available through September 30, 2024.[48] Beside Lakota, two nearby districts in this series for comparison, both with operating levies on recent ballots: Troy City in Miami County and Talawanda in Butler County.[52][53] **ESSER spent, by fiscal year, in each district's state audit[49][50][51]** | Year | Lakota | Troy City | Talawanda | |---|---|---|---| | 2020 | $597,959 | none | none | | 2021 | $2,232,014 | $408,456 | $269,183 | | 2022 | $6,047,385 | $1,854,673 | $1,008,095 | | 2023 | $6,418,228 | $2,168,028 | $1,322,173 | | 2024 | $3,471,651 | $1,929,206 | $1,445,175 | | 2025 | none | $1,306,035 | $116,007 | | Total | $18,767,237 | $7,666,398 | $4,160,633 | Fiscal years end June 30. The figures are the audits' ESSER lines (federal listings 84.425D and 84.425U); lines for homeless students are left out. Bars share one scale, Lakota's 2023 at full width. Troy's fiscal 2024 audit totals $1,940,706 in the fund, $11,500 of it for homeless students.[49][50][51] **Troy City Schools.** Its 5.8-mill operating renewal, first passed in 1996 and renewed every five years since, failed in May 2026. It is on the November 3, 2026 ballot again.[52] **Talawanda.** A 5.7-mill operating levy failed on November 8, 2022, with 35.17 percent for. The district has no issue on the November 2026 ballot.[53] **Lakota.** Its fiscal 2025 audit lists no ESSER spending.[49]
+4. **2021 to 2025 · House Bills 110 and 96 A new state formula was built, then finished on 2022 costs Statewide, aid to traditional districts rises 0.4 percent in fiscal 2026 and 1.3 percent in 2027.** House Bill 110 (2021) prices a base cost per student from staffing and salary inputs, then splits it between the state and the district by local property wealth and income. It was phased in over six years.[47][17] The 2025 budget, House Bill 96, completes the phase-in in fiscal 2026 and 2027 "while maintaining FY 2022 base cost inputs," and extends two guarantees that keep a district from falling below its 2020 or 2021 aid.[47] State foundation aid for traditional districts is estimated at $8.15 billion in fiscal 2026 and $8.26 billion in fiscal 2027, increases of 0.4 and 1.3 percent. Aid to community and STEM schools rises 4.8 and 5.0 percent.[47] Republican House members' releases on the final budget put it at "nearly $700 million more for public education over the biennium than they received in FY25."[57] State scholarship (voucher) spending was $394.2 million in fiscal 2020 and $1.09 billion in fiscal 2025; House Bill 33 (2023) opened EdChoice Expansion to families of all incomes.[60] Lakota is on the guarantee. Its fiscal 2027 forecast carries $24.4 million in guarantee aid on top of $23.3 million from the formula.[14]
+5. **2025 · the veto override The legislature changed which levies districts may ask for Replacement and substitute levies end; new emergency levies are only for districts in fiscal distress.** The governor signed the budget, House Bill 96, on June 30, 2025, with 67 line-item vetoes. The House overrode item 66 on July 21, 2025, 61 to 28, and the Senate on October 1, 2025, 21 to 11.[55][54][56][11] The House Republican release on the Senate vote said the provision "ensures taxpayers have more control over their property tax bills." The House Democratic leader's release on July 21 called the override "not real property tax relief."[62] Item 66 ends new replacement levies, renewals with an increase, and new emergency and substitute levies (both raise a fixed dollar sum). It also bars a new operating levy when a district's prior-year carryover exceeds 100 percent of its expenses.[58][43] Under the statute as amended since (House Bill 129, in effect March 20, 2026), a new emergency levy is open only to a district in fiscal caution, watch or emergency (the state's three levels of financial distress) or after a declared disaster, and an emergency or substitute levy approved before January 1, 2026 can be renewed only at the same or a smaller sum, up to five years at a time.[55][43][63] On December 19, 2025, the governor signed five more property tax bills, in effect March 20, 2026. House Bill 186 caps growth at inflation for districts at the 20-mill floor; House Bill 335 caps growth in unvoted millage.[56][11] Other vetoed items stay open to an override vote through December 31, 2026. Two of them bear on school levies: county budget commission power to cut voted levies (item 55), and a rule letting those commissions cut a district's levies when its carryover tops 40 percent of a year's spending (item 63).[55][54] Lakota's current carryover percentage: Unknown In May 2026, 24 of 66 Ohio school levies passed. As of September 18, the Secretary of State's list carried 131 school tax issues for November 3, 68 for new money, by one outside count; a regional station counted "more than 130 education issues" on October 7.[61]
+
+Sources: Ohio Revised Code 319.301 and 5705.194; Ohio Legislative Service Commission briefs on millage floors (Sept. 19, 2025) and DeRolph (Aug. 12, 2024) and its House Bill 96 education budget analysis (Sept. 2025); Butler County Auditor; Ohio Department of Education relief summary (April 29, 2021); Ohio Auditor of State single audits for Lakota, Troy City and Talawanda; the Ohio House Journal for July 21, 2025; House member releases and candidates' own pages, each dated where it carries a date. Figures as of October 21, 2026.[43][44][46][47][10][48][49][54][58]
+
+**Ohio House candidates on school funding Districts 45, 46 and nearby.**
+
+##### What the candidates in Lakota's two Ohio House districts have said
+
+District 45 includes West Chester Township; District 46 includes Liberty Township, as the Butler County Board of Elections lists them.[58]
+
+- District 45 · Rep. Jennifer Gross (R) · July 22, 2025 The Ohio House's work is not complete with this veto override. I am proud to back this measure to provide relief to Ohio homeowners and am committed to advancing further property tax reform for our taxpayers.[58]
+- District 45 · Jayson Ameer Rasheed (D) · campaign site, read October 20, 2026 Right now, Ohio's school funding system relies too heavily on local property taxes, creating deep inequities between communities.[58]
+- District 46 · Rep. Thomas Hall (R) · November 19, 2025 After years of discussions, bills, meetings, and debate, the legislature passed four property tax reform efforts that specifically target the unvoted increases we've seen in Butler County and across Ohio.[58]
+- District 46 · Benjamin McCall (D) · 2026 Ballotpedia candidate survey Rebalance the tax code to deliver immediate relief for homeowners while fully funding public education.[58]
+
+**More the other Ohio House races in the 8th Congressional District's Butler, Preble, Darke and Miami County seats, which share Lakota's congressional seat**
+
+- District 47 · Rep. Diane Mullins (R) · Voted yes on the July 21, 2025 override.[54]
+- District 47 · Jordan Haire (D) · campaign site, read October 20, 2026 We need to adequately fund public schools, FULL STOP.[58]
+- District 47 · Jason Purviance (L) · January 14, 2026 I want excellent schools as much as anyone. It must be done through responsible management of resources, not endless tax increases.[58]
+- District 40 · Rep. Rodney Creech (R) · April 14, 2025 I was proud to vote on a budget that provides Ohioans billions in property tax relief and invests in the future of our state through economic development and job creation.[58]
+- District 40 · Timothy B. Hornbacker (D) · campaign site, read October 20, 2026 Restore the state's share of funding for public schools and local governments to reduce the growing pressure on local property taxpayers.[58]
+- District 40 · Joshua A. Umbaugh (L) · Vote411, 2026 We need lower income taxes, and property taxes.[58]
+- District 80 · Rep. Johnathan Newman (R) · October 8, 2025 Property owners have been taxed too much through property taxes and the House of Representatives is taking action to lower them.[58]
+- District 80 · Katie Koehler Wagner (D) · Vote411, 2026 We should also protect stable funding for essential public services like public schools, infrastructure, and local governments.[58]
+- District 84 · Rep. Angie King (R) · December 22, 2025 By capping unvoted tax increases to inflation, we are protecting Ohio property owners from unchecked tax hikes and ensuring government lives within the same limits as the families and businesses it serves.[58]
+- District 84 · Arienne C. Childrey (D) · Vote411, 2026 Advocate the Fair School Funding Plan or similar formula to deliver predictable state aid.[58]
+
+##### The 2025 budget: one override vote, two names for one school formula
+
+House vote to override the veto of item 66, July 21, 2025[54]
+
+Yes 61 · No 28
+
+- **Yes, 61:** all of them Republicans.
+- **No, 28:** every Democrat recorded, 27, and one Republican.
+- **Not recorded:** 10.
+
+Every Republican incumbent in the Butler, Preble, Darke and Miami County House districts above voted yes.[54]
+
+On Republican House members' releases
+
+> "the final phase of the Cupp-Patterson funding model"
+
+Rep. Thomas Hall, June 25, 2025; Rep. Jennifer Gross, June 26, 2025, both on the final budget vote.[57]
+
+On Democratic candidates' pages
+
+> "the Fair School Funding Plan"
+
+The 2026 pages of House candidates Timothy B. Hornbacker (District 40), Caleb Price (District 30) and Arienne C. Childrey (District 84).[57]
+
+Both name the formula enacted in House Bill 110 in 2021. The Legislative Service Commission's analysis of the budget calls it "the Fair School Funding Plan."[47]
 
 **Fine print: sources, timeline and method**
 
@@ -391,7 +508,7 @@ Verified **The credits are changing under state law.** The 10 percent non-busine
 11. Ohio General Assembly, [House Bill 96 status](https://www.legislature.ohio.gov/legislation/136/hb96/status) (veto item passed notwithstanding the Governor's objections, House July 21 and Senate Oct 1, 2025) and [House Bill 186](https://www.legislature.ohio.gov/legislation/136/hb186) (signed Dec 19, 2025; effective March 20, 2026).
 12. Butler County Board of Elections, [**November 4, 2025 General Election results**](https://liveresults.boe.ohio.gov/ENR/butlerohenr/22/en/Index_22.html) (Lakota Local School Issue 10: 12,068 for, 18,718 against, 76 of 76 precincts).
 13. US Census Bureau, [**Annual Survey of School System Finances**](https://www2.census.gov/programs-surveys/school-finances/tables/) (F-33), district files for fiscal 1992 to 2024, Lakota LSD, Butler County (NCES ID 3904611): total, local, property-tax, state and federal revenue and fall enrollment; shares and per-pupil figures computed. Inflation: BLS consumer price index (CPI-U), annual average, via [FRED](https://fred.stlouisfed.org/series/CPIAUCSL).
-14. Lakota Local School District, [**FY27 five-year forecast assumptions**](https://public.education.ohio.gov/geoDoc/5-yrForecast/FY27%20(2027P0000)%20-%20First%20Required%20Submission/Lakota_046110/Lakota_046110_OCTAssumptionsFY27.pdf), filed with the Ohio Department of Education and Workforce, August 2026 (guarantee and formula aid, the 2023 value update, sources of local revenue).
+14. Lakota Local School District, [**FY27 five-year forecast assumptions**](https://public.education.ohio.gov/geoDoc/5-yrForecast/FY27%20(2027P0000)%20-%20First%20Required%20Submission/Lakota_046110/Lakota_046110_OCTAssumptionsFY27.pdf), filed with the Ohio Department of Education and Workforce, August 2026 (guarantee and formula aid, the 2023 value update, sources of local revenue; "Our school district does not have an income tax levy"; "We are considered a guarantee district and do not anticipate increases in state aid").
 15. Lakota Local School District, [**2026 Financial Prospectus**](https://resources.finalsite.net/images/v1785439261/lakotaonlinecom/nz8riisf27gi2394cwgh/Lakota_FinancialProspectus_2026_FINAL.pdf), "Lakota's Revenue Sources."
 16. Ohio Department of Education and Workforce, [**District Profile Reports**](https://education.ohio.gov/Topics/Finance-and-Funding/School-Payment-Reports/District-Profile-Reports) (the "Cupp report"), FY2021 to FY2025: Lakota's revenue shares and effective residential operating millage.
 17. Ohio Legislative Service Commission, [**School Funding Complete Resource 2019**](https://lsc.ohio.gov/assets/organizations/legislative-service-commission/files/school-funding-resources-2019-school-funding-complete-resource.pdf) (House Bill 920 reduction factors, rollbacks) and [analysis of House Bill 110](https://lsc.ohio.gov/assets/legislation/134/hb110/en/files/hb110-edu-bill-analysis-as-enrolled-134th-general-assembly.pdf) (2021); Hamilton County Auditor, [levy notice on House Bill 59](https://wedge3.hcauditor.org/view/re/1190A03004700/2015/levies) (rollback ends for levies passed Nov 5, 2013 or later).
@@ -420,10 +537,31 @@ Verified **The credits are changing under state law.** The 10 percent non-busine
 40. County boards of elections, official results and notices of election, 2015 to 2026: [Franklin](https://vote.franklincountyohio.gov), [Delaware](https://vote.delawarecountyohio.gov/data/olsd/) (Olentangy), [Fairfield](https://www.boe.ohio.gov/fairfield/c/elecres/20221108results.pdf) (Pickerington; each election's results file), [Warren](https://vote.warrencountyohio.gov/Results/VotingArchives/Index) (Kings, Mason), [Hamilton](https://votehamiltoncountyohio.gov) (Sycamore, Princeton, Forest Hills) and [Butler](https://elections.bcohio.gov/data_and_resources/results.php) (Fairfield, Hamilton City); multi-county results are sums of the county totals. Sycamore's $127.5 million program cost: [SHP](https://shp.com/2023/01/17/sycamore-schools-completes-several-projects/), January 17, 2023.
 41. Franklin County Board of Elections, [**Notice of Election, South-Western City School District bond issue**](https://vote.franklincountyohio.gov/getmedia/4fad3ffb-6d70-4711-8aa8-4f70eb5d2522/Notice-of-Election-South-Western-CSD-Bond-Issue), November 3, 2026.
 42. What followed failures: WCPO on [Fairfield](https://www.wcpo.com/news/local-news/hamilton-county/fairfield/voters-reject-fairfield-school-levy-district-to-move-forward-with-service-reductions) (March 2024) and [Princeton](https://www.wcpo.com/news/local-news/hamilton-county/sharonville/princeton-city-schools-announce-budget-cuts-and-hiring-freeze-after-tax-levy-failure) (November 2024); WOSU on [Westerville](https://www.wosu.org/politics-government/2025-09-23/westerville-city-schools-warn-of-bleak-future-should-income-tax-issue-fail-in-november), September 23, 2025; NBC4 on [Pickerington](https://www.nbc4i.com/news/local-news/pickerington/pickerington-schools-begin-cuts-will-make-more-if-future-levies-fail/amp/); 1808 Delaware, [Olentangy April 2024 board recap](https://1808delaware.com/schools/whats-new-in-olentangy-schools-april-board-meeting-recap/); Kings Local Schools, [2020 bond results](https://kingslocal.net/district-blog/entry/kings-bond-issue-election-results-463/).
+43. Ohio Revised Code [**319.301**](https://codes.ohio.gov/ohio-revised-code/section-319.301) (the tax reduction factor from House Bill 920, and the 20-mill floor at division E; version in effect Sept. 23, 2026) and [**5705.194**](https://codes.ohio.gov/ohio-revised-code/section-5705.194) (emergency levies, and renewals of emergency and substitute levies approved before Jan. 1, 2026; as amended by House Bill 129, in effect March 20, 2026).
+44. Ohio Legislative Service Commission, Members Brief, [**"Property Tax Millage Floors for School Districts"**](https://lsc.ohio.gov/assets/organizations/legislative-service-commission/files/property-tax-millage-floors-for-school-districts.pdf), Sept. 19, 2025 (how the reduction factor works; Table 1, which levies it applies to; 477 of 611 districts at the 20-mill floor in 2024).
+45. Finney Law Firm, [**"Butler County issues its property tax revaluation report"**](https://finneylawfirm.com/butler-county-issues-its-property-tax-revaluation-report/), Jan. 30, 2024, summarizing the Butler County Auditor's release on the 2023 update ("The median increase in valuations in Butler County was a whopping 37%"). The 2026 figure, a countywide median of 19 percent, is from the Auditor's 2026 Property Value and Tax FAQ (source 10).
+46. Ohio Legislative Service Commission, Members Brief, [**"DeRolph v. State School Funding Case"**](https://lsc.ohio.gov/assets/organizations/legislative-service-commission/files/derolph-v-state-school-funding-case-10020044.pdf), Aug. 12, 2024 (the four rulings, the 1998 sales tax vote, phantom revenue as defined in DeRolph II); Supreme Court of Ohio, [**State ex rel. State v. Lewis**, 2003-Ohio-2476](https://www.bricker.com/assets/htmldocuments/Documents/Resources/SchoolFund/051603supctderolph.pdf), May 16, 2003, paragraph 33 (slip opinion as archived by Bricker Graydon).
+47. Ohio Legislative Service Commission, [**Greenbook: Department of Education and Workforce, House Bill 96 as enacted**](https://lsc.ohio.gov/assets/legislation/136/hb96/en0/files/hb96-edu-greenbook-as-enacted-136th-general-assembly.pdf), September 2025 (the formula and its phase-in, FY 2022 inputs, the guarantees, foundation aid estimates).
+48. Ohio Department of Education, [**"Federal COVID Relief Funding"**](https://www.ohioschoolboards.org/sites/default/files/uploads/Federal%20COVID%20Relief%20Funding.pdf), presentation, April 29, 2021, as posted by the Ohio School Boards Association (ESSER I, II and III amounts and availability dates; $7.14 billion in all).
+49. Ohio Auditor of State, Lakota Local School District single audits, schedules of expenditures of federal awards, fiscal years [2020](https://ohioauditor.gov/AuditSearch/Reports/2020/Lakota_LSD_20_Butler_FINAL.pdf), [2021](https://ohioauditor.gov/AuditSearch/Reports/2022/Lakota_LSD_21_Butler_FINAL.pdf), [2022](https://ohioauditor.gov/AuditSearch/Reports/2023/Lakota_LSD_22_Butler_FINAL.pdf), [2023](https://ohioauditor.gov/AuditSearch/Reports/2024/Lakota_LSD_23_Butler_FINAL.pdf), [2024](https://ohioauditor.gov/AuditSearch/Reports/2025/Lakota_LSD_24_Butler_FINAL.pdf) and [2025](https://ohioauditor.gov/AuditSearch/Reports/2026/Lakota_Local_School_District_25_Butler_FINAL.pdf) (the 2025 audit by Plattenburg and Associates, accepted by the Auditor of State); ESSER lines summed by year.
+50. Ohio Auditor of State, Troy City School District (Miami County) single audits, schedules of expenditures of federal awards, fiscal years [2020](https://ohioauditor.gov/AuditSearch/Reports/2021/Troy_City_School_District_20_Miami_Report_FINAL.pdf), [2021](https://ohioauditor.gov/AuditSearch/Reports/2022/Troy_City_School_District_21_Miami_Report_FINAL.pdf), [2022](https://ohioauditor.gov/AuditSearch/Reports/2023/Troy_City_School_District_22_Miami_Report_FINAL.pdf), [2023](https://ohioauditor.gov/AuditSearch/Reports/2024/Troy_City_School_District_23_Miami_Report_FINAL.pdf), [2024](https://ohioauditor.gov/AuditSearch/Reports/2025/Troy_City_School_District_24_Miami_Report_FINAL.pdf) and [2025](https://ohioauditor.gov/AuditSearch/Reports/2026/Troy_City_School_District_25_Miami_Report_FINAL.pdf).
+51. Ohio Auditor of State, Talawanda School District (Butler County) single audits, fiscal years [2020](https://ohioauditor.gov/AuditSearch/Reports/2021/Talawanda_School_District_20_Butler_FINAL.pdf), [2021](https://ohioauditor.gov/AuditSearch/Reports/2022/Talawanda_School_District_21_Butler_FINAL.pdf), [2022](https://ohioauditor.gov/AuditSearch/Reports/2023/Talawanda_School_District_22_Butler_FINAL.pdf), [2023](https://ohioauditor.gov/AuditSearch/Reports/2024/Talawanda_School_District_23_Butler_FINAL.pdf) and [2024](https://ohioauditor.gov/AuditSearch/Reports/2025/Talawanda_School_District_24_Butler_FINAL.pdf), and the [fiscal 2025 audit](https://www.talawanda.org/media/user/treasurerbusiness/Talawanda_School_District_25_Butler_FINAL.pdf) as posted by the district.
+52. Troy's renewal: Dayton Daily News, [e-edition, page A6](https://www.daytondailynews.com/eedition/page-a6/page_e38387b7-6899-5bb2-ac3a-0f055a0d9b40.html), summer 2026 (the May 2026 result, first passed in 1996); This Local Life, [Miami County election guide 2026](https://www.thislocallife.com/miami-county-election-guide-2026) (the Nov. 3, 2026 ballot).
+53. Butler County Board of Elections, [Nov. 8, 2022 results](https://liveresults.boe.ohio.gov/ENR/butlerohenr/15/en/Index_15.html) (Talawanda levy: 3,673 for, 6,771 against) and [petition activity report, Nov. 3, 2026](https://cms2.revize.com/revize/butlercountyboe/2026/November/PetitionActivityReport.pdf) (school issues on the ballot).
+54. Ohio House of Representatives, [**House Journal, July 21, 2025**](https://search-prod.lis.state.oh.us/api/v2/general_assembly_136/journals/journal_h_20252107/pdf), pages 1097 to 1099 (item 66 of House Bill 96, "yeas 61, nays 28," with each member's vote), and the [House Bill 96 votes page](https://ohiohouse.gov/legislation/136/hb96/votes); party by the House roster.
+55. Ohio School Boards Association, [legislative report, July 21, 2025](https://www.ohioschoolboards.org/blogs/legislative-report/ohio-house-returns-statehouse-early-attempt-line-item-veto-overrides) (the June 30, 2025 vetoes; items 55, 63, 65 and 66; override window through Dec. 31, 2026) and [list of education vetoes](https://www.ohioschoolboards.org/node/726658) (item 63, the 40 percent carryover cap).
+56. WOSU / Statehouse News Bureau, ["Ohio Senate overrides veto eliminating some kinds of tax levies"](https://www.wosu.org/2025-10-01/ohio-senate-overrides-veto-eliminating-some-kinds-of-tax-levies), Oct. 1, 2025 (21 to 11); Signal Ohio, ["DeWine signs bills overhauling property taxes"](https://signalohio.org/dewine-signs-bills-overhauling-property-taxes-cutting-taxes-by-billions/), Dec. 19, 2025.
+57. The formula's two names: Rep. Thomas Hall, [release](https://www.ohiohouse.gov/members/thomas-hall/news/rep-hall-votes-on-budget-plan-that-delivers-historic-property-tax-relief-for-ohioans-implements-nations-second-lowest-income-tax-rate-135032), June 25, 2025; Rep. Jennifer Gross, [release](https://www.ohiohouse.gov/members/jennifer-gross/news/rep-gross-votes-on-budget-plan-that-delivers-historic-property-tax-relief-for-ohioans-implements-flat-tax-135065), June 26, 2025; Timothy B. Hornbacker, [campaign issues page](https://www.citizensforhornbacker.com/issues); Caleb Price, [campaign issues page](https://www.calebpriceforoh30.com/issues); Arienne C. Childrey, League of Women Voters [Vote411](https://www.vote411.org/ballot) 2026 answers; pages read Oct. 20, 2026.
+58. Candidates in their own words. Districts: Butler County Board of Elections, [notice of the Nov. 3, 2026 election](https://cms2.revize.com/revize/butlercountyboe/2026/November/FWAB%2046%20day.pdf) (Districts 45, 46, 47 and the Butler part of 40); The Ballot Brief for [40](https://theballotbrief.com/state/ohio/preble-county/ohio-house-district-40), [80](https://theballotbrief.com/state/ohio/miami-county/ohio-house-district-80) and [84](https://theballotbrief.com/state/ohio/darke-county/ohio-house-district-84). Words: Gross, [July 22, 2025](https://ohiohouse.gov/members/jennifer-gross/news/rep-gross-votes-to-override-veto-spurring-property-tax-relief-for-ohioans-135911); Rasheed, [campaign site](https://rasheedforohio.com/); Hall, [Nov. 19, 2025](https://www.ohiohouse.gov/members/thomas-hall/news/rep-thomas-hall-votes-to-concur-on-slate-of-property-tax-reform-bills-139767); McCall, [Ballotpedia survey](https://ballotpedia.org/Benjamin_McCall); Haire, [campaign site](https://www.jordan4ohio.com/issues); Purviance, [open letter, Jan. 14, 2026](https://purviance.lpo.org/2026/01/14/open-letter-to-fairfield-city-school-district/); Creech, [April 14, 2025](https://ohiohouse.gov/news/republican/rep-creech-votes-to-deliver-billions-in-historic-property-tax-relief-for-ohioans-130725); Hornbacker, [campaign site](https://www.citizensforhornbacker.com/issues); Newman, [Oct. 8, 2025](https://ohiohouse.gov/members/johnathan-newman/news/rep-newman-applauds-passage-of-bills-aimed-at-curbing-property-tax-spikes-138342); King, [Dec. 22, 2025](https://ohiohouse.gov/members/angela-n-king/news/rep-king-applauds-signing-of-property-tax-relief-bills-140798); Umbaugh, Wagner and Childrey, [Vote411](https://www.vote411.org/ballot) 2026 answers. Pages read Oct. 20, 2026.
+59. Lakota Local Schools, [**Master Facilities Plan, funding page**](https://mfp.lakotaonline.com/funding), read Oct. 20, 2026 ("2013 was the last time voters approved an operating and Permanent Improvement levy").
+60. Ohio Capital Journal (Megan Henry), from Ohio Department of Education and Workforce data, Oct. 20, 2025, [as republished by BG Independent News](https://bgindependentmedia.org/?p=110450) (scholarship spending, five programs, fiscal 2020 to 2025); Ideastream / WVXU, ["Ohio could spend almost $2.5B on vouchers in next two-year budget"](https://www.wvxu.org/2025-06-27/ohio-could-spend-almost-2-5b-on-vouchers-in-next-two-year-budget), June 27, 2025 (House Bill 33 made EdChoice Expansion universal).
+61. Signal Ohio, [May 7, 2026](https://signalohio.org/ohio-voters-reject-school-levies-tax-hikes-around-the-state-primary-election-2026/) (24 of 66 school levies passed on May 5, 2026); propertytax.report, [Ohio ballot tally](https://propertytax.report/market/taxes/ohio/ballot), compiled from the Ohio Secretary of State's list of local issues as of Sept. 18, 2026 (131 school tax issues, 68 for new money); WVXU, [Oct. 7, 2026](https://www.wvxu.org/education/2026-10-07/southwest-ohio-school-levies-property-earned-income-tax) ("more than 130 education issues").
+62. Ohio House of Representatives releases on the override: House Republicans (Rep. Adam Mathews), ["House, Senate override veto on key property tax reform"](https://ohiohouse.gov/news/republican/house-senate-override-veto-on-key-property-tax-reform-138118), Oct. 1, 2025; House Democratic Leader Dani Isaacsohn, [release of July 21, 2025](https://ohiohouse.gov/news/democratic/leader-isaacsohn-republicans-veto-override-leaves-local-communities-holding-the-bag-still-no-real-property-relief-for-majority-of-ohioans-135851).
+63. Ohio Auditor of State, [**school district fiscal caution, watch and emergency**](https://ohioauditor.gov/fiscal/schools.html) (definitions of the three levels).
 
 Last verified Oct 2, 2026. Corrections: if a number here is wrong, the page changes and says what changed. Built from public records by a resident; the county treasurer's bill is always the record. An independent project, built from public records; no campaign or political organization paid for it or directs it. It provides information only and does not endorse or oppose any ballot measure. Figures are estimates based on publicly available data and may not reflect every factor that affects an individual parcel, such as exemptions, credits or special assessments. For questions about your property’s current tax calculations, contact the Butler County Auditor’s office. Future tax amounts may change.
 
-Posted October 2, 2026 · Revised October 16, 2026: the section of laws and studies on school buildings, test scores and home prices is removed (the studies were from other places and times, and the results were mixed); the "if it fails" path now says plainly what the district lists for cuts. · Revised October 9, 2026: monthly costs lead the calculator; new sections on where Lakota’s money comes from, students and room, how Lakota compares with 15 Ohio districts, the arts in the plan, schools and community over time, and two paths in time; the older-debt line comes out of the totals and is explained in the fine print. Earlier revision, October 6, 2026, 1:10 PM: the estimate note reworded at the campaign’s request, so it no longer suggests the Auditor can give a future amount. · Revised October 7, 2026, 3:10 PM: after a reader’s review, the answer now shows both comparisons (against today and against failing) with the district’s own words; the district’s stated benefits added from its October mailer; the millage note explains how the rate is set each year; the possible operating levy reframed as a forecast placeholder and moved below the bill. · Revised October 7, 2026, 3:30 PM: a plain note on how the yearly rate works, so the bill stays steady as values rise.
+Posted October 2, 2026 · Revised October 23, 2026: the levy story rebuilt around how Ohio school funding works (where Lakota's money comes from, why a voted levy stays flat, the ballot record, the state's share over time, who pays); the plan, the bill split, the forecast levy, enrollment, the 15-district comparison, the arts, the two paths, the laws behind the levy cycle and the House candidates now sit in closed folds; the House Bill 920 freeze chart and the stacked revenue chart are replaced. · Revised October 21, 2026: why Ohio keeps voting on school levies, added. · Revised October 16, 2026: the section of laws and studies on school buildings, test scores and home prices is removed (the studies were from other places and times, and the results were mixed); the "if it fails" path now says plainly what the district lists for cuts. · Revised October 9, 2026: monthly costs lead the calculator; new sections on where Lakota’s money comes from, students and room, how Lakota compares with 15 Ohio districts, the arts in the plan, schools and community over time, and two paths in time; the older-debt line comes out of the totals and is explained in the fine print. Earlier revision, October 6, 2026, 1:10 PM: the estimate note reworded at the campaign’s request, so it no longer suggests the Auditor can give a future amount. · Revised October 7, 2026, 3:10 PM: after a reader’s review, the answer now shows both comparisons (against today and against failing) with the district’s own words; the district’s stated benefits added from its October mailer; the millage note explains how the rate is set each year; the possible operating levy reframed as a forecast placeholder and moved below the bill. · Revised October 7, 2026, 3:30 PM: a plain note on how the yearly rate works, so the bill stays steady as values rise.
 
 **How this bond came to be**
 
@@ -456,4 +594,4 @@ Ohio taxes **35 percent** of a home's appraised value. West Chester Township hom
 
 ---
 
-Source: https://tools.dnsc.ai/follow-the-money/ · Generated from the page on Oct 16, 2026
+Source: https://tools.dnsc.ai/follow-the-money/ · Generated from the page on Nov 8, 2026

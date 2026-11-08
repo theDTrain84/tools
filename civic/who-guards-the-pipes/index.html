@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Who guards the pipes</title>
+<meta name="description" content="The Ohio Auditor of State's web server was attacked on Sunday, October 25, 2026, and the office that audits every local government in Ohio took its site offline. What the office has said, what it has not, the county that lost its own property search for days in 2024, the state's count of more than 150 local cyber incidents, the law that now requires a cyber program in every county and seals the record, what Ohio built before the attacks, the federal program that lost its funding, the vendors underneath, and what is and is not known about how attacks get in. From the record, October 2026.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DNSC">
+<meta property="og:title" content="The office that audits every local government in Ohio went offline Sunday. The counties it audits run on the same kinds of vendor systems, and the state counts more than 150 local cyber incidents in three years.">
+<meta property="og:description" content="The Ohio Auditor of State says the attack was not ransomware and the data is intact; the method is not public. Butler County's property search went dark for days in 2024. State law now requires a cyber program in every county and seals the record of it.">
+<meta property="og:url" content="https://tools.dnsc.ai/civic/who-guards-the-pipes/">
+<meta property="og:image" content="https://tools.dnsc.ai/assets/share/who-guards-the-pipes.jpg?v=20261027">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A drawn diagram: the Ohio Auditor of State at the top, 88 counties below it, and the vendor systems underneath the counties, with the state server marked offline.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The office that audits every local government in Ohio went offline Sunday. The counties it audits run on the same kinds of vendor systems, and the state counts more than 150 local cyber incidents in three years.">
+<meta name="twitter:description" content="The Ohio Auditor of State says the attack was not ransomware and the data is intact; the method is not public. Butler County's property search went dark for days in 2024. State law now requires a cyber program in every county and seals the record of it.">
+<meta name="twitter:image" content="https://tools.dnsc.ai/assets/share/who-guards-the-pipes.jpg?v=20261027">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Public+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Who guards the pipes: a cool paper page; the state in teal, outages in red, vendors in slate; gold only as hairlines. Light only. */
+:root{
+  --ground:#F5F7F6;--sheet:#ffffff;--ink:#1A1F24;--ink-2:#3a434b;--ink-3:#5b646c;
+  --rule:#BFC8CE;--rule-2:#E1E6E9;--gold:#C9A24A;
+  --t:#1F6F6A;--t-1:#DDEFEC;--x:#B42318;--x-1:#FCE9E7;--o:#4A5A68;--o-1:#E6EBEF;
+  --face:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;color:var(--ink);background:var(--ground);font-family:var(--face);font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums lining-nums}
+::selection{background:var(--t-1)}
+a{color:var(--t);text-decoration-thickness:1.5px;text-underline-offset:.18em}
+a:hover{text-decoration-thickness:3px}
+:focus-visible{outline:3px solid var(--t);outline-offset:3px}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+code{font-family:var(--mono);font-size:.86em;background:var(--rule-2);padding:0 4px;border-radius:4px;overflow-wrap:anywhere}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px 48px}
+@media (max-width:420px){.wrap{padding-inline:16px}}
+.dnsc-back{font-family:var(--mono);font-size:12.5px;letter-spacing:.04em;padding:10px 20px;border-bottom:1px solid rgba(127,127,127,.25);background:rgba(127,127,127,.06)}
+.dnsc-back a{color:inherit;opacity:.8;text-decoration:none}
+.dnsc-back span{opacity:.35;margin:0 10px}
+.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:10px 24px;padding:22px 0 12px;border-bottom:2px solid var(--ink)}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{width:38px;height:38px;flex:none}
+.brand .nm{font-weight:800;font-size:1rem;letter-spacing:.12em;text-transform:uppercase;line-height:1.3}
+.brand .nm span{display:block;font-weight:500;font-size:.9rem;letter-spacing:0;text-transform:none;color:var(--ink-2)}
+.ref{font-family:var(--mono);font-size:.8rem;letter-spacing:.04em;color:var(--ink-3);text-align:right;line-height:1.5}
+.ref span{display:block}
+@media (max-width:700px){.ref{text-align:left}}
+.kick,.k{font-family:var(--serif);font-style:italic;font-weight:500;font-size:calc(.8125rem*.95 + 2px);letter-spacing:0;color:var(--ink-3);margin:0 0 8px}
+.kick::before,.k::before{content:"";display:inline-block;width:18px;height:1.5px;background:var(--gold);vertical-align:.3em;margin-right:8px}
+.c{font-family:var(--mono);font-size:.74em;letter-spacing:.02em;white-space:nowrap;vertical-align:.12em}
+.c a{color:var(--ink-3);text-decoration:none;padding:0 1px}
+.c a:hover{color:var(--t);text-decoration:underline}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:0 48px;align-items:center;padding:40px 0 10px}
+.hero>.ha{grid-column:1;grid-row:1;align-self:end}.hero>.hb{grid-column:1;grid-row:2;align-self:start}.hero>.gcard{grid-column:2;grid-row:1/3}
+@media (max-width:860px){.hero{grid-template-columns:minmax(0,1fr);gap:22px;padding-top:26px}.hero>.ha,.hero>.hb,.hero>.gcard{grid-column:1;grid-row:auto}.hb .cares{margin-top:0}}
+.hero h1{font-family:var(--face);font-weight:800;font-size:clamp(1.7rem,3.9vw,2.8rem);line-height:1.08;letter-spacing:-.03em;margin:0 0 18px;text-wrap:balance}
+.hero h1 .t{color:var(--t)}.hero h1 .x{color:var(--x)}
+.lede{font-family:var(--serif);font-weight:500;font-size:clamp(1.1rem,1.9vw,1.26rem);line-height:1.44;color:var(--ink-2);margin:0;max-width:52ch;text-wrap:pretty}
+.cares{margin:16px 0 0;max-width:54ch;font-size:1.02rem;line-height:1.5;color:var(--ink);padding-left:12px;border-left:3px solid var(--gold)}
+.stamp{margin:16px 0 0;font-family:var(--mono);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+.gcard{margin:0;background:var(--sheet);border:1.5px solid var(--ink);border-radius:20px;padding:16px 16px 14px;max-width:360px;justify-self:center;width:100%}
+.gcard svg{display:block;width:100%;height:auto}
+.gcard .big{display:block;font:800 clamp(1.7rem,3vw,2.3rem)/1 var(--face);letter-spacing:-.03em;color:var(--t);margin:12px 0 4px}
+.gcard p{margin:0;font-size:.9rem;line-height:1.42;color:var(--ink-2)}
+.gcard p+p{margin-top:8px}
+@media (max-width:860px){.gcard{display:grid;grid-template-columns:minmax(0,132px) minmax(0,1fr);gap:4px 16px;align-items:start;max-width:none;justify-self:stretch}.gcard svg{grid-row:1/4}.gcard .big{margin-top:0}}
+@media (max-width:420px){.gcard{grid-template-columns:minmax(0,1fr)}.gcard svg{grid-row:auto;max-width:200px}}
+
+/* chapter heads */
+.ch{margin:72px 0 22px;max-width:64ch}
+.ch h2{font-family:var(--face);font-weight:800;font-size:clamp(1.45rem,3.1vw,2.1rem);line-height:1.12;letter-spacing:-.025em;margin:0;text-wrap:balance}
+.ch .dek{margin:10px 0 0;color:var(--ink-2);max-width:64ch}
+@media (max-width:520px){.ch{margin-top:56px}}
+h3{font:800 1.08rem/1.25 var(--face);margin:26px 0 10px}
+
+/* record entries: a thin date rail */
+.entries{display:grid;gap:14px;margin:0;padding:0;list-style:none}
+.entries li{display:grid;grid-template-columns:11ch 1fr;gap:14px;align-items:start;min-width:0;padding:14px 0 0;border-top:1px solid var(--rule)}
+.entries time,.entries .when{font-family:var(--mono);font-size:.78rem;color:var(--t);padding-top:4px;white-space:nowrap}
+.entries .what{min-width:0}
+.entries .what p{margin:0 0 8px;color:var(--ink-2)}
+.entries .what p:last-child{margin-bottom:0}
+.entries .what p b{color:var(--ink)}
+@media (max-width:520px){.entries li{grid-template-columns:1fr;gap:4px}.entries time,.entries .when{padding-top:0}}
+.quote{margin:14px 0;font-family:var(--serif);font-weight:500;font-size:1.06rem;line-height:1.4;color:var(--ink);max-width:62ch;padding-left:14px;border-left:3px solid var(--t)}
+.quote p{margin:0 0 6px}
+.quote .who{display:block;margin-top:6px;font-family:var(--mono);font-size:.74rem;letter-spacing:.04em;color:var(--ink-3)}
+.src{font-family:var(--mono);font-size:.76rem;color:var(--ink-3);margin:6px 0 0}
+.flag{background:var(--x-1);border-radius:16px;padding:14px 18px;margin:22px 0 0;max-width:72ch}
+.flag .k{color:var(--x);margin-bottom:6px}
+.flag .k::before{background:var(--x)}
+.flag p{margin:0;color:var(--ink-2)}
+.note{background:var(--sheet);border:1.5px solid var(--ink);border-radius:16px;padding:14px 18px;margin:22px 0 0;max-width:72ch}
+.note p{margin:0 0 8px;color:var(--ink-2)}
+.note p:last-child{margin:0}
+.note b{color:var(--ink)}
+
+/* two columns where a spread earns it */
+.spread{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px 36px;align-items:start}
+@media (max-width:860px){.spread{grid-template-columns:minmax(0,1fr)}}
+.notes{margin:0;padding:0;list-style:none}
+.notes li{position:relative;padding:0 0 14px 22px;font-size:.98rem;line-height:1.5;color:var(--ink-2)}
+.notes li::before{content:"";position:absolute;left:0;top:.5em;width:10px;height:10px;border-radius:2px;background:var(--t)}
+.notes.x li::before{background:var(--x)}
+.notes.o li::before{background:var(--o)}
+.notes li b{color:var(--ink)}
+.card{background:var(--sheet);border:1.5px solid var(--ink);border-radius:20px;padding:14px 18px 8px}
+.card h3{margin:0 0 8px}
+.card p{margin:0 0 10px;font-size:.96rem;line-height:1.5;color:var(--ink-2)}
+.card ul{margin:0 0 10px;padding-left:1.2em}
+.card li{margin:0 0 8px;font-size:.96rem;line-height:1.48;color:var(--ink-2)}
+.card b{color:var(--ink)}
+.ind{padding:12px 0 16px;border-top:2px solid var(--ink)}
+.ind .n{font:800 clamp(1.6rem,3vw,2.1rem)/1 var(--face);letter-spacing:-.03em;color:var(--t)}
+.ind .n span{font-size:.55em;letter-spacing:0;color:var(--ink-3);font-weight:700;margin-left:6px}
+.ind p{margin:6px 0 0;font-size:.96rem;line-height:1.45;color:var(--ink-2)}
+.ind .tag{display:inline-block;font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--o);background:var(--o-1);border-radius:6px;padding:2px 7px;margin:0 0 8px}
+
+/* tables */
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table.rec{width:100%;border-collapse:collapse;background:var(--sheet);border:1.5px solid var(--ink);font-size:.95rem;min-width:520px}
+table.rec caption{text-align:left;font-weight:800;font-size:1.05rem;padding:0 0 8px;color:var(--ink)}
+table.rec th,table.rec td{padding:9px 10px;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top;line-height:1.38}
+table.rec th{font-family:var(--mono);font-size:.74rem;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-3);font-weight:500;background:#F8FAF9}
+table.rec td.v{font-family:var(--mono);font-size:.84rem;color:var(--ink);white-space:nowrap}
+table.rec td.ty{color:var(--o);font-weight:700}
+table.rec td.nt{color:var(--ink-2);font-size:.92rem}
+@media (max-width:520px){table.rec th,table.rec td{padding:8px 7px}}
+.tnote{margin:10px 0 0;font-size:.92rem;line-height:1.45;color:var(--ink-2)}
+
+/* figure */
+.fig{background:var(--sheet);border:1.5px solid var(--ink);border-radius:22px;padding:16px 14px 12px;margin:0}
+.fig svg{display:block;width:100%;height:auto}
+.fig figcaption{margin:10px 4px 0;font-size:.88rem;line-height:1.45;color:var(--ink-3)}
+svg text{font-family:var(--face);fill:var(--ink-2)}
+svg text.b{font-weight:800;fill:var(--ink)}
+svg text.t{fill:var(--t);font-weight:700}svg text.x{fill:var(--x);font-weight:700}svg text.o{fill:var(--o);font-weight:700}
+svg text.m{font-family:var(--mono);font-size:11px;letter-spacing:.04em;fill:var(--ink-3)}
+.fig .v{display:none}
+@media (max-width:700px){.fig .h{display:none}.fig .v{display:block}}
+
+/* folds */
+details.more{margin-top:14px;border-top:1px solid var(--rule)}
+details.more>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:9px 0;font-weight:700;font-size:.95rem;color:var(--ink-2);min-height:44px}
+details.more>summary::-webkit-details-marker{display:none}
+details.more>summary::before{content:"+";display:inline-flex;align-items:center;justify-content:center;flex:none;width:22px;height:22px;border:1.5px solid var(--ink-2);border-radius:50%;font-weight:800;font-size:.875rem;transition:transform .25s}
+details.more[open]>summary::before{transform:rotate(45deg)}
+details.more .in{padding:2px 0 12px;font-size:.95rem;line-height:1.55;color:var(--ink-2);max-width:80ch}
+details.more .in p{margin:0 0 8px}
+details.more .in b{color:var(--ink)}
+
+/* the editor's take: opinion, a plain tinted block apart from the record */
+.take{margin-top:72px;max-width:72ch;background:var(--o-1);border-radius:20px;padding:20px 22px 18px}
+.take .k{color:var(--o);margin-bottom:4px}
+.take .k::before{background:var(--o)}
+.take .op{margin:0 0 12px;font-family:var(--mono);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+.take p{margin:0 0 10px;font-family:var(--serif);font-weight:500;font-size:1.1rem;line-height:1.45;color:var(--ink)}
+.take .sig{margin:12px 0 0;font-family:var(--face);font-size:.92rem;font-weight:700;color:var(--ink-2)}
+
+/* sources */
+.srcs{margin-top:72px;max-width:860px}
+ol.src{margin:0;padding-left:1.8em;font-size:.92rem;line-height:1.5;color:var(--ink-2)}
+ol.src li{overflow-wrap:anywhere;margin-bottom:7px;scroll-margin-top:16px}
+ol.src li:target{background:var(--t-1);outline:2px solid var(--t-1)}
+.tm{font-size:.85rem;color:var(--ink-3);margin:12px 0 0}
+footer{margin-top:44px;padding-top:18px;border-top:2px solid var(--ink);max-width:860px}
+footer p{margin:0;font-size:1rem;line-height:1.6;color:var(--ink-2)}
+footer p.sm{margin-top:8px;font-size:.92rem;color:var(--ink-3)}
+
+/* motion: only when allowed; without it every element is static and visible */
+.mo .rise{opacity:0;transform:translateY(12px);transition:opacity .5s ease,transform .7s cubic-bezier(.16,1,.3,1)}
+.mo .rise.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.mo .rise{opacity:1!important;transform:none!important;transition:none!important}}
+@media print{.mo *{opacity:1!important;transform:none!important}}
+</style>
+<link rel="icon" href="/assets/favicon.png">
+</head>
+<body>
+<div class="dnsc-back"><a href="https://tools.dnsc.ai/">&larr; The Well</a><span>&middot;</span><a href="https://dnsc.ai">dnsc.ai</a></div>
+<div class="wrap">
+
+<header class="top">
+  <div class="brand">
+    <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="16" fill="none" stroke="#1A1F24" stroke-width="2.4"/><g fill="#1A1F24"><circle cx="20" cy="7" r="2.6"/><circle cx="32.4" cy="16" r="2.6"/><circle cx="27.6" cy="30.5" r="2.6"/><circle cx="12.4" cy="30.5" r="2.6"/><circle cx="7.6" cy="16" r="2.6"/></g></svg>
+    <div class="nm">DNSC<span>From the public record</span></div>
+  </div>
+  <div class="ref"><span>Who guards the pipes &middot; October 27, 2026</span><span>Understanding the week, from the record</span></div>
+</header>
+
+<!-- 1 · who cares -->
+<section class="hero">
+  <div class="ha">
+    <p class="kick">Ohio &middot; Butler County &middot; Oct. 25 to 27, 2026</p>
+    <h1>The office that audits every local government in Ohio <span class="x">went offline Sunday.</span> The counties it audits run on the same kinds of vendor systems, and the state counts <span class="t">more than 150</span> local cyber incidents in three years.</h1>
+    <p class="lede">The Ohio Auditor of State audits every county, city, village, township and school district in the state. On Sunday, October 25, its web server was attacked, and the office took the server and its online accounts offline. <span class="c"><a href="#s1">[1]</a><a href="#s2">[2]</a></span> In January the same office said it had logged more than 150 cyber incidents at Ohio local governments in three years, with losses up to $1.9 million. <span class="c"><a href="#s3">[3]</a></span> Since January 1 state law has required every county and city to have a cybersecurity program, and the same law seals the record of it. <span class="c"><a href="#s14">[14]</a><a href="#s15">[15]</a></span></p>
+  </div>
+  <figure class="gcard rise">
+    <svg viewBox="0 0 320 200" role="img" aria-label="A drawn diagram: one state office at the top, a row of 88 county offices below it, and a row of vendor systems underneath the counties. The state office is marked offline.">
+      <rect x="110" y="14" width="100" height="34" rx="6" fill="#FCE9E7" stroke="#B42318" stroke-width="2"/>
+      <text x="160" y="36" text-anchor="middle" class="x" style="font-size:12px">State auditor</text>
+      <text x="160" y="60" text-anchor="middle" class="m">offline since Sunday</text>
+      <g stroke="#1A1F24" stroke-width="1.6" fill="none"><path d="M160 48 V72"/><path d="M24 72 H296"/></g>
+      <g fill="#DDEFEC" stroke="#1F6F6A" stroke-width="1.4">
+        <rect x="18" y="80" width="30" height="22" rx="4"/><rect x="56" y="80" width="30" height="22" rx="4"/><rect x="94" y="80" width="30" height="22" rx="4"/><rect x="132" y="80" width="30" height="22" rx="4"/><rect x="170" y="80" width="30" height="22" rx="4"/><rect x="208" y="80" width="30" height="22" rx="4"/><rect x="246" y="80" width="30" height="22" rx="4"/>
+      </g>
+      <text x="291" y="96" class="b" style="font-size:12px">&hellip;</text>
+      <rect x="120" y="109" width="80" height="16" rx="3" fill="#ffffff"/><text x="160" y="120" text-anchor="middle" class="t" style="font-size:12px">88 counties</text>
+      <g stroke="#1A1F24" stroke-width="1.6" fill="none"><path d="M33 102 V136 M71 102 V136 M109 102 V136 M147 102 V136 M185 102 V136 M223 102 V136 M261 102 V136"/></g>
+      <g fill="#E6EBEF" stroke="#4A5A68" stroke-width="1.4">
+        <rect x="18" y="136" width="68" height="22" rx="4"/><rect x="94" y="136" width="68" height="22" rx="4"/><rect x="170" y="136" width="106" height="22" rx="4"/>
+      </g>
+      <text x="52" y="151" text-anchor="middle" class="o" style="font-size:10.5px">Tyler</text>
+      <text x="128" y="151" text-anchor="middle" class="o" style="font-size:10.5px">Revize</text>
+      <text x="223" y="151" text-anchor="middle" class="o" style="font-size:10.5px">other vendors</text>
+      <text x="160" y="180" text-anchor="middle" class="m">the vendor systems underneath</text>
+    </svg>
+    <span class="big">150+</span>
+    <p>cyber incidents at Ohio local governments in three years, by the Auditor of State&rsquo;s own count in January 2026. Losses ran <q>from a few thousand dollars to $1.9 million.</q> <span class="c"><a href="#s3">[3]</a></span></p>
+    <p>Most of the money, the office said then, left through schemes that redirect a vendor payment. <span class="c"><a href="#s3">[3]</a></span></p>
+  </figure>
+  <div class="hb">
+    <p class="cares">In April 2024 the Butler County Auditor&rsquo;s own property search went dark for days, and the office said, <q>All we really know is what Tyler is telling us.</q> <span class="c"><a href="#s4">[4]</a></span> Three of the seven systems behind that office today are hosted by the same vendor. <span class="c"><a href="#s31">[31]</a></span></p>
+    <p class="stamp"><time datetime="2026-10-27">Posted October 27, 2026</time></p>
+  </div>
+</section>
+
+<!-- 2 · this week -->
+<section class="ch">
+  <p class="k">What happened this week</p>
+  <h2>The state&rsquo;s web server went offline Sunday. The office says the data is intact. The method is not public.</h2>
+</section>
+<ul class="entries rise">
+  <li><time datetime="2026-10-25">Sun. Oct. 25</time><div class="what">
+    <p>The Auditor of State&rsquo;s web server is attacked. The office later said its threat monitoring systems detected and quarantined the intrusion, and that it then disconnected the web server and its online accounts, as WHIO reported. <span class="c"><a href="#s2">[2]</a></span></p>
+  </div></li>
+  <li><time datetime="2026-10-27">Tue. Oct. 27</time><div class="what">
+    <p>The office&rsquo;s statement, as reported by WOSU: the server was attacked by <q>overseas cybercriminals</q> and <q>potentially foreign state actors.</q> It is <q>not a ransomware attack.</q> The office <q>still has all the data it did before the attack.</q> It said it had no evidence that Ohioans&rsquo; personal financial information was put at risk, and no reason to believe that audited entities&rsquo; financial information was. <span class="c"><a href="#s1">[1]</a></span></p>
+    <blockquote class="quote"><p><q>Out of an abundance of caution, we took the web server and online accounts offline while internal and external experts scrutinize the threat activity.</q></p><p><q>We quickly notified state and federal law enforcement and are working closely with them to identify the cybercriminals involved.</q></p><span class="who">Auditor of State Keith Faber, statement of Oct. 27, 2026, as quoted by WOSU <span class="c"><a href="#s1">[1]</a></span></span></blockquote>
+    <p>Payments to the office run through a separate state portal and are not stored on the web server; the office set a grace period for payments <q>until further notice.</q> It plans a <q>temporary web platform</q> while the permanent server is down. <span class="c"><a href="#s2">[2]</a></span> It said it would <q>tell the public more about this when we know more.</q> <span class="c"><a href="#s1">[1]</a></span></p>
+  </div></li>
+  <li><time datetime="2026-10-27">Tue. evening</time><div class="what">
+    <p>ohioauditor.gov did not answer when this page was built; the connection timed out. The office&rsquo;s cybersecurity-program page and its Bulletin 2025-007, the state&rsquo;s guidance to local governments under the new law, sit on that server. <span class="c"><a href="#s31">[31]</a></span></p>
+  </div></li>
+</ul>
+<div class="flag rise"><p class="k">Not on the record</p><p>How the attackers got in. Who they were, beyond the office&rsquo;s description. Whether anything left the server. How long the site will be down. Whether any audited entity missed an online filing or payment. Whether the office&rsquo;s own cybersecurity program, the kind the new law requires of local governments, was tested before Sunday. The office has said it will say more when it knows more. <span class="c"><a href="#s1">[1]</a></span></p></div>
+
+<!-- 3 · closer to home -->
+<section class="ch">
+  <p class="k">The record closer to home</p>
+  <h2>Butler County&rsquo;s property search went dark for days in April 2024. Its cities and townships have had incidents this year. Five other counties have too.</h2>
+</section>
+<h3>The Butler County Auditor, 2024</h3>
+<ul class="entries rise">
+  <li><time datetime="2024-04-14">Sun. Apr. 14, 2024</time><div class="what">
+    <p>Tyler Technologies, which hosted the auditor&rsquo;s property-search site, reported <q>unusual activity</q> in the public-facing property access hosting environment and took the site offline as a precaution. It stayed down through at least Wednesday, April 17. The office said the problem was limited to the website software, and told residents to paste a backup link into a browser to reach property records. <span class="c"><a href="#s4">[4]</a></span></p>
+    <blockquote class="quote"><p><q>All we really know is what Tyler is telling us.</q></p><span class="who">Butler County Auditor Nancy Nix, to the Journal-News, April 16, 2024 <span class="c"><a href="#s4">[4]</a></span></span></blockquote>
+    <p>A follow-up in the Journal-News said the office reported no sign of attack or malicious activity, <q>just some unusual activity (multiple repeating hits to the website).</q> Real Estate Search came back first. <span class="c"><a href="#s5">[5]</a></span></p>
+  </div></li>
+  <li><time datetime="2024-05">Late May 2024</time><div class="what">
+    <p>A new site, built by Revize, goes live at auditor.bcohio.gov about six weeks after the unusual activity, as the Journal-News reported. Property data stays on Tyler&rsquo;s iasWorld Public Access. The cost of the rebuild is not in the coverage. <span class="c"><a href="#s6">[6]</a></span></p>
+  </div></li>
+</ul>
+
+<h3>Butler County&rsquo;s cities and townships</h3>
+<p>From a Journal-News story carried by WCPO, undated on WCPO&rsquo;s page; its officials speak of incidents <q>this year.</q> <span class="c"><a href="#s7">[7]</a></span></p>
+<div class="spread">
+  <ul class="notes rise">
+    <li><b>Liberty Township.</b> A cyber incident in May. The board later adopted a cybersecurity policy that <q>formalized some of the lessons learned from the May cyber incident.</q> <span class="c"><a href="#s7">[7]</a></span></li>
+    <li><b>West Chester Township.</b> Two incidents this year. The township&rsquo;s spokesperson: <q>It was the same group, so it was more like a combined incident.</q> <span class="c"><a href="#s7">[7]</a></span></li>
+    <li><b>Middletown.</b> An August incident affected staff email, access to records and phone records. The city spent $295,000 on technology upgrades afterward. <span class="c"><a href="#s7">[7]</a></span></li>
+    <li><b>Hamilton.</b> Contracted with Secure Cyber of Moraine in 2019 after a minor incident; no incidents reported since. <span class="c"><a href="#s7">[7]</a></span></li>
+  </ul>
+  <div class="card rise">
+    <h3>The county&rsquo;s program, Dec. 16, 2025</h3>
+    <p>Butler County commissioners were presented the county cybersecurity program the new state law requires, for adoption before January 1, 2026. The full plan is exempt from public records; an executive summary was provided, as summarized by Citizen Portal from the meeting. <span class="c"><a href="#s8">[8]</a></span></p>
+    <p>Whether that program covers the county&rsquo;s separately elected offices, the Auditor among them, or only the departments under the commissioners, is not in the public summary. <span class="c"><a href="#s8">[8]</a></span></p>
+  </div>
+</div>
+
+<h3>Other Ohio counties, December 2024 to March 2026</h3>
+<div class="tablewrap rise"><table class="rec">
+<thead><tr><th scope="col">When</th><th scope="col">County</th><th scope="col">What the record says</th></tr></thead>
+<tbody>
+<tr><td class="v">Dec. 2024</td><td class="ty">Wood</td><td class="nt">Ransomware detected Dec. 9. On Dec. 23 the commissioners said the county had negotiated and paid $1.5 million to resolve it, from reserve funds, on the advice of outside forensic consultants. <span class="c"><a href="#s9">[9]</a></span></td></tr>
+<tr><td class="v">May 6 to 18, 2025</td><td class="ty">Union</td><td class="nt">Ransomware. The county&rsquo;s notice says the intruders were in its network from May 6 to May 18 and took data on 45,487 people, including Social Security and driver&rsquo;s license numbers. Notices went out Sept. 24, 2025. <span class="c"><a href="#s10">[10]</a></span></td></tr>
+<tr><td class="v">Late May 2025</td><td class="ty">Lorain</td><td class="nt">A <q>network security incident</q> closed the Court of Common Pleas, Domestic Relations and Juvenile Court and Adult Probation while systems were offline; 911 stayed up. Services resumed within about a week. <span class="c"><a href="#s11">[11]</a></span></td></tr>
+<tr><td class="v">Nov. 2025</td><td class="ty">Trumbull</td><td class="nt">County officials said an attempted attack came through a third-party vendor&rsquo;s breach and reached the Recorder&rsquo;s office; they said county IT staff and an outside firm stopped it without data loss. <span class="c"><a href="#s12">[12]</a></span></td></tr>
+<tr><td class="v">Mar. 15 to 17, 2026</td><td class="ty">Lucas</td><td class="nt">A security incident. The Auditor&rsquo;s Real Estate Information System was down from at least Sunday until after 8 PM Tuesday; the dog-licensing portal was down Tuesday. The county: <q>we took certain systems offline out of an abundance of caution.</q> <span class="c"><a href="#s13">[13]</a></span></td></tr>
+</tbody>
+</table></div>
+<p class="tnote">Each row is from the county&rsquo;s own notice or local reporting, linked in the sources. Incident reports filed with the state under the new law are not public records, so this table is what the counties and the press have said in public. <span class="c"><a href="#s14">[14]</a></span></p>
+
+<!-- 4 · the count -->
+<section class="ch">
+  <p class="k">The count</p>
+  <h2>The state logs the schemes and the dollars. It publishes no AI share.</h2>
+  <p class="dek">The only Ohio-specific count on the record is the Auditor of State&rsquo;s. The rising-trend and AI figures below come from security companies&rsquo; surveys and research, and are labeled as such.</p>
+</section>
+<div class="spread">
+  <div>
+    <div class="ind rise">
+      <div class="n">150<span>incidents, three years</span></div>
+      <p>The Auditor of State&rsquo;s office told the Statehouse News Bureau in January 2026 that it had logged more than 150 cybercrime incidents at local governments over the past three years, at counties, cities, townships, villages and school districts, with losses from a few thousand dollars to $1.9 million. The schemes it named: ransomware and business email compromise that redirects a vendor payment. <span class="c"><a href="#s3">[3]</a></span></p>
+    </div>
+    <blockquote class="quote rise"><p><q>I&rsquo;ll be blunt; I think we lose more money to cyber fraud in Ohio than we do to employee theft and dishonesty, which is a big statement.</q></p><span class="who">Auditor of State Keith Faber, to the Statehouse News Bureau, Jan. 20, 2026 <span class="c"><a href="#s3">[3]</a></span></span></blockquote>
+    <p class="tnote">None of the state&rsquo;s public statements, in January or this week, gives a count of incidents that involved AI, or says whether the office tracks that. <span class="c"><a href="#s1">[1]</a><a href="#s3">[3]</a></span></p>
+  </div>
+  <div>
+    <div class="ind rise">
+      <span class="tag">Vendor research</span>
+      <div class="n">65<span>percent rise</span></div>
+      <p>Trend Micro&rsquo;s threat intelligence for the first quarter of 2026 says <q>the first half of 2025 saw a 65% year-over-year increase in ransomware incidents affecting government bodies (208 confirmed attacks), a trajectory that continues in 2026.</q> The same report says ransomware groups <q>are now deploying AI to autonomously handle reconnaissance,</q> a statement about attackers generally. The count is national. <span class="c"><a href="#s16">[16]</a></span></p>
+    </div>
+    <div class="ind rise">
+      <span class="tag">Industry survey</span>
+      <div class="n">84<span>percent of victims</span></div>
+      <p>Semperis, a security company, polled 1,200 IT and security professionals in nine countries for its 2026 Ransomware Risk Report. Among those whose organizations were hit, 84 percent said AI was used in the attack, as CBS News reported on Oct. 14, 2026. A survey asks victims what they believe; it does not inspect the attacks. <span class="c"><a href="#s17">[17]</a><a href="#s18">[18]</a></span></p>
+    </div>
+    <div class="ind rise">
+      <span class="tag">Industry survey</span>
+      <div class="n">65<span>percent of victims</span></div>
+      <p>Proofpoint&rsquo;s 2026 AI-Era Ransomware Report, July 21, 2026, from a global survey of security professionals, says 65 percent of ransomware victims <q>confirmed AI use made the attack more effective.</q> The report page does not say how many people were surveyed. <span class="c"><a href="#s19">[19]</a></span></p>
+    </div>
+  </div>
+</div>
+
+<!-- 5 · the law -->
+<section class="ch">
+  <p class="k">What the law requires</p>
+  <h2>Since September 30, 2025, every political subdivision must have a cyber program and report every incident. The records are sealed.</h2>
+  <p class="dek">House Bill 96, the state operating budget for fiscal years 2026 and 2027, was signed June 30, 2025 and took effect September 30, 2025. It added section 9.64 to the Ohio Revised Code. The Journal-News calls it a non-funded mandate. <span class="c"><a href="#s7">[7]</a><a href="#s14">[14]</a></span></p>
+</section>
+<div class="spread">
+  <div class="card rise">
+    <h3>What R.C. 9.64 requires</h3>
+    <ul>
+      <li><b>A cybersecurity program</b> in every political subdivision, covering risk identification, impact identification, threat detection, incident response, post-incident security and employee training. <span class="c"><a href="#s14">[14]</a></span></li>
+      <li><b>Deadlines.</b> Counties and cities by January 1, 2026; other subdivisions by July 1, 2026, per the County Commissioners Association&rsquo;s bulletin. <span class="c"><a href="#s15">[15]</a></span></li>
+      <li><b>Reporting.</b> After a cybersecurity or ransomware incident: notify the Ohio Division of Homeland Security within seven days and the Auditor of State within thirty. <span class="c"><a href="#s14">[14]</a></span></li>
+      <li><b>Ransom.</b> No payment unless the legislative authority approves it <q>via resolution or ordinance.</q> <span class="c"><a href="#s14">[14]</a></span></li>
+    </ul>
+  </div>
+  <div class="card rise">
+    <h3>What the public can read</h3>
+    <ul>
+      <li>The program itself and incident reports <q>are not public records.</q> <span class="c"><a href="#s14">[14]</a></span></li>
+      <li>Procurement records that identify cybersecurity software, hardware or services are classified as security records. <span class="c"><a href="#s14">[14]</a></span></li>
+      <li>What remains public: what each office chooses to say, and when, as it did in Butler County in April 2024 and at the state this week. <span class="c"><a href="#s1">[1]</a><a href="#s4">[4]</a></span></li>
+      <li>The Auditor of State&rsquo;s own guidance under the law, Bulletin 2025-007 and its cybersecurity-program page, is on the server that is offline. <span class="c"><a href="#s31">[31]</a></span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 6 · what was built -->
+<section class="ch">
+  <p class="k">What was built before the attacks</p>
+  <h2>Ohio has a volunteer cyber reserve, a free training program for local governments, and a center that coordinates incident response.</h2>
+</section>
+<div class="spread">
+  <div class="card rise">
+    <h3>The Ohio Cyber Reserve, 2019</h3>
+    <p>Created by Senate Bill 52, signed by Gov. Mike DeWine on October 25, 2019: <q>a volunteer cyber force under the direction and supervision of the Adjutant General&rsquo;s Department,</q> made up of trained, vetted Ohio civilians working from Ohio National Guard readiness centers in five regions. Its stated jobs: help small municipalities test their systems for vulnerabilities, respond to attacks on eligible local governments, and teach. <span class="c"><a href="#s20">[20]</a></span></p>
+    <p>The first eleven members finished the state&rsquo;s assessment course in October 2021, the Guard reported that November; the reserve then had about 50 members in Cleveland, Columbus and Cincinnati. <span class="c"><a href="#s21">[21]</a></span> By December 2024 the governor&rsquo;s cybersecurity adviser counted 177 reservists and expected 200 by year&rsquo;s end. His slide: <q>The Cyber Reserve is not formulated to be the first line of defense.</q> <span class="c"><a href="#s22">[22]</a></span> Its mission statement today: <q>Assist, Educate, and Respond</q> as directed by the governor and the adjutant general. <span class="c"><a href="#s23">[23]</a></span></p>
+  </div>
+  <div class="card rise">
+    <h3>Training at no cost, and a response center</h3>
+    <p><b>Ohio Persistent Cyber Improvement.</b> A local-government training and assessment program run through the University of Cincinnati&rsquo;s Ohio Cyber Range Institute, <q>delivered at no cost to Ohio-based Local Government Entities</q> and <q>funded through the Cybersecurity and Infrastructure Security Agency (CISA) and the State of Ohio.</q> The December 4, 2024 deck counted <q>over 1,797 local public employees currently receiving training in 5 counties</q> and 42 local entities in 25 counties in the pipeline. Butler is on its 2025 list, with Athens, Cuyahoga, Hamilton, Mahoning and Clermont among others. <span class="c"><a href="#s22">[22]</a></span></p>
+    <p><b>The Ohio Cyber Integration Center.</b> <q>A fusion center that shares cyber intelligence and coordinates incident response for local governments,</q> under Ohio Homeland Security; the deck said it <q>formally opens in 2025</q> with a planned staff of ten. The Cyber Reserve&rsquo;s own site sends any organization with an incident to the center first. <span class="c"><a href="#s22">[22]</a><a href="#s23">[23]</a></span></p>
+  </div>
+</div>
+
+<!-- 7 · what was taken away -->
+<section class="ch">
+  <p class="k">What was taken away</p>
+  <h2>The federal information-sharing center that about 19,000 local governments used lost its funding in 2025.</h2>
+</section>
+<div class="spread">
+  <ul class="notes x rise">
+    <li><b>March 2025.</b> CISA cut federal funding for the Multi-State Information Sharing and Analysis Center, run by the Center for Internet Security. The size of the cut differs by source: $10 million, <q>just under half of the MS-ISAC&rsquo;s funding,</q> per the National Association of Counties; $8.3 million, more than half of the program&rsquo;s remaining 2025 budget, per Smart Cities Dive citing CIS. Smart Cities Dive put the center&rsquo;s fiscal 2025 operating budget at $27 million. <span class="c"><a href="#s24">[24]</a><a href="#s25">[25]</a></span></li>
+    <li><b>Who used it.</b> More than 17,000 state, local, tribal and territorial entities, per NACo in March; more than 18,000 served, per Smart Cities Dive in August; <q>close to 19,000 members</q> before the cuts, per Cybersecurity Dive in October. The center detected more than 43,000 potential attacks on state and local governments in 2024, Smart Cities Dive reported. <span class="c"><a href="#s24">[24]</a><a href="#s25">[25]</a><a href="#s27">[27]</a></span></li>
+    <li><b>Aug. 7, 2025.</b> The U.S. Conference of Mayors, the National League of Cities, NACo, the state CIOs&rsquo; association and the Major County Sheriffs of America asked Congress to restore the money: <q>The loss of federal funding will create significant vulnerabilities for rural and small communities.</q> <span class="c"><a href="#s25">[25]</a></span></li>
+    <li><b>August 2025.</b> The federal government barred recipients of State and Local Cybersecurity Grant Program funds from spending them on MS-ISAC memberships, Cybersecurity Dive reported. <span class="c"><a href="#s27">[27]</a></span></li>
+    <li><b>Sept. 30, 2025.</b> The cooperative agreement between CISA and CIS ended with the fiscal year; Cybersecurity Dive described it as a $48.5 million annual agreement. CIS said it needed <q>$1+ million per month</q> to keep the services running and would move to a membership model; its lowest tier rises to $1,495 a year. <span class="c"><a href="#s26">[26]</a><a href="#s27">[27]</a></span></li>
+  </ul>
+  <div>
+    <blockquote class="quote rise"><p><q>The MS-ISAC, operated by CIS, has been this nation&rsquo;s most successful public-private partnership.</q></p><span class="who">John Gilligan, president and chief executive of the Center for Internet Security, Sept. 2025, as quoted by Help Net Security <span class="c"><a href="#s26">[26]</a></span></span></blockquote>
+    <div class="note rise"><p><b>What Ohio has said.</b> Nothing on the record from the Auditor of State, the Ohio Cyber Integration Center or the governor&rsquo;s office addresses how many Ohio local governments belonged to MS-ISAC, or how many have paid to stay. That is a question for the record, and this page does not guess at it.</p></div>
+  </div>
+</div>
+
+<!-- 8 · the vendor layer -->
+<section class="ch">
+  <p class="k">The vendor layer</p>
+  <h2>Seven systems hold the Butler County Auditor&rsquo;s public work. Three are Tyler Technologies. Tyler had its own ransomware attack in 2020.</h2>
+  <p class="dek">Read from the live site and its response headers on October 5 and October 27, 2026. <span class="c"><a href="#s31">[31]</a></span></p>
+</section>
+<div class="tablewrap rise"><table class="rec">
+<thead><tr><th scope="col">System</th><th scope="col">Vendor</th><th scope="col">What lives there</th></tr></thead>
+<tbody>
+<tr><td class="v">auditor.bcohio.gov</td><td class="ty">Revize, on Amazon&rsquo;s cloud</td><td class="nt">The pages. Page addresses end in .php. The footer reads <q>Powered by revize</q> and &copy; 2024, with news items through September 2026. <span class="c"><a href="#s31">[31]</a></span></td></tr>
+<tr><td class="v">propertysearch.bcohio.gov</td><td class="ty">Tyler Technologies iasWorld</td><td class="nt">Every parcel value, the 2026 reappraisal, CAUV and homestead flags. The system that went dark in April 2024. <span class="c"><a href="#s4">[4]</a><a href="#s31">[31]</a></span></td></tr>
+<tr><td class="v">ess.bcohio.gov</td><td class="ty">Tyler Munis</td><td class="nt">County finance: payroll and budget; the ledger inferred from the product. <span class="c"><a href="#s31">[31]</a></span></td></tr>
+<tr><td class="v">butlerohsmartfile.tylerhost.net</td><td class="ty">Tyler SmartFile</td><td class="nt">Online filings, Board of Revision complaints. <span class="c"><a href="#s31">[31]</a></span></td></tr>
+<tr><td class="v">gismaps.bceo.org</td><td class="ty">Esri ArcGIS, County Engineer</td><td class="nt">Parcel maps. <span class="c"><a href="#s31">[31]</a></span></td></tr>
+<tr><td class="v">butlercountyohio.docupet.com</td><td class="ty">DocuPet</td><td class="nt">Dog licenses. <span class="c"><a href="#s31">[31]</a></span></td></tr>
+<tr><td class="v">files.bcohio.gov</td><td class="ty">Nextcloud, self-hosted</td><td class="nt">Forms and downloads. <span class="c"><a href="#s31">[31]</a></span></td></tr>
+</tbody>
+</table></div>
+<p class="tnote">The auditor&rsquo;s office does not take payments on its own site; those sit with the county Treasurer. No privacy or security statement appears on auditor.bcohio.gov. <span class="c"><a href="#s31">[31]</a></span></p>
+
+<div class="spread" style="margin-top:22px">
+  <div class="card rise">
+    <h3>Tyler Technologies, September 2020</h3>
+    <p>On September 23, 2020 Tyler told clients <q>an unauthorized intruder had disrupted access to some of our internal systems,</q> and that it had <q>no reason to believe that any client data, client servers, or hosted systems were affected,</q> as StateScoop reported. <span class="c"><a href="#s28">[28]</a></span> Two days later the company confirmed to the Associated Press that the intruder used ransomware; it said the impact appeared limited and a spokesperson <q>did not directly answer a question about whether it paid.</q> <span class="c"><a href="#s30">[30]</a></span></p>
+    <p>NBC News reported that several counties using Tyler&rsquo;s software said they had seen evidence they were affected with ransomware. Tyler serves dozens of counties and cities across the country. <span class="c"><a href="#s29">[29]</a></span></p>
+  </div>
+  <div class="card rise">
+    <h3>What that record shows, and what it does not</h3>
+    <p>A vendor that hosts a county&rsquo;s records can be attacked on its own corporate network, and the county learns what the vendor tells it: that was Tyler&rsquo;s account in 2020 and Butler County&rsquo;s experience in 2024. <span class="c"><a href="#s4">[4]</a><a href="#s28">[28]</a></span></p>
+    <p>No source connects the 2020 Tyler attack to Butler County, and no source connects any vendor to the attack on the state&rsquo;s server this week. The state has not named its web host or its content system. <span class="c"><a href="#s1">[1]</a><a href="#s2">[2]</a></span></p>
+  </div>
+</div>
+
+<!-- 9 · how attacks get in -->
+<section class="ch">
+  <p class="k">How attacks get in, and what is not known here</p>
+  <h2>The state has said nothing about the method. A widespread web flaw was fixed this month. No source connects the two.</h2>
+</section>
+<div class="spread">
+  <ul class="notes o rise">
+    <li><b>The method.</b> Neither the office&rsquo;s statement nor any report names how the attackers reached the Auditor of State&rsquo;s web server, what software it runs, or whether it was patched. <span class="c"><a href="#s1">[1]</a><a href="#s2">[2]</a></span></li>
+    <li><b>The state&rsquo;s server, as archived.</b> The last archived copy of ohioauditor.gov before the attack, an Internet Archive capture of Oct. 17, 2026, is static HTML pages (default.html, financial.html, performance/default.html) with an ASP.NET audit search behind them (auditsearch/Search.aspx), jQuery 3.7.1 and Google Tag Manager. No PHP marker appears in the pages. On the record, then, the PHP flaw is a weak fit for the state&rsquo;s web server, and a direct exposure for county sites built on PHP platforms, the Butler County Auditor&rsquo;s Revize pages among them. The state has not named the method. <span class="c"><a href="#s33">[33]</a><a href="#s31">[31]</a></span></li>
+    <li><b>The county&rsquo;s pages.</b> The Butler County Auditor&rsquo;s public pages run on Revize&rsquo;s platform; the addresses end in .php, which is the mark of PHP, the language that builds the pages of about 69 in every 100 websites whose server language is known. <span class="c"><a href="#s31">[31]</a><a href="#s32">[32]</a></span></li>
+    <li><b>PHP2Shell.</b> On October 21 the PHP project shipped fixes for two flaws, CVE-2026-109618 and CVE-2026-109619, that let anyone on the internet run commands on a site&rsquo;s server with no login. Cloudflare&rsquo;s chief executive posted that attempts on its network went from thousands before the fix to millions that night. The fix has to be installed on each server by whoever runs it. CISA said on October 21 it had not observed exploitation as of publication. <span class="c"><a href="#s32">[32]</a></span></li>
+    <li><b>What is on the record.</b> A flaw of this kind exists and is being tried at scale; many government sites run PHP; a county auditor&rsquo;s site in Ohio is among them. Nothing on the record says whether Revize or any Ohio government has installed the fix, and nothing connects PHP2Shell to the attack on the state. <span class="c"><a href="#s32">[32]</a><a href="#s33">[33]</a></span></li>
+  </ul>
+  <div>
+    <div class="note rise"><p><b>What a resident can ask, from the record.</b> Whether the office has an incident response plan under R.C. 9.64 and when it was last tested. What the Tyler, Revize and DocuPet contracts require on uptime, breach notice and data location. When the last independent security assessment was, and who did it. What the public will hear when a system goes down, how fast, and where. Each is a question about documents and dates; the law lets an office answer them without releasing the sealed records. <span class="c"><a href="#s14">[14]</a></span></p></div>
+    <div class="note rise"><p><b>Related on the Well.</b> <a href="https://tools.dnsc.ai/stories/php2shell/">PHP2Shell</a>: what PHP is, how the attack works, who went offline, and what to ask your host. <a href="https://tools.dnsc.ai/civic/who-owns-the-pipes/">Who owns the pipes</a>: who owns the apps, networks and papers, and the local news in Butler County.</p></div>
+  </div>
+</div>
+
+<!-- editor's take: opinion, apart from the record -->
+<section class="take" aria-labelledby="takeH">
+  <p class="k" id="takeH">The editor&rsquo;s take</p>
+  <p class="op">Opinion. What follows is the editor&rsquo;s view, apart from the reported record above.</p>
+  <p>The technology our society is built on is very vulnerable, and it always has been, because it has been under-resourced and run by people who don&rsquo;t know what they&rsquo;re doing. When we see our own state auditor&rsquo;s office get attacked like this, with real vulnerabilities in our systems, get ready for a wave of attacks of this nature. We need leaders who are prepared to defend our country and our local communities in the new world of AI cyber attacks. What have municipalities and our leaders done to help prepare us and our systems to be secure? Every single thing on the record here is reactionary.</p>
+  <p class="sig">Dustin Nimmo, editor &middot; Oct. 27, 2026</p>
+</section>
+
+<!-- sources -->
+<section class="srcs" aria-labelledby="srcH">
+  <p class="k" id="srcH">Sources</p>
+  <ol class="src">
+    <li id="s1">WOSU News Staff, WOSU 89.7, &ldquo;Ohio Auditor&rsquo;s website and online accounts down after cyberattack,&rdquo; Oct. 27, 2026, 2:35 PM EDT, <a href="https://www.wosu.org/politics-government/2026-10-27/ohio-auditors-website-and-online-accounts-down-after-cyberattack">wosu.org</a>.</li>
+    <li id="s2">Noelle Horn, WHIO, &ldquo;Ohio Auditor of State&rsquo;s web server taken offline after cyberattack,&rdquo; Oct. 27, 2026, 5:37 PM EDT, <a href="https://www.whio.com/news/local/ohio-auditor-states-web-server-taken-offline-after-cyberattack/7OQD7JBDUNCQTDFO3R4WVCUUJM/">whio.com</a>.</li>
+    <li id="s3">Karen Kasler, Statehouse News Bureau, &ldquo;Cybercrime steals more from local governments than employee fraud, says Ohio auditor,&rdquo; Jan. 20, 2026, as carried by WYSU, <a href="https://wysu.org/ohio-news/2026-01-20/cybercrime-steals-more-from-local-governments-than-employee-fraud-says-ohio-auditor">wysu.org</a>.</li>
+    <li id="s4">Lauren Pack, Journal-News, &ldquo;&lsquo;Unusual activity&rsquo; detected, Butler County auditor website goes offline,&rdquo; April 16, 2024, updated April 17, as carried by Yahoo, <a href="https://tech.yahoo.com/unusual-activity-detected-butler-county-011000602.html">tech.yahoo.com</a>.</li>
+    <li id="s5">Journal-News, &ldquo;Butler County auditor&rsquo;s property search site back online after unusual activity,&rdquo; April 2024, <a href="https://www.journal-news.com/news/butler-county-auditors-property-search-site-back-online-after-unusual-activity/I44IOVUSGJFL5FY6DP27SISFOE/">journal-news.com</a>.</li>
+    <li id="s6">Journal-News, &ldquo;New Butler County auditor website fully online weeks after unusual activity,&rdquo; May 2024, <a href="https://www.journal-news.com/news/new-butler-county-auditor-website-fully-online-weeks-after-unusual-activity/GD3YTEXUKRETFD7T7LXVUO7FQ4/">journal-news.com</a>.</li>
+    <li id="s7">Michael D. Pitman, Journal-News, &ldquo;Butler County communities ramp up cybersecurity as global threats, breaches rise,&rdquo; as carried by WCPO, undated on the page, read Oct. 27, 2026, <a href="https://www.wcpo.com/news/local-news/butler-county-communities-ramp-up-cybersecurity-as-global-threats-breaches-rise">wcpo.com</a>.</li>
+    <li id="s8">Citizen Portal, &ldquo;Commissioners told to adopt Butler County cybersecurity program required by state law,&rdquo; summary of the Butler County Board of Commissioners meeting of Dec. 16, 2025, <a href="https://citizenportal.ai/articles/7444989/Ohio/Butler-County/Commissioners-told-to-adopt-Butler-County-cybersecurity-program-required-by-state-law">citizenportal.ai</a>.</li>
+    <li id="s9">WTVG 13abc, &ldquo;Wood County pays $1.5 million to resolve ransomware attack,&rdquo; Dec. 23, 2024, <a href="https://www.13abc.com/2024/12/23/wood-county-pays-15-million-resolve-ransomware-attack/">13abc.com</a>.</li>
+    <li id="s10">Union County, Ohio, &ldquo;Cyber Incident Notice,&rdquo; Sept. 24, 2025, <a href="https://www.unioncountyohio.gov/media/Officials/Auditor/IT/Union_County_CyberIncident_Notice_092425.pdf">unioncountyohio.gov</a>.</li>
+    <li id="s11">Cleveland 19, &ldquo;Network security incident in Lorain County shuts down some court services,&rdquo; May 30, 2025, <a href="https://www.cleveland19.com/2025/05/30/network-security-incident-impacts-lorain-county">cleveland19.com</a>.</li>
+    <li id="s12">Tribune Chronicle, &ldquo;County officials say cyber threat thwarted,&rdquo; Nov. 2025, <a href="https://www.tribtoday.com/news/local-news/2025/11/county-officials-say-cyber-threat-thwarted/">tribtoday.com</a>.</li>
+    <li id="s13">DysruptionHub, &ldquo;Lucas County, Ohio probes cybersecurity incident after outages,&rdquo; March 19, 2026, citing The Blade, March 18, 2026, <a href="https://dysruptionhub.com/lucas-county-ohio-security-incident/">dysruptionhub.com</a>.</li>
+    <li id="s14">Bricker Graydon, &ldquo;Ohio House Bill 96 ushers in new era of cybersecurity compliance for local governments and school districts,&rdquo; July 31, 2025, <a href="https://www.bricker.com/insights/publications/ohio-house-bill-96-ushers-in-new-era-of-cybersecurity-compliance-for-local-governments-and-school-districts">bricker.com</a>.</li>
+    <li id="s15">County Commissioners Association of Ohio, Bulletin 2025-13, &ldquo;County Cybersecurity Programs,&rdquo; Sept. 2025, <a href="https://ccao.org/aws/CCAO/asset_manager/get_file/933056?ver=1">ccao.org</a>.</li>
+    <li id="s16">Jon Clay, Trend Micro, &ldquo;U.S. Public Sector Under Siege: Threat Intelligence for Q1 2026,&rdquo; April 9, 2026, <a href="https://www.trendaisecurity.com/en-us/resources-insights/trendai-security-blog/us-public-sector-under-siege-threat-intelligence-for-q1-2026">trendaisecurity.com</a> (the original address at <a href="https://www.trendmicro.com/en_us/research/26/d/us-public-sector-under-siege.html">trendmicro.com</a> now redirects there). Vendor research.</li>
+    <li id="s17">Nicole Sganga, CBS News, on the Semperis 2026 Ransomware Risk Report, Oct. 14, 2026, <a href="https://www.cbsnews.com/news/ai-linked-ransomeware-attacks-global-cybersecurity-report/">cbsnews.com</a>.</li>
+    <li id="s18">Semperis, &ldquo;Ransomware Risk Report 2026,&rdquo; <a href="https://www.semperis.com/wp-content/uploads/resources-pdfs/reports/resources-semperis-ransomware-risk-report.pdf">semperis.com</a> (PDF). Industry survey.</li>
+    <li id="s19">Proofpoint, &ldquo;2026 AI-Era Ransomware Report,&rdquo; July 21, 2026, <a href="https://www.proofpoint.com/us/resources/threat-reports/ai-era-ransomware-report">proofpoint.com</a>. Industry survey.</li>
+    <li id="s20">Ohio National Guard, &ldquo;Ohio Gov. Mike DeWine signs cyber reserve legislation,&rdquo; Oct. 25, 2019, <a href="https://ong.ohio.gov/stories/2019/oct/20191025-cyber-legislation.html">ong.ohio.gov</a>; the same story at <a href="https://www.dvidshub.net/news/printable/349256">dvidshub.net</a>.</li>
+    <li id="s21">Ohio National Guard, &ldquo;Ohio Cyber Reserve members train to assist with cybersecurity issues,&rdquo; Nov. 29, 2021, <a href="https://ong.ohio.gov/stories/2021/nov/20211129-ohcr-training.html">ong.ohio.gov</a>.</li>
+    <li id="s22">Kirk Herath, Cybersecurity Strategic Advisor to Gov. DeWine, &ldquo;CyberOhio,&rdquo; slides for the CCAO Winter Conference, Dec. 4, 2024, <a href="https://ccao.org/aws/CCAO/asset_manager/get_file/912184">ccao.org</a> (PDF).</li>
+    <li id="s23">Ohio Cyber Reserve, &ldquo;Our Mission&rdquo; and &ldquo;Respond,&rdquo; <a href="https://ohcr.ohio.gov/about/">ohcr.ohio.gov/about</a> and <a href="https://ohcr.ohio.gov/what-we-do/respond.html">ohcr.ohio.gov/what-we-do/respond</a>, read Oct. 27, 2026.</li>
+    <li id="s24">National Association of Counties, &ldquo;Multi-State Information Sharing and Analysis Center (MS-ISAC) loses federal funding,&rdquo; March 25, 2025, <a href="https://www.naco.org/news/multi-state-information-sharing-and-analysis-center-ms-isac-loses-federal-funding">naco.org</a>.</li>
+    <li id="s25">Ryan Kushner, Smart Cities Dive, &ldquo;City and county leaders urge Congress to reinstate &lsquo;critical&rsquo; cybersecurity funding,&rdquo; Aug. 20, 2025, <a href="https://www.smartcitiesdive.com/news/cybersecurity-funding-cisa-local-government/758143/">smartcitiesdive.com</a>.</li>
+    <li id="s26">Zeljka Zorz, Help Net Security, on the end of the CISA and CIS cooperative agreement, Sept. 30, 2025, <a href="https://www.helpnetsecurity.com/2025/09/30/cisa-ms-isac-funding/">helpnetsecurity.com</a>.</li>
+    <li id="s27">Eric Geller, Cybersecurity Dive, &ldquo;Federal cuts force many state and local governments out of cyber collaboration group,&rdquo; Oct. 1, 2025, <a href="https://www.cybersecuritydive.com/news/ms-isac-loses-federal-funding-cyber-impacts/761367/">cybersecuritydive.com</a>.</li>
+    <li id="s28">Benjamin Freed, StateScoop, &ldquo;Tyler Technologies reports apparent cyberattack,&rdquo; Sept. 23, 2020, <a href="https://statescoop.com/tyler-technologies-reports-apparent-cyberattack/">statescoop.com</a>.</li>
+    <li id="s29">Kevin Collier, NBC News, &ldquo;Software provider for U.S. counties says it was hacked,&rdquo; Sept. 24, 2020, <a href="https://www.nbcnews.com/tech/security/software-provider-u-s-counties-says-it-was-hacked-n1240953">nbcnews.com</a>.</li>
+    <li id="s30">The Associated Press, &ldquo;Hacked software provider acknowledges ransomware attack,&rdquo; Sept. 25, 2020, as carried by KPRC Click2Houston, <a href="https://www.click2houston.com/business/2020/09/25/hacked-software-provider-acknowledges-ransomware-attack/">click2houston.com</a>.</li>
+    <li id="s31">Butler County Auditor, <a href="https://auditor.bcohio.gov/">auditor.bcohio.gov</a>, pages and response headers read Oct. 5 and Oct. 27, 2026 (Revize footer, .php addresses, &copy; 2024; property search, finance, filings, maps, dog licenses and files on the hosts named in the table); Ohio Auditor of State, <a href="https://ohioauditor.gov/">ohioauditor.gov</a>, connection timed out Oct. 27, 2026.</li>
+    <li id="s32">DNSC, &ldquo;PHP2Shell,&rdquo; Oct. 22, 2026, <a href="https://tools.dnsc.ai/stories/php2shell/">tools.dnsc.ai/stories/php2shell</a>, drawing on The PHP Group&rsquo;s security advisory of Oct. 21, 2026 (<a href="https://www.php.net/archive/2026.php#2026-10-21-5">php.net</a>), Cloudflare&rsquo;s post of Oct. 21 (<a href="https://blog.cloudflare.com/php-vulnerabilities-waf-protection">blog.cloudflare.com</a>), CISA&rsquo;s alert of Oct. 21 (<a href="https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching">cisa.gov</a>) and W3Techs (<a href="https://w3techs.com/technologies/details/pl-php">w3techs.com</a>).</li>
+    <li id="s33">Internet Archive capture of <a href="https://web.archive.org/web/20261017000000*/ohioauditor.gov">ohioauditor.gov</a>, Oct. 17, 2026: default.html, financial.html, performance/default.html and auditsearch/Search.aspx, with jQuery 3.7.1 and Google Tag Manager in the page source; no PHP marker.</li>
+  </ol>
+  <p class="tm">The diagram is drawn for this story from the sources above. Tyler Technologies, Revize, Esri, DocuPet, Nextcloud and the other names are trademarks of their owners. No logos are reproduced.</p>
+</section>
+
+<footer>
+  <p>Built by <b>Dustin Nimmo</b>, founder of <a href="https://dnsc.ai">DNSC</a> in West&nbsp;Chester, Ohio.</p>
+  <p class="sm">Last verified Oct. 27, 2026. If a fact here is wrong, say so and it will be fixed and noted.</p>
+  <p class="sm ai-twin">For AIs: <a href="index.md">this page as text</a> &middot; <a href="/llms.txt">site index</a></p>
+</footer>
+</div>
+<script>
+(function(){
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce||!('IntersectionObserver' in window))return;
+  document.documentElement.classList.add('mo');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},{threshold:.12});
+  document.querySelectorAll('.rise').forEach(function(el){io.observe(el);});
+})();
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4cca1d9e1eab422b9abffe2ffd5a9399"}'></script><!-- End Cloudflare Web Analytics -->
+</body></html>

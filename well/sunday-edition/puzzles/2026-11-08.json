@@ -1,0 +1,266 @@
+{
+ "v": 1,
+ "track": "weekly",
+ "date": "2026-11-08",
+ "size": 11,
+ "g": [
+  "#THUS##DID#",
+  "SHONE##EROS",
+  "TRADER#FOLK",
+  "AERO#OPENLY",
+  "BED#CYAN###",
+  "###BLAND###",
+  "###OILS#BOW",
+  "ABRUPT#GALE",
+  "RAIN#YIELDS",
+  "MITT##ONSET",
+  "#LAY##NEAR#"
+ ],
+ "a": [
+  [
+   "THUS",
+   "And so"
+  ],
+  [
+   "DID",
+   "Got it done"
+  ],
+  [
+   "SHONE",
+   "Gave off light"
+  ],
+  [
+   "EROS",
+   "Greek god with a bow"
+  ],
+  [
+   "TRADER",
+   "Role Claude played in Project EVE, posted Nov. 6: buying and reselling items in a replay of EVE Online's Jita market",
+   {
+    "src": "https://anthropic.com/research/project-eve-claude-plays-mmorpgs"
+   }
+  ],
+  [
+   "FOLK",
+   "Kind of music, or people"
+  ],
+  [
+   "AERO",
+   "Prefix for anything that flies"
+  ],
+  [
+   "OPENLY",
+   "With nothing hidden"
+  ],
+  [
+   "BED",
+   "Where the day ends"
+  ],
+  [
+   "CYAN",
+   "Printer ink between blue and green"
+  ],
+  [
+   "BLAND",
+   "Needs salt"
+  ],
+  [
+   "OILS",
+   "Paints that take weeks to dry"
+  ],
+  [
+   "BOW",
+   "Take one after the show"
+  ],
+  [
+   "ABRUPT",
+   "Sudden, as an ending"
+  ],
+  [
+   "GALE",
+   "Strong wind"
+  ],
+  [
+   "RAIN",
+   "What the garden waits for"
+  ],
+  [
+   "YIELDS",
+   "Gives way, or what a field produces"
+  ],
+  [
+   "MITT",
+   "Catcher's glove"
+  ],
+  [
+   "ONSET",
+   "Beginning"
+  ],
+  [
+   "LAY",
+   "Set down"
+  ],
+  [
+   "NEAR",
+   "Close by"
+  ]
+ ],
+ "d": [
+  [
+   "STAB",
+   "Give it a try, with \"a\""
+  ],
+  [
+   "ARM",
+   "Sleeve filler"
+  ],
+  [
+   "THREE",
+   "Sides on a triangle"
+  ],
+  [
+   "BAIL",
+   "Scoop water from a boat"
+  ],
+  [
+   "HOARD",
+   "Stash away"
+  ],
+  [
+   "RITA",
+   "Hayworth of old Hollywood"
+  ],
+  [
+   "UNDO",
+   "Ctrl-Z"
+  ],
+  [
+   "BOUNTY",
+   "OpenAI's Nov. 2 post raised its bug ___ to up to $172,000 with bonuses for a critical finding",
+   {
+    "src": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties/"
+   }
+  ],
+  [
+   "SEE",
+   "Take a look"
+  ],
+  [
+   "CLIP",
+   "One of these from Gemini Omni 1.2 Flash can now run 15 seconds, up from 10, per Google's Nov. 5 post",
+   {
+    "src": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+   }
+  ],
+  [
+   "ROYALTY",
+   "Arm's Nov. 4 results: this kind of revenue, paid per chip shipped, came to $670 million for the quarter",
+   {
+    "src": "https://newsroom.arm.com/news/arm-q2-fye27-results"
+   }
+  ],
+  [
+   "PANS",
+   "What hang over the stove"
+  ],
+  [
+   "ION",
+   "Charged atom"
+  ],
+  [
+   "DEFEND",
+   "What GPT-6 Cyber is built to help security researchers do, finding and fixing vulnerabilities, per OpenAI's Nov. 5 post",
+   {
+    "src": "https://openai.com/index/introducing-gpt-6-cyber/"
+   }
+  ],
+  [
+   "GENE",
+   "Unit of heredity"
+  ],
+  [
+   "IRON",
+   "Press a shirt"
+  ],
+  [
+   "BALSA",
+   "Light wood for model planes"
+  ],
+  [
+   "DOLL",
+   "Toy with a dress"
+  ],
+  [
+   "OLDER",
+   "Like a big sibling"
+  ],
+  [
+   "SKY",
+   "Where the gale lives"
+  ],
+  [
+   "WEST",
+   "Where the sun sets"
+  ]
+ ],
+ "w": "TRADER",
+ "n": "Five documents, five answers. A royalty line in a chip company's quarterly report, a bug bounty raised, a model built to defend, a clip that got five seconds longer, and a trader that was never in the live game. Every clue points to the page that says so, and the page is where to start when the week moves fast.",
+ "sources": [
+  {
+   "title": "OpenAI raises its bug bounty, up to $172,000 with bonuses for a critical finding",
+   "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties/",
+   "date": "2026-11-02"
+  },
+  {
+   "title": "Arm reports second quarter revenue of $1.44 billion, royalty revenue $670 million",
+   "url": "https://newsroom.arm.com/news/arm-q2-fye27-results",
+   "date": "2026-11-04"
+  },
+  {
+   "title": "OpenAI introduces GPT-6 Cyber, rated Critical under its Preparedness Framework",
+   "url": "https://openai.com/index/introducing-gpt-6-cyber/",
+   "date": "2026-11-05"
+  },
+  {
+   "title": "Google makes Gemini Omni 1.2 Flash generally available with 15-second clips",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+   "date": "2026-11-05"
+  },
+  {
+   "title": "Anthropic's Project EVE: Claude trades in a replay of EVE Online's market",
+   "url": "https://anthropic.com/research/project-eve-claude-plays-mmorpgs",
+   "date": "2026-11-06"
+  }
+ ],
+ "coming": [
+  {
+   "date": "2026-11-09",
+   "end": "2026-11-12",
+   "text": "Web Summit runs in Lisbon, Monday through Thursday.",
+   "url": "https://websummit.com/"
+  },
+  {
+   "date": "2026-11-10",
+   "text": "CoreWeave reports third quarter results, with a call at 5 p.m. ET.",
+   "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Announces-Date-of-Third-Quarter-2026-Financial-Results-and-Conference-Call/default.aspx"
+  },
+  {
+   "date": "2026-11-10",
+   "text": "Anthropic livestreams The Briefing: Work at the Frontier.",
+   "url": "https://www.anthropic.com/events/the-briefing-work-at-the-frontier-ls"
+  },
+  {
+   "date": "2026-11-12",
+   "text": "Anthropic's updated Usage Policy takes effect, with a new section on deceptive campaigns and artificial activity.",
+   "url": "https://www.anthropic.com/news/2026-usage-policy-update"
+  },
+  {
+   "date": "2026-11-12",
+   "text": "Cisco reports first quarter results after the market closes, with a call at 4:30 p.m. ET.",
+   "url": "https://investor.cisco.com/news/news-details/2026/Cisco-Schedules-Conference-Call-for-Q1-Fiscal-Year-2027-Financial-Results/default.aspx"
+  }
+ ],
+ "checked": true,
+ "no": 6,
+ "cooked": "2026-11-08T17:36:00-05:00"
+}

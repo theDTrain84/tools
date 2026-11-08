@@ -194,4 +194,4 @@ Want help putting these to work with your people?
 
 ---
 
-Source: https://tools.dnsc.ai/ · Generated from the page on Oct 16, 2026
+Source: https://tools.dnsc.ai/ · Generated from the page on Nov 8, 2026

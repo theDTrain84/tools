@@ -1,0 +1,3156 @@
+{
+  "_readme": "The record behind civic/the-money-in-the-air/. Edit figures here, then run: python3 build.py (in this folder). Every figure: v (dollars, or a count), date (when the source published it), through (the last day the figure covers), src (source ids, in 'sources' below), tag (VERIFIED: filing or page read directly; REPORTED: a named outlet carried it, or the page was not read in full). 'bought' is the what-this-bought line, only where a tracker or filing gives it. A district or figure with status 'refresh' renders as 'Refresh Thursday' until it is filled. Text may carry [[c:id]] citation tokens; numbers are assigned at build time in order of first use. 'total' is the headline: one defined count (its 'count' text), built from filing totals only, each part with v, through, src and how; race totals and the grand total are the sums of the parts (re-add them after any refresh). AdImpact figures are never added to it. Payer 'short' and 'label' (with 'label_src') name each committee's kind and funders, from its filings or a named outlet; house.payer_labels does the same for the House panels.",
+  "meta": {
+    "slug": "the-money-in-the-air",
+    "title": "The money in the air",
+    "headline": "At least $659 million spent on Ohio's 2026 races for Senate, governor and the U.S. House.",
+    "published": "2026-10-23",
+    "updated": null,
+    "through": "2026-10-23",
+    "verified": "2026-10-23",
+    "election": "2026-11-03"
+  },
+  "senate": {
+    "cycles": [
+      {
+        "year": 2022,
+        "label": "2022",
+        "race": "Vance vs. Ryan",
+        "v": 106000000,
+        "date": "2022-12-01",
+        "through": "2022-11-08",
+        "src": [
+          "adimpact-deepdive"
+        ],
+        "tag": "REPORTED",
+        "note": "Democrats outspent Republicans, $57 million to $49.5 million.",
+        "bought": "No airing count was published for the 2022 general election."
+      },
+      {
+        "year": 2024,
+        "label": "2024",
+        "race": "Brown vs. Moreno",
+        "v": 483400000,
+        "date": "2024-12-04",
+        "through": "2024-11-05",
+        "src": [
+          "adimpact-2024"
+        ],
+        "tag": "VERIFIED",
+        "note": "The most for any race other than a presidential one, on AdImpact's record.",
+        "bought": "More than 222,000 broadcast airings, about 120,000 Democratic and 102,000 Republican. Cleveland was the top market at $132.9 million. Google ads: $29.9 million. [[c:adimpact-2024]]"
+      },
+      {
+        "year": 2026,
+        "label": "2026",
+        "race": "Husted vs. Brown",
+        "v": 423000000,
+        "date": "2026-10-15",
+        "through": "2026-10-15",
+        "src": [
+          "spectrum-oct15",
+          "ocj-oct20"
+        ],
+        "tag": "VERIFIED",
+        "reserved": {
+          "v": 80000000,
+          "display": "more than $80 million",
+          "date": "2026-10-20",
+          "through": "2026-10-12",
+          "src": [
+            "ocj-oct20"
+          ],
+          "tag": "VERIFIED"
+        },
+        "note": "A special election for the two years left in the term. 2024 was a six-year seat in a presidential year.",
+        "bought": "By October 15, Democratic advertisers had aired 200 more broadcast spots than Republican ones; the report attributes the gap to lower candidate ad rates. [[c:spectrum-oct15]] Republican spending passed $30 million in a single week. [[c:ocj-oct20]] Cleveland was the second-largest political ad market in the country for the two weeks ending August 14, at $10.5 million. [[c:insideradio-aug19]]"
+      }
+    ],
+    "outside_2026": {
+      "v": 350000000,
+      "date": "2026-10-15",
+      "through": "2026-10-15",
+      "src": [
+        "spectrum-oct15"
+      ],
+      "tag": "VERIFIED"
+    },
+    "outside_share_2024": {
+      "display": "about 85 percent",
+      "date": "2026-06-05",
+      "src": [
+        "spectrum-jun5"
+      ],
+      "tag": "REPORTED"
+    },
+    "fec_outside": {
+      "v": 349325391,
+      "filers": 67,
+      "date": "2026-10-23",
+      "through": "2026-10-23",
+      "src": [
+        "votelog"
+      ],
+      "tag": "VERIFIED"
+    },
+    "fec_primary_excluded": {
+      "v": 3617518,
+      "src": [
+        "votelog"
+      ],
+      "tag": "VERIFIED"
+    },
+    "campaigns": {
+      "brown": {
+        "name": "Friends of Sherrod Brown",
+        "id": "C00916288",
+        "receipts": 68409199.85,
+        "disbursements": 63956396.53,
+        "cash": 4452803.32,
+        "itemized": 35423801.47,
+        "unitemized": 22438140.72,
+        "self": 0,
+        "through": "2026-10-14",
+        "src": [
+          "fec-brown"
+        ],
+        "tag": "VERIFIED"
+      },
+      "husted": {
+        "name": "Husted for Senate",
+        "id": "C00896019",
+        "receipts": 19885382.87,
+        "disbursements": 15646286.3,
+        "cash": 4239096.57,
+        "itemized": 6925261.39,
+        "unitemized": 2908528.05,
+        "self": 0,
+        "through": "2026-10-14",
+        "src": [
+          "fec-husted"
+        ],
+        "tag": "VERIFIED"
+      }
+    },
+    "growth": [
+      {
+        "date": "2026-06-05",
+        "text": "$16.1 million spent so far.",
+        "src": [
+          "spectrum-jun5"
+        ]
+      },
+      {
+        "date": "2026-08-14",
+        "text": "Republicans $77.9 million booked, Democrats $69.1 million booked.",
+        "src": [
+          "insideradio-aug19"
+        ]
+      },
+      {
+        "date": "2026-09-30",
+        "text": "Nearly $250 million spent, another $137 million booked through Election Day.",
+        "src": [
+          "newsweek-oct2"
+        ]
+      },
+      {
+        "date": "2026-10-09",
+        "text": "$250 million aired by the end of September; $140 million reserved for the final 34 days.",
+        "src": [
+          "statenews-oct9"
+        ]
+      },
+      {
+        "date": "2026-10-15",
+        "text": "$423 million including candidates; outside groups $350 million.",
+        "src": [
+          "spectrum-oct15"
+        ]
+      },
+      {
+        "date": "2026-10-20",
+        "text": "$422.6 million; more than $80 million reserved as of October 12.",
+        "src": [
+          "ocj-oct20"
+        ]
+      }
+    ],
+    "statewide_projection": {
+      "v": 749000000,
+      "display": "$749 million",
+      "date": "2026-10-16",
+      "src": [
+        "spectrum-oct16"
+      ],
+      "tag": "VERIFIED"
+    }
+  },
+  "governor": {
+    "race": "Ramaswamy vs. Acton",
+    "adimpact": {
+      "date": "2026-10-20",
+      "through": "2026-10-08",
+      "src": [
+        "ocj-oct20"
+      ],
+      "tag": "VERIFIED",
+      "r": {
+        "label": "Republican-aligned",
+        "aired": 87100000,
+        "reserved": 27500000
+      },
+      "d": {
+        "label": "Democratic-aligned",
+        "aired": 25400000,
+        "reserved": 14500000
+      }
+    },
+    "july_2026": {
+      "v": 36000000,
+      "display": "nearly $36 million",
+      "note": "double the entire 2022 race for governor",
+      "date": "2026-07-21",
+      "src": [
+        "ocj-jul21"
+      ],
+      "tag": "REPORTED"
+    }
+  },
+  "flows": {
+    "senate": {
+      "unit_note": "Outside committees: general-election independent expenditures reported to the FEC through October 23, 2026. Campaigns: disbursements through October 14, 2026. Funders: what each gave the committee this cycle, for all its races, through the date shown; where the FEC has not yet processed a committee's October reports, the total the committee itself reports for 2026, as e-filed.",
+      "src": [
+        "votelog",
+        "fec-brown",
+        "fec-husted"
+      ],
+      "sides": [
+        {
+          "key": "r",
+          "label": "Helping Husted",
+          "sub": "for Husted or against Brown",
+          "total": {
+            "outside": 230846544,
+            "campaign": 15646286.3,
+            "src": [
+              "votelog"
+            ]
+          },
+          "payers": [
+            {
+              "name": "Senate Leadership Fund",
+              "kind": "super PAC",
+              "v": 80413044,
+              "src": [
+                "votelog"
+              ],
+              "funders_through": "2026-10-14",
+              "funders": [
+                {
+                  "name": "Elon Musk",
+                  "v": 168000000
+                },
+                {
+                  "name": "One Nation",
+                  "v": 132907000,
+                  "sub": "a 501(c)(4); its donors are not disclosed",
+                  "nd": true
+                },
+                {
+                  "name": "Miriam Adelson",
+                  "v": 30000000
+                },
+                {
+                  "name": "Stephen A. Schwarzman",
+                  "v": 20000000
+                },
+                {
+                  "name": "Paul Elliott Singer",
+                  "v": 14500000
+                }
+              ],
+              "bought": "Announced $79 million for Ohio in April, its largest state [[c:legis1-may5]]; $93 million committed by October 2. [[c:newsweek-oct2]]",
+              "short": "aligned with Senate GOP leadership",
+              "label": "Super PAC aligned with Senate Majority Leader John Thune (Newsweek). Its largest donors this cycle: Elon Musk, and One Nation, a 501(c)(4) that does not disclose its donors.",
+              "label_src": [
+                "newsweek-oct2",
+                "votelog"
+              ]
+            },
+            {
+              "name": "Defend American Jobs",
+              "kind": "super PAC",
+              "v": 55760700,
+              "src": [
+                "votelog"
+              ],
+              "funders_through": "2026-10-14",
+              "funders": [
+                {
+                  "name": "Fairshake",
+                  "v": 106000000,
+                  "sub": "funded by Coinbase, Ripple and Andreessen Horowitz (reported)",
+                  "src": [
+                    "coindesk-sep21"
+                  ]
+                }
+              ],
+              "bought": "Fairshake announced $30 million against Brown in September. [[c:coindesk-sep21]]",
+              "short": "crypto; funded by Fairshake",
+              "label": "One of \"the cryptocurrency groups\" in the race (Ohio Capital Journal): a super PAC funded by Fairshake, the crypto industry's super PAC, whose backers are mainly Coinbase, Ripple Labs and a16z (CoinDesk).",
+              "label_src": [
+                "ocj-oct20",
+                "coindesk-sep21",
+                "votelog"
+              ]
+            },
+            {
+              "name": "No Going Back PAC",
+              "kind": "super PAC, formed Sept. 1",
+              "v": 27770039,
+              "src": [
+                "votelog",
+                "fec-ngb"
+              ],
+              "nd_note": "Its reports for September 1 to October 14, e-filed October 20, 2026, list $200 million from MAGA Inc. in six transfers, September 1 to October 13. [[c:fec-ngb]] MAGA Inc.'s largest donors through October 14 are shown behind it. [[c:fec-maga]]",
+              "funders": [
+                {
+                  "name": "MAGA Inc.",
+                  "v": 200000000,
+                  "sub": "six transfers, Sept. 1 to Oct. 13",
+                  "src": [
+                    "fec-ngb"
+                  ],
+                  "behind_label": "MAGA Inc.'s largest donors, through Oct. 14",
+                  "behind": [
+                    {
+                      "name": "Foris DAX Inc. (Crypto.com)",
+                      "v": 35000000
+                    },
+                    {
+                      "name": "Diane Hendricks",
+                      "v": 30000000
+                    },
+                    {
+                      "name": "Miriam Adelson",
+                      "v": 25000000
+                    },
+                    {
+                      "name": "Gemini Trust Company",
+                      "v": 23022102.35
+                    },
+                    {
+                      "name": "Securing American Greatness Inc.",
+                      "v": 21290241.93,
+                      "nd": true,
+                      "sub": "a 501(c)(4); its donors are not disclosed"
+                    },
+                    {
+                      "name": "Tyler Winklevoss",
+                      "v": 20053268.26
+                    }
+                  ]
+                }
+              ],
+              "bought": "September 10 and 11: $6.7 million in Ohio television, digital and mail. [[c:reuters-sep21]] Two payments of $4.93 million to Del Ray Media LLC, September 10 and five days later, for television and connected-TV ads against Brown. [[c:legis1-oct14]]",
+              "funders_label": "from its reports through Oct. 14, 2026",
+              "short": "funded by Trump's MAGA Inc.",
+              "label": "Super PAC formed September 1, \"closely tied to Trump's MAGA Inc. super PAC\" (Reuters), which gave it $200 million.",
+              "label_src": [
+                "reuters-sep21",
+                "fec-ngb"
+              ]
+            },
+            {
+              "name": "Americans for Prosperity Action",
+              "kind": "super PAC",
+              "v": 20667155,
+              "src": [
+                "votelog"
+              ],
+              "funders_through": "2026-10-14",
+              "funders": [
+                {
+                  "name": "Koch Inc.",
+                  "v": 30000000
+                },
+                {
+                  "name": "Stand Together Inc.",
+                  "v": 26000000
+                },
+                {
+                  "name": "Jim C. Walton",
+                  "v": 7000000
+                }
+              ],
+              "bought": "Week of June 1: Americans for Prosperity Ohio bought $1.75 million in ads. [[c:spectrum-jun5]] By October 9, AFP Action and its affiliates had knocked more than 700,000 doors for Husted. [[c:statenews-oct9]]",
+              "short": "Koch-backed",
+              "label": "Koch-backed super PAC (Ohio Capital Journal; Reuters), funded by Koch Inc. and Stand Together Inc.",
+              "label_src": [
+                "ocj-oct20",
+                "reuters-sep21",
+                "votelog"
+              ]
+            },
+            {
+              "name": "75 PAC",
+              "kind": "super PAC",
+              "v": 10007985,
+              "src": [
+                "votelog"
+              ],
+              "nd_note": "No donors were itemized in the record as compiled through October 19. Its pre-general report, e-filed October 22, lists $2.4 million received October 1 to 14, from SLF PAC, Preserving the Republic's Promise, Inc. and The Revitalization Project; the amounts shown are each contributor's 2026 total on that report. [[c:fec-75pac]]",
+              "funders": [
+                {
+                  "name": "Preserving the Republic's Promise, Inc.",
+                  "v": 1700000,
+                  "src": [
+                    "fec-75pac"
+                  ]
+                },
+                {
+                  "name": "SLF PAC",
+                  "v": 1415169.46,
+                  "src": [
+                    "fec-75pac"
+                  ]
+                },
+                {
+                  "name": "The Revitalization Project",
+                  "v": 300000,
+                  "src": [
+                    "fec-75pac"
+                  ]
+                }
+              ],
+              "funders_label": "2026 totals on its pre-general report, as e-filed Oct. 22",
+              "short": "funders include SLF PAC",
+              "label": "Super PAC. Its 2026 funders include SLF PAC, the committee name Senate Leadership Fund files under.",
+              "label_src": [
+                "fec-75pac",
+                "votelog"
+              ]
+            },
+            {
+              "name": "America PAC",
+              "kind": "super PAC",
+              "v": 9422022,
+              "src": [
+                "votelog"
+              ],
+              "funders": [
+                {
+                  "name": "Elon Musk",
+                  "v": 167756421.15,
+                  "sub": "his 2026 total to Oct. 14 as e-filed, including in-kind gifts attributed to him through United States of America Inc.",
+                  "src": [
+                    "fec-americapac"
+                  ]
+                }
+              ],
+              "funders_label": "gave the committee, all races, 2026 to Oct. 14, as e-filed Oct. 22",
+              "short": "Elon Musk's super PAC",
+              "label": "Elon Musk's super PAC (Ohio Capital Journal), funded by Musk.",
+              "label_src": [
+                "ocj-oct20",
+                "fec-americapac"
+              ]
+            },
+            {
+              "name": "Ohio Flyer PAC",
+              "kind": "super PAC",
+              "v": 8431153,
+              "src": [
+                "votelog"
+              ],
+              "funders": [
+                {
+                  "name": "American Prosperity Alliance",
+                  "v": 2600000,
+                  "src": [
+                    "fec-ohflyer"
+                  ]
+                },
+                {
+                  "name": "Team Husted",
+                  "v": 1073412.49,
+                  "sub": "transfers",
+                  "src": [
+                    "fec-ohflyer"
+                  ]
+                },
+                {
+                  "name": "A Public Voice, Inc.",
+                  "v": 1000000
+                },
+                {
+                  "name": "Lawrence S. Connor",
+                  "v": 250000
+                }
+              ],
+              "funders_label": "gave the committee, all races, this cycle, through Oct. 14; the first two are 2026 totals on its pre-general report, as e-filed Oct. 22",
+              "note": "Its pre-general report, e-filed October 22, lists $2.6 million from American Prosperity Alliance and transfers from Team Husted totaling $1,073,412.49 in 2026. [[c:fec-ohflyer]]",
+              "short": "funders include Team Husted",
+              "label": "Super PAC. Its 2026 funders include American Prosperity Alliance, and transfers from Team Husted.",
+              "label_src": [
+                "fec-ohflyer"
+              ]
+            },
+            {
+              "name": "Digital Freedom Fund",
+              "kind": "super PAC",
+              "v": 7014722,
+              "src": [
+                "votelog"
+              ],
+              "funders_through": "2026-10-14",
+              "funders": [
+                {
+                  "name": "Winklevoss Capital Fund",
+                  "v": 21289724
+                },
+                {
+                  "name": "Payward Inc. (Kraken)",
+                  "v": 1000000
+                }
+              ],
+              "short": "crypto; Winklevoss and Kraken",
+              "label": "One of \"the cryptocurrency groups\" in the race (Ohio Capital Journal): a super PAC funded by Winklevoss Capital Fund and Payward Inc. (Kraken).",
+              "label_src": [
+                "ocj-oct20",
+                "votelog"
+              ]
+            },
+            {
+              "name": "The Sentinel Action Fund",
+              "kind": "super PAC",
+              "v": 5024502,
+              "src": [
+                "votelog"
+              ],
+              "funders_through": "2026-10-14",
+              "funders": [
+                {
+                  "name": "Restoration of America PAC",
+                  "v": 3000000
+                },
+                {
+                  "name": "Lexington Fund",
+                  "v": 1500000
+                }
+              ],
+              "short": "funded by two PACs",
+              "label": "Super PAC funded by Restoration of America PAC and Lexington Fund.",
+              "label_src": [
+                "votelog"
+              ]
+            },
+            {
+              "name": "Buckeyes PAC",
+              "kind": "super PAC",
+              "v": 2000000,
+              "src": [
+                "votelog"
+              ],
+              "nd": true,
+              "nd_note": "No donors itemized in its reports; its pre-general report, e-filed October 20, shows no receipts from October 1 to 14. [[c:fec-buckeyes]]",
+              "funders": [],
+              "short": "donors not itemized",
+              "label": "Super PAC. No donors are itemized in its reports.",
+              "label_src": [
+                "fec-buckeyes"
+              ]
+            },
+            {
+              "name": "Enough Promises Ohio PAC",
+              "kind": "PAC, formed Sept. 29",
+              "v": 717129,
+              "src": [
+                "votelog"
+              ],
+              "nd_note": "Formed Sept. 29; it had not disclosed its contributors by October 12. [[c:ap-oct12]] Its pre-general report, e-filed October 22, lists one: Conservative Americans PAC, $2.5 million on October 5. [[c:fec-epo]]",
+              "funders": [
+                {
+                  "name": "Conservative Americans PAC",
+                  "v": 2500000,
+                  "src": [
+                    "fec-epo"
+                  ]
+                }
+              ],
+              "bought": "Nearly $400,000 in mailers promoting an independent candidate, Greg Levy, in early October. [[c:ap-oct12]]",
+              "funders_label": "its pre-general report, as e-filed Oct. 22",
+              "short": "mailers for an independent",
+              "label": "PAC formed September 29, funded by Conservative Americans PAC; its mailers promoted an independent candidate. [[c:ap-oct12]]",
+              "label_src": [
+                "fec-epo"
+              ]
+            },
+            {
+              "name": "All other committees",
+              "kind": "",
+              "v": null,
+              "other": true,
+              "funders": []
+            },
+            {
+              "name": "Husted for Senate",
+              "kind": "the campaign",
+              "v": 15646286.3,
+              "campaign": true,
+              "src": [
+                "fec-husted"
+              ],
+              "funders_through": "2026-10-14",
+              "funders": [
+                {
+                  "name": "Itemized individual donors",
+                  "v": 6925261.39
+                },
+                {
+                  "name": "Unitemized donors, under $200",
+                  "v": 2908528.05
+                }
+              ],
+              "note": "Raised $4.8 million from July through September. [[c:spectrum-oct15]]"
+            }
+          ]
+        },
+        {
+          "key": "d",
+          "label": "Helping Brown",
+          "sub": "for Brown or against Husted",
+          "total": {
+            "outside": 118478847,
+            "campaign": 63956396.53,
+            "src": [
+              "votelog"
+            ]
+          },
+          "payers": [
+            {
+              "name": "WinSenate",
+              "kind": "super PAC",
+              "v": 62524530,
+              "src": [
+                "votelog"
+              ],
+              "funders_through": "2026-10-14",
+              "funders": [
+                {
+                  "name": "Senate Majority PAC",
+                  "v": 171120000,
+                  "sub": "its funders include Majority Forward, a 501(c)(4) that does not disclose all its donors",
+                  "nd": true,
+                  "src": [
+                    "legis1-sep25"
+                  ]
+                }
+              ],
+              "bought": "September 14: a statewide television and digital campaign on FirstEnergy and energy costs, then a $6 million television and digital campaign on the same subject. [[c:legis1-sep25]]",
+              "short": "run by Senate Majority PAC",
+              "label": "\"A Democratic super PAC operated by Senate Majority PAC\" (Legis1), the super PAC the Associated Press calls Senate Democratic leader Chuck Schumer's; funded by Senate Majority PAC.",
+              "label_src": [
+                "legis1-sep25",
+                "ap-aug2025"
+              ]
+            },
+            {
+              "name": "Duty and Country",
+              "kind": "super PAC",
+              "v": 13914744,
+              "src": [
+                "votelog"
+              ],
+              "funders_through": "2026-10-14",
+              "funders": [
+                {
+                  "name": "Senate Majority PAC",
+                  "v": 17500000,
+                  "sub": "Oct. 1 to 14"
+                },
+                {
+                  "name": "Haim Saban",
+                  "v": 250000
+                }
+              ],
+              "short": "funded by Senate Majority PAC",
+              "label": "Super PAC \"associated\" with WinSenate (Ohio Capital Journal), funded by Senate Majority PAC and Haim Saban.",
+              "label_src": [
+                "ocj-oct20",
+                "votelog"
+              ]
+            },
+            {
+              "name": "Lower Costs Now",
+              "kind": "super PAC",
+              "v": 7996104,
+              "src": [
+                "votelog"
+              ],
+              "nd_note": "No donors were itemized in the record as compiled through October 19. Its pre-general report, e-filed October 22, lists Senate Majority PAC and FF PAC; the amounts shown are their 2026 totals on that report. [[c:fec-lcn]]",
+              "funders": [
+                {
+                  "name": "Senate Majority PAC",
+                  "v": 30000000,
+                  "src": [
+                    "fec-lcn"
+                  ]
+                },
+                {
+                  "name": "FF PAC",
+                  "v": 20000000,
+                  "sub": "transfers",
+                  "src": [
+                    "fec-lcn"
+                  ]
+                }
+              ],
+              "funders_label": "2026 totals on its pre-general report, as e-filed Oct. 22",
+              "short": "Senate Majority PAC, FF PAC",
+              "label": "Super PAC funded by Senate Majority PAC and FF PAC.",
+              "label_src": [
+                "fec-lcn"
+              ]
+            },
+            {
+              "name": "Defend The Vote",
+              "kind": "super PAC",
+              "v": 7055990,
+              "src": [
+                "votelog"
+              ],
+              "funders_through": "2026-10-14",
+              "funders": [
+                {
+                  "name": "Senate Majority PAC",
+                  "v": 11670000
+                }
+              ],
+              "short": "funded by Senate Majority PAC",
+              "label": "Super PAC funded by Senate Majority PAC.",
+              "label_src": [
+                "votelog"
+              ]
+            },
+            {
+              "name": "LCV Victory Fund",
+              "kind": "super PAC",
+              "v": 5317023,
+              "src": [
+                "votelog"
+              ],
+              "funders_through": "2026-10-14",
+              "funders": [
+                {
+                  "name": "League of Conservation Voters, Inc.",
+                  "v": 26020601,
+                  "sub": "$18,020,601 through Sept. 30, and $8 million on Oct. 1 to 14 as e-filed",
+                  "src": [
+                    "votelog",
+                    "fec-lcv"
+                  ]
+                }
+              ],
+              "note": "Its pre-general report, e-filed October 22, lists $8 million from League of Conservation Voters, Inc. from October 1 to 14. [[c:fec-lcv]]",
+              "short": "League of Conservation Voters",
+              "label": "Super PAC funded by the League of Conservation Voters, Inc.",
+              "label_src": [
+                "votelog",
+                "fec-lcv"
+              ]
+            },
+            {
+              "name": "AB PAC (American Bridge)",
+              "kind": "super PAC",
+              "v": 3563987,
+              "src": [
+                "votelog"
+              ],
+              "funders_through": "2026-08-31",
+              "funders": [
+                {
+                  "name": "AB Foundation",
+                  "v": 13004193
+                },
+                {
+                  "name": "Democracy Matters",
+                  "v": 5560000
+                }
+              ],
+              "short": "American Bridge",
+              "label": "American Bridge's super PAC (American Bridge 21st Century, in the Ohio Capital Journal), funded by AB Foundation and Democracy Matters.",
+              "label_src": [
+                "ocj-oct20",
+                "votelog"
+              ]
+            },
+            {
+              "name": "All other committees",
+              "kind": "",
+              "v": null,
+              "other": true,
+              "funders": []
+            },
+            {
+              "name": "Friends of Sherrod Brown",
+              "kind": "the campaign",
+              "v": 63956396.53,
+              "campaign": true,
+              "src": [
+                "fec-brown"
+              ],
+              "funders_through": "2026-10-14",
+              "funders": [
+                {
+                  "name": "Itemized individual donors",
+                  "v": 35423801.47
+                },
+                {
+                  "name": "Unitemized donors, under $200",
+                  "v": 22438140.72
+                }
+              ],
+              "bought": "$17 million booked for the fall as of August 14. [[c:insideradio-aug19]]",
+              "note": "Raised $23.1 million from July through September. [[c:spectrum-oct15]]"
+            }
+          ]
+        }
+      ]
+    },
+    "governor": {
+      "unit_note": "Each box is a different report and date, shown on the box. The two campaigns: payments on their Ohio reports whose stated purpose is media, television, radio or advertising, through October 14, summed for this story. V-PAC: its advertising through its latest report before October 20, as the Ohio Capital Journal totaled it from the filings. Ohioans For Lower Costs: the planned campaign funded by the Democratic Governors Association, as reported in August.",
+      "src": [
+        "ocj-oct20",
+        "ohsos-ramaswamy",
+        "ohsos-acton"
+      ],
+      "sides": [
+        {
+          "key": "r",
+          "label": "Helping Ramaswamy",
+          "sub": "for Ramaswamy or against Acton",
+          "payers": [
+            {
+              "name": "V-PAC: Victors, Not Victims",
+              "kind": "super PAC; on ads, by its reports",
+              "v": 44600000,
+              "src": [
+                "ocj-oct20"
+              ],
+              "funders": [
+                {
+                  "name": "Jeff Yass",
+                  "v": 30000000,
+                  "src": [
+                    "fec-vpac"
+                  ]
+                },
+                {
+                  "name": "Ratmir Timashev",
+                  "v": 10000000,
+                  "src": [
+                    "fec-vpac"
+                  ]
+                },
+                {
+                  "name": "Ross Stevens",
+                  "v": 6000000,
+                  "src": [
+                    "fec-vpac"
+                  ]
+                },
+                {
+                  "name": "Elon Musk",
+                  "v": 5000000,
+                  "src": [
+                    "fec-vpac"
+                  ]
+                }
+              ],
+              "funders_label": "gave V-PAC, Jan. 1, 2025, to Sept. 30, 2026, FEC reports",
+              "note": "Jeff Yass gave $30 million in three gifts of $10 million, the latest from July through September 2026; Elon Musk gave $5 million from April through June 2026. [[c:fec-vpac]]",
+              "short": "pro-Ramaswamy; mostly Yass money",
+              "label": "\"The Ramaswamy aligned Super PAC\" (Ohio Capital Journal), a federal committee funded mostly by Jeff Yass.",
+              "label_src": [
+                "ocj-oct20",
+                "fec-vpac"
+              ]
+            },
+            {
+              "name": "Ramaswamy for Ohio",
+              "kind": "the campaign; media and ads to Oct. 14",
+              "v": 47036847.39,
+              "campaign": true,
+              "src": [
+                "ohsos-ramaswamy"
+              ],
+              "funders": [
+                {
+                  "name": "Vivek Ramaswamy, his own money",
+                  "v": 36000000,
+                  "display": "more than $36 million",
+                  "sub": "loans and contributions, through September (reported)",
+                  "src": [
+                    "ocj-oct13"
+                  ]
+                },
+                {
+                  "name": "Donors, July to September 2026",
+                  "v": 9600000,
+                  "display": "about $9.6 million",
+                  "sub": "nearly $4 million in July, just under $2.6 million in August, a little more than $3 million in September (reported)",
+                  "src": [
+                    "ocj-oct13"
+                  ]
+                }
+              ],
+              "bought": "About March 12: a $10 million broadcast campaign meant to run through November. [[c:signal-mar17]] Through October 14: $46.6 million paid to Strategic Media Placement Inc. for media and television ad placement. [[c:ohsos-ramaswamy]] October 20: $4 million to air one video on television and online. [[c:ap-oct20]]",
+              "funders_label": "his own money in the campaign through September, and his donors from July to September, as reported Oct. 13"
+            }
+          ],
+          "total": {
+            "outside": 44600000,
+            "campaign": 47036847.39,
+            "src": [
+              "ocj-oct20",
+              "ohsos-ramaswamy"
+            ]
+          }
+        },
+        {
+          "key": "d",
+          "label": "Helping Acton",
+          "sub": "for Acton or against Ramaswamy",
+          "payers": [
+            {
+              "name": "Ohioans For Lower Costs",
+              "kind": "DGA committee; planned",
+              "v": 9400000,
+              "tag": "REPORTED",
+              "src": [
+                "signal-aug27"
+              ],
+              "funders": [
+                {
+                  "name": "International Brotherhood of Electrical Workers",
+                  "v": 1000000,
+                  "src": [
+                    "ocj-oct20"
+                  ]
+                }
+              ],
+              "nd_note": "The DGA funds its Ohio advertising through this committee; it did not answer a request for its Ohio spending. [[c:ocj-oct20]]",
+              "bought": "A $9.4 million campaign funded by the Democratic Governors Association, set to begin after Labor Day. [[c:signal-aug27]]",
+              "funders_label": "its only reported contribution through June 30, as reported Oct. 20",
+              "short": "the DGA's Ohio committee",
+              "label": "The state committee through which the Democratic Governors Association funds its Ohio advertising (Ohio Capital Journal).",
+              "label_src": [
+                "ocj-oct20"
+              ]
+            },
+            {
+              "name": "Acton for Ohio",
+              "kind": "the campaign; media and ads to Oct. 14",
+              "v": 23233216.13,
+              "campaign": true,
+              "src": [
+                "ohsos-acton"
+              ],
+              "funders": [
+                {
+                  "name": "All donors, 2026",
+                  "v": 30497101.89,
+                  "src": [
+                    "ohsos-acton"
+                  ]
+                }
+              ],
+              "bought": "About $100,000 on ads from May 15 to June 30. [[c:ocj-jul21]] Through October 14: $14.7 million in media buys through Sage Media and $4.7 million in digital advertising through Liftoff Campaigns. [[c:ohsos-acton]]",
+              "funders_label": "contributions to the campaign, Jan. 1 to Oct. 14, 2026"
+            }
+          ],
+          "total": {
+            "outside": 0,
+            "campaign": 23233216.13,
+            "planned": 9400000,
+            "src": [
+              "ohsos-acton",
+              "signal-aug27"
+            ]
+          }
+        }
+      ],
+      "also": "The Republican Governors Association told the Ohio Capital Journal it had spent \"roughly $20 million\" on advertising to date, without an Ohio share. [[c:ocj-oct20]]"
+    }
+  },
+  "house": {
+    "note": "Outside money: every FEC Schedule E row for the race, all elections this cycle, rows filed through October 20, 2026, summed for this story, plus the 24- and 48-hour reports received October 21 and 22; where a payer filed one buy on two lines, for one candidate and against the other, both lines are counted as filed. Candidate money: total receipts of the candidate committees through October 14, 2026, from the FEC's summaries; where the FEC had not yet processed a pre-general report (Landsman, Conroy, Merrin, Jukic), the September 30 summary plus the report's October 1 to 14 receipts, as e-filed. 2024 margin: the old district lines, certified results as tabulated by Ballotpedia; the 2024 presidential result on the new lines is the comparison that matches the 2026 seat. The map is the one the Ohio Redistricting Commission adopted on October 31, 2025.",
+    "pinned": [
+      8,
+      7,
+      1,
+      10
+    ],
+    "totals": {
+      "cand": 53952020.54,
+      "outside": 57444287.33,
+      "five_share": "97.7 percent",
+      "five": [
+        1,
+        7,
+        9,
+        10,
+        15
+      ],
+      "cand_label": "through Oct. 14",
+      "outside_label": "through Oct. 22",
+      "cand_spent": 54117433.38,
+      "cand_spent_label": "spent through Oct. 14"
+    },
+    "districts": [
+      {
+        "n": 1,
+        "r": "Eric Conroy",
+        "d": "Greg Landsman",
+        "inc": "d",
+        "where": "Cincinnati, north through Warren County to Clinton County.",
+        "cand": [
+          {
+            "name": "Landsman",
+            "party": "D",
+            "v": 5662206.21,
+            "spent": 5339369.61
+          },
+          {
+            "name": "Conroy",
+            "party": "R",
+            "v": 2372636.84,
+            "note": "$326,141.88 of it his own loans and contributions",
+            "spent": 2079239.74
+          }
+        ],
+        "outside": {
+          "v": 6252777.41,
+          "general": 5965962.47,
+          "through": "2026-10-22",
+          "src": [
+            "fec-oh01",
+            "fec-ie24"
+          ],
+          "tag": "VERIFIED"
+        },
+        "payers": [
+          {
+            "name": "Congressional Leadership Fund",
+            "v": 2410043.95,
+            "side": "r",
+            "pos": "against Landsman"
+          },
+          {
+            "name": "Red Bridge Leadership PAC",
+            "v": 1207110.39,
+            "side": "r",
+            "pos": "for Conroy and against Landsman"
+          },
+          {
+            "name": "House Majority PAC",
+            "v": 812923.57,
+            "side": "d",
+            "pos": "against Conroy"
+          },
+          {
+            "name": "No Going Back PAC",
+            "v": 566600,
+            "side": "r",
+            "pos": "against Landsman, for Conroy"
+          },
+          {
+            "name": "CFFE PAC",
+            "v": 333559.84,
+            "side": "d",
+            "pos": "for Landsman"
+          },
+          {
+            "name": "A Strong Innovation Economy Requires Strong IP Protection",
+            "v": 240000,
+            "side": "d",
+            "pos": "for Landsman"
+          },
+          {
+            "name": "AB PAC",
+            "v": 167517.45,
+            "side": "d",
+            "pos": "for Landsman"
+          },
+          {
+            "name": "America PAC",
+            "v": 166812.1,
+            "side": "",
+            "pos": ""
+          },
+          {
+            "name": "New American Jobs Fund",
+            "v": 157452.98,
+            "side": "d",
+            "pos": "for Landsman"
+          }
+        ],
+        "bought": "Congressional Leadership Fund, media placement through Flexpoint Media: $627,359.04 dated Sept. 28, $619,426.83 dated Oct. 5, $575,758.08 dated Sept. 21, plus $175,000 in digital placement in three weeks. House Majority PAC: $622,080 in television and $163,333.35 in digital, Oct. 13. AB PAC: billboards, the largest $117,737.70 on Oct. 5. [[c:fec-oh01]]",
+        "behind": "Congressional Leadership Fund: American Action Network at least $44.3 million (a 501(c)(4); its donors are not disclosed), Miriam Adelson $10 million, Elon Musk $10 million, Paul E. Singer $8 million. House Majority PAC: House Majority Forward at least $61.7 million (a 501(c)(4); not disclosed), Fred Eychaner $5 million, George M. Marcus $4.3 million. Red Bridge Leadership PAC: Gary Conroy $110,000, First Principles Digital $100,000. [[c:fec-oh01]]",
+        "margin": "D +9.2",
+        "margin_detail": "Landsman 54.6%, Orlando Sonza 45.4%",
+        "pres": "Trump 50.8%, Harris 48.2%",
+        "o24": 553540,
+        "status": "filled",
+        "cand_through": "2026-10-14",
+        "cand_src": [
+          "fec-oh01"
+        ],
+        "margin_src": [
+          "bp-oh01"
+        ],
+        "where_src": [
+          "wiki-2026"
+        ],
+        "cand_spent_src": [
+          "fec-webl26"
+        ]
+      },
+      {
+        "n": 2,
+        "r": "David Taylor",
+        "d": "Jen Mazzuckelli",
+        "inc": "r",
+        "where": "Eastern Cincinnati suburbs, east along the Ohio River to Athens and Marietta.",
+        "cand": [
+          {
+            "name": "Taylor",
+            "party": "R",
+            "v": 1768914.66,
+            "spent": 1189548.87
+          },
+          {
+            "name": "Mazzuckelli",
+            "party": "D",
+            "v": 0,
+            "note": "no receipts on file",
+            "spent": 0
+          }
+        ],
+        "outside": {
+          "v": 23234.85,
+          "through": "2026-10-22",
+          "src": [
+            "fec-oh02",
+            "fec-ie24"
+          ],
+          "tag": "VERIFIED"
+        },
+        "payers": [
+          {
+            "name": "NRA Victory Fund",
+            "v": 23050.22,
+            "side": "r",
+            "pos": "for Taylor"
+          },
+          {
+            "name": "Stand Up for Ohio",
+            "v": 184.63,
+            "side": "d",
+            "pos": "against Taylor"
+          }
+        ],
+        "bought": "NRA Victory Fund: $20,077.98 in printing and postage, Oct. 7; $2,523.51 in text messages, Oct. 15. [[c:fec-oh02]]",
+        "behind": "NRA Victory Fund: $2.02 million received through Sept. 30; the largest itemized gift, $9,811.25, from the NRA's Political Victory Fund; the rest is not itemized in processed data. Stand Up for Ohio files as a group that is not a political committee: its donors are not disclosed. [[c:fec-oh02]]",
+        "margin": "R +47.2",
+        "margin_detail": "Taylor 73.6%, Samantha Meadows 26.4%",
+        "pres": "Trump 70.7%, Harris 28.5%",
+        "o24": 890720,
+        "o24_note": "nearly all in the Republican primary",
+        "status": "filled",
+        "cand_through": "2026-10-14",
+        "cand_src": [
+          "fec-oh02"
+        ],
+        "margin_src": [
+          "bp-oh02"
+        ],
+        "where_src": [
+          "wiki-2026"
+        ],
+        "cand_spent_src": [
+          "fec-webl26"
+        ]
+      },
+      {
+        "n": 3,
+        "r": "Cleophus Dulaney",
+        "d": "Joyce Beatty",
+        "inc": "d",
+        "where": "Inner Columbus, Bexley, Whitehall and part of Reynoldsburg.",
+        "cand": [
+          {
+            "name": "Beatty",
+            "party": "D",
+            "v": 1454156.27,
+            "spent": 1434993.08
+          },
+          {
+            "name": "Dulaney",
+            "party": "R",
+            "v": 0,
+            "note": "no receipts on file",
+            "spent": 0
+          }
+        ],
+        "outside": {
+          "v": 346.13,
+          "through": "2026-10-22",
+          "src": [
+            "fec-oh03",
+            "fec-ie24"
+          ],
+          "tag": "VERIFIED"
+        },
+        "payers": [
+          {
+            "name": "Stand Up for Ohio",
+            "v": 184.63,
+            "side": "d",
+            "pos": "against Dulaney"
+          },
+          {
+            "name": "Ohio Republican PAC",
+            "v": 151.5,
+            "side": "",
+            "pos": "a late-filing fine and a bank fee, no candidate named"
+          },
+          {
+            "name": "Sierra Club Independent Action",
+            "v": 10,
+            "side": "d",
+            "pos": "for Beatty, primary"
+          }
+        ],
+        "margin": "D +41.4",
+        "margin_detail": "Beatty 70.7%, Michael Young 29.3%",
+        "pres": "Harris 69.6%, Trump 29.4%",
+        "o24": 1330,
+        "status": "filled",
+        "cand_through": "2026-10-14",
+        "cand_src": [
+          "fec-oh03"
+        ],
+        "margin_src": [
+          "bp-oh03"
+        ],
+        "where_src": [
+          "wiki-2026"
+        ],
+        "cand_spent_src": [
+          "fec-webl26"
+        ]
+      },
+      {
+        "n": 4,
+        "r": "Jim Jordan",
+        "d": "Joshua Kolasinski",
+        "inc": "r",
+        "where": "The Columbus exurbs through Marion and Lima, including Mansfield.",
+        "cand": [
+          {
+            "name": "Jordan",
+            "party": "R",
+            "v": 5617701.79,
+            "spent": 10052719.4
+          },
+          {
+            "name": "Kolasinski",
+            "party": "D",
+            "v": 26211.45,
+            "spent": 22361.54
+          }
+        ],
+        "outside": {
+          "v": 23887.37,
+          "through": "2026-10-22",
+          "src": [
+            "fec-oh04",
+            "fec-ie24"
+          ],
+          "tag": "VERIFIED"
+        },
+        "payers": [
+          {
+            "name": "NRA Victory Fund",
+            "v": 21197.16,
+            "side": "r",
+            "pos": "for Jordan"
+          },
+          {
+            "name": "Senate Conservatives Fund",
+            "v": 1597.39,
+            "side": "r",
+            "pos": "for Jordan"
+          },
+          {
+            "name": "Freedom Caucus Fund",
+            "v": 1092.82,
+            "side": "r",
+            "pos": "for Jordan"
+          }
+        ],
+        "bought": "NRA Victory Fund: $18,346.29 in printing and postage, Oct. 7; $2,440.86 in text messages, Oct. 15. [[c:fec-oh04]]",
+        "margin": "R +37.0",
+        "margin_detail": "Jordan 68.5%, Tamie Wilson 31.5%",
+        "pres": "Trump 70.9%, Harris 28.2%",
+        "o24": 20873,
+        "status": "filled",
+        "cand_through": "2026-10-14",
+        "cand_src": [
+          "fec-oh04"
+        ],
+        "margin_src": [
+          "bp-oh04"
+        ],
+        "where_src": [
+          "wiki-2026"
+        ],
+        "cand_spent_src": [
+          "fec-webl26"
+        ]
+      },
+      {
+        "n": 5,
+        "r": "Bob Latta",
+        "d": "Brian Shaver",
+        "inc": "r",
+        "where": "Findlay, Lorain, Oberlin and Bowling Green.",
+        "cand": [
+          {
+            "name": "Latta",
+            "party": "R",
+            "v": 1772110.3,
+            "spent": 1569771.01
+          },
+          {
+            "name": "Shaver",
+            "party": "D",
+            "v": 52830.11,
+            "note": "through Sept. 30; no pre-general report on file with the FEC as of Oct. 23",
+            "spent": 27120.92
+          }
+        ],
+        "outside": {
+          "v": 200881.53,
+          "through": "2026-10-22",
+          "src": [
+            "fec-oh05",
+            "fec-ie24"
+          ],
+          "tag": "VERIFIED"
+        },
+        "payers": [
+          {
+            "name": "America PAC",
+            "v": 186438.79,
+            "side": "r",
+            "pos": "against Shaver, for Latta"
+          },
+          {
+            "name": "NRA Victory Fund",
+            "v": 14442.74,
+            "side": "r",
+            "pos": "for Latta"
+          }
+        ],
+        "bought": "America PAC: digital ads against Shaver, $37,448.77 dated Oct. 19 and $26,749.12 dated Oct. 7; phone calls for Latta, $11,479.32, Sept. 9. [[c:fec-oh05]]",
+        "behind": "America PAC: Elon Musk, $167.8 million in 2026 through Oct. 14 as e-filed, including in-kind gifts attributed to him through United States of America Inc. [[c:fec-americapac]]",
+        "margin": "R +35.0",
+        "margin_detail": "Latta 67.5%, Keith Mundy 32.5%",
+        "pres": "Trump 61.4%, Harris 37.7%",
+        "o24": 6884,
+        "status": "filled",
+        "cand_through": "2026-10-14",
+        "cand_src": [
+          "fec-oh05"
+        ],
+        "margin_src": [
+          "bp-oh05"
+        ],
+        "where_src": [
+          "wiki-2026"
+        ],
+        "cand_spent_src": [
+          "fec-webl26"
+        ]
+      },
+      {
+        "n": 6,
+        "r": "Michael Rulli",
+        "d": "Elizabeth Kirtley",
+        "inc": "r",
+        "where": "Youngstown, Steubenville and Massillon.",
+        "cand": [
+          {
+            "name": "Rulli",
+            "party": "R",
+            "v": 1419956.8,
+            "spent": 1072960.62
+          },
+          {
+            "name": "Kirtley",
+            "party": "D",
+            "v": 11431.98,
+            "spent": 7058.77
+          }
+        ],
+        "outside": {
+          "v": 16793.21,
+          "through": "2026-10-22",
+          "src": [
+            "fec-oh06",
+            "fec-ie24"
+          ],
+          "tag": "VERIFIED"
+        },
+        "payers": [
+          {
+            "name": "NRA Victory Fund",
+            "v": 16793.21,
+            "side": "r",
+            "pos": "for Rulli"
+          }
+        ],
+        "bought": "NRA Victory Fund: $14,499.55 in printing and postage, Oct. 7; $1,969.68 in text messages, Oct. 15. [[c:fec-oh06]]",
+        "margin": "R +33.4",
+        "margin_detail": "Rulli 66.7%, Michael Kripchak 33.3%",
+        "pres": "Trump 66.9%, Harris 32.3%",
+        "o24": 265024,
+        "o24_note": "nearly all in the Republican primary",
+        "status": "filled",
+        "cand_through": "2026-10-14",
+        "cand_src": [
+          "fec-oh06"
+        ],
+        "margin_src": [
+          "bp-oh06"
+        ],
+        "where_src": [
+          "wiki-2026"
+        ],
+        "cand_spent_src": [
+          "fec-webl26"
+        ]
+      },
+      {
+        "n": 7,
+        "r": "Max Miller",
+        "d": "Brian Poindexter",
+        "inc": "r",
+        "where": "Exurban Cleveland into north-central Ohio: Medina, Ashland, Wooster.",
+        "cand": [
+          {
+            "name": "Miller",
+            "party": "R",
+            "v": 3324941.88,
+            "note": "$1 million of it in loans from the candidate",
+            "spent": 3363842.44
+          },
+          {
+            "name": "Poindexter",
+            "party": "D",
+            "v": 3720341.61,
+            "spent": 2926666.41
+          }
+        ],
+        "outside": {
+          "v": 16750675.36,
+          "general": 15860993.67,
+          "through": "2026-10-22",
+          "src": [
+            "fec-oh07",
+            "fec-ie24"
+          ],
+          "tag": "VERIFIED"
+        },
+        "payers": [
+          {
+            "name": "House Majority PAC",
+            "v": 5099473.04,
+            "side": "d",
+            "pos": "against Miller"
+          },
+          {
+            "name": "Congressional Leadership Fund",
+            "v": 4519498.48,
+            "side": "r",
+            "pos": "against Poindexter"
+          },
+          {
+            "name": "Your Community PAC",
+            "v": 1979105,
+            "side": "d",
+            "pos": "against Miller"
+          },
+          {
+            "name": "Ready for the Fight",
+            "v": 1467252.07,
+            "side": "d",
+            "pos": "against Miller"
+          },
+          {
+            "name": "Jobs & Prosperity PAC",
+            "v": 754765.75,
+            "side": "r",
+            "pos": "against Poindexter, for Miller"
+          },
+          {
+            "name": "AB PAC",
+            "v": 682430.91,
+            "side": "d",
+            "pos": "mostly against Miller"
+          },
+          {
+            "name": "Jobs and Democracy PAC",
+            "v": 570203.89,
+            "side": "d",
+            "pos": "for Poindexter, primary"
+          },
+          {
+            "name": "Civic Renewal Fund",
+            "v": 364869.45,
+            "side": "r",
+            "pos": "for Miller, against Poindexter"
+          }
+        ],
+        "bought": "House Majority PAC, television: $1,408,320 dated Oct. 20, $1,408,320 dated Oct. 13 and $1,274,400 dated Oct. 6, plus $307,750 in digital each week. Congressional Leadership Fund, media placement through Del Ray Media: $938,745.54 dated Sept. 28, $923,755.83 dated Oct. 5, $908,484.01 dated Oct. 13 and $922,373.10 dated Oct. 19. Your Community PAC: $729,365 in television dated Sept. 23. [[c:fec-oh07]]",
+        "behind": "Your Community PAC: Sixteen Thirty Fund $2.7 million and North Fund $900,000 (both 501(c)(4)s; donors not disclosed); about $15.9 million of its $20.3 million not in processed itemizations. Ready for the Fight (registered September 2026): JB Pritzker $5 million. Jobs and Democracy PAC: Public First Action Inc. $12.7 million (a 501(c)(4); not disclosed). Jobs & Prosperity PAC: Brian Colleran $200,000. [[c:fec-oh07]]",
+        "margin": "R +15.0",
+        "margin_detail": "Miller 51.1%, Matthew Diemer 36.1%, Dennis Kucinich (independent) 12.8%",
+        "pres": "Trump 55.1%, Harris 44.1%",
+        "o24": 151198,
+        "status": "filled",
+        "cand_through": "2026-10-14",
+        "cand_src": [
+          "fec-oh07"
+        ],
+        "margin_src": [
+          "bp-oh07"
+        ],
+        "where_src": [
+          "wiki-2026"
+        ],
+        "cand_spent_src": [
+          "fec-webl26"
+        ]
+      },
+      {
+        "n": 8,
+        "r": "Warren Davidson",
+        "d": "Vanessa Enoch",
+        "inc": "r",
+        "where": "Northern and western suburbs of Cincinnati, including most of Butler County.",
+        "cand": [
+          {
+            "name": "Davidson",
+            "party": "R",
+            "v": 757166.3,
+            "spent": 853593.13
+          },
+          {
+            "name": "Enoch",
+            "party": "D",
+            "v": 0,
+            "note": "Through Oct. 14, from her pre-general report as e-filed Oct. 23 ($3,125.21 of it Oct. 1 to 14). The FEC's processed summary still shows $0 in receipts, and the report's opening cash, $6,749.96, does not match the October Quarterly's closing cash, negative $1,110.23.",
+            "display": "$38,917.76 raised this cycle, as e-filed",
+            "spent": 0
+          }
+        ],
+        "outside": {
+          "v": 10178.0,
+          "through": "2026-10-22",
+          "src": [
+            "fec-oh08",
+            "fec-ie24"
+          ],
+          "tag": "VERIFIED"
+        },
+        "payers": [
+          {
+            "name": "NRA Victory Fund",
+            "v": 9993.37,
+            "side": "r",
+            "pos": "for Davidson"
+          },
+          {
+            "name": "Stand Up for Ohio",
+            "v": 184.63,
+            "side": "d",
+            "pos": "against Davidson"
+          }
+        ],
+        "bought": "NRA Victory Fund: $8,547.01 in printing and postage, Oct. 7; $1,255.50 in text messages, Oct. 15; $190.86 in paper, in kind. Stand Up for Ohio: a printed voter guide, Oct. 13. For Enoch: $0. [[c:fec-oh08]]",
+        "behind": "NRA Victory Fund: $2.02 million received through Sept. 30; largest itemized gift $9,811.25; the rest not itemized in processed data. Stand Up for Ohio: donors not disclosed. [[c:fec-oh08]]",
+        "margin": "R +25.6",
+        "margin_detail": "Davidson 62.8%, Enoch 37.2%",
+        "pres": "Trump 57.3%, Harris 41.7%",
+        "o24": 6408,
+        "allin": 767344.3,
+        "status": "filled",
+        "cand_through": "2026-10-14",
+        "cand_src": [
+          "fec-oh08",
+          "fec-enoch"
+        ],
+        "margin_src": [
+          "bp-oh08"
+        ],
+        "where_src": [
+          "wiki-2026"
+        ],
+        "allin_label": "Both campaigns' committees, as the FEC summaries read, and the outside groups",
+        "cand_spent_src": [
+          "fec-webl26"
+        ]
+      },
+      {
+        "n": 9,
+        "r": "Derek Merrin",
+        "d": "Marcy Kaptur",
+        "inc": "d",
+        "where": "Northwest Ohio along the Michigan line and the Lake Erie shore, Toledo to Sandusky.",
+        "cand": [
+          {
+            "name": "Kaptur",
+            "party": "D",
+            "v": 5910480.74,
+            "spent": 5661899.71
+          },
+          {
+            "name": "Merrin",
+            "party": "R",
+            "v": 2217820.58,
+            "note": "$310,000 of it in loans from the candidate",
+            "spent": 1845005.57
+          }
+        ],
+        "outside": {
+          "v": 15995509.35,
+          "general": 15801318.65,
+          "through": "2026-10-22",
+          "src": [
+            "fec-oh09",
+            "fec-ie24"
+          ],
+          "tag": "VERIFIED"
+        },
+        "payers": [
+          {
+            "name": "Congressional Leadership Fund",
+            "v": 5172314.14,
+            "side": "r",
+            "pos": "against Kaptur"
+          },
+          {
+            "name": "House Majority PAC",
+            "v": 4358318.8,
+            "side": "d",
+            "pos": "against Merrin, for Kaptur"
+          },
+          {
+            "name": "Safety & Affordability PAC",
+            "v": 2037500.0,
+            "side": "r",
+            "pos": "for Merrin"
+          },
+          {
+            "name": "Club for Growth Action",
+            "v": 843663.01,
+            "side": "r",
+            "pos": "against Kaptur, for Merrin"
+          },
+          {
+            "name": "No Going Back PAC",
+            "v": 632426.0,
+            "side": "r",
+            "pos": "for Merrin, against Kaptur"
+          },
+          {
+            "name": "Americans for Prosperity Action",
+            "v": 618349.61,
+            "side": "r",
+            "pos": "for Merrin, against Kaptur"
+          },
+          {
+            "name": "AFSCME P.E.O.P.L.E.",
+            "v": 584500,
+            "side": "d",
+            "pos": "for Kaptur"
+          },
+          {
+            "name": "AB PAC",
+            "v": 364226.38,
+            "side": "d",
+            "pos": "for Kaptur"
+          },
+          {
+            "name": "CFFE PAC",
+            "v": 306347.34,
+            "side": "d",
+            "pos": "for Kaptur"
+          }
+        ],
+        "bought": "Congressional Leadership Fund, media placement: $541,491.64 dated Oct. 5, $516,353.89 dated Oct. 9 and $525,245.18 dated Oct. 19, plus $175,000 in digital in each of seven weeks and $235,000 in digital dated Oct. 19. Safety & Affordability PAC: $550,000 in television and connected TV, Oct. 14, and $862,500 more dated Oct. 19, filed as two lines of $431,250. Club for Growth Action: $515,828.92 in television, Sept. 1. [[c:fec-oh09]]",
+        "behind": "Safety & Affordability PAC (registered Sept. 1): MAGA Inc. $25 million, Sept. 4, on a report e-filed Oct. 20. Club for Growth Action: Restoration of America PAC $20 million, Jeff Yass $16.5 million. [[c:fec-oh09]]",
+        "margin": "D +0.6",
+        "margin_detail": "Kaptur 48.3%, Merrin 47.6%, 2,382 votes",
+        "pres": "Trump 54.8%, Harris 44.2%",
+        "o24": 18712528,
+        "status": "filled",
+        "cand_through": "2026-10-14",
+        "cand_src": [
+          "fec-oh09"
+        ],
+        "margin_src": [
+          "bp-oh09"
+        ],
+        "where_src": [
+          "wiki-2026"
+        ],
+        "cand_spent_src": [
+          "fec-webl26"
+        ]
+      },
+      {
+        "n": 10,
+        "r": "Mike Turner",
+        "d": "Kristina Knickerbocker",
+        "inc": "r",
+        "where": "Dayton and its suburbs, plus Middletown.",
+        "cand": [
+          {
+            "name": "Turner",
+            "party": "R",
+            "v": 1315093.78,
+            "spent": 1420268.68
+          },
+          {
+            "name": "Knickerbocker",
+            "party": "D",
+            "v": 1015877.85,
+            "spent": 882432.93
+          }
+        ],
+        "outside": {
+          "v": 8892604.53,
+          "through": "2026-10-22",
+          "src": [
+            "fec-oh10",
+            "fec-ie24"
+          ],
+          "tag": "VERIFIED"
+        },
+        "payers": [
+          {
+            "name": "House Majority PAC",
+            "v": 3278549.8,
+            "side": "d",
+            "pos": "against Turner"
+          },
+          {
+            "name": "Safety & Affordability PAC",
+            "v": 2108896.0,
+            "side": "r",
+            "pos": "against Knickerbocker"
+          },
+          {
+            "name": "Your Community PAC",
+            "v": 1827115.99,
+            "side": "d",
+            "pos": "against Turner, for Knickerbocker"
+          },
+          {
+            "name": "No Going Back PAC",
+            "v": 555171.0,
+            "side": "r",
+            "pos": "for Turner, against Knickerbocker"
+          },
+          {
+            "name": "Innovation Ohio PAC",
+            "v": 235000.02,
+            "side": "d",
+            "pos": "against Turner"
+          },
+          {
+            "name": "Congressional Leadership Fund",
+            "v": 170500.0,
+            "side": "r",
+            "pos": "for Turner and against Knickerbocker"
+          },
+          {
+            "name": "Fund for a Stronger Ohio",
+            "v": 165552,
+            "side": "r",
+            "pos": "against Knickerbocker"
+          },
+          {
+            "name": "Women Vote",
+            "v": 124260.55,
+            "side": "d",
+            "pos": "for Knickerbocker"
+          },
+          {
+            "name": "AB PAC",
+            "v": 105876.1,
+            "side": "d",
+            "pos": "for Knickerbocker"
+          },
+          {
+            "name": "MAGA Inc.",
+            "v": 34188.5,
+            "side": "r",
+            "pos": "against Knickerbocker"
+          }
+        ],
+        "bought": "House Majority PAC, television: $751,066.56 dated Oct. 20, $735,484.32 dated Oct. 13 and $593,978.40 dated Oct. 6. Safety & Affordability PAC: $700,000 in television and connected TV dated Oct. 5, $700,000 more dated Oct. 13 and $537,000 more dated Oct. 19, plus $171,896 in digital dated Oct. 19. Every outside row is dated Aug. 28 through Oct. 21. [[c:fec-oh10]]",
+        "behind": "Safety & Affordability PAC and No Going Back PAC: MAGA Inc. ($25 million and $200 million, e-filed Oct. 20). Fund for a Stronger Ohio: Larry Connor $250,000. Innovation Ohio PAC (registered Aug. 6): Government That Works PAC $500,000. [[c:fec-oh10]]",
+        "margin": "R +18.4",
+        "margin_detail": "Turner 57.6%, Amy Cox 39.2%",
+        "pres": "Trump 53.4%, Harris 45.6%",
+        "o24": 6672,
+        "status": "filled",
+        "cand_through": "2026-10-14",
+        "cand_src": [
+          "fec-oh10"
+        ],
+        "margin_src": [
+          "bp-oh10"
+        ],
+        "where_src": [
+          "wiki-2026"
+        ],
+        "cand_spent_src": [
+          "fec-webl26"
+        ]
+      },
+      {
+        "n": 11,
+        "r": "Mike Kirchner",
+        "d": "Shontel Brown",
+        "inc": "d",
+        "where": "Cleveland and inner suburbs, including Euclid and Cleveland Heights.",
+        "cand": [
+          {
+            "name": "Brown",
+            "party": "D",
+            "v": 1566468.32,
+            "spent": 1177665.43
+          },
+          {
+            "name": "Kirchner",
+            "party": "R",
+            "v": 0,
+            "note": "no receipts on file",
+            "spent": 0
+          }
+        ],
+        "outside": {
+          "v": 194.63,
+          "through": "2026-10-22",
+          "src": [
+            "fec-oh11",
+            "fec-ie24"
+          ],
+          "tag": "VERIFIED"
+        },
+        "payers": [
+          {
+            "name": "Stand Up for Ohio",
+            "v": 184.63,
+            "side": "d",
+            "pos": "against Kirchner"
+          },
+          {
+            "name": "Sierra Club Independent Action",
+            "v": 10,
+            "side": "d",
+            "pos": "for Brown, primary"
+          }
+        ],
+        "margin": "D +58.7",
+        "margin_detail": "Brown 78.3%, Alan Rapoport 19.6%",
+        "pres": "Harris 77.2%, Trump 22.1%",
+        "o24": 1742,
+        "status": "filled",
+        "cand_through": "2026-10-14",
+        "cand_src": [
+          "fec-oh11"
+        ],
+        "margin_src": [
+          "bp-oh11"
+        ],
+        "where_src": [
+          "wiki-2026"
+        ],
+        "cand_spent_src": [
+          "fec-webl26"
+        ]
+      },
+      {
+        "n": 12,
+        "r": "Troy Balderson",
+        "d": "Jerrad Christian",
+        "inc": "r",
+        "where": "East of Columbus: Newark, Zanesville, Mount Vernon.",
+        "cand": [
+          {
+            "name": "Balderson",
+            "party": "R",
+            "v": 2187393.46,
+            "spent": 2130839.52
+          },
+          {
+            "name": "Christian",
+            "party": "D",
+            "v": 139968.16,
+            "spent": 119646.97
+          }
+        ],
+        "outside": {
+          "v": 17566.85,
+          "through": "2026-10-22",
+          "src": [
+            "fec-oh12",
+            "fec-ie24"
+          ],
+          "tag": "VERIFIED"
+        },
+        "payers": [
+          {
+            "name": "NRA Victory Fund",
+            "v": 17566.85,
+            "side": "r",
+            "pos": "for Balderson"
+          }
+        ],
+        "bought": "NRA Victory Fund: $15,168.98 in printing and postage, Oct. 7; $2,058.72 in text messages, Oct. 15. [[c:fec-oh12]]",
+        "margin": "R +37.0",
+        "margin_detail": "Balderson 68.5%, Christian 31.5%",
+        "pres": "Trump 64.6%, Harris 34.5%",
+        "o24": 4306,
+        "status": "filled",
+        "cand_through": "2026-10-14",
+        "cand_src": [
+          "fec-oh12"
+        ],
+        "margin_src": [
+          "bp-oh12"
+        ],
+        "where_src": [
+          "wiki-2026"
+        ],
+        "cand_spent_src": [
+          "fec-webl26"
+        ]
+      },
+      {
+        "n": 13,
+        "r": "Carey Coleman",
+        "d": "Emilia Sykes",
+        "inc": "d",
+        "others": "Sandeep Dixit (I)",
+        "where": "All of Summit County and parts of Portage and Stark counties.",
+        "cand": [
+          {
+            "name": "Sykes",
+            "party": "D",
+            "v": 3990518.8,
+            "spent": 3171439.43
+          },
+          {
+            "name": "Coleman",
+            "party": "R",
+            "v": 169537.46,
+            "spent": 106744.3
+          },
+          {
+            "name": "Dixit",
+            "party": "I",
+            "v": 81896,
+            "note": "through Sept. 30; no pre-general report on file with the FEC as of Oct. 23",
+            "spent": 69908.97
+          }
+        ],
+        "outside": {
+          "v": 1005539.77,
+          "through": "2026-10-22",
+          "src": [
+            "fec-oh13",
+            "fec-ie24"
+          ],
+          "tag": "VERIFIED"
+        },
+        "payers": [
+          {
+            "name": "Think Big",
+            "v": 332070.84,
+            "side": "d",
+            "pos": "for Sykes"
+          },
+          {
+            "name": "New Democrat Majority",
+            "v": 270000.0,
+            "side": "d",
+            "pos": "for Sykes"
+          },
+          {
+            "name": "America PAC",
+            "v": 189192.93,
+            "side": "r",
+            "pos": "against Sykes, for Coleman"
+          },
+          {
+            "name": "Rolling Sea Action Fund",
+            "v": 115000,
+            "side": "d",
+            "pos": "for Sykes"
+          },
+          {
+            "name": "Stand Up for Ohio",
+            "v": 70137.23,
+            "side": "",
+            "pos": ""
+          },
+          {
+            "name": "AB PAC",
+            "v": 12310.54,
+            "side": "d",
+            "pos": "for Sykes"
+          }
+        ],
+        "bought": "Think Big: $277,777.78 in digital and streaming, Sept. 24; $44,363.75 in direct mail, Oct. 1. America PAC: $35,000 in digital, Oct. 15. New Democrat Majority: $270,000 in digital advertising for Sykes, Oct. 21. [[c:fec-oh13]]",
+        "behind": "Think Big: Leading the Future, a super PAC, $22.5 million. Rolling Sea Action Fund: Let It Resound $1.08 million, Coinbase $100,000. [[c:fec-oh13]]",
+        "margin": "D +2.2",
+        "margin_detail": "Sykes 51.1%, Kevin Coughlin 48.9%",
+        "pres": "Harris 51.2%, Trump 47.9%",
+        "o24": 16574050,
+        "status": "filled",
+        "cand_through": "2026-10-14",
+        "cand_src": [
+          "fec-oh13"
+        ],
+        "margin_src": [
+          "bp-oh13"
+        ],
+        "where_src": [
+          "wiki-2026"
+        ],
+        "cand_spent_src": [
+          "fec-webl26"
+        ]
+      },
+      {
+        "n": 14,
+        "r": "David Joyce",
+        "d": "Maria Jukic",
+        "inc": "r",
+        "where": "Cleveland's eastern suburbs and exurbs.",
+        "cand": [
+          {
+            "name": "Joyce",
+            "party": "R",
+            "v": 1763173.71,
+            "spent": 2304353.5
+          },
+          {
+            "name": "Jukic",
+            "party": "D",
+            "v": 118360.32,
+            "spent": 79913.14
+          }
+        ],
+        "outside": {
+          "v": 23741.54,
+          "through": "2026-10-22",
+          "src": [
+            "fec-oh14",
+            "fec-ie24"
+          ],
+          "tag": "VERIFIED"
+        },
+        "payers": [
+          {
+            "name": "Private Property Rights PAC",
+            "v": 12000,
+            "side": "r",
+            "pos": "for Joyce, primary"
+          },
+          {
+            "name": "NRA Victory Fund",
+            "v": 11741.54,
+            "side": "r",
+            "pos": "for Joyce"
+          }
+        ],
+        "margin": "R +26.8",
+        "margin_detail": "Joyce 63.4%, Brian Kenderes 36.6%",
+        "pres": "Trump 59.8%, Harris 39.4%",
+        "o24": 35548,
+        "status": "filled",
+        "cand_through": "2026-10-14",
+        "cand_src": [
+          "fec-oh14"
+        ],
+        "margin_src": [
+          "bp-oh14"
+        ],
+        "where_src": [
+          "wiki-2026"
+        ],
+        "cand_spent_src": [
+          "fec-webl26"
+        ]
+      },
+      {
+        "n": 15,
+        "r": "Mike Carey",
+        "d": "Don Leonard",
+        "inc": "r",
+        "where": "The southwestern Columbus metro: Dublin, Hilliard, Grove City.",
+        "cand": [
+          {
+            "name": "Carey",
+            "party": "R",
+            "v": 4184981.49,
+            "spent": 3975932.73
+          },
+          {
+            "name": "Leonard",
+            "party": "D",
+            "v": 1329843.67,
+            "spent": 1232136.96
+          }
+        ],
+        "outside": {
+          "v": 8230356.8,
+          "through": "2026-10-22",
+          "src": [
+            "fec-oh15",
+            "fec-ie24"
+          ],
+          "tag": "VERIFIED"
+        },
+        "payers": [
+          {
+            "name": "Your Community PAC",
+            "v": 2063898.69,
+            "side": "d",
+            "pos": "against Carey, for Leonard"
+          },
+          {
+            "name": "House Majority PAC",
+            "v": 1709887.18,
+            "side": "d",
+            "pos": "against Carey"
+          },
+          {
+            "name": "Safety & Affordability PAC",
+            "v": 1250000.0,
+            "side": "r",
+            "pos": "for Carey, against Leonard"
+          },
+          {
+            "name": "Defending Main Street Super PAC",
+            "v": 817606.4,
+            "side": "r",
+            "pos": "mostly against Leonard"
+          },
+          {
+            "name": "No Going Back PAC",
+            "v": 689430.21,
+            "side": "r",
+            "pos": "for Carey, against Leonard"
+          },
+          {
+            "name": "American Priorities (AP)",
+            "v": 608461.78,
+            "side": "d",
+            "pos": "against Carey, for Leonard"
+          },
+          {
+            "name": "CFFE PAC",
+            "v": 334364.84,
+            "side": "d",
+            "pos": "for Leonard"
+          },
+          {
+            "name": "Buckeye Prosperity PAC",
+            "v": 196569.6,
+            "side": "r",
+            "pos": "against Leonard"
+          }
+        ],
+        "bought": "Your Community PAC: $279,675 in radio dated Oct. 9; $214,286 in digital for Leonard on each of Sept. 14, 22 and 28; $427,640 more in digital dated Oct. 19. House Majority PAC: $598,557.60 in television, Oct. 13, and $594,410.40 dated Oct. 20. Safety & Affordability PAC: $312,500 for Carey and $312,500 against Leonard, television and connected TV, Oct. 13, filed as a pair, and another $625,000 in four lines dated Oct. 19. [[c:fec-oh15]]",
+        "behind": "Defending Main Street Super PAC: Republican Main Street Partnership $3 million. Buckeye Prosperity PAC: Mark Kvamme $50,000. [[c:fec-oh15]]",
+        "margin": "R +13.0",
+        "margin_detail": "Carey 56.5%, Adam Miller 43.5%",
+        "pres": "Trump 54.5%, Harris 44.5%",
+        "o24": 3464,
+        "status": "filled",
+        "cand_through": "2026-10-14",
+        "cand_src": [
+          "fec-oh15"
+        ],
+        "margin_src": [
+          "bp-oh15"
+        ],
+        "where_src": [
+          "wiki-2026"
+        ],
+        "cand_spent_src": [
+          "fec-webl26"
+        ]
+      }
+    ],
+    "payer_labels": {
+      "Congressional Leadership Fund": {
+        "label": "Super PAC aligned with House GOP leadership (Spectrum News); its largest funder is American Action Network, a 501(c)(4) that does not disclose its donors.",
+        "src": [
+          "spectrum-oct19"
+        ]
+      },
+      "House Majority PAC": {
+        "label": "Super PAC closely aligned with House Democratic leader Hakeem Jeffries (NOTUS, via Political Wire); its largest funder is House Majority Forward, a 501(c)(4) that does not disclose its donors.",
+        "src": [
+          "politicalwire-jun17"
+        ]
+      },
+      "No Going Back PAC": {
+        "label": "Super PAC closely tied to Trump's MAGA Inc. super PAC (Reuters), which gave it $200 million.",
+        "src": [
+          "reuters-sep21",
+          "fec-ngb"
+        ]
+      },
+      "Safety & Affordability PAC": {
+        "label": "Super PAC registered September 1, funded by MAGA Inc. ($25 million).",
+        "src": [
+          "fec-sap"
+        ]
+      },
+      "MAGA Inc.": {
+        "label": "Trump's super PAC (Reuters).",
+        "src": [
+          "reuters-sep21"
+        ]
+      },
+      "America PAC": {
+        "label": "Elon Musk's super PAC (Ohio Capital Journal), funded by Musk.",
+        "src": [
+          "ocj-oct20",
+          "fec-americapac"
+        ]
+      },
+      "Americans for Prosperity Action": {
+        "label": "Koch-backed super PAC (Ohio Capital Journal; Reuters).",
+        "src": [
+          "ocj-oct20",
+          "reuters-sep21"
+        ]
+      },
+      "Club for Growth Action": {
+        "label": "Super PAC funded by Restoration of America PAC and Jeff Yass.",
+        "src": []
+      },
+      "Your Community PAC": {
+        "label": "Super PAC; its itemized funders include Sixteen Thirty Fund and North Fund, 501(c)(4)s that do not disclose their donors.",
+        "src": []
+      },
+      "Ready for the Fight": {
+        "label": "Super PAC registered September 2026, funded by JB Pritzker.",
+        "src": []
+      },
+      "Jobs and Democracy PAC": {
+        "label": "Super PAC aligned with Public First Action, a 501(c)(4) on AI policy (Transformer), and funded by Public First Action Inc.",
+        "src": [
+          "transformer-apr13"
+        ]
+      },
+      "Think Big": {
+        "label": "Super PAC funded by Leading the Future (Scripps News), the AI industry's super PAC, to which Marc Andreessen and Ben Horowitz each gave $12.5 million (Bloomberg News).",
+        "src": [
+          "scripps-ai",
+          "bgov-jan30"
+        ]
+      },
+      "Defending Main Street Super PAC": {
+        "label": "Super PAC funded by Republican Main Street Partnership.",
+        "src": []
+      },
+      "Red Bridge Leadership PAC": {
+        "label": "Cincinnati-based PAC that backed Conroy in the primary (Spectrum News).",
+        "src": [
+          "spectrum-oct19"
+        ]
+      },
+      "Stand Up for Ohio": {
+        "label": "Files with the FEC as a group that is not a political committee, \"supporting Democrats and opposing Republicans\" (Legis1); its donors are not disclosed.",
+        "src": [
+          "legis1-oct21"
+        ]
+      },
+      "NRA Victory Fund": {
+        "label": "The NRA's super PAC; its largest itemized gift is from the NRA's Political Victory Fund.",
+        "src": []
+      },
+      "Rolling Sea Action Fund": {
+        "label": "Funded by Let It Resound and Coinbase.",
+        "src": []
+      },
+      "Fund for a Stronger Ohio": {
+        "label": "Funded by Larry Connor.",
+        "src": []
+      },
+      "Innovation Ohio PAC": {
+        "label": "Registered August 6, funded by Government That Works PAC.",
+        "src": []
+      },
+      "Buckeye Prosperity PAC": {
+        "label": "Funded by Mark Kvamme, among others.",
+        "src": []
+      },
+      "Jobs & Prosperity PAC": {
+        "label": "Funded by Brian Colleran, among others.",
+        "src": []
+      },
+      "AB PAC": {
+        "label": "American Bridge's super PAC.",
+        "src": [
+          "ocj-oct20"
+        ]
+      }
+    }
+  },
+  "bought": {
+    "governor_mix": {
+      "date": "2026-07-21",
+      "through": "2026-06-30",
+      "from": "2026-05-15",
+      "src": [
+        "ocj-jul21"
+      ],
+      "tag": "REPORTED",
+      "who": "Ramaswamy campaign and V-PAC, about $9 million",
+      "parts": [
+        {
+          "name": "Broadcast TV",
+          "v": 5000000,
+          "display": "more than $5 million"
+        },
+        {
+          "name": "Streaming",
+          "v": 1900000,
+          "display": "$1.9 million"
+        },
+        {
+          "name": "Cable",
+          "v": 1000000,
+          "display": "nearly $1 million"
+        },
+        {
+          "name": "Digital",
+          "v": 260000,
+          "display": "more than $260,000"
+        },
+        {
+          "name": "Satellite",
+          "v": 130000,
+          "display": "about $130,000"
+        },
+        {
+          "name": "Radio",
+          "v": 14000,
+          "display": "more than $14,000"
+        }
+      ]
+    },
+    "markets_2024": {
+      "cleveland": 132900000,
+      "src": [
+        "adimpact-2024"
+      ],
+      "tag": "VERIFIED"
+    },
+    "markets_2026": {
+      "date": "2026-08-19",
+      "through": "2026-08-14",
+      "src": [
+        "insideradio-aug19"
+      ],
+      "tag": "VERIFIED",
+      "rows": [
+        {
+          "name": "Atlanta",
+          "v": 14100000
+        },
+        {
+          "name": "Cleveland",
+          "v": 10500000
+        }
+      ],
+      "ohio": {
+        "v": 37200000,
+        "note": "Ohio, all races: the top state for airings in the same two weeks"
+      }
+    },
+    "themes": [
+      {
+        "text": "Brown's ads call Husted \"the face of data centers in Ohio.\" A Republican committee memo published by Axios calls data centers the \"sleeper issue for this entire cycle.\"",
+        "src": [
+          "eenews"
+        ],
+        "tag": "REPORTED"
+      },
+      {
+        "text": "WinSenate's September campaign: FirstEnergy and energy costs.",
+        "src": [
+          "legis1-sep25"
+        ],
+        "tag": "VERIFIED"
+      },
+      {
+        "text": "America PAC and No Going Back PAC ads: transgender rights and bank bailouts. AFP Action: Brown and the Democratic Socialists of America.",
+        "src": [
+          "reuters-sep21"
+        ],
+        "tag": "VERIFIED"
+      },
+      {
+        "text": "2024, for comparison: immigration was the most-mentioned issue, in 33 percent of all airings; 77 percent of Republican and 66 percent of Democratic airings were negative or contrast.",
+        "src": [
+          "adimpact-2024"
+        ],
+        "tag": "VERIFIED"
+      }
+    ],
+    "national": {
+      "v": 11600000000,
+      "display": "$11.6 billion",
+      "note": "AdImpact's projection for all 2026 political advertising in the United States",
+      "src": [
+        "insideradio-aug19"
+      ],
+      "tag": "VERIFIED"
+    },
+    "ai": {
+      "ohio": "April 2026: a Republican-aligned super PAC released a spot showing an AI-generated Sherrod Brown at the end of a birthday party, ending \"Party's over, Sherrod.\" The Washington Post and Al Jazeera, which described it, did not name the committee that paid for it. [[c:wapo-sep30]] [[c:aljazeera-oct9]]",
+      "national": {
+        "ads": 164,
+        "spend": "just under $80 million",
+        "r_share": "80 percent",
+        "undisclosed": "69 percent",
+        "date": "2026-09-04",
+        "src": [
+          "wesleyan-sep4"
+        ],
+        "tag": "VERIFIED"
+      },
+      "law": "As of October 5, Ohio was listed among 20 states with no law on political deepfakes. [[c:politicalgroup]] Two bills, House Bill 362 and House Bill 1000, have been introduced in the 136th General Assembly; neither has been reported as passed. [[c:hb362]] [[c:hb1000]]",
+      "fec": "September 19, 2024: the FEC declined to write a new rule on AI in campaign ads and said its existing ban on fraudulent misrepresentation applies whatever the technology. [[c:fec-ai-2024]]"
+    }
+  },
+  "week": [
+    {
+      "date": "2026-10-15",
+      "text": "FEC October Quarterly reports due, covering through September 30. AdImpact's Senate count: $423 million.",
+      "src": [
+        "spectrum-oct15"
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "text": "63 outside committees have reported $293.25 million in the Senate general election to the FEC.",
+      "src": [
+        "votelog"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "text": "No Going Back PAC and Safety & Affordability PAC e-file their first reports of receipts: $200 million and $25 million from MAGA Inc. The FEC had processed both by October 23.",
+      "src": [
+        "fec-ngb",
+        "fec-sap"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "text": "The Ramaswamy campaign confirms it produced a one-minute video featuring Amy Acton's estranged mother, says it will spend $4 million to air it on television and online, and says the woman was not paid. The video first circulated without the \"paid for\" tag that is legally required for an ad to air on television.",
+      "src": [
+        "ap-oct20"
+      ],
+      "hit": true
+    },
+    {
+      "date": "2026-10-21",
+      "text": "At a rally in Sharonville, Ramaswamy does not address the ad in his remarks. Vice President JD Vance, speaking after him, defends it: \"Vivek Ramaswamy had the audacity to run a TV commercial.\"",
+      "src": [
+        "ap-oct21",
+        "mediaite-oct21"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "text": "Ohio pre-general reports due at 4 p.m. for state candidates and issue committees, including the race for governor.",
+      "src": [
+        "orc-3517-10"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "text": "FEC pre-general reports due, covering October 1 to 14.",
+      "src": [
+        "fec-husted",
+        "fec-brown"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "text": "67 outside committees have reported $349.3 million in the Senate general election to the FEC.",
+      "src": [
+        "votelog"
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "text": "Election Day.",
+      "src": []
+    }
+  ],
+  "rules": {
+    "federal": "Ads that support or oppose a federal candidate must say who paid. On television, an ad paid for by anyone other than the candidate must say aloud that the payer \"is responsible for the content of this advertising\" and show a written statement at least 4 percent of the screen's height for at least 4 seconds. [[c:cfr-110-11]] [[c:usc-30120]]",
+    "ohio": "Ohio's disclaimer law, in its current version since September 30, 2025: anyone who pays for political advertising for or against an Ohio candidate or issue must identify itself on the ad; when a candidate or campaign pays, the line begins \"paid for by\"; broadcasters and printers may not run paid political ads without it. [[c:orc-3517-20]]",
+    "c4": "A 501(c)(4) nonprofit may give to a super PAC without naming its own donors. One Nation gave Senate Leadership Fund $132.9 million this cycle. On air, the ad names Senate Leadership Fund. [[c:votelog]]",
+    "late": "No Going Back PAC, formed September 1, had reported $159.6 million in spending across its races by October 14 before any receipts were on file [[c:legis1-oct14]]; its first two reports, e-filed October 20 (the October monthly, covering September, and the pre-general, covering October 1 to 14), list $200 million from MAGA Inc. [[c:fec-ngb]] Enough Promises Ohio PAC, formed September 29, had not disclosed its contributors by October 12 [[c:ap-oct12]]; its pre-general report, e-filed October 22, lists one, Conservative Americans PAC, at $2.5 million. [[c:fec-epo]]",
+    "state_gap": "Ohio's pre-general report, due October 22, covers activity through October 14. From October 15 through Election Day, the campaign of the candidates for governor and lieutenant governor must also file a statement within two business days whenever one contributor's gifts in that period reach $10,000. [[c:orc-3517-10]] Money that passes through a state committee shows that committee's donors: Ohioans For Lower Costs shows $1 million from the IBEW. [[c:ocj-oct20]]",
+    "timeline": [
+      {
+        "date": "2026-09-01",
+        "label": "No Going Back PAC formed"
+      },
+      {
+        "date": "2026-09-29",
+        "label": "Enough Promises Ohio PAC formed"
+      },
+      {
+        "date": "2026-10-15",
+        "label": "FEC October Quarterly reports due, covering through Sept. 30"
+      },
+      {
+        "date": "2026-10-20",
+        "label": "No Going Back PAC's first receipts e-filed"
+      },
+      {
+        "date": "2026-11-03",
+        "label": "Election Day"
+      }
+    ],
+    "timeline_band": {
+      "from": "2026-09-01",
+      "to": "2026-10-20",
+      "label": "No Going Back PAC spending in Ohio and elsewhere with no receipts on file"
+    }
+  },
+  "sources": [
+    {
+      "id": "spectrum-oct15",
+      "title": "Spectrum News, Harri Leigh, \"Ohio Senate third quarter,\" Oct. 15, 2026, citing AdImpact and FEC October Quarterly reports",
+      "url": "https://spectrumnews1.com/oh/cleveland/news/2026/10/15/ohio-senate-q3-brown-husted"
+    },
+    {
+      "id": "ocj-oct20",
+      "title": "Ohio Capital Journal, Nick Evans, \"Outside groups pour hundreds of millions into Ohio races for governor, U.S. Senate,\" republished by the Dayton Daily News, Oct. 20, 2026, citing AdImpact and FEC filings",
+      "url": "https://www.daytondailynews.com/local/outside-groups-pour-hundreds-of-millions-into-ohio-races-for-governor-u-s-senate/article_01d81aad-46c1-513d-a0cd-05316030b3c8.html"
+    },
+    {
+      "id": "adimpact-deepdive",
+      "title": "AdImpact, Ohio congressional deep dive: political spending (2022 Senate general and primary)",
+      "url": "https://adimpact.com/blog/ohio-congressional-deep-dive-political-spending"
+    },
+    {
+      "id": "adimpact-2024",
+      "title": "AdImpact, Ethan Mort, \"2024 Ohio Senate general election,\" Dec. 4, 2024",
+      "url": "https://adimpact.com/blog/2024-ohio-senate-general-election/"
+    },
+    {
+      "id": "insideradio-aug19",
+      "title": "Inside Radio, \"Political ad spending surges as battle shifts to fall campaign,\" Aug. 19, 2026, citing AdImpact",
+      "url": "https://www.insideradio.com/free/political-ad-spending-surges-as-battle-shifts-to-fall-campaign/article_f77f0568-2105-4344-9f3b-e9084233d00b.html"
+    },
+    {
+      "id": "spectrum-jun5",
+      "title": "Spectrum News, Harri Leigh, ad spending in the Ohio Senate race, June 5, 2026",
+      "url": "https://spectrumnews1.com/oh/columbus/news/2026/06/05/ad-spending-ohio-senate"
+    },
+    {
+      "id": "newsweek-oct2",
+      "title": "Newsweek, Steven Frank, Oct. 2, 2026, citing AdImpact and NBC News",
+      "url": "https://www.newsweek.com/gop-sinks-millions-more-into-key-senate-race-for-jd-vances-old-seat-12519285"
+    },
+    {
+      "id": "statenews-oct9",
+      "title": "Statehouse News Bureau, Sarah Donaldson, Oct. 9, 2026",
+      "url": "https://www.statenews.org/government-politics/2026-10-09/ohio-us-senate-race-tight-race-forces-gop-to-surge-in-resources"
+    },
+    {
+      "id": "spectrum-oct16",
+      "title": "Spectrum News, Halena Sepulveda, Oct. 16, 2026, citing AdImpact's Ohio projection",
+      "url": "https://spectrumnews1.com/oh/dayton/news/2026/10/16/ohio-leads-the-u-s--with-most-expensive-senate-race-"
+    },
+    {
+      "id": "ocj-jul21",
+      "title": "Ohio Capital Journal, July 21, 2026, on ad spending in the governor's race, May 15 to June 30 (page not reached; carried as reported)",
+      "url": "https://ohiocapitaljournal.com/2026/07/21/massive-spending-gap-in-ohio-governor-race-ramaswamy-drops-9m-on-ads-acton-spends-just-100k/"
+    },
+    {
+      "id": "ap-oct20",
+      "title": "Associated Press, Julie Carr Smyth, Oct. 20, 2026, via ClickOnDetroit",
+      "url": "https://www.clickondetroit.com/news/politics/2026/10/20/democrat-in-ohio-governors-race-pushes-back-against-unattributed-ad-featuring-her-estranged-mother/"
+    },
+    {
+      "id": "ap-oct21",
+      "title": "Associated Press, Julie Carr Smyth and Collin Binkley, Oct. 21, 2026, via WSLS",
+      "url": "https://www.wsls.com/news/politics/2026/10/21/vance-says-hes-disgusted-by-gop-pushback-to-ramaswamy-ad-featuring-amy-actons-estranged-mother/"
+    },
+    {
+      "id": "mediaite-oct21",
+      "title": "Mediaite, Alex Griffing, Oct. 21, 2026",
+      "url": "https://www.mediaite.com/media/news/vance-says-hes-disgusted-by-republicans-whining-about-controversial-ramaswamy-attack-ad/"
+    },
+    {
+      "id": "orc-3517-10",
+      "title": "Ohio Revised Code 3517.10, campaign finance statements",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-3517.10"
+    },
+    {
+      "id": "votelog",
+      "title": "Votelog, \"Ohio Senate general money,\" a compilation of FEC Schedule E and itemized receipts, updated Oct. 23, 2026 (independent expenditures through Oct. 23; campaigns through Oct. 14)",
+      "url": "https://votelog.org/investigations/ohio-senate-general-money"
+    },
+    {
+      "id": "fec-brown",
+      "title": "Federal Election Commission, Friends of Sherrod Brown (C00916288), candidate S6OH00163, through Oct. 14, 2026 (pre-general report, filed Oct. 22)",
+      "url": "https://www.fec.gov/data/candidate/S6OH00163/"
+    },
+    {
+      "id": "fec-husted",
+      "title": "Federal Election Commission, Husted for Senate (C00896019), candidate S6OH00304, through Oct. 14, 2026 (pre-general report, filed Oct. 22)",
+      "url": "https://www.fec.gov/data/candidate/S6OH00304/"
+    },
+    {
+      "id": "legis1-may5",
+      "title": "Legis1, May 5, 2026, citing 10TV",
+      "url": "https://legis1.com/news/ohio-2026-senate-election-the-money-race-shaping"
+    },
+    {
+      "id": "coindesk-sep21",
+      "title": "CoinDesk, Sept. 21, 2026, on Fairshake",
+      "url": "https://www.coindesk.com/news-analysis/2026/09/21/crypto-s-fairshake-repeats-history-with-usd30-million-to-oppose-sherrod-brown-senate-bid"
+    },
+    {
+      "id": "legis1-oct14",
+      "title": "Legis1, Oct. 14, 2026, on No Going Back PAC (FEC C00960435)",
+      "url": "https://legis1.com/news/no-going-back-pac-tops-159m-outside-spending"
+    },
+    {
+      "id": "reuters-sep21",
+      "title": "Reuters, Dawn Kopecki, Sept. 21, 2026, via GV Wire",
+      "url": "https://gvwire.com/2026/09/21/trump-linked-pop-up-pacs-blitz-ohio-with-ads-against-brown-in-costly-senate-race/"
+    },
+    {
+      "id": "ap-oct12",
+      "title": "Associated Press via PBS NewsHour, Oct. 12, 2026, on Enough Promises Ohio PAC",
+      "url": "https://www.pbs.org/newshour/politics/mailers-promoting-a-socialist-candidate-in-ohio-senate-race-have-links-to-maga-super-pac-vendor"
+    },
+    {
+      "id": "legis1-sep25",
+      "title": "Legis1, Sept. 25, 2026, on WinSenate",
+      "url": "https://legis1.com/news/winsenate-spending-gop-senate-spent-57m-opposing"
+    },
+    {
+      "id": "signal-aug27",
+      "title": "Signal Ohio, Andrew Tobias and Jake Zuckerman, Aug. 27, 2026",
+      "url": "https://signalohio.org/billionaire-jeff-yass-ohio-governor-race-november-election-2026/"
+    },
+    {
+      "id": "signal-mar17",
+      "title": "Signal Ohio, Andrew Tobias, March 17, 2026",
+      "url": "https://signalohio.org/vivek-ramaswamy-says-campaign-preseason-is-over-as-10m-ad-blitz-begins-ohio-governor-election-2026/"
+    },
+    {
+      "id": "eenews",
+      "title": "E&E News, on data centers in the Ohio Senate race",
+      "url": "https://www.eenews.net/articles/data-centers-heat-up-ohio-senate-race/"
+    },
+    {
+      "id": "wapo-sep30",
+      "title": "The Washington Post, Sept. 30, 2026, feature on AI in campaign ads, via dnyuz",
+      "url": "https://dnyuz.com/?p=286221"
+    },
+    {
+      "id": "aljazeera-oct9",
+      "title": "Al Jazeera, Oct. 9, 2026, on AI deepfake ads in the midterms",
+      "url": "https://www.aljazeera.com/economy/2026/10/9/ai-deepfake-ads-grow-more-popular-in-us-midterm-campaigns-blurring-truth"
+    },
+    {
+      "id": "wesleyan-sep4",
+      "title": "Wesleyan Media Project, release of Sept. 4, 2026, on AI-generated and AI-enhanced ads",
+      "url": "https://mediaproject.wesleyan.edu/?p=56458"
+    },
+    {
+      "id": "politicalgroup",
+      "title": "The Political Group, political deepfake laws tracker, as of Oct. 5, 2026",
+      "url": "https://www.thepoliticalgroup.com/ai-laws/topic/political-deepfake-laws"
+    },
+    {
+      "id": "hb362",
+      "title": "Ohio House Bill 362, 136th General Assembly, as introduced",
+      "url": "https://search-prod.lis.state.oh.us/api/v2/general_assembly_136/legislation/hb362/00_IN/html/"
+    },
+    {
+      "id": "hb1000",
+      "title": "Ohio House Bill 1000, 136th General Assembly, as introduced",
+      "url": "https://search-prod.lis.state.oh.us/api/v2/general_assembly_136/legislation/hb1000/00_IN/html/"
+    },
+    {
+      "id": "fec-ai-2024",
+      "title": "Federal Election Commission, notice of disposition and interpretive rule on artificial intelligence in campaign ads, Sept. 19, 2024",
+      "url": "https://www.fec.gov/updates/commission-approves-notification-of-disposition-interpretive-rule-on-artificial-intelligence-in-campaign-ads"
+    },
+    {
+      "id": "cfr-110-11",
+      "title": "11 CFR 110.11, communications; advertising; disclaimers",
+      "url": "https://www.law.cornell.edu/cfr/text/11/110.11"
+    },
+    {
+      "id": "usc-30120",
+      "title": "52 U.S.C. 30120, publication and distribution of statements and solicitations",
+      "url": "https://www.law.cornell.edu/uscode/text/52/30120"
+    },
+    {
+      "id": "orc-3517-20",
+      "title": "Ohio Revised Code 3517.20, political publications, effective Sept. 30, 2025",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-3517.20"
+    },
+    {
+      "id": "ohsos-cf",
+      "title": "Ohio Secretary of State, campaign finance search",
+      "url": "https://www.ohiosos.gov/campaign-finance/search/"
+    },
+    {
+      "id": "fec-data",
+      "title": "Federal Election Commission, independent expenditures and candidate data",
+      "url": "https://www.fec.gov/data/"
+    },
+    {
+      "id": "fec-oh01",
+      "title": "Federal Election Commission, Ohio's 1st District, 2026: candidate committees through Oct. 14 (pre-general reports) and independent expenditures (Schedule E, and 24- and 48-hour reports received through Oct. 22, 2026)",
+      "url": "https://www.fec.gov/data/elections/house/OH/01/2026/"
+    },
+    {
+      "id": "bp-oh01",
+      "title": "Ballotpedia, Ohio's 1st Congressional District election, 2024, and the 2026 page's 2024 presidential results on the new lines, citing The Downballot",
+      "url": "https://ballotpedia.org/Ohio%27s_1st_Congressional_District_election,_2024"
+    },
+    {
+      "id": "fec-oh02",
+      "title": "Federal Election Commission, Ohio's 2nd District, 2026: candidate committees through Oct. 14 (pre-general reports) and independent expenditures (Schedule E, and 24- and 48-hour reports received through Oct. 22, 2026)",
+      "url": "https://www.fec.gov/data/elections/house/OH/02/2026/"
+    },
+    {
+      "id": "bp-oh02",
+      "title": "Ballotpedia, Ohio's 2nd Congressional District election, 2024, and the 2026 page's 2024 presidential results on the new lines, citing The Downballot",
+      "url": "https://ballotpedia.org/Ohio%27s_2nd_Congressional_District_election,_2024"
+    },
+    {
+      "id": "fec-oh03",
+      "title": "Federal Election Commission, Ohio's 3rd District, 2026: candidate committees through Oct. 14 (pre-general reports) and independent expenditures (Schedule E, and 24- and 48-hour reports received through Oct. 22, 2026)",
+      "url": "https://www.fec.gov/data/elections/house/OH/03/2026/"
+    },
+    {
+      "id": "bp-oh03",
+      "title": "Ballotpedia, Ohio's 3rd Congressional District election, 2024, and the 2026 page's 2024 presidential results on the new lines, citing The Downballot",
+      "url": "https://ballotpedia.org/Ohio%27s_3rd_Congressional_District_election,_2024"
+    },
+    {
+      "id": "fec-oh04",
+      "title": "Federal Election Commission, Ohio's 4th District, 2026: candidate committees through Oct. 14 (pre-general reports) and independent expenditures (Schedule E, and 24- and 48-hour reports received through Oct. 22, 2026)",
+      "url": "https://www.fec.gov/data/elections/house/OH/04/2026/"
+    },
+    {
+      "id": "bp-oh04",
+      "title": "Ballotpedia, Ohio's 4th Congressional District election, 2024, and the 2026 page's 2024 presidential results on the new lines, citing The Downballot",
+      "url": "https://ballotpedia.org/Ohio%27s_4th_Congressional_District_election,_2024"
+    },
+    {
+      "id": "fec-oh05",
+      "title": "Federal Election Commission, Ohio's 5th District, 2026: candidate committees through Oct. 14 (pre-general reports) and independent expenditures (Schedule E, and 24- and 48-hour reports received through Oct. 22, 2026)",
+      "url": "https://www.fec.gov/data/elections/house/OH/05/2026/"
+    },
+    {
+      "id": "bp-oh05",
+      "title": "Ballotpedia, Ohio's 5th Congressional District election, 2024, and the 2026 page's 2024 presidential results on the new lines, citing The Downballot",
+      "url": "https://ballotpedia.org/Ohio%27s_5th_Congressional_District_election,_2024"
+    },
+    {
+      "id": "fec-oh06",
+      "title": "Federal Election Commission, Ohio's 6th District, 2026: candidate committees through Oct. 14 (pre-general reports) and independent expenditures (Schedule E, and 24- and 48-hour reports received through Oct. 22, 2026)",
+      "url": "https://www.fec.gov/data/elections/house/OH/06/2026/"
+    },
+    {
+      "id": "bp-oh06",
+      "title": "Ballotpedia, Ohio's 6th Congressional District election, 2024, and the 2026 page's 2024 presidential results on the new lines, citing The Downballot",
+      "url": "https://ballotpedia.org/Ohio%27s_6th_Congressional_District_election,_2024"
+    },
+    {
+      "id": "fec-oh07",
+      "title": "Federal Election Commission, Ohio's 7th District, 2026: candidate committees through Oct. 14 (pre-general reports) and independent expenditures (Schedule E, and 24- and 48-hour reports received through Oct. 22, 2026)",
+      "url": "https://www.fec.gov/data/elections/house/OH/07/2026/"
+    },
+    {
+      "id": "bp-oh07",
+      "title": "Ballotpedia, Ohio's 7th Congressional District election, 2024, and the 2026 page's 2024 presidential results on the new lines, citing The Downballot",
+      "url": "https://ballotpedia.org/Ohio%27s_7th_Congressional_District_election,_2024"
+    },
+    {
+      "id": "fec-oh08",
+      "title": "Federal Election Commission, Ohio's 8th District, 2026: candidate committees through Oct. 14 (pre-general reports) and independent expenditures (Schedule E, and 24- and 48-hour reports received through Oct. 22, 2026)",
+      "url": "https://www.fec.gov/data/elections/house/OH/08/2026/"
+    },
+    {
+      "id": "bp-oh08",
+      "title": "Ballotpedia, Ohio's 8th Congressional District election, 2024, and the 2026 page's 2024 presidential results on the new lines, citing The Downballot",
+      "url": "https://ballotpedia.org/Ohio%27s_8th_Congressional_District_election,_2024"
+    },
+    {
+      "id": "fec-oh09",
+      "title": "Federal Election Commission, Ohio's 9th District, 2026: candidate committees through Oct. 14 (pre-general reports) and independent expenditures (Schedule E, and 24- and 48-hour reports received through Oct. 22, 2026)",
+      "url": "https://www.fec.gov/data/elections/house/OH/09/2026/"
+    },
+    {
+      "id": "bp-oh09",
+      "title": "Ballotpedia, Ohio's 9th Congressional District election, 2024, and the 2026 page's 2024 presidential results on the new lines, citing The Downballot",
+      "url": "https://ballotpedia.org/Ohio%27s_9th_Congressional_District_election,_2024"
+    },
+    {
+      "id": "fec-oh10",
+      "title": "Federal Election Commission, Ohio's 10th District, 2026: candidate committees through Oct. 14 (pre-general reports) and independent expenditures (Schedule E, and 24- and 48-hour reports received through Oct. 22, 2026)",
+      "url": "https://www.fec.gov/data/elections/house/OH/10/2026/"
+    },
+    {
+      "id": "bp-oh10",
+      "title": "Ballotpedia, Ohio's 10th Congressional District election, 2024, and the 2026 page's 2024 presidential results on the new lines, citing The Downballot",
+      "url": "https://ballotpedia.org/Ohio%27s_10th_Congressional_District_election,_2024"
+    },
+    {
+      "id": "fec-oh11",
+      "title": "Federal Election Commission, Ohio's 11th District, 2026: candidate committees through Oct. 14 (pre-general reports) and independent expenditures (Schedule E, and 24- and 48-hour reports received through Oct. 22, 2026)",
+      "url": "https://www.fec.gov/data/elections/house/OH/11/2026/"
+    },
+    {
+      "id": "bp-oh11",
+      "title": "Ballotpedia, Ohio's 11th Congressional District election, 2024, and the 2026 page's 2024 presidential results on the new lines, citing The Downballot",
+      "url": "https://ballotpedia.org/Ohio%27s_11th_Congressional_District_election,_2024"
+    },
+    {
+      "id": "fec-oh12",
+      "title": "Federal Election Commission, Ohio's 12th District, 2026: candidate committees through Oct. 14 (pre-general reports) and independent expenditures (Schedule E, and 24- and 48-hour reports received through Oct. 22, 2026)",
+      "url": "https://www.fec.gov/data/elections/house/OH/12/2026/"
+    },
+    {
+      "id": "bp-oh12",
+      "title": "Ballotpedia, Ohio's 12th Congressional District election, 2024, and the 2026 page's 2024 presidential results on the new lines, citing The Downballot",
+      "url": "https://ballotpedia.org/Ohio%27s_12th_Congressional_District_election,_2024"
+    },
+    {
+      "id": "fec-oh13",
+      "title": "Federal Election Commission, Ohio's 13th District, 2026: candidate committees through Oct. 14 (pre-general reports) and independent expenditures (Schedule E, and 24- and 48-hour reports received through Oct. 22, 2026)",
+      "url": "https://www.fec.gov/data/elections/house/OH/13/2026/"
+    },
+    {
+      "id": "bp-oh13",
+      "title": "Ballotpedia, Ohio's 13th Congressional District election, 2024, and the 2026 page's 2024 presidential results on the new lines, citing The Downballot",
+      "url": "https://ballotpedia.org/Ohio%27s_13th_Congressional_District_election,_2024"
+    },
+    {
+      "id": "fec-oh14",
+      "title": "Federal Election Commission, Ohio's 14th District, 2026: candidate committees through Oct. 14 (pre-general reports) and independent expenditures (Schedule E, and 24- and 48-hour reports received through Oct. 22, 2026)",
+      "url": "https://www.fec.gov/data/elections/house/OH/14/2026/"
+    },
+    {
+      "id": "bp-oh14",
+      "title": "Ballotpedia, Ohio's 14th Congressional District election, 2024, and the 2026 page's 2024 presidential results on the new lines, citing The Downballot",
+      "url": "https://ballotpedia.org/Ohio%27s_14th_Congressional_District_election,_2024"
+    },
+    {
+      "id": "fec-oh15",
+      "title": "Federal Election Commission, Ohio's 15th District, 2026: candidate committees through Oct. 14 (pre-general reports) and independent expenditures (Schedule E, and 24- and 48-hour reports received through Oct. 22, 2026)",
+      "url": "https://www.fec.gov/data/elections/house/OH/15/2026/"
+    },
+    {
+      "id": "bp-oh15",
+      "title": "Ballotpedia, Ohio's 15th Congressional District election, 2024, and the 2026 page's 2024 presidential results on the new lines, citing The Downballot",
+      "url": "https://ballotpedia.org/Ohio%27s_15th_Congressional_District_election,_2024"
+    },
+    {
+      "id": "wiki-2026",
+      "title": "Wikipedia, 2026 United States House of Representatives elections in Ohio, district descriptions",
+      "url": "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Ohio"
+    },
+    {
+      "id": "fec-ngb",
+      "title": "Federal Election Commission, No Going Back PAC (C00960435), reports for Sept. 1 to Oct. 14, 2026, e-filed Oct. 20 (e-filings 2033797 and 2033815); processed by the FEC as of Oct. 23",
+      "url": "https://www.fec.gov/data/committee/C00960435/"
+    },
+    {
+      "id": "fec-sap",
+      "title": "Federal Election Commission, Safety & Affordability PAC (C00960443), reports for Sept. 1 to Oct. 14, 2026, e-filed Oct. 20; processed by the FEC as of Oct. 23",
+      "url": "https://www.fec.gov/data/committee/C00960443/"
+    },
+    {
+      "id": "fec-maga",
+      "title": "Federal Election Commission, MAGA Inc. (C00892471), receipts through Aug. 31, 2026, plus its October monthly and pre-general reports (Sept. 1 to Oct. 14) as e-filed Oct. 20 (e-filings 2033718 and 2033746)",
+      "url": "https://www.fec.gov/data/committee/C00892471/?cycle=2026"
+    },
+    {
+      "id": "fec-enoch",
+      "title": "Federal Election Commission, Vanessa Enoch (Committee to Elect Enoch, C00667279), candidate H8OH08097: summary, the e-filed October Quarterly, and the pre-general report e-filed Oct. 23, 2026 (e-filing 2040177)",
+      "url": "https://www.fec.gov/data/candidate/H8OH08097/?cycle=2026"
+    },
+    {
+      "id": "fec-americapac",
+      "title": "Federal Election Commission, America PAC (C00879510), pre-general report, Oct. 1 to 14, 2026, e-filed Oct. 22 (e-filing 2038959), Schedule A",
+      "url": "https://docquery.fec.gov/cgi-bin/forms/C00879510/2038959/"
+    },
+    {
+      "id": "fec-75pac",
+      "title": "Federal Election Commission, 75 PAC (C00950006), pre-general report, Oct. 1 to 14, 2026, e-filed Oct. 22 (e-filing 2038458)",
+      "url": "https://docquery.fec.gov/cgi-bin/forms/C00950006/2038458/"
+    },
+    {
+      "id": "fec-epo",
+      "title": "Federal Election Commission, Enough Promises Ohio (C00962563), pre-general report, Oct. 1 to 14, 2026, e-filed Oct. 22 (e-filing 2038055)",
+      "url": "https://docquery.fec.gov/cgi-bin/forms/C00962563/2038055/"
+    },
+    {
+      "id": "fec-lcn",
+      "title": "Federal Election Commission, Lower Costs Now (C00961276), pre-general report, Oct. 1 to 14, 2026, e-filed Oct. 22 (e-filing 2039933)",
+      "url": "https://docquery.fec.gov/cgi-bin/forms/C00961276/2039933/"
+    },
+    {
+      "id": "fec-ohflyer",
+      "title": "Federal Election Commission, Ohio Flyer PAC (C00912865), pre-general report, Oct. 1 to 14, 2026, e-filed Oct. 22 (e-filing 2037180)",
+      "url": "https://docquery.fec.gov/cgi-bin/forms/C00912865/2037180/"
+    },
+    {
+      "id": "fec-lcv",
+      "title": "Federal Election Commission, LCV Victory Fund (C00486845), pre-general report, Oct. 1 to 14, 2026, e-filed Oct. 22 (e-filing 2038529)",
+      "url": "https://docquery.fec.gov/cgi-bin/forms/C00486845/2038529/"
+    },
+    {
+      "id": "fec-buckeyes",
+      "title": "Federal Election Commission, Buckeyes PAC (C00961060), pre-general report, Oct. 1 to 14, 2026, e-filed Oct. 20 (e-filing 2033594)",
+      "url": "https://docquery.fec.gov/cgi-bin/forms/C00961060/2033594/"
+    },
+    {
+      "id": "fec-vpac",
+      "title": "Federal Election Commission, V-PAC: Victors, Not Victims (C00892919), reports for Jan. 1, 2025, to Sept. 30, 2026 (October Quarterly e-filed Oct. 15, 2026, e-filing 2023557), Schedule A",
+      "url": "https://www.fec.gov/data/committee/C00892919/?cycle=2026"
+    },
+    {
+      "id": "ohsos-ramaswamy",
+      "title": "Ohio Secretary of State, Vivek Ramaswamy and Rob McColley for Ohio, 2026 expenditures (pre-primary, post-primary and pre-general statements, through Oct. 14), file updated Oct. 22, 2026",
+      "url": "https://www6.ohiosos.gov/ords/f?p=CFDISCLOSURE:73:::NO:RP::"
+    },
+    {
+      "id": "ohsos-acton",
+      "title": "Ohio Secretary of State, Ohioans for Amy Acton and David Pepper, 2026 contributions and expenditures (through Oct. 14), files updated Oct. 22, 2026",
+      "url": "https://www6.ohiosos.gov/ords/f?p=CFDISCLOSURE:73:::NO:RP::"
+    },
+    {
+      "id": "ocj-oct13",
+      "title": "Ohio Capital Journal, Nick Evans, \"Ramaswamy loans campaign $5 million more as Acton outpaces him with donors,\" Oct. 13, 2026, republished by Cleveland Scene, on the July, August and September monthly reports",
+      "url": "https://www.clevescene.com/news/ohio-news/ramaswamy-loans-campaign-5-million-more-as-acton-outpaces-him-with-donors/"
+    },
+    {
+      "id": "fec-ie24",
+      "title": "Federal Election Commission, 24- and 48-hour reports of independent expenditures, 2026 cycle (bulk file updated Oct. 23, 2026, rows received through Oct. 22)",
+      "url": "https://www.fec.gov/files/bulk-downloads/2026/independent_expenditure_2026.csv"
+    },
+    {
+      "id": "fec-webl26",
+      "title": "Federal Election Commission, candidate summary file for the 2026 cycle (webl26, updated Oct. 23, 2026): total disbursements of each Ohio U.S. House candidate committee; for Landsman, Conroy, Merrin and Jukic, whose pre-general reports the FEC had not processed, the September 30 summary plus the October 1 to 14 disbursements on their pre-general reports as e-filed Oct. 22 (e-filings 2039676, 2039657, 2039374 and 2039920)",
+      "url": "https://www.fec.gov/files/bulk-downloads/2026/webl26.zip"
+    },
+    {
+      "id": "spectrum-oct19",
+      "title": "Spectrum News, Harri Leigh, \"Republicans pull funding in Ohio's 1st District as Cook Political Report shifts race toward Democrats,\" Oct. 19, 2026",
+      "url": "https://spectrumnews1.com/oh/columbus/news/2026/10/19/ohio-1st-district-landsman-conroy"
+    },
+    {
+      "id": "politicalwire-jun17",
+      "title": "Political Wire, \"House Majority PAC adds $11 million for two states,\" June 17, 2026, citing NOTUS",
+      "url": "https://politicalwire.com/2026/06/17/house-majority-pac-adds-11-million-for-two-states/"
+    },
+    {
+      "id": "ap-aug2025",
+      "title": "Associated Press, Julie Carr Smyth, \"Sherrod Brown expected to seek his return to the Senate in 2026,\" Aug. 12, 2025, via PBS NewsHour",
+      "url": "https://www.pbs.org/newshour/politics/sherrod-brown-expected-to-seek-his-return-to-the-senate-in-2026"
+    },
+    {
+      "id": "scripps-ai",
+      "title": "Scripps News, Patrick Terpstra, \"AI interest groups pour tens of millions of dollars into 2026 election,\" via WPTV (The Price of Data)",
+      "url": "https://www.wptv.com/the-price-of-data/ai-interest-groups-pour-tens-of-millions-of-dollars-into-2026-election"
+    },
+    {
+      "id": "bgov-jan30",
+      "title": "Bloomberg News, Bill Allison and Emily Birnbaum, \"Andreessen, Horowitz Fuel AI Industry's $51 Million Midterm Haul,\" Jan. 30, 2026, via Bloomberg Government",
+      "url": "https://news.bgov.com/private-equity/andreessen-horowitz-fuel-ai-industrys-51-million-midterm-haul"
+    },
+    {
+      "id": "transformer-apr13",
+      "title": "Transformer, Veronica Irwin, \"Anthropic's donations can't be used to influence elections, despite what everyone thought,\" April 13, 2026",
+      "url": "https://transformernews.ai/p/anthropic-super-pac-donations-public-first-leading-the-future-brad-carson"
+    },
+    {
+      "id": "legis1-oct21",
+      "title": "Legis1, Oct. 21, 2026, on Stand Up for Ohio",
+      "url": "https://legis1.com/news/stand-up-for-ohio-spends-12-million-democrats"
+    }
+  ],
+  "total": {
+    "v": 658977376.06,
+    "display": "$659 million",
+    "date": "2026-10-23",
+    "count": "Money spent in Ohio's 2026 races for U.S. Senate, governor and the U.S. House, as the spenders reported it: by the campaigns of the candidates on the November 3 ballot, and by the outside groups that reported spending for or against them, this election cycle, the May primary included. Each part is a filing total, through the date shown. For outside groups, only what each reported spending on these races is counted, so money one group gave another, such as MAGA Inc.'s $200 million to No Going Back PAC, is never counted twice. A campaign's spending is everything its committee paid out, which can include gifts to other committees.",
+    "races": [
+      {
+        "key": "senate",
+        "name": "U.S. Senate",
+        "race": "Husted vs. Brown",
+        "parts": [
+          {
+            "kind": "outside",
+            "name": "Outside groups, general election",
+            "v": 349325391,
+            "through": "2026-10-23",
+            "src": [
+              "votelog"
+            ],
+            "tag": "VERIFIED",
+            "how": "independent expenditures reported to the FEC, 67 committees, as compiled by Votelog"
+          },
+          {
+            "kind": "outside",
+            "name": "Outside groups, before the May 5 primary",
+            "v": 3617518,
+            "through": "2026-05-05",
+            "src": [
+              "votelog"
+            ],
+            "tag": "VERIFIED",
+            "how": "independent expenditures disseminated before the primary, which Votelog lists apart"
+          },
+          {
+            "kind": "camp",
+            "name": "The two campaigns",
+            "v": 79602682.83,
+            "through": "2026-10-14",
+            "src": [
+              "fec-brown",
+              "fec-husted"
+            ],
+            "tag": "VERIFIED",
+            "how": "total disbursements this cycle: Brown $63,956,396.53, Husted $15,646,286.30"
+          }
+        ],
+        "v": 432545591.83
+      },
+      {
+        "key": "governor",
+        "name": "Governor",
+        "race": "Ramaswamy vs. Acton",
+        "parts": [
+          {
+            "kind": "outside",
+            "name": "V-PAC, the outside group on the record",
+            "v": 44600000,
+            "through": "2026-09-30",
+            "src": [
+              "ocj-oct20"
+            ],
+            "tag": "VERIFIED",
+            "how": "its advertising through its latest report before October 20, as the Ohio Capital Journal totaled it from its FEC filings"
+          },
+          {
+            "kind": "camp",
+            "name": "The two campaigns, media and advertising",
+            "v": 70270063.52,
+            "through": "2026-10-14",
+            "src": [
+              "ohsos-ramaswamy",
+              "ohsos-acton"
+            ],
+            "tag": "VERIFIED",
+            "how": "payments on their Ohio reports whose stated purpose is media, television, radio or advertising: Ramaswamy $47,036,847.39, Acton $23,233,216.13"
+          }
+        ],
+        "v": 114870063.52
+      },
+      {
+        "key": "house",
+        "name": "U.S. House, 15 races",
+        "race": "all fifteen districts",
+        "parts": [
+          {
+            "kind": "outside",
+            "name": "Outside groups",
+            "v": 57444287.33,
+            "through": "2026-10-22",
+            "src": [
+              "fec-ie24",
+              "fec-data"
+            ],
+            "tag": "VERIFIED",
+            "how": "every FEC Schedule E row for the fifteen races this cycle, plus 24- and 48-hour reports received through October 22, summed for this story"
+          },
+          {
+            "kind": "camp",
+            "name": "The candidates' campaigns",
+            "v": 54117433.38,
+            "through": "2026-10-14",
+            "src": [
+              "fec-webl26"
+            ],
+            "tag": "VERIFIED",
+            "how": "total disbursements of the committees of the 31 candidates on the November ballot"
+          }
+        ],
+        "v": 111561720.71
+      }
+    ],
+    "leaves_out": [
+      "Spending after each part's date. Campaigns report again after the election; outside groups report each new buy within a day or two.",
+      "Spending by the two campaigns for governor other than media and advertising: staff, travel, events and the rest are on their Ohio reports and are not summed here.",
+      "Ohioans For Lower Costs, the committee through which the Democratic Governors Association funds its Ohio advertising: $9.4 million planned as of August (reported); its report due October 22 has not been read for this story. [[c:signal-aug27,ocj-oct20]]",
+      "The Republican Governors Association's advertising: \"roughly $20 million\" to date, it said, with no Ohio share given. [[c:ocj-oct20]]",
+      "Ads by 501(c)(4) nonprofits that do not expressly call for a vote, which are reported to the FEC only in part or not at all.",
+      "Candidates who lost the May primaries, and party committees' own spending.",
+      "Every other race on Ohio's ballot: the other statewide offices, the Ohio Supreme Court, the General Assembly and local races. No money for a statewide ballot issue is in the record for this page.",
+      "Vanessa Enoch's campaign (OH-08), which the FEC's processed summary still shows at $0; her e-filed report shows $38,917.76 raised this cycle. [[c:fec-enoch]]"
+    ],
+    "why": "The Senate race is among those likely to decide which party holds the majority in the U.S. Senate, the Statehouse News Bureau reported on October 9, and Republicans are defending a narrow majority, Newsweek reported. [[c:statenews-oct9,newsweek-oct2]]"
+  }
+}

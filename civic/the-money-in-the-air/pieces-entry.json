@@ -1,0 +1,20 @@
+{
+  "_note": "Staged for pieces.json; NOT yet in pieces.json. The site has no hidden flag: the landing renders every entry whose section it knows (status 'coming' still shows a Soon card), and pieces.json carries another session's uncommitted edit. On his go, paste the entry below at the top of 'pieces' and drop this file. Section is 'stories' per the Oct 16 shelf rule (every dated story lives on the stories shelf; 'civic' is tools only).",
+  "entry": {
+    "slug": "the-money-in-the-air",
+    "href": "civic/the-money-in-the-air/?v=20261023",
+    "title": "At least $659 million spent on Ohio's 2026 races for Senate, governor and the U.S. House.",
+    "line": "The total spent on Ohio's 2026 races, from the filings, then race by race: the Senate race at $432.5 million, the governor's race at $114.9 million and the fifteen U.S. House races at $111.6 million; who paid, what kind of committee each is and who funds it, what it bought, and the disclosure rules.",
+    "type": "piece",
+    "section": "stories",
+    "topic": "Ohio · the 2026 election",
+    "date": "2026-10-23",
+    "status": "live",
+    "featured": true,
+    "share": "assets/share/the-money-in-the-air.jpg",
+    "preview": "assets/previews/the-money-in-the-air.jpg",
+    "related": [
+      "who-owns-the-pipes"
+    ]
+  }
+}

@@ -174,4 +174,4 @@ Last verified Oct 14, 2026. If a fact here is wrong, say so and it will be fixed
 
 ---
 
-Source: https://tools.dnsc.ai/stories/homeview/ · Generated from the page on Oct 16, 2026
+Source: https://tools.dnsc.ai/stories/homeview/ · Generated from the page on Nov 8, 2026

@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The money in the air</title>
+<meta name="description" content="Who is paying for the political ads in Ohio's 2026 races: the Senate race at $423 million by October 15, the governor's race, all fifteen U.S. House races, the committees that paid, the people and companies that fund them, what the money bought, and what the disclosure rules leave out, from the filings.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DNSC">
+<meta property="og:title" content="$423 million in ads on one Ohio Senate race.">
+<meta property="og:description" content="Who paid for the ads in Ohio's Senate, governor and U.S. House races in 2026, who funds them, and what it bought, from the FEC and the ad trackers.">
+<meta property="og:url" content="https://tools.dnsc.ai/civic/the-money-in-the-air/">
+<meta property="og:image" content="https://tools.dnsc.ai/assets/share/the-money-in-the-air.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="$423 million in ads on one Ohio Senate race.">
+<meta name="twitter:image" content="https://tools.dnsc.ai/assets/share/the-money-in-the-air.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Public+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="/assets/favicon.png">
+<style>
+/* The money in the air. One spread: a sky-paper page, numbers set big, money drawn as it moves:
+   from the people who give, through the committees that pay, into one race. Light ground only. */
+:root{
+  --paper:#F3F6F8;--sheet:#ffffff;--ink:#162029;--ink-2:#38434d;--ink-3:#5a6670;
+  --rule:#b9c4cc;--rule-2:#dbe2e7;--sky:#3E6A9E;--sky-1:#e3edf6;--gold:#C9A24A;--gold-1:#f5edd6;
+  --r:#B8433A;--d:#2E5E8C;--mute:#99a3ab;
+  --face:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;color:var(--ink);background:var(--paper);font-family:var(--face);font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums lining-nums;overflow-x:hidden}
+a{color:var(--sky);text-decoration-thickness:1.5px;text-underline-offset:.18em}
+a:hover{text-decoration-thickness:3px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px 48px}
+@media (max-width:420px){.wrap{padding-inline:16px}}
+.dnsc-back{font-family:var(--mono);font-size:12.5px;letter-spacing:.04em;padding:10px 20px;border-bottom:1px solid rgba(127,127,127,.25);background:rgba(127,127,127,.06)}
+.dnsc-back a{color:inherit;opacity:.8;text-decoration:none}
+.dnsc-back span{opacity:.35;margin:0 10px}
+.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:10px 24px;padding:22px 0 12px;border-bottom:2px solid var(--ink)}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{width:38px;height:38px;flex:none}
+.brand .nm{font-weight:800;font-size:1rem;letter-spacing:.12em;text-transform:uppercase;line-height:1.3}
+.brand .nm span{display:block;font-weight:500;font-size:.9rem;letter-spacing:0;text-transform:none;color:var(--ink-2)}
+.ref{font-family:var(--serif);font-style:italic;font-size:.95rem;color:var(--ink-3);text-align:right;line-height:1.45}
+.ref span{display:block}
+@media (max-width:700px){.ref{text-align:left}}
+/* kicker, style C: Fraunces italic after a gold dash */
+.k{margin:0 0 8px;font-family:var(--serif);font-style:italic;font-weight:500;font-size:1.02rem;color:var(--ink-3);display:flex;align-items:center;gap:10px}
+.k::before{content:"";width:22px;height:2px;background:var(--gold);flex:none}
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,300px);gap:12px 40px;align-items:end;padding:46px 0 22px}
+@media (max-width:820px){.hero{grid-template-columns:1fr}.hero .air{max-width:220px;order:-1;margin-bottom:-6px}}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.5rem,7.4vw,5.4rem);line-height:.98;letter-spacing:-.028em;margin:0 0 20px;text-wrap:balance}
+.hero h1 .big{display:block;font-size:1.38em;letter-spacing:-.04em;line-height:.9;color:var(--sky)}
+.lede{font-family:var(--serif);font-weight:500;font-size:clamp(1.15rem,2.2vw,1.42rem);line-height:1.42;color:var(--ink-2);margin:0;max-width:52ch;text-wrap:pretty}
+.stamp{margin:16px 0 0;font-size:.9rem;color:var(--ink-3)}
+.air svg{width:100%;height:auto;display:block;overflow:visible}
+.air .ln{fill:none;stroke:var(--ink);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.air .wv{fill:none;stroke:var(--sky);stroke-width:2;stroke-linecap:round}
+.air .gd{fill:none;stroke:var(--gold);stroke-width:2;stroke-linecap:round}
+.air text{font-family:var(--mono);font-size:11px;fill:var(--ink-3)}
+/* jump bar */
+.jump{position:sticky;top:0;z-index:5;background:rgba(243,246,248,.94);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin:6px 0 0}
+.jump ul{list-style:none;margin:0;padding:8px 0;display:flex;gap:6px 18px;overflow-x:auto;scrollbar-width:none;white-space:nowrap}
+.jump ul::-webkit-scrollbar{display:none}
+.jump a{font-size:.9rem;font-weight:700;color:var(--ink-2);text-decoration:none;padding:6px 0;display:inline-block}
+.jump a:hover{color:var(--sky)}
+/* chapters */
+.ch{margin:72px 0 0;scroll-margin-top:56px}
+.ch h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.8rem,4.2vw,2.8rem);line-height:1.06;letter-spacing:-.016em;margin:0;max-width:28ch;text-wrap:balance}
+.ch .dek{margin:12px 0 0;font-size:1.05rem;line-height:1.55;color:var(--ink-2);max-width:66ch;text-wrap:pretty}
+.ch>p:not(.k):not(.dek){max-width:68ch}
+.sheet{background:var(--sheet);border:1px solid var(--ink);box-shadow:0 2px 3px rgba(22,32,41,.1);padding:20px 22px;margin-top:20px}
+@media (max-width:520px){.sheet{padding:16px 14px}}
+.fn{margin:12px 0 0;font-size:.86rem;line-height:1.5;color:var(--ink-3);max-width:80ch}
+.note{font-size:.95rem;color:var(--ink-2);margin:12px 0 0;line-height:1.5;max-width:72ch}
+.tag{display:inline-block;font-family:var(--mono);font-size:.68rem;letter-spacing:.04em;padding:1px 6px;border:1px solid var(--gold);background:var(--gold-1);color:var(--ink-2);border-radius:2px;vertical-align:1px}
+a.cite{font-family:var(--mono);font-size:.72em;text-decoration:none;color:var(--sky);vertical-align:.25em;margin-left:1px;white-space:nowrap}
+a.cite:hover{text-decoration:underline}
+.dim{color:var(--ink-3)}
+/* totals: the line and the governor side by side */
+.totals{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:18px;margin-top:22px;align-items:start}
+@media (max-width:860px){.totals{grid-template-columns:1fr}}
+.totals .sheet{margin:0}
+.totals h3{font-family:var(--serif);font-weight:600;font-size:1.3rem;line-height:1.15;margin:0 0 4px;letter-spacing:-.01em}
+.totals .sub{margin:0 0 10px;font-size:.92rem;color:var(--ink-3)}
+.chart{display:block;width:100%;height:auto;overflow:visible}
+.chart .grid{stroke:var(--rule-2);stroke-width:1}
+.chart .ax{font-family:var(--mono);font-size:11px;fill:var(--ink-3)}
+.chart .yr{font-family:var(--serif);font-weight:700;font-size:16px;fill:var(--ink)}
+.chart .ln{fill:none;stroke:var(--sky);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.chart .ld{fill:none;stroke:var(--sky);stroke-width:2.4;stroke-dasharray:2 6;stroke-linecap:round}
+.chart .pt{fill:var(--sky);stroke:#fff;stroke-width:2}
+.chart .open{fill:#fff;stroke:var(--sky);stroke-width:2}
+.chart .lab{font-family:var(--serif);font-weight:700;font-size:17px;fill:var(--ink)}
+.chart .lab.s{font-family:var(--face);font-weight:700;font-size:12.5px}
+.chart .lab.dim{font-weight:400;fill:var(--ink-3)}
+.chart.narrow{display:none}
+@media (max-width:560px){.chart.wide{display:none}.chart.narrow{display:block}}
+.bought3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 18px;margin-top:14px;padding-top:12px;border-top:1px solid var(--rule)}
+@media (max-width:700px){.bought3{grid-template-columns:1fr}}
+.bought3 b{display:block;font-family:var(--serif);font-size:1.15rem}
+.bought3 .fv{display:block;font-weight:800;font-size:1rem}
+.bought3 .nt,.bought3 .bl{margin:6px 0 0;font-size:.88rem;line-height:1.48;color:var(--ink-2)}
+.bl i,.pnotes i{font-family:var(--serif);font-weight:600;color:var(--ink)}
+.gbars{display:grid;gap:18px;margin-top:8px}
+.gb .gl b{display:block;font-weight:800;font-size:1rem}
+.gb .gl span{font-family:var(--serif);font-weight:700;font-size:1.6rem;letter-spacing:-.02em;line-height:1.1}
+.track{display:flex;height:22px;background:var(--rule-2);margin-top:8px;overflow:hidden}
+.track.thin{height:10px}
+.track i{display:block;height:100%}
+.hatch{background:repeating-linear-gradient(135deg,currentColor 0 2px,transparent 2px 6px);opacity:.75}
+.gv{display:flex;justify-content:space-between;gap:10px;font-family:var(--mono);font-size:.78rem;color:var(--ink-3);margin-top:4px}
+/* dated ledgers */
+.days{list-style:none;margin:20px 0 0;padding:0;max-width:820px}
+.days li{display:grid;grid-template-columns:6.4em minmax(0,1fr);gap:4px 18px;padding:12px 0;border-top:1px solid var(--rule-2);line-height:1.5;color:var(--ink-2)}
+.days li:first-child{border-top:0}
+.days time{font-family:var(--serif);font-style:italic;font-weight:600;color:var(--ink);padding-top:1px}
+.days li.hit{background:var(--gold-1);margin-inline:-12px;padding-inline:12px;border-top-color:var(--gold)}
+.days.small li{font-size:.92rem;padding:8px 0}
+@media (max-width:520px){.days li{grid-template-columns:1fr}}
+details.more{margin-top:14px;border-top:1px solid var(--rule)}
+details.more>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:9px 0;font-weight:700;font-size:.95rem;color:var(--ink-2);min-height:44px}
+details.more>summary::-webkit-details-marker{display:none}
+details.more>summary::before{content:"+";display:inline-flex;align-items:center;justify-content:center;flex:none;width:22px;height:22px;border:1.5px solid var(--ink-2);border-radius:50%;font-weight:800;font-size:.875rem;transition:transform .25s}
+details.more[open]>summary::before{transform:rotate(45deg)}
+details.more .in{padding:2px 0 12px;font-size:.95rem;line-height:1.55;color:var(--ink-2);max-width:80ch}
+details.more .in p{margin:0 0 10px}
+/* flows */
+.flowbox{margin-top:22px;background:var(--sheet);border:1px solid var(--ink);box-shadow:0 2px 3px rgba(22,32,41,.1);padding:18px 20px 12px}
+@media (max-width:520px){.flowbox{padding:14px 12px 10px}}
+.fh{margin:0 0 14px;font-family:var(--serif);font-weight:600;font-size:1.45rem;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.fh small{font-family:var(--face);font-weight:400;font-size:.92rem;color:var(--ink-3)}
+.fh .sw{width:14px;height:14px;display:inline-block}
+.flow{display:block;width:100%;height:auto;overflow:visible}
+.flow.narrow{display:none}
+@media (max-width:760px){.flow.wide{display:none}.flow.narrow{display:block}}
+.flow .hd{font-family:var(--serif);font-style:italic;font-size:13px;fill:var(--ink-3)}
+.flow .fnm{font-family:var(--face);font-size:13px;font-weight:700;fill:var(--ink)}
+.flow .fam{font-family:var(--mono);font-size:12px;fill:var(--ink-2)}
+.flow .fsub{font-family:var(--face);font-style:italic;font-size:11.5px;fill:var(--ink-3)}
+.flow .fl{font-family:var(--serif);font-style:italic;font-size:11px;fill:var(--ink-3)}
+.flow .gift{fill:var(--gold)}
+.flow .con{fill:none;stroke:var(--ink);stroke-width:1;opacity:.45}
+.flow .con.dash{stroke-dasharray:3 4}
+.flow .pbox{opacity:.16}
+.flow .pbox.camp{opacity:.08}
+.flow .pedge{opacity:1}
+.flow .pbar{opacity:1}
+.flow .pbar.camp{opacity:.55}
+.flow .pn{font-family:var(--face);font-size:14px;font-weight:800;fill:var(--ink)}
+.flow .pv{font-family:var(--face);font-size:12px;fill:var(--ink-3)}
+.flow .amt{font-family:var(--mono);font-weight:500;font-size:13px;fill:var(--ink)}
+.flow .rib{opacity:.24}
+.flow .sink{opacity:1}
+.flow .sk{font-family:var(--serif);font-weight:700;font-size:14px;fill:var(--ink)}
+.flow .sv{font-family:var(--serif);font-weight:700;font-size:20px;fill:var(--ink)}
+.flow .ss{font-family:var(--mono);font-size:11px;fill:var(--ink-3)}
+.flow .sep{stroke:var(--rule);stroke-width:1;stroke-dasharray:2 3}
+.flow .sep.strong{stroke:var(--ink);stroke-dasharray:none;stroke-width:1.5}
+.flow .nd,.nest .nd{fill:none;stroke:var(--ink);stroke-width:1.3;stroke-dasharray:4 4}
+.flow .ndt,.nest .ndt{font-family:var(--mono);font-size:11.5px;fill:var(--ink-2)}
+.pnotes{list-style:none;margin:14px 0 4px;padding:12px 0 0;border-top:1px solid var(--rule-2);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 26px}
+@media (max-width:760px){.pnotes{grid-template-columns:1fr}}
+.pnotes li{font-size:.9rem;line-height:1.5;color:var(--ink-2)}
+.pnotes b{color:var(--ink)}
+.legend-nd{display:flex;align-items:center;gap:10px;font-size:.9rem;color:var(--ink-2);margin-top:12px}
+.legend-nd i{width:34px;height:18px;border:1.3px dashed var(--ink);flex:none}
+/* the House */
+.pins{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:22px}
+@media (max-width:900px){.pins{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:440px){.pins{grid-template-columns:1fr}}
+.pin{background:var(--sheet);border:1px solid var(--ink);padding:14px 14px 16px;display:flex;flex-direction:column;gap:4px}
+.pin.pend-card{border-style:dashed;background:transparent}
+.pin .pk{margin:0;font-family:var(--serif);font-style:italic;font-weight:600;font-size:1.05rem}
+.pin .pc{margin:0;font-size:.88rem;line-height:1.4;color:var(--ink-2)}
+.pin .pbig{margin:8px 0 0;font-family:var(--serif);font-weight:700;font-size:clamp(1.7rem,3.2vw,2.3rem);letter-spacing:-.02em;line-height:1}
+.pin .pbig.dim{font-size:1.2rem;font-style:italic;font-weight:600}
+.pin .psub,.pin .pnote{margin:2px 0 6px;font-size:.82rem;color:var(--ink-3)}
+.pin .track i{background:var(--ink)}
+.cr{color:var(--r);font-weight:700}.cd{color:var(--d);font-weight:700}
+.pend{font-family:var(--serif);font-style:italic;color:var(--ink-3)}
+.rank{list-style:none;margin:20px 0 0;padding:0;max-width:820px}
+.rk{display:grid;grid-template-columns:3.4em minmax(0,1fr) 7.6em;gap:10px;align-items:center;padding:5px 0;font-size:.92rem}
+.rk .rn{font-family:var(--serif);font-weight:700}
+.rk .rb{height:14px;background:var(--rule-2);display:block;position:relative}
+.rk .rb i{display:block;height:100%;background:var(--ink)}
+.rk .rb i.dash{background:none;border:1px dashed var(--rule);height:100%;width:100%}
+.rk.pinned .rn{color:var(--sky)}
+.rk.pinned .rb i{background:var(--sky)}
+.rk .rv{font-family:var(--mono);font-size:.82rem;text-align:right}
+.rk.pend .rv{font-family:var(--serif);font-style:italic;color:var(--ink-3)}
+.picker{margin-top:26px}
+.pbtns{display:grid;grid-template-columns:repeat(15,minmax(0,1fr));gap:6px}
+@media (max-width:640px){.pbtns{grid-template-columns:repeat(8,minmax(0,1fr))}}
+.pick{appearance:none;border:1px solid var(--ink);background:var(--sheet);color:var(--ink);font-family:var(--serif);font-weight:700;font-size:1.05rem;min-height:44px;cursor:pointer;padding:0}
+.pick.pinned{border-width:2px;border-color:var(--sky)}
+.pick.pend{border-style:dashed;color:var(--ink-3)}
+.pick[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.leg{display:flex;flex-wrap:wrap;gap:6px 18px;margin:12px 0 0;font-size:.85rem;color:var(--ink-3)}
+.leg i{display:inline-block;width:12px;height:12px;margin-right:6px;vertical-align:-1px}
+.panels{margin-top:14px}
+.dpanel{background:var(--sheet);border:1px solid var(--ink);box-shadow:0 2px 3px rgba(22,32,41,.1);padding:18px 20px;margin-top:12px}
+.js .dpanel{display:none}.js .dpanel.on{display:block}
+.dpanel h3{margin:0;font-family:var(--serif);font-weight:600;font-size:1.7rem;letter-spacing:-.01em}
+.dpanel .pc{margin:4px 0 0;font-size:1rem}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 20px;margin:14px 0 0;padding:12px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+@media (max-width:640px){.facts{grid-template-columns:1fr}}
+.facts dt{font-family:var(--serif);font-style:italic;font-size:.9rem;color:var(--ink-3)}
+.facts dd{margin:2px 0 0;font-size:.98rem}
+.facts dd b{font-family:var(--serif);font-size:1.4rem}
+.pay{list-style:none;margin:14px 0 0;padding:0}
+.pay li{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) 7em;gap:10px;align-items:center;padding:6px 0;border-top:1px solid var(--rule-2);font-size:.92rem}
+.pay li:first-child{border-top:0}
+.pay .pnm em{display:block;font-size:.8rem;color:var(--ink-3)}
+.pay .pnm em.dim{font-style:italic}
+.pay .pb{height:12px;background:var(--rule-2);display:block}
+.pay .pb i{display:block;height:100%}
+.pay .pv{font-family:var(--mono);font-size:.82rem;text-align:right}
+@media (max-width:560px){.pay li{grid-template-columns:minmax(0,1fr) 6.4em}.pay .pb{grid-column:1/-1;grid-row:2}}
+.dpanel .bl{margin:12px 0 0;font-size:.9rem;color:var(--ink-2)}
+.where{margin:4px 0 0;font-size:.9rem;color:var(--ink-3)}
+.facts dd small{display:block;font-size:.8rem;line-height:1.4;color:var(--ink-3);margin-top:2px}
+.facts dd b.big{font-size:1.6rem;letter-spacing:-.02em}
+.facts .cm{display:block;margin-bottom:4px}
+.facts .cm b{font-family:var(--face);font-size:.95rem}
+.allin{margin:12px 0 0;font-size:.95rem;color:var(--ink-2)}
+.allin b{font-family:var(--serif);font-size:1.15rem;color:var(--ink)}
+.ph{margin:16px 0 0;font-family:var(--serif);font-style:italic;font-weight:600;font-size:1rem;color:var(--ink-2)}
+.rk .rb{display:flex}
+.rk .rb i.out{background:var(--ink)}
+.rk .rb i.cand{background:var(--sky);opacity:.55}
+.rk.pinned .rb i.out{background:var(--ink)}
+.rk a.rn{color:var(--ink);text-decoration:none}
+.rk.pinned a.rn{color:var(--sky)}
+.rk .rv b{font-family:var(--mono);font-weight:500}
+.rk .rv span{display:block;font-size:.72rem;color:var(--ink-3)}
+.rk{grid-template-columns:3.4em minmax(0,1fr) 8.6em}
+a.pin{color:inherit;text-decoration:none}
+a.pin:hover{box-shadow:0 4px 12px rgba(22,32,41,.14)}
+.flow .fnm.s{font-size:12px;font-weight:500}
+.flow .fam.s{font-size:11px}
+.gapkey{background:var(--gold-1)!important;border:1px solid var(--gold)}
+/* what it bought */
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:20px}
+@media (max-width:760px){.two{grid-template-columns:1fr}}
+.two .sheet{margin:0}
+.two h3{margin:0 0 10px;font-family:var(--serif);font-weight:600;font-size:1.25rem}
+.stack{display:flex;height:34px;border:1px solid var(--ink);overflow:hidden}
+.stack .seg{display:block;height:100%}
+.mixl{list-style:none;margin:12px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 16px;font-size:.88rem;color:var(--ink-2)}
+.mixl i{display:inline-block;width:11px;height:11px;margin-right:6px;border:1px solid var(--rule);vertical-align:-1px}
+.mixl b{color:var(--ink)}
+.mkts{list-style:none;margin:0;padding:0}
+.mkts li{display:grid;grid-template-columns:6.5em minmax(0,1fr) 7.5em;gap:10px;align-items:center;padding:6px 0;font-size:.95rem}
+.mkts .mn{font-weight:700}
+.mkts .mb{height:18px;background:var(--rule-2);display:block}
+.mkts .mb i{display:block;height:100%;background:var(--sky)}
+.mkts .mv{font-family:var(--mono);font-size:.82rem;text-align:right}
+.themes{margin:16px 0 0;padding-left:20px;max-width:76ch}
+.themes li{margin:8px 0;line-height:1.5;color:var(--ink-2)}
+.bignum{font-family:var(--serif);font-weight:700;font-size:clamp(2.2rem,5vw,3.4rem);letter-spacing:-.03em;line-height:1;margin:6px 0 4px;color:var(--ink)}
+/* the rules */
+.rules{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,400px);gap:22px 34px;align-items:start;margin-top:22px}
+@media (max-width:860px){.rules{grid-template-columns:1fr}.rules .nestwrap{max-width:420px}}
+.rules h3{font-family:var(--serif);font-weight:600;font-size:1.2rem;margin:20px 0 4px}
+.rules h3:first-child{margin-top:0}
+.rules p{margin:0;color:var(--ink-2);line-height:1.55}
+.nest{display:block;width:100%;height:auto;overflow:visible}
+.nest .box{fill:var(--sheet);stroke:var(--ink);stroke-width:1.4}
+.nest .ndbox{fill:none;stroke:var(--ink);stroke-width:1.4;stroke-dasharray:6 5}
+.nest .nk{font-family:var(--serif);font-weight:700;font-size:17px;fill:var(--ink)}
+.nest .ns{font-family:var(--face);font-size:12.5px;fill:var(--ink-2)}
+.nest .ns.c{font-style:italic;fill:var(--ink-3)}
+.nest .na{font-family:var(--mono);font-size:12px;fill:var(--r)}
+.nest .ln{fill:none;stroke:var(--ink);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.nest .lt{fill:none;stroke:var(--ink);stroke-width:2;stroke-linecap:round}
+.nest .tv{fill:var(--sheet);stroke:var(--ink);stroke-width:2}
+.nest .scr{fill:var(--sky-1);stroke:var(--ink);stroke-width:1}
+.nest .dis{fill:var(--ink)}
+.nest .dt{font-family:var(--face);font-size:9.6px;font-weight:700;fill:#fff}
+.tline{display:block;width:100%;height:auto;margin-top:22px;overflow:visible}
+.tline .ln{stroke:var(--ink);stroke-width:2}
+.tline .lt{stroke:var(--ink);stroke-width:1;opacity:.5}
+.tline .gap{fill:var(--gold-1);stroke:var(--gold);stroke-width:1}
+.tline .pt{fill:var(--ink)}
+.tline .td{font-family:var(--serif);font-style:italic;font-weight:600;font-size:14px;fill:var(--ink)}
+.tline .tl{font-family:var(--face);font-size:12px;fill:var(--ink-2)}
+.tline-list{display:none}
+@media (max-width:760px){.tline{display:none}.tline-list{display:block}}
+/* sources */
+.srcs{margin:64px 0 0;padding-top:20px;border-top:2px solid var(--ink)}
+.srcs h2{font-family:var(--serif);font-weight:600;font-size:1.6rem;margin:0 0 6px}
+ol.src{margin:10px 0 0;padding-left:26px;columns:2;column-gap:34px}
+@media (max-width:760px){ol.src{columns:1}}
+ol.src li{margin:0 0 8px;font-size:.88rem;line-height:1.45;color:var(--ink-2);break-inside:avoid;overflow-wrap:anywhere}
+ol.src li:target{background:var(--gold-1);outline:1px solid var(--gold)}
+footer{margin-top:44px;padding-top:18px;border-top:2px solid var(--ink);max-width:820px}
+footer p{margin:0;font-size:1rem;line-height:1.6;color:var(--ink-2)}
+footer p.sm{margin-top:8px;font-size:.92rem;color:var(--ink-3)}
+/* motion: lines draw, bars grow; off for reduced motion and without script */
+.mo .grow{transform-origin:0 50%;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.mo .wait .grow{transform:scaleX(0)}
+.mo .draw-p{transition:stroke-dashoffset 1.6s cubic-bezier(.4,0,.2,1)}
+.mo .wait .draw-p{stroke-dashoffset:var(--len)}
+.mo .rib{transition:opacity 1s ease .2s}
+.mo .wait .rib{opacity:0}
+.mo .wv{animation:pulse 3.6s ease-in-out infinite}
+.mo .wv.b{animation-delay:.5s}.mo .wv.c{animation-delay:1s}
+@keyframes pulse{0%,100%{opacity:.25}50%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.mo .grow,.mo .draw-p,.mo .rib{transition:none}.mo .wait .grow{transform:none}.mo .wait .draw-p{stroke-dashoffset:0}.mo .wait .rib{opacity:.24}.mo .wv{animation:none}}
+</style>
+</head>
+<body>
+<div class="dnsc-back"><a href="https://tools.dnsc.ai/">&larr; The Well</a><span>&middot;</span><a href="https://dnsc.ai">dnsc.ai</a></div>
+<div class="wrap">
+
+<header class="top">
+  <div class="brand">
+    <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="16" fill="none" stroke="#162029" stroke-width="2.4"/><g fill="#162029"><circle cx="20" cy="7" r="2.6"/><circle cx="32.4" cy="16" r="2.6"/><circle cx="27.6" cy="30.5" r="2.6"/><circle cx="12.4" cy="30.5" r="2.6"/><circle cx="7.6" cy="16" r="2.6"/></g></svg>
+    <div class="nm">DNSC<span>From the public record</span></div>
+  </div>
+  <div class="ref"><span>The money in the air</span><span>Understanding the week, from the record</span></div>
+</header>
+
+<section class="hero">
+  <div>
+    <p class="k">Ohio, the 2026 election</p>
+    <h1><span class="big">$423 million</span> in ads on one Ohio Senate race.</h1>
+    <p class="lede">Ohio's U.S. Senate race had drawn {{senate.cycles.2}} in political advertising by October 15, aired and booked ahead, by the ad tracker AdImpact's count. [[c:spectrum-oct15,ocj-oct20]] As of October 12, {{senate.cycles.2.reserved}} of that advertising was reserved and not yet aired, for the weeks before Election Day on November 3. [[c:ocj-oct20]] About {{senate.outside_2026}} of the {{senate.cycles.2}} came from groups other than the two candidates' campaigns. [[c:spectrum-oct15]] In the race for governor, advertisers on the Republican side had aired or reserved $114.6 million by October 8, and those on the Democratic side $39.9 million. [[c:ocj-oct20]]</p>
+    <p class="stamp"><time datetime="{{meta.published}}">Published {{date:meta.published}}</time> &middot; figures through {{date:meta.through}}</p>
+  </div>
+  <div class="air" aria-hidden="true">
+    <svg viewBox="0 0 300 250">
+      <path class="wv" d="M112,58 A40,40 0 0 1 188,58"/>
+      <path class="wv b" d="M94,46 A62,62 0 0 1 206,46"/>
+      <path class="wv c" d="M76,34 A84,84 0 0 1 224,34"/>
+      <circle cx="150" cy="70" r="5" fill="#162029"/>
+      <path class="ln" d="M150,75 L118,236 M150,75 L182,236 M128,186 L172,186 M134,150 L166,150 M140,116 L160,116 M128,186 L166,150 M172,186 L134,150 M134,150 L160,116 M166,150 L140,116"/>
+      <path class="ln" d="M96,236 L204,236"/>
+      <rect x="8" y="150" width="70" height="48" rx="5" fill="#fff" stroke="#162029" stroke-width="2"/>
+      <rect x="14" y="186" width="58" height="7" fill="#162029"/>
+      <rect x="232" y="146" width="34" height="60" rx="6" fill="#fff" stroke="#162029" stroke-width="2"/>
+      <rect x="236" y="190" width="26" height="5" fill="#162029"/>
+      <path class="gd" d="M44,150 Q60,96 112,80 M248,146 Q244,100 190,80"/>
+      <text x="8" y="216">paid for by</text>
+      <text x="216" y="222">paid for by</text>
+    </svg>
+  </div>
+</section>
+
+<nav class="jump" aria-label="On this page"><ul>
+  <li><a href="#totals">The totals</a></li>
+  <li><a href="#week">The dates</a></li>
+  <li><a href="#senate-money">Senate: who pays</a></li>
+  <li><a href="#governor-money">Governor: who pays</a></li>
+  <li><a href="#house">The House races</a></li>
+  <li><a href="#bought">What it bought</a></li>
+  <li><a href="#rules">The rules</a></li>
+  <li><a href="#sources">Sources</a></li>
+</ul></nav>
+
+<section class="ch" id="totals">
+  <p class="k">The totals</p>
+  <h2>Senate ads in Ohio: $106 million in 2022, $483.4 million in 2024, $423 million by October 15, 2026.</h2>
+  <p class="dek">AdImpact counts the advertising in a race across broadcast, cable, satellite, radio, streaming and digital, including time booked ahead. Its 2026 count includes the candidates' own ads; {{senate.outside_2026|short}} of the {{senate.cycles.2|short}} came from outside groups. In 2024 the outside share was {{senate.outside_share_2024}}. [[c:spectrum-jun5]] Figures are in the dollars of each year.</p>
+  <div class="totals">
+    <div class="sheet">
+      <h3>U.S. Senate, general election</h3>
+      <p class="sub">AdImpact, each cycle, aired and booked ahead. The dotted bracket is the part of the 2026 count still reserved, not yet aired, as of October 12.</p>
+      <!--@senate_line-->
+      <details class="more"><summary>How the 2026 count grew, as published</summary><div class="in"><!--@growth--></div></details>
+    </div>
+    <div class="sheet">
+      <h3>Governor, 2026: {{governor.race}}</h3>
+      <p class="sub">Aired, solid; reserved, striped.</p>
+      <!--@gov_bars-->
+      <p class="note">By July the race for governor had drawn {{governor.july_2026}} in ads, double the entire 2022 race for the office, by AdImpact's count. <span class="tag">reported</span> [[c:ocj-jul21]]</p>
+    </div>
+  </div>
+  <details class="more"><summary>Two ways of counting the same race</summary><div class="in">
+    <p>AdImpact estimates the value of the airtime and digital space bought, including reservations. The Federal Election Commission counts what each committee reports it spent. Through October 23, 2026, {{senate.fec_outside.filers|n}} outside committees had reported {{senate.fec_outside}} in the Senate general election to the FEC, and the two campaigns had spent $79.6 million through October 14. [[c:votelog,fec-brown,fec-husted]] Ads from 501(c)(4) nonprofits that do not expressly call for a vote are reported to the FEC only in part, or not at all. Both counts are correct for what they count.</p>
+    <p>AdImpact projects {{senate.statewide_projection}} in political advertising across all Ohio races this cycle. [[c:spectrum-oct16]]</p>
+  </div></details>
+</section>
+
+<section class="ch" id="week">
+  <p class="k">The dates</p>
+  <h2>From the FEC's October reports to Election Day.</h2>
+  <!--@week-->
+</section>
+
+<section class="ch" id="senate-money">
+  <p class="k">Who pays: the Senate</p>
+  <h2>Who paid for the Senate ads, and who gave them the money.</h2>
+  <p class="dek">Each committee that reported spending in the race, sized by what it spent in Ohio, with the donors it reported to the FEC on the left. A dashed box marks money whose donors are not disclosed.</p>
+  <!--@flow_senate-->
+  <p class="legend-nd"><i></i>Not disclosed: no donor itemized in the committee's FEC reports through October 14, 2026, or a nonprofit that does not file its donors.</p>
+</section>
+
+<section class="ch" id="governor-money">
+  <p class="k">Who pays: the governor</p>
+  <h2>Who paid for the governor's race ads, and who gave them the money.</h2>
+  <p class="dek">The race for governor reports to the Ohio Secretary of State, on a different calendar from the FEC. Its pre-general reports, covering activity through October 14, were due October 22 at 4 p.m. [[c:orc-3517-10,ohsos-cf]]</p>
+  <!--@flow_governor-->
+</section>
+
+<section class="ch" id="house">
+  <p class="k">The House</p>
+  <h2>Ohio's 15 House races: $16.8 million from outside groups in the 7th, $10,178 in the 8th.</h2>
+  <p class="dek">Outside money is what super PACs, party committees and other groups reported spending for or against a candidate, apart from the campaigns. The 8th, beside the 7th, the 1st and the 10th; then all fifteen, by the money raised and spent in each.</p>
+  <!--@house_pinned-->
+  <!--@house_rank-->
+  <!--@house_picker-->
+  <p class="fn">{{house.note}} [[c:fec-data]]</p>
+</section>
+
+<section class="ch" id="bought">
+  <p class="k">What it bought</p>
+  <h2>What the money bought: airtime, markets, weeks on air.</h2>
+  <p class="dek">Where a tracker or a filing names what a dollar bought, it sits beside the dollar above. Here is the rest of the record on the mix, the markets and the messages.</p>
+  <div class="two">
+    <div class="sheet">
+      <h3>The mix, governor's race, early summer</h3>
+      <!--@mix-->
+    </div>
+    <div class="sheet">
+      <h3>The markets</h3>
+      <!--@markets-->
+      <p class="note">In 2024, the Cleveland market alone took $132.9 million of the Senate race's advertising, the most of any market; Democrats led only in the Fort Wayne and Lexington markets. [[c:adimpact-2024]]</p>
+    </div>
+  </div>
+  <div class="sheet">
+    <h3 style="margin:0;font-family:var(--serif);font-weight:600;font-size:1.25rem">Across the country</h3>
+    <p class="bignum">{{bought.national}}</p>
+    <p class="note" style="margin-top:0">{{bought.national.note}}, the most on its record. [[c:insideradio-aug19]]</p>
+  </div>
+  <h3 style="font-family:var(--serif);font-weight:600;font-size:1.3rem;margin:28px 0 0">The messages, as the sponsors and trackers name them</h3>
+  <!--@themes-->
+  <details class="more"><summary>AI-made ads in Ohio and the country</summary><div class="in"><!--@ai--></div></details>
+</section>
+
+<section class="ch" id="rules">
+  <p class="k">The rules</p>
+  <h2>What the disclaimer laws require, and when the donors appear.</h2>
+  <div class="rules">
+    <div>
+      <h3>On the ad</h3>
+      <p>{{rules.federal}}</p>
+      <h3>In Ohio</h3>
+      <p>{{rules.ohio}} The October 20 video in the governor's race first circulated without a "paid for" tag. [[c:ap-oct20]]</p>
+      <h3>Behind the name on the ad</h3>
+      <p>{{rules.c4}}</p>
+      <h3>When the donors appear</h3>
+      <p>{{rules.late}}</p>
+      <p style="margin-top:10px">{{rules.state_gap}}</p>
+    </div>
+    <div class="nestwrap"><!--@nest--></div>
+  </div>
+  <!--@timeline-->
+</section>
+
+
+<section class="srcs" id="sources">
+  <h2>Sources</h2>
+  <p class="fn" style="margin-top:0">Read October 21, 2026; figures refreshed October 23, 2026, from the October 22 pre-general reports. Ad-tracker figures are AdImpact's as published by the outlets named; committee figures are from FEC filings, read directly or as compiled by Votelog and PaidForPolitics, with the FEC as the primary record, and from the Ohio Secretary of State's files for the race for governor. Marked <span class="tag">reported</span>: carried by a named outlet, the underlying page or filing not read in full.</p>
+  <!--@sources-->
+</section>
+
+<footer>
+  <p>Built by <b>Dustin Nimmo</b>, founder of <a href="https://dnsc.ai">DNSC</a> in West&nbsp;Chester, Ohio.</p>
+  <p class="sm">Last verified {{date:meta.verified}}. If a fact here is wrong, say so and it will be fixed and noted.</p>
+  <p class="sm ai-twin">For AIs: <a href="index.md">this page as text</a> &middot; <a href="/llms.txt">site index</a> &middot; <a href="data.json">the record as data</a></p>
+</footer>
+</div>
+<!--@record-->
+<script>
+(function(){
+  var D=document,H=D.documentElement;H.classList.add('js');
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* the House picker */
+  var btns=[].slice.call(D.querySelectorAll('.pick')),panels=[].slice.call(D.querySelectorAll('.dpanel'));
+  function show(n,init){btns.forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.n==n));});
+    panels.forEach(function(p){var on=p.dataset.n==n;p.classList.toggle('on',on);if(on)arm(p);});
+    /* the hash is written only when a reader picks a district: written on load, the browser would scroll to the picker */
+    if(!init){try{history.replaceState(null,'','#oh'+('0'+n).slice(-2));}catch(e){}}}
+  btns.forEach(function(b){b.addEventListener('click',function(){show(b.dataset.n);});});
+  [].slice.call(D.querySelectorAll('a.pin[data-n],.rk a.rn[data-n]')).forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();show(a.dataset.n);var pk=D.querySelector('.picker');if(pk)pk.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});});});
+  var m=/^#oh(\d\d)$/.exec(location.hash);show(m?+m[1]:8,true);
+  /* motion */
+  function arm(el){if(el._armed||!H.classList.contains('mo'))return;el._armed=1;requestAnimationFrame(function(){requestAnimationFrame(function(){el.classList.remove('wait');});});}
+  if(reduce||!('IntersectionObserver' in window))return;
+  H.classList.add('mo');
+  [].slice.call(D.querySelectorAll('.draw-p')).forEach(function(p){var l=Math.ceil(p.getTotalLength())+2;p.style.strokeDasharray=l;p.style.setProperty('--len',l);});
+  var targets=[].slice.call(D.querySelectorAll('.chartbox,.gbars,.flowbox,.pins,.rank,.mix,.mkts'));
+  var vh=innerHeight;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('wait');io.unobserve(e.target);}});},{threshold:.15});
+  targets.forEach(function(t){var r=t.getBoundingClientRect();if(r.top<vh&&r.bottom>0)return;t.classList.add('wait');io.observe(t);});
+})();
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4cca1d9e1eab422b9abffe2ffd5a9399"}'></script><!-- End Cloudflare Web Analytics -->
+</body></html>
