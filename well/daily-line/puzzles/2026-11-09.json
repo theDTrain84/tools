@@ -1,0 +1,67 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-11-09",
+ "size": 5,
+ "g": [
+  "ANT##",
+  "COIL#",
+  "ERROR",
+  "#MENU",
+  "##DEN"
+ ],
+ "a": [
+  [
+   "ANT",
+   "Picnic marcher"
+  ],
+  [
+   "COIL",
+   "Rope wound in a circle"
+  ],
+  [
+   "ERROR",
+   "Name it plainly, then fix it at the source"
+  ],
+  [
+   "MENU",
+   "What the kitchen offers tonight"
+  ],
+  [
+   "DEN",
+   "Fox's home"
+  ]
+ ],
+ "d": [
+  [
+   "ACE",
+   "Top card in the deck"
+  ],
+  [
+   "NORM",
+   "The usual way"
+  ],
+  [
+   "TIRED",
+   "Ready for bed"
+  ],
+  [
+   "LONE",
+   "Only one"
+  ],
+  [
+   "RUN",
+   "Go at a jog"
+  ]
+ ],
+ "w": "ERROR",
+ "n": "An AI will get things wrong. The useful habit is how the mistake gets named: say what was wrong in one plain line, say where it came from, then fix the source, which is the note, the rule or the file the AI read before it answered. Fixing only the answer means the same mistake comes back tomorrow. Fixing the source means it leaves for good.",
+ "sources": [],
+ "checked": true,
+ "_theme_placed": [
+  "ERROR"
+ ],
+ "_seconds": 0.0,
+ "cooked": "2026-11-09T06:12:00-05:00",
+ "no": 29
+}

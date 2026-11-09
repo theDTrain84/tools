@@ -1,0 +1,104 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-11-09",
+ "size": 5,
+ "g": [
+  "ADD##",
+  "CORD#",
+  "TREAT",
+  "#MATE",
+  "##MAN"
+ ],
+ "a": [
+  [
+   "ADD",
+   "Put in more"
+  ],
+  [
+   "CORD",
+   "Lamp's lifeline"
+  ],
+  [
+   "TREAT",
+   "Something sweet after dinner"
+  ],
+  [
+   "MATE",
+   "Partner at the table"
+  ],
+  [
+   "MAN",
+   "Grown boy"
+  ]
+ ],
+ "d": [
+  [
+   "ACT",
+   "Do something"
+  ],
+  [
+   "DORM",
+   "College sleeping quarters"
+  ],
+  [
+   "DREAM",
+   "Anthropic's Nov. 6 post on agent memory names four parts, transcripts, notes, wikis and injected context, and calls the offline pass that reorganizes them a ___; one model that kept nine memory files earned four Pokemon badges where another with 413 files earned one",
+   {
+    "src": "https://www.anthropic.com/research/components-of-agent-memory"
+   }
+  ],
+  [
+   "DATA",
+   "Ai2's ToyBlocks, posted Nov. 6, opens a robot-arm simulation with 85,336 demonstrations and 144 million frames of ___ for learning to stack blocks",
+   {
+    "src": "https://huggingface.co/blog/allenai/toyblocks"
+   }
+  ],
+  [
+   "TEN",
+   "Half a score"
+  ]
+ ],
+ "w": "DREAM",
+ "n": "Six documents from the weekend. Anthropic's engineering post on agent memory names four parts, a searchable transcript, memory notes, a memory representation such as a wiki, and the context injected at the start, and calls the offline pass that reorganizes them dreaming. Its numbers argue for fewer, better notes: one model wrote 413 memory files across 225 folders and earned one badge in a Pokemon game, while a newer model wrote nine files in two folders and earned four; a wiki built over 350,000 files answered 48 percent of questions after 128 sessions, up from 13. Ai2 opened ToyBlocks, a tabletop robot world with 85,336 demonstrations and 144 million frames, where the agent solved 30 of 30 stacking tasks and a skill learned in simulation scored 80 percent there and 81.1 on the real arm. Nvidia published two pieces from Korea: a chip startup will link its decode processors to Nvidia racks for sovereign AI systems due in 2028, and a two-day Seoul event released deployment recipes for four Korean open models. Nvidia's 6G roundup reports a university model that forecasts network demand ten minutes ahead so base stations can sleep, cutting radio power 45.6 percent. The European Commission preliminarily found a short-video recommender in breach of the Digital Services Act for its rabbit-hole effect. For your work: the memory post is the one to read. Give your AI one place for notes, keep the notes few and plain, and let it reorganize them on a schedule instead of piling up files. The Well is cooked on Anthropic's models, for the record.",
+ "sources": [
+  {
+   "title": "The components of agent memory: transcripts, notes, wikis, injected context, and dreaming as the offline reorganizing pass; nine files and four badges against 413 files and one; wiki over 350,000 files from 13 to 48 percent across 128 sessions (Anthropic)",
+   "url": "https://www.anthropic.com/research/components-of-agent-memory",
+   "date": "2026-11-06"
+  },
+  {
+   "title": "ToyBlocks: a controlled tabletop world for robot learning, 85,336 demonstrations, about 1,600 hours, 144 million frames; 30 of 30 stacking tasks; 80.0 percent in simulation and 81.1 on the real arm (Ai2 on Hugging Face)",
+   "url": "https://huggingface.co/blog/allenai/toyblocks",
+   "date": "2026-11-06"
+  },
+  {
+   "title": "Open source 6G research roundup: developer adoption up 10x in a year, over a million downloads; base-station sleep forecasting cuts radio power 45.6 percent; neural receiver gains up to about 60 percent (NVIDIA)",
+   "url": "https://blogs.nvidia.com/blog/telco-open-source-tools-research-6g-networks/",
+   "date": "2026-11-06"
+  },
+  {
+   "title": "Preliminary finding that a short-video recommender breaches the Digital Services Act for its rabbit-hole effect; the findings cover risk assessment and mitigation (European Commission)",
+   "url": "https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-tiktoks-you-feed-breach-digital-services-act-harmful-rabbit-holes",
+   "date": "2026-11-06"
+  },
+  {
+   "title": "NVLink Fusion collaboration for sovereign AI in Korea: GPUs handle prefill, a startup's R200 processors handle decode, on the MGX rack design, systems expected ready in 2028 (NVIDIA newsroom)",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-rebellions-and-sk-telecom-announce-collaboration-to-advance-sovereign-ai-infrastructure-with-nvidia-nvlink-fusion",
+   "date": "2026-11-08"
+  },
+  {
+   "title": "AI Day Seoul, Nov. 8 to 9: more than 2,000 attendees; deployment recipes for four Korean open models; over 20 startups at the partnership forum (NVIDIA)",
+   "url": "https://blogs.nvidia.com/ai-day-seoul-2026/",
+   "date": "2026-11-08"
+  }
+ ],
+ "checked": true,
+ "_theme_placed": [
+  "DREAM"
+ ],
+ "_seconds": 0.0,
+ "cooked": "2026-11-09T06:19:00-05:00",
+ "no": 26
+}
