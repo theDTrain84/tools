@@ -1,0 +1,67 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-11-10",
+ "size": 5,
+ "g": [
+  "##TWO",
+  "#GRIN",
+  "FLUTE",
+  "LUSH#",
+  "YET##"
+ ],
+ "a": [
+  [
+   "TWO",
+   "One plus one"
+  ],
+  [
+   "GRIN",
+   "Smile that shows teeth"
+  ],
+  [
+   "FLUTE",
+   "Silver woodwind held sideways"
+  ],
+  [
+   "LUSH",
+   "Thick and green, as a lawn"
+  ],
+  [
+   "YET",
+   "Still, as of now"
+  ]
+ ],
+ "d": [
+  [
+   "FLY",
+   "Take to the air"
+  ],
+  [
+   "GLUE",
+   "What holds the pieces together"
+  ],
+  [
+   "TRUST",
+   "Built from a record you can read"
+  ],
+  [
+   "WITH",
+   "In the company of"
+  ],
+  [
+   "ONE",
+   "A single thing"
+  ]
+ ],
+ "w": "TRUST",
+ "n": "Trust in an AI is built the same way trust in a colleague is built, from a record you can read. One line per action with the time on it, a source under every fact, the draft shown to you before anything is sent. If you can read what it did and why, you can hand it more. If you cannot, keep it small until you can.",
+ "sources": [],
+ "checked": true,
+ "_theme_placed": [
+  "TRUST"
+ ],
+ "_seconds": 0.2,
+ "cooked": "2026-11-10T05:40:00-05:00",
+ "no": 30
+}

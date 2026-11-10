@@ -1,0 +1,106 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-11-10",
+ "size": 5,
+ "g": [
+  "##AGO",
+  "#PLAN",
+  "FABLE",
+  "OPUS#",
+  "RAM##"
+ ],
+ "a": [
+  [
+   "AGO",
+   "In the past"
+  ],
+  [
+   "PLAN",
+   "What you make before you build"
+  ],
+  [
+   "FABLE",
+   "Anthropic's Nov. 9 release pairs Claude ___ 5.2 with Mythos 5.2 on one underlying model; about 1,000 of its agents formalized Fermat's Last Theorem in Lean in 30 hours, a proof seven times shorter than the 11-day one before it",
+   {
+    "src": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+   }
+  ],
+  [
+   "OPUS",
+   "Composer's numbered work"
+  ],
+  [
+   "RAM",
+   "Memory a computer uses while it works"
+  ]
+ ],
+ "d": [
+  [
+   "FOR",
+   "In favor of"
+  ],
+  [
+   "PAPA",
+   "Dad, to a toddler"
+  ],
+  [
+   "ALBUM",
+   "Record with a full side of songs"
+  ],
+  [
+   "GALS",
+   "Women, casually"
+  ],
+  [
+   "ONE",
+   "Single"
+  ]
+ ],
+ "w": "FABLE",
+ "n": "Six documents from Monday. Anthropic released Claude Fable 5.2 and Claude Mythos 5.2, the same model under two names, Fable for everyone and Mythos for vetted organizations, at $8 per million input tokens and $40 per million output; its post reports about 1,000 Fable 5.2 agents formalizing Fermat's Last Theorem in Lean in 30 hours, and three working devices the model designed. Google unveiled two eighth-generation TPUs, the 8i Max, which doubles the compute and memory bandwidth of the 8i in the same rack space, and the 8tx, built for confidential computing. Meta's research lab shipped Muse Ember, its smallest model, at 10 cents per million input tokens with a one-million-token window. OpenAI listed ChatGPT Enterprise in the AWS Marketplace and described Control Room, a central system that can halt model workloads when a safety or security concern appears. Nvidia presented GR00T 2 at the robot-learning conference in Austin, trained on 100,000 hours of open human video, completing 40 of 50 tasks at least once with no task-specific demonstrations. MIT published WorldParticle, one model that simulates sand, cloth and folding proteins by predicting particle motion, about 100 times faster than numerical simulators on proteins. For your work: the price list is the story. The newest frontier model costs $8 per million words in, and a usable small model from Meta costs ten cents. Pick the smallest model that does the job and keep the big one for the hard calls. The Well is cooked on Anthropic's models, for the record, and today's edition was cooked on Fable 5.1, the one before this release.",
+ "sources": [
+  {
+   "title": "Claude Fable 5.2 and Claude Mythos 5.2: one model, two names; $8 and $40 per million tokens; fast mode at $16 and $80; about 1,000 agents formalized Fermat's Last Theorem in Lean in 30 hours; on AWS, Google Cloud and Azure (Anthropic)",
+   "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+   "date": "2026-11-09"
+  },
+  {
+   "title": "TPU 8tx for confidential computing and TPU 8i Max, two 8i chips on one package, double the compute, SRAM and HBM bandwidth in the same rack footprint; four TPU systems in one year (Google)",
+   "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+   "date": "2026-11-09"
+  },
+  {
+   "title": "Muse Ember: the lab's smallest and cheapest model, $0.10 per million input and $0.50 per million output, one-million-token context, 512K output; first model trained with Muse Wonder Full (Meta Superintelligence Labs)",
+   "url": "https://research.meta.ai/blog/muse-ember",
+   "date": "2026-11-09"
+  },
+  {
+   "title": "Control Room: a central system to track and stop model workloads across research infrastructure when safety or security concerns arise (OpenAI)",
+   "url": "https://openai.com/index/control-room",
+   "date": "2026-11-09"
+  },
+  {
+   "title": "ChatGPT Enterprise in the AWS Marketplace, bought through existing AWS billing, spend counting toward AWS commitments (OpenAI)",
+   "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+   "date": "2026-11-09"
+  },
+  {
+   "title": "GR00T 2 and Isaac Lab 3.0 at the Conference on Robot Learning: an open world-action model trained on 100,000 hours of human egocentric video, 40 of 50 tasks with no demos, 71 percent with one demo and 95 with five; Newton physics up to 2.5x training throughput (NVIDIA)",
+   "url": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
+   "date": "2026-11-09"
+  },
+  {
+   "title": "WorldParticle: one model simulates six physical phenomena from sliding sand to folding proteins by predicting particle motion, about 100x faster than numerical simulators on protein structure changes; open-access paper on arXiv (MIT)",
+   "url": "https://news.mit.edu/2026/single-ai-model-simulates-many-substances-behavior-1109",
+   "date": "2026-11-09"
+  }
+ ],
+ "checked": true,
+ "_theme_placed": [
+  "FABLE"
+ ],
+ "_seconds": 0.1,
+ "cooked": "2026-11-10T05:46:00-05:00",
+ "no": 27
+}
