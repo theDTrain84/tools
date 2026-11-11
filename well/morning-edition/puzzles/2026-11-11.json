@@ -1,0 +1,106 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-11-11",
+ "size": 5,
+ "g": [
+  "##WON",
+  "#TRUE",
+  "CHART",
+  "REPS#",
+  "YES##"
+ ],
+ "a": [
+  [
+   "WON",
+   "Came in first"
+  ],
+  [
+   "TRUE",
+   "Checked and found right"
+  ],
+  [
+   "CHART",
+   "Google Cloud's Nov. 10 Gemini for healthcare, in U.S. preview, reads a patient's ___ in Epic and Oracle Health with no write-back to the record",
+   {
+    "src": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-for-healthcare"
+   }
+  ],
+  [
+   "REPS",
+   "Sets at the gym, or the sales team"
+  ],
+  [
+   "YES",
+   "The go"
+  ]
+ ],
+ "d": [
+  [
+   "CRY",
+   "Call out, or shed tears"
+  ],
+  [
+   "THEE",
+   "You, in old verse"
+  ],
+  [
+   "WRAPS",
+   "Lunch rolled in a tortilla"
+  ],
+  [
+   "OURS",
+   "Belonging to us"
+  ],
+  [
+   "NET",
+   "What is left after the fees"
+  ]
+ ],
+ "w": "CHART",
+ "n": "Seven documents from Tuesday. Anthropic launched the roadshow for its public offering: 825,000,000 Class A shares at an expected $70 to $78 each, with an application to list on the Nasdaq Global Select Market under the symbol ANT. Google DeepMind introduced AlphaProof Code, a team of agents that wrote more than six million lines of Lean proof for Signal's core cryptographic code in four weeks and flagged about one percent of it for human review. DeepMind also released Gemini Robotics 2.5, tested on 200 tasks with 30 to 100 percent higher success than the model before it, and a 96 percent pick-and-pack rate on an automaker's production lines. Google Cloud opened Gemini for healthcare in U.S. preview, four components, read-only connectors to Epic and Oracle Health, no write-back to the chart. Amazon made the Bedrock AgentCore Web Search API generally available at $7 per 1,000 queries in six regions, Ohio among them. Google's AI Edge Gallery added on-device speech: recognition in more than 100 languages at ten times real time, and text to speech that starts in about 100 milliseconds with 8 voices in 21 locales. Fireworks AI widened its October breach bulletin: a third-party cloud host was hit Oct. 23, development machines reached Oct. 24, and for a limited set of accounts the intruders got secrets, datasets and incomplete model weights. For your work: the day's pattern is AI moving into governed places, a verified messaging protocol, a hospital chart it can read and cannot write, a search index with a posted price. Write the access rule and the price into every tool you hand an agent, the way these pages do. For the record, the Well is cooked on Anthropic's models, the company in the first story.",
+ "sources": [
+  {
+   "title": "Roadshow launch for the proposed IPO: 825,000,000 Class A shares, 801,351,354 from the company and 23,648,646 from existing holders, expected $70 to $78 per share, 30-day option for 123,750,000 more, Nasdaq symbol ANT (Anthropic)",
+   "url": "https://www.anthropic.com/news/roadshow-launch",
+   "date": "2026-11-10"
+  },
+  {
+   "title": "AlphaProof Code: agents generated over six million lines of Lean verifying Signal's core cryptographic code in four weeks, flagged one percent for human review, caught two reintroduced bugs with machine-checked proofs (Google DeepMind)",
+   "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+   "date": "2026-11-10"
+  },
+  {
+   "title": "Gemini Robotics 2.5: evaluated on 200 tasks, 30 to 100 percent higher success and 20 to 30 percent faster; 96 percent pick-and-pack on production lines; open ASIMOV-Jailbreak benchmark, 99.5 percent resistance against 82 before (Google DeepMind)",
+   "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+   "date": "2026-11-10"
+  },
+  {
+   "title": "Gemini for healthcare in U.S. preview: four core components, read-only Epic and Oracle Health connectors with no write-back, clinicians spend nearly 28 hours a week reconciling information (Google Cloud)",
+   "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-for-healthcare",
+   "date": "2026-11-10"
+  },
+  {
+   "title": "Bedrock AgentCore Web Search API generally available: $7 per 1,000 queries, each result a text extract with title, URL and publish time; N. Virginia, Ohio, Oregon, Sydney, Tokyo, Ireland (Amazon Web Services)",
+   "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-bedrock-agentcore-web-search-api/",
+   "date": "2026-11-10"
+  },
+  {
+   "title": "On-device speech in Google AI Edge Gallery: recognition in 100+ languages at 10x real time, text to speech starting in about 100 ms, 8 voices across 21 locales, open-weight models via MediaPipe and LiteRT (Google for Developers)",
+   "url": "https://developers.googleblog.com/on-device-speech-recognition-and-text-to-speech-in-google-ai-edge-gallery/",
+   "date": "2026-11-10"
+  },
+  {
+   "title": "October security incident update: third-party cloud host incident Oct. 23, development machines reached Oct. 24, secrets, datasets and incomplete model weights for a limited set of accounts, payment cards never stored; Inference, Training SDK and Nexus not affected (Fireworks AI)",
+   "url": "https://fireworks.ai/security/bulletins/october-2026-security-incident-update",
+   "date": "2026-11-09"
+  }
+ ],
+ "checked": true,
+ "_theme_placed": [
+  "CHART"
+ ],
+ "_seconds": 0.1,
+ "cooked": "2026-11-11T05:50:00-05:00",
+ "no": 28
+}

@@ -1,0 +1,67 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-11-11",
+ "size": 5,
+ "g": [
+  "#CASH",
+  "ROUTE",
+  "ACTOR",
+  "TOOLS",
+  "EASE#"
+ ],
+ "a": [
+  [
+   "CASH",
+   "Bills and coins"
+  ],
+  [
+   "ROUTE",
+   "The path a delivery takes"
+  ],
+  [
+   "ACTOR",
+   "One who plays a part"
+  ],
+  [
+   "TOOLS",
+   "Search, calendar, email: what an agent reaches for"
+  ],
+  [
+   "EASE",
+   "Make a hard thing lighter"
+  ]
+ ],
+ "d": [
+  [
+   "RATE",
+   "Price per unit, or how fast"
+  ],
+  [
+   "COCOA",
+   "Warm mug on a cold night"
+  ],
+  [
+   "AUTOS",
+   "Cars, in a trade paper"
+  ],
+  [
+   "STOLE",
+   "Took without asking"
+  ],
+  [
+   "HERS",
+   "Belonging to her"
+  ]
+ ],
+ "w": "TOOLS",
+ "n": "A tool is anything an AI can reach for on your behalf: search, your calendar, your inbox, a spreadsheet. Each one you hand over is a decision about trust, so give them one at a time and read the record after each. The right first tool is one that reads and never sends.",
+ "sources": [],
+ "checked": true,
+ "_theme_placed": [
+  "TOOLS"
+ ],
+ "_seconds": 0.1,
+ "cooked": "2026-11-11T05:40:00-05:00",
+ "no": 31
+}
