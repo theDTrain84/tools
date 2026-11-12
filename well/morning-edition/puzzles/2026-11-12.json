@@ -1,0 +1,106 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-11-12",
+ "size": 5,
+ "g": [
+  "BAR##",
+  "AXIS#",
+  "TESTS",
+  "#SEEK",
+  "##SPY"
+ ],
+ "a": [
+  [
+   "BAR",
+   "Where the stools are"
+  ],
+  [
+   "AXIS",
+   "The line a chart is drawn along"
+  ],
+  [
+   "TESTS",
+   "Perplexity's Nov. 11 report ran sandbox escape ___ on twelve AI models: none broke out of the virtual machine, and the two network bypasses found are now fixed",
+   {
+    "src": "https://www.perplexity.ai/hub/blog/escaping-space-part-ii"
+   }
+  ],
+  [
+   "SEEK",
+   "Go looking for"
+  ],
+  [
+   "SPY",
+   "Watch in secret"
+  ]
+ ],
+ "d": [
+  [
+   "BAT",
+   "It flies at dusk, or swings at a pitch"
+  ],
+  [
+   "AXES",
+   "Tools that split firewood"
+  ],
+  [
+   "RISES",
+   "Comes up, like bread or the sun"
+  ],
+  [
+   "STEP",
+   "One stair"
+  ],
+  [
+   "SKY",
+   "Where the weather happens"
+  ]
+ ],
+ "w": "TESTS",
+ "n": "Seven documents, five from Wednesday and two from Tuesday. Perplexity published the second part of its sandbox evaluation: twelve models tried to break out of the box its agents run code in, none crossed the virtual machine boundary, and two network bypasses that did work have been fixed and retested. Google released the Gemini Decisions API, which answers up to 1,000 yes or no, choice and scoring questions in one request in 150 to 250 milliseconds, each with a confidence score from 0 to 1, at $0.10 per million input tokens and nothing for output. Google DeepMind published AlphaGenome 2, trained on more than 107 million single cell profiles; on one benchmark it found 30 percent of causal DNA variants against 16 percent before, for research only, with no clinical approval. MiniMax posted open weights for H3-Image, which it says makes a 4K picture in under 10 seconds from up to 16 reference images; the page names no license. Alibaba Cloud opened a two week preview of Qwen4-Max, Nov. 11 to Nov. 25, with a one million token context, to be retired when the preview ends. On Tuesday the State of New York opened a portal where large frontier AI developers register by Jan. 1, 2027 and report critical safety incidents within 72 hours, and named a university center to test frontier systems. Microsoft Research showed that editing fewer than 10 dormant neurons, with no retraining, can hide a backdoor in an agent that wakes on a date change; its advice is to treat audits as evidence and never as a guarantee. For your work: the pattern is testing in the open. A company published the two ways its own box leaked, and a lab showed how a model can pass every check and still carry a trap. Ask any vendor what they tested, what failed, and what they fixed. Then limit what your agent can reach, and review the actions that matter before they run.",
+ "sources": [
+  {
+   "title": "Escaping SPACE, Part II: twelve models tested against the agent sandbox, no virtual machine to host escape, two network bypasses (DNS spoofing and shared address relays) fixed, none found after the fix (Perplexity)",
+   "url": "https://www.perplexity.ai/hub/blog/escaping-space-part-ii",
+   "date": "2026-11-11"
+  },
+  {
+   "title": "Gemini Decisions API: up to 1,000 independent questions per request, 150 to 250 ms end to end, confidence score 0 to 1, $0.10 per million input tokens, zero output tokens billed, a free tier in AI Studio (Google)",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+   "date": "2026-11-11"
+  },
+  {
+   "title": "AlphaGenome 2: trained on over 107 million individual cell profiles; 30 percent of causal variants identified on the TenK10K dataset against 16 percent before; research API for noncommercial use, not validated for clinical or diagnostic use (Google DeepMind)",
+   "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+   "date": "2026-11-11"
+  },
+  {
+   "title": "H3-Image: open weights on Hugging Face, a 4K image in under 10 seconds by the company's claim, up to 16 reference images, no license named on the page (MiniMax)",
+   "url": "https://www.minimax.io/blog/minimax-h3-image",
+   "date": "2026-11-11"
+  },
+  {
+   "title": "Qwen4-Max-Preview: preview window Nov. 11 to Nov. 25, 2026 (UTC+8), 1M token context, 393,216 token output limit, Token Plan only, retired when the preview ends; the page carries no posting date (Alibaba Cloud docs)",
+   "url": "https://docs.qwencloud.com/developer-guides/getting-started/latest-model",
+   "date": "2026-11-11"
+  },
+  {
+   "title": "RAISE portal for large frontier AI developers: registration by Jan. 1, 2027, critical safety incidents reported within 72 hours, and a university center to independently test frontier systems (State of New York)",
+   "url": "https://www.governor.ny.gov/news/governor-hochul-declares-ny-will-lead-nation-ai-science-and-safety-launches-new-research",
+   "date": "2026-11-10"
+  },
+  {
+   "title": "Reprogramming dormant neurons: fewer than 10 edited neurons backdoor an agent with no retraining, triggered by a date change; defenses are weight scanning, model signing and provenance; audits are evidence, never guarantees (Microsoft Research)",
+   "url": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+   "date": "2026-11-10"
+  }
+ ],
+ "checked": true,
+ "_theme_placed": [
+  "TESTS"
+ ],
+ "_seconds": 0.0,
+ "cooked": "2026-11-12T05:40:00-05:00",
+ "no": 29
+}

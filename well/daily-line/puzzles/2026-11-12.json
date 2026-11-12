@@ -1,0 +1,67 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-11-12",
+ "size": 5,
+ "g": [
+  "##BOW",
+  "#TUNA",
+  "TRIES",
+  "OILS#",
+  "POD##"
+ ],
+ "a": [
+  [
+   "BOW",
+   "What the cast takes at the curtain"
+  ],
+  [
+   "TUNA",
+   "Fish in a lunch sandwich"
+  ],
+  [
+   "TRIES",
+   "Attempts, one after another"
+  ],
+  [
+   "OILS",
+   "Keeps the hinge quiet"
+  ],
+  [
+   "POD",
+   "Where peas sit in a row"
+  ]
+ ],
+ "d": [
+  [
+   "TOP",
+   "The highest shelf"
+  ],
+  [
+   "TRIO",
+   "A band of three"
+  ],
+  [
+   "BUILD",
+   "Step three with any AI project: make the small thing that works"
+  ],
+  [
+   "ONES",
+   "Singles in the till"
+  ],
+  [
+   "WAS",
+   "Is, yesterday"
+  ]
+ ],
+ "w": "BUILD",
+ "n": "Build comes third, after you listen and after you map. Make the smallest thing that does one real job for one real person, and put it in their hands this week. A small tool in use teaches you more than a large plan on paper.",
+ "sources": [],
+ "checked": true,
+ "_theme_placed": [
+  "BUILD"
+ ],
+ "_seconds": 0.1,
+ "cooked": "2026-11-12T05:36:00-05:00",
+ "no": 32
+}
