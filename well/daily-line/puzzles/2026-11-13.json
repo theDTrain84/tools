@@ -1,0 +1,67 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-11-13",
+ "size": 5,
+ "g": [
+  "##MAP",
+  "#TAXI",
+  "TITLE",
+  "ANTE#",
+  "BYE##"
+ ],
+ "a": [
+  [
+   "MAP",
+   "Step two with any AI project: draw where the work, the people and the information already are"
+  ],
+  [
+   "TAXI",
+   "A ride with a meter running"
+  ],
+  [
+   "TITLE",
+   "The name on the cover of a book"
+  ],
+  [
+   "ANTE",
+   "What each player puts in before the cards are dealt"
+  ],
+  [
+   "BYE",
+   "Said with a wave at the door"
+  ]
+ ],
+ "d": [
+  [
+   "TAB",
+   "One of many open across the top of a browser"
+  ],
+  [
+   "TINY",
+   "Very small"
+  ],
+  [
+   "MATTE",
+   "A finish with no shine"
+  ],
+  [
+   "AXLE",
+   "The rod two wheels turn on"
+  ],
+  [
+   "PIE",
+   "Dessert with a crust"
+  ]
+ ],
+ "w": "MAP",
+ "n": "Map comes second, after you listen. Before you build anything, draw what is already there: who does the work, where the information lives, which tools touch it, and where it gets stuck. Use the words the people used. A map made from what you heard keeps you from building a clever answer to the wrong question.",
+ "sources": [],
+ "checked": true,
+ "_theme_placed": [
+  "MAP"
+ ],
+ "_seconds": 0.3,
+ "cooked": "2026-11-13T05:42:00-05:00",
+ "no": 33
+}

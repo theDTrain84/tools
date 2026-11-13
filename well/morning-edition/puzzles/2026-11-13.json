@@ -1,0 +1,91 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-11-13",
+ "size": 5,
+ "g": [
+  "DIM##",
+  "ACES#",
+  "MODEL",
+  "#NAME",
+  "##LIT"
+ ],
+ "a": [
+  [
+   "DIM",
+   "Low, like a lamp turned down"
+  ],
+  [
+   "ACES",
+   "The four highest cards in the deck"
+  ],
+  [
+   "MODEL",
+   "Google's Nov. 12 release, Gemini 4 Hydrogen, is a ___ it calls its daily driver for agentic workflows, at $1.50 per million input tokens and $7.50 per million output",
+   {
+    "src": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+   }
+  ],
+  [
+   "NAME",
+   "What goes on the top line of the form"
+  ],
+  [
+   "LIT",
+   "Set burning, like a candle"
+  ]
+ ],
+ "d": [
+  [
+   "DAM",
+   "It holds the river back"
+  ],
+  [
+   "ICON",
+   "The small picture you tap to open an app"
+  ],
+  [
+   "MEDAL",
+   "What the winner wears on a ribbon"
+  ],
+  [
+   "SEMI",
+   "The big truck in the right lane"
+  ],
+  [
+   "LET",
+   "Allow"
+  ]
+ ],
+ "w": "MODEL",
+ "n": "Four documents, three from Thursday and one from Wednesday. Google released Gemini 4 Hydrogen, the everyday member of its Gemini 4 family, rolling out the same day to its API, its business product, its app and Search, at $1.50 per million input tokens and $7.50 per million output across a 1 million token window. AMD announced the Instinct MI450X, a new chip in its MI400 series with 288 GB of memory per GPU, for its Helios rack systems; the announcement gives no ship date. Nvidia told the SEC that its chief executive resigned, effective immediately; its finance chief is interim chief while the board searches for a permanent one, and the board named its first chair. And an Anthropic research post found that when every person on a team has their own AI agent, the group does worse than when one shared agent serves everyone, in all four of its test settings, because each agent sees only its own person's information and acts too late or on guesses. What it means for your work: the price of a capable everyday model keeps falling, so cost is rarely the reason to wait. And before you hand every teammate a separate assistant, decide where the shared picture lives, because the study says separate assistants without one pull a team apart.",
+ "sources": [
+  {
+   "title": "Google introduces Gemini 4 Hydrogen",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+   "date": "2026-11-12"
+  },
+  {
+   "title": "AMD adds the Instinct MI450X to its MI400 series",
+   "url": "https://newsroom.amd.com/news/amd-advances-instinct-mi400-series-ai-scientific-computing/",
+   "date": "2026-11-12"
+  },
+  {
+   "title": "Nvidia's SEC filing on its chief executive transition",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm",
+   "date": "2026-11-12"
+  },
+  {
+   "title": "Anthropic research: one shared agent beat an agent per person",
+   "url": "https://alignment.anthropic.com/2026/worse-together",
+   "date": "2026-11-11"
+  }
+ ],
+ "checked": true,
+ "_theme_placed": [
+  "MODEL"
+ ],
+ "_seconds": 0.0,
+ "cooked": "2026-11-13T05:52:00-05:00",
+ "no": 30
+}
