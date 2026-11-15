@@ -1,0 +1,252 @@
+{
+ "v": 1,
+ "track": "weekly",
+ "date": "2026-11-15",
+ "size": 11,
+ "g": [
+  "#FIST##LAW#",
+  "MANTA##ARIA",
+  "ABSURD#NEST",
+  "GLEN#ESCAPE",
+  "SET#TAPE###",
+  "###SOLAR###",
+  "###AMEN#CAB",
+  "DIFFER#SAGA",
+  "IDLE#SHARED",
+  "MEAT##ALONE",
+  "#SPY##MELT#"
+ ],
+ "a": [
+  [
+   "FIST",
+   "Hand made for a bump"
+  ],
+  [
+   "LAW",
+   "What a bill hopes to become"
+  ],
+  [
+   "MANTA",
+   "Ray with wing-like fins"
+  ],
+  [
+   "ARIA",
+   "Solo at the opera"
+  ],
+  [
+   "ABSURD",
+   "Ridiculous"
+  ],
+  [
+   "NEST",
+   "Where the robin sits"
+  ],
+  [
+   "GLEN",
+   "Narrow valley"
+  ],
+  [
+   "ESCAPE",
+   "Perplexity's Nov. 11 report tested twelve models in its agent sandbox, and no run achieved a virtual machine to host ___",
+   {
+    "src": "https://www.perplexity.ai/hub/blog/escaping-space-part-ii"
+   }
+  ],
+  [
+   "SET",
+   "Ready, ___, go"
+  ],
+  [
+   "TAPE",
+   "What wraps the gift"
+  ],
+  [
+   "SOLAR",
+   "Kind of panel on a roof"
+  ],
+  [
+   "AMEN",
+   "End of a prayer"
+  ],
+  [
+   "CAB",
+   "Ride to the airport, maybe"
+  ],
+  [
+   "DIFFER",
+   "Disagree"
+  ],
+  [
+   "SAGA",
+   "Long family story"
+  ],
+  [
+   "IDLE",
+   "Not running, as an engine"
+  ],
+  [
+   "SHARED",
+   "Anthropic's Nov. 11 alignment study found one ___ agent for everyone beat a team of per-user agents in all four test environments",
+   {
+    "src": "https://alignment.anthropic.com/2026/worse-together"
+   }
+  ],
+  [
+   "MEAT",
+   "Main part of an argument"
+  ],
+  [
+   "ALONE",
+   "By yourself"
+  ],
+  [
+   "SPY",
+   "Catch sight of"
+  ],
+  [
+   "MELT",
+   "What snow does in spring"
+  ]
+ ],
+ "d": [
+  [
+   "MAGS",
+   "Glossy reads, for short"
+  ],
+  [
+   "DIM",
+   "Turn down, as lights"
+  ],
+  [
+   "FABLE",
+   "Claude ___ 5.2, released Nov. 9, is the same underlying model as Mythos 5.2, with stronger safeguards so everyone can use it",
+   {
+    "src": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+   }
+  ],
+  [
+   "IDES",
+   "Middle of a Roman month"
+  ],
+  [
+   "INSET",
+   "Small map within a map"
+  ],
+  [
+   "FLAP",
+   "Envelope part"
+  ],
+  [
+   "STUN",
+   "Amaze"
+  ],
+  [
+   "SAFETY",
+   "New York opened a portal on Nov. 10 for frontier AI developers, who must report any critical ___ incident within 72 hours",
+   {
+    "src": "https://www.governor.ny.gov/news/governor-hochul-declares-ny-will-lead-nation-ai-science-and-safety-launches-new-research"
+   }
+  ],
+  [
+   "TAR",
+   "Road goo"
+  ],
+  [
+   "TOME",
+   "Big heavy book"
+  ],
+  [
+   "DEALERS",
+   "Card table regulars"
+  ],
+  [
+   "SPAN",
+   "A bridge's reach"
+  ],
+  [
+   "HAM",
+   "Holiday roast"
+  ],
+  [
+   "LANCER",
+   "Knight with a long spear"
+  ],
+  [
+   "SALE",
+   "Half-off event"
+  ],
+  [
+   "AREA",
+   "Length times width"
+  ],
+  [
+   "CAROL",
+   "Song for the season"
+  ],
+  [
+   "WISP",
+   "Thin strand of smoke"
+  ],
+  [
+   "AGENT",
+   "Anthropic's Nov. 9 post: 1,000 of these, each a Claude Fable 5.2 ___, formalized Fermat's Last Theorem in Lean in 30 hours",
+   {
+    "src": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+   }
+  ],
+  [
+   "ATE",
+   "Had dinner"
+  ],
+  [
+   "BADE",
+   "Said, as goodbye"
+  ]
+ ],
+ "w": "SHARED",
+ "n": "This week the record kept coming back to agents working together. A thousand of them shared one proof, one shared agent beat a team of private ones, and twelve models tested a sandbox without one getting out of the machine. When the week moves fast, we start from the page that says so.",
+ "sources": [
+  {
+   "title": "Claude Fable 5.2 and Mythos 5.2 share one model; 1,000 agents formalized Fermat's Last Theorem in Lean in 30 hours (Anthropic)",
+   "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+   "date": "2026-11-09"
+  },
+  {
+   "title": "New York opens its frontier AI developer portal: register by Jan. 1, 2027, report critical safety incidents within 72 hours (State of New York)",
+   "url": "https://www.governor.ny.gov/news/governor-hochul-declares-ny-will-lead-nation-ai-science-and-safety-launches-new-research",
+   "date": "2026-11-10"
+  },
+  {
+   "title": "Escaping SPACE, Part II: twelve models, no virtual machine to host escape, two network bypasses fixed (Perplexity)",
+   "url": "https://www.perplexity.ai/hub/blog/escaping-space-part-ii",
+   "date": "2026-11-11"
+  },
+  {
+   "title": "Worse together: one agent for everyone beat per-user agents in all four environments (Anthropic alignment research)",
+   "url": "https://alignment.anthropic.com/2026/worse-together",
+   "date": "2026-11-11"
+  }
+ ],
+ "coming": [
+  {
+   "date": "2026-11-15",
+   "end": "2026-11-20",
+   "text": "SC26, the supercomputing conference, runs in Chicago.",
+   "url": "https://sc26.supercomputing.org/"
+  },
+  {
+   "date": "2026-11-17",
+   "text": "Nvidia reports third quarter fiscal 2027 results, with a call at 5 p.m. ET.",
+   "url": "https://nvidianews.nvidia.com/news/nvidia-sets-conference-call-for-third-quarter-financial-results-6928873"
+  },
+  {
+   "date": "2026-11-17",
+   "end": "2026-11-18",
+   "text": "The Conference Board holds its AI Leadership Summit in New York.",
+   "url": "https://www.conference-board.org/events/ai-leadership"
+  }
+ ],
+ "checked": true,
+ "no": 7,
+ "cooked": "2026-11-15T17:10:00-05:00"
+}
