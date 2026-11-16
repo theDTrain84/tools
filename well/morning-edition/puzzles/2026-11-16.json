@@ -1,0 +1,86 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-11-16",
+ "size": 5,
+ "g": [
+  "#EARS",
+  "VALUE",
+  "AGILE",
+  "SLEEK",
+  "TENS#"
+ ],
+ "a": [
+  [
+   "EARS",
+   "What you listen with"
+  ],
+  [
+   "VALUE",
+   "What a thing is worth"
+  ],
+  [
+   "AGILE",
+   "Quick on your feet"
+  ],
+  [
+   "SLEEK",
+   "Smooth and shiny, like a new car"
+  ],
+  [
+   "TENS",
+   "Ten dollar bills"
+  ]
+ ],
+ "d": [
+  [
+   "VAST",
+   "Huge, like the open sea"
+  ],
+  [
+   "EAGLE",
+   "Two under par on a golf hole"
+  ],
+  [
+   "ALIEN",
+   "A visitor from another planet, in the movies"
+  ],
+  [
+   "RULES",
+   "The open source llama.cpp and ggml libraries reached v1.0.0 on Nov. 13 with new versioning ___: a major version bump now means a breaking change to the public API",
+   {
+    "src": "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
+   }
+  ],
+  [
+   "SEEK",
+   "Look for, as in hide and ___"
+  ]
+ ],
+ "w": "RULES",
+ "n": "Three documents, all from Friday; we found nothing primary dated Saturday or Sunday. The open source llama.cpp and ggml libraries, which run AI models on your own computer, reached version 1.0.0 and published their numbering rules: a major bump means a breaking change to the public API, a minor one adds features that keep old code working, and a patch fixes bugs. Apple's HomeView went on sale at $299 with a 7 inch display in seven countries, and Apple said it is not for sale in the European Union because its Siri AI is currently unavailable in iOS there. And an Allen AI benchmark of 8,115 real questions found that assistants answer the literal request more often than the goal behind it: on programming questions built on a mistaken premise, the stated request got a solution in 75 to 86 percent of responses and the underlying goal in 59 to 71. What it means for your work: when you ask an AI for help, tell it the goal along with the step you think comes next. And when a tool you rely on publishes its version rules, read them, because they tell you which updates can break your setup.",
+ "sources": [
+  {
+   "title": "llama.cpp and ggml reach v1.0.0 with versioning rules",
+   "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+   "date": "2026-11-13"
+  },
+  {
+   "title": "Apple HomeView goes on sale in seven countries",
+   "url": "https://www.apple.com/newsroom/2026/11/apple-homeview-available-today/",
+   "date": "2026-11-13"
+  },
+  {
+   "title": "Allen AI's XYBench: requests built on a mistaken premise",
+   "url": "https://huggingface.co/blog/allenai/xybench",
+   "date": "2026-11-13"
+  }
+ ],
+ "checked": true,
+ "_theme_placed": [
+  "RULES"
+ ],
+ "_seconds": 0.5,
+ "cooked": "2026-11-16T05:36:00-05:00",
+ "no": 31
+}

@@ -1,0 +1,67 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-11-16",
+ "size": 5,
+ "g": [
+  "#DATA",
+  "SEWER",
+  "ALARM",
+  "FARMS",
+  "EYES#"
+ ],
+ "a": [
+  [
+   "DATA",
+   "The record an AI learns from, and the files you hand it to work on"
+  ],
+  [
+   "SEWER",
+   "It runs under the street and carries the rain away"
+  ],
+  [
+   "ALARM",
+   "It rings at six on a school day"
+  ],
+  [
+   "FARMS",
+   "Where the corn and the soybeans grow"
+  ],
+  [
+   "EYES",
+   "What every page needs on it before it goes out"
+  ]
+ ],
+ "d": [
+  [
+   "SAFE",
+   "Called at home plate when the slide beats the tag"
+  ],
+  [
+   "DELAY",
+   "What the board shows when the flight runs late"
+  ],
+  [
+   "AWARE",
+   "Knowing what is going on around you"
+  ],
+  [
+   "TERMS",
+   "The fine print you agree to before you sign up"
+  ],
+  [
+   "ARMS",
+   "What you open wide for a hug"
+  ]
+ ],
+ "w": "DATA",
+ "n": "Data is the record. Every AI tool runs on two of them: the record it learned from, and the record you hand it today. The second one is yours to choose. Before you paste in a file, ask what is in it, whose it is, and what the terms say happens to it after you send it.",
+ "sources": [],
+ "checked": true,
+ "_theme_placed": [
+  "DATA"
+ ],
+ "_seconds": 0.0,
+ "cooked": "2026-11-16T05:36:00-05:00",
+ "no": 34
+}
