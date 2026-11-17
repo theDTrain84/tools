@@ -1,0 +1,67 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-11-17",
+ "size": 5,
+ "g": [
+  "ARM##",
+  "LOOP#",
+  "LATER",
+  "#DOSE",
+  "##ROD"
+ ],
+ "a": [
+  [
+   "ARM",
+   "What you bend at the elbow"
+  ],
+  [
+   "LOOP",
+   "The cycle an AI agent runs: act, check the result, adjust, and go again until the job is done"
+  ],
+  [
+   "LATER",
+   "In a while, as in see you ___"
+  ],
+  [
+   "DOSE",
+   "The amount of medicine on the label"
+  ],
+  [
+   "ROD",
+   "What you fish with"
+  ]
+ ],
+ "d": [
+  [
+   "ALL",
+   "Every one of them"
+  ],
+  [
+   "ROAD",
+   "What the bus drives on"
+  ],
+  [
+   "MOTOR",
+   "What makes the fan blades spin"
+  ],
+  [
+   "PESO",
+   "Money in Mexico"
+  ],
+  [
+   "RED",
+   "The color of a stop sign"
+  ]
+ ],
+ "w": "LOOP",
+ "n": "A loop is how an agent gets work done. It takes a step, looks at what came back, adjusts, and takes the next step, over and over until the job is finished. That is why an agent can fix its own mistake halfway through a task. When you hand off a job, say what done looks like, so the loop knows when to stop.",
+ "sources": [],
+ "checked": true,
+ "_theme_placed": [
+  "LOOP"
+ ],
+ "_seconds": 0.0,
+ "cooked": "2026-11-17T05:40:00-05:00",
+ "no": 35
+}

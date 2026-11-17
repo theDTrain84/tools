@@ -1,0 +1,91 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-11-17",
+ "size": 5,
+ "g": [
+  "#LAVA",
+  "COMIC",
+  "AGENT",
+  "MINES",
+  "ENDS#"
+ ],
+ "a": [
+  [
+   "LAVA",
+   "What flows out of a volcano"
+  ],
+  [
+   "COMIC",
+   "A book told in drawn panels"
+  ],
+  [
+   "AGENT",
+   "Google's threat intelligence team reported on Nov. 16 that it found attackers using an AI ___ framework that compares code before and after a fix is announced, drafts an attack and runs it without human intervention",
+   {
+    "src": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold"
+   }
+  ],
+  [
+   "MINES",
+   "Where coal comes out of the ground"
+  ],
+  [
+   "ENDS",
+   "Finishes, as a school day at three"
+  ]
+ ],
+ "d": [
+  [
+   "CAME",
+   "Showed up"
+  ],
+  [
+   "LOGIN",
+   "Your name and password, together"
+  ],
+  [
+   "AMEND",
+   "Change, as a law or a contract"
+  ],
+  [
+   "VINES",
+   "Where grapes grow"
+  ],
+  [
+   "ACTS",
+   "A play has three of them"
+  ]
+ ],
+ "w": "AGENT",
+ "n": "Four documents, all dated Monday. Google's threat intelligence team reported that it found attackers running an AI agent framework that watches popular web software, compares the code before and after each fix is announced, drafts an attack and runs it without human intervention. The report says this is the first time it has seen discovery and attack fully automated with no human in the loop, and that the tools are shrinking the time organizations have to install a fix. On the same day Anthropic shortened its own clock: for flaws it finds in other people's software and reports to the maintainers, its disclosure window drops from 90 days to 30 for high and critical severity issues and to 45 for all others, starting with reports made on or after January 1, 2027. Its stated reason is that a bug one model can find is increasingly likely to be found by another. The Commerce Department's Bureau of Industry and Security released an interim final rule on remote access to advanced AI chips and servers, so that export limits cannot be sidestepped by renting computing in data centers in third countries. And GitHub retired three older models from most Copilot experiences and told users to update their workflows to supported ones. What it means for your work: updates are how fixes reach you, and the gap between a fix being announced and an attack being written is getting shorter. Turn on automatic updates for your phone, your browser and your website software, and install the rest the week they arrive.",
+ "sources": [
+  {
+   "title": "Google's threat intelligence report on automated attack agents",
+   "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold",
+   "date": "2026-11-16"
+  },
+  {
+   "title": "Anthropic shortens its vulnerability disclosure timelines",
+   "url": "https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines",
+   "date": "2026-11-16"
+  },
+  {
+   "title": "Commerce Department rule on remote access to advanced AI chips",
+   "url": "https://www.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology",
+   "date": "2026-11-16"
+  },
+  {
+   "title": "GitHub Copilot retires three older models",
+   "url": "https://github.blog/changelog/2026-11-16-github-copilot-models-deprecated-on-november-16-2026/",
+   "date": "2026-11-16"
+  }
+ ],
+ "checked": true,
+ "_theme_placed": [
+  "AGENT"
+ ],
+ "_seconds": 0.1,
+ "cooked": "2026-11-17T05:55:00-05:00",
+ "no": 32
+}
