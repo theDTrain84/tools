@@ -9100,7 +9100,7 @@ Source: https://tools.dnsc.ai/stories/php2shell/ · Generated from the page on N
 
 > A living record of this fall's failures and attacks on digital systems, from Microsoft 365 and the FAA ground stop to the NSA's network: what you may have run into, what each operator said, and how two AI systems and a person checked it.
 
-**A living record.** Last updated November 18, 2026, 8:30 a.m. Eastern.
+**A living record.** Last updated November 18, 2026, 9:30 a.m. Eastern.
 
 Kept by Dustin Nimmo, Mise and Muse. Two AI systems from two companies search separately, we open the sources, and a person decides what it adds up to. See how this was made
 
@@ -9349,7 +9349,7 @@ NSA · Nov 17
 
 #### NSA Net, the agency's classified network
 
-Staggered log ins. Restoration "ongoing but not yet complete," a source said.
+Staggered log ins, then the campus closed to most employees. Restoration "ongoing but not yet complete," a source said.
 
 [Chart: NSA Net, its internal network (NSA) leans on Security patch (not stated), marked changed.]
 
@@ -9363,7 +9363,8 @@ The stated cause is a response to an attack risk. No attack on the NSA is on the
 
 1. Nov 17The NSA: "The National Security Agency experienced temporary degradation during scheduled routine maintenance." 37
 2. Later Nov 17Director of National Intelligence Jay Clayton, on Fox Business: "The patching that has gone on following that has caused some of these systems to not come back up." He saw no sign any recent outage was a cyberattack. 37
-3. OpenRestoration "ongoing but not yet complete," per a source. 37
+3. Late Nov 17The agency's recorded line for employees moved to "code orange," "closing the campus for most employees until further notice," CNN reported. 37
+4. OpenRestoration "ongoing but not yet complete," per a source. 37
 
 Back to the week
 
@@ -9940,7 +9941,7 @@ Sources
 34. Workday Sept 2026 cut: [American Bazaar, Sept 30, 2026](https://americanbazaaronline.com/2026/09/30/workday-to-cut-2-5-of-workforce-affecting-about-525-employees-489102/), on the company's SEC filing.
 35. Salesforce Aug 2026 cut: Business Today; IBTimes.
 36. JPMorgan Chase technology budget: Fortune, Apr 29, 2026. L3Harris: state layoff notices via an aggregator, 2025 to 2026. United: [AirlineGeeks, Oct 16, 2025](https://airlinegeeks.com/2025/10/16/united-to-shrink-corporate-workforce/).
-37. NSA statement, Director of National Intelligence Jay Clayton on Fox Business, and the PHP vulnerabilities: [CNN, via Local News 8, Nov 17, 2026](https://localnews8.com/politics/cnn-us-politics/2026/11/17/exclusive-highly-classified-us-national-security-communications-network-goes-down-sources-say-2/).
+37. NSA statement, Director of National Intelligence Jay Clayton on Fox Business, and the PHP vulnerabilities: [CNN, via Local News 8, Nov 17, 2026](https://localnews8.com/politics/cnn-us-politics/2026/11/17/exclusive-highly-classified-us-national-security-communications-network-goes-down-sources-say-2/). The campus closing is from CNN's updated report, read on Yahoo News, Nov 18, 2026.
 38. PHP patch date and European precautions, as reported by The Hill, SecureWorld, WJLA and TechRadar. Not opened.
 39. Chase and United updates, as reported in the wire story "Systems restored at major U.S. banks and United Airlines following tech outages," Nov 17, 2026 (DailyFly; Big Country News Connection), and NewsNation. Not opened.
 40. ABC News, "Senate Democrats demand briefings on FAA ground stop," Nov 17, 2026: the $50.1 billion request, the senators' letter and the halt to router installation. Apple's resolution time is from the research desk's board (Muse), Nov 17, 2026, as reported there and not opened by Mise.
@@ -9949,7 +9950,7 @@ Sources
 
 Authors: **Dustin Nimmo**, Mise and Muse. [DNSC](https://dnsc.ai), from the public record.
 
-Posted November 18, 2026. Revised the same morning: the FAA's November 17 line now cites ABC News, which reports a funding request and a senators' letter where the earlier line said a Senate briefing. Last verified November 18, 2026, 8:30 a.m. Eastern. If a fact here is wrong, say so and it will be fixed and noted.
+Posted November 18, 2026. Revised the same morning: the FAA's November 17 line now cites ABC News, which reports a funding request and a senators' letter where the earlier line said a Senate briefing. Last verified November 18, 2026, 9:30 a.m. Eastern. If a fact here is wrong, say so and it will be fixed and noted.
 
 ---
 
