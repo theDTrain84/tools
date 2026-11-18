@@ -2,7 +2,7 @@
 
 > A living record of this fall's failures and attacks on digital systems, from Microsoft 365 and the FAA ground stop to the NSA's network: what you may have run into, what each operator said, and how two AI systems and a person checked it.
 
-**A living record.** Last updated November 18, 2026, 1:00 p.m. Eastern.
+**A living record.** Last updated November 18, 2026, 3:30 p.m. Eastern.
 
 Kept by Dustin Nimmo, Mise and Muse. Two AI systems from two companies search separately, we open the sources, and a person decides what it adds up to. See how this was made
 
@@ -264,7 +264,7 @@ The stated cause is a response to an attack risk. No attack on the NSA is on the
 - security patch
 
 1. Nov 17The NSA: "The National Security Agency experienced temporary degradation during scheduled routine maintenance." 37
-2. Later Nov 17Director of National Intelligence Jay Clayton, on Fox Business: "The patching that has gone on following that has caused some of these systems to not come back up." He saw no sign any recent outage was a cyberattack. 37
+2. Later Nov 17Director of National Intelligence Jay Clayton, on Fox Business: "The patching that has gone on following that has caused some of these systems to not come back up." He added: "That is what has happened at the NSA today." He saw no sign any recent outage was a cyberattack. 37
 3. Late Nov 17The agency's recorded line for employees moved to "code orange," "closing the campus for most employees until further notice," CNN reported. 37
 4. OpenRestoration "ongoing but not yet complete," per a source. 37
 
@@ -506,6 +506,8 @@ Statement · Nov 17
 > That creates "enormous pressure on companies and government agencies to patch those vulnerabilities immediately," putting "tremendous strain on systems that weren't built to handle that pace of change."
 
 **Sen. Mark Warner, vice chair of the Senate Intelligence Committee.** He said there was no indication the outages were the "result of a cyberattack, foreign interference, or some coordinated effort." 44
+
+At a House Homeland Security Committee hearing on November 18, Director of National Intelligence Jay Clayton said the outages were "not a coordinated or state-sponsored attack." He called them "separate service outages associated with maintenance and technical changes." 45
 
 AI · SI
 
@@ -869,10 +871,11 @@ Sources
 42. L3Harris aircraft tracking contract, as reported: AIN Online, July 7, 2026, and the federal contract listing at [highergov.com](https://www.highergov.com/contract/693KA726C00059). Not opened.
 43. Secretary Mullin on CNBC's "Squawk Box," Nov 17, 2026, as quoted by WLKY's Washington News Bureau, Nov 17, 2026. A second transcript, published by Mediaite, words parts of the interview differently.
 44. Sen. Mark Warner's statement of Nov 17, 2026, as reported by The Hill, "Senate Intel Vice Chair Warner says AI contributing to network outages," read in a syndicated copy on Yahoo News.
+45. House Homeland Security Committee hearing, "Worldwide Threats to the Homeland: 25 Years After 9/11," Nov 18, 2026: the Associated Press live report, read at WHEC, and Newsweek, both Nov 18, 2026.
 
 Authors: **Dustin Nimmo**, Mise and Muse. [DNSC](https://dnsc.ai), from the public record.
 
-Posted November 18, 2026. Revised the same day: the FAA's November 17 line now cites ABC News, which reports a funding request and a senators' letter where the earlier line said a Senate briefing; two statements from November 17 were added under "Two officials." Last verified November 18, 2026, 1:00 p.m. Eastern. If a fact here is wrong, say so and it will be fixed and noted.
+Posted November 18, 2026. Revised the same day: the FAA's November 17 line now cites ABC News, which reports a funding request and a senators' letter where the earlier line said a Senate briefing; two statements from November 17 and one from a November 18 hearing were added under "Two officials." A second sentence from the Director of National Intelligence was added to the NSA entry. Last verified November 18, 2026, 3:30 p.m. Eastern. If a fact here is wrong, say so and it will be fixed and noted.
 
 ---
 
