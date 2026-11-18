@@ -9213,7 +9213,7 @@ U.S. Courts · Oct 9
 
 [Chart: An attack from outside reached Bankruptcy noticing center (run by BAE Systems).]
 
-- Cybersecurity
+- Attacks
 - contractor
 
 1. Oct 9All bankruptcy notices halted. 16
@@ -9228,7 +9228,7 @@ Ohio Auditor of State · Oct 25
 
 [Chart: An attack from outside reached Web server, online accounts (Ohio Auditor of State).]
 
-- Cybersecurity
+- Attacks
 - Ohio
 
 1. Oct 25Web server attacked; the office takes it and its online accounts offline. 14
@@ -9243,7 +9243,7 @@ FEC · Oct 26 to 27
 
 [Chart: An attack from outside reached Electronic filing system (FEC).]
 
-- Cybersecurity
+- Attacks
 - election
 
 1. Oct 26Spending reports blocked, a week before the midterms. 15
@@ -9258,7 +9258,7 @@ UNM Health · Oct 26 to 28
 
 [Chart: An attack from outside reached End user devices (UNM Health).]
 
-- Cybersecurity
+- Attacks
 - hospital
 
 1. Oct 26 to 28Ambulances diverted for 2 hours; clinics and surgeries cancelled. 28
@@ -9315,7 +9315,7 @@ About 24 hours, in more than 70 countries.
 
 - **What changed**: A defect deployed in July, then a traffic shift and a 14% capacity cut. Automatic failover made it worse.
 
-- Infrastructure planning and coordination
+- Rushed changes
 - change to a running system
 - failover
 
@@ -9335,7 +9335,7 @@ Sign in, purchases and iPhone activation failed for many users.
 
 - **What changed**: "An internal update caused some outages this morning."
 
-- Infrastructure planning and coordination
+- Rushed changes
 - change to a running system
 
 1. Nov 17Outages from the late morning, Eastern time. 13
@@ -9357,7 +9357,7 @@ Staggered log ins. Restoration "ongoing but not yet complete," a source said.
 
 The stated cause is a response to an attack risk. No attack on the NSA is on the record.
 
-- Infrastructure planning and coordination
+- Rushed changes
 - change to a running system
 - security patch
 
@@ -9398,7 +9398,7 @@ At affected employers, staff could not log in, clock in or request time off.
 
 - **What changed**: While validating its weekly disaster recovery maintenance window, "tenanted services within the DR Site unexpectedly connected to Production databases," leaving data "in an inconsistent state."
 
-- Infrastructure planning and coordination
+- Hidden dependencies
 - change to a running system
 - backup test
 
@@ -9420,7 +9420,7 @@ About 4 hr 40 min; about 12,000 flights did not operate.
 - **What changed**: A router installed during copper to fiber work flooded the network; 17 of 22 centers unstable.
 - **The contractor**: L3Harris says its work is done "in close coordination with the FAA," as reported by Reuters. 29
 
-- Infrastructure planning and coordination
+- Hidden dependencies
 - change to a running system
 - contractor
 - legacy equipment
@@ -9617,7 +9617,7 @@ The board, as of November 17
 
 A ticket moves only when the operator or an investigator says something on the record.
 
-Outages and attacks 11 tickets Cybersecurity 4 Infrastructure planning and coordination 5 AI doing human work 0 Links between tickets 0
+Outages and attacks 11 tickets Attacks 4 Rushed changes 3 Hidden dependencies 2 AI doing human work 0 Links between tickets 0
 
 Cause statedfull report still owed · 5
 
@@ -9627,7 +9627,7 @@ FAA · Nov 13
 
 A contractor's router, installed during copper to fiber work. Open ticket
 
-- Infrastructure planning and coordination
+- Hidden dependencies
 - change to a running system
 
 Microsoft · Nov 12 to 13
@@ -9636,7 +9636,7 @@ Microsoft · Nov 12 to 13
 
 A July defect, then a traffic shift and a 14% capacity cut. Open ticket
 
-- Infrastructure planning and coordination
+- Rushed changes
 - change to a running system
 
 Workday · Nov 13 to 14
@@ -9645,7 +9645,7 @@ Workday · Nov 13 to 14
 
 A recovery test connected the backup site to live databases. Open ticket
 
-- Infrastructure planning and coordination
+- Hidden dependencies
 - change to a running system
 
 Apple · Nov 17
@@ -9654,7 +9654,7 @@ Apple · Nov 17
 
 An internal update. Open ticket
 
-- Infrastructure planning and coordination
+- Rushed changes
 - change to a running system
 
 NSA · Nov 17
@@ -9663,7 +9663,7 @@ NSA · Nov 17
 
 A security patch kept some systems from coming back up, per the Director of National Intelligence. Open ticket
 
-- Infrastructure planning and coordination
+- Rushed changes
 - change to a running system
 
 Closedwith a stated cause · 1
@@ -9700,7 +9700,7 @@ U.S. Courts from Oct 9
 
 All notices halted. A "cybersecurity incident." Open ticket
 
-- Cybersecurity
+- Attacks
 - contractor
 
 No restoration on the record
@@ -9711,7 +9711,7 @@ Ohio Auditor of State · Oct 25
 
 "potentially foreign state actors." Not ransomware. Open ticket
 
-- Cybersecurity
+- Attacks
 - Ohio
 
 No restoration on the record
@@ -9722,7 +9722,7 @@ FEC · Oct 26 to 27
 
 "a bad actor attempting to breach FEC systems." Open ticket
 
-- Cybersecurity
+- Attacks
 - election
 
 No restoration on the record
@@ -9733,7 +9733,7 @@ UNM Health · Oct 26 to 28
 
 Ambulances diverted 2 hours. Attack on "end user devices." Open ticket
 
-- Cybersecurity
+- Attacks
 - hospital
 
 No final report on the record
