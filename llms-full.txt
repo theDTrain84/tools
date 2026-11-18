@@ -9100,7 +9100,7 @@ Source: https://tools.dnsc.ai/stories/php2shell/ · Generated from the page on N
 
 > A living record of this fall's failures and attacks on digital systems, from Microsoft 365 and the FAA ground stop to the NSA's network: what you may have run into, what each operator said, and how two AI systems and a person checked it.
 
-**A living record.** Last updated November 18, 2026, 9:30 a.m. Eastern.
+**A living record.** Last updated November 18, 2026, 1:00 p.m. Eastern.
 
 Kept by Dustin Nimmo, Mise and Muse. Two AI systems from two companies search separately, we open the sources, and a person decides what it adds up to. See how this was made
 
@@ -9587,6 +9587,24 @@ On the ground stop · Nov 14
 
 In the same interview, the Secretary said the federal cyber agency told him the outages were "all individually unrelated," and that "with 98% certainty, we're not seeing a cyber attack." 1 2
 
+#### Tuesday, November 17: the Secretary gave a different account, and a senator described pressure to patch.
+
+CNBC, "Squawk Box" · Nov 17
+
+> "They're pushing new technology on top of really old computer systems."
+>
+> "It has nothing to do with cyberattacks." "I believe we're going to see more of this as new technology rolls out."
+
+**Markwayne Mullin, Secretary of Homeland Security**, the morning after the "SI" interview. 43
+
+Statement · Nov 17
+
+> AI is "making it possible to identify vulnerabilities across enormous numbers of systems at unprecedented speed."
+>
+> That creates "enormous pressure on companies and government agencies to patch those vulnerabilities immediately," putting "tremendous strain on systems that weren't built to handle that pace of change."
+
+**Sen. Mark Warner, vice chair of the Senate Intelligence Committee.** He said there was no indication the outages were the "result of a cyberattack, foreign interference, or some coordinated effort." 44
+
 AI · SI
 
 #### "SI" is today's AI, renamed
@@ -9947,10 +9965,12 @@ Sources
 40. ABC News, "Senate Democrats demand briefings on FAA ground stop," Nov 17, 2026: the $50.1 billion request, the senators' letter and the halt to router installation. Apple's resolution time is from the research desk's board (Muse), Nov 17, 2026, as reported there and not opened by Mise.
 41. Reuters, "Trump official seeks $50 billion for air traffic control after outage," Nov 14, 2026, read in a syndicated copy at [devdiscourse.com](https://www.devdiscourse.com/article/international/4006918-trump-official-seeks-50-billion-for-air-traffic-control-after-outage).
 42. L3Harris aircraft tracking contract, as reported: AIN Online, July 7, 2026, and the federal contract listing at [highergov.com](https://www.highergov.com/contract/693KA726C00059). Not opened.
+43. Secretary Mullin on CNBC's "Squawk Box," Nov 17, 2026, as quoted by WLKY's Washington News Bureau, Nov 17, 2026. A second transcript, published by Mediaite, words parts of the interview differently.
+44. Sen. Mark Warner's statement of Nov 17, 2026, as reported by The Hill, "Senate Intel Vice Chair Warner says AI contributing to network outages," read in a syndicated copy on Yahoo News.
 
 Authors: **Dustin Nimmo**, Mise and Muse. [DNSC](https://dnsc.ai), from the public record.
 
-Posted November 18, 2026. Revised the same morning: the FAA's November 17 line now cites ABC News, which reports a funding request and a senators' letter where the earlier line said a Senate briefing. Last verified November 18, 2026, 9:30 a.m. Eastern. If a fact here is wrong, say so and it will be fixed and noted.
+Posted November 18, 2026. Revised the same day: the FAA's November 17 line now cites ABC News, which reports a funding request and a senators' letter where the earlier line said a Senate briefing; two statements from November 17 were added under "Two officials." Last verified November 18, 2026, 1:00 p.m. Eastern. If a fact here is wrong, say so and it will be fixed and noted.
 
 ---
 
