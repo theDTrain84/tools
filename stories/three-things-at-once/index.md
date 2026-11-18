@@ -199,7 +199,7 @@ Microsoft, preliminary cause 5
 4. Then **A 14% capacity cut**Less capacity to carry it.
 5. Nov 12 to 13 **Down about 24 hours**Automatic failover made it worse. More than 70 countries.
 
-Coordinated? **Not yet on the record.** Microsoft says it was not related to a cyberattack or to AI. Final report due about Nov 20.
+Microsoft says it was not related to a cyberattack or to AI. Final report due about Nov 20.
 
 Earlier this fall, the same shape
 
@@ -216,7 +216,6 @@ About 24 hours, in more than 70 countries.
 [Chart: Microsoft 365 email and apps (Microsoft) leans on Gateway servers (Microsoft), marked changed.]
 
 - **What changed**: A defect deployed in July, then a traffic shift and a 14% capacity cut. Automatic failover made it worse.
-- **Coordinated?**: Not yet on the record.
 
 - Infrastructure planning and coordination
 - change to a running system
@@ -237,7 +236,6 @@ Sign in, purchases and iPhone activation failed for many users.
 [Chart: iCloud, App Store, Apple Pay (Apple) leans on Internal update (Apple), marked changed.]
 
 - **What changed**: "An internal update caused some outages this morning."
-- **Coordinated?**: Not yet on the record.
 
 - Infrastructure planning and coordination
 - change to a running system
@@ -258,7 +256,6 @@ Staggered log ins. Restoration "ongoing but not yet complete," a source said.
 [Chart: NSA Net, its internal network (NSA) leans on Security patch (not stated), marked changed.]
 
 - **What changed**: A software patch for major vulnerabilities discovered last month, per the Director of National Intelligence.
-- **Coordinated?**: Not yet on the record.
 
 The stated cause is a response to an attack risk. No attack on the NSA is on the record.
 
@@ -302,7 +299,6 @@ At affected employers, staff could not log in, clock in or request time off.
 [Chart: Workday live production databases on the left and its disaster recovery backup site on the right, with a wall between them meant to keep them apart. During a test, the backup site connected through the wall to production.]
 
 - **What changed**: While validating its weekly disaster recovery maintenance window, "tenanted services within the DR Site unexpectedly connected to Production databases," leaving data "in an inconsistent state."
-- **Coordinated?**: Not yet on the record.
 
 - Infrastructure planning and coordination
 - change to a running system
@@ -324,7 +320,7 @@ About 4 hr 40 min; about 12,000 flights did not operate.
 [Chart: Air traffic network (FAA) leans on Router in El Dorado, Ark. (contractor L3Harris), marked changed.]
 
 - **What changed**: A router installed during copper to fiber work flooded the network; 17 of 22 centers unstable.
-- **Coordinated?**: Not yet on the record for this change. The contractor, L3Harris, says its work is done "in close coordination with the FAA," as reported by Reuters. 29
+- **The contractor**: L3Harris says its work is done "in close coordination with the FAA," as reported by Reuters. 29
 
 - Infrastructure planning and coordination
 - change to a running system
@@ -349,7 +345,6 @@ About 11:30 a.m. to 6:30 p.m. Eastern.
 
 - **What failed**: "a software bug in an on-premise hardware system" 10
 - **Reported**: An FBI official told NewsNation the outage was traced to a software release by JPMorgan Chase. 39
-- **Coordinated?**: Not yet on the record.
 
 - software bug
 - own data center
@@ -376,7 +371,7 @@ The ground stop, step by step
 - **The part**: A router in El Dorado, Ark., installed by contractor L3Harris during copper to fiber work
 - **Duration**: 4 hr 40 min
 - **FAA's word**: "legacy equipment"
-- **Coordinated?**: Not yet on the record for this change. The contractor, L3Harris, says its work is done "in close coordination with the FAA," as reported by Reuters. 29
+- **The contractor**: L3Harris says its work is done "in close coordination with the FAA," as reported by Reuters. 29
 - **Root cause**: Under FAA and FBI review
 
 "isolated to two contractor owned and maintained routers ... PASS-represented technicians were not involved."*The FAA technicians' union, Nov 15 8*
@@ -537,8 +532,6 @@ A contractor's router, installed during copper to fiber work. Open ticket
 - Infrastructure planning and coordination
 - change to a running system
 
-Coordinated? Not yet on the record for this change
-
 Microsoft · Nov 12 to 13
 
 ##### Microsoft 365
@@ -547,8 +540,6 @@ A July defect, then a traffic shift and a 14% capacity cut. Open ticket
 
 - Infrastructure planning and coordination
 - change to a running system
-
-Coordinated? Not yet on the record
 
 Workday · Nov 13 to 14
 
@@ -559,8 +550,6 @@ A recovery test connected the backup site to live databases. Open ticket
 - Infrastructure planning and coordination
 - change to a running system
 
-Coordinated? Not yet on the record
-
 Apple · Nov 17
 
 ##### iCloud, App Store, Apple Pay
@@ -569,8 +558,6 @@ An internal update. Open ticket
 
 - Infrastructure planning and coordination
 - change to a running system
-
-Coordinated? Not yet on the record
 
 NSA · Nov 17
 
@@ -581,8 +568,6 @@ A security patch kept some systems from coming back up, per the Director of Nati
 - Infrastructure planning and coordination
 - change to a running system
 
-Coordinated? Not yet on the record
-
 Closedwith a stated cause · 1
 
 JPMorgan Chase · Nov 16
@@ -592,8 +577,6 @@ JPMorgan Chase · Nov 16
 "a software bug in an on-premise hardware system." reportedTraced to a software release, an FBI official said; it reached other banks, Chase said. Open ticket
 
 - software bug
-
-Coordinated? Not yet on the record
 
 Closedcause not really stated · 1
 
