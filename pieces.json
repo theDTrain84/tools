@@ -5,8 +5,8 @@
   {
    "slug": "three-things-at-once",
    "href": "stories/three-things-at-once/",
-   "title": "Seven systems failed in six days, November 12 to 17, 2026: Microsoft 365, the FAA's air traffic network, Workday, JPMorgan Chase, United, Apple and the NSA's network. Five began with a change to a system that was already running, and none was called an attack by its operator.",
-   "line": "Four public systems were confirmed attacked between October 9 and 28; no source connects any of these events, and whether anyone coordinated the changes is not yet on the record.",
+   "title": "Three things are happening to our digital systems at the same time.",
+   "line": "Attacks. Rushed changes. Hidden dependencies. A living record of this fall's outages and attacks, built from what each operator said.",
    "type": "piece",
    "section": "stories",
    "topic": "Outages",

@@ -9098,9 +9098,9 @@ Source: https://tools.dnsc.ai/stories/php2shell/ · Generated from the page on N
 
 # Three Things at Once
 
-> Microsoft 365, the FAA ground stop, Workday, JPMorgan Chase, United, Apple and the NSA network failed between November 12 and 17, 2026, as four public systems were confirmed attacked that season. What you may have run into, what each operator said, the change behind five of the seven, and how two AI systems and a person checked it.
+> A living record of this fall's failures and attacks on digital systems, from Microsoft 365 and the FAA ground stop to the NSA's network: what you may have run into, what each operator said, and how two AI systems and a person checked it.
 
-**A living record.** Last updated November 17, 2026, 10:00 p.m. Eastern.
+**A living record.** Last updated November 18, 2026, 8:30 a.m. Eastern.
 
 Kept by Dustin Nimmo, Mise and Muse. Two AI systems from two companies search separately, we open the sources, and a person decides what it adds up to. See how this was made
 
@@ -9428,7 +9428,7 @@ About 4 hr 40 min; about 12,000 flights did not operate.
 1. Nov 13Every departure from U.S. airports held. 6
 2. Nov 14FAA Administrator: "zero evidence of anything nefarious, and zero evidence of anything AI-related." 3
 3. Nov 15Technicians' union: two "contractor owned and maintained routers"; its members "were not involved." 8
-4. Nov 17 reportedA Senate briefing, and a $50.1 billion request sent to appropriators. 40
+4. Nov 17The Transportation Department "officially submitted its $50.1 billion budget funding request." Thirteen Senate Democrats asked for technical briefings from the FAA, L3Harris and Juniper, and the FAA began halting the installation of the routers. 40
 5. OpenRoot cause under FAA and FBI review. 6
 
 Back to the week
@@ -9742,16 +9742,17 @@ No final report on the record
 
 #### Also on the research desk's board
 
-Muse's board held 25 items on the evening of November 17. These are the ones not counted above. Mise has not confirmed them, and none changes the counts.
+Muse's board held 28 items on the morning of November 18. These are the ones not counted above. A second check opened sources for some of them, marked below. None changes the counts.
 
 - **Marriott website and app sign in, Nov 17.** A technical issue; Marriott: "Our review found no indication that the disruption was cybersecurity-related." Resolved. reported, via Skift
 - **Charles Schwab website, Nov 17.** A spokesperson said "A brief webpage loading issue has been resolved." No cause given. reported, Business Insider
 - **Navy Federal Credit Union app, Nov 16 to 17.** No cause given. reported
 - **Cloudflare, Nov 17.** Two incidents on its status page: Durable Objects (resolved 7:17 PM ET) and "R2 elevated errors and timeouts for requests from South America" (resolved 5:08 PM ET). No cause stated. Muse: verified on the status page
 - **Anthropic, Nov 17.** Sign in with Apple on claude.ai and the Claude iOS app; resolved; no cause stated by Anthropic. Muse: verified on the status page
-- **Optimizely, Nov 16.** A compromise of its web experimentation product. This one is an attack, not an outage. reported
+- **Monadnock Community Hospital, New Hampshire, from Nov 9.** Phones and systems went down on Nov 9. On Nov 16 the hospital confirmed a "cyber incident." Ambulances are being diverted and some major elective surgeries are cancelled through Nov 23. This one is an attack. second check: local paper and the hospital's site opened
+- **Optimizely, Nov 16.** A compromise of its web experimentation product, used to run tests on other companies' websites. At least 178 organizations were affected, as reported by The Register. This one is an attack, not an outage. second check: status page and The Register opened
 - **Outside the United States.** Attacks reported at Equinor (Norway), Ipsos, Infoblox and the IIHF website. reported
-- **Gmail and American Express, Nov 17.** User reports only. Google said it was "not currently seeing evidence of a broad Gmail service disruption." unconfirmed
+- **Gmail and American Express, Nov 17.** User reports only. Google said it was "not currently seeing evidence of a broad Gmail service disruption." The second check found no report of an American Express outage that day. unconfirmed
 
 What an uptime promise allows
 
@@ -9936,13 +9937,13 @@ Sources
 37. NSA statement, Director of National Intelligence Jay Clayton on Fox Business, and the PHP vulnerabilities: [CNN, via Local News 8, Nov 17, 2026](https://localnews8.com/politics/cnn-us-politics/2026/11/17/exclusive-highly-classified-us-national-security-communications-network-goes-down-sources-say-2/).
 38. PHP patch date and European precautions, as reported by The Hill, SecureWorld, WJLA and TechRadar. Not opened.
 39. Chase and United updates, as reported in the wire story "Systems restored at major U.S. banks and United Airlines following tech outages," Nov 17, 2026 (DailyFly; Big Country News Connection), and NewsNation. Not opened.
-40. The research desk's board (Muse), Nov 17, 2026: Apple's resolution time and the FAA's Senate briefing and $50.1 billion request, as reported there. Not opened by Mise.
+40. ABC News, "Senate Democrats demand briefings on FAA ground stop," Nov 17, 2026: the $50.1 billion request, the senators' letter and the halt to router installation. Apple's resolution time is from the research desk's board (Muse), Nov 17, 2026, as reported there and not opened by Mise.
 41. Reuters, "Trump official seeks $50 billion for air traffic control after outage," Nov 14, 2026, read in a syndicated copy at [devdiscourse.com](https://www.devdiscourse.com/article/international/4006918-trump-official-seeks-50-billion-for-air-traffic-control-after-outage).
 42. L3Harris aircraft tracking contract, as reported: AIN Online, July 7, 2026, and the federal contract listing at [highergov.com](https://www.highergov.com/contract/693KA726C00059). Not opened.
 
 Authors: **Dustin Nimmo**, Mise and Muse. [DNSC](https://dnsc.ai), from the public record.
 
-Posted November 18, 2026. Last verified November 17, 2026, 10:00 p.m. Eastern. If a fact here is wrong, say so and it will be fixed and noted.
+Posted November 18, 2026. Revised the same morning: the FAA's November 17 line now cites ABC News, which reports a funding request and a senators' letter where the earlier line said a Senate briefing. Last verified November 18, 2026, 8:30 a.m. Eastern. If a fact here is wrong, say so and it will be fixed and noted.
 
 ---
 
