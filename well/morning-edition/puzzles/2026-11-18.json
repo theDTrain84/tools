@@ -1,0 +1,91 @@
+{
+ "v": 1,
+ "track": "news",
+ "date": "2026-11-18",
+ "size": 5,
+ "g": [
+  "##SKI",
+  "#SPIN",
+  "CHECK",
+  "ROCK#",
+  "YES##"
+ ],
+ "a": [
+  [
+   "SKI",
+   "Glide down a snowy hill"
+  ],
+  [
+   "SPIN",
+   "What a top does"
+  ],
+  [
+   "CHECK",
+   "GitHub's Nov. 17 changelog calls an eval a repeatable test for AI behavior: give an agent a realistic task, describe a good result, then ___ both the result and how the agent got there",
+   {
+    "src": "https://github.blog/changelog/2026-11-17-github-copilot-evals-is-now-in-public-preview"
+   }
+  ],
+  [
+   "ROCK",
+   "A stone, or a kind of music"
+  ],
+  [
+   "YES",
+   "The opposite of no"
+  ]
+ ],
+ "d": [
+  [
+   "CRY",
+   "What a baby does when hungry"
+  ],
+  [
+   "SHOE",
+   "It goes on over a sock"
+  ],
+  [
+   "SPECS",
+   "Eyeglasses, for short"
+  ],
+  [
+   "KICK",
+   "What starts a soccer game"
+  ],
+  [
+   "INK",
+   "What a pen runs out of"
+  ]
+ ],
+ "w": "CHECK",
+ "n": "Four documents, all dated Tuesday, all from GitHub's changelog. The first puts evals into public preview for its coding assistant. It defines an eval as a repeatable test for AI behavior: you give an agent a realistic task, describe what a good result looks like, and check both the result and how the agent got there. It says AI output can change from one run to the next, so you run the same test again after you change your setup. The second lets the assistant's security review run the company's secret scanning on code changes before they merge, to catch passwords and keys left in the code. It is a public preview and it is off until you turn it on. The third lets the assistant control a web browser through a Chrome extension, also in public preview. The fourth lets large organizations stream the assistant's agent activity, including prompts, responses and tool calls, into a Microsoft control plane where administrators can review it. What it means for your work: one good answer does not tell you an AI setup works. Keep three or four real tasks from your own week, write down what good looks like for each, and run them again every time you change your instructions or your tools.",
+ "sources": [
+  {
+   "title": "GitHub puts repeatable tests for its coding assistant into public preview",
+   "url": "https://github.blog/changelog/2026-11-17-github-copilot-evals-is-now-in-public-preview",
+   "date": "2026-11-17"
+  },
+  {
+   "title": "Secret scanning on demand for developers and agents",
+   "url": "https://github.blog/changelog/2026-11-17-secret-scanning-on-demand-for-developers-and-agents",
+   "date": "2026-11-17"
+  },
+  {
+   "title": "GitHub's coding assistant can now control a web browser",
+   "url": "https://github.blog/changelog/2026-11-17-let-github-copilot-interact-with-your-browser",
+   "date": "2026-11-17"
+  },
+  {
+   "title": "Organizations can stream coding agent activity for review",
+   "url": "https://github.blog/changelog/2026-11-17-monitor-github-copilot-activity-through-microsoft-agent-365",
+   "date": "2026-11-17"
+  }
+ ],
+ "checked": true,
+ "_theme_placed": [
+  "CHECK"
+ ],
+ "_seconds": 0.1,
+ "cooked": "2026-11-18T05:35:00-05:00",
+ "no": 33
+}

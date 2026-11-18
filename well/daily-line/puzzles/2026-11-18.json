@@ -1,0 +1,67 @@
+{
+ "v": 1,
+ "track": "learning",
+ "date": "2026-11-18",
+ "size": 5,
+ "g": [
+  "RAW##",
+  "ACID#",
+  "MEDIA",
+  "#SEND",
+  "##RED"
+ ],
+ "a": [
+  [
+   "RAW",
+   "Uncooked, like sushi fish"
+  ],
+  [
+   "ACID",
+   "What makes a lemon sour"
+  ],
+  [
+   "MEDIA",
+   "Newspapers, radio and television, as a group"
+  ],
+  [
+   "SEND",
+   "The button that turns a draft into a message someone else can read"
+  ],
+  [
+   "RED",
+   "The color of a ripe tomato"
+  ]
+ ],
+ "d": [
+  [
+   "RAM",
+   "A male sheep"
+  ],
+  [
+   "ACES",
+   "The four highest cards in the deck"
+  ],
+  [
+   "WIDER",
+   "What a road becomes when lanes are added"
+  ],
+  [
+   "DINE",
+   "Eat dinner"
+  ],
+  [
+   "ADD",
+   "Put two numbers together"
+  ]
+ ],
+ "w": "SEND",
+ "n": "Send is the line between a draft and a message. An AI can write the email, the text or the invitation in seconds, and a draft costs nothing to fix. Once it is sent, it belongs to the person who got it. Let the AI draft as much as it likes, and keep the send button for yourself until you trust the work.",
+ "sources": [],
+ "checked": true,
+ "_theme_placed": [
+  "SEND"
+ ],
+ "_seconds": 0.0,
+ "cooked": "2026-11-18T05:35:00-05:00",
+ "no": 36
+}
