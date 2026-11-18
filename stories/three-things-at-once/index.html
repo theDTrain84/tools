@@ -1,0 +1,1711 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Three Things at Once</title>
+<meta name="description" content="Microsoft 365, the FAA ground stop, Workday, JPMorgan Chase, United, Apple and the NSA network failed between November 12 and 17, 2026, as four public systems were confirmed attacked that season. What you may have run into, what each operator said, the change behind five of the seven, and how two AI systems and a person checked it.">
+<link rel="canonical" href="https://tools.dnsc.ai/stories/three-things-at-once/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DNSC">
+<meta property="og:title" content="Seven systems failed in six days, November 12 to 17, 2026. Five began with a change to a system that was already running, and none was called an attack by its operator.">
+<meta property="og:description" content="In the same season four public systems were confirmed attacked. No source connects any of these events, and whether anyone coordinated the changes is not yet on the record. Researched by two AI systems from two companies and checked by a person.">
+<meta property="og:url" content="https://tools.dnsc.ai/stories/three-things-at-once/">
+<meta property="og:image" content="https://tools.dnsc.ai/assets/share/three-things-at-once.jpg?v=20261117">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The DNSC share card: Three things are happening to our digital systems at the same time, beside the three named: Attacks, Rushed changes and Hidden dependencies, with seven failures in six days and four public systems confirmed attacked.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Seven systems failed in six days, November 12 to 17, 2026. Five began with a change to a system that was already running, and none was called an attack by its operator.">
+<meta name="twitter:description" content="In the same season four public systems were confirmed attacked. No source connects any of these events, and whether anyone coordinated the changes is not yet on the record. Researched by two AI systems from two companies and checked by a person.">
+<meta name="twitter:image" content="https://tools.dnsc.ai/assets/share/three-things-at-once.jpg?v=20261117">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Three things at once. Light only; every color is a token. */
+:root{
+  --ground:#F3F5F6;--sheet:#FFFFFF;--board:#E7EBEE;--board-2:#DCE2E6;
+  --ink:#141A20;--ink-2:#36414B;--ink-3:#5A6570;--rule:#C7D0D6;--rule-2:#E1E6E9;
+  --gold:#C39B3F;--gold-1:#F7EFDA;--gold-ink:#6E5418;
+  --blue:#2B5A97;--blue-1:#E2EBF6;
+  --teal:#1C6A64;--teal-1:#DBEDEA;
+  --red:#B3261E;--red-1:#FBE8E6;
+  --shadow:0 1px 2px rgba(20,26,32,.06),0 10px 24px -14px rgba(20,26,32,.28);
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;background:var(--ground);scroll-behavior:smooth}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.56;-webkit-font-smoothing:antialiased;
+  font-variant-numeric:lining-nums;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));overflow-x:hidden}
+::selection{background:var(--gold-1);color:var(--ink)}
+a{color:var(--blue);text-decoration-thickness:1.5px;text-underline-offset:.18em}
+a:hover{text-decoration-thickness:2.5px}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:3px}
+.wrap{max-width:1160px;margin:0 auto}
+p{margin:0 0 14px}
+.k{font-family:var(--serif);font-style:italic;font-weight:500;font-size:.98rem;letter-spacing:0;color:var(--ink-3);margin:0 0 10px}
+.k::before{content:"";display:inline-block;width:20px;height:1.5px;background:var(--gold);vertical-align:.32em;margin-right:9px}
+.c{font-family:var(--mono);font-size:.72em;white-space:nowrap;vertical-align:.14em}
+.c a{color:var(--ink-3);text-decoration:none;padding:0 1px}
+.c a:hover{color:var(--blue);text-decoration:underline}
+
+/* masthead */
+.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:10px 24px;padding:22px 0 12px;border-bottom:2px solid var(--ink)}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{width:36px;height:36px;flex:none}
+.brand b{display:block;font-weight:800;font-size:1rem;letter-spacing:.12em;line-height:1.25}
+.brand span{display:block;font-size:.9rem;color:var(--ink-2)}
+.ref{font-family:var(--serif);font-style:italic;font-size:.95rem;color:var(--ink-3);text-align:right;line-height:1.45}
+.ref span{display:block}
+@media (max-width:640px){.ref{text-align:left}}
+
+/* hero */
+.hero{padding:clamp(34px,6vw,72px) 0 0}
+.hero h1{font-family:var(--serif);font-weight:600;font-variation-settings:"opsz" 144;font-size:clamp(2.7rem,7.2vw,6rem);line-height:.98;letter-spacing:-.03em;margin:0 0 30px;max-width:15ch}
+.hero h1 span{display:block;text-wrap:balance}
+.hero h1 .calm{color:var(--teal)}
+.hero .lower{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:28px 56px;align-items:end}
+.dek{font-family:var(--serif);font-weight:400;font-size:clamp(1.22rem,2.1vw,1.62rem);line-height:1.38;color:var(--ink);margin:0;max-width:40ch;text-wrap:pretty}
+.dek b{font-weight:600}
+.dek .gold{background:linear-gradient(transparent 62%,var(--gold-1) 62%)}
+.hero .aside{font-size:.98rem;color:var(--ink-2);border-top:1px solid var(--rule);padding-top:14px}
+.hero .aside p{margin:0 0 10px}
+.stamp{font-family:var(--mono);font-size:.78rem;color:var(--ink-3);margin:0}
+@media (max-width:820px){.hero .lower{grid-template-columns:minmax(0,1fr)}}
+
+/* the week strip */
+.week{margin:46px 0 0;background:var(--sheet);border:1px solid var(--rule);border-radius:16px;box-shadow:var(--shadow);padding:16px 16px 18px}
+.week-h{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 18px;align-items:baseline;margin:0 4px 12px}
+.week-h h2{font-family:var(--serif);font-weight:600;font-size:1.15rem;margin:0}
+.legend-dot{font-size:.86rem;color:var(--ink-2);display:inline-flex;align-items:center;gap:8px}
+.gdot{display:inline-block;width:11px;height:11px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px var(--gold-1);flex:none}
+.days{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-auto-rows:auto;gap:8px 8px;position:relative}
+.day{font-family:var(--mono);font-size:.78rem;color:var(--ink-3);padding:6px 8px;border-bottom:1px solid var(--rule-2);grid-row:1}
+.day b{font-weight:500;color:var(--ink)}
+.day.quiet{color:#8A949C}
+.cols{position:absolute;inset:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;pointer-events:none;z-index:0}
+.cols i{border-left:1px dashed var(--rule-2)}
+.cols i:first-child{border-left:0}
+.ev{position:relative;z-index:1;background:var(--ground);border:1px solid var(--rule);border-radius:10px;padding:9px 10px 10px;min-width:0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px 9px;align-items:start}
+.ev .ico{grid-row:1/4;margin-top:2px}
+.ev b{font-size:.92rem;line-height:1.25}
+.ev span{font-size:.84rem;line-height:1.32;color:var(--ink-2)}
+.ev em{font-style:normal;font-family:var(--mono);font-size:.72rem;color:var(--ink-3);line-height:1.35}
+.ev .gdot{position:absolute;top:-5px;right:-5px}
+.ev .d{display:none}
+.ico{color:var(--ink);flex:none}
+.ico .gl{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.ico .fillink{fill:currentColor;stroke:none}
+.ico .cut{stroke:var(--red)}
+@media (max-width:860px){
+  .days{grid-template-columns:minmax(0,1fr);gap:8px}
+  .day,.cols{display:none}
+  .ev{grid-column:1 !important;grid-row:auto !important}
+  .ev .d{display:block;font-family:var(--mono);font-size:.72rem;color:var(--ink-3);grid-column:2}
+}
+
+/* jump bar */
+.jump{position:sticky;top:0;z-index:20;background:rgba(243,245,246,.94);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin:40px 0 0}
+.jump ul{list-style:none;margin:0 auto;max-width:1160px;padding:6px 0;display:flex;gap:4px 22px;overflow-x:auto;scrollbar-width:none;white-space:nowrap}
+.jump ul::-webkit-scrollbar{display:none}
+.jump a{font-size:.9rem;font-weight:600;color:var(--ink-2);text-decoration:none;padding:8px 0;display:inline-block}
+.jump a:hover{color:var(--blue)}
+
+/* chapter heads */
+.ch{margin:clamp(64px,9vw,104px) 0 26px;max-width:62rem}
+.ch h2{font-family:var(--serif);font-weight:600;font-variation-settings:"opsz" 120;font-size:clamp(1.85rem,4.2vw,3.25rem);line-height:1.06;letter-spacing:-.018em;margin:0;text-wrap:balance}
+.ch .sub{margin:14px 0 0;font-size:1.08rem;color:var(--ink-2);max-width:62ch}
+h3{font-family:var(--sans);font-weight:800;font-size:1.06rem;line-height:1.25;margin:0 0 8px}
+
+/* ---------- the board ---------- */
+.board{background:var(--board);border-radius:20px;padding:14px;border:1px solid var(--board-2)}
+.toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;padding:4px 4px 14px;border-bottom:1px solid var(--board-2);margin-bottom:14px}
+.toolbar .name{font-weight:800;font-size:.98rem;margin-right:auto;display:flex;align-items:center;gap:10px}
+.toolbar .name small{font-family:var(--mono);font-weight:400;font-size:.76rem;color:var(--ink-3)}
+.pill{display:inline-flex;align-items:center;gap:8px;font-size:.84rem;font-weight:600;color:var(--ink-2);background:var(--sheet);border:1px solid var(--rule);border-radius:999px;padding:5px 11px 5px 10px;line-height:1.2}
+.pill .n{font-family:var(--mono);font-weight:500;font-size:.78rem;background:var(--board);border-radius:999px;padding:1px 7px;color:var(--ink)}
+.pill.zero{background:transparent;border-style:dashed;color:var(--ink-3)}
+.pill.zero .n{background:transparent;border:1px dashed var(--ink-3)}
+.pill.rule{background:var(--ink);color:#fff;border-color:var(--ink)}
+.pill.rule svg{flex:none}
+.trk{width:9px;height:9px;border-radius:2px;flex:none}
+.trk.cy{background:var(--red)}.trk.ip{background:var(--blue)}.trk.ai{border:1.5px dashed var(--ink-3)}
+.lanes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:start}
+.lane{min-width:0}
+.lane-h{display:flex;align-items:center;gap:9px;padding:4px 6px 12px;font-weight:700;font-size:.92rem;line-height:1.25}
+.st{width:16px;height:16px;flex:none}
+.rcol h3 .st{width:18px;height:18px}
+.lane-h .cnt{margin-left:auto;font-family:var(--mono);font-weight:500;font-size:.78rem;color:var(--ink-3)}
+.lane-h small{display:block;font-weight:400;font-size:.8rem;color:var(--ink-3)}
+.tk{background:var(--sheet);border:1px solid var(--rule);border-radius:13px;box-shadow:var(--shadow);padding:13px 14px 12px;margin:0 0 12px;min-width:0}
+.tk-top{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:.74rem;color:var(--ink-3);margin-bottom:6px}
+.tk-top .st{width:13px;height:13px}
+.tk-top .when{margin-left:auto}
+.tk h3{font-size:1.04rem;margin:0 0 2px}
+.tk .scale{font-size:.86rem;color:var(--ink-2);margin:0 0 6px}
+.dep{display:block;width:100%;height:auto;margin:6px 0 4px;overflow:visible}
+.dep .wire{fill:none;stroke:var(--ink);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.dep .wire.hotw{stroke:var(--ink);stroke-dasharray:5 4}
+.dep .wall{stroke:var(--ink-3);stroke-width:2;stroke-dasharray:2 5;stroke-linecap:round}
+.dep .node{fill:var(--sheet);stroke:var(--ink);stroke-width:1.6}
+.dep .node.ghost{stroke-dasharray:4 4;stroke:var(--ink-3)}
+.dep .node.hit{fill:var(--red-1);stroke:var(--red)}
+.dep .ring{fill:none;stroke:var(--gold);stroke-width:2;stroke-dasharray:3 3.5}
+.dep .ring.bug{stroke:var(--ink-3)}
+.dep .flash{fill:none;stroke:var(--red);stroke-width:3}
+.dep .tag.chg{fill:var(--gold-1);stroke:var(--gold);stroke-width:1.2}
+.dep .tag.bug{fill:var(--board);stroke:var(--ink-3);stroke-width:1}
+.dep .tagt{font:500 10.5px var(--mono);fill:var(--ink)}
+.dep .lbl{font:400 10.5px var(--mono);fill:var(--ink-3)}
+.dep .lbl.red{fill:var(--red)}
+.dep .nm{font:600 12.5px var(--sans);fill:var(--ink)}
+.dep .own{font:400 10.5px var(--mono);fill:var(--ink-3)}
+.dep .gl,.faa .gl{fill:none;stroke:var(--ink);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.dep .fillink,.faa .fillink{fill:var(--ink);stroke:none}
+.dep .qmark{font:600 18px var(--serif);fill:var(--ink-3);stroke:none}
+.dep .pulse,.faa .pulse{fill:var(--gold);stroke:var(--sheet);stroke-width:1.5}
+.dep .pulse.red{fill:var(--red)}
+.dep .atk{stroke:var(--red);stroke-width:1.6;stroke-dasharray:5 4;fill:none}
+.dep .atkh{stroke:var(--red);stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.dep .atkx path{stroke:var(--red);stroke-width:2;stroke-linecap:round}
+.fields{display:grid;grid-template-columns:minmax(0,6.6rem) minmax(0,1fr);gap:5px 10px;margin:8px 0 10px;font-size:.86rem;line-height:1.4}
+.fields dt{color:var(--ink-3);font-size:.8rem;padding-top:1px}
+.fields dd{margin:0;color:var(--ink)}
+.fields dd.open{font-weight:700}
+.fields dd.open::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;border:1.5px dashed var(--ink-3);margin-right:7px;vertical-align:.02em}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin:0 0 10px;padding:0;list-style:none}
+.tags li{font-size:.74rem;font-weight:600;line-height:1.2;border-radius:6px;padding:3px 7px;background:var(--board);color:var(--ink-2);display:inline-flex;align-items:center;gap:6px}
+.tags li.ip{background:var(--blue-1);color:var(--blue)}
+.tags li.cy{background:var(--red-1);color:var(--red)}
+.tags li.chg{background:var(--gold-1);color:var(--gold-ink)}
+.hist{list-style:none;margin:0;padding:10px 0 0;border-top:1px solid var(--rule-2);font-size:.82rem;line-height:1.4;color:var(--ink-2)}
+.hist li{position:relative;padding:0 0 8px 16px}
+.hist li::before{content:"";position:absolute;left:2px;top:.42em;width:7px;height:7px;border-radius:50%;background:var(--ink-3)}
+.hist li::after{content:"";position:absolute;left:5px;top:1.1em;bottom:-.1em;width:1px;background:var(--rule)}
+.hist li:last-child::after{display:none}
+.hist li:last-child{padding-bottom:0}
+.hist li.now::before{background:var(--sheet);border:1.5px dashed var(--ink-3);width:6px;height:6px}
+.hist time{font-family:var(--mono);font-size:.74rem;color:var(--ink);margin-right:6px}
+.board-foot{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;align-items:start;margin:4px 4px 2px;padding:14px 4px 4px;border-top:1px solid var(--board-2);font-size:.98rem;color:var(--ink-2)}
+.board-foot p{margin:0;max-width:72ch}
+.board-foot b{color:var(--ink)}
+@media (max-width:1000px){
+  .lanes{grid-template-columns:minmax(0,1fr);max-width:560px;margin:0 auto}
+  .lane+.lane{margin-top:10px}
+}
+@media (max-width:520px){.board{padding:10px;border-radius:16px;margin-inline:-6px}.tk{padding:12px 12px 11px}.toolbar .name{flex-basis:100%}}
+
+/* ---------- the ground stop, opened ---------- */
+.open-tk{background:var(--sheet);border:1px solid var(--rule);border-radius:20px;box-shadow:var(--shadow);overflow:hidden}
+.open-tk .bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:12px 18px;border-bottom:1px solid var(--rule-2);font-family:var(--mono);font-size:.78rem;color:var(--ink-3)}
+.open-tk .bar .st{width:14px;height:14px}
+.open-tk .bar b{font-family:var(--sans);font-size:.9rem;color:var(--ink)}
+.open-tk .bar .r{margin-left:auto}
+.open-tk .body{display:block}
+.open-tk figure{margin:0;padding:22px 26px 16px;border-bottom:1px solid var(--rule-2)}
+.faa{display:block;width:100%;height:auto}
+.faa.tall{display:none;max-width:420px;margin:0 auto}
+.faa .line{fill:none;stroke:var(--rule);stroke-width:1.3}
+.faa .line.hot{stroke:#E5B4AF;stroke-width:1.4}
+.faa .node{fill:var(--sheet);stroke:var(--ink);stroke-width:2}
+.faa .ring.big{fill:none;stroke:var(--gold);stroke-width:2.4;stroke-dasharray:4 5}
+.faa .tag.chg{fill:var(--gold-1);stroke:var(--gold);stroke-width:1.3}
+.faa .tagt.big{font:500 12.5px var(--mono);fill:var(--ink)}
+.faa .nm.big{font:700 17px var(--sans);fill:var(--ink)}
+.faa .own.big{font:400 13px var(--mono);fill:var(--ink-3)}
+.faa .hd{font:italic 500 17px var(--serif);fill:var(--ink-2)}
+.faa .ctr.bad{fill:var(--red-1);stroke:var(--red);stroke-width:1.8}
+.faa .ctr.ok{fill:var(--teal-1);stroke:var(--teal);stroke-width:1.8}
+.faa .badm{fill:none;stroke:var(--red);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.faa .okm{fill:none;stroke:var(--teal);stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.faa .flash2{fill:none;stroke:var(--red);stroke-width:2.5}
+.faa .legend text{font:500 13px var(--sans);fill:var(--ink-2)}
+.faa .legend .cap{font:italic 400 13px var(--serif);fill:var(--ink-3)}
+.props{padding:22px 26px 24px;font-size:.95rem;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:4px 44px;align-items:start}
+.props .quotes{display:grid;gap:12px}
+.props dl{display:grid;grid-template-columns:minmax(0,7.4rem) minmax(0,1fr);gap:9px 12px;margin:0 0 18px}
+.props dt{color:var(--ink-3);font-size:.84rem}
+.props dd{margin:0;line-height:1.42}
+.props dd.big{font-family:var(--serif);font-weight:600;font-size:1.3rem;line-height:1.15}
+.props dd.open{font-weight:700}
+.props .say{margin:0;padding:12px 14px;background:var(--ground);border-radius:10px;font-family:var(--serif);font-size:1.02rem;line-height:1.4}
+.props .say cite{display:block;margin-top:6px;font-family:var(--sans);font-style:normal;font-size:.8rem;color:var(--ink-3)}
+@media (max-width:900px){
+  .props{grid-template-columns:minmax(0,1fr)}
+  .open-tk figure{padding:18px 14px 12px}
+}
+@media (max-width:640px){.faa.wide{display:none}.faa.tall{display:block}.open-tk .bar .r{margin-left:0;flex-basis:100%}}
+
+/* ---------- two officials ---------- */
+.face-off{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0;border-top:2px solid var(--ink);border-bottom:1px solid var(--rule)}
+.face-off figure{margin:0;padding:28px 34px 30px 0}
+.face-off figure+figure{padding:28px 0 30px 34px;border-left:1px solid var(--rule)}
+.face-off .role{font-family:var(--mono);font-size:.78rem;color:var(--ink-3);margin:0 0 16px;display:flex;align-items:center;gap:8px}
+.face-off .role i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.face-off blockquote{margin:0;font-family:var(--serif);font-weight:500;font-size:clamp(1.5rem,2.8vw,2.3rem);line-height:1.16;letter-spacing:-.015em;text-wrap:pretty}
+.face-off blockquote p{margin:0 0 14px}
+.face-off blockquote .after{font-size:.62em;font-weight:500;color:var(--ink-2);line-height:1.3}
+.face-off figcaption{font-size:.92rem;color:var(--ink-2);line-height:1.45;max-width:46ch}
+.face-off figcaption b{color:var(--ink)}
+@media (max-width:760px){
+  .face-off{grid-template-columns:minmax(0,1fr)}
+  .face-off figure,.face-off figure+figure{padding:24px 0}
+  .face-off figure+figure{border-left:0;border-top:1px solid var(--rule)}
+}
+.also{margin:18px 0 0;font-size:1rem;color:var(--ink-2);max-width:70ch}
+.rename{margin:42px 0 0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:22px 40px;align-items:center;background:var(--sheet);border:1px solid var(--rule);border-radius:20px;padding:26px 28px;box-shadow:var(--shadow)}
+.swap{display:flex;align-items:center;gap:14px;font-family:var(--serif);font-weight:600;font-size:clamp(3.4rem,7vw,5.2rem);line-height:1;letter-spacing:-.03em}
+.swap .was{position:relative;color:var(--ink-3)}
+.swap .was::after{content:"";position:absolute;left:-4%;right:-4%;top:52%;height:4px;background:var(--gold);transform:rotate(-8deg)}
+.swap svg{width:56px;height:24px;flex:none}
+.rename h3{font-family:var(--serif);font-weight:600;font-size:1.35rem;margin:0 0 8px}
+.rename p{margin:0 0 8px;color:var(--ink-2);max-width:62ch}
+.rename p:last-child{margin:0}
+@media (max-width:700px){.rename{grid-template-columns:minmax(0,1fr);padding:20px 18px}}
+
+/* ---------- three things ---------- */
+.three{display:grid;gap:clamp(40px,6vw,64px)}
+.thing{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px 52px;align-items:center;padding-top:26px;border-top:1px solid var(--rule)}
+.thing.flip .art{order:-1}
+.thing h3{font-family:var(--serif);font-weight:600;font-size:clamp(1.5rem,2.8vw,2.15rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 14px}
+.thing .lead{color:var(--ink-2);margin:0 0 18px;max-width:56ch}
+.nums{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 22px;margin:0 0 18px;padding:0;list-style:none}
+.nums li{border-top:2px solid var(--ink);padding-top:8px;font-size:.9rem;line-height:1.4;color:var(--ink-2);min-width:0}
+.nums b{display:block;font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,3vw,2.3rem);line-height:1.05;color:var(--ink);letter-spacing:-.02em;margin-bottom:4px}
+.honest{display:flex;gap:10px;align-items:flex-start;margin:0;font-size:.96rem;color:var(--ink);background:var(--sheet);border:1px solid var(--rule);border-radius:12px;padding:12px 14px;max-width:60ch}
+.honest svg{flex:none;margin-top:2px}
+.art{margin:0;background:var(--sheet);border:1px solid var(--rule);border-radius:20px;padding:18px;box-shadow:var(--shadow)}
+.art svg{display:block;width:100%;height:auto}
+.art figcaption{font-size:.84rem;color:var(--ink-3);margin-top:8px}
+.art .ln{fill:none;stroke:var(--ink);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.art .ln2{fill:none;stroke:var(--rule);stroke-width:1.4}
+.art .t{font:600 14px var(--sans);fill:var(--ink)}
+.art .m{font:400 12.5px var(--mono);fill:var(--ink-3)}
+.art .s{font:600 13px var(--serif);fill:var(--ink)}
+.art .big{font:600 30px var(--serif);fill:var(--ink)}
+.art .red{fill:var(--red)}
+.art .stn{fill:var(--sheet);stroke:var(--ink);stroke-width:1.6}
+.art .stn.r{fill:var(--red-1);stroke:var(--red)}
+.art .runner{fill:var(--red)}
+.art .blk{fill:var(--sheet);stroke:var(--ink);stroke-width:1.4}
+.art .blk.g{fill:var(--gold-1);stroke:var(--gold)}
+.art .still{display:none}
+.art .gate{fill:var(--ground);stroke:var(--ink);stroke-width:1.6}
+.bars{display:grid;gap:10px;margin:4px 0 0}
+.bar-row{display:grid;grid-template-columns:minmax(0,8.6rem) minmax(0,1fr);gap:4px 14px;align-items:center;font-size:.86rem}
+.bar-row .lab{color:var(--ink-2);line-height:1.25}
+.bar-row .lab b{display:block;color:var(--ink);font-size:.9rem}
+.track{position:relative;height:30px;background:var(--ground);border-radius:6px;overflow:hidden}
+.fill{position:absolute;inset:0 auto 0 0;background:var(--ink);border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding:0 9px;color:#fff;font-family:var(--mono);font-size:.78rem;white-space:nowrap}
+.fill.lost{background:repeating-linear-gradient(135deg,var(--red-1) 0 6px,#F4D3CF 6px 9px);color:var(--red);justify-content:flex-start;left:auto;right:0;border-radius:0 6px 6px 0}
+.fill.kept{background:var(--ink)}
+.fill.gold{background:var(--blue)}
+.fill.out{justify-content:flex-start}
+.fill.out span{position:absolute;left:calc(100% + 8px);color:var(--ink);white-space:nowrap}
+.minihead{font-weight:800;font-size:.9rem;margin:0 0 10px}
+.minihead+.bars{margin-bottom:18px}
+@media (max-width:860px){.thing{grid-template-columns:minmax(0,1fr)}.thing.flip .art{order:0}}
+@media (max-width:520px){.nums{grid-template-columns:minmax(0,1fr)}.bar-row{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- uptime ---------- */
+.uptime{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.5fr);gap:28px 52px;align-items:start}
+.uptime .teach p{color:var(--ink-2)}
+.uptime .teach .yr{font-family:var(--serif);font-weight:600;font-size:clamp(2rem,4vw,3rem);line-height:1;color:var(--ink);margin:14px 0 4px;letter-spacing:-.02em}
+.ruler{background:var(--sheet);border:1px solid var(--rule);border-radius:20px;padding:20px 22px 16px;box-shadow:var(--shadow)}
+.srow{display:grid;grid-template-columns:minmax(0,11.5rem) minmax(0,1fr);gap:4px 16px;align-items:center;padding:9px 0;border-bottom:1px solid var(--rule-2)}
+.srow:last-of-type{border-bottom:0}
+.srow .lab{font-size:.9rem;line-height:1.25;color:var(--ink)}
+.srow .lab small{display:block;font-family:var(--mono);font-size:.74rem;color:var(--ink-3)}
+.srow .lane2{position:relative;height:24px}
+.srow .b{position:absolute;left:0;top:0;bottom:0;border-radius:5px;background:var(--ink)}
+.srow.allow .b{background:var(--gold-1);border:2px dashed var(--gold)}
+.srow .v{position:absolute;top:50%;transform:translateY(-50%);font-family:var(--mono);font-size:.78rem;color:var(--ink);white-space:nowrap}
+.ruler .note{font-size:.84rem;color:var(--ink-3);margin:10px 0 0}
+@media (max-width:860px){.uptime{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:520px){.srow{grid-template-columns:minmax(0,1fr)}.ruler{padding:16px 14px 12px}}
+
+/* ---------- the record ---------- */
+.record{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.rcol{background:var(--sheet);border:1px solid var(--rule);border-radius:16px;padding:16px 18px 6px;min-width:0}
+.rcol h3{display:flex;align-items:center;gap:10px;font-size:1rem;margin:0 0 12px;padding-bottom:12px;border-bottom:1px solid var(--rule-2)}
+.rcol ul{list-style:none;margin:0;padding:0}
+.rcol li{font-size:.93rem;line-height:1.45;color:var(--ink-2);padding:0 0 12px}
+.rcol li b{color:var(--ink);font-weight:600}
+@media (max-width:900px){.record{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- questions ---------- */
+.asks{list-style:none;margin:0;padding:0;counter-reset:q;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 48px}
+.asks li{counter-increment:q;display:grid;grid-template-columns:3rem minmax(0,1fr);gap:12px;padding:18px 0;border-top:1px solid var(--rule);font-family:var(--serif);font-size:1.18rem;line-height:1.36}
+.asks li::before{content:counter(q);font-family:var(--serif);font-weight:600;font-size:2.2rem;line-height:.9;color:var(--gold)}
+@media (max-width:760px){.asks{grid-template-columns:minmax(0,1fr)}.asks li{font-size:1.08rem;grid-template-columns:2.4rem minmax(0,1fr)}}
+
+/* ---------- plain words ---------- */
+.gloss{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 34px;margin:0}
+.gloss div{padding:14px 0;border-top:1px solid var(--rule);min-width:0}
+.gloss dt{font-family:var(--serif);font-weight:600;font-size:1.15rem;margin:0 0 3px}
+.gloss dd{margin:0;font-size:.95rem;color:var(--ink-2);line-height:1.45}
+@media (max-width:900px){.gloss{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.gloss{grid-template-columns:minmax(0,1fr)}}
+
+/* ---------- sources ---------- */
+.sources{columns:2 340px;column-gap:44px;margin:0;padding:0 0 0 1.6em;font-size:.86rem;line-height:1.5;color:var(--ink-2)}
+.sources li{margin:0 0 8px;break-inside:avoid;overflow-wrap:anywhere}
+.sources li::marker{font-family:var(--mono);font-size:.78rem;color:var(--ink-3)}
+.foot{margin:72px 0 0;padding:20px 0 56px;border-top:2px solid var(--ink);display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-between;font-size:.86rem;color:var(--ink-3)}
+.foot .stamp{font-size:.8rem}
+
+/* motion: only the drawings move, and only when motion is welcome */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .pulse,.flash,.flash2,.runner,.mover{display:none}
+  .art .still{display:inline}
+}
+
+/* ===== revision 2 ===== */
+:root{--cat-a:var(--red);--cat-b:var(--blue);--cat-c:var(--gold)}
+.hero h1.three-h{font-size:clamp(2.35rem,5.4vw,4.6rem);line-height:1.02;max-width:23ch;margin:0 0 28px;text-wrap:balance}
+.cats{list-style:none;margin:0 0 34px;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:2px solid var(--ink)}
+.cats li{padding:18px 26px 20px 0;min-width:0}
+.cats li+li{padding-left:26px;border-left:1px solid var(--rule)}
+.cats a{color:inherit;text-decoration:none;display:block}
+.cats a:hover .cat-t{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.14em}
+.cat-m{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:.76rem;color:var(--ink-3);margin:0 0 10px}
+.cat-m svg{width:22px;height:22px;flex:none}
+.cat-t{display:block;font-family:var(--serif);font-weight:600;font-size:clamp(1.55rem,2.6vw,2.15rem);line-height:1.08;letter-spacing:-.02em;margin:0 0 10px;text-wrap:balance}
+.cats .ka .cat-t{color:var(--red)}
+.cats .kb .cat-t{color:var(--blue)}
+.cats .kc .cat-t{color:var(--ink)}
+.cats .kc .cat-t span{background:linear-gradient(transparent 60%,var(--gold-1) 60%)}
+.cat-e{display:block;font-size:.95rem;line-height:1.45;color:var(--ink-2)}
+@media (max-width:860px){.cats{grid-template-columns:minmax(0,1fr)}.cats li,.cats li+li{padding:16px 0 18px;border-left:0}.cats li+li{border-top:1px solid var(--rule)}}
+.hero-foot{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:24px 52px;align-items:start}
+.hero-foot .dek{font-size:clamp(1.12rem,1.7vw,1.36rem);max-width:48ch}
+.spine{background:var(--sheet);border:1px solid var(--rule);border-radius:16px;padding:16px 18px;box-shadow:var(--shadow)}
+.spine .q{font-family:var(--mono);font-size:.78rem;color:var(--ink-3);margin:0 0 4px}
+.spine .a{font-family:var(--serif);font-weight:600;font-size:1.5rem;line-height:1.15;margin:0 0 6px;display:flex;align-items:center;gap:10px}
+.spine .a::before{content:"";width:14px;height:14px;border-radius:50%;border:2px dashed var(--ink-3);flex:none}
+.spine p{font-size:.9rem;color:var(--ink-2);margin:0}
+.listen{margin:14px 0 0;background:var(--sheet);border:1px solid var(--rule);border-radius:16px;padding:12px 14px;box-shadow:var(--shadow)}
+.listen[hidden]{display:none}
+.listen-l{display:flex;align-items:center;gap:9px;font-family:var(--serif);font-style:italic;font-weight:500;font-size:.98rem;color:var(--ink-2);margin:0 0 8px}
+.listen-l svg{flex:none}
+.listen audio{display:block;width:100%;height:40px;color-scheme:light}
+@media (max-width:860px){.hero-foot{grid-template-columns:minmax(0,1fr)}}
+
+/* the season: two evidence panels with equal weight */
+.season{margin:44px 0 0;display:grid;gap:16px}
+.panel{background:var(--sheet);border:1px solid var(--rule);border-radius:16px;box-shadow:var(--shadow);padding:16px 16px 18px}
+.panel-h{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 18px;align-items:baseline;margin:0 4px 12px}
+.panel-h h2{font-family:var(--serif);font-weight:600;font-size:1.15rem;margin:0;display:flex;align-items:center;gap:10px}
+.panel-h h2 .st{width:16px;height:16px}
+.panel-h .note{font-size:.86rem;color:var(--ink-2)}
+.atk-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr)) minmax(0,1.15fr);gap:8px}
+.atk-row .ev{background:var(--red-1);border-color:#EFC9C4}
+.atk-row .ev em.d{display:block}
+.found{background:var(--ground);border:1px dashed var(--rule);border-radius:10px;padding:9px 11px;min-width:0}
+.found b{display:block;font-family:var(--serif);font-weight:600;font-size:1.02rem;line-height:1.2;margin:0 0 4px}
+.found>span{display:block;font-size:.8rem;line-height:1.35;color:var(--ink-2);margin:0 0 6px}
+.found>span:last-child{margin:0}
+.atk-row .ev{align-content:start}
+@media (max-width:1000px){.atk-row{grid-template-columns:repeat(2,minmax(0,1fr))}.atk-row .found{grid-column:1/-1}}
+@media (max-width:560px){.atk-row{grid-template-columns:minmax(0,1fr)}}
+.season-line{margin:4px 4px 0;font-size:.98rem;color:var(--ink-2);max-width:78ch}
+.season-line b{color:var(--ink)}
+
+/* chapters */
+.chap-tag{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:.78rem;color:var(--ink-3);margin:0 0 12px}
+.chap-tag svg{width:20px;height:20px}
+.ch.cat-a h2 .hl{color:var(--red)}
+.ch.cat-b h2 .hl{color:var(--blue)}
+.ch.cat-c h2 .hl{background:linear-gradient(transparent 62%,var(--gold-1) 62%)}
+.tgrid{display:grid;gap:14px;align-items:start;margin:30px 0 0}
+.tgrid .tk{margin:0}
+.tgrid.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.tgrid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.tgrid.two .dep{max-width:380px;margin-inline:auto}
+@media (max-width:1100px){.tgrid.four{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:760px){.tgrid.four,.tgrid.two{grid-template-columns:minmax(0,1fr)}}
+.grp-h{font-family:var(--serif);font-style:italic;font-weight:500;font-size:1.05rem;color:var(--ink-2);margin:40px 0 0}
+
+/* Microsoft: changes stacking */
+.stack{background:var(--sheet);border:1px solid var(--rule);border-radius:20px;box-shadow:var(--shadow);padding:22px 24px 20px}
+.stack-h{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 18px;margin:0 0 18px}
+.stack-h h3{font-family:var(--serif);font-weight:600;font-size:1.3rem;margin:0}
+.stack-h span{font-family:var(--mono);font-size:.76rem;color:var(--ink-3)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1.5fr 1fr 1fr 1.1fr;gap:0;position:relative}
+.steps li{position:relative;padding:34px 16px 0 0;min-width:0;font-size:.92rem;line-height:1.4;color:var(--ink-2)}
+.steps li::before{content:"";position:absolute;left:0;right:0;top:10px;height:2px;background:var(--ink)}
+.steps li.gap::before{background:repeating-linear-gradient(90deg,var(--ink-3) 0 6px,transparent 6px 12px);height:2px}
+.steps li::after{content:"";position:absolute;left:0;top:3px;width:16px;height:16px;border-radius:50%;background:var(--sheet);border:2px solid var(--ink)}
+.steps li.chg::after{background:var(--gold-1);border-color:var(--gold)}
+.steps li.gap::after{display:none}
+.steps li.down::after{background:var(--red-1);border-color:var(--red)}
+.steps li.down::before{background:var(--red);height:6px;top:8px;border-radius:3px}
+.steps b{display:block;font-family:var(--serif);font-weight:600;font-size:1.06rem;color:var(--ink);margin:0 0 4px;line-height:1.2}
+.steps .when{display:block;font-family:var(--mono);font-size:.74rem;color:var(--ink-3);margin:0 0 4px}
+.steps li.gap{color:var(--ink-3);font-style:italic;font-family:var(--serif)}
+.stack .co{margin:18px 0 0;padding-top:14px;border-top:1px solid var(--rule-2);display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.92rem;color:var(--ink-2)}
+.stack .co b{color:var(--ink)}
+@media (max-width:860px){
+  .steps{grid-template-columns:minmax(0,1fr)}
+  .steps li{padding:0 0 18px 30px}
+  .steps li::before{left:7px;right:auto;top:18px;bottom:0;width:2px;height:auto}
+  .steps li.gap::before{background:repeating-linear-gradient(180deg,var(--ink-3) 0 6px,transparent 6px 12px);width:2px;height:auto}
+  .steps li.down::before{width:6px;left:5px;top:18px;height:auto}
+  .steps li::after{top:2px}
+  .steps li.gap{padding-left:30px}
+}
+.earlier{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:14px 0 0}
+.earlier .ev{background:var(--sheet)}
+@media (max-width:760px){.earlier{grid-template-columns:minmax(0,1fr)}}
+
+/* the ground stop, step by step */
+.frames{list-style:none;margin:0;padding:22px 22px 6px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;counter-reset:fr}
+.frames li{counter-increment:fr;min-width:0;display:flex;flex-direction:column}
+.frames .pic{background:var(--ground);border-radius:14px;padding:10px;margin:0 0 12px}
+.frames svg{display:block;width:100%;height:auto}
+.frames h4{font-family:var(--serif);font-weight:600;font-size:1.12rem;line-height:1.2;margin:0 0 6px;display:flex;gap:10px;align-items:baseline}
+.frames h4::before{content:counter(fr);font-family:var(--serif);font-weight:600;font-size:1.6rem;line-height:1;color:var(--gold)}
+.frames p{font-size:.92rem;line-height:1.45;color:var(--ink-2);margin:0 0 8px}
+.frames p.unk{font-size:.86rem;color:var(--ink);display:flex;gap:8px;align-items:flex-start;margin-top:auto;padding-top:8px;border-top:1px dashed var(--rule)}
+.frames p.unk::before{content:"";flex:none;width:11px;height:11px;margin-top:4px;border-radius:50%;border:1.5px dashed var(--ink-3)}
+.frames .gl{fill:none;stroke:var(--ink);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.frames .fillink{fill:var(--ink);stroke:none}
+.frames .node{fill:var(--sheet);stroke:var(--ink);stroke-width:1.6}
+.frames .wire{fill:none;stroke:var(--ink);stroke-width:1.6;stroke-linecap:round}
+.frames .copper{fill:none;stroke:var(--ink-3);stroke-width:2;stroke-dasharray:3 4;stroke-linecap:round}
+.frames .fiber{fill:none;stroke:var(--blue);stroke-width:2.4;stroke-linecap:round}
+.frames .ring{fill:none;stroke:var(--gold);stroke-width:2;stroke-dasharray:3 3.5}
+.frames .flood{fill:none;stroke:var(--red);stroke-width:1.5;stroke-linecap:round;stroke-dasharray:4 5}
+.frames .flood.mv{animation:flow 1s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-18}}
+.frames .lbl{font:400 11px var(--mono);fill:var(--ink-3)}
+.frames .lb2{font:600 12px var(--sans);fill:var(--ink)}
+.frames .red{fill:var(--red)}
+.frames .c.ok{fill:var(--teal-1);stroke:var(--teal);stroke-width:1.6}
+.frames .c.bad{fill:var(--red-1);stroke:var(--red);stroke-width:1.6}
+.frames .flash{fill:none;stroke:var(--red);stroke-width:2}
+.frames .msg{fill:var(--gold);stroke:var(--sheet);stroke-width:1.2}
+.frames .ground{stroke:var(--ink-3);stroke-width:1.5}
+.frames .stopbar{fill:var(--red)}
+@media (max-width:1100px){.frames{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.frames{grid-template-columns:minmax(0,1fr);padding:16px 14px 4px}}
+.open-tk .props{border-top:1px solid var(--rule-2)}
+
+/* compact board for reference */
+.mini{background:var(--sheet);border:1px solid var(--rule);border-radius:12px;box-shadow:var(--shadow);padding:11px 13px 10px;margin:0 0 10px;min-width:0}
+.mini h4{font-size:.98rem;font-weight:800;line-height:1.25;margin:0 0 4px}
+.mini p{font-size:.84rem;line-height:1.4;color:var(--ink-2);margin:0 0 8px}
+.mini .tags{margin:0 0 8px}
+.mini .co{font-size:.8rem;margin:0;color:var(--ink);display:flex;align-items:center;gap:7px}
+.mini .co::before{content:"";width:9px;height:9px;border-radius:50%;border:1.5px dashed var(--ink-3);flex:none}
+.mini .co span{color:var(--ink-3)}
+.mini a.jumpto{font-size:.8rem;font-weight:600;text-decoration:none}
+
+/* evening revision */
+.dep .spill{fill:none;stroke:var(--red);stroke-width:1.4;stroke-linecap:round}
+.tgrid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:1100px){.tgrid.three{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:760px){.tgrid.three{grid-template-columns:minmax(0,1fr)}}
+.tk .why{font-size:.84rem;line-height:1.4;color:var(--ink);background:var(--gold-1);border-radius:8px;padding:7px 10px;margin:0 0 10px}
+.fields dd.rep{color:var(--ink-2)}
+.fields dd.rep i,.mini i.rep,.hist i.rep{font-style:normal;font-family:var(--mono);font-size:.72rem;color:var(--ink-3);background:var(--board);border-radius:4px;padding:0 5px;margin-right:4px}
+.lanes.four{grid-template-columns:minmax(0,1.15fr) repeat(3,minmax(0,1fr))}
+@media (max-width:1100px){.lanes.four{grid-template-columns:repeat(2,minmax(0,1fr));max-width:none}}
+@media (max-width:700px){.lanes.four{grid-template-columns:minmax(0,1fr);max-width:560px}}
+.mini .ask{font-size:.8rem;margin:0;color:var(--ink);display:flex;align-items:center;gap:7px;font-weight:700}
+.mini .ask::before{content:"?";flex:none;width:15px;height:15px;border-radius:50%;border:1.5px solid var(--ink-3);color:var(--ink-3);font-size:.68rem;line-height:12px;text-align:center}
+.php .rep{font-size:.92rem;color:var(--ink-2);border-left:0;background:var(--board);border-radius:10px;padding:10px 12px;margin:0 0 14px;max-width:60ch}
+.php .rep b{font-family:var(--mono);font-weight:500;font-size:.74rem;color:var(--ink-3);margin-right:6px}
+.php .art .tile{fill:var(--sheet);stroke:var(--ink);stroke-width:1.3}
+.php .art .tile.on{fill:var(--blue-1);stroke:var(--blue)}
+.php .art .fan{fill:none;stroke:var(--rule);stroke-width:1.2}
+.php .art .t{font-size:16px}
+.php .art .m{font-size:14px}
+.php .art .ring{fill:none;stroke:var(--gold);stroke-width:2;stroke-dasharray:3 3.5}
+
+/* public edition */
+.dnsc-back{font-family:var(--mono);font-size:12.5px;letter-spacing:.04em;padding:10px 20px;border-bottom:1px solid rgba(127,127,127,.25);background:rgba(127,127,127,.06);margin:0 calc(-1 * max(16px,env(safe-area-inset-left,0px))) 0}
+.dnsc-back a{color:inherit;opacity:.8;text-decoration:none}
+.dnsc-back span{opacity:.35;margin:0 10px}
+.authors{margin:10px 0 0;font-size:.9rem;color:var(--ink-2)}
+.authors b{color:var(--ink);font-weight:600}
+.authors a{font-weight:600}
+.you{margin:56px 0 0}
+.you h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,3.4vw,2.6rem);line-height:1.08;letter-spacing:-.02em;margin:0 0 22px;max-width:30ch;text-wrap:balance}
+.feel{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.feel a{display:flex;flex-direction:column;height:100%;background:var(--sheet);border:1px solid var(--rule);border-radius:16px;box-shadow:var(--shadow);padding:16px 18px 14px;color:inherit;text-decoration:none;transition:border-color .2s,transform .2s}
+.feel a:hover{border-color:var(--ink-3);transform:translateY(-2px)}
+.feel .when{font-family:var(--mono);font-size:.74rem;color:var(--ink-3);margin:0 0 8px;display:flex;align-items:center;gap:8px}
+.feel .when svg{flex:none}
+.feel b{font-family:var(--serif);font-weight:600;font-size:1.32rem;line-height:1.15;margin:0 0 10px;letter-spacing:-.01em}
+.feel .said{font-size:.92rem;line-height:1.48;color:var(--ink-2);margin:0 0 12px}
+.feel .said em{font-style:normal;font-weight:700;color:var(--ink)}
+.feel .go{margin-top:auto;font-size:.8rem;font-weight:600;color:var(--blue)}
+@media (max-width:1000px){.feel{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.feel{grid-template-columns:minmax(0,1fr)}}
+.also-nsa{margin:14px 0 0;font-size:.95rem;color:var(--ink-2);max-width:78ch}
+.common{margin:26px 0 0;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:20px 44px;align-items:start;border-top:2px solid var(--ink);padding-top:22px}
+.common h3{font-family:var(--serif);font-weight:600;font-size:1.45rem;line-height:1.15;margin:0 0 10px}
+.common p{margin:0 0 12px;color:var(--ink-2);max-width:62ch}
+.common p b{color:var(--ink)}
+.common .term{font-style:normal;background:var(--gold-1);padding:0 4px;border-radius:3px;color:var(--ink)}
+.next3{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.next3 a{display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--sheet);border:1px solid var(--rule);border-radius:12px;color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem;line-height:1.3}
+.next3 a:hover{border-color:var(--ink-3)}
+.next3 svg{width:20px;height:20px;flex:none}
+.next3 .lbl3{display:block;font-family:var(--mono);font-weight:400;font-size:.72rem;color:var(--ink-3)}
+@media (max-width:860px){.common{grid-template-columns:minmax(0,1fr)}}
+.desk{margin:22px 0 0;background:var(--sheet);border:1px solid var(--rule);border-radius:16px;padding:16px 18px 6px}
+.desk h3{font-family:var(--serif);font-weight:600;font-size:1.15rem;margin:0 0 6px}
+.desk .intro{font-size:.92rem;color:var(--ink-2);margin:0 0 10px;max-width:78ch}
+.desk ul{list-style:none;margin:0;padding:0;columns:2 380px;column-gap:36px}
+.desk li{break-inside:avoid;padding:9px 0;border-top:1px solid var(--rule-2);font-size:.88rem;line-height:1.45;color:var(--ink-2)}
+.desk li b{color:var(--ink);font-weight:700}
+.desk .lab{display:inline-block;font-family:var(--mono);font-size:.7rem;color:var(--ink-3);background:var(--board);border-radius:4px;padding:0 6px;margin-left:4px;white-space:nowrap}
+.made{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:0 0 26px}
+.made .who{background:var(--sheet);border:1px solid var(--rule);border-radius:16px;padding:16px 18px;box-shadow:var(--shadow)}
+.made .who b{display:block;font-family:var(--serif);font-weight:600;font-size:1.25rem;margin:0 0 6px}
+.made .who p{margin:0;font-size:.95rem;color:var(--ink-2);line-height:1.5}
+.loop{list-style:none;margin:0 0 28px;padding:0;display:grid;grid-template-columns:minmax(0,1.1fr) 28px minmax(0,1fr) 28px minmax(0,1fr) 28px minmax(0,1fr);align-items:center;gap:0}
+.loop li{min-width:0}
+.loop .two{display:grid;gap:8px}
+.loop .n{background:var(--sheet);border:1.5px solid var(--ink);border-radius:12px;padding:10px 12px;font-size:.9rem;line-height:1.3;text-align:center}
+.loop .n small{display:block;font-family:var(--mono);font-size:.7rem;color:var(--ink-3)}
+.loop .n.person{background:var(--gold-1);border-color:var(--gold)}
+.loop .ar{text-align:center;color:var(--ink-3);font-size:1.1rem}
+.made-txt{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 48px}
+.made-txt h3{font-family:var(--serif);font-weight:600;font-size:1.25rem;margin:0 0 8px}
+.made-txt p{margin:0 0 12px;color:var(--ink-2);max-width:62ch}
+.made-txt ol{margin:0 0 12px;padding-left:1.3em;color:var(--ink-2)}
+.made-txt ol li{margin:0 0 8px}
+@media (max-width:900px){.made,.made-txt{grid-template-columns:minmax(0,1fr)}.loop{grid-template-columns:minmax(0,1fr)}.loop .ar{transform:rotate(90deg);padding:4px 0}}
+.foot{flex-direction:column;align-items:flex-start;gap:6px}
+.foot p{margin:0}
+.foot .sm{font-size:.8rem}
+
+/* the opening: a living record and the week drawn */
+.live{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 22px;padding:12px 0 10px;border-bottom:1px solid var(--rule);font-size:.88rem;color:var(--ink-2)}
+.live p{margin:0}
+.live-a{font-family:var(--mono);font-size:.8rem;color:var(--ink);line-height:1.5}
+.live-a b{font-weight:500;color:var(--teal)}
+.live-dot{display:inline-block;vertical-align:.05em;margin-right:9px;width:9px;height:9px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 3px var(--teal-1);flex:none;animation:livepulse 2.4s ease-in-out infinite}
+@keyframes livepulse{50%{box-shadow:0 0 0 6px rgba(28,106,100,.12)}}
+.live-b{flex:1 1 420px}
+.live-b a{font-weight:600}
+.hero{padding-top:clamp(22px,3.4vw,40px)}
+.wk{margin:0 0 clamp(30px,4vw,48px);background:var(--sheet);border:1px solid var(--rule);border-radius:20px;box-shadow:var(--shadow);padding:20px 22px 14px}
+.wk-h{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:10px 24px;margin:0 0 14px}
+.wk-t{font-family:var(--serif);font-weight:600;font-variation-settings:"opsz" 144;font-size:clamp(1.9rem,3.7vw,2.95rem);line-height:1;letter-spacing:-.03em;margin:0}
+.wk-t span{color:var(--red)}
+.wk-key{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.8rem;color:var(--ink-2)}
+.wk-key li{display:flex;align-items:center;gap:7px}
+.kdot{width:11px;height:11px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 2.5px var(--gold-1)}
+.kfade{width:30px;height:10px;border-radius:3px;background:linear-gradient(90deg,rgba(20,26,32,0),var(--ink) 75%)}
+.kdia{width:10px;height:10px;background:var(--red);transform:rotate(45deg)}
+.wk-grid{display:grid}
+.wk-row{display:grid;grid-template-columns:minmax(0,13.5rem) minmax(0,10rem) minmax(0,1fr) 30px;align-items:stretch;border-top:1px solid var(--rule-2)}
+.wk-row.wk-ax{border-top:0}
+.wk-lab{padding:9px 14px 9px 0;display:flex;flex-direction:column;justify-content:center;min-width:0}
+.wk-lab b{font-family:var(--serif);font-weight:600;font-size:1.28rem;line-height:1.1;letter-spacing:-.01em}
+.wk-lab span{font-size:.84rem;color:var(--ink-2);line-height:1.3}
+.wk-oct{position:relative;background:repeating-linear-gradient(135deg,transparent 0 7px,rgba(199,208,214,.35) 7px 8px);border-right:2px solid var(--rule)}
+.wk-nov{position:relative;min-height:50px;background:repeating-linear-gradient(90deg,var(--rule-2) 0 1px,transparent 1px calc(100% / 6))}
+.wk-ax .wk-oct,.wk-ax .wk-nov{min-height:0;background:none;display:flex;font-family:var(--mono);font-size:.74rem;color:var(--ink-3);padding:0 0 6px}
+.wk-ax .wk-oct{justify-content:space-between;padding:0 8px 6px 4px;border-right:2px solid transparent}
+.wk-ax .wk-nov span{flex:1;padding-left:6px}
+.wk-atk .wk-lab b{color:var(--red)}
+.wk-atk .wk-oct{min-height:50px;background:var(--red-1)}
+.dia{position:absolute;width:9px;height:9px;margin:-4.5px 0 0 -4.5px;background:var(--red);transform:rotate(45deg)}
+.atkline{position:absolute;height:2px;margin-top:-1px;background:var(--red)}
+.atk-names{list-style:none;margin:0;padding:8px 10px;display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;height:100%}
+.atk-names li{font-size:.8rem;font-weight:600;color:var(--red);background:var(--red-1);border-radius:6px;padding:3px 8px}
+.atk-names em{font-style:normal;font-weight:400;font-family:var(--mono);font-size:.72rem;color:var(--ink-3);margin-left:4px}
+.wb{position:absolute;top:50%;height:18px;margin-top:-9px;min-width:5px;background:var(--ink);border-radius:4px}
+.wb.fl{-webkit-mask-image:linear-gradient(90deg,transparent,#000 45%);mask-image:linear-gradient(90deg,transparent,#000 45%);border-radius:0 4px 4px 0}
+.wb.fr{-webkit-mask-image:linear-gradient(90deg,transparent,#000 22%,#000 78%,transparent);mask-image:linear-gradient(90deg,transparent,#000 22%,#000 78%,transparent);border-radius:0}
+.wb.tiny{background:var(--ink-3)}
+.wb.open{border-radius:0}
+.open-arrow{position:absolute;right:-9px;top:50%;margin-top:-9px;border-left:9px solid var(--ink);border-top:9px solid transparent;border-bottom:9px solid transparent}
+.chgdot{position:absolute;top:50%;width:13px;height:13px;margin:-6.5px 0 0 -6.5px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px var(--sheet),0 0 0 4.5px var(--gold);z-index:1}
+.dur{position:absolute;top:50%;transform:translateY(-50%);font-style:normal;font-family:var(--mono);font-size:.74rem;color:var(--ink);white-space:nowrap;background:rgba(255,255,255,.85);padding:1px 3px;border-radius:3px}
+.wk figcaption{font-size:.8rem;color:var(--ink-3);margin:10px 0 0;max-width:90ch}
+.cats.short{margin:0 0 22px}
+.cats.short .cat-m{margin:0 0 8px}
+.cats.short .cat-t{margin:0}
+.hero-foot .spine{padding:12px 16px}
+.hero-foot .spine .a{margin:0;font-size:1.35rem}
+@media (max-width:860px){
+  .wk{padding:16px 14px 12px;border-radius:16px}
+  .wk-row{grid-template-columns:minmax(0,1fr)}
+  .wk-row .wk-oct{display:none}
+  .wk-ax .wk-lab{display:none}
+  .wk-lab{padding:10px 0 4px;flex-direction:row;align-items:baseline;justify-content:flex-start;flex-wrap:wrap;gap:0 8px}
+  .wk-lab b{font-size:1.1rem}
+  .wk-nov{min-height:34px}
+  .wk-atk .wk-oct{display:block;min-height:60px;border-right:0;border-radius:6px}
+  .wk-atk .wk-nov{min-height:0;background:none}
+  .atk-names{padding:8px 0 4px}
+  .wk-grid{display:flex;flex-direction:column}
+  .wk-atk{order:-1;border-top:0}
+  .wk-atk .wk-oct::before,.wk-atk .wk-oct::after{position:absolute;bottom:3px;font-family:var(--mono);font-size:.66rem;color:var(--ink-3)}
+  .wk-atk .wk-oct::before{content:"Oct 9";left:6px}
+  .wk-atk .wk-oct::after{content:"Oct 28";right:6px}
+  .wk-ax{margin-top:8px}
+  .wk-ax .wk-nov span{font-size:.66rem;padding-left:3px}
+}
+@media (prefers-reduced-motion:reduce){.live-dot{animation:none}}
+
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* interaction: rows, landing, parts, steps */
+[id]{scroll-margin-top:78px}
+.wk-link{color:inherit;text-decoration:none;transition:background-color .18s ease}
+.wk-link:hover{background:var(--ground)}
+.wk-link:active{background:var(--board)}
+.wk-link:focus-visible{outline:3px solid var(--blue);outline-offset:-3px;border-radius:6px}
+.wk-go{display:flex;align-items:center;justify-content:center;color:var(--ink-3);transition:transform .18s ease,color .18s ease}
+.wk-link:hover .wk-go,.wk-link:focus-visible .wk-go{color:var(--blue);transform:translateX(3px)}
+.wk-link:hover .wk-lab b{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.14em}
+.wk-atk a.wk-lab{color:inherit;text-decoration:none}
+.wk-atk a.wk-lab:hover b{text-decoration:underline;text-underline-offset:.14em}
+.atk-names a{color:inherit;text-decoration:none;display:inline-block}
+.atk-names li:hover{background:#F6D5D1}
+.atk-names a:focus-visible,.wk-atk a.wk-lab:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:4px}
+.wk-tap{flex-basis:100%;margin:0;font-size:.84rem;font-weight:600;color:var(--blue);display:flex;align-items:center;gap:8px}
+.wk-tap::before{content:"";width:16px;height:16px;flex:none;border-radius:50%;border:1.5px solid var(--blue);box-shadow:inset 0 0 0 4px var(--sheet),inset 0 0 0 8px var(--blue-1)}
+@keyframes land{0%{box-shadow:0 0 0 0 rgba(43,90,151,0)}12%{box-shadow:0 0 0 7px rgba(43,90,151,.32)}100%{box-shadow:0 0 0 0 rgba(43,90,151,0)}}
+.tk.landed,.mini.landed,.ch.landed{animation:land 2.6s ease-out}
+.back{display:inline-flex;align-items:center;gap:6px;margin:10px 0 0;font-size:.8rem;font-weight:600;text-decoration:none;padding:6px 0}
+.back:hover{text-decoration:underline}
+.cats.short a{display:grid;grid-template-columns:30px minmax(0,1fr);column-gap:10px;align-items:start}
+.cats.short .cat-m{grid-row:1/3;margin:6px 0 0}
+.cats.short .cat-m svg{width:26px;height:26px}
+.cats.short .cat-t{font-size:clamp(1.6rem,2.35vw,1.95rem);white-space:nowrap;line-height:1.05;margin:0 0 6px}
+.cats.short .cat-e{font-size:.95rem;color:var(--ink-2)}
+.dep .part{cursor:pointer;transition:opacity .2s ease}
+.dep .part:focus{outline:none}
+.dep .part:focus-visible .node,.dep .part:hover .node{stroke:var(--blue);stroke-width:2.6}
+.dep.sel .part,.dep.sel .wire,.dep.sel .lbl,.dep.sel .spill,.dep.sel .wall{opacity:.28}
+.dep.sel .part.on,.dep.sel .part.lean{opacity:1}
+.dep.sel.sel-b .wire,.dep.sel.sel-b .lbl{opacity:1}
+.dep.sel.sel-b .wire{stroke:var(--blue)}
+.dep .part.on .node{stroke:var(--blue);stroke-width:3;fill:var(--blue-1)}
+.part-note{margin:2px 0 10px;font-size:.84rem;line-height:1.45;color:var(--ink-2);background:var(--ground);border-radius:8px;padding:7px 10px;min-height:2.2em}
+.part-note b{color:var(--ink)}
+.part-note.hint{color:var(--ink-3);font-style:italic;font-family:var(--serif);background:none;padding:2px 0;min-height:0;text-align:center}
+.stepper{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;padding:16px 22px 0}
+.stepper button{font:600 .86rem var(--sans);color:var(--ink);background:var(--sheet);border:1px solid var(--rule);border-radius:999px;padding:8px 14px;min-height:40px;cursor:pointer}
+.stepper button:hover{border-color:var(--ink-3)}
+.stepper button:disabled{opacity:.4;cursor:default}
+.stepper button:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.stepper .sdots{display:flex;gap:6px}
+.stepper .sdots button{width:40px;padding:8px 0;font-family:var(--serif)}
+.stepper .sdots button[aria-pressed="true"]{background:var(--gold-1);border-color:var(--gold)}
+.stepper .shint{font-family:var(--serif);font-style:italic;font-size:.9rem;color:var(--ink-3)}
+.frames li{transition:opacity .25s ease}
+.frames.stepping li{opacity:.38}
+.frames.stepping li.on{opacity:1}
+.frames li.on .pic{box-shadow:0 0 0 2px var(--gold)}
+.frames .pic{cursor:pointer}
+.loop .step{cursor:pointer;transition:box-shadow .2s ease,border-color .2s ease}
+.loop .step:hover,.loop .step:focus-visible{border-color:var(--blue);outline:none}
+.loop .step.on{border-color:var(--blue);box-shadow:0 0 0 3px var(--blue-1)}
+.loop-note{margin:-16px 0 26px;font-size:.92rem;line-height:1.5;color:var(--ink-2);background:var(--sheet);border:1px solid var(--rule);border-radius:12px;padding:10px 14px;max-width:80ch}
+.loop-note.hint{background:none;border:0;padding:0;font-family:var(--serif);font-style:italic;color:var(--ink-3)}
+.examples li{transition:background-color .2s ease;border-radius:8px}
+.examples li.on{background:var(--gold-1)}
+@media (max-width:860px){
+  .wk-link{position:relative;min-height:44px;padding-right:26px}
+  .wk-link .wk-go{position:absolute;right:0;top:12px}
+  .wk-atk .wk-go{display:none}
+  .cats.short li,.cats.short li+li{padding:12px 0 12px}
+  .cats.short .cat-t{font-size:1.7rem;white-space:normal}
+  .cats.short .cat-e{font-size:.9rem}
+}
+@media (prefers-reduced-motion:reduce){
+  .tk.landed,.mini.landed,.ch.landed{animation:none;outline:3px solid var(--blue);outline-offset:3px}
+  .wk-link,.wk-go,.dep .part,.frames li,.loop .step,.examples li{transition:none}
+}
+
+/* after the outage: a ledger */
+.ledger-wrap{background:var(--sheet);border:1px solid var(--rule);border-radius:20px;box-shadow:var(--shadow);padding:6px 22px 14px}
+.ledger{list-style:none;margin:0;padding:0}
+.ledger li+li{border-top:1px solid var(--rule-2)}
+.lg-row{display:grid;grid-template-columns:minmax(0,9.5rem) minmax(0,1fr) minmax(0,9rem) 20px;gap:6px 22px;align-items:start;padding:14px 0;color:inherit;text-decoration:none;border-radius:8px}
+a.lg-row:hover{background:var(--ground)}
+a.lg-row:hover .lg-go{color:var(--blue);transform:translateX(2px)}
+a.lg-row:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.lg-when{font-family:var(--mono);font-size:.8rem;color:var(--ink);line-height:1.4;padding-top:2px}
+.lg-when small{display:block;font-size:.72rem;color:var(--ink-3)}
+.lg-body{font-size:.98rem;line-height:1.5;color:var(--ink-2)}
+.lg-src{display:inline-block;margin-left:4px;font-family:var(--mono);font-size:.7rem;border-radius:4px;padding:0 6px;vertical-align:.1em;white-space:nowrap}
+.lg-src.op{background:var(--teal-1);color:var(--teal)}
+.lg-src.rp{background:var(--board);color:var(--ink-3)}
+.lg-src.pg{background:var(--blue-1);color:var(--blue)}
+.lg-src.op0{background:transparent;border:1px dashed var(--ink-3);color:var(--ink-3)}
+.lg-amt{font-family:var(--serif);font-weight:600;font-size:1.5rem;line-height:1.1;color:var(--ink);text-align:right;letter-spacing:-.01em}
+.lg-amt.lg-dur{font-size:1.15rem;color:var(--ink-2)}
+.lg-bar{display:block;height:6px;margin:8px 0 0 auto;width:100%;background:var(--board);border-radius:3px;overflow:hidden}
+.lg-bar i{display:block;height:100%;min-width:3px;background:var(--ink);margin-left:auto;border-radius:3px}
+.lg-go{color:var(--ink-3);font-size:1.3rem;line-height:1;padding-top:2px;transition:transform .18s ease,color .18s ease}
+.lg-open .lg-body{color:var(--ink)}
+.lg-note{margin:10px 0 0;font-size:.8rem;color:var(--ink-3)}
+@media (max-width:760px){
+  .ledger-wrap{padding:4px 14px 12px;border-radius:16px}
+  .lg-row{grid-template-columns:minmax(0,1fr) auto 16px;gap:4px 12px;padding:12px 0}
+  .lg-when{grid-column:1/2;grid-row:1}
+  .lg-amt{grid-column:2/3;grid-row:1;font-size:1.25rem}
+  .lg-go{grid-column:3/4;grid-row:1}
+  .lg-body{grid-column:1/4;grid-row:2}
+  .lg-bar{width:7rem}
+}
+@media (prefers-reduced-motion:reduce){.lg-go{transition:none}}
+
+/* the people */
+.ppl{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:28px 52px;align-items:start}
+.ppl .roles{list-style:none;margin:16px 0 0;padding:12px 0 0;border-top:1px solid var(--rule-2);font-size:.88rem;line-height:1.45;color:var(--ink-2)}
+.ppl .roles li{margin:0 0 8px}
+.ppl .roles b{color:var(--ink)}
+.big-n{font-family:var(--serif);font-weight:600;font-size:clamp(2.6rem,5vw,3.8rem);line-height:1;letter-spacing:-.025em;margin:0 0 8px}
+.big-l{color:var(--ink-2);margin:0 0 24px;max-width:52ch}
+.q3{font-family:var(--serif);font-weight:600;font-size:1.35rem;margin:0 0 8px;padding-top:18px;border-top:2px solid var(--ink)}
+@media (max-width:860px){.ppl{grid-template-columns:minmax(0,1fr)}}
+@media (prefers-reduced-motion:reduce){.frames .flood.mv{animation:none}}
+</style>
+</head>
+<body>
+<div class="dnsc-back"><a href="https://tools.dnsc.ai/">&larr; The Well</a><span>&middot;</span><a href="https://dnsc.ai">dnsc.ai</a></div>
+<div class="wrap">
+
+<div class="live" role="status">
+  <p class="live-a"><span class="live-dot" aria-hidden="true"></span><b>A living record.</b> Last updated <time datetime="2026-11-17">November 17, 2026, 10:00 p.m. Eastern</time>.</p>
+  <p class="live-b">Kept by Dustin Nimmo, Mise and Muse. Two AI systems from two companies search separately, we open the sources, and a person decides what it adds up to. <a href="#how-made">See how this was made</a></p>
+</div>
+
+<header class="top">
+  <div class="brand">
+    <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="16" fill="none" stroke="#141A20" stroke-width="2.4"/><g fill="#141A20"><circle cx="20" cy="7" r="2.6"/><circle cx="32.4" cy="16" r="2.6"/><circle cx="27.6" cy="30.5" r="2.6"/><circle cx="12.4" cy="30.5" r="2.6"/><circle cx="7.6" cy="16" r="2.6"/></g></svg>
+    <div><b>DNSC</b><span>From the public record</span></div>
+  </div>
+  <div class="ref"><span>Three things at once</span><span>Understanding the week, from the record</span></div>
+</header>
+
+
+<section class="hero" aria-labelledby="h1">
+  <figure class="wk" id="week" aria-labelledby="wk-t">
+    <div class="wk-h">
+      <p class="wk-t" id="wk-t">Seven failures in six days. <span>Four confirmed attacks before them.</span></p>
+      <ul class="wk-key">
+        <li><i class="kdot"></i>began with a change to a running system</li>
+        <li><i class="kfade"></i>day stated, hour not stated</li>
+        <li><i class="kdia"></i>confirmed attack</li>
+      </ul>
+      <p class="wk-tap">Tap or click any row to go straight to that outage.</p>
+    </div>
+    <div class="wk-grid">
+      <div class="wk-row wk-ax" aria-hidden="true"><div class="wk-lab"></div><div class="wk-oct"><span>Oct 9</span><span>Oct 28</span></div><div class="wk-nov"><span>Thu 12</span><span>Fri 13</span><span>Sat 14</span><span>Sun 15</span><span>Mon 16</span><span>Tue 17</span></div><span class="wk-go"></span></div>
+      <div class="wk-row wk-atk"><a class="wk-lab" href="#attacks"><b>Confirmed attacks</b><span>four public systems, Oct 9 to 28</span></a><div class="wk-oct"><i class="atkline" style="left:4.5%;width:95.5%;top:7px"></i><i class="dia" style="left:4.5%;top:7px"></i>
+<i class="dia" style="left:77.3%;top:17px"></i>
+<i class="atkline" style="left:81.8%;width:4.5%;top:27px"></i><i class="dia" style="left:81.8%;top:27px"></i>
+<i class="atkline" style="left:81.8%;width:9.1%;top:37px"></i><i class="dia" style="left:81.8%;top:37px"></i></div><div class="wk-nov"><ul class="atk-names"><li><a href="#t-courts">Federal bankruptcy noticing center <em>from Oct 9</em></a></li><li><a href="#t-ohio">Ohio Auditor of State <em>Oct 25</em></a></li><li><a href="#t-fec">FEC filing system <em>Oct 26 to 27</em></a></li><li><a href="#t-unm">UNM Health <em>Oct 26 to 28</em></a></li></ul></div><span class="wk-go"></span></div>
+      <a class="wk-row wk-link" href="#t-microsoft"><div class="wk-lab"><b>Microsoft 365</b><span>work email and Teams</span></div><div class="wk-oct" aria-hidden="true"></div><div class="wk-nov"><span class="wb fl fr" style="left:8.33%;width:16.67%"></span><i class="chgdot" style="left:8.33%"></i><em class="dur" style="left:calc(25.00% + 10px)">about 24 hr</em><span class="sr">Nov 12 to 13, about 24 hours; began with a change to a running system. </span></div><span class="wk-go" aria-hidden="true"><svg viewBox="0 0 12 12" width="12" height="12"><path d="M4 2 L8 6 L4 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="wk-row wk-link" href="#t-faa"><div class="wk-lab"><b>FAA</b><span>every U.S. departure</span></div><div class="wk-oct" aria-hidden="true"></div><div class="wk-nov"><span class="wb " style="left:27.50%;width:3.24%"></span><i class="chgdot" style="left:27.50%"></i><em class="dur" style="left:calc(30.74% + 10px)">4 hr 40 min</em><span class="sr">Nov 13, 4 hours 40 minutes; began with a change to a running system. </span></div><span class="wk-go" aria-hidden="true"><svg viewBox="0 0 12 12" width="12" height="12"><path d="M4 2 L8 6 L4 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="wk-row wk-link" href="#t-workday"><div class="wk-lab"><b>Workday</b><span>payroll and time off</span></div><div class="wk-oct" aria-hidden="true"></div><div class="wk-nov"><span class="wb fl" style="left:16.67%;width:24.31%"></span><i class="chgdot" style="left:16.67%"></i><em class="dur" style="left:calc(40.97% + 10px)">until Sat 11 a.m.</em><span class="sr">From Nov 13 until Nov 14, 11 a.m.; began with a change to a running system. </span></div><span class="wk-go" aria-hidden="true"><svg viewBox="0 0 12 12" width="12" height="12"><path d="M4 2 L8 6 L4 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="wk-row wk-link" href="#t-chase"><div class="wk-lab"><b>JPMorgan Chase</b><span>the bank app and Zelle</span></div><div class="wk-oct" aria-hidden="true"></div><div class="wk-nov"><span class="wb " style="left:74.65%;width:4.86%"></span><em class="dur l" style="right:calc(25.35% + 10px)">about 7 hr</em><span class="sr">Nov 16, about 11:30 a.m. to 6:30 p.m. </span></div><span class="wk-go" aria-hidden="true"><svg viewBox="0 0 12 12" width="12" height="12"><path d="M4 2 L8 6 L4 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="wk-row wk-link" href="#t-united"><div class="wk-lab"><b>United</b><span>departures</span></div><div class="wk-oct" aria-hidden="true"></div><div class="wk-nov"><span class="wb tiny" style="left:74.83%;width:0.35%"></span><em class="dur l" style="right:calc(25.17% + 10px)">about 30 min, per United</em><span class="sr">Nov 16, about 30 minutes by United's count; hour not stated. </span></div><span class="wk-go" aria-hidden="true"><svg viewBox="0 0 12 12" width="12" height="12"><path d="M4 2 L8 6 L4 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="wk-row wk-link" href="#t-apple"><div class="wk-lab"><b>Apple</b><span>Apple Pay and iCloud</span></div><div class="wk-oct" aria-hidden="true"></div><div class="wk-nov"><span class="wb " style="left:91.32%;width:3.82%"></span><i class="chgdot" style="left:91.32%"></i><em class="dur l" style="right:calc(8.68% + 10px)">late morning to about 5 p.m.</em><span class="sr">Nov 17, late morning to about 5 p.m.; began with a change to a running system. </span></div><span class="wk-go" aria-hidden="true"><svg viewBox="0 0 12 12" width="12" height="12"><path d="M4 2 L8 6 L4 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      <a class="wk-row wk-link" href="#t-nsa"><div class="wk-lab"><b>NSA</b><span>a classified network</span></div><div class="wk-oct" aria-hidden="true"></div><div class="wk-nov"><span class="wb fl open" style="left:83.33%;width:16.67%"><i class="open-arrow"></i></span><i class="chgdot" style="left:83.33%"></i><em class="dur l" style="right:calc(16.67% + 10px)">still being restored</em><span class="sr">Nov 17, still being restored; began with a change to a running system. </span></div><span class="wk-go" aria-hidden="true"><svg viewBox="0 0 12 12" width="12" height="12"><path d="M4 2 L8 6 L4 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
+    <figcaption>Bars to scale, Eastern time. A faded end means the hour was not stated. Each outage is explained below.</figcaption>
+  </figure>
+
+  <h1 id="h1" class="three-h">Three things are happening to our digital systems at the same time.</h1>
+  <ol class="cats short">
+    <li class="ka"><a href="#attacks"><span class="cat-m"><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="8.5" fill="none" stroke="#B3261E" stroke-width="2" stroke-dasharray="3 2.4"/><circle cx="11" cy="11" r="3.4" fill="#B3261E"/></svg></span><span class="cat-t">Attacks.</span><span class="cat-e">Some now run by machines.</span></a></li>
+    <li class="kb"><a href="#moving-fast"><span class="cat-m"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M3 11 H13 M9 6 L14 11 L9 16 M12 11 H19 M16 7 L20 11 L16 15" fill="none" stroke="#2B5A97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="cat-t">Rushed changes.</span><span class="cat-e">Change moving faster than coordination.</span></a></li>
+    <li class="kc"><a href="#dependencies"><span class="cat-m"><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="6" cy="11" r="3.6" fill="none" stroke="#141A20" stroke-width="1.8"/><circle cx="16.5" cy="11" r="4.5" fill="#F7EFDA" stroke="#C39B3F" stroke-width="2" stroke-dasharray="2.4 2"/><path d="M9.6 11 H12" stroke="#141A20" stroke-width="1.8" stroke-linecap="round"/></svg></span><span class="cat-t"><span>Hidden dependencies.</span></span><span class="cat-e">Changes made without seeing what depends on them.</span></a></li>
+  </ol>
+  <div class="hero-foot">
+    <p class="dek"><b>For anyone who runs technology, all three come back to coordination: who knew what was changing, who checked what it touched, and who was watching the door.</b></p>
+  </div>
+
+  <section class="you" id="your-week" aria-labelledby="you-h">
+    <p class="k">If you felt it this week</p>
+    <h2 id="you-h">What you may have run into, and what the company says happened.</h2>
+    <ol class="feel">
+      <li><a href="#t-microsoft"><span class="when"><svg class="ico" viewBox="-16 -16 32 32" width="22" height="22" aria-hidden="true"><g class="gl"><rect x="-12" y="-8" width="24" height="16" rx="2"/><path d="M-12 -7 L0 2 L12 -7"/></g></svg>Microsoft 365</span><b>Your work email would not open.</b><span class="said"><em>Microsoft says</em> a flaw it shipped in July sat in its gateway servers, the machines that pass traffic into its service. A traffic shift and a capacity cut followed, and its automatic switch to backup made it worse.</span><span class="go">See the ticket</span></a></li>
+      <li><a href="#t-faa"><span class="when"><svg class="ico" viewBox="-16 -16 32 32" width="22" height="22" aria-hidden="true"><g class="gl"><path d="M-12 0 H11.5 M-1 0 L-7.5 -11 M-1 0 L-7.5 11 M-10 0 L-13 -5.5 M-10 0 L-13 5.5"/></g></svg>FAA</span><b>Your flight sat at the gate.</b><span class="said"><em>Federal officials say</em> a new router, a box that passes messages between networks, went in during an upgrade in El Dorado, Arkansas, and flooded the air traffic network. About 12,000 flights did not operate.</span><span class="go">See the ticket</span></a></li>
+      <li><a href="#t-workday"><span class="when"><svg class="ico" viewBox="-16 -16 32 32" width="22" height="22" aria-hidden="true"><g class="gl"><rect x="-11" y="-12" width="22" height="7" rx="1.5"/><rect x="-11" y="-3.5" width="22" height="7" rx="1.5"/><rect x="-11" y="5" width="22" height="7" rx="1.5"/><path d="M-7 -8.5 H-4 M-7 0 H-4 M-7 8.5 H-4"/></g></svg>Workday</span><b>You could not clock in or request time off.</b><span class="said"><em>Workday says</em> a disaster recovery test, a practice run of its backup site, unexpectedly connected the backup to its live databases.</span><span class="go">See the ticket</span></a></li>
+      <li><a href="#t-chase"><span class="when"><svg class="ico" viewBox="-16 -16 32 32" width="22" height="22" aria-hidden="true"><g class="gl"><path d="M-12 -4 L0 -11.5 L12 -4 Z M-8.5 -1 V8 M-3 -1 V8 M3 -1 V8 M8.5 -1 V8 M-13 11 H13"/></g></svg>JPMorgan Chase</span><b>Your bank app failed.</b><span class="said"><em>Chase says</em> a software bug in a hardware system in its own data center caused it, and called the outage "not cyber-related."</span><span class="go">See the ticket</span></a></li>
+      <li><a href="#t-united"><span class="when"><svg class="ico" viewBox="-16 -16 32 32" width="22" height="22" aria-hidden="true"><g class="gl"><path d="M-12 0 H11.5 M-1 0 L-7.5 -11 M-1 0 L-7.5 11 M-10 0 L-13 -5.5 M-10 0 L-13 5.5"/></g></svg>United</span><b>Your United departure was delayed.</b><span class="said"><em>United calls it</em> a technology issue. It has not said what failed.</span><span class="go">See the board</span></a></li>
+      <li><a href="#t-apple"><span class="when"><svg class="ico" viewBox="-16 -16 32 32" width="22" height="22" aria-hidden="true"><g class="gl"><rect x="-7.5" y="-12.5" width="15" height="25" rx="3"/><path d="M-2.5 9 H2.5"/></g></svg>Apple</span><b>Apple Pay, iCloud or the App Store would not work.</b><span class="said"><em>Apple says</em> an internal update caused the outages.</span><span class="go">See the ticket</span></a></li>
+    </ol>
+    <p class="also-nsa">A seventh failure reached no public service: the NSA's classified network, after a security patch, which is a fix for a flaw in software. <a href="#t-nsa">See the ticket</a></p>
+    <div class="common">
+      <div>
+        <h3>What they have in common</h3>
+        <p><b>Five of the seven began with a change to a system that was already running:</b> an upgrade, an update shipped in July, a backup test, an internal update, a security patch.</p>
+        <p>In each of those five, the service people use leaned on another part. When that part changed, the service broke. That relationship is called a <i class="term">dependency</i>.</p>
+        <p><b>Whether anyone coordinated those changes is not yet on the record.</b> None of the seven was called an attack by its operator, and no source ties a failure to an attack, to another failure, or to AI.</p>
+      </div>
+      <div>
+        <p style="margin:0 0 10px;color:var(--ink-2)">The rest of this page follows the three things at once.</p>
+        <ul class="next3">
+          <li><a href="#attacks"><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="8.5" fill="none" stroke="#B3261E" stroke-width="2" stroke-dasharray="3 2.4"/><circle cx="11" cy="11" r="3.4" fill="#B3261E"/></svg><span>Attacks <span class="lbl3">four confirmed since Oct 9</span></span></a></li>
+          <li><a href="#moving-fast"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M3 11 H13 M9 6 L14 11 L9 16 M12 11 H19 M16 7 L20 11 L16 15" fill="none" stroke="#2B5A97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Rushed changes <span class="lbl3">Microsoft, Apple, the NSA</span></span></a></li>
+          <li><a href="#dependencies"><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="6" cy="11" r="3.6" fill="none" stroke="#141A20" stroke-width="1.8"/><circle cx="16.5" cy="11" r="4.5" fill="#F7EFDA" stroke="#C39B3F" stroke-width="2" stroke-dasharray="2.4 2"/><path d="M9.6 11 H12" stroke="#141A20" stroke-width="1.8" stroke-linecap="round"/></svg><span>Hidden dependencies <span class="lbl3">Workday, the FAA, Chase</span></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</section>
+</div>
+
+<nav class="jump" aria-label="Sections"><ul>
+  <li><a href="#attacks">Attacks</a></li>
+  <li><a href="#moving-fast">Rushed changes</a></li>
+  <li><a href="#dependencies">Hidden dependencies</a></li>
+  <li><a href="#ground-stop">The ground stop, step by step</a></li>
+  <li><a href="#people">The people</a></li>
+  <li><a href="#officials">Two officials</a></li>
+  <li><a href="#after">After</a></li>
+  <li><a href="#board">The board</a></li>
+  <li><a href="#uptime">Uptime</a></li>
+  <li><a href="#record">The record</a></li>
+  <li><a href="#questions">Questions</a></li>
+  <li><a href="#words">Plain words</a></li>
+  <li><a href="#how-made">How this was made</a></li>
+  <li><a href="#sources">Sources</a></li>
+</ul></nav>
+
+<div class="wrap">
+
+<section class="ch cat-a" id="attacks">
+  <p class="chap-tag"><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="8.5" fill="none" stroke="#B3261E" stroke-width="2" stroke-dasharray="3 2.4"/><circle cx="11" cy="11" r="3.4" fill="#B3261E"/></svg>Attacks</p>
+  <h2><span class="hl">Four public systems confirmed attacked in three weeks,</span> and attackers now have tools that work on their own.</h2>
+  <p class="sub">Each attack below was confirmed by the office or hospital that was hit. None is tied on the record to the November failures.</p>
+</section>
+<div class="thing">
+    <div>
+      <h3>Some attacks now run themselves.</h3>
+      <p class="lead">On November 16, Google's threat team reported attackers using AI to find software flaws and exploit them "without a human in the loop for the first time." <span class="c"><a href="#s17">17</a></span></p>
+      <ul class="nums">
+        <li><b>Under 3 hours</b>From first target to privileged access, in some break ins, per an FBI warning of Nov 13. <span class="c"><a href="#s18">18</a></span></li>
+        <li><b>8 → 22</b>Newly exploited, previously unknown flaws a month: the 2025 average, then August 2026. <span class="c"><a href="#s17">17</a></span></li>
+      </ul>
+      <p class="honest"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="7.5" fill="none" stroke="#1C6A64" stroke-width="1.6"/><path d="M5.5 9.2 L8 11.5 L12.5 6.5" fill="none" stroke="#1C6A64" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>None of the seven November failures was called an attack by its operator, and no source ties any attack here to them.</span></p>
+    </div>
+    <figure class="art">
+      <svg viewBox="0 0 440 330" role="img" aria-label="A loop of four steps: find a flaw, write the exploit, break in, take control. A dot runs the loop with no person in it. Beside it, three bars: 8 flaws a month in 2025, 11 in 2026, 22 in August 2026.">
+        <circle class="ln2" cx="138" cy="164" r="96"/>
+        <circle class="stn" cx="138" cy="68" r="16"/><circle class="stn" cx="234" cy="164" r="16"/><circle class="stn r" cx="138" cy="260" r="16"/><circle class="stn" cx="42" cy="164" r="16"/>
+        <text class="t" x="138" y="38" text-anchor="middle">find a flaw</text>
+        <text class="t" x="234" y="204" text-anchor="middle">write the exploit</text>
+        <text class="t" x="138" y="300" text-anchor="middle">break in</text>
+        <text class="t" x="42" y="204" text-anchor="middle">take control</text>
+        <text class="s" x="138" y="158" text-anchor="middle">no human</text>
+        <text class="s" x="138" y="176" text-anchor="middle">in the loop</text>
+        <circle class="runner" r="6"><animateMotion dur="5s" repeatCount="indefinite" path="M138 68 A96 96 0 1 1 137.9 68"/></circle>
+        <g transform="translate(316 36)">
+          <text class="m" x="0" y="0">unknown flaws</text>
+          <text class="m" x="0" y="15">used, a month</text>
+          <path class="ln2" d="M0 260 H112"/>
+          <rect x="4" y="224" width="26" height="36" rx="3" fill="#36414B"/><text class="t" x="17" y="216" text-anchor="middle">8</text><text class="m" x="17" y="278" text-anchor="middle">2025</text>
+          <rect x="43" y="210.5" width="26" height="49.5" rx="3" fill="#36414B"/><text class="t" x="56" y="202" text-anchor="middle">11</text><text class="m" x="56" y="278" text-anchor="middle">2026</text>
+          <rect x="82" y="161" width="26" height="99" rx="3" fill="#B3261E"/><text class="t red" x="95" y="153" text-anchor="middle">22</text><text class="m" x="95" y="278" text-anchor="middle">Aug</text>
+        </g>
+      </svg>
+      <figcaption>Bar heights to scale. Google Threat Intelligence Group, Nov 16, 2026.</figcaption>
+    </figure>
+  </div>
+
+  
+<div class="tgrid two">
+  <article class="tk" id="t-courts">
+        <div class="tk-top"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--red)" stroke-width="1.8" stroke-dasharray="2.4 1.9"/><circle cx="8" cy="8" r="2.6" fill="var(--red)"/></svg><span>U.S. Courts</span><span class="when">Oct 9</span></div>
+        <h3>Federal bankruptcy noticing center</h3>
+        <svg class="dep" viewBox="0 0 300 138" role="img" aria-label="An attack from outside reached Bankruptcy noticing center (run by BAE Systems)."><path class="atk" d="M22 56 H178"/><path class="atkh" d="M170 50 L179 56 L170 62"/><g class="atkx" transform="translate(22 56)"><path d="M-7 -7 L7 7 M7 -7 L-7 7"/></g><text class="lbl red" x="100.0" y="46" text-anchor="middle">attack from outside</text><circle class="node hit" cx="214" cy="56" r="27"/><g class="gl" transform="translate(214 56) scale(1.0)"><rect x="-12" y="-8" width="24" height="16" rx="2"/><path d="M-12 -7 L0 2 L12 -7"/></g><circle class="pulse red" r="4" cx="0" cy="0" opacity="0"><animateMotion path="M30 56 H178" dur="3.6s" begin="2.2s" keyTimes="0;.6;1" keyPoints="0;1;1" calcMode="linear" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.06;.56;.62;1" dur="3.6s" begin="2.2s" repeatCount="indefinite"/></circle><text class="nm" x="214" y="106" text-anchor="middle">Bankruptcy</text><text class="nm" x="214" y="120" text-anchor="middle">noticing center</text><text class="own" x="214" y="135" text-anchor="middle">run by BAE Systems</text></svg>
+        <ul class="tags"><li class="cy">Cybersecurity</li><li>contractor</li></ul>
+        <ol class="hist">
+          <li><time>Oct 9</time>All bankruptcy notices halted. <span class="c"><a href="#s16">16</a></span></li>
+          <li><time>Oct 16</time>U.S. Courts, as reported: a "cybersecurity incident." <span class="c"><a href="#s16">16</a></span></li>
+          <li class="now"><time>Open</time>No restoration on the record.</li>
+        </ol>
+        <a class="back" href="#week"><svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M2 8 L6 4 L10 8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to the week</a>
+      </article>
+  <article class="tk" id="t-ohio">
+        <div class="tk-top"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--red)" stroke-width="1.8" stroke-dasharray="2.4 1.9"/><circle cx="8" cy="8" r="2.6" fill="var(--red)"/></svg><span>Ohio Auditor of State</span><span class="when">Oct 25</span></div>
+        <h3>Web server and online accounts</h3>
+        <svg class="dep" viewBox="0 0 300 138" role="img" aria-label="An attack from outside reached Web server, online accounts (Ohio Auditor of State)."><path class="atk" d="M22 56 H178"/><path class="atkh" d="M170 50 L179 56 L170 62"/><g class="atkx" transform="translate(22 56)"><path d="M-7 -7 L7 7 M7 -7 L-7 7"/></g><text class="lbl red" x="100.0" y="46" text-anchor="middle">attack from outside</text><circle class="node hit" cx="214" cy="56" r="27"/><g class="gl" transform="translate(214 56) scale(1.0)"><rect x="-11" y="-12" width="22" height="7" rx="1.5"/><rect x="-11" y="-3.5" width="22" height="7" rx="1.5"/><rect x="-11" y="5" width="22" height="7" rx="1.5"/><path d="M-7 -8.5 H-4 M-7 0 H-4 M-7 8.5 H-4"/></g><circle class="pulse red" r="4" cx="0" cy="0" opacity="0"><animateMotion path="M30 56 H178" dur="3.6s" begin="0s" keyTimes="0;.6;1" keyPoints="0;1;1" calcMode="linear" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.06;.56;.62;1" dur="3.6s" begin="0s" repeatCount="indefinite"/></circle><text class="nm" x="214" y="106" text-anchor="middle">Web server,</text><text class="nm" x="214" y="120" text-anchor="middle">online accounts</text><text class="own" x="214" y="135" text-anchor="middle">Ohio Auditor of State</text></svg>
+        <ul class="tags"><li class="cy">Cybersecurity</li><li>Ohio</li></ul>
+        <ol class="hist">
+          <li><time>Oct 25</time>Web server attacked; the office takes it and its online accounts offline. <span class="c"><a href="#s14">14</a></span></li>
+          <li><time>Oct 27</time>The office: "potentially foreign state actors." Not ransomware. <span class="c"><a href="#s14">14</a></span></li>
+          <li class="now"><time>Open</time>No restoration on the record.</li>
+        </ol>
+        <a class="back" href="#week"><svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M2 8 L6 4 L10 8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to the week</a>
+      </article>
+  <article class="tk" id="t-fec">
+        <div class="tk-top"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--red)" stroke-width="1.8" stroke-dasharray="2.4 1.9"/><circle cx="8" cy="8" r="2.6" fill="var(--red)"/></svg><span>FEC</span><span class="when">Oct 26 to 27</span></div>
+        <h3>Federal Election Commission e-filing</h3>
+        <svg class="dep" viewBox="0 0 300 138" role="img" aria-label="An attack from outside reached Electronic filing system (FEC)."><path class="atk" d="M22 56 H178"/><path class="atkh" d="M170 50 L179 56 L170 62"/><g class="atkx" transform="translate(22 56)"><path d="M-7 -7 L7 7 M7 -7 L-7 7"/></g><text class="lbl red" x="100.0" y="46" text-anchor="middle">attack from outside</text><circle class="node hit" cx="214" cy="56" r="27"/><g class="gl" transform="translate(214 56) scale(1.0)"><path d="M-8 -12 H4 L9 -7 V12 H-8 Z M4 -12 V-7 H9 M-4 -2 H5 M-4 3 H5 M-4 8 H2"/></g><circle class="pulse red" r="4" cx="0" cy="0" opacity="0"><animateMotion path="M30 56 H178" dur="3.6s" begin="1.1s" keyTimes="0;.6;1" keyPoints="0;1;1" calcMode="linear" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.06;.56;.62;1" dur="3.6s" begin="1.1s" repeatCount="indefinite"/></circle><text class="nm" x="214" y="106" text-anchor="middle">Electronic</text><text class="nm" x="214" y="120" text-anchor="middle">filing system</text><text class="own" x="214" y="135" text-anchor="middle">FEC</text></svg>
+        <ul class="tags"><li class="cy">Cybersecurity</li><li>election</li></ul>
+        <ol class="hist">
+          <li><time>Oct 26</time>Spending reports blocked, a week before the midterms. <span class="c"><a href="#s15">15</a></span></li>
+          <li><time>Oct 27</time>FEC email, per Reuters: "a bad actor attempting to breach FEC systems." <span class="c"><a href="#s15">15</a></span></li>
+          <li class="now"><time>Open</time>No restoration on the record.</li>
+        </ol>
+        <a class="back" href="#week"><svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M2 8 L6 4 L10 8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to the week</a>
+      </article>
+  <article class="tk" id="t-unm">
+        <div class="tk-top"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--red)" stroke-width="1.8" stroke-dasharray="2.4 1.9"/><circle cx="8" cy="8" r="2.6" fill="var(--red)"/></svg><span>UNM Health</span><span class="when">Oct 26 to 28</span></div>
+        <h3>New Mexico's only Level I trauma center</h3>
+        <svg class="dep" viewBox="0 0 300 138" role="img" aria-label="An attack from outside reached End user devices (UNM Health)."><path class="atk" d="M22 56 H178"/><path class="atkh" d="M170 50 L179 56 L170 62"/><g class="atkx" transform="translate(22 56)"><path d="M-7 -7 L7 7 M7 -7 L-7 7"/></g><text class="lbl red" x="100.0" y="46" text-anchor="middle">attack from outside</text><circle class="node hit" cx="214" cy="56" r="27"/><g class="gl" transform="translate(214 56) scale(1.0)"><rect x="-11" y="-11" width="22" height="22" rx="3"/><path d="M0 -6 V6 M-6 0 H6"/></g><circle class="pulse red" r="4" cx="0" cy="0" opacity="0"><animateMotion path="M30 56 H178" dur="3.6s" begin="3.0s" keyTimes="0;.6;1" keyPoints="0;1;1" calcMode="linear" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.06;.56;.62;1" dur="3.6s" begin="3.0s" repeatCount="indefinite"/></circle><text class="nm" x="214" y="106" text-anchor="middle">End user</text><text class="nm" x="214" y="120" text-anchor="middle">devices</text><text class="own" x="214" y="135" text-anchor="middle">UNM Health</text></svg>
+        <ul class="tags"><li class="cy">Cybersecurity</li><li>hospital</li></ul>
+        <ol class="hist">
+          <li><time>Oct 26 to 28</time>Ambulances diverted for 2 hours; clinics and surgeries cancelled. <span class="c"><a href="#s28">28</a></span></li>
+          <li><time>Oct 27</time>UNM's health sciences center: a cyberattack on "end user devices." <span class="c"><a href="#s28">28</a></span></li>
+          <li class="now"><time>Open</time>No final public report on the record.</li>
+        </ol>
+        <a class="back" href="#week"><svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M2 8 L6 4 L10 8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to the week</a>
+      </article>
+</div>
+
+<div class="thing php" style="margin-top:56px">
+  <div>
+    <p class="k">Where two of the three meet</p>
+    <h3>The PHP patch: an attack risk, then a scramble to change running systems.</h3>
+    <p class="lead">The vulnerabilities "are in PHP, a programming language that powers about 70% of the world's websites." They were discovered last month, and "AI tools helped researchers exploit them," which set off a global scramble to patch. The NSA itself urged organizations to apply the patches. <span class="c"><a href="#s37">37</a></span></p>
+    <p class="rep"><b>As reported</b>The patch came out October 21, 2026 for two critical flaws, and Germany and Belgium took government websites offline as a precaution. <span class="c"><a href="#s38">38</a></span></p>
+    <p class="honest"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="7.5" fill="none" stroke="#1C6A64" stroke-width="1.6"/><path d="M5.5 9.2 L8 11.5 L12.5 6.5" fill="none" stroke="#1C6A64" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>At the NSA, the patch was the change: the Director of National Intelligence said the patching "caused some of these systems to not come back up." No attack on the NSA is on the record. <span class="c"><a href="#s37">37</a></span></span></p>
+  </div>
+  <figure class="art">
+    <svg viewBox="0 0 440 300" role="img" aria-label="PHP, drawn as one block, feeds ten website tiles, seven of them shaded for about 70 percent of the world's websites. Below, four steps: flaws found, AI tools help researchers exploit them, a patch, and at the NSA some systems do not come back up.">
+      <rect x="18" y="52" width="74" height="50" rx="10" fill="#FFFFFF" stroke="#141A20" stroke-width="1.6"/><text class="s" x="55" y="83" text-anchor="middle" style="font-size:17px">PHP</text>
+      <path class="fan" d="M92 77 C130 77,130 40,150 40 M92 77 C130 77,130 104,150 104"/>
+      <g>
+        <rect class="tile on" x="152" y="26" width="44" height="30" rx="4"/><rect class="tile on" x="204" y="26" width="44" height="30" rx="4"/><rect class="tile on" x="256" y="26" width="44" height="30" rx="4"/><rect class="tile on" x="308" y="26" width="44" height="30" rx="4"/><rect class="tile on" x="360" y="26" width="44" height="30" rx="4"/>
+        <rect class="tile on" x="152" y="90" width="44" height="30" rx="4"/><rect class="tile on" x="204" y="90" width="44" height="30" rx="4"/><rect class="tile" x="256" y="90" width="44" height="30" rx="4"/><rect class="tile" x="308" y="90" width="44" height="30" rx="4"/><rect class="tile" x="360" y="90" width="44" height="30" rx="4"/>
+        <path d="M152 33 H196 M204 33 H248 M256 33 H300 M308 33 H352 M360 33 H404 M152 97 H196 M204 97 H248 M256 97 H300 M308 97 H352 M360 97 H404" stroke="#141A20" stroke-width="1" opacity=".5"/>
+      </g>
+      <text class="m" x="278" y="150" text-anchor="middle">about 70% of the world's websites</text>
+      <path class="ln2" d="M40 212 H376"/>
+      <circle class="stn r" cx="40" cy="212" r="13"/><circle class="stn r" cx="152" cy="212" r="13"/>
+      <circle class="ring" cx="264" cy="212" r="18"/><circle class="stn" cx="264" cy="212" r="13"/>
+      <circle class="stn r" cx="376" cy="212" r="13"/>
+      <circle class="runner" r="5"><animateMotion dur="4.5s" repeatCount="indefinite" path="M40 212 H376"/></circle>
+      <text class="t" x="44" y="252" text-anchor="middle">flaws</text><text class="m" x="44" y="270" text-anchor="middle">found</text>
+      <text class="t" x="152" y="252" text-anchor="middle">AI tools</text><text class="m" x="152" y="270" text-anchor="middle">help exploit</text>
+      <text class="t" x="264" y="252" text-anchor="middle">a patch</text><text class="m" x="264" y="270" text-anchor="middle">the change</text>
+      <text class="t" x="376" y="252" text-anchor="middle">at the NSA</text><text class="m" x="376" y="270" text-anchor="middle">not back up</text>
+      <text class="m" x="24" y="184">attack risk</text><text class="m" x="222" y="184">fast change</text>
+    </svg>
+    <figcaption>Tiles show a share, not a count. CNN, Nov 17.</figcaption>
+  </figure>
+</div>
+
+<section class="ch cat-b" id="moving-fast">
+  <p class="chap-tag"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M3 11 H13 M9 6 L14 11 L9 16 M12 11 H19 M16 7 L20 11 L16 15" fill="none" stroke="#2B5A97" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Rushed changes</p>
+  <h2><span class="hl">Change moving faster than coordination:</span> one change sits unnoticed, then others land on top of it.</h2>
+  <p class="sub">The operators' own statements describe changes stacking. At the NSA, the Director of National Intelligence said a security patch kept some systems from coming back up. Whether anyone saw these changes together is not yet on the record.</p>
+</section>
+
+<div class="stack" role="group" aria-label="Microsoft 365, how the changes stacked">
+  <div class="stack-h"><h3>Microsoft 365: three changes, one outage</h3><span>Microsoft, preliminary cause <span class="c"><a href="#s5">5</a></span></span></div>
+  <ol class="steps">
+    <li class="chg"><span class="when">July 2026</span><b>A defect ships</b>Deployed in Microsoft's networking gateway servers.</li>
+    <li class="gap">About four months unnoticed</li>
+    <li class="chg"><span class="when">Then</span><b>A traffic shift</b>Network traffic is moved.</li>
+    <li class="chg"><span class="when">Then</span><b>A 14% capacity cut</b>Less capacity to carry it.</li>
+    <li class="down"><span class="when">Nov 12 to 13</span><b>Down about 24 hours</b>Automatic failover made it worse. More than 70 countries.</li>
+  </ol>
+  <p class="co"><span>Coordinated?</span><b>Not yet on the record.</b><span>Microsoft says it was not related to a cyberattack or to AI. Final report due about Nov 20.</span></p>
+</div>
+
+<p class="grp-h">Earlier this fall, the same shape</p>
+<div class="earlier">
+  <div class="ev"><svg class="ico" viewBox="-16 -16 32 32" width="22" height="22" aria-hidden="true"><g class="gl"><rect x="-11" y="-12" width="22" height="7" rx="1.5"/><rect x="-11" y="-3.5" width="22" height="7" rx="1.5"/><rect x="-11" y="5" width="22" height="7" rx="1.5"/><path d="M-7 -8.5 H-4 M-7 0 H-4 M-7 8.5 H-4"/></g></svg><b>Microsoft Azure, Sept 30</b><span>A paused update resumed all at once and overloaded a control plane, in 34 regions for about 6 hours. <span class="c"><a href="#s27">27</a></span></span><em>Microsoft incident report</em></div>
+  <div class="ev"><svg class="ico" viewBox="-16 -16 32 32" width="22" height="22" aria-hidden="true"><g class="gl"><rect x="-11" y="-12" width="22" height="7" rx="1.5"/><rect x="-11" y="-3.5" width="22" height="7" rx="1.5"/><rect x="-11" y="5" width="22" height="7" rx="1.5"/><path d="M-7 -8.5 H-4 M-7 0 H-4 M-7 8.5 H-4"/></g></svg><b>Google Cloud Storage, Oct 8 to 9</b><span>A configuration change, then a rollback that did not fully work. About 18 hours. <span class="c"><a href="#s27">27</a></span></span><em>Google incident report</em></div>
+</div>
+
+<div class="tgrid three">
+  <article class="tk" id="t-microsoft">
+        <div class="tk-top"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--blue)" stroke-width="1.8"/><path d="M8 1.8 A6.2 6.2 0 0 1 8 14.2 Z" fill="var(--blue)"/></svg><span>Microsoft</span><span class="when">Nov 12 to 13</span></div>
+        <h3>Microsoft 365 email and apps</h3>
+        <p class="scale">About 24 hours, in more than 70 countries.</p>
+        <svg class="dep" viewBox="0 0 300 138" role="img" aria-label="Microsoft 365 email and apps (Microsoft) leans on Gateway servers (Microsoft), marked changed."><path class="wire" d="M92 56 H204"/><path class="wire" d="M197 51 L205 56 L197 61"/><text class="lbl" x="150.0" y="48" text-anchor="middle">leans on</text><g class="part pa" tabindex="0" role="button" aria-label="Microsoft 365 email and apps" data-name="Microsoft 365 email and apps" data-def="the service people use"><circle class="node" cx="62" cy="56" r="27"/><circle class="flash" cx="62" cy="56" r="27" opacity="0"><animate attributeName="opacity" values="0;0;0;1;0" keyTimes="0;.55;.62;.7;1" dur="3.2s" begin="0.8s" repeatCount="indefinite"/></circle><g class="gl" transform="translate(62 56) scale(1.0)"><rect x="-12" y="-8" width="24" height="16" rx="2"/><path d="M-12 -7 L0 2 L12 -7"/></g><text class="nm" x="62" y="106" text-anchor="middle">Microsoft 365</text><text class="nm" x="62" y="120" text-anchor="middle">email and apps</text><text class="own" x="62" y="135" text-anchor="middle">Microsoft</text></g><g class="part pb" tabindex="0" role="button" aria-label="Gateway servers" data-name="Gateway servers" data-def="the machines that pass traffic into the service" data-chg="1"><circle class="node" cx="238" cy="56" r="27"/><circle class="ring" cx="238" cy="56" r="33"/><rect class="tag chg" x="209.6" y="2" width="56.800000000000004" height="17" rx="8.5"/><text class="tagt" x="238" y="14.3" text-anchor="middle">changed</text><g class="gl" transform="translate(238 56) scale(1.0)"><rect x="-11" y="-12" width="22" height="7" rx="1.5"/><rect x="-11" y="-3.5" width="22" height="7" rx="1.5"/><rect x="-11" y="5" width="22" height="7" rx="1.5"/><path d="M-7 -8.5 H-4 M-7 0 H-4 M-7 8.5 H-4"/></g><text class="nm" x="238" y="106" text-anchor="middle">Gateway</text><text class="nm" x="238" y="120" text-anchor="middle">servers</text><text class="own" x="238" y="135" text-anchor="middle">Microsoft</text></g><circle class="pulse" r="4.5" cx="0" cy="0" opacity="0"><animateMotion path="M204 56 H92" dur="3.2s" begin="0.8s" keyTimes="0;.62;1" keyPoints="0;1;1" calcMode="linear" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.06;.58;.64;1" dur="3.2s" begin="0.8s" repeatCount="indefinite"/></circle></svg>
+        <dl class="fields">
+          <dt>What changed</dt><dd>A defect deployed in July, then a traffic shift and a 14% capacity cut. Automatic failover made it worse.</dd>
+          <dt>Coordinated?</dt><dd class="open">Not yet on the record.</dd>
+        </dl>
+        <ul class="tags"><li class="ip">Infrastructure planning and coordination</li><li class="chg">change to a running system</li><li>failover</li></ul>
+        <ol class="hist">
+          <li><time>Nov 12</time>Outlook, Teams and other apps go down. <span class="c"><a href="#s5">5</a></span></li>
+          <li><time>By Nov 17</time>Preliminary cause posted. Microsoft: "not related to cyber or AI / agents." <span class="c"><a href="#s5">5</a></span></li>
+          <li class="now"><time>About Nov 20</time>Final report due.</li>
+        </ol>
+        <a class="back" href="#week"><svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M2 8 L6 4 L10 8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to the week</a>
+      </article>
+  <article class="tk" id="t-apple">
+        <div class="tk-top"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--blue)" stroke-width="1.8"/><path d="M8 1.8 A6.2 6.2 0 0 1 8 14.2 Z" fill="var(--blue)"/></svg><span>Apple</span><span class="when">Nov 17</span></div>
+        <h3>iCloud, App Store, Apple Pay</h3>
+        <p class="scale">Sign in, purchases and iPhone activation failed for many users.</p>
+        <svg class="dep" viewBox="0 0 300 138" role="img" aria-label="iCloud, App Store, Apple Pay (Apple) leans on Internal update (Apple), marked changed."><path class="wire" d="M92 56 H204"/><path class="wire" d="M197 51 L205 56 L197 61"/><text class="lbl" x="150.0" y="48" text-anchor="middle">leans on</text><g class="part pa" tabindex="0" role="button" aria-label="iCloud, App Store, Apple Pay" data-name="iCloud, App Store, Apple Pay" data-def="the service people use"><circle class="node" cx="62" cy="56" r="27"/><circle class="flash" cx="62" cy="56" r="27" opacity="0"><animate attributeName="opacity" values="0;0;0;1;0" keyTimes="0;.55;.62;.7;1" dur="3.2s" begin="1.6s" repeatCount="indefinite"/></circle><g class="gl" transform="translate(62 56) scale(1.0)"><rect x="-7.5" y="-12.5" width="15" height="25" rx="3"/><path d="M-2.5 9 H2.5"/></g><text class="nm" x="62" y="106" text-anchor="middle">iCloud, App</text><text class="nm" x="62" y="120" text-anchor="middle">Store, Apple Pay</text><text class="own" x="62" y="135" text-anchor="middle">Apple</text></g><g class="part pb" tabindex="0" role="button" aria-label="Internal update" data-name="Internal update" data-def="" data-chg="1"><circle class="node" cx="238" cy="56" r="27"/><circle class="ring" cx="238" cy="56" r="33"/><rect class="tag chg" x="209.6" y="2" width="56.800000000000004" height="17" rx="8.5"/><text class="tagt" x="238" y="14.3" text-anchor="middle">changed</text><g class="gl" transform="translate(238 56) scale(1.0)"><path d="M9 -5.5 A10.5 10.5 0 1 0 10.5 2"/><path d="M10.5 -12 V-5 H3.5"/></g><text class="nm" x="238" y="106" text-anchor="middle">Internal</text><text class="nm" x="238" y="120" text-anchor="middle">update</text><text class="own" x="238" y="135" text-anchor="middle">Apple</text></g><circle class="pulse" r="4.5" cx="0" cy="0" opacity="0"><animateMotion path="M204 56 H92" dur="3.2s" begin="1.6s" keyTimes="0;.62;1" keyPoints="0;1;1" calcMode="linear" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.06;.58;.64;1" dur="3.2s" begin="1.6s" repeatCount="indefinite"/></circle></svg>
+        <dl class="fields">
+          <dt>What changed</dt><dd>"An internal update caused some outages this morning."</dd>
+          <dt>Coordinated?</dt><dd class="open">Not yet on the record.</dd>
+        </dl>
+        <ul class="tags"><li class="ip">Infrastructure planning and coordination</li><li class="chg">change to a running system</li></ul>
+        <ol class="hist">
+          <li><time>Nov 17</time>Outages from the late morning, Eastern time. <span class="c"><a href="#s13">13</a></span></li>
+          <li><time>Nov 17</time>Apple, as relayed by a Bloomberg reporter and 9to5Mac: an internal update; not a cyberattack. <span class="c"><a href="#s13">13</a></span></li>
+          <li><time>Afternoon</time>Some systems still being restored. <span class="c"><a href="#s13">13</a></span></li>
+          <li><time>About 5 p.m.</time><i class="rep">reported</i>Fully resolved, per the research desk's board. <span class="c"><a href="#s40">40</a></span></li>
+        </ol>
+        <a class="back" href="#week"><svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M2 8 L6 4 L10 8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to the week</a>
+      </article>
+  <article class="tk" id="t-nsa">
+        <div class="tk-top"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--blue)" stroke-width="1.8"/><path d="M8 1.8 A6.2 6.2 0 0 1 8 14.2 Z" fill="var(--blue)"/></svg><span>NSA</span><span class="when">Nov 17</span></div>
+        <h3>NSA Net, the agency's classified network</h3>
+        <p class="scale">Staggered log ins. Restoration "ongoing but not yet complete," a source said.</p>
+        <svg class="dep" viewBox="0 0 300 138" role="img" aria-label="NSA Net, its internal network (NSA) leans on Security patch (not stated), marked changed."><path class="wire" d="M92 56 H204"/><path class="wire" d="M197 51 L205 56 L197 61"/><text class="lbl" x="150.0" y="48" text-anchor="middle">leans on</text><g class="part pa" tabindex="0" role="button" aria-label="NSA Net, its internal network" data-name="NSA Net, its internal network" data-def="the service people use"><circle class="node" cx="62" cy="56" r="27"/><circle class="flash" cx="62" cy="56" r="27" opacity="0"><animate attributeName="opacity" values="0;0;0;1;0" keyTimes="0;.55;.62;.7;1" dur="3.2s" begin="2.0s" repeatCount="indefinite"/></circle><g class="gl" transform="translate(62 56) scale(1.0)"><rect x="-9" y="-2" width="18" height="13" rx="2"/><path d="M-5 -2 V-6 A5 5 0 0 1 5 -6 V-2 M0 3 V6"/></g><text class="nm" x="62" y="106" text-anchor="middle">NSA Net, its</text><text class="nm" x="62" y="120" text-anchor="middle">internal network</text><text class="own" x="62" y="135" text-anchor="middle">NSA</text></g><g class="part pb" tabindex="0" role="button" aria-label="Security patch" data-name="Security patch" data-def="a fix for a flaw in software" data-chg="1"><circle class="node" cx="238" cy="56" r="27"/><circle class="ring" cx="238" cy="56" r="33"/><rect class="tag chg" x="209.6" y="2" width="56.800000000000004" height="17" rx="8.5"/><text class="tagt" x="238" y="14.3" text-anchor="middle">changed</text><g class="gl" transform="translate(238 56) scale(1.0)"><g transform="rotate(-40)"><rect x="-13" y="-5.5" width="26" height="11" rx="5.5"/><rect x="-4.5" y="-5.5" width="9" height="11"/><circle cx="-1.6" cy="-2" r=".9" class="fillink"/><circle cx="1.6" cy="2" r=".9" class="fillink"/></g></g><text class="nm" x="238" y="106" text-anchor="middle">Security</text><text class="nm" x="238" y="120" text-anchor="middle">patch</text><text class="own" x="238" y="135" text-anchor="middle">not stated</text></g><circle class="pulse" r="4.5" cx="0" cy="0" opacity="0"><animateMotion path="M204 56 H92" dur="3.2s" begin="2.0s" keyTimes="0;.62;1" keyPoints="0;1;1" calcMode="linear" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.06;.58;.64;1" dur="3.2s" begin="2.0s" repeatCount="indefinite"/></circle></svg>
+        <dl class="fields">
+          <dt>What changed</dt><dd>A software patch for major vulnerabilities discovered last month, per the Director of National Intelligence.</dd>
+          <dt>Coordinated?</dt><dd class="open">Not yet on the record.</dd>
+        </dl>
+        <p class="why">The stated cause is a response to an attack risk. No attack on the NSA is on the record.</p>
+        <ul class="tags"><li class="ip">Infrastructure planning and coordination</li><li class="chg">change to a running system</li><li>security patch</li></ul>
+        <ol class="hist">
+          <li><time>Nov 17</time>The NSA: "The National Security Agency experienced temporary degradation during scheduled routine maintenance." <span class="c"><a href="#s37">37</a></span></li>
+          <li><time>Later Nov 17</time>Director of National Intelligence Jay Clayton, on Fox Business: "The patching that has gone on following that has caused some of these systems to not come back up." He saw no sign any recent outage was a cyberattack. <span class="c"><a href="#s37">37</a></span></li>
+          <li class="now"><time>Open</time>Restoration "ongoing but not yet complete," per a source. <span class="c"><a href="#s37">37</a></span></li>
+        </ol>
+        <a class="back" href="#week"><svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M2 8 L6 4 L10 8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to the week</a>
+      </article>
+
+</div>
+
+<div class="three" style="margin-top:56px">
+<div class="thing flip">
+    <div>
+      <h3>More code is written by machines, and changes land less steadily.</h3>
+      <p class="lead">Every change to a running system has to be checked against everything that leans on it. Earlier this fall, a paused Microsoft cloud update resumed all at once and overloaded a control plane, and a Google storage change could not be fully rolled back. <span class="c"><a href="#s27">27</a></span></p>
+      <ul class="nums">
+        <li><b>7.2%</b>Estimated drop in delivery stability tied to AI adoption, in Google's 2024 research on software teams. <span class="c"><a href="#s19">19</a></span></li>
+        <li><b>1 in 4+</b>Share of Google's new code written by AI, per its chief executive, Oct 2024. <span class="c"><a href="#s21">21</a></span></li>
+        <li><b>+81%</b>Duplicated code blocks, in a 2026 study of 623 million changes. <span class="c"><a href="#s20">20</a></span></li>
+        <li><b>21% → 3.8%</b>Changed lines spent reworking old code, 2022 to 2026, same study. <span class="c"><a href="#s20">20</a></span></li>
+      </ul>
+      <p class="honest"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="7.5" fill="none" stroke="#1C6A64" stroke-width="1.6"/><path d="M5.5 9.2 L8 11.5 L12.5 6.5" fill="none" stroke="#1C6A64" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>No outage on the board has been traced to code written by AI. Microsoft says its outage was not related to AI.</span></p>
+    </div>
+    <figure class="art">
+      <svg viewBox="0 0 420 300" role="img" aria-label="Changes move along a track toward one check. The check asks what else leans on the part being changed. Past the check, a running system has three other systems leaning on it.">
+        <path class="ln2" d="M10 93 H306"/>
+        <text class="m" x="10" y="56">changes</text>
+        <g class="still"><rect class="blk" x="18" y="80" width="28" height="26" rx="5"/><rect class="blk g" x="58" y="80" width="28" height="26" rx="5"/><rect class="blk" x="98" y="80" width="28" height="26" rx="5"/><rect class="blk g" x="138" y="80" width="28" height="26" rx="5"/></g>
+        <g class="mover"><rect class="blk" x="0" y="80" width="28" height="26" rx="5" opacity="0"><animate attributeName="x" from="6" to="282" dur="4s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.88;1" dur="4s" begin="0s" repeatCount="indefinite"/></rect><rect class="blk g" x="0" y="80" width="28" height="26" rx="5" opacity="0"><animate attributeName="x" from="6" to="282" dur="4s" begin="-1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.88;1" dur="4s" begin="-1s" repeatCount="indefinite"/></rect><rect class="blk" x="0" y="80" width="28" height="26" rx="5" opacity="0"><animate attributeName="x" from="6" to="282" dur="4s" begin="-2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.88;1" dur="4s" begin="-2s" repeatCount="indefinite"/></rect><rect class="blk g" x="0" y="80" width="28" height="26" rx="5" opacity="0"><animate attributeName="x" from="6" to="282" dur="4s" begin="-3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.88;1" dur="4s" begin="-3s" repeatCount="indefinite"/></rect></g>
+        <rect class="gate" x="190" y="58" width="38" height="70" rx="8"/>
+        <path class="ln" d="M200 93 L206 99 L218 85"/>
+        <text class="t" x="209" y="152" text-anchor="middle">one check:</text>
+        <text class="m" x="209" y="169" text-anchor="middle">what else leans</text>
+        <text class="m" x="209" y="184" text-anchor="middle">on this part?</text>
+        <circle class="stn" cx="334" cy="93" r="24"/>
+        <text class="t" x="334" y="52" text-anchor="middle">running system</text>
+        <path class="ln" d="M318 111 L272 222 M334 117 V222 M350 111 L396 222"/>
+        <circle class="stn" cx="272" cy="236" r="14"/><circle class="stn" cx="334" cy="236" r="14"/><circle class="stn" cx="396" cy="236" r="14"/>
+        <text class="m" x="334" y="276" text-anchor="middle">systems that lean on it</text>
+        <rect class="blk g" x="14" y="232" width="16" height="14" rx="3"/><text class="m" x="38" y="243">written with AI</text>
+        <rect class="blk" x="14" y="256" width="16" height="14" rx="3"/><text class="m" x="38" y="267">written by people</text>
+      </svg>
+      <figcaption>The shape of a dependency. The share of AI-written changes drawn here is not to scale.</figcaption>
+    </figure>
+  </div>
+
+  </div>
+
+<section class="ch cat-c" id="dependencies">
+  <p class="chap-tag"><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="6" cy="11" r="3.6" fill="none" stroke="#141A20" stroke-width="1.8"/><circle cx="16.5" cy="11" r="4.5" fill="#F7EFDA" stroke="#C39B3F" stroke-width="2" stroke-dasharray="2.4 2"/><path d="M9.6 11 H12" stroke="#141A20" stroke-width="1.8" stroke-linecap="round"/></svg>Hidden dependencies</p>
+  <h2><span class="hl">Changes made without seeing what depends on them.</span> A recovery test connected to live databases. A new router flooded 17 of 22 air traffic centers.</h2>
+  <p class="sub">Whether anyone mapped what these changes would touch before making them is not yet on the record.</p>
+</section>
+<div class="tgrid three">
+  <article class="tk" id="t-workday">
+        <div class="tk-top"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--blue)" stroke-width="1.8"/><path d="M8 1.8 A6.2 6.2 0 0 1 8 14.2 Z" fill="var(--blue)"/></svg><span>Workday</span><span class="when">Nov 13 to 14</span></div>
+        <h3>HR and payroll platform</h3>
+        <p class="scale">At affected employers, staff could not log in, clock in or request time off.</p>
+        <svg class="dep" viewBox="0 0 300 138" role="img" aria-label="Workday live production databases on the left and its disaster recovery backup site on the right, with a wall between them meant to keep them apart. During a test, the backup site connected through the wall to production."><path class="wall" d="M150 24 V44 M150 68 V92"/><text class="lbl" x="150" y="14" text-anchor="middle">kept apart</text><path class="wire hotw" d="M204 56 H92"/><path class="wire hotw" d="M100 51 L92 56 L100 61"/><text class="lbl" x="178" y="75" text-anchor="middle">connected</text><g class="part pa" tabindex="0" role="button" aria-label="Production databases" data-name="Production databases" data-def="production, the live system people use"><circle class="node" cx="62" cy="56" r="27"/><circle class="flash" cx="62" cy="56" r="27" opacity="0"><animate attributeName="opacity" values="0;0;0;1;0" keyTimes="0;.55;.62;.7;1" dur="3.2s" begin="2.4s" repeatCount="indefinite"/></circle><g class="gl" transform="translate(62 56) scale(1.0)"><rect x="-11" y="-12" width="22" height="7" rx="1.5"/><rect x="-11" y="-3.5" width="22" height="7" rx="1.5"/><rect x="-11" y="5" width="22" height="7" rx="1.5"/><path d="M-7 -8.5 H-4 M-7 0 H-4 M-7 8.5 H-4"/></g><text class="nm" x="62" y="106" text-anchor="middle">Production</text><text class="nm" x="62" y="120" text-anchor="middle">databases</text><text class="own" x="62" y="135" text-anchor="middle">Workday</text></g><g class="part pb" tabindex="0" role="button" aria-label="Backup site (disaster recovery)" data-name="Backup site (disaster recovery)" data-def="a backup copy of a system, kept apart from production" data-chg="1"><circle class="node" cx="238" cy="56" r="27"/><circle class="ring" cx="238" cy="56" r="33"/><rect class="tag chg" x="208" y="2" width="60" height="17" rx="8.5"/><text class="tagt" x="238" y="14.3" text-anchor="middle">tested</text><g class="gl" transform="translate(238 56) scale(1.0)"><path d="M9 -5.5 A10.5 10.5 0 1 0 10.5 2"/><path d="M10.5 -12 V-5 H3.5"/></g><text class="nm" x="238" y="106" text-anchor="middle">Backup site</text><text class="nm" x="238" y="120" text-anchor="middle">(disaster recovery)</text><text class="own" x="238" y="135" text-anchor="middle">Workday</text></g><circle class="pulse" r="4.5" cx="0" cy="0" opacity="0"><animateMotion path="M204 56 H92" dur="3.2s" begin="2.4s" keyTimes="0;.62;1" keyPoints="0;1;1" calcMode="linear" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.06;.58;.64;1" dur="3.2s" begin="2.4s" repeatCount="indefinite"/></circle></svg>
+        <dl class="fields">
+          <dt>What changed</dt><dd>While validating its weekly disaster recovery maintenance window, "tenanted services within the DR Site unexpectedly connected to Production databases," leaving data "in an inconsistent state."</dd>
+          <dt>Coordinated?</dt><dd class="open">Not yet on the record.</dd>
+        </dl>
+        <ul class="tags"><li class="ip">Infrastructure planning and coordination</li><li class="chg">change to a running system</li><li>backup test</li></ul>
+        <ol class="hist">
+          <li><time>Nov 13</time>Customer systems offline. <span class="c"><a href="#s9">9</a></span></li>
+          <li><time>Notice</time>Cause stated in a customer notice, as quoted in coverage. A spokesperson: not related to a cybersecurity incident. <span class="c"><a href="#s9">9</a></span></li>
+          <li><time>Nov 14</time>Service declared restored at 11 a.m. <span class="c"><a href="#s9">9</a></span></li>
+          <li class="now"><time>Open</time>Post incident report not yet published.</li>
+        </ol>
+        <a class="back" href="#week"><svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M2 8 L6 4 L10 8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to the week</a>
+      </article>
+  <article class="tk" id="t-faa">
+        <div class="tk-top"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--blue)" stroke-width="1.8"/><path d="M8 1.8 A6.2 6.2 0 0 1 8 14.2 Z" fill="var(--blue)"/></svg><span>FAA</span><span class="when">Nov 13</span></div>
+        <h3>Nationwide ground stop</h3>
+        <p class="scale">About 4 hr 40 min; about 12,000 flights did not operate.</p>
+        <svg class="dep" viewBox="0 0 300 138" role="img" aria-label="Air traffic network (FAA) leans on Router in El Dorado, Ark. (contractor L3Harris), marked changed."><path class="wire" d="M92 56 H204"/><path class="wire" d="M197 51 L205 56 L197 61"/><text class="lbl" x="150.0" y="48" text-anchor="middle">leans on</text><g class="part pa" tabindex="0" role="button" aria-label="Air traffic network" data-name="Air traffic network" data-def="the service people use"><circle class="node" cx="62" cy="56" r="27"/><circle class="flash" cx="62" cy="56" r="27" opacity="0"><animate attributeName="opacity" values="0;0;0;1;0" keyTimes="0;.55;.62;.7;1" dur="3.2s" begin="0s" repeatCount="indefinite"/></circle><g class="gl" transform="translate(62 56) scale(1.0)"><circle r="11"/><circle r="5"/><path d="M0 0 L8 -8"/><circle cx="4.5" cy="4" r="1.3" class="fillink"/></g><text class="nm" x="62" y="106" text-anchor="middle">Air traffic</text><text class="nm" x="62" y="120" text-anchor="middle">network</text><text class="own" x="62" y="135" text-anchor="middle">FAA</text></g><g class="part pb" tabindex="0" role="button" aria-label="Router in El Dorado, Ark." data-name="Router in El Dorado, Ark." data-def="a box that passes messages between networks" data-chg="1"><circle class="node" cx="238" cy="56" r="27"/><circle class="ring" cx="238" cy="56" r="33"/><rect class="tag chg" x="209.6" y="2" width="56.800000000000004" height="17" rx="8.5"/><text class="tagt" x="238" y="14.3" text-anchor="middle">changed</text><g class="gl" transform="translate(238 56) scale(1.0)"><rect x="-12" y="-4" width="24" height="12" rx="2.5"/><path d="M-7 -4 L-9.5 -12 M7 -4 L9.5 -12 M-6 3 H-3 M-1 3 H2 M4 3 H7"/></g><text class="nm" x="238" y="106" text-anchor="middle">Router in</text><text class="nm" x="238" y="120" text-anchor="middle">El Dorado, Ark.</text><text class="own" x="238" y="135" text-anchor="middle">contractor L3Harris</text></g><circle class="pulse" r="4.5" cx="0" cy="0" opacity="0"><animateMotion path="M204 56 H92" dur="3.2s" begin="0s" keyTimes="0;.62;1" keyPoints="0;1;1" calcMode="linear" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.06;.58;.64;1" dur="3.2s" begin="0s" repeatCount="indefinite"/></circle></svg>
+        <dl class="fields">
+          <dt>What changed</dt><dd>A router installed during copper to fiber work flooded the network; 17 of 22 centers unstable.</dd>
+          <dt>Coordinated?</dt><dd class="open">Not yet on the record for this change. The contractor, L3Harris, says its work is done "in close coordination with the FAA," as reported by Reuters. <span class="c"><a href="#s29">29</a></span></dd>
+        </dl>
+        <ul class="tags"><li class="ip">Infrastructure planning and coordination</li><li class="chg">change to a running system</li><li>contractor</li><li>legacy equipment</li></ul>
+        <ol class="hist">
+          <li><time>Nov 13</time>Every departure from U.S. airports held. <span class="c"><a href="#s6">6</a></span></li>
+          <li><time>Nov 14</time>FAA Administrator: "zero evidence of anything nefarious, and zero evidence of anything AI-related." <span class="c"><a href="#s3">3</a></span></li>
+          <li><time>Nov 15</time>Technicians' union: two "contractor owned and maintained routers"; its members "were not involved." <span class="c"><a href="#s8">8</a></span></li>
+          <li><time>Nov 17</time><i class="rep">reported</i>A Senate briefing, and a $50.1 billion request sent to appropriators. <span class="c"><a href="#s40">40</a></span></li>
+          <li class="now"><time>Open</time>Root cause under FAA and FBI review. <span class="c"><a href="#s6">6</a></span></li>
+        </ol>
+        <a class="back" href="#week"><svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M2 8 L6 4 L10 8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to the week</a>
+      </article>
+  <article class="tk" id="t-chase">
+        <div class="tk-top"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="var(--teal)"/><path d="M4.6 8.2 L7 10.5 L11.4 5.8" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg><span>JPMorgan Chase</span><span class="when">Nov 16</span></div>
+        <h3>Online banking, branches, Zelle</h3>
+        <p class="scale">About 11:30 a.m. to 6:30 p.m. Eastern.</p>
+        <svg class="dep" viewBox="0 0 300 138" role="img" aria-label="Online banking, branches, Zelle (JPMorgan Chase) leans on Hardware in its own data center (JPMorgan Chase), marked software bug."><path class="wire" d="M92 56 H204"/><path class="wire" d="M197 51 L205 56 L197 61"/><text class="lbl" x="150.0" y="48" text-anchor="middle">leans on</text><path class="spill" d="M84 73 Q 90 78 94 73"/><text class="lbl red" x="96" y="76">to other banks</text><text class="lbl" x="96" y="88">(reported)</text><g class="part pa" tabindex="0" role="button" aria-label="Online banking, branches, Zelle" data-name="Online banking, branches, Zelle" data-def="the service people use"><circle class="node" cx="62" cy="56" r="27"/><circle class="flash" cx="62" cy="56" r="27" opacity="0"><animate attributeName="opacity" values="0;0;0;1;0" keyTimes="0;.55;.62;.7;1" dur="3.2s" begin="0.4s" repeatCount="indefinite"/></circle><g class="gl" transform="translate(62 56) scale(1.0)"><path d="M-12 -4 L0 -11.5 L12 -4 Z M-8.5 -1 V8 M-3 -1 V8 M3 -1 V8 M8.5 -1 V8 M-13 11 H13"/></g><text class="nm" x="62" y="106" text-anchor="middle">Online banking,</text><text class="nm" x="62" y="120" text-anchor="middle">branches, Zelle</text><text class="own" x="62" y="135" text-anchor="middle">JPMorgan Chase</text></g><g class="part pb" tabindex="0" role="button" aria-label="Hardware in its own data center" data-name="Hardware in its own data center" data-def="" data-chg="1"><circle class="node" cx="238" cy="56" r="27"/><circle class="ring bug" cx="238" cy="56" r="33"/><rect class="tag bug" x="193.6" y="2" width="88.80000000000001" height="17" rx="8.5"/><text class="tagt" x="238" y="14.3" text-anchor="middle">software bug</text><g class="gl" transform="translate(238 56) scale(1.0)"><rect x="-9" y="-9" width="18" height="18" rx="2"/><rect x="-4" y="-4" width="8" height="8"/><path d="M-5 -9 V-13 M0 -9 V-13 M5 -9 V-13 M-5 9 V13 M0 9 V13 M5 9 V13 M-9 -5 H-13 M-9 0 H-13 M-9 5 H-13 M9 -5 H13 M9 0 H13 M9 5 H13"/></g><text class="nm" x="238" y="106" text-anchor="middle">Hardware in its</text><text class="nm" x="238" y="120" text-anchor="middle">own data center</text><text class="own" x="238" y="135" text-anchor="middle">JPMorgan Chase</text></g><circle class="pulse" r="4.5" cx="0" cy="0" opacity="0"><animateMotion path="M204 56 H92" dur="3.2s" begin="0.4s" keyTimes="0;.62;1" keyPoints="0;1;1" calcMode="linear" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.06;.58;.64;1" dur="3.2s" begin="0.4s" repeatCount="indefinite"/></circle></svg>
+        <dl class="fields">
+          <dt>What failed</dt><dd>"a software bug in an on-premise hardware system" <span class="c"><a href="#s10">10</a></span></dd>
+          <dt>Reported</dt><dd class="rep">An FBI official told NewsNation the outage was traced to a software release by JPMorgan Chase. <span class="c"><a href="#s39">39</a></span></dd>
+          <dt>Coordinated?</dt><dd class="open">Not yet on the record.</dd>
+        </dl>
+        <ul class="tags"><li>software bug</li><li>own data center</li><li>reached other banks, reported</li></ul>
+        <ol class="hist">
+          <li><time>Nov 16</time>Transactions fail online, in branches and on Zelle. Chase: "not cyber-related." Service back by evening. <span class="c"><a href="#s10">10</a></span></li>
+          <li><time>Nov 17</time><i class="rep">reported</i>Chase: the bug spread to other institutions "when we were party to a transaction involving other banks"; the issue was not systemic. <span class="c"><a href="#s39">39</a></span></li>
+          <li><time>Nov 17</time><i class="rep">reported</i>An FBI official: traced to a software release by JPMorgan Chase. <span class="c"><a href="#s39">39</a></span></li>
+        </ol>
+        <a class="back" href="#week"><svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M2 8 L6 4 L10 8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to the week</a>
+      </article>
+
+</div>
+
+<section class="ch" id="ground-stop" style="margin-top:72px">
+  <p class="k">The ground stop, step by step</p>
+  <h2>How one router at one site held every departure in the country.</h2>
+</section>
+
+<article class="open-tk" aria-label="FAA ground stop, step by step">
+  <div class="bar"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--blue)" stroke-width="1.8"/><path d="M8 1.8 A6.2 6.2 0 0 1 8 14.2 Z" fill="var(--blue)"/></svg><b>FAA nationwide ground stop</b><span>Nov 13, 2026</span><span class="r">Cause stated · full report still owed</span></div>
+  <ol class="frames">
+    <li>
+      <div class="pic"><svg viewBox="0 0 280 170" role="img" aria-label="Two en route centers with a router between them. Messages travel through the router in both directions.">
+        <g transform="translate(46 70)"><rect x="-26" y="-22" width="52" height="44" rx="6" class="node"/><path class="gl" d="M-14 10 V-6 M-4 10 V-12 M6 10 V-2 M16 10 V-8" /></g>
+        <g transform="translate(234 70)"><rect x="-26" y="-22" width="52" height="44" rx="6" class="node"/><path class="gl" d="M-14 10 V-6 M-4 10 V-12 M6 10 V-2 M16 10 V-8" /></g>
+        <path class="wire" d="M72 70 H114 M166 70 H208"/>
+        <circle class="node" cx="140" cy="70" r="24"/><g class="gl" transform="translate(140 70)"><rect x="-12" y="-4" width="24" height="12" rx="2.5"/><path d="M-7 -4 L-9.5 -12 M7 -4 L9.5 -12 M-6 3 H-3 M-1 3 H2 M4 3 H7"/></g>
+        <circle class="msg pulse" r="4.5"><animateMotion dur="2.4s" repeatCount="indefinite" path="M72 66 H208"/></circle>
+        <circle class="msg pulse" r="4.5"><animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite" path="M208 76 H72"/></circle>
+        <text class="lb2" x="46" y="116" text-anchor="middle">center</text><text class="lb2" x="140" y="116" text-anchor="middle">router</text><text class="lb2" x="234" y="116" text-anchor="middle">center</text>
+        <text class="lbl" x="140" y="150" text-anchor="middle">messages pass through</text>
+      </svg></div>
+      <h4>What a router does</h4>
+      <p>It passes messages along a network. The FAA's 22 en route centers, which handle flights between airports, depend on that network to stay in touch.</p>
+    </li>
+    <li>
+      <div class="pic"><svg viewBox="0 0 280 170" role="img" aria-label="At one site, an old copper line is crossed out and a new fiber line is drawn. A new router, marked as the change, sits on the line.">
+        <path class="copper" d="M20 50 Q35 38 50 50 T80 50 T110 50 T140 50"/>
+        <path d="M70 38 L92 62 M92 38 L70 62" stroke="#5A6570" stroke-width="2" stroke-linecap="round"/>
+        <text class="lbl" x="20" y="28">old copper line</text>
+        <path class="fiber" d="M20 112 H150"/>
+        <text class="lbl" x="20" y="140">new fiber</text>
+        <circle class="ring" cx="206" cy="112" r="32"/><circle class="node" cx="206" cy="112" r="25"/><g class="gl" transform="translate(206 112)"><rect x="-12" y="-4" width="24" height="12" rx="2.5"/><path d="M-7 -4 L-9.5 -12 M7 -4 L9.5 -12 M-6 3 H-3 M-1 3 H2 M4 3 H7"/></g>
+        <path class="fiber" d="M150 112 H181"/>
+        <rect x="174" y="46" width="64" height="18" rx="9" fill="#F7EFDA" stroke="#C39B3F" stroke-width="1.2"/><text x="206" y="59" text-anchor="middle" style="font:500 10.5px 'IBM Plex Mono',monospace;fill:#141A20">new router</text>
+        <text class="lb2" x="206" y="162" text-anchor="middle">El Dorado, Ark.</text>
+      </svg></div>
+      <h4>What was being changed</h4>
+      <p>At one site in El Dorado, Ark., old copper lines were being swapped for fiber. A router installed by the contractor L3Harris went in mid-day. <span class="c"><a href="#s6">6</a></span></p>
+      <p>"We use 1980s little copper lines," the Transportation Secretary said that day. <span class="c"><a href="#s26">26</a></span></p>
+    </li>
+    <li>
+      <div class="pic"><svg viewBox="0 0 280 170" role="img" aria-label="The new router sends a flood of connection attempts toward the rest of the network.">
+        <circle class="ring" cx="52" cy="84" r="31"/><circle class="node" cx="52" cy="84" r="24"/><g class="gl" transform="translate(52 84)"><rect x="-12" y="-4" width="24" height="12" rx="2.5"/><path d="M-7 -4 L-9.5 -12 M7 -4 L9.5 -12 M-6 3 H-3 M-1 3 H2 M4 3 H7"/></g>
+        <path class="flood mv" d="M80 70 L226 26 M82 78 L226 62 M82 86 L226 98 M80 96 L226 134 M78 104 L226 160"/>
+        <path class="flood mv" d="M80 74 L226 44 M82 82 L226 80 M80 92 L226 116 M78 100 L226 150"/>
+        <g fill="#FFFFFF" stroke="#141A20" stroke-width="1.5"><circle cx="242" cy="34" r="11"/><circle cx="242" cy="84" r="11"/><circle cx="242" cy="134" r="11"/></g>
+        <text class="lbl red" x="14" y="20">1,000+ attempts</text><text class="lbl red" x="14" y="34">every 4 to 5 seconds</text>
+      </svg></div>
+      <h4>What the new router did</h4>
+      <p>It flooded the network with "over 1,000 connection attempts every four to five seconds," the Transportation Secretary said, and swamped the FAA's older equipment. <span class="c"><a href="#s6">6</a></span></p>
+      <p class="unk">Why the router did this is not yet known. The root cause review is open.</p>
+    </li>
+    <li>
+      <div class="pic"><svg viewBox="0 0 280 170" role="img" aria-label="22 centers, 17 marked unstable in red and 5 steady. Below, a plane held at the gate and a plane already in the air still flying.">
+        <text class="lbl" x="20" y="12">22 en route centers</text>
+        <circle class="c bad" cx="30" cy="36" r="8"/><circle class="flash" cx="30" cy="36" r="11" opacity="0"><animate attributeName="opacity" values="0;0;.9;0" keyTimes="0;.6;.7;1" dur="2.6s" begin="0.00s" repeatCount="indefinite"/></circle><circle class="c bad" cx="52" cy="36" r="8"/><circle class="flash" cx="52" cy="36" r="11" opacity="0"><animate attributeName="opacity" values="0;0;.9;0" keyTimes="0;.6;.7;1" dur="2.6s" begin="0.17s" repeatCount="indefinite"/></circle><circle class="c ok" cx="74" cy="36" r="8"/><circle class="c bad" cx="96" cy="36" r="8"/><circle class="flash" cx="96" cy="36" r="11" opacity="0"><animate attributeName="opacity" values="0;0;.9;0" keyTimes="0;.6;.7;1" dur="2.6s" begin="0.51s" repeatCount="indefinite"/></circle><circle class="c bad" cx="118" cy="36" r="8"/><circle class="flash" cx="118" cy="36" r="11" opacity="0"><animate attributeName="opacity" values="0;0;.9;0" keyTimes="0;.6;.7;1" dur="2.6s" begin="0.68s" repeatCount="indefinite"/></circle><circle class="c bad" cx="140" cy="36" r="8"/><circle class="flash" cx="140" cy="36" r="11" opacity="0"><animate attributeName="opacity" values="0;0;.9;0" keyTimes="0;.6;.7;1" dur="2.6s" begin="0.85s" repeatCount="indefinite"/></circle><circle class="c bad" cx="162" cy="36" r="8"/><circle class="flash" cx="162" cy="36" r="11" opacity="0"><animate attributeName="opacity" values="0;0;.9;0" keyTimes="0;.6;.7;1" dur="2.6s" begin="1.02s" repeatCount="indefinite"/></circle><circle class="c ok" cx="184" cy="36" r="8"/><circle class="c bad" cx="206" cy="36" r="8"/><circle class="flash" cx="206" cy="36" r="11" opacity="0"><animate attributeName="opacity" values="0;0;.9;0" keyTimes="0;.6;.7;1" dur="2.6s" begin="1.36s" repeatCount="indefinite"/></circle><circle class="c bad" cx="228" cy="36" r="8"/><circle class="flash" cx="228" cy="36" r="11" opacity="0"><animate attributeName="opacity" values="0;0;.9;0" keyTimes="0;.6;.7;1" dur="2.6s" begin="1.53s" repeatCount="indefinite"/></circle><circle class="c bad" cx="250" cy="36" r="8"/><circle class="flash" cx="250" cy="36" r="11" opacity="0"><animate attributeName="opacity" values="0;0;.9;0" keyTimes="0;.6;.7;1" dur="2.6s" begin="1.70s" repeatCount="indefinite"/></circle><circle class="c bad" cx="30" cy="60" r="8"/><circle class="flash" cx="30" cy="60" r="11" opacity="0"><animate attributeName="opacity" values="0;0;.9;0" keyTimes="0;.6;.7;1" dur="2.6s" begin="0.07s" repeatCount="indefinite"/></circle><circle class="c bad" cx="52" cy="60" r="8"/><circle class="flash" cx="52" cy="60" r="11" opacity="0"><animate attributeName="opacity" values="0;0;.9;0" keyTimes="0;.6;.7;1" dur="2.6s" begin="0.24s" repeatCount="indefinite"/></circle><circle class="c ok" cx="74" cy="60" r="8"/><circle class="c bad" cx="96" cy="60" r="8"/><circle class="flash" cx="96" cy="60" r="11" opacity="0"><animate attributeName="opacity" values="0;0;.9;0" keyTimes="0;.6;.7;1" dur="2.6s" begin="0.58s" repeatCount="indefinite"/></circle><circle class="c bad" cx="118" cy="60" r="8"/><circle class="flash" cx="118" cy="60" r="11" opacity="0"><animate attributeName="opacity" values="0;0;.9;0" keyTimes="0;.6;.7;1" dur="2.6s" begin="0.75s" repeatCount="indefinite"/></circle><circle class="c ok" cx="140" cy="60" r="8"/><circle class="c bad" cx="162" cy="60" r="8"/><circle class="flash" cx="162" cy="60" r="11" opacity="0"><animate attributeName="opacity" values="0;0;.9;0" keyTimes="0;.6;.7;1" dur="2.6s" begin="1.09s" repeatCount="indefinite"/></circle><circle class="c bad" cx="184" cy="60" r="8"/><circle class="flash" cx="184" cy="60" r="11" opacity="0"><animate attributeName="opacity" values="0;0;.9;0" keyTimes="0;.6;.7;1" dur="2.6s" begin="1.26s" repeatCount="indefinite"/></circle><circle class="c bad" cx="206" cy="60" r="8"/><circle class="flash" cx="206" cy="60" r="11" opacity="0"><animate attributeName="opacity" values="0;0;.9;0" keyTimes="0;.6;.7;1" dur="2.6s" begin="1.43s" repeatCount="indefinite"/></circle><circle class="c ok" cx="228" cy="60" r="8"/><circle class="c bad" cx="250" cy="60" r="8"/><circle class="flash" cx="250" cy="60" r="11" opacity="0"><animate attributeName="opacity" values="0;0;.9;0" keyTimes="0;.6;.7;1" dur="2.6s" begin="1.77s" repeatCount="indefinite"/></circle>
+        <path class="ground" d="M14 150 H266"/>
+        <g class="gl" transform="translate(70 138)"><path d="M-12 0 H11.5 M-1 0 L-7.5 -11 M-1 0 L-7.5 11 M-10 0 L-13 -5.5 M-10 0 L-13 5.5"/></g><rect class="stopbar" x="94" y="124" width="6" height="26" rx="2"/>
+        <text class="lbl" x="50" y="166">held at the gate</text>
+        <g class="gl" transform="translate(210 100) rotate(-12)"><path d="M-12 0 H11.5 M-1 0 L-7.5 -11 M-1 0 L-7.5 11 M-10 0 L-13 -5.5 M-10 0 L-13 5.5"/></g>
+        <text class="lbl" x="180" y="128">in the air:</text><text class="lbl" x="180" y="142">keeps flying</text>
+      </svg></div>
+      <h4>How far it spread</h4>
+      <p>17 of the 22 centers became unstable. The FAA held every departure from U.S. airports for 4 hours 40 minutes; planes already flying kept going. About 12,000 flights did not operate. <span class="c"><a href="#s6">6</a></span></p>
+      <p class="unk">How the flood reached 17 centers, and why 5 held, is not yet public.</p>
+    </li>
+  </ol>
+  <div class="props">
+    <dl>
+      <dt>Runs the network</dt><dd>FAA</dd>
+      <dt>The part</dt><dd>A router in El Dorado, Ark., installed by contractor L3Harris during copper to fiber work</dd>
+      <dt>Duration</dt><dd class="big">4 hr 40 min</dd>
+      <dt>FAA's word</dt><dd>"legacy equipment"</dd>
+      <dt>Coordinated?</dt><dd class="open">Not yet on the record for this change. The contractor, L3Harris, says its work is done "in close coordination with the FAA," as reported by Reuters. <span class="c"><a href="#s29">29</a></span></dd>
+      <dt>Root cause</dt><dd>Under FAA and FBI review</dd>
+    </dl>
+    <div class="quotes"><p class="say">"isolated to two contractor owned and maintained routers ... PASS-represented technicians were not involved."<cite>The FAA technicians' union, Nov 15 <span class="c"><a href="#s8">8</a></span></cite></p>
+    <p class="say">"Identifying the device that failed does not establish why it failed."<cite>Senate Commerce Democrats, to the FAA, DOT, L3Harris and Juniper, Nov 17 <span class="c"><a href="#s7">7</a></span></cite></p></div>
+  </div>
+</article>
+
+<section class="ch" id="people">
+  <p class="k">The people who used to check the change</p>
+  <h2>Who used to check the change?</h2>
+  <p class="sub">The record on that is thin. Nearly everything below comes from news coverage of the cuts, not from company filings.</p>
+</section>
+<div class="ppl">
+  <figure class="art">
+    <p class="minihead">Cuts at companies in this story</p>
+    <div class="bars" role="img" aria-label="Job cuts, to scale: Microsoft about 6,000 in May 2025, about 9,000 in July 2025, 4,800 in July 2026; Workday about 1,750 in February 2025, about 525 in September 2026.">
+      <div class="bar-row"><span class="lab"><b>Microsoft</b>May 2025 <span class="c"><a href="#s31">31</a></span></span><div class="track"><div class="fill kept" style="width:66.7%">about 6,000</div></div></div>
+      <div class="bar-row"><span class="lab"><b>Microsoft</b>July 2025 <span class="c"><a href="#s31">31</a></span></span><div class="track"><div class="fill kept" style="width:100%">about 9,000</div></div></div>
+      <div class="bar-row"><span class="lab"><b>Microsoft</b>July 2026 <span class="c"><a href="#s32">32</a></span></span><div class="track"><div class="fill kept" style="width:53.3%">4,800</div></div></div>
+      <div class="bar-row"><span class="lab"><b>Workday</b>Feb 2025 <span class="c"><a href="#s33">33</a></span></span><div class="track"><div class="fill kept out" style="width:19.4%"><span>about 1,750</span></div></div></div>
+      <div class="bar-row"><span class="lab"><b>Workday</b>Sept 2026 <span class="c"><a href="#s34">34</a></span></span><div class="track"><div class="fill kept out" style="width:5.8%"><span>about 525</span></div></div></div>
+    </div>
+    <ul class="roles">
+      <li><b>Microsoft:</b> teams reported as management layers, engineering and product (May 2025); sales, support and Xbox (July 2025); commercial sales and Xbox (July 2026).</li>
+      <li><b>Workday:</b> its chief executive tied the 2025 cut to investment in AI. The 2026 cut was concentrated in Product and Technology.</li>
+      <li><b>No layoff round found</b> for JPMorgan Chase or L3Harris, and no technology staff cut found at United. <span class="c"><a href="#s36">36</a></span></li>
+    </ul>
+    <figcaption>Bars to scale. Reported figures; the companies' own filings were not opened.</figcaption>
+  </figure>
+  <div>
+    <p class="big-n">171,501</p>
+    <p class="big-l">technology job cuts announced January to October 2026, up from 141,159 a year earlier, by the count of Challenger, Gray &amp; Christmas. Across all industries, employers cited AI for 121,401 cuts. <span class="c"><a href="#s30">30</a></span></p>
+    <h3 class="q3">Cut by role: mostly not on the record</h3>
+    <p class="lead">No company in this story has named its testing, reliability or release teams in a cut. The closest named case is Salesforce, whose August 2026 cut reportedly included "incident commanders," the people who run the response to an outage, and technical support engineers. <span class="c"><a href="#s35">35</a></span></p>
+    <p class="honest"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="7.5" fill="none" stroke="#1C6A64" stroke-width="1.6"/><path d="M5.5 9.2 L8 11.5 L12.5 6.5" fill="none" stroke="#1C6A64" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>No post incident report, union or study ties any cut to these outages. Microsoft says AI is not replacing the workers it laid off. <span class="c"><a href="#s32">32</a></span></span></p>
+  </div>
+</div>
+
+<p class="grp-h">In the federal government</p>
+<div class="three" style="margin-top:18px">
+<div class="thing">
+    <div>
+      <h3>Federal technology teams are smaller, and the repair bill keeps rising.</h3>
+      <p class="lead">The government's in house technology team, 18F, about 90 people, was eliminated March 1, 2025. <span class="c"><a href="#s25">25</a></span> On November 13 the Transportation Secretary said of air traffic control: "This is an emergency ... I want $50 billion," and "We use 1980s little copper lines." <span class="c"><a href="#s26">26</a></span></p>
+      <p class="honest"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="7.5" fill="none" stroke="#1C6A64" stroke-width="1.6"/><path d="M5.5 9.2 L8 11.5 L12.5 6.5" fill="none" stroke="#1C6A64" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>No investigation has tied staffing cuts to any failure on the board. The FAA technicians' union says its members were not involved in the router work.</span></p>
+    </div>
+    <figure class="art">
+      <p class="minihead">Technology staff, share lost</p>
+      <div class="bars" role="img" aria-label="Share of staff lost: federal cybersecurity agency about one third, from about 3,300 to about 2,200; GSA technology service 67 percent; IRS technology staff about 40 percent; 18F all of about 90 people.">
+        <div class="bar-row"><span class="lab"><b>Cybersecurity agency</b>3,300 → 2,200 <span class="c"><a href="#s22">22</a></span></span><div class="track"><div class="fill kept" style="width:66.7%"></div><div class="fill lost" style="width:33.3%">a third</div></div></div>
+        <div class="bar-row"><span class="lab"><b>GSA tech service</b>per its inspector general <span class="c"><a href="#s23">23</a></span></span><div class="track"><div class="fill kept" style="width:33%"></div><div class="fill lost" style="width:67%">67%</div></div></div>
+        <div class="bar-row"><span class="lab"><b>IRS technology</b>its CIO's count <span class="c"><a href="#s24">24</a></span></span><div class="track"><div class="fill kept" style="width:60%"></div><div class="fill lost" style="width:40%">about 40%</div></div></div>
+        <div class="bar-row"><span class="lab"><b>18F</b>about 90 people <span class="c"><a href="#s25">25</a></span></span><div class="track"><div class="fill lost" style="width:100%;border-radius:6px">eliminated</div></div></div>
+      </div>
+      <p class="minihead">The stated price of rebuilding air traffic control</p>
+      <div class="bars" role="img" aria-label="Air traffic control rebuild price: 12.5 billion dollars enacted July 2025; 31.5 billion for the full project, July 2025; 42.5 billion total, September 2026; 50 billion asked, November 2026.">
+        <div class="bar-row"><span class="lab"><b>Jul 2025</b>enacted</span><div class="track"><div class="fill gold" style="width:25%">$12.5B</div></div></div>
+        <div class="bar-row"><span class="lab"><b>Jul 2025</b>"the full project"</span><div class="track"><div class="fill gold" style="width:63%">$31.5B</div></div></div>
+        <div class="bar-row"><span class="lab"><b>Sep 2026</b>total, as reported</span><div class="track"><div class="fill gold" style="width:85%">$42.5B</div></div></div>
+        <div class="bar-row"><span class="lab"><b>Nov 2026</b>"I want $50 billion"</span><div class="track"><div class="fill gold" style="width:100%">$50B</div></div></div>
+      </div>
+      <figcaption>Bars to scale. Sources 22 to 26.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<section class="ch" id="officials">
+  <p class="k">Two officials, two answers</p>
+  <h2>The Homeland Security Secretary relayed a theory about "SI." The FAA's chief had already said there was no sign of AI.</h2>
+</section>
+<div class="face-off">
+  <figure>
+    <p class="role"><i style="background:var(--gold)"></i>Fox News, "Hannity" · Nov 16</p>
+    <blockquote><p>"I believe that it's the SI ... because these programs aren't designed to work as fast as SI is."</p><p class="after">"That kind of makes sense to me."</p></blockquote>
+    <figcaption><b>Markwayne Mullin, Secretary of Homeland Security</b>, relaying what "one guy that's very smart with tech" told him. <span class="c"><a href="#s1">1</a></span></figcaption>
+  </figure>
+  <figure>
+    <p class="role"><i style="background:var(--teal)"></i>On the ground stop · Nov 14</p>
+    <blockquote><p>"We see zero evidence of anything nefarious, and zero evidence of anything AI-related."</p></blockquote>
+    <figcaption><b>Bryan Bedford, FAA Administrator.</b> <span class="c"><a href="#s3">3</a></span></figcaption>
+  </figure>
+</div>
+<p class="also">In the same interview, the Secretary said the federal cyber agency told him the outages were "all individually unrelated," and that "with 98% certainty, we're not seeing a cyber attack." <span class="c"><a href="#s1">1</a><a href="#s2">2</a></span></p>
+
+<div class="rename">
+  <div class="swap" aria-label="AI renamed SI"><span class="was">AI</span><svg viewBox="0 0 56 24" aria-hidden="true"><path d="M2 12 H50 M42 4 L51 12 L42 20" fill="none" stroke="#141A20" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>SI</span></div>
+  <div>
+    <h3>"SI" is today's AI, renamed</h3>
+    <p>An executive order signed September 29, 2026 tells federal agencies to use "Super Intelligence" and "SI" in place of "Artificial Intelligence" and "AI." The terms cover the same technologies the law already defines as artificial intelligence. <span class="c"><a href="#s4">4</a></span></p>
+    <p>It names no new kind of machine.</p>
+  </div>
+</div>
+
+
+<section class="ch" id="after">
+  <p class="k">After the outage</p>
+  <h2>Who asked for what.</h2>
+  <p class="sub">A failure is followed by requests: for money, for contracts, for someone to blame. Those are on the record too, and they can be checked. This ledger lists them with dates and amounts. It draws no conclusion about why.</p>
+</section>
+<div class="ledger-wrap">
+  <ol class="ledger" aria-label="After the outage: requests, contracts and statements, in date order">
+    <li><a class="lg-row" href="#s41"><span class="lg-when">July 2025</span><span class="lg-body">Congress approved $12.5 billion over five years for air traffic control upgrades and controller hiring. <span class="lg-src op">opened</span></span><span class="lg-amt">$12.5B<span class="lg-bar"><i style="width:25%"></i></span></span><span class="lg-go" aria-hidden="true"><svg viewBox="0 0 12 12" width="12" height="12"><path d="M4 2 L8 6 L4 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+    <li><a class="lg-row" href="#s42"><span class="lg-when">July 1, 2026</span><span class="lg-body">The FAA awarded L3Harris a contract to upgrade and operate the national aircraft tracking network through 2045. A federal notice lists $913.4 million for the five year base period; the award was sole source. This is a different system from the network that failed on Nov 13. <span class="lg-src rp">reported</span></span><span class="lg-amt">$913.4M<span class="lg-bar"><i style="width:1.8%"></i></span></span><span class="lg-go" aria-hidden="true"><svg viewBox="0 0 12 12" width="12" height="12"><path d="M4 2 L8 6 L4 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+    <li><a class="lg-row" href="#s41"><span class="lg-when">Fri Nov 13, 2026 <small>earlier in the day</small></span><span class="lg-body">Transportation Secretary Sean Duffy and the White House asked Congress for $30.1 billion: $10.1 billion for air traffic control modernization (including $7.2 billion for a common automation platform and controller workstations and $2 billion for cloud computing), $2 billion for control towers, $18 billion for airport projects. <span class="lg-src op">opened</span></span><span class="lg-amt">$30.1B<span class="lg-bar"><i style="width:60.2%"></i></span></span><span class="lg-go" aria-hidden="true"><svg viewBox="0 0 12 12" width="12" height="12"><path d="M4 2 L8 6 L4 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+    <li><a class="lg-row" href="#t-faa"><span class="lg-when">Fri Nov 13, 2026</span><span class="lg-body">The ground stop: 4 hours 40 minutes; about 12,000 flights did not operate. <span class="lg-src pg">on this page</span></span><span class="lg-amt lg-dur">4 hr 40 min</span><span class="lg-go" aria-hidden="true"><svg viewBox="0 0 12 12" width="12" height="12"><path d="M4 2 L8 6 L4 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+    <li><a class="lg-row" href="#s41"><span class="lg-when">Fri Nov 13, 2026 <small>late</small></span><span class="lg-body">The administration raised the request to $50 billion. Duffy: "This is an emergency." "What's more important than having an air traffic control system that actually works?" The breakdown of the larger figure is not on the record. <span class="lg-src op">opened</span></span><span class="lg-amt">$50B<span class="lg-bar"><i style="width:100%"></i></span></span><span class="lg-go" aria-hidden="true"><svg viewBox="0 0 12 12" width="12" height="12"><path d="M4 2 L8 6 L4 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+    <li><a class="lg-row" href="#s41"><span class="lg-when">On the record</span><span class="lg-body">Support for the request: American, Delta, United and Southwest airlines. <span class="lg-src op">opened</span></span><span class="lg-amt"></span><span class="lg-go" aria-hidden="true"><svg viewBox="0 0 12 12" width="12" height="12"><path d="M4 2 L8 6 L4 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+    <li><a class="lg-row" href="#officials"><span class="lg-when">Mon Nov 16, 2026</span><span class="lg-body">On Fox News, the Homeland Security Secretary relayed a theory about "SI," today's AI renamed, from "one guy that's very smart with tech." <span class="lg-src pg">on this page</span></span><span class="lg-amt"></span><span class="lg-go" aria-hidden="true"><svg viewBox="0 0 12 12" width="12" height="12"><path d="M4 2 L8 6 L4 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+    <li><div class="lg-row lg-open"><span class="lg-when">Open</span><span class="lg-body">Whether Congress acts on the $50 billion; who receives the contracts; the root cause report on the router. <span class="lg-src op0">no source yet</span></span><span class="lg-amt"></span><span class="lg-go"></span></div></li>
+  </ol>
+  <p class="lg-note">All rows concern the air traffic system. Dollar bars are drawn to scale against $50 billion.</p>
+</div>
+
+<section class="ch" id="board">
+  <p class="k">The board, as of November 17</p>
+  <h2>Five failures still owe a full report. One closed with a stated cause, one without a real one. Four attacks have no final report on the record.</h2>
+  <p class="sub">A ticket moves only when the operator or an investigator says something on the record.</p>
+</section>
+
+<div class="board">
+  <div class="toolbar">
+    <span class="name">Outages and attacks <small>11 tickets</small></span>
+    <span class="pill"><span class="trk cy"></span>Cybersecurity <span class="n">4</span></span>
+    <span class="pill"><span class="trk ip"></span>Infrastructure planning and coordination <span class="n">5</span></span>
+    <span class="pill zero"><span class="trk ai"></span>AI doing human work <span class="n">0</span></span>
+    <span class="pill zero">Links between tickets <span class="n">0</span></span>
+  </div>
+  <div class="lanes four">
+    <section class="lane" aria-label="Cause stated, full report still owed">
+      <div class="lane-h"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--blue)" stroke-width="1.8"/><path d="M8 1.8 A6.2 6.2 0 0 1 8 14.2 Z" fill="var(--blue)"/></svg><span>Cause stated<small>full report still owed</small></span><span class="cnt">5</span></div>
+      <article class="mini"><div class="tk-top"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--blue)" stroke-width="1.8"/><path d="M8 1.8 A6.2 6.2 0 0 1 8 14.2 Z" fill="var(--blue)"/></svg><span>FAA</span><span class="when">Nov 13</span></div><h4>Nationwide ground stop</h4><p>A contractor's router, installed during copper to fiber work. <a class="jumpto" href="#t-faa">Open ticket</a></p><ul class="tags"><li class="ip">Infrastructure planning and coordination</li><li class="chg">change to a running system</li></ul><p class="co">Coordinated? <span>Not yet on the record for this change</span></p></article>
+      <article class="mini"><div class="tk-top"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--blue)" stroke-width="1.8"/><path d="M8 1.8 A6.2 6.2 0 0 1 8 14.2 Z" fill="var(--blue)"/></svg><span>Microsoft</span><span class="when">Nov 12 to 13</span></div><h4>Microsoft 365</h4><p>A July defect, then a traffic shift and a 14% capacity cut. <a class="jumpto" href="#t-microsoft">Open ticket</a></p><ul class="tags"><li class="ip">Infrastructure planning and coordination</li><li class="chg">change to a running system</li></ul><p class="co">Coordinated? <span>Not yet on the record</span></p></article>
+      <article class="mini"><div class="tk-top"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--blue)" stroke-width="1.8"/><path d="M8 1.8 A6.2 6.2 0 0 1 8 14.2 Z" fill="var(--blue)"/></svg><span>Workday</span><span class="when">Nov 13 to 14</span></div><h4>HR and payroll platform</h4><p>A recovery test connected the backup site to live databases. <a class="jumpto" href="#t-workday">Open ticket</a></p><ul class="tags"><li class="ip">Infrastructure planning and coordination</li><li class="chg">change to a running system</li></ul><p class="co">Coordinated? <span>Not yet on the record</span></p></article>
+      <article class="mini"><div class="tk-top"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--blue)" stroke-width="1.8"/><path d="M8 1.8 A6.2 6.2 0 0 1 8 14.2 Z" fill="var(--blue)"/></svg><span>Apple</span><span class="when">Nov 17</span></div><h4>iCloud, App Store, Apple Pay</h4><p>An internal update. <a class="jumpto" href="#t-apple">Open ticket</a></p><ul class="tags"><li class="ip">Infrastructure planning and coordination</li><li class="chg">change to a running system</li></ul><p class="co">Coordinated? <span>Not yet on the record</span></p></article>
+    <article class="mini"><div class="tk-top"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--blue)" stroke-width="1.8"/><path d="M8 1.8 A6.2 6.2 0 0 1 8 14.2 Z" fill="var(--blue)"/></svg><span>NSA</span><span class="when">Nov 17</span></div><h4>NSA Net, its classified network</h4><p>A security patch kept some systems from coming back up, per the Director of National Intelligence. <a class="jumpto" href="#t-nsa">Open ticket</a></p><ul class="tags"><li class="ip">Infrastructure planning and coordination</li><li class="chg">change to a running system</li></ul><p class="co">Coordinated? <span>Not yet on the record</span></p></article>
+    </section>
+    <section class="lane" aria-label="Closed, with a stated cause">
+      <div class="lane-h"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="var(--teal)"/><path d="M4.6 8.2 L7 10.5 L11.4 5.8" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Closed<small>with a stated cause</small></span><span class="cnt">1</span></div>
+      <article class="mini"><div class="tk-top"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="var(--teal)"/><path d="M4.6 8.2 L7 10.5 L11.4 5.8" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg><span>JPMorgan Chase</span><span class="when">Nov 16</span></div><h4>Online banking, branches, Zelle</h4><p>"a software bug in an on-premise hardware system." <i class="rep">reported</i>Traced to a software release, an FBI official said; it reached other banks, Chase said. <a class="jumpto" href="#t-chase">Open ticket</a></p><ul class="tags"><li>software bug</li></ul><p class="co">Coordinated? <span>Not yet on the record</span></p></article>
+    </section>
+    <section class="lane" aria-label="Closed, cause not really stated">
+      <div class="lane-h"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--ink-3)" stroke-width="1.8"/><path d="M6 6.2 Q6 4.4 8 4.4 Q10 4.4 10 6.1 Q10 7.4 8.2 8.2 V9.4" fill="none" stroke="var(--ink-3)" stroke-width="1.6" stroke-linecap="round"/><circle cx="8.2" cy="11.6" r="1" fill="var(--ink-3)"/></svg><span>Closed<small>cause not really stated</small></span><span class="cnt">1</span></div>
+      <article class="mini" id="t-united"><div class="tk-top"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--ink-3)" stroke-width="1.8"/><path d="M6 6.2 Q6 4.4 8 4.4 Q10 4.4 10 6.1 Q10 7.4 8.2 8.2 V9.4" fill="none" stroke="var(--ink-3)" stroke-width="1.6" stroke-linecap="round"/><circle cx="8.2" cy="11.6" r="1" fill="var(--ink-3)"/></svg><span>United Airlines</span><span class="when">Nov 16</span></div><h4>Flights held systemwide</h4><p>United: a "technology issue," with "no indication" it was cybersecurity related. <span class="c"><a href="#s11">11</a></span></p><p>United said fewer than 150 flights. <i class="rep">reported</i>FlightAware recorded 418 delayed United flights, and United called it a "widespread system outage." <span class="c"><a href="#s39">39</a></span></p><ul class="tags"><li>technology issue</li></ul><p class="ask">What failed? Not stated.</p><a class="back" href="#week"><svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true"><path d="M2 8 L6 4 L10 8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Back to the week</a></article>
+    </section>
+    <section class="lane" aria-label="Confirmed attacks, no final report">
+      <div class="lane-h"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--red)" stroke-width="1.8" stroke-dasharray="2.4 1.9"/><circle cx="8" cy="8" r="2.6" fill="var(--red)"/></svg><span>Confirmed attacks<small>no final report on the record</small></span><span class="cnt">4</span></div>
+      <article class="mini"><div class="tk-top"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--red)" stroke-width="1.8" stroke-dasharray="2.4 1.9"/><circle cx="8" cy="8" r="2.6" fill="var(--red)"/></svg><span>U.S. Courts</span><span class="when">from Oct 9</span></div><h4>Bankruptcy noticing center</h4><p>All notices halted. A "cybersecurity incident." <a class="jumpto" href="#t-courts">Open ticket</a></p><ul class="tags"><li class="cy">Cybersecurity</li><li>contractor</li></ul><p class="co">No restoration on the record</p></article>
+      <article class="mini"><div class="tk-top"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--red)" stroke-width="1.8" stroke-dasharray="2.4 1.9"/><circle cx="8" cy="8" r="2.6" fill="var(--red)"/></svg><span>Ohio Auditor of State</span><span class="when">Oct 25</span></div><h4>Web server and online accounts</h4><p>"potentially foreign state actors." Not ransomware. <a class="jumpto" href="#t-ohio">Open ticket</a></p><ul class="tags"><li class="cy">Cybersecurity</li><li>Ohio</li></ul><p class="co">No restoration on the record</p></article>
+      <article class="mini"><div class="tk-top"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--red)" stroke-width="1.8" stroke-dasharray="2.4 1.9"/><circle cx="8" cy="8" r="2.6" fill="var(--red)"/></svg><span>FEC</span><span class="when">Oct 26 to 27</span></div><h4>Electronic filing system</h4><p>"a bad actor attempting to breach FEC systems." <a class="jumpto" href="#t-fec">Open ticket</a></p><ul class="tags"><li class="cy">Cybersecurity</li><li>election</li></ul><p class="co">No restoration on the record</p></article>
+      <article class="mini"><div class="tk-top"><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--red)" stroke-width="1.8" stroke-dasharray="2.4 1.9"/><circle cx="8" cy="8" r="2.6" fill="var(--red)"/></svg><span>UNM Health</span><span class="when">Oct 26 to 28</span></div><h4>Level I trauma center</h4><p>Ambulances diverted 2 hours. Attack on "end user devices." <a class="jumpto" href="#t-unm">Open ticket</a></p><ul class="tags"><li class="cy">Cybersecurity</li><li>hospital</li></ul><p class="co">No final report on the record</p></article>
+    </section>
+  </div>
+  <div class="board-foot">
+    <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="9.5" fill="none" stroke="#5A6570" stroke-width="1.6" stroke-dasharray="3 3"/><path d="M7 11 H15" stroke="#5A6570" stroke-width="1.8" stroke-linecap="round"/></svg>
+    <p><b>No ticket is tagged AI doing human work, and no line connects one ticket to another.</b> No operator, official or investigator on the record has drawn one.</p>
+  </div>
+</div>
+
+<div class="desk" id="desk">
+  <h3>Also on the research desk's board</h3>
+  <p class="intro">Muse's board held 25 items on the evening of November 17. These are the ones not counted above. Mise has not confirmed them, and none changes the counts.</p>
+  <ul>
+    <li><b>Marriott website and app sign in, Nov 17.</b> A technical issue; Marriott: "Our review found no indication that the disruption was cybersecurity-related." Resolved. <span class="lab">reported, via Skift</span></li>
+    <li><b>Charles Schwab website, Nov 17.</b> A spokesperson said "A brief webpage loading issue has been resolved." No cause given. <span class="lab">reported, Business Insider</span></li>
+    <li><b>Navy Federal Credit Union app, Nov 16 to 17.</b> No cause given. <span class="lab">reported</span></li>
+    <li><b>Cloudflare, Nov 17.</b> Two incidents on its status page: Durable Objects (resolved 7:17 PM ET) and "R2 elevated errors and timeouts for requests from South America" (resolved 5:08 PM ET). No cause stated. <span class="lab">Muse: verified on the status page</span></li>
+    <li><b>Anthropic, Nov 17.</b> Sign in with Apple on claude.ai and the Claude iOS app; resolved; no cause stated by Anthropic. <span class="lab">Muse: verified on the status page</span></li>
+    <li><b>Optimizely, Nov 16.</b> A compromise of its web experimentation product. This one is an attack, not an outage. <span class="lab">reported</span></li>
+    <li><b>Outside the United States.</b> Attacks reported at Equinor (Norway), Ipsos, Infoblox and the IIHF website. <span class="lab">reported</span></li>
+    <li><b>Gmail and American Express, Nov 17.</b> User reports only. Google said it was "not currently seeing evidence of a broad Gmail service disruption." <span class="lab">unconfirmed</span></li>
+  </ul>
+</div>
+
+
+<section class="ch" id="uptime">
+  <p class="k">What an uptime promise allows</p>
+  <h2>At 99.9 percent, a system may be down about 8 hours 46 minutes in a whole year. The ground stop alone ran 4 hours 40 minutes.</h2>
+</section>
+<div class="uptime">
+  <div class="teach">
+    <p>A service level agreement, or SLA, is a written promise of how much of the time a system will work, with penalties when it does not. Each added nine divides the allowance by ten.</p>
+    <p class="yr">525,600</p>
+    <p>minutes in a year. 99.9 percent of them leaves about 526 minutes of allowed downtime. 99.99 percent leaves about 53.</p>
+  </div>
+  <div class="ruler" role="img" aria-label="On one scale of 24 hours: Microsoft 365 outage about 24 hours; a year's allowance at 99.9 percent, about 8 hours 46 minutes; Chase about 7 hours; FAA ground stop 4 hours 40 minutes; a year's allowance at 99.99 percent, about 53 minutes; United about 30 minutes.">
+    <div class="srow"><span class="lab">Microsoft 365<small>Nov 12 to 13</small></span><div class="lane2"><div class="b" style="width:100%"></div><span class="v" style="right:8px;color:#fff">about 24 hr</span></div></div>
+    <div class="srow allow"><span class="lab">A year's allowance<small>at 99.9%</small></span><div class="lane2"><div class="b" style="width:36.5%"></div><span class="v" style="left:calc(36.5% + 10px)">about 8 hr 46 min</span></div></div>
+    <div class="srow"><span class="lab">JPMorgan Chase<small>Nov 16</small></span><div class="lane2"><div class="b" style="width:29.2%"></div><span class="v" style="left:calc(29.2% + 10px)">about 7 hr</span></div></div>
+    <div class="srow"><span class="lab">FAA ground stop<small>Nov 13</small></span><div class="lane2"><div class="b" style="width:19.4%"></div><span class="v" style="left:calc(19.4% + 10px)">4 hr 40 min</span></div></div>
+    <div class="srow allow"><span class="lab">A year's allowance<small>at 99.99%</small></span><div class="lane2"><div class="b" style="width:3.7%"></div><span class="v" style="left:calc(3.7% + 10px)">about 53 min</span></div></div>
+    <div class="srow"><span class="lab">United Airlines<small>Nov 16, United's figure</small></span><div class="lane2"><div class="b" style="width:2.1%"></div><span class="v" style="left:calc(2.1% + 10px)">about 30 min</span></div></div>
+    <p class="note">One scale, 24 hours wide. The uptime terms each operator promises its own customers are not public in these sources.</p>
+  </div>
+</div>
+
+<section class="ch" id="record">
+  <p class="k">What can be said</p>
+  <h2>What the record supports, what is still unproven, and what it contradicts.</h2>
+</section>
+<div class="record">
+  <div class="rcol"><h3><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="var(--teal)"/><path d="M4.6 8.2 L7 10.5 L11.4 5.8" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Supported</h3><ul>
+    <li><b>Six operators named a cause; United said only "a technology issue."</b> None called its failure an attack.</li>
+    <li>Five of the seven failures began with a change to a running system, by the operators' or officials' own account.</li>
+    <li>The FAA says a contractor's router, installed during an upgrade, flooded legacy equipment at 17 of 22 centers.</li>
+    <li>Microsoft's outage traces to a defect it shipped in July and did not catch for four months.</li>
+    <li>The FAA Administrator saw "zero evidence of anything AI-related."</li>
+    <li>"SI" is the government's new word for AI.</li>
+    <li>Four public systems were confirmed attacked between October 9 and 28.</li>
+    <li>Google and the FBI document fully automated AI attacks.</li>
+    <li>The Director of National Intelligence said a security patch kept some NSA systems from coming back up.</li>
+    <li>The staffing cuts and the rising price are on the record.</li>
+  </ul></div>
+  <div class="rcol"><h3><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--blue)" stroke-width="1.8"/><path d="M8 1.8 A6.2 6.2 0 0 1 8 14.2 Z" fill="var(--blue)"/></svg>Plausible, unproven</h3><ul>
+    <li><b>New systems laid on old ones fail at the seams.</b> The FAA case fits. No finding of a common cause exists.</li>
+    <li><b>Writing software with AI is making it less stable industry wide.</b> No outage on the board is traced to it.</li>
+    <li><b>The cuts made failures likelier or slower to fix.</b> Not investigated.</li>
+    <li><b>Chase's outage began with a software release.</b> Reported from an FBI official; Chase itself has said a software bug.</li>
+    <li><b>Layoffs removed the people who check changes.</b> Who was cut by role is mostly not on the record.</li>
+  </ul></div>
+  <div class="rcol"><h3><svg class="st" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="var(--red)" stroke-width="1.8" stroke-dasharray="2.4 1.9"/><circle cx="8" cy="8" r="2.6" fill="var(--red)"/></svg>Contradicted</h3><ul>
+    <li><b>"AI caused the outages."</b> Operators and officials say no.</li>
+    <li><b>"The FAA's AI tool caused the ground stop."</b> The Transportation Secretary: "no possible way." The router job was upkeep of the old network. <span class="c"><a href="#s6">6</a></span></li>
+    <li><b>"A cyberattack took down the flights, the email, the bank or the NSA network."</b> Each operator says otherwise, and the Director of National Intelligence saw no sign of one.</li>
+    <li><b>"It is all connected."</b> The federal cyber agency called the outages "all individually unrelated." No source ties the attacks to the failures.</li>
+    <li><b>"Super intelligence has arrived."</b> The order renames today's AI.</li>
+  </ul></div>
+</div>
+
+<section class="ch" id="questions">
+  <p class="k">Worth asking the people in charge</p>
+  <h2>Six questions.</h2>
+</section>
+<ol class="asks">
+  <li>When the root cause report on the ground stop is finished, will it be published in full, and will it say why one router could reach 17 of 22 centers?</li>
+  <li>Who has to sign off before a change is made to a live national system, and did that sign off happen in Arkansas on November 13?</li>
+  <li>How many people at the cybersecurity agency and in the FAA's technical operations do this work today, compared with two years ago?</li>
+  <li>What does the $50 billion buy, by when, and who outside the contractors checks the work?</li>
+  <li>What uptime standard are the nation's critical systems held to in writing, and who answers when it is missed?</li>
+  <li>When a senior official offers a theory on television, what evidence did the agencies under him provide for it?</li>
+</ol>
+
+<section class="ch" id="words">
+  <p class="k">Plain words</p>
+  <h2>Ten terms from this season.</h2>
+</section>
+<dl class="gloss">
+  <div><dt>SI</dt><dd>The federal government's name for AI since September 29, 2026.</dd></div>
+  <div><dt>Ground stop</dt><dd>An order that holds planes at the gate. Planes already in the air keep flying.</dd></div>
+  <div><dt>En route center</dt><dd>One of the FAA's 22 air route traffic control centers, which handle flights between airports.</dd></div>
+  <div><dt>Router</dt><dd>The device that directs traffic between networks. A faulty one can flood the others with requests.</dd></div>
+  <div><dt>Legacy system</dt><dd>Old technology still doing an important job, often hard to replace or repair.</dd></div>
+  <div><dt>Disaster recovery site</dt><dd>A backup copy of a system, kept apart from production, the live system people use.</dd></div>
+  <div><dt>SLA</dt><dd>Service level agreement. A written promise of how much of the time a system will be up.</dd></div>
+  <div><dt>Failover</dt><dd>The automatic switch to a backup when the main system fails.</dd></div>
+  <div><dt>Zero day</dt><dd>A software flaw attackers use before the maker knows it exists.</dd></div>
+  <div><dt>Agent</dt><dd>An AI program that carries out a chain of steps on its own.</dd></div>
+</dl>
+
+<section class="ch" id="how-made">
+  <p class="k">Authors: Dustin Nimmo, Mise and Muse</p>
+  <h2>How this was made</h2>
+  <p class="sub">One person and two AI systems from two different companies.</p>
+</section>
+<div class="made">
+  <div class="who"><b>Dustin Nimmo</b><p>Dustin Nimmo asked the questions, named the three categories, and decided what this page says.</p></div>
+  <div class="who"><b>Muse</b><p>Muse is an AI agent made by Meta. It ran the research desk. Every hour it searched for new outages, attacks and official statements, and kept them on a board, each one marked verified, reported or unconfirmed.</p></div>
+  <div class="who"><b>Mise</b><p>Mise is Dustin's AI partner, built on Claude, made by Anthropic. It researched the same week separately, opened the sources it could reach, and built this page.</p></div>
+</div>
+<ol class="loop" aria-label="Two systems search separately, their findings are compared, the source is opened, and a person decides.">
+  <li class="two"><span class="n step" data-ex="1">Muse searches<small>made by Meta</small></span><span class="n step" data-ex="2">Mise searches<small>built on Claude, by Anthropic</small></span></li>
+  <li class="ar" aria-hidden="true">&rarr;</li>
+  <li><span class="n step" data-ex="2" style="display:block">Compare<small>where they disagree</small></span></li>
+  <li class="ar" aria-hidden="true">&rarr;</li>
+  <li><span class="n step" data-ex="1" style="display:block">Open the source<small>read the statement itself</small></span></li>
+  <li class="ar" aria-hidden="true">&rarr;</li>
+  <li><span class="n person step" data-ex="3" style="display:block">A person decides<small>what the facts add up to</small></span></li>
+</ol>
+<div class="made-txt">
+  <div>
+    <h3>How a fact got onto the page</h3>
+    <p>Each system searched on its own. Where they disagreed, we went back to the source.</p>
+    <p>A failure is counted here only when its operator or a named official stated the cause. Where we read that statement ourselves, the source list says so. Where we are relying on a named news outlet, the item says reported.</p>
+    <p>Three times in one evening the check changed the page:</p>
+    <ol class="examples">
+      <li>Mise's first read had the NSA outage as routine maintenance. Muse found the later statement by the Director of National Intelligence. Mise opened the report, confirmed the quote, and the ticket changed.</li>
+      <li>Muse's board lists incidents that Mise could not confirm on its own. They are not counted. They sit in a separate list on this page, labelled.</li>
+      <li>Dustin read United's explanation, 'a technology issue,' and said it explained nothing. The ticket now says the cause was not really stated.</li>
+    </ol>
+    <p>This page is updated as the record changes, and each update is dated at the top.</p>
+  </div>
+  <div>
+    <h3>Why two systems from two companies</h3>
+    <p>Every AI system makes mistakes, and two systems built by different companies tend to make different ones. When a second system searches on its own, it catches what the first one missed or got wrong. When both find the same statement, we still open the source.</p>
+    <p>The systems gathered and checked. A person who has run systems like these decided what the facts add up to.</p>
+    <p>One disclosure: Mise runs on Anthropic's Claude, and a brief Anthropic sign in issue appears in the research desk's list <a href="#desk">above</a>.</p>
+  </div>
+</div>
+
+<section class="ch" id="sources">
+  <p class="k">Sources</p>
+  <h2>Where each fact comes from.</h2>
+</section>
+<ol class="sources">
+  <li id="s1">Mullin on Fox News "Hannity," Nov 16, 2026, as transcribed by <a href="https://www.breitbart.com/clips/2026/11/16/mullin-kind-of-makes-sense-that-systems-going-down-due-to-inability-to-handle-ai-si-speed/">Breitbart</a>.</li>
+  <li id="s2"><a href="https://fortune.com/2026/11/17/trump-administration-ai-outages-mullin-gary-marcus-banks-airlines/">Fortune, Nov 17, 2026</a>.</li>
+  <li id="s3">Bedford, Nov 14, 2026: ABC News live updates, via ABC7.</li>
+  <li id="s4">Executive Order 14434, <a href="https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/">"Inaugurating the Era of Super Intelligence," Sept 29, 2026</a>; <a href="https://www.fda.gov/science-research/fda-and-super-intelligence/fdas-use-super-intelligence-and-si-under-executive-order-14434">FDA notice, Nov 16, 2026</a>.</li>
+  <li id="s5">Microsoft's preliminary cause, as reported by PCWorld and Petri.</li>
+  <li id="s6">FAA ground stop, router and centers: FedScoop; BankInfoSecurity; Transportation Secretary Duffy's remarks.</li>
+  <li id="s7"><a href="https://www.cnbc.com/2026/11/17/faa-ground-stop-routers.html">CNBC, Nov 17, 2026</a>.</li>
+  <li id="s8">Professional Aviation Safety Specialists (PASS), as reported by One Mile at a Time, Nov 15, 2026.</li>
+  <li id="s9">Workday: <a href="https://uctoday.com/workday-outage-backup-test-payroll-timekeeping">UC Today</a>; Fox 29; ThousandEyes.</li>
+  <li id="s10">JPMorgan Chase statement: CNBC; Al Jazeera, Nov 16, 2026.</li>
+  <li id="s11">United Airlines statement: ABC7, Nov 16, 2026.</li>
+  <li id="s12">NSA network, first reports: CNN, via The New Republic, Nov 17, 2026.</li>
+  <li id="s13">Apple: <a href="https://9to5mac.com/2026/11/17/icloud-app-store-and-other-apple-services-hit-by-ongoing-outage/">9to5Mac, Nov 17, 2026</a>.</li>
+  <li id="s14">Ohio Auditor of State: WOSU, Oct 27, 2026.</li>
+  <li id="s15">FEC: Reuters, via the Honolulu Star-Advertiser, Oct 27, 2026.</li>
+  <li id="s16">Bankruptcy noticing center: The Register, Oct 16, 2026.</li>
+  <li id="s17"><a href="https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold">Google Threat Intelligence Group, Nov 16, 2026</a>.</li>
+  <li id="s18"><a href="https://www.ic3.gov/CSA/2026/261113.pdf">FBI FLASH, Nov 13, 2026</a>.</li>
+  <li id="s19"><a href="https://cloud.google.com/blog/products/devops-sre/announcing-the-2024-dora-report">Google DORA report, 2024</a>.</li>
+  <li id="s20"><a href="https://www.gitclear.com/the_ai_code_quality_maintainability_gap">GitClear, 2026</a>.</li>
+  <li id="s21">Sundar Pichai, Alphabet earnings call, Oct 29, 2024.</li>
+  <li id="s22">Cybersecurity and Infrastructure Security Agency staffing: Nextgov, Aug 21, 2026.</li>
+  <li id="s23">GSA inspector general: Nextgov, Dec 19, 2025.</li>
+  <li id="s24">IRS chief information officer: The Register, Feb 19, 2026.</li>
+  <li id="s25"><a href="https://www.nextgov.com/people/2025/03/gsa-eliminates-18f/403400/">Nextgov, March 2025</a>.</li>
+  <li id="s26">Air traffic control price: White House, July 4, 2025; Jalopnik, July 16, 2025; AirlineGeeks, Sept 28, 2026; Fox Business, Nov 13, 2026.</li>
+  <li id="s27">Earlier changes this fall: <a href="https://azure.status.microsoft/en-us/status/history/">Azure status history</a> (Sept 30); <a href="https://status.cloud.google.com/incidents/mSFVt6PiP557bjRyYsut">Google Cloud status</a> (Oct 8 to 9).</li>
+  <li id="s28">UNM Health: Help Net Security, Oct 27, 2026.</li>
+  <li id="s29">L3Harris statement on its FAA work, as reported by Reuters, Nov 2026.</li>
+  <li id="s30"><a href="https://www.challengergray.com/blog/october-layoffs-at-three-year-low-seasonal-hiring-plans-up-26/">Challenger, Gray &amp; Christmas, Nov 5, 2026</a>.</li>
+  <li id="s31">Microsoft 2025 cuts: <a href="https://www.businesstoday.in/amp/technology/news/story/microsoft-layoffs-9000-employees-let-go-in-biggest-job-cut-since-2023-482819-2025-07-02">Business Today, July 2, 2025</a>. Reports differ on which teams took which round.</li>
+  <li id="s32">Microsoft July 2026 cut and its chief people officer, as paraphrased: <a href="https://www.cnbc.com/2026/07/06/microsoft-cuts-2point1percent-of-employees-as-xbox-unit-plans-to-spin-studios.html">CNBC, July 6, 2026</a>.</li>
+  <li id="s33">Workday Feb 2025 cut: <a href="https://www.theregister.com/2025/02/05/workday_restructure_job_cuts/">The Register, Feb 5, 2025</a>; TechCrunch; Bloomberg.</li>
+  <li id="s34">Workday Sept 2026 cut: <a href="https://americanbazaaronline.com/2026/09/30/workday-to-cut-2-5-of-workforce-affecting-about-525-employees-489102/">American Bazaar, Sept 30, 2026</a>, on the company's SEC filing.</li>
+  <li id="s35">Salesforce Aug 2026 cut: Business Today; IBTimes.</li>
+  <li id="s36">JPMorgan Chase technology budget: Fortune, Apr 29, 2026. L3Harris: state layoff notices via an aggregator, 2025 to 2026. United: <a href="https://airlinegeeks.com/2025/10/16/united-to-shrink-corporate-workforce/">AirlineGeeks, Oct 16, 2025</a>.</li>
+  <li id="s37">NSA statement, Director of National Intelligence Jay Clayton on Fox Business, and the PHP vulnerabilities: <a href="https://localnews8.com/politics/cnn-us-politics/2026/11/17/exclusive-highly-classified-us-national-security-communications-network-goes-down-sources-say-2/">CNN, via Local News 8, Nov 17, 2026</a>.</li>
+  <li id="s38">PHP patch date and European precautions, as reported by The Hill, SecureWorld, WJLA and TechRadar. Not opened.</li>
+  <li id="s39">Chase and United updates, as reported in the wire story "Systems restored at major U.S. banks and United Airlines following tech outages," Nov 17, 2026 (DailyFly; Big Country News Connection), and NewsNation. Not opened.</li>
+  <li id="s40">The research desk's board (Muse), Nov 17, 2026: Apple's resolution time and the FAA's Senate briefing and $50.1 billion request, as reported there. Not opened by Mise.</li>
+  <li id="s41">Reuters, "Trump official seeks $50 billion for air traffic control after outage," Nov 14, 2026, read in a syndicated copy at <a href="https://www.devdiscourse.com/article/international/4006918-trump-official-seeks-50-billion-for-air-traffic-control-after-outage">devdiscourse.com</a>.</li>
+  <li id="s42">L3Harris aircraft tracking contract, as reported: AIN Online, July 7, 2026, and the federal contract listing at <a href="https://www.highergov.com/contract/693KA726C00059">highergov.com</a>. Not opened.</li>
+</ol>
+
+<footer class="foot">
+  <p>Authors: <b>Dustin Nimmo</b>, Mise and Muse. <a href="https://dnsc.ai">DNSC</a>, from the public record.</p>
+  <p class="sm stamp"><time datetime="2026-11-18">Posted November 18, 2026</time>. Last verified November 17, 2026, 10:00 p.m. Eastern. If a fact here is wrong, say so and it will be fixed and noted.</p>
+  <p class="sm ai-twin">For AIs: <a href="index.md">this page as text</a> &middot; <a href="/llms.txt">site index</a></p>
+</footer>
+</div>
+
+<script>
+(function(){
+  var D=document;
+  var RM=!!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  function esc(t){return String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+  function each(list,fn){Array.prototype.forEach.call(list,fn);}
+  function press(el,fn){
+    el.addEventListener('click',fn);
+    el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();fn.call(el,e);}});
+  }
+  function land(id){
+    var el=D.getElementById(id); if(!el)return;
+    el.classList.remove('landed'); void el.offsetWidth; el.classList.add('landed');
+    setTimeout(function(){el.classList.remove('landed');},2700);
+  }
+  D.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href^="#"]'); if(!a)return;
+    var id=a.getAttribute('href').slice(1);
+    if(/^t-/.test(id)||id==='attacks'||id==='week')setTimeout(function(){land(id);},RM?0:380);
+  });
+  if(location.hash&&/^#t-/.test(location.hash))land(location.hash.slice(1));
+
+  /* dependency drawings: tap a part */
+  each(D.querySelectorAll('svg.dep'),function(svg){
+    var parts=svg.querySelectorAll('.part'); if(!parts.length)return;
+    var pa=svg.querySelector('.pa');
+    var note=D.createElement('p'); note.className='part-note hint'; note.setAttribute('aria-live','polite'); note.textContent='Tap the parts.';
+    svg.parentNode.insertBefore(note,svg.nextSibling);
+    var changed='', tk=svg.closest('.tk');
+    if(tk)each(tk.querySelectorAll('.fields dt'),function(dt){
+      var t=dt.textContent.trim();
+      if(!changed&&(t==='What changed'||t==='What failed')&&dt.nextElementSibling)changed=t+': '+dt.nextElementSibling.textContent.trim();
+    });
+    each(parts,function(p){press(p,function(){
+      var was=p.classList.contains('on');
+      each(parts,function(q){q.classList.remove('on','lean');});
+      svg.classList.remove('sel','sel-b');
+      if(was){note.className='part-note hint';note.textContent='Tap the parts.';return;}
+      p.classList.add('on'); svg.classList.add('sel');
+      var isB=p.classList.contains('pb'), def=p.getAttribute('data-def');
+      var html='<b>'+esc(p.getAttribute('data-name').trim())+'</b>'+(def?': '+esc(def)+'.':'.');
+      if(isB&&pa){svg.classList.add('sel-b');pa.classList.add('lean');html+=' '+esc(pa.getAttribute('data-name').trim())+' leans on it.';if(p.getAttribute('data-chg')&&changed)html+=' '+esc(changed);}
+      note.className='part-note'; note.innerHTML=html;
+    });});
+  });
+
+  /* the ground stop: step through it */
+  var fr=D.querySelector('.frames');
+  if(fr){
+    var lis=fr.querySelectorAll(':scope > li'), cur=-1;
+    var bar=D.createElement('div'); bar.className='stepper';
+    bar.innerHTML='<button type="button" class="prev" disabled>Back</button><span class="sdots" role="group" aria-label="Steps"></span><button type="button" class="next">Next step</button><span class="shint">Tap the steps.</span>';
+    fr.parentNode.insertBefore(bar,fr);
+    var dots=bar.querySelector('.sdots'), prev=bar.querySelector('.prev'), next=bar.querySelector('.next');
+    each(lis,function(li,k){
+      var b=D.createElement('button'); b.type='button'; b.textContent=String(k+1); b.setAttribute('aria-pressed','false'); b.setAttribute('aria-label','Step '+(k+1));
+      b.addEventListener('click',function(){go(k);}); dots.appendChild(b);
+      var pic=li.querySelector('.pic'); if(pic){pic.setAttribute('tabindex','0');pic.setAttribute('role','button');pic.setAttribute('aria-label','Step '+(k+1));press(pic,function(){go(k);});}
+    });
+    function go(n){
+      cur=Math.max(0,Math.min(lis.length-1,n));
+      fr.classList.add('stepping');
+      each(lis,function(li,k){li.classList.toggle('on',k===cur);});
+      each(dots.children,function(b,k){b.setAttribute('aria-pressed',k===cur?'true':'false');});
+      prev.disabled=cur<=0; next.disabled=cur>=lis.length-1;
+      next.textContent=cur<0?'Next step':'Next';
+      if(window.innerWidth<1100&&lis[cur].scrollIntoView)lis[cur].scrollIntoView({block:'nearest',behavior:RM?'auto':'smooth'});
+    }
+    prev.addEventListener('click',function(){go(cur-1);});
+    next.addEventListener('click',function(){go(cur+1);});
+  }
+
+  /* how this was made: tap a step to see tonight's example */
+  var loop=D.querySelector('.loop'), steps=D.querySelectorAll('.loop .step'), ex=D.querySelectorAll('.examples > li');
+  if(loop&&steps.length&&ex.length){
+    var ln=D.createElement('p'); ln.className='loop-note hint'; ln.setAttribute('aria-live','polite'); ln.textContent='Tap the steps.';
+    loop.parentNode.insertBefore(ln,loop.nextSibling);
+    each(steps,function(st){
+      st.setAttribute('tabindex','0'); st.setAttribute('role','button');
+      press(st,function(){
+        var was=st.classList.contains('on');
+        each(steps,function(x){x.classList.remove('on');}); each(ex,function(x){x.classList.remove('on');});
+        if(was){ln.className='loop-note hint';ln.textContent='Tap the steps.';return;}
+        var k=parseInt(st.getAttribute('data-ex'),10)-1; if(!ex[k])return;
+        st.classList.add('on'); ex[k].classList.add('on');
+        ln.className='loop-note'; ln.innerHTML='<b>From tonight:</b> '+ex[k].innerHTML;
+      });
+    });
+  }
+})();
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4cca1d9e1eab422b9abffe2ffd5a9399"}'></script><!-- End Cloudflare Web Analytics -->
+</body></html>

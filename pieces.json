@@ -3,6 +3,24 @@
  "note": "The Well's shelf. One entry per card. The landing page and build-ai-twins.py both read this file. Newest first within each section; featured entries form the stack at the top. Sections: games (the Well), stories (the table: understanding the week, from the record; every dated story, AI or civic), civic (tools built from public records), weekly (Word for Word), teaching (Working with AI: teaching, recipes, gauges), rooms (practices). Oct 16: stories shelf added on his word.",
  "pieces": [
   {
+   "slug": "three-things-at-once",
+   "href": "stories/three-things-at-once/",
+   "title": "Seven systems failed in six days, November 12 to 17, 2026: Microsoft 365, the FAA's air traffic network, Workday, JPMorgan Chase, United, Apple and the NSA's network. Five began with a change to a system that was already running, and none was called an attack by its operator.",
+   "line": "Four public systems were confirmed attacked between October 9 and 28; no source connects any of these events, and whether anyone coordinated the changes is not yet on the record.",
+   "type": "piece",
+   "section": "stories",
+   "topic": "Outages",
+   "date": "2026-11-18",
+   "status": "live",
+   "featured": true,
+   "share": "assets/share/three-things-at-once.jpg",
+   "preview": "assets/previews/three-things-at-once.jpg",
+   "related": [
+    "php2shell",
+    "who-guards-the-pipes"
+   ]
+  },
+  {
    "slug": "data-centers-on-the-ballot",
    "href": "civic/data-centers-on-the-ballot/",
    "title": "46 data-center questions were on local ballots in ten states on November 3. Of the 44 with a count, voters took the side that limits data centers in 43. Ohio had 21 of the questions, in 18 places, and the limiting side won all 21.",
