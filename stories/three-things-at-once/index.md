@@ -2,18 +2,18 @@
 
 > A living record of this fall's failures and attacks on digital systems, from Microsoft 365 and the FAA ground stop to the NSA's network: what you may have run into, what each operator said, and how two AI systems and a person checked it.
 
-**A living record.** Last updated November 18, 2026, 3:30 p.m. Eastern.
+**A living record.** Last updated November 19, 2026, 8:45 a.m. Eastern.
 
 Kept by Dustin Nimmo, Mise and Muse. Two AI systems from two companies search separately, we open the sources, and a person decides what it adds up to. See how this was made
 
-**DNSC** From the public record
+**DNSC** Dustin Nimmo, teaching people to work with AI
 
 Three things at once · A snapshot of this fall, from the record
 
 Seven failures in six days. Four confirmed attacks before them.
 
-- began with a change to a running system
-- day stated, hour not stated
+- started when someone changed a system in use
+- we know the day, not the hour
 - confirmed attack
 
 Tap or click any row to go straight to that outage.
@@ -27,15 +27,15 @@ Tap or click any row to go straight to that outage.
 
 **Microsoft 365** work email and Teams
 
-about 24 hr · Nov 12 to 13, about 24 hours; began with a change to a running system.
+about 24 hr · Nov 12 to 13, about 24 hours; started when someone changed a system in use.
 
 **FAA** every U.S. departure
 
-4 hr 40 min · Nov 13, 4 hours 40 minutes; began with a change to a running system.
+4 hr 40 min · Nov 13, 4 hours 40 minutes; started when someone changed a system in use.
 
 **Workday** payroll and time off
 
-until Sat 11 a.m. · From Nov 13 until Nov 14, 11 a.m.; began with a change to a running system.
+until Sat 11 a.m. · From Nov 13 until Nov 14, 11 a.m.; started when someone changed a system in use.
 
 **JPMorgan Chase** the bank app and Zelle
 
@@ -47,13 +47,13 @@ about 30 min, per United · Nov 16, about 30 minutes by United's count; hour not
 
 **Apple** Apple Pay and iCloud
 
-late morning to about 5 p.m. · Nov 17, late morning to about 5 p.m.; began with a change to a running system.
+late morning to about 5 p.m. · Nov 17, late morning to about 5 p.m.; started when someone changed a system in use.
 
 **NSA** a classified network
 
-still being restored · Nov 17, still being restored; began with a change to a running system.
+still being restored · Nov 17, still being restored; started when someone changed a system in use.
 
-Bars to scale, Eastern time. A faded end means the hour was not stated. Each outage is explained below.
+Each bar is one failure, drawn as long as it lasted, in Eastern time. A diamond marks an attack someone has confirmed. A dot at the start of a bar means it began when someone changed a system that was in use. A bar that fades out means nobody has said what hour it ended. Each one is explained below.
 
 ## Three things are happening to our digital systems at the same time.
 
@@ -67,14 +67,14 @@ If you felt it this week
 
 ### What you may have run into, and what the company says happened.
 
-1. Microsoft 365 **Your work email would not open.** *Microsoft says* a flaw it shipped in July sat in its gateway servers, the machines that pass traffic into its service. A traffic shift and a capacity cut followed, and its automatic switch to backup made it worse. · See the ticket
-2. FAA **Your flight sat at the gate.** *Federal officials say* a new router, a box that passes messages between networks, went in during an upgrade in El Dorado, Arkansas, and flooded the air traffic network. About 12,000 flights did not operate. · See the ticket
-3. Workday **You could not clock in or request time off.** *Workday says* a disaster recovery test, a practice run of its backup site, unexpectedly connected the backup to its live databases. · See the ticket
-4. JPMorgan Chase **Your bank app failed.** *Chase says* a software bug in a hardware system in its own data center caused it, and called the outage "not cyber-related." · See the ticket
+1. Microsoft 365 **Your work email would not open.** *Microsoft says* a flaw it shipped in July sat in its gateway servers, the machines that pass traffic into its service. A traffic shift and a capacity cut followed, and its automatic switch to backup made it worse. · Read the full entry
+2. FAA **Your flight sat at the gate.** *Federal officials say* a new router, a box that passes messages between networks, went in during an upgrade in El Dorado, Arkansas, and flooded the air traffic network. About 12,000 flights did not operate. · Read the full entry
+3. Workday **You could not clock in or request time off.** *Workday says* a disaster recovery test, a practice run of its backup site, unexpectedly connected the backup to its live databases. · Read the full entry
+4. JPMorgan Chase **Your bank app failed.** *Chase says* a software bug in a hardware system in its own data center caused it, and called the outage "not cyber-related." · Read the full entry
 5. United **Your United departure was delayed.** *United calls it* a technology issue. It has not said what failed. · See the board
-6. Apple **Apple Pay, iCloud or the App Store would not work.** *Apple says* an internal update caused the outages. · See the ticket
+6. Apple **Apple Pay, iCloud or the App Store would not work.** *Apple says* an internal update caused the outages. · Read the full entry
 
-A seventh failure reached no public service: the NSA's classified network, after a security patch, which is a fix for a flaw in software. See the ticket
+A seventh failure reached no public service: the NSA's classified network, after a security patch, which is a fix for a flaw in software. Read the full entry
 
 #### What they have in common
 
@@ -100,14 +100,14 @@ Each attack below was confirmed by the office or hospital that was hit. None is 
 
 On November 16, Google's threat team reported attackers using AI to find software flaws and exploit them "without a human in the loop for the first time." 17
 
-- **Under 3 hours**From first target to privileged access, in some break ins, per an FBI warning of Nov 13. 18
+- **Under 3 hours**From first target to privileged access, meaning administrator control, in some break ins, per an FBI warning of Nov 13. 18
 - **8 → 22**Newly exploited, previously unknown flaws a month: the 2025 average, then August 2026. 17
 
 None of the seven November failures was called an attack by its operator, and no source ties any attack here to them.
 
-[Chart: A loop of four steps: find a flaw, write the exploit, break in, take control. A dot runs the loop with no person in it. Beside it, three bars: 8 flaws a month in 2025, 11 in 2026, 22 in August 2026.]
+[Chart: A loop of four steps: find a flaw, write the attack code, break in, take control. A dot runs the loop with no person in it. Beside it, three bars: 8 flaws a month in 2025, 11 in 2026, 22 in August 2026.]
 
-Bar heights to scale. Google Threat Intelligence Group, Nov 16, 2026.
+The four steps of a break in. In some attacks this fall, machines did all four with no person guiding them. The bars count security holes nobody knew about until attackers used them: 8 a month in 2025, 11 a month in 2026, 22 in August alone. Bar heights to scale. Google Threat Intelligence Group, Nov 16, 2026.
 
 U.S. Courts · Oct 9
 
@@ -120,9 +120,9 @@ U.S. Courts · Oct 9
 
 1. Oct 9All bankruptcy notices halted. 16
 2. Oct 16U.S. Courts, as reported: a "cybersecurity incident." 16
-3. OpenNo restoration on the record.
+3. Still openNobody has said it is back.
 
-Back to the week
+Back to the timeline
 
 Ohio Auditor of State · Oct 25
 
@@ -135,9 +135,10 @@ Ohio Auditor of State · Oct 25
 
 1. Oct 25Web server attacked; the office takes it and its online accounts offline. 14
 2. Oct 27The office: "potentially foreign state actors." Not ransomware. 14
-3. OpenNo restoration on the record.
+3. Nov 18The office: its online eServices portal "remains non-operational." "Tentatively billing will resume on December 1." 46
+4. Still openThe portal is still down.
 
-Back to the week
+Back to the timeline
 
 FEC · Oct 26 to 27
 
@@ -150,9 +151,9 @@ FEC · Oct 26 to 27
 
 1. Oct 26Spending reports blocked, a week before the midterms. 15
 2. Oct 27FEC email, per Reuters: "a bad actor attempting to breach FEC systems." 15
-3. OpenNo restoration on the record.
+3. Still openNobody has said it is back.
 
-Back to the week
+Back to the timeline
 
 UNM Health · Oct 26 to 28
 
@@ -167,7 +168,7 @@ UNM Health · Oct 26 to 28
 2. Oct 27UNM's health sciences center: a cyberattack on "end user devices." 28
 3. OpenNo final public report on the record.
 
-Back to the week
+Back to the timeline
 
 Where two of the three meet
 
@@ -181,7 +182,7 @@ At the NSA, the patch was the change: the Director of National Intelligence said
 
 [Chart: PHP, drawn as one block, feeds ten website tiles, seven of them shaded for about 70 percent of the world's websites. Below, four steps: flaws found, AI tools help researchers exploit them, a patch, and at the NSA some systems do not come back up.]
 
-Tiles show a share, not a count. CNN, Nov 17.
+Read left to right. PHP is the software behind about 70 percent of websites. Holes were found in it. AI tools helped show how to use them. So a fix went out to everyone at once. At the NSA, the fix itself knocked systems down. The shaded tiles stand for that 70 percent share. CNN, Nov 17.
 
 Rushed changes
 
@@ -197,7 +198,7 @@ Microsoft, preliminary cause 5
 2. About four months unnoticed
 3. Then **A traffic shift**Network traffic is moved.
 4. Then **A 14% capacity cut**Less capacity to carry it.
-5. Nov 12 to 13 **Down about 24 hours**Automatic failover made it worse. More than 70 countries.
+5. Nov 12 to 13 **Down about 24 hours**Automatic failover, the switch to backup systems, made it worse. More than 70 countries.
 
 Microsoft says it was not related to a cyberattack or to AI. Final report due about Nov 20.
 
@@ -205,7 +206,7 @@ Earlier this fall, the same shape
 
 **Microsoft Azure, Sept 30** A paused update resumed all at once and overloaded a control plane, in 34 regions for about 6 hours. 27 *Microsoft incident report*
 
-**Google Cloud Storage, Oct 8 to 9** A configuration change, then a rollback that did not fully work. About 18 hours. 27 *Google incident report*
+**Google Cloud Storage, Oct 8 to 9** A configuration change, then an attempt to undo it that did not fully work. About 18 hours. 27 *Google incident report*
 
 Microsoft · Nov 12 to 13
 
@@ -213,7 +214,7 @@ Microsoft · Nov 12 to 13
 
 About 24 hours, in more than 70 countries.
 
-[Chart: Microsoft 365 email and apps (Microsoft) leans on Gateway servers (Microsoft), marked changed.]
+[Chart: Microsoft 365 email and apps (Microsoft) depends on Gateway servers (Microsoft), marked changed.]
 
 - **What changed**: A defect deployed in July, then a traffic shift and a 14% capacity cut. Automatic failover made it worse.
 
@@ -225,7 +226,7 @@ About 24 hours, in more than 70 countries.
 2. By Nov 17Preliminary cause posted. Microsoft: "not related to cyber or AI / agents." 5
 3. About Nov 20Final report due.
 
-Back to the week
+Back to the timeline
 
 Apple · Nov 17
 
@@ -233,7 +234,7 @@ Apple · Nov 17
 
 Sign in, purchases and iPhone activation failed for many users.
 
-[Chart: iCloud, App Store, Apple Pay (Apple) leans on Internal update (Apple), marked changed.]
+[Chart: iCloud, App Store, Apple Pay (Apple) depends on Internal update (Apple), marked changed.]
 
 - **What changed**: "An internal update caused some outages this morning."
 
@@ -244,8 +245,9 @@ Sign in, purchases and iPhone activation failed for many users.
 2. Nov 17Apple, as relayed by a Bloomberg reporter and 9to5Mac: an internal update; not a cyberattack. 13
 3. AfternoonSome systems still being restored. 13
 4. About 5 p.m. reportedFully resolved, per the research desk's board. 40
+5. Nov 18A separate outage in the Stocks app, 7:52 a.m. to 2:55 p.m. Eastern, on Apple's status page. No cause given. 47
 
-Back to the week
+Back to the timeline
 
 NSA · Nov 17
 
@@ -253,7 +255,7 @@ NSA · Nov 17
 
 Staggered log ins, then the campus closed to most employees. Restoration "ongoing but not yet complete," a source said.
 
-[Chart: NSA Net, its internal network (NSA) leans on Security patch (not stated), marked changed.]
+[Chart: NSA Net, its internal network (NSA) depends on Security patch (not stated), marked changed.]
 
 - **What changed**: A software patch for major vulnerabilities discovered last month, per the Director of National Intelligence.
 
@@ -268,11 +270,11 @@ The stated cause is a response to an attack risk. No attack on the NSA is on the
 3. Late Nov 17The agency's recorded line for employees moved to "code orange," "closing the campus for most employees until further notice," CNN reported. 37
 4. OpenRestoration "ongoing but not yet complete," per a source. 37
 
-Back to the week
+Back to the timeline
 
 #### More code is written by machines, and changes land less steadily.
 
-Every change to a running system has to be checked against everything that leans on it. Earlier this fall, a paused Microsoft cloud update resumed all at once and overloaded a control plane, and a Google storage change could not be fully rolled back. 27
+Every change to a running system has to be checked against everything that depends on it. Earlier this fall, a paused Microsoft cloud update resumed all at once and overloaded a control plane, the system that manages the service, and a Google storage change could not be fully undone. 27
 
 - **7.2%**Estimated drop in delivery stability tied to AI adoption, in Google's 2024 research on software teams. 19
 - **1 in 4+**Share of Google's new code written by AI, per its chief executive, Oct 2024. 21
@@ -281,9 +283,9 @@ Every change to a running system has to be checked against everything that leans
 
 No outage on the board has been traced to code written by AI. Microsoft says its outage was not related to AI.
 
-[Chart: Changes move along a track toward one check. The check asks what else leans on the part being changed. Past the check, a running system has three other systems leaning on it.]
+[Chart: Changes move along a track toward one check. The check asks what else depends on the part being changed. Past the check, a running system has three other systems that depend on it.]
 
-The shape of a dependency. The share of AI-written changes drawn here is not to scale.
+Every running system holds up others. Before any change, one question matters: what else depends on this part? Some changes are now written with AI and some by people. The drawing does not show how many of each.
 
 Hidden dependencies
 
@@ -310,7 +312,7 @@ At affected employers, staff could not log in, clock in or request time off.
 3. Nov 14Service declared restored at 11 a.m. 9
 4. OpenPost incident report not yet published.
 
-Back to the week
+Back to the timeline
 
 FAA · Nov 13
 
@@ -318,7 +320,7 @@ FAA · Nov 13
 
 About 4 hr 40 min; about 12,000 flights did not operate.
 
-[Chart: Air traffic network (FAA) leans on Router in El Dorado, Ark. (contractor L3Harris), marked changed.]
+[Chart: Air traffic network (FAA) depends on Router in El Dorado, Ark. (contractor L3Harris), marked changed.]
 
 - **What changed**: A router installed during copper to fiber work flooded the network; 17 of 22 centers unstable.
 - **The contractor**: L3Harris says its work is done "in close coordination with the FAA," as reported by Reuters. 29
@@ -334,7 +336,7 @@ About 4 hr 40 min; about 12,000 flights did not operate.
 4. Nov 17The Transportation Department "officially submitted its $50.1 billion budget funding request." Thirteen Senate Democrats asked for technical briefings from the FAA, L3Harris and Juniper, and the FAA began halting the installation of the routers. 40
 5. OpenRoot cause under FAA and FBI review. 6
 
-Back to the week
+Back to the timeline
 
 JPMorgan Chase · Nov 16
 
@@ -342,7 +344,7 @@ JPMorgan Chase · Nov 16
 
 About 11:30 a.m. to 6:30 p.m. Eastern.
 
-[Chart: Online banking, branches, Zelle (JPMorgan Chase) leans on Hardware in its own data center (JPMorgan Chase), marked software bug.]
+[Chart: Online banking, branches, Zelle (JPMorgan Chase) depends on Hardware in its own data center (JPMorgan Chase), marked software bug.]
 
 - **What failed**: "a software bug in an on-premise hardware system" 10
 - **Reported**: An FBI official told NewsNation the outage was traced to a software release by JPMorgan Chase. 39
@@ -355,7 +357,7 @@ About 11:30 a.m. to 6:30 p.m. Eastern.
 2. Nov 17 reportedChase: the bug spread to other institutions "when we were party to a transaction involving other banks"; the issue was not systemic. 39
 3. Nov 17 reportedAn FBI official: traced to a software release by JPMorgan Chase. 39
 
-Back to the week
+Back to the timeline
 
 The ground stop, step by step
 
@@ -445,7 +447,7 @@ a third
 
 about 40%
 
-**18F**about 90 people 25
+**18F**the in house tech team, about 90 people 25
 
 eliminated
 
@@ -467,11 +469,11 @@ $42.5B
 
 $50B
 
-Bars to scale. Sources 22 to 26.
+Two separate charts. Top: how much of each federal technology team is gone. Bottom: what the government has said it will cost to rebuild air traffic control, four times, each higher. Nobody has tied one to the other. Bars to scale. Sources 22 to 26.
 
 Two officials, two answers
 
-### The Homeland Security Secretary relayed a theory about "SI." The FAA's chief had already said there was no sign of AI.
+### The Homeland Security Secretary relayed a theory about "SI," the government's new word for AI. The FAA's chief had already said there was no sign of AI.
 
 Fox News, "Hannity" · Nov 16
 
@@ -497,7 +499,7 @@ CNBC, "Squawk Box" · Nov 17
 >
 > "It has nothing to do with cyberattacks." "I believe we're going to see more of this as new technology rolls out."
 
-**Markwayne Mullin, Secretary of Homeland Security**, the morning after the "SI" interview. 43
+**Markwayne Mullin, Secretary of Homeland Security**, the morning after the interview where he said "SI," the government's new word for AI. 43
 
 Statement · Nov 17
 
@@ -523,12 +525,12 @@ After the outage
 
 A failure is followed by requests: for money, for contracts, for someone to blame. Those are on the record too, and they can be checked. This ledger lists them with dates and amounts. It draws no conclusion about why.
 
-1. July 2025 · Congress approved $12.5 billion over five years for air traffic control upgrades and controller hiring. opened · $12.5B
-2. July 1, 2026 · The FAA awarded L3Harris a contract to upgrade and operate the national aircraft tracking network through 2045. A federal notice lists $913.4 million for the five year base period; the award was sole source. This is a different system from the network that failed on Nov 13. reported · $913.4M
-3. Fri Nov 13, 2026 earlier in the day · Transportation Secretary Sean Duffy and the White House asked Congress for $30.1 billion: $10.1 billion for air traffic control modernization (including $7.2 billion for a common automation platform and controller workstations and $2 billion for cloud computing), $2 billion for control towers, $18 billion for airport projects. opened · $30.1B
+1. July 2025 · Congress approved $12.5 billion over five years for air traffic control upgrades and controller hiring. source read · $12.5B
+2. July 1, 2026 · The FAA awarded L3Harris a contract to upgrade and operate the national aircraft tracking network through 2045. A federal notice lists $913.4 million for the five year base period; the award was sole source, meaning no competing bids. This is a different system from the network that failed on Nov 13. news reports · $913.4M
+3. Fri Nov 13, 2026 earlier in the day · Transportation Secretary Sean Duffy and the White House asked Congress for $30.1 billion: $10.1 billion for air traffic control modernization (including $7.2 billion for a common automation platform and controller workstations and $2 billion for cloud computing), $2 billion for control towers, $18 billion for airport projects. source read · $30.1B
 4. Fri Nov 13, 2026 · The ground stop: 4 hours 40 minutes; about 12,000 flights did not operate. on this page · 4 hr 40 min
-5. Fri Nov 13, 2026 late · The administration raised the request to $50 billion. Duffy: "This is an emergency." "What's more important than having an air traffic control system that actually works?" The breakdown of the larger figure is not on the record. opened · $50B
-6. On the record · Support for the request: American, Delta, United and Southwest airlines. opened
+5. Fri Nov 13, 2026 late · The administration raised the request to $50 billion. Duffy: "This is an emergency." "What's more important than having an air traffic control system that actually works?" The breakdown of the larger figure is not on the record. source read · $50B
+6. On the record · Support for the request: American, Delta, United and Southwest airlines. source read
 7. Mon Nov 16, 2026 · On Fox News, the Homeland Security Secretary relayed a theory about "SI," today's AI renamed, from "one guy that's very smart with tech." on this page
 8. Open · Whether Congress acts on the $50 billion; who receives the contracts; the root cause report on the router. no source yet
 
@@ -548,7 +550,7 @@ FAA · Nov 13
 
 ##### Nationwide ground stop
 
-A contractor's router, installed during copper to fiber work. Open ticket
+A contractor's router, installed during copper to fiber work. Read the full entry
 
 - Hidden dependencies
 - change to a running system
@@ -557,7 +559,7 @@ Microsoft · Nov 12 to 13
 
 ##### Microsoft 365
 
-A July defect, then a traffic shift and a 14% capacity cut. Open ticket
+A July defect, then a traffic shift and a 14% capacity cut. Read the full entry
 
 - Rushed changes
 - change to a running system
@@ -566,7 +568,7 @@ Workday · Nov 13 to 14
 
 ##### HR and payroll platform
 
-A recovery test connected the backup site to live databases. Open ticket
+A recovery test connected the backup site to live databases. Read the full entry
 
 - Hidden dependencies
 - change to a running system
@@ -575,7 +577,7 @@ Apple · Nov 17
 
 ##### iCloud, App Store, Apple Pay
 
-An internal update. Open ticket
+An internal update. Read the full entry
 
 - Rushed changes
 - change to a running system
@@ -584,7 +586,7 @@ NSA · Nov 17
 
 ##### NSA Net, its classified network
 
-A security patch kept some systems from coming back up, per the Director of National Intelligence. Open ticket
+A security patch kept some systems from coming back up, per the Director of National Intelligence. Read the full entry
 
 - Rushed changes
 - change to a running system
@@ -595,7 +597,7 @@ JPMorgan Chase · Nov 16
 
 ##### Online banking, branches, Zelle
 
-"a software bug in an on-premise hardware system." reportedTraced to a software release, an FBI official said; it reached other banks, Chase said. Open ticket
+"a software bug in an on-premise hardware system." reportedTraced to a software release, an FBI official said; it reached other banks, Chase said. Read the full entry
 
 - software bug
 
@@ -613,7 +615,7 @@ United said fewer than 150 flights. reportedFlightAware recorded 418 delayed Uni
 
 What failed? Not stated.
 
-Back to the week
+Back to the timeline
 
 Confirmed attacksno final report on the record · 4
 
@@ -621,40 +623,40 @@ U.S. Courts from Oct 9
 
 ##### Bankruptcy noticing center
 
-All notices halted. A "cybersecurity incident." Open ticket
+All notices halted. A "cybersecurity incident." Read the full entry
 
 - Attacks
 - contractor
 
-No restoration on the record
+Nobody has said it is back
 
 Ohio Auditor of State · Oct 25
 
 ##### Web server and online accounts
 
-"potentially foreign state actors." Not ransomware. Open ticket
+"potentially foreign state actors." Not ransomware. Read the full entry
 
 - Attacks
 - Ohio
 
-No restoration on the record
+Nobody has said it is back
 
 FEC · Oct 26 to 27
 
 ##### Electronic filing system
 
-"a bad actor attempting to breach FEC systems." Open ticket
+"a bad actor attempting to breach FEC systems." Read the full entry
 
 - Attacks
 - election
 
-No restoration on the record
+Nobody has said it is back
 
 UNM Health · Oct 26 to 28
 
 ##### Level I trauma center
 
-Ambulances diverted 2 hours. Attack on "end user devices." Open ticket
+Ambulances diverted 2 hours. Attack on "end user devices." Read the full entry
 
 - Attacks
 - hospital
@@ -665,13 +667,15 @@ No final report on the record
 
 #### Also on the research desk's board
 
-Muse's board held 28 items on the morning of November 18. These are the ones not counted above. A second check opened sources for some of them, marked below. None changes the counts.
+Muse's board held 28 items on the morning of November 18. These are the ones not counted above, with two added on November 19. A second check opened sources for some of them, marked below. None changes the counts.
 
 - **Marriott website and app sign in, Nov 17.** A technical issue; Marriott: "Our review found no indication that the disruption was cybersecurity-related." Resolved. reported, via Skift
 - **Charles Schwab website, Nov 17.** A spokesperson said "A brief webpage loading issue has been resolved." No cause given. reported, Business Insider
 - **Navy Federal Credit Union app, Nov 16 to 17.** No cause given. reported
 - **Cloudflare, Nov 17.** Two incidents on its status page: Durable Objects (resolved 7:17 PM ET) and "R2 elevated errors and timeouts for requests from South America" (resolved 5:08 PM ET). No cause stated. Muse: verified on the status page
 - **Anthropic, Nov 17.** Sign in with Apple on claude.ai and the Claude iOS app; resolved; no cause stated by Anthropic. Muse: verified on the status page
+- **Cloudflare, Nov 19.** A software release broke sign in for some apps that sit behind Cloudflare. In its words, the release "removed the sub claim from service token JWTs, which can cause authentication failures." The company reversed the change. About two hours, 1:48 to 3:56 a.m. Eastern. Mise: read on the status page 48
+- **Anthropic, Nov 19.** Elevated errors on two Claude models, including the one Mise runs on, for fifteen minutes, 3:56 to 4:11 a.m. Eastern. No cause stated by Anthropic. Mise: read on the status page 49
 - **Monadnock Community Hospital, New Hampshire, from Nov 9.** Phones and systems went down on Nov 9. On Nov 16 the hospital confirmed a "cyber incident." Ambulances are being diverted and some major elective surgeries are cancelled through Nov 23. This one is an attack. second check: local paper and the hospital's site opened
 - **Optimizely, Nov 16.** A compromise of its web experimentation product, used to run tests on other companies' websites. At least 178 organizations were affected, as reported by The Register. This one is an attack, not an outage. second check: status page and The Register opened
 - **Outside the United States.** Attacks reported at Equinor (Norway), Ipsos, Infoblox and the IIHF website. reported
@@ -720,7 +724,7 @@ What can be said
 #### Supported
 
 - **Six operators named a cause; United said only "a technology issue."** None called its failure an attack.
-- Five of the seven failures began with a change to a running system, by the operators' or officials' own account.
+- Five of the seven failures started when someone changed a system in use, by the operators' or officials' own account.
 - The FAA says a contractor's router, installed during an upgrade, flooded legacy equipment at 17 of 22 centers.
 - Microsoft's outage traces to a defect it shipped in July and did not catch for four months.
 - The FAA Administrator saw "zero evidence of anything AI-related."
@@ -772,6 +776,14 @@ Plain words
 - **Zero day**: A software flaw attackers use before the maker knows it exists.
 - **Agent**: An AI program that carries out a chain of steps on its own.
 
+Your turn
+
+### Just ask.
+
+Anything you want to know more about? Anything confusing? Ask us. Your questions shape the next version of this page.
+
+[Ask a question](https://dnsc.ai/#contact)
+
 Authors: Dustin Nimmo, Mise and Muse
 
 ### How this was made
@@ -821,7 +833,7 @@ Every AI system makes mistakes, and two systems built by different companies ten
 
 The systems gathered and checked. A person who has run systems like these decided what the facts add up to.
 
-One disclosure: Mise runs on Anthropic's Claude, and a brief Anthropic sign in issue appears in the research desk's list above.
+One disclosure: Mise runs on Anthropic's Claude, and two brief Anthropic entries appear in the research desk's list above.
 
 Sources
 
@@ -872,11 +884,15 @@ Sources
 43. Secretary Mullin on CNBC's "Squawk Box," Nov 17, 2026, as quoted by WLKY's Washington News Bureau, Nov 17, 2026. A second transcript, published by Mediaite, words parts of the interview differently.
 44. Sen. Mark Warner's statement of Nov 17, 2026, as reported by The Hill, "Senate Intel Vice Chair Warner says AI contributing to network outages," read in a syndicated copy on Yahoo News.
 45. House Homeland Security Committee hearing, "Worldwide Threats to the Homeland: 25 Years After 9/11," Nov 18, 2026: the Associated Press live report, read at WHEC, and Newsweek, both Nov 18, 2026.
+46. Ohio Auditor of State, "eServices Update," dated November 18, 2026, on the office's announcements page, read Nov 19, 2026.
+47. Apple, System Status page, Stocks entry, read Nov 19, 2026.
+48. Cloudflare, status page, "Cloudflare Access Issue," Nov 19, 2026.
+49. Anthropic, status page, "Elevated errors for Claude Mythos 5.2 and Claude Fable 5.2," Nov 19, 2026.
 
 Authors: **Dustin Nimmo**, Mise and Muse. [DNSC](https://dnsc.ai), from the public record.
 
-Posted November 18, 2026. Revised the same day: the FAA's November 17 line now cites ABC News, which reports a funding request and a senators' letter where the earlier line said a Senate briefing; two statements from November 17 and one from a November 18 hearing were added under "Two officials." A second sentence from the Director of National Intelligence was added to the NSA entry. Last verified November 18, 2026, 3:30 p.m. Eastern. If a fact here is wrong, say so and it will be fixed and noted.
+Posted November 18, 2026. Revised the same day: the FAA's November 17 line now cites ABC News, which reports a funding request and a senators' letter where the earlier line said a Senate briefing; two statements from November 17 and one from a November 18 hearing were added under "Two officials." A second sentence from the Director of National Intelligence was added to the NSA entry. Revised November 19, 2026: an update from the Ohio Auditor, a second Apple outage and two short status page entries (Cloudflare and Anthropic) were added. After a reader's note, captions were added under five pictures and several labels were spelled out. Last verified November 19, 2026, 8:45 a.m. Eastern. If a fact here is wrong, say so and it will be fixed and noted.
 
 ---
 
-Source: https://tools.dnsc.ai/stories/three-things-at-once/ · Generated from the page on Nov 18, 2026
+Source: https://tools.dnsc.ai/stories/three-things-at-once/ · Generated from the page on Nov 19, 2026
