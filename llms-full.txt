@@ -9100,7 +9100,7 @@ Source: https://tools.dnsc.ai/stories/php2shell/ · Generated from the page on N
 
 > A living record of this fall's failures and attacks on digital systems, from Microsoft 365 and the FAA ground stop to the NSA's network: what you may have run into, what each operator said, and how two AI systems and a person checked it.
 
-**A living record.** Last updated November 19, 2026, 8:45 a.m. Eastern.
+**A living record.** Last updated November 19, 2026, 4:00 p.m. Eastern.
 
 Kept by Dustin Nimmo, Mise and Muse. Two AI systems from two companies search separately, we open the sources, and a person decides what it adds up to. See how this was made
 
@@ -9200,6 +9200,8 @@ On November 16, Google's threat team reported attackers using AI to find softwar
 
 - **Under 3 hours**From first target to privileged access, meaning administrator control, in some break ins, per an FBI warning of Nov 13. 18
 - **8 → 22**Newly exploited, previously unknown flaws a month: the 2025 average, then August 2026. 17
+
+**The first named case.** On November 19, The Register reported, citing Politico, that attackers using ARTEX, a publicly available AI security testing tool, hit the European Commission's internal systems. Staff pay and medical reimbursement systems were offline for more than ten days. The Commission called it "a detected cyber campaign." It has not said the tool was AI. This one is outside the United States. 50
 
 None of the seven November failures was called an attack by its operator, and no source ties any attack here to them.
 
@@ -9986,10 +9988,11 @@ Sources
 47. Apple, System Status page, Stocks entry, read Nov 19, 2026.
 48. Cloudflare, status page, "Cloudflare Access Issue," Nov 19, 2026.
 49. Anthropic, status page, "Elevated errors for Claude Mythos 5.2 and Claude Fable 5.2," Nov 19, 2026.
+50. The Register, "European Commission scrambles to contain AI-assisted cyberattack," Nov 19, 2026, citing Politico. Politico's own report was not opened.
 
 Authors: **Dustin Nimmo**, Mise and Muse. [DNSC](https://dnsc.ai), from the public record.
 
-Posted November 18, 2026. Revised the same day: the FAA's November 17 line now cites ABC News, which reports a funding request and a senators' letter where the earlier line said a Senate briefing; two statements from November 17 and one from a November 18 hearing were added under "Two officials." A second sentence from the Director of National Intelligence was added to the NSA entry. Revised November 19, 2026: an update from the Ohio Auditor, a second Apple outage and two short status page entries (Cloudflare and Anthropic) were added. After a reader's note, captions were added under five pictures and several labels were spelled out. Last verified November 19, 2026, 8:45 a.m. Eastern. If a fact here is wrong, say so and it will be fixed and noted.
+Posted November 18, 2026. Revised the same day: the FAA's November 17 line now cites ABC News, which reports a funding request and a senators' letter where the earlier line said a Senate briefing; two statements from November 17 and one from a November 18 hearing were added under "Two officials." A second sentence from the Director of National Intelligence was added to the NSA entry. Revised November 19, 2026: an update from the Ohio Auditor, a second Apple outage and two short status page entries (Cloudflare and Anthropic) were added. After a reader's note, captions were added under five pictures and several labels were spelled out. That afternoon a reported attack on the European Commission was added under Attacks. Last verified November 19, 2026, 4:00 p.m. Eastern. If a fact here is wrong, say so and it will be fixed and noted.
 
 ---
 
