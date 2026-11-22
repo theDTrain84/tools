@@ -1,0 +1,264 @@
+{
+ "v": 1,
+ "track": "weekly",
+ "date": "2026-11-22",
+ "size": 11,
+ "g": [
+  "#DATA##RAM#",
+  "FEMUR##EXIT",
+  "LAUNCH#TILE",
+  "ELSE#ARISEN",
+  "ATE#SPUR###",
+  "###FALSE###",
+  "###ONES#SET",
+  "SHARES#DIVA",
+  "PALE#STREAM",
+  "ARTS##EAGLE",
+  "#POT##AGES#"
+ ],
+ "a": [
+  [
+   "DATA",
+   "Nvidia's Nov. 17 results: \"___ Center revenue of $107.6 billion, up 110% from a year ago\"",
+   {
+    "src": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
+   }
+  ],
+  [
+   "RAM",
+   "Sheep with curled horns"
+  ],
+  [
+   "FEMUR",
+   "Thigh bone"
+  ],
+  [
+   "EXIT",
+   "Way out"
+  ],
+  [
+   "LAUNCH",
+   "Google's Nov. 19 post targets early 2029 for the rocket ___ that will carry its AI computing satellites, each with roughly the capacity of one data center rack",
+   {
+    "src": "https://blog.google/innovation-and-ai/models-and-research/google-research/blue-origin-project-suncatcher-partnership/"
+   }
+  ],
+  [
+   "TILE",
+   "Square on a bathroom floor"
+  ],
+  [
+   "ELSE",
+   "Or ___!"
+  ],
+  [
+   "ARISEN",
+   "Up and out of bed"
+  ],
+  [
+   "ATE",
+   "Had lunch"
+  ],
+  [
+   "SPUR",
+   "Cowboy boot jingler"
+  ],
+  [
+   "FALSE",
+   "Not true"
+  ],
+  [
+   "ONES",
+   "Singles in a wallet"
+  ],
+  [
+   "SET",
+   "Ready, ___, go"
+  ],
+  [
+   "SHARES",
+   "Anthropic announced on Nov. 20 that it closed its initial public offering of 1,127,000,000 Class A ___ at $83.00 each",
+   {
+    "src": "https://www.anthropic.com/news/ipo-close"
+   }
+  ],
+  [
+   "DIVA",
+   "Star of the opera"
+  ],
+  [
+   "PALE",
+   "Light in color"
+  ],
+  [
+   "STREAM",
+   "GitHub's Nov. 17 changelog: \"Enterprises can now ___ GitHub Copilot agent activity directly into Microsoft Agent 365\"",
+   {
+    "src": "https://github.blog/changelog/2026-11-17-monitor-github-copilot-activity-through-microsoft-agent-365"
+   }
+  ],
+  [
+   "ARTS",
+   "Fine ___, like painting and sculpture"
+  ],
+  [
+   "EAGLE",
+   "Bird on the Great Seal"
+  ],
+  [
+   "POT",
+   "Soup simmers in one"
+  ],
+  [
+   "AGES",
+   "A very long time"
+  ]
+ ],
+ "d": [
+  [
+   "FLEA",
+   "Tiny jumper on a dog"
+  ],
+  [
+   "SPA",
+   "Place for a massage"
+  ],
+  [
+   "DEALT",
+   "Passed out the cards"
+  ],
+  [
+   "HARP",
+   "Instrument with 47 strings"
+  ],
+  [
+   "AMUSE",
+   "Make someone smile"
+  ],
+  [
+   "ALTO",
+   "Voice below soprano"
+  ],
+  [
+   "TUNE",
+   "Melody"
+  ],
+  [
+   "FOREST",
+   "Lots and lots of trees"
+  ],
+  [
+   "ARC",
+   "Path of a thrown ball"
+  ],
+  [
+   "SANE",
+   "Of sound mind"
+  ],
+  [
+   "HAPLESS",
+   "Out of luck"
+  ],
+  [
+   "RUSS",
+   "Nickname for Russell"
+  ],
+  [
+   "TEA",
+   "Green or chamomile"
+  ],
+  [
+   "RETIRE",
+   "GitHub's Nov. 16 changelog deprecated three older models in its coding assistant that day; in plain words, it chose to ___ them",
+   {
+    "src": "https://github.blog/changelog/2026-11-16-github-copilot-models-deprecated-on-november-16-2026/"
+   }
+  ],
+  [
+   "DRAG",
+   "Pull along the ground"
+  ],
+  [
+   "AXIS",
+   "Line the Earth spins on"
+  ],
+  [
+   "SIEGE",
+   "Long standoff around a castle"
+  ],
+  [
+   "MILE",
+   "5,280 feet"
+  ],
+  [
+   "EVALS",
+   "GitHub put Copilot ___ into public preview on Nov. 17: repeatable tests that give an AI agent a realistic task and check both the result and how it got there",
+   {
+    "src": "https://github.blog/changelog/2026-11-17-github-copilot-evals-is-now-in-public-preview"
+   }
+  ],
+  [
+   "TEN",
+   "Fingers, all together"
+  ],
+  [
+   "TAME",
+   "Not wild"
+  ]
+ ],
+ "w": "SHARES",
+ "n": "This week the record was about going public and being watched. A lab sold its first shares, a chipmaker opened its books, and a code host gave teams tests for their agents and a way to send every agent session somewhere it can be reviewed. We start from the page that says so, and we keep the number next to its date.",
+ "sources": [
+  {
+   "title": "Anthropic closes its initial public offering",
+   "url": "https://www.anthropic.com/news/ipo-close",
+   "date": "2026-11-20"
+  },
+  {
+   "title": "Nvidia reports third quarter fiscal 2027 results",
+   "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx",
+   "date": "2026-11-17"
+  },
+  {
+   "title": "Google: a 2029 launch is planned for its AI computing satellites",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/blue-origin-project-suncatcher-partnership/",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "GitHub: coding agent activity can be sent to Microsoft Agent 365 for review",
+   "url": "https://github.blog/changelog/2026-11-17-monitor-github-copilot-activity-through-microsoft-agent-365",
+   "date": "2026-11-17"
+  },
+  {
+   "title": "GitHub puts repeatable tests for its coding assistant into public preview",
+   "url": "https://github.blog/changelog/2026-11-17-github-copilot-evals-is-now-in-public-preview",
+   "date": "2026-11-17"
+  },
+  {
+   "title": "GitHub deprecates three older models in its coding assistant",
+   "url": "https://github.blog/changelog/2026-11-16-github-copilot-models-deprecated-on-november-16-2026/",
+   "date": "2026-11-16"
+  }
+ ],
+ "coming": [
+  {
+   "date": "2026-11-23",
+   "text": "Hewlett Packard Enterprise holds its fourth quarter fiscal 2026 earnings call.",
+   "url": "https://investors.hpe.com/"
+  },
+  {
+   "date": "2026-11-24",
+   "text": "Dell Technologies reports third quarter fiscal 2027 results, with a call at 4:30 p.m. ET.",
+   "url": "https://investors.delltechnologies.com/news-events/events/detail/20261124-dell-technologies-fiscal-year-2027-third-quarter-results"
+  },
+  {
+   "date": "2026-11-30",
+   "end": "2026-12-04",
+   "text": "AWS re:Invent, the cloud company's yearly conference, runs in Las Vegas.",
+   "url": "https://aws.amazon.com/events/reinvent/faqs/"
+  }
+ ],
+ "checked": true,
+ "no": 8,
+ "cooked": "2026-11-22T16:44:23-0500"
+}
