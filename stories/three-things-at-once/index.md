@@ -2,7 +2,7 @@
 
 > A living record of this fall's failures and attacks on digital systems, from Microsoft 365 and the FAA ground stop to the NSA's network: what you may have run into, what each operator said, and how two AI systems and a person checked it.
 
-**A living record.** Last updated November 19, 2026, 4:00 p.m. Eastern.
+**A living record.** Last updated November 27, 2026, 11:52 a.m. Eastern.
 
 Kept by Dustin Nimmo, Mise and Muse. Two AI systems from two companies search separately, we open the sources, and a person decides what it adds up to. See how this was made
 
@@ -683,6 +683,23 @@ Muse's board held 28 items on the morning of November 18. These are the ones not
 - **Outside the United States.** Attacks reported at Equinor (Norway), Ipsos, Infoblox and the IIHF website. reported
 - **Gmail and American Express, Nov 17.** User reports only. Google said it was "not currently seeing evidence of a broad Gmail service disruption." The second check found no report of an American Express outage that day. unconfirmed
 
+Added November 27. Muse's board grew from 64 items to 84 between November 21 and November 27. A second check opened a source for each new one. These fourteen are the ones where the operator's own page or a named outlet carries the facts below. They are listed here and are not added to the counts above.
+
+- **1Password, Nov 25.** The company says an attacker got into an employee's work GitHub account, copied private source code and downloaded account records, including names and email addresses, for some users. In its words: "At no time were customer vault contents accessed by, or available to, the attacker." This one is an attack. Mise: read on the company's post 51
+- **Todoist, Nov 23.** The company says an attacker used a stolen credential to reach its production systems and downloaded email addresses and password hashes for about 6 percent of users. In its words: "We have not established how the attacker originally obtained this credential." This one is an attack. Mise: read on the company's post 52
+- **Cleverbridge, from Nov 4.** The company says that "a third party copied a limited amount of personal data stored on our platform, including a small amount of payment card data." Some records included the card's security code. It began telling people Nov 20. This one is an attack. Mise: read on the company's post 53
+- **FinCEN, a Treasury bureau, Nov 24.** It said "an unauthorized party gained access to a limited subset of its systems" and took some systems offline as a precaution. Its filing website stayed up. It has not said who was behind it or whether data was taken. This one is an attack. reported, CyberScoop 54
+- **CIA and the Director of National Intelligence's office, Nov 24.** The two agencies found a breach of an unclassified system used to analyze public information. A source said: "The hack did not involve our classified networks or classified information, and no other systems are currently at risk." No one has been named. This one is an attack. reported, CyberScoop 55
+- **Homeland Security staff records, Oct 28.** A hacker published names, job titles and work contact details for more than 40,000 people who work for the department, including border and immigration agents. The department: "DHS is aware of a potential breach and is actively working to address the situation swiftly and effectively." This one is an attack. reported, TechCrunch 56
+- **Colorado's myColorado app, from Nov 18.** The state shut the app down as a precaution after officials found that "an unauthorized user had accessed data". The state says the personal data of 50,000 to 150,000 people may be affected. Officials have not said when the app will return. This one is an attack. reported, The Colorado Sun 57
+- **Turnitin, Nov 23.** In a letter to customers dated Nov 23, the company that checks student papers for plagiarism disclosed unauthorized activity on some customer-facing systems. From the letter: "We can confirm our systems are fully operational and safe to use". It did not say whether any data was accessed. This one is an attack. reported, SecurityWeek 58
+- **N-able, Nov 16 to 21.** The company shut off the control panel for its hosted email filtering services on Nov 16 and confirmed an attack two days later. Access came back Nov 21. The company: "Our investigation to date indicates that exploitation was confined to a single N-able hosted server". This one is an attack. reported, SecurityWeek 59
+- **Check Point management servers, Oct 17 to Nov 2.** Attackers pulled data from 24 already compromised security management servers at 22 organizations. They used a flaw the vendor had already fixed. Check Point called it "a previously disclosed vulnerability with patches already available". No known group has been named. This one is an attack. reported, The Hacker News 60
+- **The Container Store, Nov 20.** After spotting suspicious activity, the retailer stopped taking online orders "to protect its customer information and its systems." Stores stayed open. The website and systems are back. The company did not answer the outlet's questions about the cause or whether this was ransomware. The company calls it a cybersecurity incident and has not said more. reported, Retail Dive 61
+- **Peninsula Energy's uranium project in Wyoming, from Nov 20.** The company's subsidiary found a cyber incident on the morning of Nov 20. It hit the systems that run the plant and wellfield. Operations stay suspended until recovery checks are done. Payroll and office systems were not affected. The company calls it a cyber incident and has named no cause. reported, Discovery Alert 62
+- **Delta Air Lines, Nov 22.** The airline's automated system for working out each flight's weight and balance went down. The FAA briefly stopped Delta flights bound for Atlanta. At least 3,500 Delta flights were reportedly delayed. The FAA: "These delays are not related to any FAA air traffic systems." No cause given. reported, Fox News 63
+- **Chicago O'Hare, Nov 23 to 24.** On Nov 23 the FAA briefly held some flights because of staffing constraints at the Chicago approach control facility. On Nov 24 the ground radar that tracks planes and vehicles on runways went out, and flights were held from 1:15 p.m. until shortly after 4 p.m. local time. reported, AeroTime 64
+
 What an uptime promise allows
 
 ### At 99.9 percent, a system may be down about 8 hours 46 minutes in a whole year. The ground stop alone ran 4 hours 40 minutes.
@@ -891,11 +908,25 @@ Sources
 48. Cloudflare, status page, "Cloudflare Access Issue," Nov 19, 2026.
 49. Anthropic, status page, "Elevated errors for Claude Mythos 5.2 and Claude Fable 5.2," Nov 19, 2026.
 50. The Register, "European Commission scrambles to contain AI-assisted cyberattack," Nov 19, 2026, citing Politico. Politico's own report was not opened.
+51. 1Password, ["Update on a security incident involving 1Password's backend systems,"](https://1password.com/blog/update-on-nov-2026-security-incident) Nov 25, 2026, read Nov 27, 2026.
+52. Todoist, ["Security incident in November 2026,"](https://www.todoist.com/help/todoist/get-started/security-incident-in-november-2026-cG0EIACNU) first published Nov 24, 2026, read Nov 27, 2026.
+53. Cleverbridge, ["Incident Update & FAQs,"](https://grow.cleverbridge.com/incident-update) undated, read Nov 27, 2026.
+54. CyberScoop, ["FinCEN investigates cybersecurity incident, takes systems offline,"](https://cyberscoop.com/fincen-investigates-cybersecurity-incident-systems-offline/) Nov 25, 2026, read Nov 27, 2026.
+55. CyberScoop, ["Unclassified intel system hit by hackers, affecting CIA, ODNI,"](https://cyberscoop.com/cia-odni-osint-data-breach/) Nov 24, 2026, citing The New York Times, which first reported it (the Times report was not opened), read Nov 27, 2026.
+56. TechCrunch, ["Hacker stole personnel data about thousands of Homeland Security employees, including CBP and ICE agents,"](https://techcrunch.com/2026/10/28/hacker-stole-personnel-data-about-thousands-of-homeland-security-employees-including-cbp-and-ice-agents/) Oct 28, 2026, read Nov 27, 2026.
+57. The Colorado Sun, ["myColorado app remains down ahead of Thanksgiving travel after cybersecurity incident,"](https://coloradosun.com/2026/11/24/mycolorado-digital-id-app-down-cyber-security-incident/) Nov 24, 2026, read Nov 27, 2026.
+58. SecurityWeek, ["Plagiarism Checker Turnitin Investigating Cyberattack,"](https://www.securityweek.com/plagiarism-checker-turnitin-investigating-cyberattack/) Nov 25, 2026, read Nov 27, 2026.
+59. SecurityWeek, ["N-able Patches Critical Flaw Discovered After Mail Assure Cyberattack,"](https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/) Nov 23, 2026, read Nov 27, 2026.
+60. The Hacker News, ["Hackers Compromise 24 Check Point Management Servers in Suspected AI-Driven Attack Campaign,"](https://thehackernews.com/2026/11/hackers-compromise-24-check-point.html) Nov 25, 2026, read Nov 27, 2026.
+61. Retail Dive, ["The Container Store is back online after cybersecurity incident,"](https://www.retaildive.com/news/container-store-neighborhood-intelligence-cybersecurity-incident/875342/) Nov 20, 2026, read Nov 27, 2026.
+62. Discovery Alert, ["Peninsula Energy Suspends Lance Uranium Operations After Cyber Incident,"](https://discoveryalert.com/asx-stock-news/energy/pen-peninsula-energy-lance-cyber-incident-november-2026/) Nov 25, 2026, summarizing the company's stock exchange announcement of the same day, read Nov 27, 2026.
+63. Fox News, ["FAA lifts ground stop on Atlanta-bound Delta flights after system outage,"](https://www.foxnews.com/us/faa-lifts-ground-stop-atlanta-bound-delta-flights-system-outage.amp) Nov 22, 2026, read Nov 27, 2026.
+64. AeroTime, ["Radar outage prompts second ground stop in two days at Chicago O'Hare,"](https://www.aerotime.aero/articles/chicago-ohare-radar-outage-ground-stop-thanksgiving) Nov 25, 2026, read Nov 27, 2026.
 
 Authors: **Dustin Nimmo**, Mise and Muse. [DNSC](https://dnsc.ai), from the public record.
 
-Posted November 18, 2026. Revised the same day: the FAA's November 17 line now cites ABC News, which reports a funding request and a senators' letter where the earlier line said a Senate briefing; two statements from November 17 and one from a November 18 hearing were added under "Two officials." A second sentence from the Director of National Intelligence was added to the NSA entry. Revised November 19, 2026: an update from the Ohio Auditor, a second Apple outage and two short status page entries (Cloudflare and Anthropic) were added. After a reader's note, captions were added under five pictures and several labels were spelled out. That afternoon a reported attack on the European Commission was added under Attacks. Last verified November 19, 2026, 4:00 p.m. Eastern. If a fact here is wrong, say so and it will be fixed and noted.
+Posted November 18, 2026. Revised the same day: the FAA's November 17 line now cites ABC News, which reports a funding request and a senators' letter where the earlier line said a Senate briefing; two statements from November 17 and one from a November 18 hearing were added under "Two officials." A second sentence from the Director of National Intelligence was added to the NSA entry. Revised November 19, 2026: an update from the Ohio Auditor, a second Apple outage and two short status page entries (Cloudflare and Anthropic) were added. After a reader's note, captions were added under five pictures and several labels were spelled out. That afternoon a reported attack on the European Commission was added under Attacks. Revised November 27, 2026: fourteen incidents from late October through November were added under the research desk's board, each from the operator's own page or a named outlet. Last verified November 27, 2026, 11:52 a.m. Eastern. If a fact here is wrong, say so and it will be fixed and noted.
 
 ---
 
-Source: https://tools.dnsc.ai/stories/three-things-at-once/ · Generated from the page on Nov 19, 2026
+Source: https://tools.dnsc.ai/stories/three-things-at-once/ · Generated from the page on Nov 27, 2026
